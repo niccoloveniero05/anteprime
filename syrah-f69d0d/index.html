@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Syrah Wine Café · Ristorante, Cocktail bar e Cantina a Montecatini Terme</title>
+<meta name="description" content="Syrah Wine Café, dal 2003 in viale IV Novembre a Montecatini Terme: ristorante con menù di stagione, cocktail bar e cantina con bottiglie anche da asporto.">
+<meta name="theme-color" content="#0B1F1E">
+<meta property="og:title" content="Syrah Wine Café · Montecatini Terme">
+<meta property="og:description" content="Ristorante, cocktail bar e cantina dal 2003.">
+<meta property="og:image" content="img/DSC5050.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Syrah Wine Café","servesCuisine":["Italiana","Toscana"],"address":{"@type":"PostalAddress","streetAddress":"Viale IV Novembre 15/A","addressLocality":"Montecatini Terme","postalCode":"51016","addressRegion":"PT","addressCountry":"IT"},"telephone":"+39 0572 911308","foundingDate":"2003-10-05","sameAs":["https://www.instagram.com/syrah_montecatini/","https://www.facebook.com/syrah.montecatini/"]}
+</script>
+<style>
+:root{
+  --notte:#0B1F1E; --petrolio:#123433; --petrolio-2:#1A4644; --crema:#F5F0E8; --carta:#FBF8F3;
+  --oro:#C9A35C; --oro-chiaro:#E2C88E; --neon:#3FA9FF; --inchiostro:#16201F; --grigio:#6B716F; --linea:#E4DDD1;
+  --r:14px; --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:Karla,system-ui,sans-serif;color:var(--inchiostro);background:var(--carta);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.serif{font-family:"Playfair Display",Georgia,serif}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.eyebrow{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--oro)}
+h2.titolo{font-family:"Playfair Display",Georgia,serif;font-weight:500;font-size:clamp(32px,5vw,52px);line-height:1.08;letter-spacing:-.01em;margin:10px 0 18px}
+h2.titolo em{color:var(--oro);font-style:italic}
+.lead{font-size:18px;color:var(--grigio);max-width:56ch}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .2s ease,background .2s ease,color .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-oro{background:var(--oro);color:#1a1408}
+.btn-oro:hover{background:var(--oro-chiaro)}
+.btn-vetro{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(10px)}
+.btn-vetro:hover{background:rgba(255,255,255,.22)}
+svg.i{width:19px;height:19px;flex:none}
+
+/* Barra in alto */
+.nav{position:fixed;inset:0 0 auto 0;z-index:30;transition:background .3s ease,border-color .3s ease;border-bottom:1px solid transparent}
+.nav.piena{background:rgba(11,31,30,.92);backdrop-filter:blur(14px);border-color:rgba(255,255,255,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.marchio{color:#fff;display:flex;flex-direction:column;line-height:1}
+.marchio b{font-family:"Playfair Display",serif;font-style:italic;font-weight:500;font-size:28px;letter-spacing:.01em}
+.marchio small{font-size:9.5px;letter-spacing:.42em;color:var(--oro-chiaro);margin-top:3px;font-weight:600}
+.menu-alto{display:none;gap:30px;color:rgba(255,255,255,.85);font-size:15px}
+.menu-alto a:hover{color:var(--oro-chiaro)}
+.nav .btn{min-height:42px;padding:0 18px;font-size:14.5px}
+
+/* Copertina */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--notte)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:respira 18s ease-in-out infinite alternate}
+@keyframes respira{to{transform:scale(1.12)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,31,30,.55) 0%,rgba(11,31,30,.15) 35%,rgba(11,31,30,.88) 78%,var(--notte) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:calc(110px + env(safe-area-inset-bottom));padding-top:120px;width:100%}
+.hero .eyebrow{color:var(--oro-chiaro)}
+.hero h1{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(44px,8.5vw,92px);line-height:1;letter-spacing:-.015em;margin:14px 0 18px;max-width:14ch}
+.hero h1 em{font-style:italic;color:var(--oro-chiaro)}
+.hero p{font-size:19px;color:rgba(255,255,255,.82);max-width:42ch;margin-bottom:28px}
+.hero .azioni{display:flex;flex-wrap:wrap;gap:12px}
+.adesso{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:rgba(255,255,255,.85);margin-top:26px}
+.adesso i{width:8px;height:8px;border-radius:50%;background:#46d483;box-shadow:0 0 0 4px rgba(70,212,131,.2)}
+.adesso.chiuso i{background:#e0a64a;box-shadow:0 0 0 4px rgba(224,166,74,.2)}
+
+/* Tre anime */
+.anime{background:var(--notte);color:#fff;padding:20px 0 90px}
+.anime .griglia{display:grid;gap:18px}
+.anima{position:relative;border-radius:var(--r);overflow:hidden;min-height:340px;display:flex;align-items:flex-end;isolation:isolate}
+.anima img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s ease}
+.anima:hover img{transform:scale(1.05)}
+.anima::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(8,22,21,.92));z-index:-1}
+.anima div{padding:24px}
+.anima h3{font-family:"Playfair Display",serif;font-weight:500;font-size:30px}
+.anima p{color:rgba(255,255,255,.78);font-size:15.5px;margin-top:4px}
+.anima .num{font-size:12px;letter-spacing:.2em;color:var(--oro-chiaro);font-weight:600}
+
+/* Storia */
+.storia{padding:100px 0;background:var(--carta)}
+.storia .griglia{display:grid;gap:40px;align-items:center}
+.storia figure{position:relative}
+.storia figure img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+.timbro{position:absolute;right:-8px;bottom:-22px;background:var(--petrolio);color:#fff;border-radius:999px;width:128px;height:128px;display:grid;place-items:center;text-align:center;box-shadow:0 18px 40px -18px rgba(0,0,0,.5)}
+.timbro b{font-family:"Playfair Display",serif;font-size:38px;font-weight:500;display:block;line-height:1;color:var(--oro-chiaro)}
+.timbro span{font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.storia blockquote{font-family:"Playfair Display",serif;font-style:italic;font-size:22px;line-height:1.45;border-left:2px solid var(--oro);padding-left:18px;margin-top:26px;color:var(--petrolio)}
+
+/* Menù */
+.menu{background:var(--crema);padding:100px 0}
+.schede{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:26px 0 30px;padding-bottom:4px}
+.schede::-webkit-scrollbar{display:none}
+.schede button{flex:none;font:600 15px Karla,sans-serif;border:1px solid var(--linea);background:#fff;color:var(--inchiostro);border-radius:999px;min-height:44px;padding:0 20px;cursor:pointer;transition:all .2s ease}
+.schede button[aria-selected="true"]{background:var(--petrolio);color:#fff;border-color:var(--petrolio)}
+.piatti{display:none;background:#fff;border-radius:var(--r);padding:8px 24px;border:1px solid var(--linea)}
+.piatti.attivo{display:block;animation:entra .35s ease}
+@keyframes entra{from{opacity:0;transform:translateY(6px)}}
+.piatto{display:grid;grid-template-columns:1fr auto;gap:6px 18px;padding:20px 0;border-bottom:1px solid var(--linea)}
+.piatto:last-child{border-bottom:0}
+.piatto h4{font-family:"Playfair Display",serif;font-weight:500;font-size:20px;line-height:1.3}
+.piatto p{grid-column:1;color:var(--grigio);font-size:15.5px}
+.piatto .prezzo{font-family:"Playfair Display",serif;font-size:20px;color:var(--petrolio);white-space:nowrap}
+.nota{font-size:14px;color:var(--grigio);margin-top:16px}
+
+/* Cocktail */
+.cocktail{background:var(--notte);color:#fff;padding:100px 0;position:relative;overflow:hidden}
+.cocktail::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(63,169,255,.22),transparent 70%);top:-160px;right:-160px}
+.cocktail .griglia{display:grid;gap:40px;position:relative}
+.cocktail .lead{color:rgba(255,255,255,.7)}
+.lista{list-style:none;margin-top:26px;display:grid;gap:2px}
+.lista li{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:17px}
+.lista li span{color:rgba(255,255,255,.55);font-size:15px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.duo img{border-radius:var(--r);aspect-ratio:3/4;object-fit:cover;width:100%}
+.duo img:last-child{margin-top:44px}
+
+/* Cantina */
+.cantina{padding:100px 0;background:var(--carta)}
+.cantina .griglia{display:grid;gap:40px;align-items:center}
+.cantina img{border-radius:var(--r);width:100%;aspect-ratio:16/10;object-fit:cover}
+.punti{display:grid;gap:14px;margin-top:24px}
+.punti div{display:flex;gap:14px;align-items:flex-start}
+.punti svg{color:var(--oro);margin-top:3px}
+
+/* Serate */
+.serate{background:var(--petrolio);color:#fff;padding:90px 0}
+.serate .griglia{display:grid;gap:16px;margin-top:30px}
+.serata{border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:26px;background:rgba(255,255,255,.03)}
+.serata .quando{color:var(--oro-chiaro);font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+.serata h3{font-family:"Playfair Display",serif;font-weight:500;font-size:26px;margin:6px 0}
+.serata p{color:rgba(255,255,255,.72);font-size:15.5px}
+
+/* Galleria */
+.galleria{padding:100px 0 80px;background:var(--carta)}
+.mosaico{columns:2;column-gap:12px;margin-top:30px}
+.mosaico img{width:100%;border-radius:12px;margin-bottom:12px;break-inside:avoid;cursor:zoom-in}
+.lightbox{position:fixed;inset:0;background:rgba(5,12,12,.94);display:none;align-items:center;justify-content:center;z-index:60;padding:20px}
+.lightbox.aperto{display:flex}
+.lightbox img{max-height:88vh;border-radius:10px}
+
+/* Info */
+.info{background:var(--notte);color:#fff;padding:100px 0 60px}
+.info .griglia{display:grid;gap:30px}
+.scheda{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:26px}
+.scheda h3{font-family:"Playfair Display",serif;font-weight:500;font-size:24px;margin-bottom:14px}
+.orari{list-style:none}
+.orari li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.8)}
+.orari li.oggi{color:#fff;font-weight:700}
+.orari li.oggi span:first-child::after{content:" · oggi";color:var(--oro-chiaro);font-weight:500}
+.contatti a{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.contatti a:hover{color:var(--oro-chiaro)}
+.mappa{border-radius:var(--r);overflow:hidden;border:1px solid rgba(255,255,255,.1);min-height:300px}
+.mappa iframe{width:100%;height:100%;min-height:300px;border:0;filter:grayscale(.35) contrast(1.05)}
+footer{background:var(--notte);color:rgba(255,255,255,.5);font-size:14px;padding:30px 0 120px;border-top:1px solid rgba(255,255,255,.08)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+.anteprima{display:block;text-align:center;font-size:12.5px;color:rgba(255,255,255,.45);margin-top:18px}
+
+/* Barra fissa sul telefono */
+.barra{position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:40;display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;background:rgba(11,31,30,.9);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:6px;box-shadow:0 18px 40px -12px rgba(0,0,0,.6)}
+.barra a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:54px;border-radius:14px;color:#fff;font-size:12.5px;font-weight:600}
+.barra a.primo{background:var(--oro);color:#1a1408}
+
+/* Comparsa allo scorrere */
+.su{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.su.visto{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.su{opacity:1;transform:none}}
+
+@media (min-width:760px){
+  .anime .griglia{grid-template-columns:repeat(3,1fr)}
+  .anima{min-height:460px}
+  .storia .griglia,.cocktail .griglia,.cantina .griglia{grid-template-columns:1fr 1fr;gap:70px}
+  .serate .griglia{grid-template-columns:repeat(3,1fr)}
+  .mosaico{columns:3}
+  .info .griglia{grid-template-columns:1fr 1fr 1.2fr}
+  .piatti{padding:12px 36px}
+}
+@media (min-width:980px){
+  .hero .wrap{padding-bottom:64px}
+  .menu-alto{display:flex}
+  .barra{display:none}
+  footer{padding-bottom:30px}
+  .wrap{padding:0 32px}
+  .mosaico{columns:4}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#" class="marchio" aria-label="Syrah Wine Café"><b>Syrah</b><small>WINE CAFÉ</small></a>
+    <nav class="menu-alto" aria-label="Sezioni">
+      <a href="#menu">Menù</a><a href="#cocktail">Cocktail</a><a href="#cantina">Cantina</a><a href="#serate">Serate</a><a href="#dove">Dove siamo</a>
+    </nav>
+    <a class="btn btn-oro" href="tel:+390572911308">
+      <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      Prenota
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="img/DSC5050.jpg" alt="La sala di Syrah con le sedute in velluto verde petrolio">
+  <div class="wrap">
+    <span class="eyebrow">Montecatini Terme · dal 2003</span>
+    <h1>Vino, cucina e <em>cocktail</em> in viale IV Novembre.</h1>
+    <p>Ristorante con un menù che cambia con le stagioni, cocktail bar e una cantina di bottiglie da bere qui o portare a casa.</p>
+    <div class="azioni">
+      <a class="btn btn-oro" href="tel:+390572911308">
+        <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Prenota un tavolo
+      </a>
+      <a class="btn btn-vetro" href="#menu">Guarda il menù</a>
+    </div>
+    <div class="adesso" id="adesso"><i></i><span>Stasera aperti dalle 18:00</span></div>
+  </div>
+</section>
+
+<section class="anime" aria-label="Le tre anime di Syrah">
+  <div class="wrap">
+    <div class="griglia">
+      <a href="#menu" class="anima su"><img src="img/DSC9644.jpg" alt="Tavolata apparecchiata nella sala del ristorante"><div><span class="num">01</span><h3>Ristorante</h3><p>Piatti di stagione, dalla terra e dal mare.</p></div></a>
+      <a href="#cocktail" class="anima su"><img src="img/DSC9652.jpg" alt="Il bancone del cocktail bar illuminato di blu"><div><span class="num">02</span><h3>Cocktail bar</h3><p>Dai grandi classici alle miscele di oggi.</p></div></a>
+      <a href="#cantina" class="anima su"><img src="img/cantina-syrah.jpg" alt="Bottiglie di vino rosso della cantina"><div><span class="num">03</span><h3>Cantina</h3><p>Grandi nomi e piccole cantine, anche da asporto.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="storia">
+  <div class="wrap griglia">
+    <figure class="su">
+      <img src="img/DSC2938.jpg" alt="Bottiglie di spumante nel secchiello sul bancone" loading="lazy">
+      <div class="timbro"><div><b>2003</b><span>dal 5 ottobre</span></div></div>
+    </figure>
+    <div class="su">
+      <span class="eyebrow">La nostra storia</span>
+      <h2 class="titolo">Nato per il buon vino. <em>Cresciuto</em> a tavola.</h2>
+      <p class="lead">Syrah ha aperto il 5 ottobre 2003 come wine café, un posto dove bere bene. Con gli anni è diventato anche ristorante, cocktail bar e cantina: lo stesso indirizzo per l'aperitivo, la cena e l'ultimo bicchiere della sera.</p>
+      <blockquote>«Team al top, attento e premuroso. Ottimo pranzo, grazie.»</blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <span class="eyebrow">Il menù</span>
+    <h2 class="titolo">Cucina di <em>stagione</em>.</h2>
+    <p class="lead">Il menù cambia spesso: ecco cosa trovi in carta.</p>
+    <div class="schede" role="tablist" aria-label="Portate">
+      <button role="tab" aria-selected="true" data-t="antipasti">Antipasti</button>
+      <button role="tab" aria-selected="false" data-t="primi">Primi</button>
+      <button role="tab" aria-selected="false" data-t="secondi">Secondi</button>
+      <button role="tab" aria-selected="false" data-t="dolci">Dolci</button>
+    </div>
+    <div class="piatti attivo" id="antipasti" role="tabpanel">
+      <div class="piatto"><h4>Lomo di baccalà a bassa temperatura</h4><span class="prezzo">9 €</span><p>Salsa alla livornese, porro fritto ed estratto di prezzemolo</p></div>
+      <div class="piatto"><h4>Selezione di salumi e formaggi</h4><span class="prezzo">10 €</span><p>Con miele millefiori</p></div>
+      <div class="piatto"><h4>Panino con acciughe del Tirreno</h4><span class="prezzo">8 €</span><p>Acciughe della Norceria di Mare, burrata pugliese, paccasassi del Conero</p></div>
+      <div class="piatto"><h4>Falafel</h4><span class="prezzo">8 €</span><p>Hummus di ceci, salsa tzatziki ed erba cipollina</p></div>
+    </div>
+    <div class="piatti" id="primi" role="tabpanel">
+      <div class="piatto"><h4>Tortello ripieno di burrata</h4><span class="prezzo">12 €</span><p>Pomodoro Pachino giallo, acciughe del Tirreno e cipolla croccante</p></div>
+      <div class="piatto"><h4>Risotto Carnaroli ai funghi porcini</h4><span class="prezzo">13 €</span><p>Polvere di funghi, salsa di Parmigiano e zafferano</p></div>
+      <div class="piatto"><h4>Fregola sarda</h4><span class="prezzo">10 €</span><p>Crema di borlotti, cozze e bacon croccante</p></div>
+      <div class="piatto"><h4>Tagliatella al ragout di vitella</h4><span class="prezzo">11 €</span><p>Ricotta salata e pepe agli agrumi</p></div>
+    </div>
+    <div class="piatti" id="secondi" role="tabpanel">
+      <div class="piatto"><h4>Tentacoli di polpo croccanti</h4><span class="prezzo">18 €</span><p>Crema di patate alla curcuma, spinacio scottato e polvere di olive nere</p></div>
+      <div class="piatto"><h4>Tagliata di manzo alla griglia</h4><span class="prezzo">18 €</span><p>Radicchio di Chioggia al vino rosso, cavolo rosso e cipolla all'agro</p></div>
+      <div class="piatto"><h4>Trancio di branzino</h4><span class="prezzo">18 €</span><p>Pelle croccante, verdure all'isolana e salsa di pesce con ponzu</p></div>
+      <div class="piatto"><h4>Sorra di vitello a bassa temperatura</h4><span class="prezzo">16 €</span><p>Purea di cavolo bianco e salsa verde</p></div>
+    </div>
+    <div class="piatti" id="dolci" role="tabpanel">
+      <div class="piatto"><h4>Cheesecake alla fragola</h4><span class="prezzo">6 €</span><p>&nbsp;</p></div>
+      <div class="piatto"><h4>Mousse al cioccolato bianco</h4><span class="prezzo">6 €</span><p>Granella di torrone su cioccolata calda</p></div>
+      <div class="piatto"><h4>Mousse di mascarpone al mango</h4><span class="prezzo">5 €</span><p>Crumble di biscotti e kiwi</p></div>
+      <div class="piatto"><h4>Crêpes alla Nutella</h4><span class="prezzo">6 €</span><p>&nbsp;</p></div>
+    </div>
+    <p class="nota">Per allergie e intolleranze chiedi pure al personale: ti indichiamo gli allergeni di ogni piatto.</p>
+  </div>
+</section>
+
+<section class="cocktail" id="cocktail">
+  <div class="wrap griglia">
+    <div class="su">
+      <span class="eyebrow">Cocktail bar</span>
+      <h2 class="titolo">Aperitivo o <em>dopo cena</em>?</h2>
+      <p class="lead">Secco o dolce, amaro o fruttato: dai grandi classici alle miscele di oggi, preparati al bancone sotto la luce blu.</p>
+      <ul class="lista">
+        <li>Cosmopolitan <span>vodka, triple sec, mirtillo rosso</span></li>
+        <li>Mint Julep <span>bourbon, menta, zucchero</span></li>
+        <li>Spritz Hugo <span>sambuco, menta, bollicine</span></li>
+        <li>E tanti altri <span>chiedi al barman</span></li>
+      </ul>
+    </div>
+    <div class="duo su">
+      <img src="img/cosmopolitan-syrah.jpg" alt="Un Cosmopolitan con fragole sul bordo del bicchiere" loading="lazy">
+      <img src="img/mint-julep-syrah.jpg" alt="Un Mint Julep con menta fresca" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="cantina" id="cantina">
+  <div class="wrap griglia">
+    <img class="su" src="img/DSC9651.jpg" alt="Le bottiglie dietro il bancone illuminato" loading="lazy">
+    <div class="su">
+      <span class="eyebrow">Cantina</span>
+      <h2 class="titolo">Una bottiglia per ogni <em>occasione</em>.</h2>
+      <p class="lead">Dalle etichette più rinomate alle piccole cantine più promettenti. Si beve qui, al calice o in bottiglia, oppure si porta a casa.</p>
+      <div class="punti">
+        <div><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Vini al calice che cambiano spesso</span></div>
+        <div><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Bottiglie anche da asporto</span></div>
+        <div><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Consigli per abbinare il vino al piatto</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="serate" id="serate">
+  <div class="wrap">
+    <span class="eyebrow">Le serate</span>
+    <h2 class="titolo">Non solo cena.</h2>
+    <div class="griglia">
+      <div class="serata su"><span class="quando">Ogni sera</span><h3>Aperitivo</h3><p>Dalle 18, con stuzzichini e specialità toscane da accompagnare al bicchiere.</p></div>
+      <div class="serata su"><span class="quando">Giovedì d'estate</span><h3>Sesana Summer Park</h3><p>Aperitivo, buffet, sfilate e DJ set all'aperto.</p></div>
+      <div class="serata su"><span class="quando">Weekend</span><h3>DJ set e musica dal vivo</h3><p>Le date le annunciamo su Instagram: seguici per non perderle.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="galleria">
+  <div class="wrap">
+    <span class="eyebrow">Galleria</span>
+    <h2 class="titolo">Vieni a <em>trovarci</em>.</h2>
+    <div class="mosaico" id="mosaico">
+      <img src="img/cropped-DSC9677.jpg" alt="L'ingresso di Syrah la sera, con l'insegna Ristorante" loading="lazy">
+      <img src="img/menu-syrah-copia-1.jpg" alt="Un piatto del ristorante con un calice di vino" loading="lazy">
+      <img src="img/DSC9644.jpg" alt="La sala con la lunga tavolata" loading="lazy">
+      <img src="img/cosmopolitan-syrah.jpg" alt="Cosmopolitan" loading="lazy">
+      <img src="img/DSC2938.jpg" alt="Spumante nel secchiello" loading="lazy">
+      <img src="img/DSC9652.jpg" alt="Il bancone del bar" loading="lazy">
+      <img src="img/cantina-syrah.jpg" alt="Le bottiglie della cantina" loading="lazy">
+      <img src="img/DSC5050.jpg" alt="La sala del ristorante" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="info" id="dove">
+  <div class="wrap">
+    <span class="eyebrow">Dove siamo</span>
+    <h2 class="titolo">Ti aspettiamo in <em>viale IV Novembre</em>.</h2>
+    <div class="griglia">
+      <div class="scheda">
+        <h3>Orari</h3>
+        <ul class="orari" id="orari">
+          <li data-g="1"><span>Lunedì</span><span>18:00 – 02:00</span></li>
+          <li data-g="2"><span>Martedì</span><span>Chiuso</span></li>
+          <li data-g="3"><span>Mercoledì</span><span>18:00 – 02:00</span></li>
+          <li data-g="4"><span>Giovedì</span><span>18:00 – 02:00</span></li>
+          <li data-g="5"><span>Venerdì</span><span>18:00 – 02:00</span></li>
+          <li data-g="6"><span>Sabato</span><span>18:00 – 02:00</span></li>
+          <li data-g="0"><span>Domenica</span><span>18:00 – 02:00</span></li>
+        </ul>
+      </div>
+      <div class="scheda contatti">
+        <h3>Contatti</h3>
+        <a href="tel:+390572911308"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>0572 911308</a>
+        <a href="https://maps.google.com/?q=Syrah+Wine+Cafe+Viale+IV+Novembre+15A+Montecatini+Terme" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Viale IV Novembre 15/A, Montecatini Terme</a>
+        <a href="https://www.instagram.com/syrah_montecatini/" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@syrah_montecatini</a>
+        <a href="https://www.facebook.com/syrah.montecatini/" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Syrah Montecatini</a>
+      </div>
+      <div class="mappa">
+        <iframe title="Mappa: Syrah Wine Café" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Viale%20IV%20Novembre%2015A%2C%20Montecatini%20Terme&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="anno">2026</span> Syrah Wine Café · Viale IV Novembre 15/A, 51016 Montecatini Terme (PT)</span>
+    <span>Ristorante · Cocktail bar · Cantina</span>
+  </div>
+  <div class="wrap"><span class="anteprima">Anteprima preparata per Syrah Wine Café</span></div>
+</footer>
+
+<nav class="barra" aria-label="Azioni rapide">
+  <a class="primo" href="tel:+390572911308"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Prenota</a>
+  <a href="#menu"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>Menù</a>
+  <a href="https://maps.google.com/?q=Syrah+Wine+Cafe+Viale+IV+Novembre+15A+Montecatini+Terme" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Indicazioni</a>
+</nav>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Foto ingrandita"><img alt=""></div>
+
+<script>
+const nav=document.getElementById('nav');
+const piena=()=>nav.classList.toggle('piena',scrollY>40);piena();addEventListener('scroll',piena,{passive:true});
+document.querySelectorAll('.schede button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.schede button').forEach(x=>x.setAttribute('aria-selected',x===b));
+  document.querySelectorAll('.piatti').forEach(p=>p.classList.toggle('attivo',p.id===b.dataset.t));
+}));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visto');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.su').forEach(el=>io.observe(el));
+const lb=document.getElementById('lightbox');
+document.querySelectorAll('#mosaico img').forEach(i=>i.addEventListener('click',()=>{lb.querySelector('img').src=i.src;lb.querySelector('img').alt=i.alt;lb.classList.add('aperto')}));
+lb.addEventListener('click',()=>lb.classList.remove('aperto'));
+// Orari: oggi evidenziato e "aperto ora"
+const d=new Date(),g=d.getDay(),ora=d.getHours()+d.getMinutes()/60;
+document.querySelectorAll('#orari li').forEach(li=>li.classList.toggle('oggi',+li.dataset.g===g));
+const ieri=(g+6)%7, apertoOra=(g!==2&&ora>=18)||(ieri!==2&&ora<2);
+const a=document.getElementById('adesso');
+a.querySelector('span').textContent=apertoOra?'Aperti ora · fino alle 02:00':(g===2?'Oggi chiuso · domani dalle 18:00':'Oggi aperti dalle 18:00');
+a.classList.toggle('chiuso',!apertoOra);
+document.getElementById('anno').textContent=d.getFullYear();
+</script>
+</body>
+</html>
