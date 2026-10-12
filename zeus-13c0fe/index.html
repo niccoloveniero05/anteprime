@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Zeus Sigarette Elettroniche · Toscana</title>
+<meta name="description" content="Zeus, la catena di negozi di sigarette elettroniche in Toscana: liquidi, kit, box e ricambi. Compra online con consegna in 1-2 giorni o vieni in uno dei nostri negozi.">
+<meta name="theme-color" content="#06223A">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--blu:#0E89D5;--blu-scuro:#0A6DAE;--notte:#06223A;--notte-2:#0B3354;--cielo:#E8F4FC;--fondo:#F5F8FB;--testo:#0F1E2C;--muto:#5A6B7B;--bordo:rgba(15,30,44,.09)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--testo);background:var(--fondo);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{width:min(1240px,100% - 32px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:0 22px;border-radius:14px;font-weight:700;font-size:15.5px;transition:transform .15s ease,background .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-blu{background:var(--blu);color:#fff}
+.btn-blu:hover{background:var(--blu-scuro)}
+.btn-chiaro{background:#fff;color:var(--notte)}
+.i{width:19px;height:19px;flex:none}
+h2.titolo{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.025em;line-height:1.1}
+.sez-testa{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:22px}
+.sez-testa a{color:var(--blu);font-weight:700;font-size:15px;white-space:nowrap}
+
+/* Fascia avvisi */
+.fascia{background:var(--notte);color:rgba(255,255,255,.88);font-size:13px;font-weight:600}
+.fascia .wrap{display:flex;justify-content:center;gap:28px;padding:9px 0;overflow:hidden;white-space:nowrap}
+.fascia span:not(:first-child){display:none}
+
+/* Testata */
+.testa{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--bordo)}
+.testa .wrap{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;height:66px}
+.logo img{height:38px;width:auto}
+.cerca{display:flex;align-items:center;gap:10px;background:var(--fondo);border:1px solid var(--bordo);border-radius:12px;padding:0 14px;height:44px;min-width:0}
+.cerca input{border:0;background:none;font:inherit;font-size:15px;width:100%;outline:none;color:var(--testo)}
+.icone{display:flex;gap:4px}
+.icone a{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;position:relative}
+.icone a:hover{background:var(--fondo)}
+.icone .num{position:absolute;top:5px;right:4px;background:var(--blu);color:#fff;font-size:10.5px;font-weight:800;min-width:17px;height:17px;border-radius:9px;display:grid;place-items:center}
+.menu-cat{border-top:1px solid var(--bordo)}
+.menu-cat .wrap{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:8px 0}
+.menu-cat .wrap::-webkit-scrollbar{display:none}
+.menu-cat a{flex:none;font-size:14px;font-weight:600;padding:8px 13px;border-radius:10px;color:var(--muto)}
+.menu-cat a:hover,.menu-cat a.attivo{background:var(--cielo);color:var(--blu-scuro)}
+
+/* Copertina */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 85% 10%,#1597E6 0%,var(--notte-2) 45%,var(--notte) 100%);color:#fff}
+.hero::before{content:"";position:absolute;width:620px;height:620px;right:-180px;top:-120px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.18),transparent 60%);filter:blur(10px)}
+.hero .wrap{position:relative;display:grid;gap:30px;padding:54px 0 60px}
+.etichetta{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:6px 13px;font-size:13px;font-weight:700}
+.etichetta i{width:7px;height:7px;border-radius:50%;background:#5BE38E}
+.hero h1{font-size:clamp(38px,7vw,74px);font-weight:800;letter-spacing:-.035em;line-height:1;margin:18px 0 16px;max-width:13ch}
+.hero h1 em{font-style:normal;color:#7CC8F5}
+.hero p{font-size:18px;color:rgba(255,255,255,.82);max-width:44ch;margin-bottom:26px}
+.azioni{display:flex;flex-wrap:wrap;gap:10px}
+.vetrina{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.vetrina .card{background:rgba(255,255,255,.96);border-radius:20px;padding:14px;color:var(--testo);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.vetrina .card img{aspect-ratio:1;object-fit:contain;width:100%;border-radius:12px;background:#fff}
+.vetrina .card b{display:block;font-size:13.5px;margin-top:8px;line-height:1.25}
+.vetrina .card span{font-weight:800;color:var(--blu-scuro)}
+.vetrina .card:nth-child(2){transform:translateY(26px)}
+
+/* Garanzie */
+.garanzie{background:#fff;border-bottom:1px solid var(--bordo)}
+.garanzie .wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:22px 0}
+.garanzia{display:flex;gap:12px;align-items:center}
+.garanzia svg{width:34px;height:34px;padding:7px;border-radius:10px;background:var(--cielo);color:var(--blu-scuro);flex:none}
+.garanzia b{display:block;font-size:14.5px}
+.garanzia span{font-size:13px;color:var(--muto)}
+
+section{padding:56px 0}
+/* Categorie */
+.categorie .griglia{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cat{position:relative;border-radius:20px;overflow:hidden;background:#fff;border:1px solid var(--bordo);padding:18px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s ease,box-shadow .2s ease}
+.cat:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(6,34,58,.35)}
+.cat img{position:absolute;right:-10px;bottom:-10px;width:56%;aspect-ratio:1;object-fit:contain;mix-blend-mode:multiply}
+.cat b{font-size:17px;font-weight:800;position:relative}
+.cat span{font-size:13px;color:var(--muto);position:relative}
+
+/* Prodotti */
+.prodotti .riga-p{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.prod{background:#fff;border:1px solid var(--bordo);border-radius:18px;padding:12px;display:flex;flex-direction:column;transition:box-shadow .2s ease}
+.prod:hover{box-shadow:0 20px 40px -26px rgba(6,34,58,.4)}
+.prod .foto{position:relative;background:#fff;border-radius:12px;overflow:hidden}
+.prod .foto img{aspect-ratio:1;object-fit:contain;width:100%;transition:transform .4s ease}
+.prod:hover .foto img{transform:scale(1.05)}
+.prod .marca{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--blu-scuro);margin-top:10px}
+.prod h3{font-size:14.5px;font-weight:700;line-height:1.3;margin:3px 0 10px;flex:1;text-transform:capitalize}
+.prod .sotto{display:flex;align-items:center;justify-content:space-between}
+.prod .prezzo{font-size:18px;font-weight:800}
+.prod .agg{width:40px;height:40px;border-radius:12px;background:var(--notte);color:#fff;display:grid;place-items:center}
+.prod .agg:hover{background:var(--blu)}
+.tag{position:absolute;top:8px;left:8px;background:var(--notte);color:#fff;font-size:11px;font-weight:800;padding:4px 8px;border-radius:8px}
+
+/* Inizia */
+.inizia{background:var(--notte);color:#fff;border-radius:28px;margin:0 16px;padding:40px 22px;display:grid;gap:26px}
+.inizia p{color:rgba(255,255,255,.78);margin:12px 0 22px;max-width:46ch}
+.passi{display:grid;gap:10px}
+.passo{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:16px}
+.passo b.n{width:32px;height:32px;border-radius:10px;background:var(--blu);display:grid;place-items:center;flex:none}
+.passo strong{display:block}
+.passo span{font-size:14px;color:rgba(255,255,255,.7)}
+
+/* Negozi */
+.negozi .lista{display:grid;gap:10px}
+.negozio{background:#fff;border:1px solid var(--bordo);border-radius:16px;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.negozio b{display:block;font-size:16px}
+.negozio span{font-size:14px;color:var(--muto)}
+.negozio .tel{flex:none;min-height:42px;padding:0 14px;border-radius:12px;background:var(--cielo);color:var(--blu-scuro);font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:7px}
+.negozio.vicino{border-color:var(--blu);box-shadow:0 0 0 3px rgba(14,137,213,.12)}
+.negozio.vicino small{display:inline-block;margin-left:8px;font-size:11px;font-weight:800;color:#fff;background:var(--blu);padding:2px 7px;border-radius:6px;vertical-align:2px}
+.filtri-n{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.filtri-n button{padding:8px 14px;border-radius:10px;background:#fff;border:1px solid var(--bordo);font-weight:700;font-size:14px;color:var(--muto)}
+.filtri-n button[aria-pressed="true"]{background:var(--notte);color:#fff;border-color:var(--notte)}
+
+/* WhatsApp */
+.wa{display:flex;align-items:center;gap:16px;background:linear-gradient(135deg,#E8FBEF,#fff);border:1px solid #CDEFD9;border-radius:22px;padding:22px}
+.wa svg{width:48px;height:48px;flex:none;color:#1DA851}
+.wa b{display:block;font-size:18px}
+.wa span{color:var(--muto);font-size:14.5px}
+
+footer{background:var(--notte);color:rgba(255,255,255,.75);padding:44px 0 120px;font-size:14px}
+footer .wrap{display:grid;gap:26px}
+footer img{height:40px;width:auto}
+footer h4{color:#fff;font-size:14px;margin-bottom:10px}
+footer li{list-style:none;margin:6px 0}
+.legale{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:12.5px;color:rgba(255,255,255,.55)}
+.prova{display:inline-block;margin-top:8px;background:rgba(255,255,255,.1);padding:5px 11px;border-radius:999px}
+
+/* Barra fissa sul telefono */
+.barra{position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:45;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:rgba(6,34,58,.94);backdrop-filter:blur(16px);border-radius:20px;padding:6px;box-shadow:0 18px 40px -12px rgba(0,0,0,.5)}
+.barra a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:14px;color:#fff;font-size:12px;font-weight:700}
+.barra a.primo{background:var(--blu)}
+
+/* Età */
+.eta{position:fixed;inset:0;z-index:100;background:rgba(6,34,58,.75);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:20px}
+.eta.aperta{display:flex}
+.eta div{background:#fff;border-radius:24px;padding:30px 24px;max-width:400px;text-align:center}
+.eta img{height:44px;margin:0 auto 16px}
+.eta h3{font-size:21px;font-weight:800}
+.eta p{color:var(--muto);margin:8px 0 20px;font-size:15px}
+.eta .azioni{justify-content:center}
+
+.mosso .riga{display:block;overflow:hidden;padding-bottom:.08em}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+
+@media (min-width:760px){
+  .fascia span:not(:first-child){display:inline}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center;padding:80px 0 90px}
+  .garanzie .wrap{grid-template-columns:repeat(4,1fr)}
+  .categorie .griglia{grid-template-columns:repeat(3,1fr)}
+  .prodotti .riga-p{grid-template-columns:repeat(4,1fr);gap:16px}
+  .inizia{margin:0 auto;width:min(1240px,100% - 32px);grid-template-columns:1fr 1fr;padding:56px;align-items:center}
+  .negozi .lista{grid-template-columns:repeat(2,1fr)}
+  footer .wrap{grid-template-columns:1.4fr 1fr 1fr 1fr}
+  footer .legale{grid-column:1/-1}
+}
+@media (min-width:1000px){
+  .categorie .griglia{grid-template-columns:repeat(6,1fr)}
+  .barra{display:none}
+  footer{padding-bottom:44px}
+}
+@media (max-width:600px){
+  .testa .wrap{grid-template-columns:auto 1fr;gap:10px}
+  .cerca{grid-column:1/-1;grid-row:2;margin-bottom:10px}
+  .testa .wrap{height:auto;padding-top:10px}
+  .logo img{height:32px}
+  .icone{justify-self:end}
+}
+</style>
+</head>
+<body>
+
+<div class="eta" id="eta" role="dialog" aria-modal="true" aria-labelledby="eta-t">
+  <div>
+    <img src="img/logo.png" alt="Zeus Sigarette Elettroniche">
+    <h3 id="eta-t">Hai almeno 18 anni?</h3>
+    <p>Il sito vende prodotti per sigarette elettroniche, anche con nicotina, riservati ai maggiorenni.</p>
+    <div class="azioni"><button class="btn btn-blu" id="eta-si">Sì, entro</button><a class="btn" style="background:var(--fondo)" href="https://www.google.it">No</a></div>
+  </div>
+</div>
+
+<div class="fascia"><div class="wrap">
+  <span>🚚 Consegna in 1-2 giorni lavorativi</span><span>💶 Pagamento anche alla consegna</span><span>🏬 10 negozi in Toscana</span>
+</div></div>
+
+<header class="testa">
+  <div class="wrap">
+    <a href="#" class="logo"><img src="img/logo.png" alt="Zeus Sigarette Elettroniche"></a>
+    <label class="cerca">
+      <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--muto)"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="search" placeholder="Cerca liquidi, kit, marche…" aria-label="Cerca nel negozio" id="cerca">
+    </label>
+    <div class="icone">
+      <a href="#negozi" title="Negozi"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
+      <a href="https://zeusigarettelettroniche.it/il-mio-account" title="Il mio account"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
+      <a href="https://zeusigarettelettroniche.it/carrello?action=show" title="Carrello"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><b class="num">0</b></a>
+    </div>
+  </div>
+  <nav class="menu-cat"><div class="wrap" id="menu-cat"></div></nav>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="etichetta"><i></i>10 negozi aperti in Toscana</span>
+      <h1>Il tuo vape, <em>a casa domani</em>.</h1>
+      <p>La più grande catena di negozi di sigarette elettroniche in Toscana, anche online: liquidi, kit e ricambi delle migliori marche, consegnati in 1-2 giorni.</p>
+      <div class="azioni">
+        <a class="btn btn-blu" href="#novita">Scopri i prodotti</a>
+        <a class="btn btn-chiaro" href="#negozi">Trova il negozio</a>
+      </div>
+    </div>
+    <div class="vetrina" id="vetrina"></div>
+  </div>
+</section>
+
+<div class="garanzie"><div class="wrap">
+  <div class="garanzia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><div><b>Consegna rapida</b><span>1-2 giorni lavorativi</span></div></div>
+  <div class="garanzia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><div><b>Paghi come vuoi</b><span>Carta, bonifico o alla consegna</span></div></div>
+  <div class="garanzia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg><div><b>Prodotti a norma</b><span>Certificati per Italia ed Europa</span></div></div>
+  <div class="garanzia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg><div><b>Ritiro in negozio</b><span>In 10 punti vendita</span></div></div>
+</div></div>
+
+<section class="categorie" id="categorie">
+  <div class="wrap">
+    <div class="sez-testa"><h2 class="titolo">Cosa cerchi?</h2></div>
+    <div class="griglia" id="griglia-cat"></div>
+  </div>
+</section>
+
+<section class="prodotti" id="novita" style="padding-top:0">
+  <div class="wrap">
+    <div class="sez-testa"><h2 class="titolo">I più scelti in negozio</h2><a href="https://zeusigarettelettroniche.it/">Vedi tutti →</a></div>
+    <div class="riga-p" id="liquidi"></div>
+  </div>
+</section>
+
+<div class="inizia">
+  <div>
+    <h2 class="titolo">Vuoi smettere con le sigarette?</h2>
+    <p>Ti aiutiamo a scegliere il primo kit giusto per te, senza complicazioni. Online o in negozio, con un consiglio vero.</p>
+    <a class="btn btn-blu" href="#kit">Guarda i kit per iniziare</a>
+  </div>
+  <div class="passi">
+    <div class="passo"><b class="n">1</b><div><strong>Scegli il kit</strong><span>Semplice, pronto all'uso, ricaricabile.</span></div></div>
+    <div class="passo"><b class="n">2</b><div><strong>Scegli il gusto</strong><span>Tabaccosi, fruttati, freschi o cremosi.</span></div></div>
+    <div class="passo"><b class="n">3</b><div><strong>Scegli la nicotina</strong><span>Ti consigliamo la quantità giusta, anche a zero.</span></div></div>
+  </div>
+</div>
+
+<section class="prodotti" id="kit">
+  <div class="wrap">
+    <div class="sez-testa"><h2 class="titolo">Kit e box</h2><a href="https://zeusigarettelettroniche.it/">Vedi tutti →</a></div>
+    <div class="riga-p" id="hardware"></div>
+  </div>
+</section>
+
+<section class="negozi" id="negozi" style="padding-top:10px">
+  <div class="wrap">
+    <div class="sez-testa"><h2 class="titolo">I nostri negozi</h2></div>
+    <div class="filtri-n" id="filtri-n"></div>
+    <div class="lista" id="lista-negozi"></div>
+    <div class="wa" style="margin-top:22px">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.1.1.6-.1 1.2z"/></svg>
+      <div style="flex:1"><b>Hai un dubbio? Scrivici</b><span>WhatsApp 388 155 1010 · dal lunedì al sabato, 9-19</span></div>
+      <a class="btn btn-blu" style="background:#1DA851" href="https://wa.me/393881551010">Scrivi</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><img src="img/logo-bianco.png" alt="Zeus Sigarette Elettroniche"><p style="margin-top:14px;max-width:36ch">La più grande catena di negozi di sigarette elettroniche in Toscana, dal negozio a casa tua.</p></div>
+    <div><h4>Negozio</h4><ul><li>Liquidi</li><li>Kit e starter kit</li><li>Box e atomizzatori</li><li>Ricambi e accessori</li></ul></div>
+    <div><h4>Aiuto</h4><ul><li>Spedizioni e consegne</li><li>Pagamenti</li><li>Resi</li><li>clienti@zeusvape.it</li></ul></div>
+    <div><h4>Negozi</h4><ul><li>Pisa · Cascina · Pontedera</li><li>Montecatini · Pistoia</li><li>Livorno</li></ul></div>
+    <div class="legale">Gudeamus Igitur S.r.l. · P.IVA 01905770507 · Vendita riservata ai maggiorenni. I prodotti contenenti nicotina possono creare dipendenza.<br><span class="prova">Anteprima del nuovo sito preparata per Zeus Sigarette Elettroniche · i prodotti portano al negozio online di oggi</span></div>
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Azioni rapide">
+  <a class="primo" href="#novita"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>Shop</a>
+  <a href="#negozi"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Negozi</a>
+  <a href="https://wa.me/393881551010"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>WhatsApp</a>
+</nav>
+
+<script>
+const S='https://zeusigarettelettroniche.it/';
+const P=[
+ ['VUSE GO BOX 3000 Passionfruit Ice 0mg','Vuse','16,00','vuse-go-box-3000-passionfruit-ice-0mg.jpg','usa-e-getta/1833-vuse-go-box-3000-passionfruit-ice-0mg.html','h'],
+ ['Vilter Max','Aspire','25,00','vilter-max.jpg','starter-kit/3803-vilter-max.html','h'],
+ ['Zenith Lumia Kit','Innokin','34,00','zenith-lumia-kit.jpg','starter-kit/3877-zenith-lumia-kit.html','h'],
+ ['Moo Juice Arachidi e Caramello 20+40','Galactika','18,50','moo-juice-arachidi-e-caramello-2040.jpg','aromi-2040/3894-moo-juice-arachidi-e-caramello-2040.html','l'],
+ ['Watermelon Ice Maxi Flavor 20+40','Suprem-e','18,50','watermelon-ice-maxi-flavor-2040.jpg','aromi-2040/3907-watermelon-ice-maxi-flavor-2040.html','l'],
+ ['Duke Riserva Rum 10+50','Royal Blend','14,00','duke-riserva-rum-1050.jpg','aromi-1050/3922-duke-riserva-rum-1050.html','l'],
+ ['Green Blast XXL 20+40','Dreamods','19,50','green-blast-xxl-2040.jpg','aromi-2040/3126-green-blast-xxl-2040.html','l'],
+ ['Too Puft Originale 20+40','Dreamods','21,50','too-puft-originale--galactika-2040.jpg','aromi-2040/3410-too-puft-originale--galactika-2040.html','l'],
+ ['Tropic Fruity 20+40','TNT Vape','18,50','tropic-fruity-2040.jpg','aromi-2040/3416-tropic-fruity-2040.html','l'],
+ ['Uncredible 20+40','Cromavape','18,50','uncredible-2040.jpg','aromi-2040/3423-uncredible-2040.html','l'],
+ ['Virginia Il Distillificio 20+40','Suprem-e','19,50','virginia-il-distillificio2040.jpg','aromi-2040/3450-virginia-il-distillificio2040.html','l'],
+ ['White Burley 20+40','La Tabaccheria','20,50','white-burley-2040.jpg','aromi-2040/3461-white-burley-2040.html','l'],
+ ['Gzeno S','Eleaf','32,00','gzeno-s.jpg','atomizzatori-con-resistenza/320-gzeno-s.html','h'],
+ ['GTX One Pro Box Mod','Vaporesso','35,00','gtx-one-pro-box-mod.jpg','box-elettroniche/770-gtx-one-pro-box-mod.html','h'],
+ ['Kiwi 2 Starter Kit','Kiwi Vapor','60,00','kiwi-2-starter-kit.jpg','pod-mod/1606-kiwi-2-starter-kit.html','h'],
+ ['Kit Zelos M80','Aspire','75,00','kit-zelos-m80.jpg','kit-elettroniche/1781-kit-zelos-m80.html','h'],
+ ['Coolfire Z80 Nex Kit','Innokin','75,00','coolfire-z80-nex-kit.jpg','kit-elettroniche/1782-coolfire-z80-nex-kit.html','h'],
+ ['Nord 6','SMOK','37,00','nord-6.jpg','starter-kit/3974-nord-6.html','h'],
+];
+const card=(p,i)=>`<a class="prod" href="${S+p[4]}"><div class="foto">${i<2?'<span class="tag">Novità</span>':''}<img src="img/${p[3]}" alt="${p[0]}" loading="lazy"></div><div class="marca">${p[1]}</div><h3>${p[0]}</h3><div class="sotto"><span class="prezzo">${p[2]} €</span><span class="agg" aria-hidden="true"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></div></a>`;
+document.getElementById('liquidi').innerHTML=P.filter(p=>p[5]==='l').slice(0,8).map(card).join('');
+document.getElementById('hardware').innerHTML=P.filter(p=>p[5]==='h').slice(0,8).map(card).join('');
+const V=[P[16],P[3]];
+document.getElementById('vetrina').innerHTML=V.map(p=>`<a class="card" href="${S+p[4]}"><img src="img/${p[3]}" alt="${p[0]}"><b>${p[0]}</b><span>${p[2]} €</span></a>`).join('');
+const C=[['Liquidi','Oltre 1000 gusti','moo-juice-arachidi-e-caramello-2040.jpg','liquidi'],['Starter kit','Per iniziare','zenith-lumia-kit.jpg','starter kit'],['Box','Per esperti','gtx-one-pro-box-mod.jpg','box'],['Pod mod','Piccole e pratiche','kiwi-2-starter-kit.jpg','pod'],['Usa e getta','Pronte all\'uso','vuse-go-box-3000-passionfruit-ice-0mg.jpg','usa e getta'],['Atomizzatori','E resistenze','gzeno-s.jpg','atomizzatori']];
+document.getElementById('griglia-cat').innerHTML=C.map(c=>`<a class="cat" href="${S}ricerca?s=${encodeURIComponent(c[3])}"><b>${c[0]}</b><span>${c[1]}</span><img src="img/${c[2]}" alt="" loading="lazy"></a>`).join('');
+document.getElementById('menu-cat').innerHTML=['Novità','Liquidi','Aromi','Starter kit','Box','Atomizzatori','Pod mod','Usa e getta','Ricambi','Accessori','Marche'].map((m,i)=>`<a class="${i===0?'attivo':''}" href="${S}ricerca?s=${encodeURIComponent(m)}">${m}</a>`).join('');
+const N=[['Montecatini Terme','Via Mezzomiglio 39/B','0572263322','Montecatini'],['Pistoia','Via Fermi 86/B','05731482363','Pistoia'],['Pisa centro','Via Vittorio Veneto 23','0503198364','Pisa'],['Pisa centro storico','Corso Italia 126','0503199423','Pisa'],['Pisa Cisanello','Via Bargagna 58','0503140854','Pisa'],['Pisa Porta a Mare','Via Livornese 22','0503197143','Pisa'],['Pisa Aeroporto','Terminal partenze','0508058111','Pisa'],['Cascina','Via Tosco Romagnola 283','050711414','Pisa'],['Pontedera','Piazza della Concordia 5','0587934779','Pisa'],['Livorno','C.C. Parco Levante','0586932151','Livorno']];
+const fmt=t=>t.replace(/^(0\d{2,3})(\d+)/,'$1 $2');
+const disegna=f=>{document.getElementById('lista-negozi').innerHTML=N.filter(n=>f==='Tutti'||n[3]===f).map((n,i)=>`<div class="negozio ${n[3]==='Montecatini'?'vicino':''}"><div><b>${n[0]}${n[3]==='Montecatini'?'<small>Vicino a te</small>':''}</b><span>${n[1]}</span></div><a class="tel" href="tel:${n[2]}"><svg class="i" style="width:16px;height:16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>${fmt(n[2])}</a></div>`).join('');document.querySelectorAll('#filtri-n button').forEach(b=>b.setAttribute('aria-pressed',b.textContent===f))};
+document.getElementById('filtri-n').innerHTML=['Tutti','Pisa','Montecatini','Pistoia','Livorno'].map(f=>`<button aria-pressed="false">${f}</button>`).join('');
+document.querySelectorAll('#filtri-n button').forEach(b=>b.addEventListener('click',()=>disegna(b.textContent)));disegna('Tutti');
+document.getElementById('cerca').addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.value.trim())location.href=S+'ricerca?s='+encodeURIComponent(e.target.value.trim())});
+// Età: una volta sola per visitatore
+const eta=document.getElementById('eta');let ok=false;try{ok=localStorage.getItem('zeus-18')==='si'}catch(e){}
+if(!ok)eta.classList.add('aperta');
+document.getElementById('eta-si').addEventListener('click',()=>{eta.classList.remove('aperta');try{localStorage.setItem('zeus-18','si')}catch(e){}});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" defer></script>
+<script>
+addEventListener('DOMContentLoaded',()=>{
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!window.gsap||!window.ScrollTrigger)return;
+  gsap.registerPlugin(ScrollTrigger);
+  if(window.Lenis){
+    const lenis=new Lenis({lerp:.1});
+    lenis.on('scroll',ScrollTrigger.update);
+    gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+      const h=a.getAttribute('href');if(h==='#'){e.preventDefault();lenis.scrollTo(0);return}
+      const t=document.querySelector(h);if(!t)return;e.preventDefault();lenis.scrollTo(t,{offset:-120});
+    }));
+  }
+  const tl=gsap.timeline({defaults:{ease:'power3.out'}});
+  tl.from('.hero .etichetta,.hero h1,.hero p,.hero .azioni',{y:26,opacity:0,duration:.9,stagger:.08})
+    .from('.vetrina .card',{y:60,opacity:0,rotate:3,duration:1,stagger:.12},'-=.6');
+  gsap.to('.vetrina .card:nth-child(1)',{y:-30,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.to('.vetrina .card:nth-child(2)',{y:-70,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.set('.cat,.prod,.negozio,.passo',{y:34,opacity:0});
+  ScrollTrigger.batch('.cat,.prod,.negozio,.passo',{start:'top 95%',once:true,onEnter:b=>gsap.to(b,{y:0,opacity:1,duration:.75,ease:'power3.out',stagger:.06,overwrite:true})});
+  addEventListener('load',()=>ScrollTrigger.refresh());
+});
+</script>
+</body>
+</html>
