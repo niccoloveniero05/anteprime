@@ -6,10 +6,9 @@
 <title>Veniello Studio · Siti web, Google, Instagram e video a Montecatini Terme</title>
 <meta name="description" content="Siti su misura, scheda Google, Instagram, video e gestione social per hotel, bar, ristoranti, saloni e negozi della Valdinievole. Prezzi chiari, anteprima gratis.">
 <link rel="canonical" href="https://www.veniellostudio.it/">
-<meta name="theme-color" content="#141210">
+<meta name="theme-color" content="#F6F2EC">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Veniello Studio">
@@ -21,12 +20,9 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Veniello Studio, Montecatini Terme">
 <meta name="twitter:card" content="summary_large_image">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,572 +32,491 @@
   "description": "Siti web, scheda Google, Instagram, video e gestione social per le attività della Valdinievole.",
   "url": "https://www.veniellostudio.it/",
   "image": "https://www.veniellostudio.it/img/og.jpg",
-  "logo": "https://www.veniellostudio.it/img/favicon.svg",
+  "logo": "https://www.veniellostudio.it/img/apple-touch-icon.png",
   "telephone": "+39 327 333 1949",
   "email": "giuseppefusciello90@gmail.com",
   "priceRange": "59 € - 149 €",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Montecatini Terme",
-    "addressRegion": "PT",
-    "postalCode": "51016",
-    "addressCountry": "IT"
-  },
-  "areaServed": [
-    { "@type": "City", "name": "Montecatini Terme" },
-    { "@type": "Place", "name": "Valdinievole" }
-  ],
-  "founder": [
-    { "@type": "Person", "name": "Niccolò Veniero" },
-    { "@type": "Person", "name": "Giuseppe Fusciello" }
-  ],
+  "address": {"@type": "PostalAddress", "addressLocality": "Montecatini Terme", "addressRegion": "PT", "postalCode": "51016", "addressCountry": "IT"},
+  "areaServed": [{"@type": "City", "name": "Montecatini Terme"}, {"@type": "Place", "name": "Valdinievole"}],
+  "founder": [{"@type": "Person", "name": "Niccolò Veniero"}, {"@type": "Person", "name": "Giuseppe Fusciello"}],
   "makesOffer": [
-    { "@type": "Offer", "name": "Sito + Google + Instagram", "price": "119", "priceCurrency": "EUR" },
-    { "@type": "Offer", "name": "Google + Instagram", "price": "59", "priceCurrency": "EUR" },
-    { "@type": "Offer", "name": "Gestione social Base", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "79", "priceCurrency": "EUR", "unitCode": "MON" } },
-    { "@type": "Offer", "name": "Gestione social Plus", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "149", "priceCurrency": "EUR", "unitCode": "MON" } }
+    {"@type": "Offer", "name": "Sito + Google + Instagram", "price": "119", "priceCurrency": "EUR"},
+    {"@type": "Offer", "name": "Google + Instagram", "price": "59", "priceCurrency": "EUR"},
+    {"@type": "Offer", "name": "Gestione social Base", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "79", "priceCurrency": "EUR", "unitCode": "MON"}},
+    {"@type": "Offer", "name": "Gestione social Plus", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "149", "priceCurrency": "EUR", "unitCode": "MON"}}
   ]
 }
 </script>
-
-<script>
-  // Le animazioni partono solo se c'è JavaScript e la persona non ha chiesto di ridurre il movimento.
-  document.documentElement.classList.add('js');
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.documentElement.classList.add('anim');
-  }
-</script>
-
 <style>
 :root{
-  --nero:#141210;
-  --nero-2:#1B1815;
-  --nero-3:#0E0D0B;
-  --crema:#F3EDE4;
-  --crema-2:#EBE3D7;
-  --carta:#FAF6F0;
-  --oro:#D9A86C;
-  --oro-scuro:#8A6A43;
-  --oro-testo:#7A5C38;
-  --grigio:#B9AFA2;
-  --inchiostro-muto:#5E554B;
-  --linea-chiara:rgba(20,18,16,.12);
-  --linea-scura:rgba(243,237,228,.12);
-  --serif:"Instrument Serif", "Times New Roman", serif;
-  --sans:Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --gutter:24px;
-  --max:1200px;
-  --sezione:136px;
-  --nav:64px;
+  --carta:#F6F2EC;
+  --bianco:#FFFFFF;
+  --sabbia:#EDE6DC;
+  --inchiostro:#15171C;
+  --grigio:#5B5E66;
+  --tegola:#D9502A;
+  --tegola-scura:#B83E1D;
+  --tegola-chiara:#FBE3D9;
+  --verde:#1F8A50;
+  --linea:rgba(21,23,28,.12);
+  --titolo:"Bricolage Grotesque",system-ui,sans-serif;
+  --corpo:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --lato:clamp(18px,5vw,64px);
+  --curva:cubic-bezier(.22,.8,.24,1);
+  --ombra:0 1px 2px rgba(21,23,28,.06),0 18px 40px -14px rgba(21,23,28,.22);
 }
 *,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
-@media (prefers-reduced-motion: no-preference){ html:not(.lenis){scroll-behavior:smooth} }
-body{
-  margin:0;background:var(--nero);color:var(--crema);
-  font-family:var(--sans);font-size:17px;line-height:1.5;letter-spacing:-.006em;
-  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
-  overflow-x:hidden;
-}
-img,svg,video{display:block;max-width:100%}
+html.lenis,html.lenis body{height:auto}
+html{scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--carta);color:var(--inchiostro);font:400 1.06rem/1.6 var(--corpo);-webkit-font-smoothing:antialiased;overflow-x:clip;padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+img,svg{display:block;max-width:100%}
 a{color:inherit}
 p{margin:0}
-h1,h2,h3{margin:0;font-weight:400}
-ul{margin:0;padding:0;list-style:none}
-section[id]{scroll-margin-top:var(--nav)}
-::selection{background:var(--oro);color:var(--nero)}
-:focus-visible{outline:2px solid var(--oro);outline-offset:3px;border-radius:4px}
-.chiara :focus-visible{outline-color:var(--oro-scuro)}
-
-.salta{position:absolute;left:12px;top:-60px;z-index:100;background:var(--oro);color:var(--nero);padding:12px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+ul,ol{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--tegola);outline-offset:3px;border-radius:4px}
+.salta{position:absolute;left:12px;top:-60px;z-index:100;background:var(--inchiostro);color:#fff;padding:12px 16px;border-radius:8px;text-decoration:none;font-weight:600}
 .salta:focus{top:12px}
-
-.wrap{width:100%;max-width:calc(var(--max) + var(--gutter)*2);margin:0 auto;padding:0 var(--gutter)}
-
-/* Testi */
-.occhiello{font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--grigio);display:flex;align-items:center;gap:14px}
-.occhiello::before{content:"";width:28px;height:1px;background:var(--oro);flex:none}
-.chiara .occhiello{color:var(--oro-testo)}
-.chiara .occhiello::before{background:var(--oro-scuro)}
-.titolo{text-wrap:balance;font-family:var(--serif);font-size:clamp(40px,6vw,76px);line-height:1.02;letter-spacing:-.015em;margin-top:24px}
-.titolo em{font-style:italic;color:var(--oro);display:inline-block}
-.chiara .titolo em{color:var(--oro-scuro)}
-.lead{font-size:clamp(18px,1.6vw,21px);line-height:1.5;color:var(--grigio);max-width:34em;margin-top:24px}
-.chiara .lead{color:var(--inchiostro-muto)}
-
-/* Pulsanti */
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  min-height:52px;padding:0 26px;border-radius:999px;
-  font:500 16px/1 var(--sans);letter-spacing:-.005em;text-decoration:none;white-space:nowrap;
-  transition:transform .2s ease, background-color .25s ease, color .25s ease, border-color .25s ease;
-}
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--lato)}
+.i{width:20px;height:20px;flex:none}
+h1,h2,h3{font-family:var(--titolo);margin:0;text-wrap:balance;letter-spacing:-.03em;font-weight:700}
+h2{font-size:clamp(2.3rem,8.5vw,4.2rem);line-height:1}
+h2 span{color:var(--tegola)}
+.intro{color:var(--grigio);max-width:46ch;margin-top:1rem;font-size:1.12rem}
+section{padding:clamp(76px,10vw,128px) 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:54px;padding:0 1.5rem;border-radius:999px;font:600 1.02rem/1 var(--corpo);text-decoration:none;white-space:nowrap;transition:background-color .25s var(--curva),color .25s var(--curva),transform .2s var(--curva),box-shadow .25s var(--curva)}
 .btn:active{transform:scale(.97)}
-.btn svg{width:20px;height:20px;flex:none}
-.btn-oro{background:var(--oro);color:var(--nero)}
-.btn-oro:hover{background:#E4B87F}
-.btn-vuoto{border:1px solid rgba(243,237,228,.32);color:var(--crema)}
-.btn-vuoto:hover{border-color:var(--crema)}
-.chiara .btn-vuoto{border-color:rgba(20,18,16,.25);color:var(--nero)}
-.chiara .btn-vuoto:hover{border-color:var(--nero)}
-.btn-nero{background:var(--nero);color:var(--crema)}
-.btn-nero:hover{background:#2A2622}
+.btn-tegola{background:var(--tegola);color:#fff}
+.btn-tegola:hover{background:var(--tegola-scura)}
+.btn-linea{box-shadow:inset 0 0 0 1.5px var(--inchiostro);color:var(--inchiostro)}
+.btn-linea:hover{background:var(--inchiostro);color:#fff}
 
-/* Navigazione */
-.nav{
-  position:fixed;inset:0 0 auto 0;z-index:50;height:var(--nav);
-  background:rgba(20,18,16,.78);
-  -webkit-backdrop-filter:saturate(160%) blur(18px);backdrop-filter:saturate(160%) blur(18px);
-  border-bottom:1px solid var(--linea-scura);
-}
-.nav .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.marchio{font-family:var(--serif);font-size:26px;line-height:1;letter-spacing:-.01em;text-decoration:none;color:var(--crema);display:inline-flex;align-items:center;min-height:44px}
-.marchio i{color:var(--oro);margin-left:.22em}
-.nav-link{display:flex;align-items:center;gap:4px}
-.nav-link a{font-size:14px;color:var(--grigio);text-decoration:none;padding:0 14px;min-height:44px;display:inline-flex;align-items:center;transition:color .2s}
-.nav-link a:hover{color:var(--crema)}
-.nav-link .btn{min-height:44px;padding:0 18px;font-size:14px;margin-left:12px;color:var(--nero)}
-.nav-link .btn:hover{color:var(--nero)}
+/* Testata */
+.testata{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--carta) 88%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.testata.giu{border-bottom-color:var(--linea)}
+.testata .wrap{display:flex;align-items:center;gap:16px;height:66px}
+.marchio{display:inline-flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto;min-height:44px}
+.marchio svg{width:32px;height:32px;flex:none}
+.marchio b{font:800 1.28rem/1 var(--titolo);letter-spacing:-.03em}
+.marchio b span{font-weight:500;color:var(--grigio)}
+.testata nav{display:none}
+.testata .btn{min-height:44px;padding:0 1.1rem;font-size:.95rem}
 
 /* Copertina */
-.hero{position:relative;min-height:min(100vh,1000px);min-height:min(100svh,1000px);display:flex;align-items:center;padding:calc(var(--nav) + 72px) 0 72px;overflow:hidden;isolation:isolate}
-.cerchi{position:absolute;inset:0;z-index:-1;pointer-events:none}
-.cerchio{position:absolute;border-radius:50%;border:1px solid rgba(217,168,108,.32)}
-.cerchio.c1{width:min(78vw,980px);aspect-ratio:1;right:max(-26vw,-340px);top:max(-30vw,-380px)}
-.cerchio.c2{width:min(40vw,500px);aspect-ratio:1;right:max(-8vw,-100px);top:max(-6vw,-80px);border-color:rgba(217,168,108,.16)}
-.hero h1{text-wrap:balance;font-family:var(--serif);font-size:clamp(46px,8.2vw,124px);line-height:.98;letter-spacing:-.02em;max-width:11.5em;margin-top:32px}
-.hero h1 em{font-style:italic;color:var(--oro);display:block}
-.hero .lead{max-width:30em;margin-top:32px}
-.azioni{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
-.hero-piede{
-  margin-top:72px;padding-top:24px;border-top:1px solid var(--linea-scura);
-  display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;
-  font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--grigio)
-}
-.linea-oro{display:block;width:48px;height:2px;background:var(--oro);margin-top:40px;transform-origin:left}
+.copertina{padding:clamp(28px,6vw,64px) 0 clamp(60px,8vw,110px)}
+.copertina .wrap{display:grid;gap:44px}
+.occhiello{display:inline-flex;align-items:center;gap:.55rem;font-weight:500;font-size:.98rem;color:var(--grigio);margin-bottom:1.1rem}
+.occhiello::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--tegola)}
+.copertina h1{font-size:clamp(2.75rem,12.2vw,5.6rem);line-height:.95;letter-spacing:-.045em}
+.copertina h1 span{color:var(--tegola);display:block}
+.copertina .intro{font-size:1.16rem;margin-top:1.3rem;max-width:40ch}
+.azioni{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.8rem}
+.fiducia{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:1.6rem;font-size:.95rem;color:var(--grigio)}
+.fiducia li{display:flex;align-items:center;gap:.45rem}
+.fiducia .i{width:17px;height:17px;color:var(--verde)}
 
-/* Sezioni */
-.sezione{padding:var(--sezione) 0}
-.chiara{background:var(--crema);color:var(--nero)}
-.chiara.carta{background:var(--carta)}
-.scura-2{background:var(--nero-2)}
-.testa{display:grid;grid-template-columns:1fr;gap:0;max-width:760px}
+/* Scena con gli esempi */
+.scena{position:relative;height:470px;max-width:440px;width:100%;margin:0 auto}
+.telefono{position:absolute;right:2%;top:30px;width:58%;max-width:228px;aspect-ratio:9/18.5;background:var(--inchiostro);border-radius:34px;padding:8px;box-shadow:var(--ombra)}
+.schermo{height:100%;border-radius:27px;overflow:hidden;background:var(--bianco);display:flex;flex-direction:column}
+.schermo .foto{position:relative;height:40%;background:radial-gradient(120% 90% at 20% 10%,#F6B48E 0%,transparent 55%),radial-gradient(90% 80% at 90% 100%,#9C2F14 0%,transparent 60%),linear-gradient(160deg,#E8754C,#C2421F);display:flex;align-items:flex-end;padding:12px}
+.schermo .foto::before{content:"";position:absolute;left:50%;top:9px;translate:-50% 0;width:34%;height:14px;border-radius:999px;background:var(--inchiostro)}
+.schermo .foto b{font:700 1.15rem/1 var(--titolo);color:#fff;letter-spacing:-.02em}
+.schermo .corpo{padding:10px;display:grid;gap:8px;font-size:.7rem;line-height:1.2}
+.schermo .tasti{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.schermo .tasti span{display:flex;align-items:center;justify-content:center;height:26px;border-radius:999px;font-weight:600;font-size:.68rem;box-shadow:inset 0 0 0 1px var(--linea)}
+.schermo .tasti span:last-child{background:var(--verde);color:#fff;box-shadow:none}
+.schermo .aperto{display:flex;align-items:center;gap:5px;color:var(--grigio)}
+.schermo .aperto::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--verde)}
+.schermo .riga{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-top:1px solid var(--linea);font-weight:500}
+.schermo .riga i{font-style:normal;color:var(--grigio)}
+.schermo .stelline{color:#E8A317;letter-spacing:1px}
+.google{position:absolute;left:0;bottom:6px;width:62%;max-width:236px;background:var(--bianco);border-radius:16px;padding:13px 14px 12px;box-shadow:var(--ombra);font-size:.74rem;line-height:1.3}
+.google small{display:flex;align-items:center;gap:5px;color:var(--grigio);font-size:.68rem;margin-bottom:6px}
+.google small .i{width:13px;height:13px;color:var(--tegola)}
+.google b{display:block;font:700 .98rem/1.15 var(--titolo);letter-spacing:-.02em}
+.google .voto{color:#E8A317;margin:.2rem 0;letter-spacing:1px}
+.google .voto em{font-style:normal;color:var(--grigio);letter-spacing:0;margin-left:4px}
+.google .chip{display:flex;gap:5px;margin-top:8px}
+.google .chip span{flex:1;text-align:center;padding:5px 0;border-radius:999px;background:var(--tegola-chiara);color:var(--tegola-scura);font-weight:600;font-size:.64rem}
+.bolla{position:absolute;left:0;top:0;width:60%;max-width:232px;background:#DCF7C5;border-radius:16px 16px 16px 4px;padding:10px 11px 7px;box-shadow:var(--ombra);font-size:.76rem;line-height:1.3}
+.bolla .link{display:block;background:rgba(255,255,255,.7);border-radius:9px;padding:7px 8px;margin-top:7px;border-left:3px solid var(--verde)}
+.bolla .link b{display:block;font-size:.72rem}
+.bolla .link span{color:var(--grigio);font-size:.66rem}
+.bolla .ora{display:block;text-align:right;color:var(--grigio);font-size:.62rem;margin-top:3px}
+.didascalia{text-align:center;font-size:.88rem;color:var(--grigio);margin-top:14px}
 
-/* Servizi */
-.servizi{margin-top:80px;border-bottom:1px solid var(--linea-chiara)}
-.servizio{display:grid;grid-template-columns:72px minmax(0,1fr) minmax(0,1.15fr);gap:24px 32px;padding:40px 0;border-top:1px solid var(--linea-chiara);align-items:baseline}
-.servizio .num{font-size:13px;font-weight:500;letter-spacing:.1em;color:var(--oro-testo);font-variant-numeric:tabular-nums}
-.servizio h3{font-family:var(--serif);font-size:clamp(30px,3.2vw,42px);line-height:1.05;letter-spacing:-.01em}
-.servizio h3 small{display:block;font-family:var(--sans);font-size:14px;letter-spacing:0;color:var(--oro-testo);margin-top:10px;font-weight:500}
-.servizio p{color:var(--inchiostro-muto);max-width:34em}
+/* Cosa facciamo */
+.servizi{background:var(--bianco)}
+.servizi-griglia{display:grid;gap:12px;margin-top:2.4rem}
+.servizio{background:var(--carta);border-radius:20px;padding:24px 22px}
+.servizio .icona{width:48px;height:48px;border-radius:14px;background:var(--tegola-chiara);color:var(--tegola-scura);display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem}
+.servizio .icona .i{width:24px;height:24px}
+.servizio h3{font-size:1.5rem;line-height:1.1}
+.servizio .sotto{color:var(--tegola-scura);font-weight:600;font-size:.95rem;margin-top:.35rem}
+.servizio p:last-child{color:var(--grigio);margin-top:.7rem}
 
-/* Video */
-.video-griglia{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:80px;align-items:center}
-.punti{margin-top:40px;border-top:1px solid var(--linea-scura)}
-.punti li{display:flex;gap:16px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--linea-scura);color:var(--crema)}
-.punti li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--oro);transform:translateY(-3px)}
-.reel{
-  position:relative;width:100%;max-width:380px;aspect-ratio:9/16;margin:0 auto;border-radius:28px;overflow:hidden;
-  background:
-    radial-gradient(120% 70% at 85% 0%, rgba(217,168,108,.22), transparent 60%),
-    radial-gradient(90% 60% at 0% 100%, rgba(138,106,67,.28), transparent 65%),
-    #1F1B17;
-  box-shadow:0 30px 80px rgba(0,0,0,.45), inset 0 0 0 1px rgba(243,237,228,.08);
-}
-.reel-poster{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:28px}
-.reel-poster .cerchio{width:150%;right:-75%;top:-30%;border-color:rgba(217,168,108,.3)}
-.reel-poster .cerchio.c2{width:90%;right:-35%;top:-6%;border-color:rgba(217,168,108,.16)}
-.reel-marchio{font-family:var(--serif);font-size:34px;line-height:.95;position:relative}
-.reel-marchio i{color:var(--oro);display:block}
-.reel-play{width:72px;height:72px;border-radius:50%;border:1px solid rgba(243,237,228,.35);display:grid;place-items:center;align-self:center}
-.reel-play svg{width:22px;height:22px;margin-left:4px;fill:var(--crema)}
-.reel-scritta{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--grigio)}
-.reel-scritta b{display:block;font-family:var(--serif);font-weight:400;font-style:italic;font-size:26px;letter-spacing:-.005em;text-transform:none;color:var(--crema);margin-top:8px}
-.reel video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:transparent}
-.reel.ha-video .reel-poster{visibility:hidden}
-.js .reel video{opacity:0}
-.js .reel.ha-video video{opacity:1}
+/* Come funziona */
+.passi{display:grid;gap:14px;margin-top:2.4rem;counter-reset:passo}
+.passo{position:relative;background:var(--bianco);border-radius:20px;padding:24px 22px 24px 76px;box-shadow:0 1px 2px rgba(21,23,28,.05)}
+.passo::before{counter-increment:passo;content:counter(passo);position:absolute;left:22px;top:22px;width:38px;height:38px;border-radius:50%;background:var(--inchiostro);color:#fff;font:700 1.1rem/38px var(--titolo);text-align:center}
+.passo.gratis::before{background:var(--tegola)}
+.passo h3{font-size:1.35rem;line-height:1.15}
+.passo p{color:var(--grigio);margin-top:.45rem}
+.etichetta{display:inline-block;background:var(--tegola-chiara);color:var(--tegola-scura);font-weight:600;font-size:.82rem;padding:.25rem .65rem;border-radius:999px;margin-left:.3rem;vertical-align:middle;letter-spacing:0;font-family:var(--corpo)}
 
 /* Prezzi */
-.prezzi-gruppi{display:grid;grid-template-columns:1fr 1fr;gap:56px 24px;margin-top:80px}
-.gruppo-testa{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-bottom:16px;margin-bottom:24px;border-bottom:1px solid var(--linea-chiara)}
-.gruppo-testa h3{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
-.gruppo-testa span{font-size:14px;color:var(--inchiostro-muto)}
-.carte{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.carta-prezzo{position:relative;display:flex;flex-direction:column;background:var(--carta);border:1px solid var(--linea-chiara);border-radius:20px;padding:32px 28px}
-.carta-prezzo h4{margin:0;font-size:17px;font-weight:600;letter-spacing:-.01em;line-height:1.3;min-height:2.6em}
-.prezzo{font-family:var(--serif);font-size:64px;line-height:1;letter-spacing:-.02em;margin-top:20px;display:flex;align-items:baseline;gap:8px;white-space:nowrap}
-.prezzo small{font-family:var(--sans);font-size:15px;letter-spacing:0;color:var(--inchiostro-muto)}
-.carta-prezzo .quando{font-size:14px;color:var(--oro-testo);margin-top:8px;font-weight:500}
-.carta-prezzo ul{margin-top:24px;padding-top:20px;border-top:1px solid var(--linea-chiara);display:grid;gap:12px;font-size:15px;line-height:1.45;color:var(--inchiostro-muto)}
-.carta-prezzo li{display:flex;gap:10px}
-.carta-prezzo li svg{flex:none;width:16px;height:16px;margin-top:3px;color:var(--oro-scuro)}
-.carta-prezzo.scura{background:var(--nero);color:var(--crema);border-color:var(--nero)}
-.carta-prezzo.scura .prezzo small,.carta-prezzo.scura ul{color:var(--grigio)}
-.carta-prezzo.scura .quando{color:var(--oro)}
-.carta-prezzo.scura ul{border-top-color:var(--linea-scura)}
-.carta-prezzo.scura li svg{color:var(--oro)}
-.etichetta{position:absolute;top:-12px;right:20px;background:var(--oro);color:var(--nero);font-size:12px;font-weight:600;letter-spacing:.04em;padding:6px 12px;border-radius:999px}
-.nota{margin-top:20px;font-size:15px;color:var(--inchiostro-muto);display:flex;gap:10px;align-items:center}
-.nota::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--oro-scuro);flex:none}
-.consiglio{margin-top:72px;padding:40px;border-radius:24px;background:var(--crema-2);display:flex;justify-content:space-between;align-items:center;gap:24px 40px;flex-wrap:wrap}
-.consiglio p{font-family:var(--serif);font-size:clamp(26px,2.6vw,34px);line-height:1.15;letter-spacing:-.01em;max-width:20em}
-.consiglio p em{color:var(--oro-scuro)}
+.prezzi{background:var(--bianco)}
+.gruppo{margin-top:2.6rem}
+.gruppo h3{font-size:1.2rem;letter-spacing:-.01em;display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:.8rem;border-bottom:1px solid var(--linea)}
+.gruppo h3 small{font:500 .95rem var(--corpo);color:var(--grigio);letter-spacing:0}
+.carte{display:grid;gap:14px;margin-top:1.2rem}
+.carta{position:relative;border-radius:22px;padding:26px 24px;background:var(--carta);display:flex;flex-direction:column}
+.carta.scura{background:var(--inchiostro);color:#fff}
+.carta h4{margin:0;font:600 1.1rem/1.3 var(--corpo)}
+.prezzo{font:800 clamp(3.2rem,13vw,4.2rem)/1 var(--titolo);letter-spacing:-.05em;margin-top:.8rem;display:flex;align-items:baseline;gap:.4rem;white-space:nowrap}
+.prezzo small{font:500 1rem var(--corpo);letter-spacing:0;color:var(--grigio)}
+.carta.scura .prezzo small{color:rgba(255,255,255,.7)}
+.quando{font-weight:600;color:var(--tegola-scura);margin-top:.35rem;font-size:.98rem}
+.carta.scura .quando{color:#FF9B78}
+.carta ul{margin-top:1.2rem;padding-top:1.1rem;border-top:1px solid var(--linea);display:grid;gap:.55rem;font-size:1rem}
+.carta.scura ul{border-top-color:rgba(255,255,255,.16)}
+.carta li{display:flex;gap:.6rem;align-items:flex-start;line-height:1.4}
+.carta li .i{width:18px;height:18px;margin-top:.12rem;color:var(--verde)}
+.carta.scura li .i{color:#7BE0A4}
+.consigliato{position:absolute;top:-12px;right:20px;background:var(--tegola);color:#fff;font-weight:600;font-size:.82rem;padding:.35rem .8rem;border-radius:999px}
+.nota{margin-top:1rem;color:var(--grigio);font-size:.98rem}
+.consiglio{margin-top:2.6rem;background:var(--tegola-chiara);border-radius:22px;padding:26px 24px;display:grid;gap:1.1rem}
+.consiglio p{font:700 clamp(1.45rem,5.5vw,1.9rem)/1.15 var(--titolo);letter-spacing:-.025em}
 
-/* Passi */
-.passi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:80px}
-.passo{border-top:1px solid var(--linea-scura);padding-top:32px}
-.passo .n{font-family:var(--serif);font-style:italic;font-size:72px;line-height:.9;color:var(--oro)}
-.passo h3{font-size:21px;font-weight:600;letter-spacing:-.015em;line-height:1.25;margin-top:28px}
-.passo p{color:var(--grigio);margin-top:12px;max-width:22em}
+/* Video */
+.video-griglia{display:grid;gap:44px;align-items:center}
+.punti{margin-top:1.6rem;display:grid;gap:.7rem}
+.punti li{display:flex;gap:.7rem;align-items:flex-start}
+.punti .i{color:var(--tegola);margin-top:.15rem}
+.reel{position:relative;width:min(100%,300px);aspect-ratio:9/16;margin:0 auto;border-radius:28px;overflow:hidden;background:radial-gradient(110% 70% at 80% 0%,#F08A60 0%,transparent 60%),radial-gradient(100% 70% at 0% 100%,#7E2A13 0%,transparent 65%),#2A1A15;box-shadow:var(--ombra);color:#fff}
+.reel .scritte{position:absolute;inset:0;display:grid;place-items:center;padding:28px;text-align:center}
+.reel .scritta{grid-area:1/1;font:800 2.1rem/1 var(--titolo);letter-spacing:-.04em;opacity:0}
+.reel .scritta small{display:block;font:500 1rem/1.3 var(--corpo);letter-spacing:0;opacity:.85;margin-top:.6rem}
+.reel .scritta:first-child{opacity:1}
+.reel .barretta{position:absolute;left:18px;right:18px;top:16px;display:flex;gap:4px}
+.reel .barretta span{flex:1;height:3px;border-radius:3px;background:rgba(255,255,255,.3);overflow:hidden}
+.reel .barretta span::after{content:"";display:block;height:100%;width:0;background:#fff}
+.reel .firma{position:absolute;left:0;right:0;bottom:18px;text-align:center;font:700 .85rem var(--titolo);letter-spacing:-.01em;opacity:.85}
+.esempio{text-align:center;font-size:.88rem;color:var(--grigio);margin-top:12px}
+@media (prefers-reduced-motion:no-preference){
+  .reel.va .scritta{animation:scritta 9s infinite}
+  .reel.va .scritta:nth-child(2){animation-delay:3s}
+  .reel.va .scritta:nth-child(3){animation-delay:6s}
+  .reel.va .barretta span::after{animation:barra 9s infinite linear}
+  .reel.va .barretta span:nth-child(2)::after{animation-name:barra2}
+  .reel.va .barretta span:nth-child(3)::after{animation-name:barra3}
+}
+@keyframes scritta{0%{opacity:0;transform:translateY(18px)}4%,30%{opacity:1;transform:none}34%,100%{opacity:0;transform:translateY(-12px)}}
+@keyframes barra{0%{width:0}33.3%{width:100%}33.4%,100%{width:100%}}
+@keyframes barra2{0%,33.3%{width:0}66.6%,100%{width:100%}}
+@keyframes barra3{0%,66.6%{width:0}100%{width:100%}}
 
 /* Chi siamo */
-.chi-griglia{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px;align-items:start}
-.persone{display:grid;gap:16px}
-.persona{display:flex;align-items:center;gap:20px;padding:24px;border-radius:20px;background:var(--carta);border:1px solid var(--linea-chiara)}
-.iniziali{flex:none;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:var(--nero);color:var(--oro);font-family:var(--serif);font-size:26px;letter-spacing:.02em}
-.persona h3{font-family:var(--serif);font-size:30px;line-height:1.05;letter-spacing:-.01em}
-.persona p{font-size:14px;color:var(--oro-testo);font-weight:500;margin-top:6px}
-.luogo{margin-top:16px;display:flex;align-items:center;gap:12px;font-size:15px;color:var(--inchiostro-muto);padding:0 4px}
-.luogo svg{width:18px;height:18px;color:var(--oro-scuro);flex:none}
+.chi{background:var(--bianco)}
+.chi-griglia{display:grid;gap:36px;align-items:start}
+.persone{display:grid;gap:12px}
+.persona{display:flex;align-items:center;gap:16px;background:var(--carta);border-radius:20px;padding:20px}
+.iniziali{flex:none;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--inchiostro);color:#fff;font:700 1.15rem var(--titolo);letter-spacing:-.02em}
+.persona:nth-child(2) .iniziali{background:var(--tegola)}
+.persona h3{font-size:1.35rem;letter-spacing:-.02em;line-height:1.1}
+.persona p{color:var(--grigio);margin-top:.2rem}
+.luogo{display:flex;align-items:center;gap:.6rem;color:var(--grigio);padding:6px 4px}
+.luogo .i{color:var(--tegola)}
+
+/* Domande */
+.domande-elenco{margin-top:2.2rem;border-top:1px solid var(--linea)}
+.domande-elenco details{border-bottom:1px solid var(--linea)}
+.domande-elenco summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font:700 1.18rem/1.25 var(--titolo);letter-spacing:-.015em;min-height:44px}
+.domande-elenco summary::-webkit-details-marker{display:none}
+.domande-elenco summary::after{content:"";flex:none;width:28px;height:28px;border-radius:50%;background:var(--tegola-chiara) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 1v10M1 6h10' stroke='%23B83E1D' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") center no-repeat;transition:transform .25s var(--curva)}
+.domande-elenco details[open] summary::after{transform:rotate(45deg)}
+.domande-elenco details p{color:var(--grigio);padding:0 0 20px;max-width:62ch}
 
 /* Contatti */
-.contatti{position:relative;overflow:hidden;isolation:isolate}
-.contatti-griglia{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:80px;align-items:end}
-.contatti h2{font-family:var(--serif);font-size:clamp(56px,9vw,128px);line-height:.95;letter-spacing:-.02em}
-.contatti h2 em{color:var(--oro)}
-.recapiti{border-top:1px solid var(--linea-scura)}
-.recapito{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:64px;padding:12px 0;border-bottom:1px solid var(--linea-scura);text-decoration:none;transition:color .2s}
-.recapito span{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--grigio);flex:none}
-.recapito b{font-weight:500;font-size:17px;text-align:right;overflow-wrap:anywhere}
-a.recapito:hover b{color:var(--oro)}
-
-/* Piede */
-.piede{background:var(--nero-3);color:var(--grigio);font-size:14px;padding:40px 0}
-.piede .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 32px}
-.piede .marchio{font-size:22px}
-.piede a{text-decoration:none}
-.piede a:hover{color:var(--crema)}
+.contatti{background:var(--inchiostro);color:#fff}
+.contatti-griglia{display:grid;gap:40px;align-items:end}
+.contatti h2{font-size:clamp(3.2rem,15vw,7rem);line-height:.9;letter-spacing:-.05em}
+.contatti h2 span{color:var(--tegola)}
+.contatti .intro{color:rgba(255,255,255,.75)}
+.contatti .btn-linea{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.6);color:#fff}
+.contatti .btn-linea:hover{background:#fff;color:var(--inchiostro)}
+.recapiti{border-top:1px solid rgba(255,255,255,.16)}
+.recapito{display:grid;gap:2px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.16);text-decoration:none}
+.recapito span{font-size:.9rem;color:rgba(255,255,255,.6)}
+.recapito b{font-weight:500;font-size:1.08rem;overflow-wrap:anywhere}
+a.recapito:hover b{color:#FF9B78}
+.piede{background:#0D0E11;color:rgba(255,255,255,.6);font-size:.92rem;padding:30px 0}
+.piede .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px}
+.piede .marchio{margin:0;color:#fff}
+.piede .marchio b span{color:rgba(255,255,255,.6)}
 
 /* Barra in basso sul telefono */
-.barra{display:none}
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1.4fr 1fr;gap:8px;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--carta) 94%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--linea)}
+.barra .btn{min-height:50px;padding:0 .8rem;font-size:1rem}
 
-/* Animazioni: stato di partenza solo se JS e movimento ammessi */
-.anim .hero h1{visibility:hidden}
-.anim .hero h1.pronto{visibility:visible}
-
-/* Tablet */
-@media (max-width: 1023px){
-  :root{--sezione:112px}
-  .video-griglia,.chi-griglia,.contatti-griglia{grid-template-columns:1fr;gap:64px}
-  .prezzi-gruppi{grid-template-columns:1fr}
-  .servizio{grid-template-columns:56px minmax(0,1fr);}
-  .servizio p{grid-column:2}
-  .nav-link a:not(.btn){display:none}
+@media (min-width:700px){
+  .servizi-griglia{grid-template-columns:repeat(6,1fr)}
+  .servizio{grid-column:span 2}
+  .servizio:nth-child(4),.servizio:nth-child(5){grid-column:span 3}
+  .passi{grid-template-columns:repeat(3,1fr)}
+  .passo{padding:76px 24px 26px}
+  .passo::before{top:24px;left:24px}
+  .carte{grid-template-columns:1fr 1fr}
+  .consiglio{grid-template-columns:1fr auto;align-items:center;padding:30px 34px}
+  .chi-griglia{grid-template-columns:1fr 1fr;gap:64px}
+  .scena{height:520px;max-width:480px}
 }
-
-/* Telefono */
-@media (max-width: 767px){
-  :root{--gutter:20px;--sezione:88px;--nav:56px}
-  body{font-size:16px}
-  .marchio{font-size:23px}
-  .nav-link{display:none}
-  .hero{padding:calc(var(--nav) + 48px) 0 56px;min-height:auto}
-  .hero h1{margin-top:24px}
-  .hero .lead{margin-top:24px}
-  .azioni{margin-top:32px}
-  .azioni .btn{flex:1 1 100%}
-  .hero-piede{margin-top:56px;letter-spacing:.14em;font-size:11px}
-  .solo-largo{display:none}
-  .cerchio.c1{width:150vw;right:-80vw;top:-40vw}
-  .cerchio.c2{width:80vw;right:-30vw;top:-4vw}
-  .titolo{margin-top:20px}
-  .lead{margin-top:20px}
-  .servizi{margin-top:48px}
-  .servizio{grid-template-columns:1fr;gap:12px;padding:32px 0}
-  .servizio p{grid-column:auto}
-  .servizio .num{margin-bottom:4px}
-  .prezzi-gruppi{margin-top:48px;gap:48px}
-  .carte{grid-template-columns:1fr}
-  .carta-prezzo h4{min-height:0}
-  .consiglio{padding:28px 24px;margin-top:56px}
-  .consiglio .btn{flex:1 1 100%}
-  .passi{grid-template-columns:1fr;gap:40px;margin-top:48px}
-  .passo .n{font-size:60px}
-  .passo h3{margin-top:20px}
-  .video-griglia,.chi-griglia,.contatti-griglia{gap:48px}
-  .reel{max-width:320px}
-  .persona{padding:20px;gap:16px}
-  .iniziali{width:56px;height:56px;font-size:22px}
-  .persona h3{font-size:26px}
-  .recapito{flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;padding:14px 0}
-  .recapito b{text-align:left}
-  .piede{padding:32px 0 calc(32px + 76px + env(safe-area-inset-bottom))}
-  .piede .wrap{flex-direction:column;align-items:flex-start}
-
-  .barra{
-    display:grid;grid-template-columns:1fr 1fr;gap:10px;
-    position:fixed;left:0;right:0;bottom:0;z-index:60;
-    padding:10px 12px calc(10px + env(safe-area-inset-bottom));
-    background:rgba(20,18,16,.88);
-    -webkit-backdrop-filter:saturate(160%) blur(18px);backdrop-filter:saturate(160%) blur(18px);
-    border-top:1px solid var(--linea-scura);
-  }
-  .barra .btn{min-height:48px;padding:0 12px;font-size:15px}
+@media (min-width:1000px){
+  body{padding-bottom:0}
+  .barra{display:none}
+  .testata .wrap{height:76px}
+  .testata nav{display:flex;gap:28px;font-weight:500;margin-right:12px}
+  .testata nav a{text-decoration:none;color:var(--grigio);padding:.5rem 0}
+  .testata nav a:hover{color:var(--inchiostro)}
+  .copertina .wrap{grid-template-columns:1.08fr 1fr;align-items:center;gap:56px;min-height:calc(100svh - 76px - 110px)}
+  .scena{height:560px;max-width:500px}
+  .video-griglia{grid-template-columns:1.1fr .9fr;gap:80px}
+  .contatti-griglia{grid-template-columns:1.1fr .9fr;gap:80px}
+  .carte{grid-template-columns:1.15fr 1fr}
+  .telefono{max-width:262px}.bolla{max-width:262px;font-size:.82rem}.google{max-width:272px;font-size:.8rem}
 }
-@media (max-width: 359px){
-  .hero h1{font-size:40px}
-  .prezzo{font-size:54px}
-}
-@media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{transition:none!important;animation:none!important}
-}
+@media (prefers-reduced-motion:reduce){.btn,.domande-elenco summary::after{transition:none}}
 </style>
 </head>
 <body>
 <a class="salta" href="#contenuto">Vai al contenuto</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-marchio" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#D9502A"/><path d="M16 17h9.2l6.8 20.6L38.8 17H48L36.6 47h-9.2z" fill="#fff"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.2-4.1A8.6 8.6 0 1 1 8 19.4z"/><path d="M9.1 8.6c.2-.5.5-.6.8-.6h.5c.2 0 .4.1.5.4l.6 1.5c.1.2 0 .5-.1.6l-.5.6c-.1.1-.1.3 0 .5.6 1 1.4 1.8 2.4 2.4.2.1.4.1.5 0l.6-.5c.2-.1.4-.2.6-.1l1.5.6c.3.1.4.3.4.5v.5c0 .3-.1.6-.6.8-.6.3-1.6.4-2.9-.2a9.2 9.2 0 0 1-4.3-4.3c-.6-1.3-.5-2.3-.2-2.9z"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.5 4.5L19.5 7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-sito" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18.5h3M9 7h6M9 10.5h6M9 14h3"/></symbol>
+  <symbol id="i-mappa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13.5L9 17.5l6 2.5 6-2.5V4L15 6.5z"/><path d="M9 4v13.5M15 6.5V20"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".7" fill="currentColor"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M10.5 9v6l5-3z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M16 2.5v4M8 2.5v4M3 10h18M8 14.5h3M8 17.5h6"/></symbol>
+  <symbol id="i-stella" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></symbol>
+</svg>
 
-<header class="nav">
+<header class="testata" id="testata">
   <div class="wrap">
-    <a class="marchio" href="#inizio" aria-label="Veniello Studio, torna all'inizio">Veniello<i>Studio</i></a>
-    <nav class="nav-link" aria-label="Menu principale">
-      <a href="#servizi">Servizi</a>
-      <a href="#video">Video</a>
-      <a href="#prezzi">Prezzi</a>
-      <a href="#chi-siamo">Chi siamo</a>
-      <a class="btn btn-oro" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener">Scrivici</a>
-    </nav>
+    <a class="marchio" href="#inizio" aria-label="Veniello Studio, torna all'inizio"><svg aria-hidden="true"><use href="#i-marchio"/></svg><b>Veniello <span>Studio</span></b></a>
+    <nav aria-label="Menu principale"><a href="#servizi">Servizi</a><a href="#come">Come funziona</a><a href="#prezzi">Prezzi</a><a href="#chi-siamo">Chi siamo</a></nav>
+    <a class="btn btn-tegola" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Scrivici</a>
   </div>
 </header>
 
 <main id="contenuto">
-
-  <!-- Copertina -->
-  <section class="hero" id="inizio">
-    <div class="cerchi" aria-hidden="true"><div class="cerchio c1" data-deriva="-60"></div><div class="cerchio c2" data-deriva="40"></div></div>
+  <section class="copertina" id="inizio" aria-labelledby="titolo">
     <div class="wrap">
-      <p class="occhiello" data-sale><span><span class="solo-largo">Agenzia digitale · </span>Montecatini Terme</span></p>
-      <h1>Facciamo trovare la tua attività. <em>E la facciamo scegliere.</em></h1>
-      <p class="lead" data-sale>Siti, Google, Instagram e video per hotel, bar, ristoranti, saloni e negozi della Valdinievole. Fatti bene, a prezzi chiari.</p>
-      <div class="azioni" data-sale>
-        <a class="btn btn-oro" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"/></svg>
-          Scrivici su WhatsApp
-        </a>
-        <a class="btn btn-vuoto" href="#servizi">Cosa facciamo</a>
+      <div class="copertina-testo">
+        <p class="occhiello">Agenzia digitale a Montecatini Terme</p>
+        <h1 id="titolo">Facciamo trovare la tua attività. <span>E la facciamo scegliere.</span></h1>
+        <p class="intro">Sito, scheda Google, Instagram e video per hotel, bar, ristoranti, saloni e negozi della Valdinievole. Prima ti prepariamo un&rsquo;anteprima gratis, poi decidi.</p>
+        <div class="azioni">
+          <a class="btn btn-tegola" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20un%27anteprima%20gratis%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Chiedi l&rsquo;anteprima gratis</a>
+          <a class="btn btn-linea" href="#prezzi">Vedi i prezzi</a>
+        </div>
+        <ul class="fiducia">
+          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Prezzi chiari</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Paghi solo se ti piace</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Siamo di qui</li>
+        </ul>
       </div>
-      <div class="hero-piede" data-sale>
-        <span>Siti web · Google · Instagram · Video</span>
-        <span class="solo-largo">Valdinievole</span>
-      </div>
+      <figure class="scena-box" style="margin:0">
+        <div class="scena" aria-hidden="true">
+          <div class="telefono pezzo">
+            <div class="schermo">
+              <div class="foto"><b>La tua attività</b></div>
+              <div class="corpo">
+                <div class="tasti"><span>Chiama</span><span>WhatsApp</span></div>
+                <p class="aperto">Aperto ora, chiude alle 19:30</p>
+                <p class="riga">Servizi e prezzi <i>›</i></p>
+                <p class="riga">Come arrivare <i>›</i></p>
+                <p class="riga">Recensioni <span class="stelline">★★★★★</span></p>
+                <p class="riga">Orari <i>›</i></p>
+              </div>
+            </div>
+          </div>
+          <div class="bolla pezzo">
+            Ciao! Ecco l&rsquo;anteprima del tuo sito, aprila dal telefono.
+            <span class="link"><b>Anteprima preparata per La tua attività</b><span>Si apre con un tocco</span></span>
+            <span class="ora">10:42 ✓✓</span>
+          </div>
+          <div class="google pezzo">
+            <small><svg class="i"><use href="#i-pin"/></svg>Su Google e su Maps</small>
+            <b>La tua attività</b>
+            <p class="voto">★★★★★<em>Recensioni</em></p>
+            <p style="color:var(--grigio)">Montecatini Terme · Aperto ora</p>
+            <div class="chip"><span>Chiama</span><span>Indicazioni</span><span>Sito</span></div>
+          </div>
+        </div>
+        <figcaption class="didascalia">Così ti arriva l&rsquo;anteprima: un link su WhatsApp, da aprire sul telefono.</figcaption>
+      </figure>
     </div>
   </section>
 
-  <!-- Servizi -->
-  <section class="sezione chiara" id="servizi" aria-labelledby="servizi-titolo">
+  <section class="servizi" id="servizi" aria-labelledby="t-servizi">
     <div class="wrap">
-      <div class="testa" data-sale>
-        <p class="occhiello">Cosa facciamo</p>
-        <h2 class="titolo" id="servizi-titolo">Cinque cose. <em>Fatte bene.</em></h2>
-        <p class="lead">Scegli quelle che ti servono. Al resto pensiamo noi.</p>
-      </div>
-      <ol class="servizi" role="list" style="list-style:none;padding:0;margin-left:0;margin-right:0;margin-bottom:0">
-        <li class="servizio" data-sale>
-          <span class="num">01</span>
-          <h3>Sito su misura<small>Fatto per il telefono, sul tuo dominio</small></h3>
-          <p>I clienti ti cercano dal telefono: il sito nasce lì. Veloce e chiaro, con orari, menù o listino, come arrivare e un tasto per chiamarti.</p>
-        </li>
-        <li class="servizio" data-sale>
-          <span class="num">02</span>
-          <h3>Scheda Google<small>Su Google e su Maps</small></h3>
-          <p>Quando qualcuno cerca un bar o un parrucchiere in zona, la tua scheda è la prima cosa che vede. Foto belle, orari giusti, informazioni complete.</p>
-        </li>
-        <li class="servizio" data-sale>
-          <span class="num">03</span>
-          <h3>Instagram<small>Un profilo che fa venire voglia di entrare</small></h3>
-          <p>Foto, descrizione, storie in evidenza e link messi in ordine. Chi apre il tuo profilo capisce subito chi sei e come trovarti.</p>
-        </li>
-        <li class="servizio" data-sale>
-          <span class="num">04</span>
-          <h3>Video e reel<small>Riprese cinematiche e grafica animata</small></h3>
-          <p>Riprese cinematiche create con l'intelligenza artificiale, unite a testi e logo animati. Video corti e verticali, pensati per i social.</p>
-        </li>
-        <li class="servizio" data-sale>
-          <span class="num">05</span>
-          <h3>Gestione social<small>Ogni mese, contenuti su richiesta</small></h3>
-          <p>Ogni mese prepariamo e pubblichiamo post, storie e grafiche. Ti serve qualcosa in più per una serata o una novità? Basta chiedere.</p>
-        </li>
+      <h2 id="t-servizi">Cosa facciamo <span>per te</span></h2>
+      <p class="intro">Scegli quello che ti serve. Al resto pensiamo noi.</p>
+      <ul class="servizi-griglia">
+        <li class="servizio entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-sito"/></svg></span><h3>Sito su misura</h3><p class="sotto">Fatto per il telefono, sul tuo dominio</p><p>I clienti ti cercano dal telefono: il sito nasce lì. Veloce e chiaro, con orari, menù o listino, come arrivare e un tasto per chiamarti.</p></li>
+        <li class="servizio entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-mappa"/></svg></span><h3>Scheda Google</h3><p class="sotto">Su Google e su Maps</p><p>Quando qualcuno cerca un bar o un parrucchiere in zona, la tua scheda è la prima cosa che vede. Foto belle, orari giusti, informazioni complete.</p></li>
+        <li class="servizio entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-ig"/></svg></span><h3>Instagram</h3><p class="sotto">Un profilo che fa venire voglia di entrare</p><p>Foto, descrizione, storie in evidenza e link in ordine. Chi apre il tuo profilo capisce subito chi sei e come trovarti.</p></li>
+        <li class="servizio entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-video"/></svg></span><h3>Video e reel</h3><p class="sotto">Corti, verticali, con i tuoi colori</p><p>Riprese create con l&rsquo;intelligenza artificiale, unite a testi e logo animati. Pensati per Reel, TikTok e storie.</p></li>
+        <li class="servizio entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-cal"/></svg></span><h3>Gestione social</h3><p class="sotto">Ogni mese, contenuti su richiesta</p><p>Ogni mese prepariamo e pubblichiamo post, storie e grafiche. Ti serve qualcosa in più per una serata o una novità? Basta chiedere.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="come" id="come" aria-labelledby="t-come">
+    <div class="wrap">
+      <h2 id="t-come">Prima lo vedi. <span>Poi decidi.</span></h2>
+      <ol class="passi">
+        <li class="passo entra"><h3>Ci scrivi</h3><p>Su WhatsApp o per telefono. Ci racconti la tua attività in due minuti.</p></li>
+        <li class="passo gratis entra"><h3>Ti prepariamo l&rsquo;anteprima <span class="etichetta">gratis</span></h3><p>Con foto e informazioni vere della tua attività. Ti arriva un link da aprire sul telefono: non paghi niente e non ti impegni.</p></li>
+        <li class="passo entra"><h3>Se ti piace, va online</h3><p>Sul tuo dominio, insieme a Google e Instagram. Da lì in poi ti trovano.</p></li>
       </ol>
     </div>
   </section>
 
-  <!-- Video -->
-  <section class="sezione" id="video" aria-labelledby="video-titolo">
-    <div class="wrap video-griglia">
-      <div data-sale>
-        <p class="occhiello">Video</p>
-        <h2 class="titolo" id="video-titolo">Un video racconta il tuo locale <em>in dieci secondi.</em></h2>
-        <p class="lead">Mescoliamo riprese cinematiche create con l'intelligenza artificiale e grafica animata. Il risultato sono reel che si guardano fino in fondo.</p>
-        <ul class="punti">
-          <li>Verticali, per Reel, TikTok e storie</li>
-          <li>Testi e logo animati, con i tuoi colori</li>
-          <li>Nel piano Plus, 4 video al mese</li>
-        </ul>
-      </div>
-      <div class="reel" id="reel" data-sale>
-        <div class="reel-poster">
-          <div class="cerchio" aria-hidden="true"></div>
-          <div class="cerchio c2" aria-hidden="true"></div>
-          <div class="reel-marchio" aria-hidden="true">Veniello<i>Studio</i></div>
-          <div class="reel-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4.5v15a.8.8 0 0 0 1.2.7l12.3-7.5a.8.8 0 0 0 0-1.4L7.2 3.8A.8.8 0 0 0 6 4.5Z"/></svg></div>
-          <p class="reel-scritta">In lavorazione<b>Showreel in arrivo</b></p>
-        </div>
-        <video muted loop playsinline autoplay preload="metadata" aria-label="Showreel di Veniello Studio">
-          <source src="video/showreel.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </section>
-
-  <!-- Prezzi -->
-  <section class="sezione chiara" id="prezzi" aria-labelledby="prezzi-titolo">
+  <section class="prezzi" id="prezzi" aria-labelledby="t-prezzi">
     <div class="wrap">
-      <div class="testa" data-sale>
-        <p class="occhiello">Prezzi</p>
-        <h2 class="titolo" id="prezzi-titolo">Prezzi chiari. <em>Prima di iniziare.</em></h2>
-        <p class="lead">Sai quanto spendi fin dal primo messaggio. Niente costi nascosti.</p>
-      </div>
-
+      <h2 id="t-prezzi">Prezzi chiari, <span>prima di iniziare</span></h2>
+      <p class="intro">Sai quanto spendi fin dal primo messaggio. Niente costi nascosti.</p>
       <div class="prezzi-gruppi">
-        <div data-sale>
-          <div class="gruppo-testa"><h3>Una volta sola</h3><span>Per partire</span></div>
+        <div class="gruppo entra">
+          <h3>Una volta sola <small>Per partire</small></h3>
           <div class="carte">
-            <article class="carta-prezzo scura">
-              <span class="etichetta">Consigliato</span>
+            <article class="carta scura">
+              <span class="consigliato">Consigliato</span>
               <h4>Sito + Google + Instagram</h4>
               <p class="prezzo">119 €</p>
               <p class="quando">Una volta sola</p>
               <ul>
-                <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>Sito su misura, fatto per il telefono</li>
-                <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>Sul tuo dominio</li>
-                <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>Scheda Google sistemata</li>
-                <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>Profilo Instagram in ordine</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Sito su misura, fatto per il telefono</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Sul tuo dominio</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Scheda Google sistemata</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Profilo Instagram in ordine</li>
               </ul>
             </article>
-            <article class="carta-prezzo">
+            <article class="carta">
               <h4>Google + Instagram</h4>
               <p class="prezzo">59 €</p>
               <p class="quando">Una volta sola</p>
               <ul>
-                <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>Scheda Google sistemata</li>
-                <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>Profilo Instagram in ordine</li>
-                <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>Per chi il sito ce l'ha già</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Scheda Google sistemata</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Profilo Instagram in ordine</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Per chi il sito ce l&rsquo;ha già</li>
               </ul>
             </article>
           </div>
         </div>
-
-        <div data-sale>
-          <div class="gruppo-testa"><h3>Ogni mese</h3><span>Gestione social</span></div>
+        <div class="gruppo entra">
+          <h3>Ogni mese <small>Gestione social</small></h3>
           <div class="carte">
-            <article class="carta-prezzo">
+            <article class="carta">
               <h4>Base</h4>
-              <p class="prezzo">79 € <small>/ mese</small></p>
+              <p class="prezzo">79 € <small>al mese</small></p>
               <p class="quando">Fino a 8 contenuti</p>
               <ul>
-                <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>Post, storie e grafiche</li>
-                <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>Li prepariamo e pubblichiamo noi</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Post, storie e grafiche</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Li prepariamo e pubblichiamo noi</li>
               </ul>
             </article>
-            <article class="carta-prezzo">
+            <article class="carta">
               <h4>Plus</h4>
-              <p class="prezzo">149 € <small>/ mese</small></p>
+              <p class="prezzo">149 € <small>al mese</small></p>
               <p class="quando">Fino a 12 contenuti</p>
               <ul>
-                <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>Di cui 4 video o reel</li>
-                <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>Post, storie e grafiche</li>
-                <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>Aggiornamenti al sito</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Di cui 4 video o reel</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Post, storie e grafiche</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Aggiornamenti al sito</li>
               </ul>
             </article>
           </div>
           <p class="nota">Si disdice quando vuoi. Prezzi finali, senza sorprese.</p>
         </div>
       </div>
-
-      <div class="consiglio" data-sale>
-        <p>Non sai cosa scegliere? <em>Scrivici, ti consigliamo noi.</em></p>
-        <a class="btn btn-nero" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20un%20consiglio%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener">Scrivici su WhatsApp</a>
+      <div class="consiglio entra">
+        <p>Non sai cosa scegliere? Scrivici, ti consigliamo noi.</p>
+        <a class="btn btn-tegola" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20un%20consiglio%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Chiedi un consiglio</a>
       </div>
     </div>
   </section>
 
-  <!-- Come lavoriamo -->
-  <section class="sezione scura-2" id="come" aria-labelledby="come-titolo">
-    <div class="wrap">
-      <div class="testa" data-sale>
-        <p class="occhiello">Come lavoriamo</p>
-        <h2 class="titolo" id="come-titolo">Prima lo vedi. <em>Poi decidi.</em></h2>
+  <section class="video" id="video" aria-labelledby="t-video">
+    <div class="wrap video-griglia">
+      <div>
+        <h2 id="t-video">Un video racconta il tuo locale <span>in dieci secondi</span></h2>
+        <p class="intro">Mescoliamo riprese create con l&rsquo;intelligenza artificiale e grafica animata. Il risultato sono reel che si guardano fino in fondo.</p>
+        <ul class="punti">
+          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Verticali, per Reel, TikTok e storie</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Testi e logo animati, con i tuoi colori</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Nel piano Plus, 4 video al mese</li>
+        </ul>
       </div>
-      <ol class="passi" role="list" style="list-style:none;padding:0;margin-bottom:0">
-        <li class="passo" data-sale>
-          <span class="n" aria-hidden="true">1</span>
-          <h3>Ci scrivi</h3>
-          <p>Su WhatsApp o per telefono. Ci racconti la tua attività in due minuti.</p>
-        </li>
-        <li class="passo" data-sale>
-          <span class="n" aria-hidden="true">2</span>
-          <h3>Ti prepariamo un'anteprima, gratis</h3>
-          <p>Vedi il tuo sito prima di decidere. Non paghi niente e non ti impegni.</p>
-        </li>
-        <li class="passo" data-sale>
-          <span class="n" aria-hidden="true">3</span>
-          <h3>Se ti piace, la mettiamo online</h3>
-          <p>Sul tuo dominio, insieme a Google e Instagram. Da lì in poi ti trovano.</p>
-        </li>
-      </ol>
+      <div class="entra">
+        <!-- Quando lo showreel è pronto, si può mettere qui un <video> verticale al posto di questo esempio -->
+        <div class="reel" id="reel" aria-hidden="true">
+          <div class="barretta"><span></span><span></span><span></span></div>
+          <div class="scritte">
+            <p class="scritta">Nuovo menù<small>da venerdì</small></p>
+            <p class="scritta">Aperitivo in terrazza<small>dalle 18:30</small></p>
+            <p class="scritta">Prenota su WhatsApp<small>ti teniamo il tavolo</small></p>
+          </div>
+          <p class="firma">La tua attività</p>
+        </div>
+        <p class="esempio">Esempio di testi animati per una storia</p>
+      </div>
     </div>
   </section>
 
-  <!-- Chi siamo -->
-  <section class="sezione chiara" id="chi-siamo" aria-labelledby="chi-titolo">
+  <section class="chi" id="chi-siamo" aria-labelledby="t-chi">
     <div class="wrap chi-griglia">
-      <div data-sale>
-        <p class="occhiello">Chi siamo</p>
-        <h2 class="titolo" id="chi-titolo">Siamo in due. <em>E siamo di qui.</em></h2>
-        <p class="lead">Lavoriamo a Montecatini Terme con le attività della Valdinievole. Ci incontri di persona e ti risponde sempre uno di noi.</p>
+      <div>
+        <h2 id="t-chi">Siamo in due. <span>E siamo di qui.</span></h2>
+        <p class="intro">Lavoriamo a Montecatini Terme con le attività della Valdinievole. Ci incontri di persona e ti risponde sempre uno di noi.</p>
       </div>
-      <div class="persone" data-sale>
-        <div class="persona">
-          <span class="iniziali" aria-hidden="true">NV</span>
-          <div><h3>Niccolò Veniero</h3><p>Siti e video</p></div>
-        </div>
-        <div class="persona">
-          <span class="iniziali" aria-hidden="true">GF</span>
-          <div><h3>Giuseppe Fusciello</h3><p>Consulente digitale</p></div>
-        </div>
-        <p class="luogo">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          Montecatini Terme, Valdinievole
-        </p>
+      <div class="persone">
+        <div class="persona entra"><span class="iniziali" aria-hidden="true">NV</span><div><h3>Niccolò Veniero</h3><p>Siti e video</p></div></div>
+        <div class="persona entra"><span class="iniziali" aria-hidden="true">GF</span><div><h3>Giuseppe Fusciello</h3><p>Consulente digitale, il tuo referente</p></div></div>
+        <p class="luogo"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Montecatini Terme, Valdinievole</p>
       </div>
     </div>
   </section>
 
-  <!-- Contatti -->
-  <section class="sezione contatti" id="contatti" aria-labelledby="contatti-titolo">
+  <section class="domande" aria-labelledby="t-domande">
+    <div class="wrap">
+      <h2 id="t-domande">Domande <span>frequenti</span></h2>
+      <div class="domande-elenco">
+        <details><summary>L&rsquo;anteprima è davvero gratis?</summary><p>Sì. La prepariamo, la guardi con calma sul telefono e decidi. Se non ti convince, non paghi niente e non ti impegni.</p></details>
+        <details><summary>Ci sono altre spese oltre al prezzo?</summary><p>Solo il dominio, cioè il nome del sito (per esempio latuaattivita.it). È intestato a te e costa circa 10-15 € l&rsquo;anno.</p></details>
+        <details><summary>Devo pagare ogni mese?</summary><p>No. Sito, Google e Instagram si pagano una volta sola. La gestione social è a parte, solo se la vuoi, e si disdice quando vuoi.</p></details>
+        <details><summary>Le foto da dove le prendete?</summary><p>Usiamo solo foto vere della tua attività: quelle che hai già sui social, quelle che ci mandi o quelle che scattiamo noi quando passiamo. Niente foto prese a caso da internet.</p></details>
+        <details><summary>Lavorate solo a Montecatini?</summary><p>Siamo a Montecatini Terme e lavoriamo con le attività di tutta la Valdinievole. Ci incontri di persona.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contatti" id="contatti" aria-labelledby="t-contatti">
     <div class="wrap contatti-griglia">
-      <div data-sale>
-        <p class="occhiello">Contatti</p>
-        <h2 id="contatti-titolo" style="margin-top:24px">Parliamone<em>.</em></h2>
-        <p class="lead">Scrivici su WhatsApp: ti rispondiamo noi, senza impegno. L'anteprima è gratis.</p>
+      <div>
+        <h2 id="t-contatti">Parliamone<span>.</span></h2>
+        <p class="intro">Scrivici su WhatsApp cosa fa la tua attività: ti rispondiamo noi, senza impegno. L&rsquo;anteprima è gratis.</p>
         <div class="azioni">
-          <a class="btn btn-oro" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"/></svg>
-            Scrivici su WhatsApp
-          </a>
+          <a class="btn btn-tegola" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Scrivici su WhatsApp</a>
+          <a class="btn btn-linea" href="tel:+393273331949"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>Chiama</a>
         </div>
       </div>
-      <div class="recapiti" data-sale>
+      <div class="recapiti">
         <div class="recapito"><span>Referente</span><b>Giuseppe Fusciello</b></div>
         <a class="recapito" href="tel:+393273331949"><span>Telefono e WhatsApp</span><b>+39 327 333 1949</b></a>
         <a class="recapito" href="mailto:giuseppefusciello90@gmail.com"><span>Email</span><b>giuseppefusciello90@gmail.com</b></a>
@@ -613,113 +528,58 @@ a.recapito:hover b{color:var(--oro)}
 
 <footer class="piede">
   <div class="wrap">
-    <a class="marchio" href="#inizio">Veniello<i>Studio</i></a>
-    <p>Veniello Studio · Montecatini Terme · © <span id="anno">2026</span></p>
+    <a class="marchio" href="#inizio"><svg aria-hidden="true"><use href="#i-marchio"/></svg><b>Veniello <span>Studio</span></b></a>
+    <p>Montecatini Terme · © <span id="anno">2026</span></p>
   </div>
 </footer>
 
-<div class="barra" role="navigation" aria-label="Contatti rapidi">
-  <a class="btn btn-oro" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"/></svg>
-    WhatsApp
-  </a>
-  <a class="btn btn-vuoto" href="tel:+393273331949">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.6 4.2-2.2 1.4a11 11 0 0 0 6.5 6.5l1.4-2.2L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.6 1.5 1.5 0 0 1 5 4Z"/></svg>
-    Chiama
-  </a>
-</div>
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn btn-tegola" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+  <a class="btn btn-linea" href="tel:+393273331949"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>Chiama</a>
+</nav>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
 <script>
+document.getElementById('anno').textContent = new Date().getFullYear();
+/* Linea sotto la testata quando si scorre */
 (function () {
-  var root = document.documentElement;
-  var anno = document.getElementById('anno');
-  if (anno) anno.textContent = new Date().getFullYear();
-
-  // Video: se il file c'è, copre il riquadro "Showreel in arrivo".
-  var reel = document.getElementById('reel');
-  var video = reel && reel.querySelector('video');
-  var ridotto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (video) {
-    if (ridotto) { video.removeAttribute('autoplay'); video.pause(); }
-    video.addEventListener('loadeddata', function () { reel.classList.add('ha-video'); if (ridotto) video.controls = true; });
-    if (video.readyState >= 2) reel.classList.add('ha-video');
-  }
-
-  var h1 = document.querySelector('.hero h1');
-  var mostraTutto = function () { root.classList.remove('anim'); if (h1) h1.classList.add('pronto'); };
-
-  if (!root.classList.contains('anim')) return;
-  if (!window.gsap || !window.ScrollTrigger || !window.SplitText) { mostraTutto(); return; }
-
-  gsap.registerPlugin(ScrollTrigger, SplitText);
-
-  // Scorrimento morbido
-  var lenis = null;
-  if (window.Lenis) {
-    lenis = new Lenis({ autoRaf: false, lerp: 0.11 });
-    lenis.on('scroll', ScrollTrigger.update);
-    gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
-    gsap.ticker.lagSmoothing(0);
-    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
-      a.addEventListener('click', function (e) {
-        var id = a.getAttribute('href');
-        var dest = id.length > 1 && document.querySelector(id);
-        if (!dest) return;
-        e.preventDefault();
-        var nav = parseInt(getComputedStyle(root).getPropertyValue('--nav'), 10) || 64;
-        lenis.scrollTo(id === '#inizio' ? 0 : dest, { offset: id === '#inizio' ? 0 : -nav + 1, duration: 1.2 });
-        if (id === '#contenuto') dest.focus && dest.focus();
-      });
-    });
-  }
-
-  var facile = 'power3.out';
-
-  // 1. Il titolo entra parola per parola
-  var avviaTitolo = function () {
-    if (!h1) return;
-    SplitText.create(h1, {
-      type: 'words',
-      mask: 'words',
-      autoSplit: true,
-      onSplit: function (self) {
-        h1.classList.add('pronto');
-        return gsap.from(self.words, { yPercent: 110, duration: 1.1, ease: 'power4.out', stagger: 0.06, delay: 0.1 });
-      }
-    });
-  };
-  // Se i caratteri tardano, il titolo compare comunque
-  var timer = setTimeout(function () { if (h1 && !h1.classList.contains('pronto')) { h1.classList.add('pronto'); } }, 2500);
-  (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(function () {
-    clearTimeout(timer);
-    if (h1 && h1.classList.contains('pronto')) return; // già mostrato senza animazione
-    avviaTitolo();
-  });
-
-  // Il resto della copertina sale subito dopo il titolo
-  gsap.from('.hero [data-sale]', { y: 24, autoAlpha: 0, duration: 1, ease: facile, stagger: 0.12, delay: 0.45 });
-
-  // 2. Le sezioni salgono quando entrano nello schermo
-  gsap.utils.toArray('main > section:not(.hero) [data-sale]').forEach(function (el) {
-    gsap.from(el, {
-      y: 48, autoAlpha: 0, duration: 1.1, ease: facile,
-      scrollTrigger: { trigger: el, start: 'top 88%', once: true }
-    });
-  });
-
-  // 3. I cerchi dorati si spostano piano mentre scorri
-  gsap.utils.toArray('[data-deriva]').forEach(function (el) {
-    var sezione = el.closest('section');
-    gsap.to(el, {
-      y: parseFloat(el.getAttribute('data-deriva')) * 2, ease: 'none',
-      scrollTrigger: { trigger: sezione, start: 'top bottom', end: 'bottom top', scrub: true }
-    });
-  });
+  var t = document.getElementById('testata');
+  var f = function () { t.classList.toggle('giu', window.scrollY > 8); };
+  window.addEventListener('scroll', f, { passive: true }); f();
 })();
+/* L'esempio di reel parte solo quando si vede */
+(function () {
+  var r = document.getElementById('reel');
+  if (!('IntersectionObserver' in window)) { r.classList.add('va'); return; }
+  new IntersectionObserver(function (e, o) { if (e[0].isIntersecting) { r.classList.add('va'); o.disconnect(); } }, { threshold: 0.3 }).observe(r);
+})();
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script>
+/* Movimento: solo se GSAP c'è e non è attivo "Riduci movimento" */
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!window.gsap || !window.ScrollTrigger) return;
+  gsap.registerPlugin(ScrollTrigger);
+  if (window.Lenis) { var l = new Lenis({ lerp: 0.12 }); l.on('scroll', ScrollTrigger.update); gsap.ticker.add(function (t) { l.raf(t * 1000); }); gsap.ticker.lagSmoothing(0); }
+  /* 1. Il titolo entra parola per parola */
+  if (window.SplitText) {
+    gsap.registerPlugin(SplitText);
+    document.fonts.ready.then(function () {
+      var st = new SplitText('#titolo', { type: 'words' });
+      gsap.from(st.words, { yPercent: 50, autoAlpha: 0, duration: 0.8, ease: 'power3.out', stagger: 0.05, delay: 0.1 });
+    });
+  }
+  gsap.from('.copertina .intro, .copertina .azioni, .fiducia', { y: 18, autoAlpha: 0, duration: 0.8, ease: 'power3.out', stagger: 0.08, delay: 0.45 });
+  /* 2. Il telefono, il messaggio e la scheda Google arrivano uno alla volta */
+  gsap.from('.pezzo', { y: 40, autoAlpha: 0, duration: 0.9, ease: 'power3.out', stagger: 0.18, delay: 0.5 });
+  /* 3. Blocchi che salgono quando arrivano */
+  var el = gsap.utils.toArray('.entra');
+  gsap.set(el, { y: 30, autoAlpha: 0 });
+  ScrollTrigger.batch(el, { start: 'top 92%', once: true, onEnter: function (b) { gsap.to(b, { y: 0, autoAlpha: 1, duration: 0.8, ease: 'power3.out', stagger: 0.07, overwrite: true }); } });
+});
 </script>
 </body>
 </html>
