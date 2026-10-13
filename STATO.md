@@ -22,6 +22,7 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 | Hotel Brennero e Varsavia | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/hotel-brennero-varsavia-aca8a0/ | 2026-10-13 | in attesa | Email respinta dal filtro antispam dell'hotel: da mandare per WhatsApp o di persona. Nuova versione del loro sito: foto da Google e dal loro sito, listino 2026 dal loro sito con la fonte, distanze calcolate dalle coordinate, richiesta di disponibilità via WhatsApp o email. Da verificare prezzi, WhatsApp, convenzioni e numero di camere. Issue #9 |
 | Via Vai | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/tabacchino-via-vai-5ef2bb/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Edicola, ricevitoria e servizi (bollette, ricariche, fotocopie): niente prodotti del tabacco nel sito. Foto e orari dalla scheda Google, logo da Facebook. Mancano foto dell'interno e logo nitido. Issue #10 |
 | Hotel Cappelli | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/hotel-cappelli-4d601a/ | 2026-10-13 | in attesa | Pubblicata, da mandare all'hotel. Fatta sulla base hotel comune: foto dal loro sito, camere e servizi dal loro sito, prenotazione con il loro sistema, distanze calcolate dalle coordinate. Il loro sito di oggi è recente (2025). Issue #11 |
+| Hotel Mirò | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/hotel-miro-706c34/ | 2026-10-13 | in attesa | Pubblicata, da mandare all'hotel. Fatta sulla base hotel comune: foto e testi dal loro sito, distanze calcolate dalle coordinate, richiesta di disponibilità per email e telefono. Issue #12 |
 
 ## Registro
 
@@ -41,3 +42,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-13 — Hotel Brennero e Varsavia (Montecatini Terme): anteprima mandata all'hotel per email, stato "inviata". Issue #9.
 - 2026-10-13 — Hotel Brennero e Varsavia (Montecatini Terme): l'email è stata respinta dal filtro antispam dell'hotel, stato tornato "in attesa". Issue #9.
 - 2026-10-13 — Pubblicata l'anteprima di Hotel Cappelli (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #11.
+- 2026-10-13 — Pubblicata l'anteprima di Hotel Mirò (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #12.
