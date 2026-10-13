@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Hotel Brennero e Varsavia · Hotel 3 stelle a Montecatini Terme</title>
+<meta name="description" content="Hotel tre stelle in Viale Bicchierai a Montecatini Terme, dal 1924. A pochi passi dalle Terme Excelsior e Tettuccio, ristorante con cucina toscana, parcheggio custodito.">
+<meta name="theme-color" content="#1e2b3a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hotel Brennero e Varsavia · Montecatini Terme">
+<meta property="og:description" content="Tre stelle dal 1924, a pochi passi dalle terme e dal centro.">
+<meta property="og:url" content="https://niccoloveniero05.github.io/anteprime/hotel-brennero-varsavia-aca8a0/">
+<meta property="og:image" content="https://niccoloveniero05.github.io/anteprime/hotel-brennero-varsavia-aca8a0/img/condivisione.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="it_IT">
+<link rel="icon" type="image/png" sizes="48x48" href="img/icona-48.png">
+<link rel="apple-touch-icon" href="img/icona-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/facciata-tel.jpg" media="(max-width: 760px)">
+<link rel="preload" as="image" href="img/facciata.jpg" media="(min-width: 761px)">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Hotel Brennero e Varsavia",
+  "starRating": { "@type": "Rating", "ratingValue": "3" },
+  "image": "https://niccoloveniero05.github.io/anteprime/hotel-brennero-varsavia-aca8a0/img/condivisione.jpg",
+  "telephone": "+39 0572 70086",
+  "email": "info@hotelbrenneroevarsavia.it",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Viale Alessandro Bicchierai 70/72",
+    "postalCode": "51016",
+    "addressLocality": "Montecatini Terme",
+    "addressRegion": "PT",
+    "addressCountry": "IT"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 43.884408, "longitude": 10.776829 },
+  "checkinTime": "12:30",
+  "checkoutTime": "10:30",
+  "petsAllowed": true
+}
+</script>
+<style>
+:root{
+  --carta:#f6f2ea;
+  --carta-2:#efe8dc;
+  --bianco:#fffdf9;
+  --inchiostro:#1e2b3a;
+  --testo:#36404b;
+  --tenue:#5d6670;
+  --oro:#b59a62;
+  --oro-scuro:#7c6435;
+  --cielo:#6aa3cf;
+  --linea:rgba(30,43,58,.14);
+  --raggio:4px;
+  --gutter:20px;
+  --max:1180px;
+  --titoli:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --corpo:"Mulish", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--carta);color:var(--testo);font-family:var(--corpo);font-size:17px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--titoli);color:var(--inchiostro);font-weight:500;letter-spacing:-.01em;line-height:1.05;margin:0}
+p{margin:0}
+.contenitore{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.occhiello{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--oro-scuro)}
+.sezione{padding:96px 0}
+.sezione h2{font-size:clamp(40px,9vw,72px)}
+.intro{max-width:34em;margin-top:20px;font-size:18px;color:var(--testo)}
+.pulsante{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:var(--corpo);transition:transform .2s ease, background-color .2s ease, color .2s ease}
+.pulsante:active{transform:scale(.97)}
+.pulsante svg{width:20px;height:20px;flex:none}
+.p-pieno{background:var(--inchiostro);color:var(--bianco)}
+.p-pieno:hover{background:#2c3e52}
+.p-chiaro{background:var(--bianco);color:var(--inchiostro)}
+.p-chiaro:hover{background:var(--carta-2)}
+.p-vuoto{background:transparent;color:var(--bianco);border-color:rgba(255,255,255,.6)}
+.p-vuoto:hover{background:rgba(255,255,255,.12)}
+.p-linea{background:transparent;color:var(--inchiostro);border-color:var(--linea)}
+.p-linea:hover{border-color:var(--inchiostro)}
+
+/* testata */
+.testata{position:absolute;top:0;left:0;right:0;z-index:20;color:var(--bianco);text-shadow:0 1px 10px rgba(10,16,24,.45)}
+.testata .contenitore{display:flex;align-items:center;justify-content:space-between;height:72px}
+.marchio{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.marchio b{font-family:var(--titoli);font-weight:600;font-size:22px;letter-spacing:.02em}
+.marchio span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-top:5px;opacity:.9}
+.testata nav{display:none;gap:28px;font-size:15px;font-weight:600}
+.testata nav a{text-decoration:none;opacity:.92}
+.testata nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
+.testata .tel{font-weight:700;text-decoration:none;font-size:15px;display:flex;gap:8px;align-items:center}
+.testata .tel svg{width:18px;height:18px}
+
+/* copertina */
+.copertina{position:relative;height:100vh;height:100svh;min-height:600px;max-height:1000px;overflow:hidden;background:var(--inchiostro);color:var(--bianco)}
+.copertina picture, .copertina img{position:absolute;inset:0;width:100%;height:100%}
+.copertina img{object-fit:cover;object-position:50% 40%;transform-origin:50% 60%}
+.copertina::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,26,36,.55) 0%,rgba(18,26,36,0) 22%,rgba(18,26,36,0) 38%,rgba(18,26,36,.78) 72%,rgba(18,26,36,.92) 100%)}
+.copertina .contenuto{position:absolute;left:0;right:0;bottom:0;z-index:2;padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+.copertina .occhiello{color:#e6d3a6}
+.copertina h1{color:var(--bianco);font-size:clamp(50px,13.5vw,112px);margin-top:14px;max-width:11ch}
+.copertina h1 .riga{display:block}
+.copertina .frase{margin-top:18px;font-size:18px;max-width:30em;color:rgba(255,255,255,.92)}
+.azioni{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.voto{display:flex;align-items:center;gap:10px;margin-top:24px;font-size:14px;color:rgba(255,255,255,.88)}
+.voto .stelle{color:#e6c97f;letter-spacing:2px;font-size:15px}
+/* sul telefono la facciata sta sopra, pulita, e il testo sotto: così titolo e insegna non si sovrappongono */
+@media (max-width:760px){
+  .copertina{height:auto;min-height:0;max-height:none;display:flex;flex-direction:column}
+  .copertina picture{position:relative;inset:auto;height:52vh;height:52svh;min-height:360px;overflow:hidden;flex:none}
+  .copertina::after{bottom:auto;height:52vh;height:52svh;min-height:360px;background:linear-gradient(180deg,rgba(18,26,36,.72) 0%,rgba(18,26,36,0) 30%,rgba(18,26,36,0) 82%,rgba(30,43,58,.9) 100%)}
+  .copertina .contenuto{position:relative;padding:22px 0 44px;background:var(--inchiostro)}
+  .copertina h1{font-size:clamp(42px,11.6vw,62px);margin-top:12px}
+  .copertina .frase{font-size:17px}
+  .copertina .azioni .pulsante{flex:1 1 140px;padding:0 18px}
+}
+
+/* posizione */
+.posizione{background:var(--bianco)}
+.posizione .griglia{display:grid;gap:48px}
+.distanze{list-style:none;margin:0;padding:0;border-top:1px solid var(--linea)}
+.distanze li{display:grid;grid-template-columns:92px 1fr;align-items:baseline;gap:12px;padding:18px 0;border-bottom:1px solid var(--linea)}
+.distanze .metri{font-family:var(--titoli);font-size:34px;color:var(--inchiostro);line-height:1;font-weight:600;font-variant-numeric:tabular-nums}
+.distanze .metri small{font-size:18px;margin-left:2px}
+.distanze .luogo{font-weight:700;color:var(--inchiostro)}
+.distanze .piedi{display:block;font-size:14px;color:var(--tenue)}
+.nota{font-size:14px;color:var(--tenue);margin-top:16px;max-width:36em}
+.mappa-link{margin-top:28px}
+
+/* camere */
+.camere .elenco{display:grid;gap:56px;margin-top:48px}
+.camera figure{margin:0}
+.camera img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--raggio)}
+.camera h3{font-size:34px;margin-top:20px}
+.camera p{margin-top:8px;color:var(--testo)}
+.dotazioni{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:40px;padding:0;list-style:none;font-weight:600;color:var(--inchiostro);font-size:15px}
+.dotazioni li{display:flex;align-items:center;gap:8px}
+.dotazioni svg{width:20px;height:20px;color:var(--oro-scuro);flex:none}
+.orari-camere{margin-top:24px;font-size:15px;color:var(--tenue)}
+
+/* prezzi */
+.prezzi{background:var(--inchiostro);color:#d9dee4}
+.prezzi h2{color:var(--bianco)}
+.prezzi .occhiello{color:#e6d3a6}
+.prezzi .intro{color:#c7ced6}
+.tabella{width:100%;border-collapse:collapse;margin-top:44px;font-variant-numeric:tabular-nums}
+.tabella th{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#aeb7c1;font-weight:700;text-align:right;padding:0 0 12px}
+.tabella th:first-child{text-align:left}
+.tabella td{padding:20px 0;border-top:1px solid rgba(255,255,255,.14);text-align:right;font-size:20px;color:var(--bianco);font-weight:600;white-space:nowrap}
+.tabella td:first-child{text-align:left;white-space:normal;font-weight:400;color:#d9dee4;font-size:16px;padding-right:12px}
+.tabella td:first-child b{display:block;font-family:var(--titoli);font-size:26px;font-weight:500;color:var(--bianco);line-height:1.1}
+.tabella td + td{padding-left:14px}
+.prezzi .note{margin-top:28px;font-size:14px;color:#aeb7c1;display:grid;gap:6px}
+
+/* ristorante */
+.ristorante .griglia{display:grid;gap:40px;margin-top:44px}
+.ristorante .grande img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--raggio)}
+.ristorante .testo p + p{margin-top:16px}
+.piatti{list-style:none;padding:0;margin:24px 0 0;border-top:1px solid var(--linea)}
+.piatti li{padding:14px 0;border-bottom:1px solid var(--linea);font-family:var(--titoli);font-size:24px;color:var(--inchiostro);line-height:1.2}
+.ristorante .piccola{margin-top:28px}
+.ristorante .piccola img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--raggio)}
+.didascalia{font-size:14px;color:var(--tenue);margin-top:10px}
+
+/* spazi */
+.spazi{background:var(--carta-2);padding-bottom:72px}
+.scorri{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:44px var(--gutter) 12px;margin:0 auto;max-width:calc(var(--max) + 2*var(--gutter));scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.scorri figure{margin:0;flex:0 0 82%;scroll-snap-align:start}
+.scorri img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--raggio)}
+.scorri figcaption{margin-top:12px;font-size:15px;color:var(--testo)}
+.scorri figcaption b{display:block;font-family:var(--titoli);font-size:24px;font-weight:500;color:var(--inchiostro)}
+
+/* servizi */
+.servizi .griglia{display:grid;gap:48px;margin-top:44px}
+.lista-servizi{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--linea)}
+.lista-servizi li{display:grid;grid-template-columns:28px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--linea)}
+.lista-servizi svg{width:26px;height:26px;color:var(--oro-scuro);margin-top:2px}
+.lista-servizi b{display:block;color:var(--inchiostro)}
+.lista-servizi span{font-size:15px;color:var(--tenue)}
+.amici img{width:100%;aspect-ratio:8/9;object-fit:cover;border-radius:var(--raggio)}
+
+/* recensioni */
+.recensioni{background:var(--bianco)}
+.punteggio{display:flex;align-items:baseline;gap:16px;margin-top:28px;flex-wrap:wrap}
+.punteggio .numero{font-family:var(--titoli);font-size:84px;line-height:.9;color:var(--inchiostro);font-weight:600}
+.punteggio .dettagli{font-size:15px;color:var(--tenue)}
+.punteggio .stelle{color:var(--oro);font-size:20px;letter-spacing:3px;display:block}
+.citazioni{display:grid;gap:40px;margin-top:52px}
+.citazioni blockquote{margin:0;padding-top:24px;border-top:1px solid var(--linea)}
+.citazioni p{font-family:var(--titoli);font-size:26px;line-height:1.25;color:var(--inchiostro)}
+.citazioni footer{margin-top:14px;font-size:14px;color:var(--tenue)}
+.recensioni .altre{margin-top:44px}
+
+/* contatti */
+.contatti{background:var(--inchiostro);color:#d9dee4}
+.contatti h2{color:var(--bianco)}
+.contatti .occhiello{color:#e6d3a6}
+.contatti .intro{color:#c7ced6}
+.contatti .griglia{display:grid;gap:56px;margin-top:44px}
+.modulo{display:grid;gap:16px}
+.modulo .due{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.modulo label{display:grid;gap:6px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#aeb7c1;min-width:0}
+.modulo input,.modulo select{width:100%;min-width:0;min-height:52px;padding:12px 14px;border-radius:var(--raggio);border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);color:var(--bianco);font:600 16px var(--corpo);-webkit-appearance:none;appearance:none}
+.modulo select{background-image:linear-gradient(45deg,transparent 50%,#e6d3a6 50%),linear-gradient(135deg,#e6d3a6 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat;padding-right:36px}
+.modulo select option{color:#1e2b3a}
+.modulo input:focus,.modulo select:focus{outline:2px solid #e6d3a6;outline-offset:1px}
+.modulo input::-webkit-date-and-time-value{text-align:left}
+.modulo .azioni{margin-top:8px}
+.modulo .pulsante{flex:1 1 200px}
+.modulo .aiuto{font-size:14px;color:#aeb7c1}
+.recapiti{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.14)}
+.recapiti li{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.recapiti small{display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#aeb7c1}
+.recapiti a{color:var(--bianco);text-decoration:none;font-size:20px;font-weight:600}
+.recapiti a:hover{text-decoration:underline;text-underline-offset:4px}
+.recapiti .indirizzo{color:var(--bianco);font-size:18px}
+
+/* piede */
+.piede{background:#17212d;color:#9aa5b1;font-size:14px;padding:48px 0 calc(110px + env(safe-area-inset-bottom))}
+.piede .marchio b{color:var(--bianco)}
+.piede .marchio span{color:#9aa5b1}
+.piede .righe{margin-top:22px;display:grid;gap:6px}
+.piede .anteprima{margin-top:28px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);color:#c3ccd5}
+
+/* barra telefono */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1.15fr 1.3fr;gap:6px;padding:10px 10px calc(10px + env(safe-area-inset-bottom));background:rgba(246,242,234,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--linea)}
+.barra a{min-height:48px;padding:0 6px;font-size:14px;gap:6px;white-space:nowrap;min-width:0}
+.barra .p-linea{background:var(--bianco)}
+
+@media (min-width:761px){
+  :root{--gutter:40px}
+  .testata nav{display:flex}
+  .sezione{padding:140px 0}
+  .copertina .contenuto{padding-bottom:88px}
+  .copertina img{object-position:50% 50%}
+  .copertina::after{background:linear-gradient(180deg,rgba(18,26,36,.6) 0%,rgba(18,26,36,0) 20%),linear-gradient(90deg,rgba(18,26,36,.88) 0%,rgba(18,26,36,.62) 42%,rgba(18,26,36,0) 72%)}
+  .ristorante .piccola{max-width:58%;margin-left:auto}
+  .posizione .griglia{grid-template-columns:1fr 1.15fr;align-items:start;gap:80px}
+  .camere .elenco{grid-template-columns:1.25fr 1fr;align-items:start;gap:40px}
+  .camere .camera:nth-child(2){margin-top:120px}
+  .ristorante .griglia{grid-template-columns:1.3fr 1fr;gap:64px;align-items:start}
+  .scorri figure{flex:0 0 calc(33.333% - 11px)}
+  .servizi .griglia{grid-template-columns:1fr 1.1fr;gap:80px;align-items:center}
+  .citazioni{grid-template-columns:repeat(3,1fr);gap:40px}
+  .contatti .griglia{grid-template-columns:1.1fr 1fr;gap:80px}
+  .barra{display:none}
+  .piede{padding-bottom:48px}
+}
+@media (min-width:1100px){
+  .copertina h1{max-width:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<header class="testata">
+  <div class="contenitore">
+    <a class="marchio" href="#inizio" aria-label="Hotel Brennero e Varsavia, torna su">
+      <b>Brennero e Varsavia</b>
+      <span>Hotel ★★★ Montecatini</span>
+    </a>
+    <nav aria-label="Sezioni">
+      <a href="#posizione">Posizione</a>
+      <a href="#camere">Camere</a>
+      <a href="#prezzi">Prezzi</a>
+      <a href="#ristorante">Ristorante</a>
+      <a href="#recensioni">Recensioni</a>
+      <a href="#disponibilita">Contatti</a>
+    </nav>
+    <a class="tel" href="tel:+39057270086">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+      0572 70086
+    </a>
+  </div>
+</header>
+
+<main id="inizio">
+
+  <section class="copertina" aria-label="Benvenuti">
+    <picture>
+      <source media="(max-width: 760px)" srcset="img/facciata-tel.jpg" width="825" height="1000">
+      <img class="foto-copertina" src="img/facciata.jpg" width="1400" height="934" alt="L'ingresso dell'Hotel Brennero e Varsavia in Viale Bicchierai, con la terrazza fiorita e le tende bianche">
+    </picture>
+    <div class="contenuto">
+      <div class="contenitore">
+        <p class="occhiello">Montecatini Terme · dal 1924</p>
+        <h1 class="titolo-copertina"><span class="riga">Hotel Brennero</span> <span class="riga">e Varsavia</span></h1>
+        <p class="frase">Tre stelle in Viale Bicchierai, a pochi minuti a piedi dalle terme, dal centro e dalla stazione.</p>
+        <div class="azioni">
+          <a class="pulsante p-chiaro" href="#disponibilita">Chiedi disponibilità</a>
+          <a class="pulsante p-vuoto" href="tel:+39057270086">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            Chiama
+          </a>
+        </div>
+        <p class="voto"><span class="stelle" aria-hidden="true">★★★★☆</span> 4,0 su Google · 345 recensioni</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione posizione" id="posizione">
+    <div class="contenitore griglia">
+      <div class="reveal">
+        <p class="occhiello">La posizione</p>
+        <h2>Le terme sono dietro l'angolo.</h2>
+        <p class="intro">L'hotel è in Viale Bicchierai, tra le Terme e il centro. Si lascia l'auto nel parcheggio custodito e per tutto il resto del soggiorno si va a piedi: cure, passeggiate nel Parco Termale, caffè in piazza, treno per Firenze e Lucca.</p>
+        <p class="mappa-link"><a class="pulsante p-linea" href="https://www.google.com/maps/dir/?api=1&amp;destination=Hotel+Brennero+e+Varsavia%2C+Viale+Bicchierai+72%2C+Montecatini+Terme" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          Indicazioni stradali</a></p>
+      </div>
+      <div class="reveal">
+        <ul class="distanze">
+          <li><span class="metri">270<small>m</small></span><span><span class="luogo">Terme Excelsior</span><span class="piedi">circa 5 minuti a piedi</span></span></li>
+          <li><span class="metri">470<small>m</small></span><span><span class="luogo">Terme Tettuccio</span><span class="piedi">circa 8 minuti a piedi</span></span></li>
+          <li><span class="metri">480<small>m</small></span><span><span class="luogo">Piazza del Popolo, il centro</span><span class="piedi">circa 8 minuti a piedi</span></span></li>
+          <li><span class="metri">610<small>m</small></span><span><span class="luogo">Stazione Montecatini Centro</span><span class="piedi">circa 10 minuti a piedi</span></span></li>
+          <li><span class="metri">650<small>m</small></span><span><span class="luogo">Stazione Montecatini Terme-Monsummano</span><span class="piedi">circa 11 minuti a piedi</span></span></li>
+          <li><span class="metri">660<small>m</small></span><span><span class="luogo">Funicolare per Montecatini Alto</span><span class="piedi">circa 11 minuti a piedi</span></span></li>
+        </ul>
+        <p class="nota">Distanze in linea d'aria calcolate dalla posizione dell'hotel; a piedi il percorso è un po' più lungo. La Grotta Giusti di Monsummano, convenzionata con l'hotel, è a circa 5 km.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione camere" id="camere">
+    <div class="contenitore">
+      <div class="reveal">
+        <p class="occhiello">Le camere</p>
+        <h2>Camere ampie e luminose.</h2>
+        <p class="intro">Parquet, tende pesanti, poltroncine e una scrivania: camere semplici e curate, con il bagno privato. Si sceglie fra il letto matrimoniale o due letti singoli.</p>
+      </div>
+      <div class="elenco">
+        <article class="camera reveal">
+          <figure><img src="img/camera-doppia.jpg" width="1100" height="734" loading="lazy" alt="Camera doppia con letto matrimoniale, poltroncine blu e parquet"></figure>
+          <h3>Doppia o matrimoniale</h3>
+          <p>Un letto matrimoniale o due singoli, con colazione, mezza pensione o pensione completa.</p>
+        </article>
+        <article class="camera reveal">
+          <figure><img src="img/camera-singola.jpg" width="1100" height="734" loading="lazy" alt="Camera singola con scrivania, televisore e bagno privato"></figure>
+          <h3>Singola</h3>
+          <p>Per chi viene da solo per le cure o per lavoro, con scrivania e televisore.</p>
+        </article>
+      </div>
+      <ul class="dotazioni reveal" aria-label="In camera">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor"/></svg>Wi-Fi gratuito</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M4 6l16 12M20 6 4 18"/></svg>Aria condizionata</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="1.5"/><path d="M8 21h8"/></svg>Tv a schermo piatto</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zM6 12V5a2 2 0 0 1 4 0"/></svg>Bagno privato</li>
+      </ul>
+      <p class="orari-camere reveal">La camera è pronta dalle 12:30 del giorno di arrivo e va lasciata entro le 10:30 del giorno di partenza.</p>
+    </div>
+  </section>
+
+  <section class="sezione prezzi" id="prezzi">
+    <div class="contenitore">
+      <div class="reveal">
+        <p class="occhiello">Listino 2026</p>
+        <h2>Prezzi chiari, da subito.</h2>
+        <p class="intro">I prezzi di partenza pubblicati dall'hotel per il 2026. L'alta stagione va dal 1 agosto al 30 settembre.</p>
+      </div>
+      <table class="tabella reveal">
+        <thead><tr><th scope="col">Formula</th><th scope="col">Bassa</th><th scope="col">Alta</th></tr></thead>
+        <tbody>
+          <tr><td><b>Pensione completa</b>a persona, al giorno</td><td>65 €</td><td>70 €</td></tr>
+          <tr><td><b>Mezza pensione</b>a persona, al giorno</td><td>60 €</td><td>65 €</td></tr>
+          <tr><td><b>Doppia e colazione</b>a notte, per la camera</td><td>85 €</td><td>90 €</td></tr>
+          <tr><td><b>Singola e colazione</b>a notte</td><td>55 €</td><td>60 €</td></tr>
+        </tbody>
+      </table>
+      <div class="note reveal">
+        <p>Tassa di soggiorno esclusa: 1 € al giorno per adulto, per le prime sette notti; bambini fino a 10 anni esenti.</p>
+        <p>Parcheggio custodito: 10 € al giorno. Hotel convenzionato INAIL.</p>
+        <p>Fonte: listino prezzi 2026 sul sito dell'hotel. Per date precise conviene chiedere: la risposta arriva direttamente dall'hotel.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione ristorante" id="ristorante">
+    <div class="contenitore">
+      <div class="reveal">
+        <p class="occhiello">Ristorante e colazione</p>
+        <h2>La cucina toscana, a tavola in hotel.</h2>
+      </div>
+      <div class="griglia">
+        <figure class="grande reveal" style="margin:0">
+          <img src="img/ristorante.jpg" width="1100" height="733" loading="lazy" alt="La sala ristorante con le colonne e i tavoli apparecchiati">
+        </figure>
+        <div class="testo reveal">
+          <p>Nella sala da pranzo si mangia cucina toscana e internazionale, con un buffet di verdure di stagione, crude e cotte, e una carta di vini toscani e italiani.</p>
+          <ul class="piatti" aria-label="I piatti più chiesti">
+            <li>Antipasto toscano con salumi e crostini</li>
+            <li>Pappa col pomodoro</li>
+            <li>Pasta al sugo di coniglio alla pistoiese</li>
+          </ul>
+          <p style="margin-top:22px">Su richiesta piatti senza glutine o senza latticini, vegetariani e vegani. La colazione è a buffet, dolce e salata: pane toscano, salumi e formaggi, yogurt, cereali, marmellate, miele e torte.</p>
+        </div>
+      </div>
+      <figure class="piccola reveal" style="margin-top:28px">
+        <img src="img/sala-veranda.jpg" width="1000" height="750" loading="lazy" alt="Sala con travi in legno e grandi finestre luminose">
+        <figcaption class="didascalia">La sala con le travi in legno e le grandi finestre.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sezione spazi" id="spazi" aria-labelledby="titolo-spazi">
+    <div class="contenitore reveal">
+      <p class="occhiello">Dentro l'hotel</p>
+      <h2 id="titolo-spazi">Un'accoglienza di altri tempi.</h2>
+      <p class="intro">Tappeti, divani a fiori, legno e marmo: gli spazi comuni di un albergo di tradizione, gestito dai fratelli Bruschetti.</p>
+    </div>
+    <div class="scorri" tabindex="0" aria-label="Foto degli spazi comuni, scorri di lato">
+      <figure><img src="img/salotto.jpg" width="1100" height="733" loading="lazy" alt="La hall con divani a fiori e tappeti rossi"><figcaption><b>La hall</b>Divani a fiori, tappeti e luce calda.</figcaption></figure>
+      <figure><img src="img/bar.jpg" width="1000" height="667" loading="lazy" alt="Il bar con il bancone in legno e la sala con i tavolini"><figcaption><b>Il bar</b>Aperto con orario continuato: caffè, aperitivi e cocktail.</figcaption></figure>
+      <figure><img src="img/terrazza.jpg" width="1000" height="667" loading="lazy" alt="La terrazza esterna all'ombra degli alberi del viale"><figcaption><b>La terrazza</b>All'ombra degli alberi del viale.</figcaption></figure>
+      <figure><img src="img/reception.jpg" width="1000" height="667" loading="lazy" alt="Il ricevimento con il bancone in legno e marmo verde"><figcaption><b>Il ricevimento</b>Il bancone in legno e marmo, appena entrati.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="sezione servizi" id="servizi">
+    <div class="contenitore">
+      <div class="reveal">
+        <p class="occhiello">Servizi</p>
+        <h2>Quello che serve, senza pensieri.</h2>
+      </div>
+      <div class="griglia">
+        <ul class="lista-servizi reveal">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg><div><b>Parcheggio custodito</b><span>A pagamento, 10 € al giorno.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-3 4-6 6.5-6 10a6 6 0 0 0 12 0c0-3.5-3-6-6-10z"/></svg><div><b>Sconti alla Grotta Giusti</b><span>Convenzione per gli ospiti sul centro benessere termale di Monsummano.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 21V3l10 4-10 4"/><path d="M4 21h10"/></svg><div><b>Golf Club Montecatini</b><span>Tariffe agevolate per gli ospiti.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11z"/></svg><div><b>Convenzionato INAIL</b><span>Per chi arriva per le cure.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="1.5"/><path d="M8 21h8"/></svg><div><b>Wi-Fi gratuito e sala tv</b><span>Connessione libera per tutti gli ospiti.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="11" r="2"/><circle cx="9.5" cy="6.5" r="2"/><circle cx="14.5" cy="6.5" r="2"/><circle cx="19" cy="11" r="2"/><path d="M12 12c-3 0-5.5 3.5-5.5 6 0 1.7 1.3 2.5 2.8 2.5 1.2 0 1.8-.6 2.7-.6s1.5.6 2.7.6c1.5 0 2.8-.8 2.8-2.5 0-2.5-2.5-6-5.5-6z"/></svg><div><b>Animali ammessi</b><span>Gli amici a quattro zampe vengono in vacanza con voi.</span></div></li>
+        </ul>
+        <figure class="amici reveal" style="margin:0">
+          <img src="img/amici.jpg" width="800" height="900" loading="lazy" alt="Due labrador neri sdraiati sul parquet dell'hotel">
+          <figcaption class="didascalia">Gli animali sono ammessi in hotel.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione recensioni" id="recensioni">
+    <div class="contenitore">
+      <div class="reveal">
+        <p class="occhiello">Recensioni</p>
+        <h2>Chi torna, lo dice.</h2>
+        <div class="punteggio">
+          <span class="numero">4,0</span>
+          <span class="dettagli"><span class="stelle" aria-hidden="true">★★★★☆</span>su 5, con 345 recensioni su Google</span>
+        </div>
+      </div>
+      <div class="citazioni">
+        <blockquote class="reveal">
+          <p>«Gentilezza, disponibilità, pulizia. Questa è la seconda volta che vado ospite della struttura e mi sono trovata benissimo. A un passo dalle terme.»</p>
+          <footer>Peppina P. · Google, 5 su 5</footer>
+        </blockquote>
+        <blockquote class="reveal">
+          <p>«Ottima struttura sotto ogni aspetto, dalla gentilezza dello staff alla dotazione delle camere. Comodo il parcheggio riservato e la posizione centrale.»</p>
+          <footer>Luigi C. · Google, 5 su 5</footer>
+        </blockquote>
+        <blockquote class="reveal">
+          <p>«Ottimo hotel in centro. Spazioso e luminoso. Camere pulite e confortevoli. Ottima cucina. Personale preparato.»</p>
+          <footer>Gianpietro F. · Google, 4 su 5</footer>
+        </blockquote>
+      </div>
+      <p class="altre reveal"><a class="pulsante p-linea" href="https://www.google.com/maps/place/Hotel+Brennero+e+Varsavia/@43.884408,10.776829,17z/data=!4m8!3m7!1s0x132a7d674fe905ff:0x298a9eea04c6e46f!8m2!3d43.884408!4d10.776829!9m1!1b1" target="_blank" rel="noopener">Leggi tutte le recensioni</a></p>
+    </div>
+  </section>
+
+  <section class="sezione contatti" id="disponibilita">
+    <div class="contenitore">
+      <div class="reveal">
+        <p class="occhiello">Chiedi disponibilità</p>
+        <h2>Scrivete le date, rispondiamo noi.</h2>
+        <p class="intro">Niente intermediari: la richiesta arriva direttamente all'hotel, su WhatsApp o per email. Oppure chiamate, anche solo per un consiglio sulle cure.</p>
+      </div>
+      <div class="griglia">
+        <form class="modulo reveal" id="modulo" novalidate>
+          <div class="due">
+            <label>Arrivo<input type="date" name="arrivo" id="arrivo"></label>
+            <label>Partenza<input type="date" name="partenza" id="partenza"></label>
+          </div>
+          <div class="due">
+            <label>Adulti
+              <select name="adulti" id="adulti"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
+            </label>
+            <label>Bambini
+              <select name="bambini" id="bambini"><option selected>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+            </label>
+          </div>
+          <label>Formula
+            <select name="formula" id="formula">
+              <option>Camera e colazione</option>
+              <option>Mezza pensione</option>
+              <option>Pensione completa</option>
+              <option>Non so ancora</option>
+            </select>
+          </label>
+          <div class="azioni">
+            <button class="pulsante p-chiaro" type="button" id="invia-wa">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>
+              Invia su WhatsApp
+            </button>
+            <button class="pulsante p-vuoto" type="button" id="invia-mail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              Invia per email
+            </button>
+          </div>
+          <p class="aiuto">Si apre il messaggio già scritto: controllatelo e premete invia.</p>
+        </form>
+        <ul class="recapiti reveal">
+          <li><small>Telefono</small><a href="tel:+39057270086">0572 70086</a> · <a href="tel:+39057271074">0572 71074</a></li>
+          <li><small>WhatsApp</small><a href="https://wa.me/393384932161">338 493 2161</a></li>
+          <li><small>Email</small><a href="mailto:info@hotelbrenneroevarsavia.it">info@hotelbrenneroevarsavia.it</a></li>
+          <li><small>Indirizzo</small><span class="indirizzo">Viale Bicchierai 70/72, 51016 Montecatini Terme (PT)</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="piede">
+  <div class="contenitore">
+    <a class="marchio" href="#inizio"><b>Hotel Brennero e Varsavia</b><span>Tre stelle · Montecatini Terme</span></a>
+    <div class="righe">
+      <p>Hotel Brennero e Varsavia di F.lli Bruschetti snc · Viale Bicchierai 72, 51016 Montecatini Terme (PT)</p>
+      <p>P. IVA 01097840472 · CIN IT047011A1WKPN8PHN</p>
+    </div>
+    <p class="anteprima preview-note">Anteprima preparata per Hotel Brennero e Varsavia</p>
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="pulsante p-linea" href="tel:+39057270086">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Chiama</a>
+  <a class="pulsante p-linea" href="https://wa.me/393384932161">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+  <a class="pulsante p-pieno" href="#disponibilita">Disponibilità</a>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" defer></script>
+<script>
+// Richiesta di disponibilità: prepara il messaggio per WhatsApp o per email (nessun dato passa da noi)
+(function () {
+  var oggi = new Date();
+  var iso = function (d) { return d.toISOString().slice(0, 10); };
+  var arrivo = document.getElementById('arrivo');
+  var partenza = document.getElementById('partenza');
+  arrivo.min = iso(oggi);
+  partenza.min = iso(oggi);
+  arrivo.addEventListener('change', function () {
+    if (arrivo.value) {
+      var d = new Date(arrivo.value); d.setDate(d.getDate() + 1);
+      partenza.min = iso(d);
+      if (!partenza.value || partenza.value <= arrivo.value) partenza.value = iso(d);
+    }
+  });
+  function data(v) {
+    if (!v) return 'da definire';
+    var p = v.split('-'); return p[2] + '/' + p[1] + '/' + p[0];
+  }
+  function testo() {
+    var b = document.getElementById('bambini').value;
+    return 'Buongiorno, vorrei sapere se avete disponibilità.\n' +
+      'Arrivo: ' + data(arrivo.value) + '\n' +
+      'Partenza: ' + data(partenza.value) + '\n' +
+      'Adulti: ' + document.getElementById('adulti').value + (b !== '0' ? ', bambini: ' + b : '') + '\n' +
+      'Formula: ' + document.getElementById('formula').value + '\n' +
+      'Grazie.';
+  }
+  document.getElementById('invia-wa').addEventListener('click', function () {
+    window.location.href = 'https://wa.me/393384932161?text=' + encodeURIComponent(testo());
+  });
+  document.getElementById('invia-mail').addEventListener('click', function () {
+    window.location.href = 'mailto:info@hotelbrenneroevarsavia.it?subject=' + encodeURIComponent('Richiesta disponibilità') + '&body=' + encodeURIComponent(testo());
+  });
+})();
+
+// Movimento: solo se GSAP è caricato e se il telefono non chiede di ridurre il movimento
+window.addEventListener('load', function () {
+  var ridotto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (ridotto || !window.gsap || !window.ScrollTrigger) return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  // scorrimento morbido
+  if (window.Lenis) {
+    var lenis = new Lenis({ lerp: 0.12 });
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
+    gsap.ticker.lagSmoothing(0);
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href');
+        var el = id === '#inizio' ? document.body : document.querySelector(id);
+        if (el) { e.preventDefault(); lenis.scrollTo(el, { offset: 0, duration: 1.1 }); }
+      });
+    });
+  }
+
+  // 1. il titolo entra parola per parola
+  var titolo = document.querySelector('.titolo-copertina');
+  if (window.SplitText && titolo) {
+    gsap.registerPlugin(SplitText);
+    var parti = new SplitText(titolo, { type: 'words', mask: 'words' });
+    gsap.from(parti.words, { yPercent: 110, duration: 0.9, ease: 'power3.out', stagger: 0.08, delay: 0.1 });
+  }
+  gsap.from('.copertina .occhiello, .copertina .frase, .copertina .azioni, .copertina .voto', { opacity: 0, y: 16, duration: 0.7, ease: 'power2.out', stagger: 0.08, delay: 0.45 });
+
+  // 2. la facciata si allontana piano scorrendo
+  gsap.fromTo('.foto-copertina', { scale: 1.08 }, {
+    scale: 1, yPercent: 8, ease: 'none',
+    scrollTrigger: { trigger: '.copertina', start: 'top top', end: 'bottom top', scrub: true }
+  });
+
+  // 3. i blocchi salgono quando arrivano
+  gsap.utils.toArray('.reveal').forEach(function (el) {
+    gsap.from(el, {
+      opacity: 0, y: 28, duration: 0.8, ease: 'power2.out',
+      scrollTrigger: { trigger: el, start: 'top 88%', once: true }
+    });
+  });
+});
+</script>
+</body>
+</html>
