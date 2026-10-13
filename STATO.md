@@ -20,6 +20,7 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 | Hotel Byron | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/hotel-byron-e4b27d/ | 2026-10-13 | inviata | Mandata all'hotel per email. Nuova versione del loro sito (byronmct.it, del 2015): foto dal loro sito, servizi dalla loro scheda, distanze calcolate dalle coordinate, richiesta di disponibilità via email e telefono. Da verificare servizi, parcheggio e foto più recenti. Issue #7 |
 | Suite Dreams Hotel | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/suite-dreams-hotel-7c31e8/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Nuova versione del loro sito: 10 suite con foto e prezzi dal loro sito, prenotazione con il loro sistema WuBook, distanze calcolate dalle coordinate. Da verificare prezzi, colazione e sauna. Issue #8 |
 | Hotel Brennero e Varsavia | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/hotel-brennero-varsavia-aca8a0/ | 2026-10-13 | in attesa | Pubblicata, da mandare all'hotel. Nuova versione del loro sito: foto da Google e dal loro sito, listino 2026 dal loro sito con la fonte, distanze calcolate dalle coordinate, richiesta di disponibilità via WhatsApp o email. Da verificare prezzi, WhatsApp, convenzioni e numero di camere. Issue #9 |
+| Via Vai | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/tabacchino-via-vai-5ef2bb/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Edicola, ricevitoria e servizi (bollette, ricariche, fotocopie): niente prodotti del tabacco nel sito. Foto e orari dalla scheda Google, logo da Facebook. Mancano foto dell'interno e logo nitido. Issue #10 |
 
 ## Registro
 
@@ -35,3 +36,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-13 — Pubblicata l'anteprima di Suite Dreams Hotel (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #8.
 - 2026-10-13 — Hotel Byron (Montecatini Terme): anteprima mandata all'hotel per email, stato "inviata". Issue #7.
 - 2026-10-13 — Pubblicata l'anteprima di Hotel Brennero e Varsavia (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #9.
+- 2026-10-13 — Pubblicata l'anteprima di Via Vai (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #10.

@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Via Vai, Montecatini Terme | Edicola, ricevitoria e servizi in Via Lucchese</title>
+<meta name="description" content="Via Vai a Montecatini Terme, Via Lucchese 25: bollette e bollettini, bollo auto, ricariche, fotocopie e fax, giornali e cartoleria. Aperto dalle 7 tutti i giorni.">
+<meta name="theme-color" content="#13482C">
+<link rel="icon" type="image/png" sizes="48x48" href="img/icona-48.png">
+<link rel="apple-touch-icon" href="img/icona-180.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Via Vai, Montecatini Terme">
+<meta property="og:description" content="Bollette, ricariche, giornali e fotocopie in Via Lucchese 25. Aperto dalle 7 tutti i giorni.">
+<meta property="og:url" content="https://niccoloveniero05.github.io/anteprime/tabacchino-via-vai-5ef2bb/">
+<meta property="og:image" content="https://niccoloveniero05.github.io/anteprime/tabacchino-via-vai-5ef2bb/img/condivisione.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Urbanist:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Via Vai",
+  "description": "Edicola, ricevitoria e servizi di quartiere: pagamento bollette e bollettini, bollo auto, ricariche, fotocopie, stampe e fax, cartoleria.",
+  "image": "https://niccoloveniero05.github.io/anteprime/tabacchino-via-vai-5ef2bb/img/condivisione.jpg",
+  "telephone": "+39 0572 911367",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Lucchese 25",
+    "addressLocality": "Montecatini Terme",
+    "postalCode": "51016",
+    "addressRegion": "PT",
+    "addressCountry": "IT"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 43.8856267, "longitude": 10.7632169 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "07:00", "closes": "13:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "46" },
+  "sameAs": ["https://www.facebook.com/silviArinci"]
+}
+</script>
+<style>
+  :root {
+    --carta: #F4F6EE;
+    --bianco: #FFFFFF;
+    --inchiostro: #0F2A1B;
+    --verde: #13482C;
+    --verde-scuro: #0C3520;
+    --lime: #9CC21F;
+    --lime-tenue: #E6EFC6;
+    --testo2: #4B5B51;
+    --linea: rgba(15, 42, 27, .14);
+    --raggio: 18px;
+    --largo: 1180px;
+    --titoli: "Urbanist", "Segoe UI", system-ui, sans-serif;
+    --testo: "Figtree", "Segoe UI", system-ui, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--carta);
+    color: var(--inchiostro);
+    font-family: var(--testo);
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  h1, h2, h3 { font-family: var(--titoli); line-height: 1.05; margin: 0; letter-spacing: -0.015em; }
+  .contenitore { width: min(100% - 32px, var(--largo)); margin-inline: auto; }
+
+  /* Pulsanti */
+  .pulsante {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    min-height: 52px; padding: 0 22px; border-radius: 999px;
+    font: 600 16px/1 var(--testo); text-decoration: none; white-space: nowrap;
+    transition: transform .18s ease, background-color .18s ease, box-shadow .18s ease;
+  }
+  .pulsante svg { width: 19px; height: 19px; flex: none; }
+  .pulsante:active { transform: scale(.97); }
+  .pieno { background: var(--verde); color: #fff; box-shadow: 0 6px 18px -8px rgba(19, 72, 44, .7); }
+  .pieno:hover { background: var(--verde-scuro); }
+  .vuoto { background: transparent; color: var(--verde); box-shadow: inset 0 0 0 1.5px var(--verde); }
+  .vuoto:hover { background: rgba(19, 72, 44, .06); }
+  :focus-visible { outline: 3px solid var(--lime); outline-offset: 3px; }
+
+  /* Testata */
+  .testata { padding: 14px 0; }
+  .testata .contenitore { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .marchio img { height: 46px; width: auto; }
+  .testata .pulsante { min-height: 44px; padding: 0 18px; font-size: 15px; display: none; }
+
+  /* Apertura */
+  .apertura { padding: 18px 0 8px; }
+  .apertura .contenitore { display: grid; gap: 28px; }
+  .tipo { font: 600 14px/1.4 var(--testo); color: var(--testo2); margin: 0 0 14px; }
+  h1 { font-size: clamp(44px, 12.5vw, 88px); font-weight: 800; color: var(--verde); }
+  h1 .parola { display: inline-block; }
+  .sottotitolo { font-size: 18px; color: var(--testo2); margin: 18px 0 0; max-width: 34ch; }
+  .stato {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    margin: 24px 0 0; padding: 14px 0; border-top: 1px solid var(--linea); border-bottom: 1px solid var(--linea);
+    font-weight: 500;
+  }
+  .punto { width: 10px; height: 10px; border-radius: 50%; background: #9aa39d; flex: none; }
+  .stato.aperto .punto { background: #3C9D2B; box-shadow: 0 0 0 5px rgba(60, 157, 43, .18); }
+  .stato strong { font-family: var(--titoli); font-size: 19px; font-weight: 700; }
+  .stato span.dettaglio { color: var(--testo2); }
+  .azioni { display: flex; gap: 10px; margin-top: 22px; flex-wrap: wrap; }
+  .azioni .pulsante { flex: 1 1 160px; }
+  .foto-apertura { border-radius: var(--raggio); overflow: hidden; background: #dfe5d6; aspect-ratio: 1000 / 952; }
+  .foto-apertura img { width: 100%; height: 100%; object-fit: cover; transform-origin: 50% 40%; }
+
+  /* Sezioni */
+  section { padding: 72px 0; }
+  .etichetta { font: 600 14px/1 var(--testo); color: var(--verde); display: flex; align-items: center; gap: 10px; margin: 0 0 16px; }
+  .etichetta::before { content: ""; width: 22px; height: 3px; border-radius: 2px; background: var(--lime); }
+  h2 { font-size: clamp(34px, 8.5vw, 56px); font-weight: 800; }
+  .intro { color: var(--testo2); margin: 14px 0 0; max-width: 46ch; }
+
+  /* Servizi */
+  .servizi-griglia { display: grid; gap: 36px; margin-top: 36px; }
+  .gruppi { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--linea); }
+  .gruppo { display: grid; grid-template-columns: 44px 1fr; gap: 4px 14px; padding: 20px 0; border-bottom: 1px solid var(--linea); }
+  .gruppo svg { width: 30px; height: 30px; color: var(--verde); grid-row: span 2; margin-top: 2px; }
+  .gruppo h3 { font-size: 23px; font-weight: 700; }
+  .gruppo p { margin: 0; color: var(--testo2); }
+  .gruppo .nota { display: block; font-size: 14px; margin-top: 4px; }
+  .foto-servizi { margin: 0; }
+  .foto-servizi img { border-radius: var(--raggio); width: 100%; aspect-ratio: 760 / 680; object-fit: cover; }
+  .foto-servizi figcaption, .foto-vetrina figcaption { font-size: 14px; color: var(--testo2); margin-top: 10px; }
+
+  /* Frase dalle recensioni */
+  .frase { background: var(--verde); color: #fff; padding: 76px 0; }
+  .frase blockquote { margin: 0; }
+  .frase p.citazione { font: 700 clamp(30px, 7.6vw, 54px)/1.1 var(--titoli); letter-spacing: -0.015em; margin: 0; max-width: 20ch; }
+  .frase p.citazione em { font-style: normal; color: var(--lime); }
+  .frase cite { display: block; font-style: normal; margin-top: 22px; color: rgba(255, 255, 255, .78); }
+
+  /* Orari */
+  .orari-griglia { display: grid; gap: 32px; margin-top: 32px; }
+  .orari { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--linea); font-variant-numeric: tabular-nums; }
+  .orari li { display: flex; justify-content: space-between; gap: 16px; padding: 14px 4px; border-bottom: 1px solid var(--linea); }
+  .orari li.oggi { background: var(--lime-tenue); border-radius: 10px; padding-inline: 14px; margin-inline: -10px; font-weight: 600; border-bottom-color: transparent; }
+  .orari li.oggi .giorno::after { content: "oggi"; font-size: 12px; font-weight: 600; color: var(--verde); background: #fff; border-radius: 999px; padding: 3px 8px; margin-left: 10px; vertical-align: 2px; }
+  .orari-nota { color: var(--testo2); margin: 0; }
+  .orari-nota strong { color: var(--inchiostro); }
+
+  /* Recensioni */
+  .voto { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-top: 26px; }
+  .voto .numero { font: 800 72px/1 var(--titoli); color: var(--verde); }
+  .stelle { display: flex; gap: 3px; color: var(--lime); }
+  .stelle svg { width: 22px; height: 22px; }
+  .voto small { display: block; color: var(--testo2); font-size: 15px; margin-top: 4px; }
+  .recensioni { list-style: none; padding: 0; margin: 30px 0 0; display: grid; gap: 0; border-top: 1px solid var(--linea); }
+  .recensioni li { padding: 22px 0; border-bottom: 1px solid var(--linea); }
+  .recensioni p { margin: 0; font-size: 19px; font-weight: 500; }
+  .recensioni span { display: block; margin-top: 8px; font-size: 14px; color: var(--testo2); }
+
+  /* Vetrina */
+  .vetrina-griglia { display: grid; gap: 28px; align-items: center; }
+  .foto-vetrina { margin: 0; }
+  .foto-vetrina img { border-radius: var(--raggio); width: 100%; aspect-ratio: 860 / 820; object-fit: cover; }
+
+  /* Dove siamo */
+  .dove-griglia { display: grid; gap: 28px; margin-top: 30px; }
+  .indirizzo { font: 700 26px/1.2 var(--titoli); margin: 0; }
+  .indirizzo-dettagli { color: var(--testo2); margin: 8px 0 22px; }
+  .contatti { list-style: none; padding: 0; margin: 0 0 24px; border-top: 1px solid var(--linea); }
+  .contatti li { border-bottom: 1px solid var(--linea); }
+  .contatti a { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 2px; text-decoration: none; font-weight: 600; }
+  .contatti a span { color: var(--testo2); font-weight: 400; }
+  .contatti a:hover { color: var(--verde); }
+  .mappa { border-radius: var(--raggio); overflow: hidden; background: #dfe5d6; aspect-ratio: 4 / 3.4; }
+  .mappa iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+  /* Fondo */
+  footer { padding: 44px 0 120px; border-top: 1px solid var(--linea); color: var(--testo2); font-size: 15px; }
+  footer .contenitore { display: grid; gap: 18px; }
+  footer img { height: 40px; width: auto; }
+  footer p { margin: 0; }
+  .gioco { max-width: 60ch; }
+  .preview-note { font-size: 13px; opacity: .8; }
+
+  /* Barra fissa sul telefono */
+  .barra {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(244, 246, 238, .92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid var(--linea);
+    transition: transform .3s cubic-bezier(.2, .8, .2, 1);
+  }
+  .barra.via { transform: translateY(110%); }
+  .barra .pulsante { min-height: 50px; padding: 0 12px; }
+
+  @media (min-width: 760px) {
+    .servizi-griglia { grid-template-columns: 1.25fr 1fr; gap: 56px; align-items: start; }
+    .foto-servizi { position: sticky; top: 28px; }
+    .orari-griglia { grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .vetrina-griglia { grid-template-columns: 1fr 1fr; gap: 64px; }
+    .dove-griglia { grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: start; }
+    .recensioni { grid-template-columns: repeat(3, 1fr); gap: 32px; border-top: 0; }
+    .recensioni li { border-top: 1px solid var(--linea); border-bottom: 0; }
+  }
+  @media (min-width: 980px) {
+    body { font-size: 18px; }
+    .marchio img { height: 54px; }
+    .apertura { padding: 28px 0 24px; }
+    .apertura .contenitore { grid-template-columns: 1fr 1.05fr; gap: 64px; align-items: center; }
+    .foto-apertura { aspect-ratio: 1400 / 1050; }
+    section { padding: 110px 0; }
+    .frase { padding: 110px 0; }
+    .barra { display: none; }
+    .testata .pulsante { display: inline-flex; }
+    footer { padding-bottom: 48px; }
+    footer .contenitore { grid-template-columns: auto 1fr; align-items: center; column-gap: 48px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="testata">
+  <div class="contenitore">
+    <a class="marchio" href="#" aria-label="Via Vai, torna su"><img src="img/logo.png" alt="Via Vai" width="704" height="292"></a>
+    <a class="pulsante vuoto" href="tel:+390572911367">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      Chiama
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="apertura">
+    <div class="contenitore">
+      <div>
+        <p class="tipo">Edicola, ricevitoria e servizi · Via Lucchese 25, Montecatini Terme</p>
+        <h1 id="titolo">Entri, sbrighi, riparti.</h1>
+        <p class="sottotitolo">Bollette, ricariche, fotocopie e il giornale del mattino, tutto in un passaggio. Dalle 7 di mattina, tutti i giorni.</p>
+        <p class="stato" id="stato" aria-live="polite">
+          <span class="punto" aria-hidden="true"></span>
+          <strong id="stato-testo">Lun-Sab 7-20</strong>
+          <span class="dettaglio" id="stato-dettaglio">Domenica 7-13</span>
+        </p>
+        <div class="azioni">
+          <a class="pulsante pieno" href="tel:+390572911367">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            0572 911367
+          </a>
+          <a class="pulsante vuoto" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.8856267,10.7632169" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 21 3l-8 18-2-8-8-2z"/></svg>
+            Indicazioni
+          </a>
+        </div>
+      </div>
+      <div class="foto-apertura">
+        <picture>
+          <source media="(min-width: 980px)" srcset="img/negozio.jpg" width="1400" height="1050">
+          <img id="foto-apertura" src="img/negozio-telefono.jpg" width="1000" height="952" alt="L'ingresso di Via Vai in Via Lucchese 25: insegna verde, porta aperta sull'edicola e vetrina piena di peluche e giochi" fetchpriority="high">
+        </picture>
+      </div>
+    </div>
+  </div>
+
+  <section id="servizi" aria-labelledby="titolo-servizi">
+    <div class="contenitore">
+      <p class="etichetta">Cosa puoi fare qui</p>
+      <h2 id="titolo-servizi">Le commissioni di tutti i giorni, sotto casa.</h2>
+      <div class="servizi-griglia">
+        <ul class="gruppi">
+          <li class="gruppo reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+            <h3>Pagamenti</h3>
+            <p>Bollette e utenze, bollettini postali, bollo auto.</p>
+          </li>
+          <li class="gruppo reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+            <h3>Ricariche</h3>
+            <p>Ricariche telefoniche e ricariche PostePay.</p>
+          </li>
+          <li class="gruppo reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/></svg>
+            <h3>Fotocopie, stampe e fax</h3>
+            <p>Fotocopie, stampe a colori e invio fax al momento.</p>
+          </li>
+          <li class="gruppo reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h13v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v10a2 2 0 0 1-2 2"/><path d="M8 9h5M8 13h5M8 17h3"/></svg>
+            <h3>Edicola e cartoleria</h3>
+            <p>Quotidiani e riviste, articoli di cartoleria, piccoli regali e giochi per bambini.</p>
+          </li>
+          <li class="gruppo reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="12" r="1.6"/><circle cx="15.5" cy="12" r="1.6"/></svg>
+            <h3>Ricevitoria</h3>
+            <p>Lotto, SuperEnalotto e gli altri giochi autorizzati.<span class="nota">Gioco vietato ai minori di 18 anni.</span></p>
+          </li>
+        </ul>
+        <figure class="foto-servizi">
+          <img src="img/servizi.jpg" width="760" height="680" loading="lazy" alt="La vetrina con l'elenco dei servizi: fotocopie, stampe a colori, fax, bollo auto, ricariche, cartoleria, pagamento utenze, bollettini postali">
+          <figcaption>La vetrina sul lato della ricevitoria, con l'elenco dei servizi.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="frase">
+    <div class="contenitore">
+      <blockquote>
+        <p class="citazione">“Non andare alle Poste. Da Via Vai puoi pagare <em>ogni genere di bollette</em>.”</p>
+        <cite>Giuliano, recensione su Google</cite>
+      </blockquote>
+    </div>
+  </div>
+
+  <section id="orari" aria-labelledby="titolo-orari">
+    <div class="contenitore">
+      <p class="etichetta">Orari</p>
+      <h2 id="titolo-orari">Aperti presto, tutti i giorni.</h2>
+      <div class="orari-griglia">
+        <ul class="orari" id="orari">
+          <li data-giorno="1"><span class="giorno">Lunedì</span><span>7:00 - 20:00</span></li>
+          <li data-giorno="2"><span class="giorno">Martedì</span><span>7:00 - 20:00</span></li>
+          <li data-giorno="3"><span class="giorno">Mercoledì</span><span>7:00 - 20:00</span></li>
+          <li data-giorno="4"><span class="giorno">Giovedì</span><span>7:00 - 20:00</span></li>
+          <li data-giorno="5"><span class="giorno">Venerdì</span><span>7:00 - 20:00</span></li>
+          <li data-giorno="6"><span class="giorno">Sabato</span><span>7:00 - 20:00</span></li>
+          <li data-giorno="0"><span class="giorno">Domenica</span><span>7:00 - 13:00</span></li>
+        </ul>
+        <p class="orari-nota">Orario continuato dal lunedì al sabato: si passa anche in pausa pranzo. <strong>La domenica mattina</strong> siamo aperti fino alle 13, per il giornale e le commissioni del fine settimana.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="recensioni" aria-labelledby="titolo-recensioni" style="padding-top:0">
+    <div class="contenitore">
+      <p class="etichetta">Chi passa da qui</p>
+      <h2 id="titolo-recensioni">Gentilezza, ogni volta.</h2>
+      <div class="voto">
+        <span class="numero">5,0</span>
+        <div>
+          <span class="stelle" aria-label="5 stelle su 5">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>
+          </span>
+          <small>46 recensioni su Google</small>
+        </div>
+      </div>
+      <ul class="recensioni">
+        <li class="reveal"><p>“Personale gentile e sempre sorridente.”</p><span>Serafina, Local Guide</span></li>
+        <li class="reveal"><p>“Simpatia e accoglienza OK, ci trovi di tutto.”</p><span>Recensione su Google</span></li>
+        <li class="reveal"><p>“È anche una cartoleria e giornalaio. Il personale è molto cortese e disponibile.”</p><span>Recensione su Google</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="vetrina" aria-labelledby="titolo-vetrina" style="padding-top:0">
+    <div class="contenitore vetrina-griglia">
+      <figure class="foto-vetrina">
+        <img src="img/vetrina.jpg" width="860" height="820" loading="lazy" alt="La vetrina di Via Vai con peluche colorati, giochi e sacchetti regalo per bambini">
+        <figcaption>La vetrina su Via Lucchese.</figcaption>
+      </figure>
+      <div>
+        <p class="etichetta">In vetrina</p>
+        <h2 id="titolo-vetrina">Un pensiero all'ultimo minuto.</h2>
+        <p class="intro">Peluche, giochi e sacchetti regalo: se stai andando a una festa e ti sei ricordato tardi del regalo, passa a dare un'occhiata.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="dove" aria-labelledby="titolo-dove" style="padding-top:0">
+    <div class="contenitore">
+      <p class="etichetta">Dove siamo</p>
+      <h2 id="titolo-dove">Sulla Lucchese, al numero 25.</h2>
+      <div class="dove-griglia">
+        <div>
+          <p class="indirizzo">Via Lucchese 25<br>51016 Montecatini Terme (PT)</p>
+          <p class="indirizzo-dettagli">Sulla Via Provinciale Lucchese. Cerca l'insegna verde con la mano che fa la V.</p>
+          <ul class="contatti">
+            <li><a href="tel:+390572911367">Telefono <span>0572 911367</span></a></li>
+            <li><a href="https://www.google.com/maps/dir/?api=1&amp;destination=43.8856267,10.7632169" target="_blank" rel="noopener">Indicazioni stradali <span>Google Maps</span></a></li>
+            <li><a href="https://www.facebook.com/silviArinci" target="_blank" rel="noopener">Facebook <span>ViaVai Montecatini Terme</span></a></li>
+          </ul>
+        </div>
+        <div class="mappa">
+          <iframe title="Mappa: Via Vai, Via Lucchese 25, Montecatini Terme" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=43.8856267,10.7632169&amp;z=17&amp;hl=it&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="contenitore">
+    <img src="img/logo.png" alt="Via Vai" width="704" height="292" loading="lazy">
+    <div style="display:grid;gap:10px">
+      <p>Via Vai · Via Lucchese 25, 51016 Montecatini Terme (PT) · <a href="tel:+390572911367">0572 911367</a></p>
+      <p class="gioco">Il gioco con vincita in denaro è vietato ai minori di 18 anni e può causare dipendenza. Gioca con moderazione.</p>
+      <p class="preview-note">Anteprima preparata per Via Vai</p>
+    </div>
+  </div>
+</footer>
+
+<nav class="barra" id="barra" aria-label="Contatti rapidi">
+  <a class="pulsante pieno" href="tel:+390572911367">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+    Chiama
+  </a>
+  <a class="pulsante vuoto" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.8856267,10.7632169" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 21 3l-8 18-2-8-8-2z"/></svg>
+    Indicazioni
+  </a>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script>
+  // Aperto ora / chiuso ora, con l'ora italiana
+  (function () {
+    var orari = { 0: [7, 13], 1: [7, 20], 2: [7, 20], 3: [7, 20], 4: [7, 20], 5: [7, 20], 6: [7, 20] };
+    var nomi = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
+    var ora;
+    try {
+      var parti = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Rome", weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false }).formatToParts(new Date());
+      var g = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+      var p = {}; parti.forEach(function (x) { p[x.type] = x.value; });
+      ora = { giorno: g[p.weekday], ore: parseInt(p.hour, 10) % 24 + parseInt(p.minute, 10) / 60 };
+    } catch (e) {
+      var d = new Date(); ora = { giorno: d.getDay(), ore: d.getHours() + d.getMinutes() / 60 };
+    }
+    var oggi = orari[ora.giorno];
+    var stato = document.getElementById("stato");
+    var testo = document.getElementById("stato-testo");
+    var dettaglio = document.getElementById("stato-dettaglio");
+    if (ora.ore >= oggi[0] && ora.ore < oggi[1]) {
+      stato.classList.add("aperto");
+      testo.textContent = "Aperto ora";
+      dettaglio.textContent = "chiude alle " + oggi[1] + ":00";
+    } else if (ora.ore < oggi[0]) {
+      testo.textContent = "Chiuso ora";
+      dettaglio.textContent = "apre oggi alle 7:00";
+    } else {
+      var domani = (ora.giorno + 1) % 7;
+      testo.textContent = "Chiuso ora";
+      dettaglio.textContent = "riapre " + nomi[domani] + " alle 7:00";
+    }
+    var riga = document.querySelector('#orari li[data-giorno="' + ora.giorno + '"]');
+    if (riga) riga.classList.add("oggi");
+  })();
+
+  // La barra in basso compare quando i pulsanti in alto escono dallo schermo
+  (function () {
+    var barra = document.getElementById("barra");
+    var azioni = document.querySelector(".azioni");
+    if (!("IntersectionObserver" in window) || !barra || !azioni) return;
+    new IntersectionObserver(function (voci) {
+      barra.classList.toggle("via", voci[0].isIntersecting);
+    }).observe(azioni);
+  })();
+
+  // Movimento: solo se la libreria c'è e il telefono non chiede di ridurlo
+  (function () {
+    var ridotto = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (ridotto || !window.gsap || !window.ScrollTrigger) return;
+    gsap.registerPlugin(ScrollTrigger);
+
+    if (window.Lenis) {
+      var lenis = new Lenis({ duration: 1.05 });
+      lenis.on("scroll", ScrollTrigger.update);
+      gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
+      gsap.ticker.lagSmoothing(0);
+    }
+
+    // 1. il titolo entra parola per parola
+    if (window.SplitText) {
+      gsap.registerPlugin(SplitText);
+      document.fonts.ready.then(function () {
+        var diviso = new SplitText("#titolo", { type: "words", wordsClass: "parola" });
+        gsap.from(diviso.words, { yPercent: 60, opacity: 0, duration: 0.7, ease: "power3.out", stagger: 0.09, delay: 0.1 });
+      });
+    }
+
+    // 2. la foto del negozio si allontana piano mentre si scorre
+    gsap.fromTo("#foto-apertura", { scale: 1.12 }, {
+      scale: 1, ease: "none",
+      scrollTrigger: { trigger: ".foto-apertura", start: "top bottom", end: "bottom top", scrub: true }
+    });
+
+    // 3. servizi e recensioni salgono quando arrivano
+    gsap.utils.toArray(".reveal").forEach(function (el) {
+      gsap.from(el, { y: 22, opacity: 0, duration: 0.6, ease: "power2.out", scrollTrigger: { trigger: el, start: "top 90%", once: true } });
+    });
+  })();
+</script>
+</body>
+</html>
