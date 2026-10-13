@@ -16,7 +16,7 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 | Vallia by Daniele Valiani | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/vallia-4d525a/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Foto da Instagram, dalla scheda Google e dal loro vecchio sito Wix (non collegato a Google), colori dalle pareti del salone, servizi senza prezzi. Da verificare numero WhatsApp e orario del sabato. Issue #3 |
 | Fabiano's Barber Shop | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/fabianos-barber-22e42c/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Foto da Instagram e dalla scheda Google, colori dalla vetrina e dalle poltrone, marchio ricostruito con i caratteri, servizi senza prezzi. Da verificare WhatsApp, la scritta 1961 e il file del logo. Issue #4 |
 | Cioccolato & Company | Massa e Cozzile e Montecatini Terme | https://niccoloveniero05.github.io/anteprime/cioccolato-company-72fa9a/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Due negozi (Via Bruceto e Corso Roma) in un solo sito. Foto da Instagram, Facebook e scheda Google, colori dall'insegna. Mancano foto nuove del gelato e degli interni, logo nitido, eventuale numero WhatsApp. Issue #5 |
-| Il Ghiotto | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/il-ghiotto-b0a6bc/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Foto, orari e recensioni dalla scheda Google, colori e scritte dall'insegna. Mancano foto delle pizze, menù con prezzi, zona di consegna e numero WhatsApp. Issue #6 |
+| Il Ghiotto | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/il-ghiotto-b0a6bc/ | 2026-10-13 | in attesa | Rifatta da zero la grafica (titolo grande, collage di piatti, vetrina della rosticceria). Foto, orari e recensioni dalla scheda Google, colori dall'insegna. Mancano foto delle pizze, menù con prezzi, zona di consegna e numero WhatsApp. Issue #6 |
 
 ## Registro
 
@@ -27,3 +27,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-13 — Pubblicata l'anteprima di Fabiano's Barber Shop (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #4.
 - 2026-10-13 — Pubblicata l'anteprima di Cioccolato & Company (Massa e Cozzile e Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #5.
 - 2026-10-13 — Pubblicata l'anteprima di Il Ghiotto (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #6.
+- 2026-10-13 — Modificata l'anteprima di Il Ghiotto (Montecatini Terme): rifatta da zero la grafica. Issue #6.
