@@ -17,6 +17,7 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 | Fabiano's Barber Shop | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/fabianos-barber-22e42c/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Foto da Instagram e dalla scheda Google, colori dalla vetrina e dalle poltrone, marchio ricostruito con i caratteri, servizi senza prezzi. Da verificare WhatsApp, la scritta 1961 e il file del logo. Issue #4 |
 | Cioccolato & Company | Massa e Cozzile e Montecatini Terme | https://niccoloveniero05.github.io/anteprime/cioccolato-company-72fa9a/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Due negozi (Via Bruceto e Corso Roma) in un solo sito. Foto da Instagram, Facebook e scheda Google, colori dall'insegna. Mancano foto nuove del gelato e degli interni, logo nitido, eventuale numero WhatsApp. Issue #5 |
 | Il Ghiotto | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/il-ghiotto-b0a6bc/ | 2026-10-13 | in attesa | Rifatta da zero la grafica (titolo grande, collage di piatti, vetrina della rosticceria). Foto, orari e recensioni dalla scheda Google, colori dall'insegna. Mancano foto delle pizze, menù con prezzi, zona di consegna e numero WhatsApp. Issue #6 |
+| Hotel Byron | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/hotel-byron-e4b27d/ | 2026-10-13 | in attesa | Pubblicata, da mandare all'hotel. Nuova versione del loro sito (byronmct.it, del 2015): foto dal loro sito, servizi dalla loro scheda, distanze calcolate dalle coordinate, richiesta di disponibilità via email e telefono. Da verificare servizi, parcheggio e foto più recenti. Issue #7 |
 
 ## Registro
 
@@ -28,3 +29,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-13 — Pubblicata l'anteprima di Cioccolato & Company (Massa e Cozzile e Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #5.
 - 2026-10-13 — Pubblicata l'anteprima di Il Ghiotto (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #6.
 - 2026-10-13 — Modificata l'anteprima di Il Ghiotto (Montecatini Terme): rifatta da zero la grafica. Issue #6.
+- 2026-10-13 — Pubblicata l'anteprima di Hotel Byron (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #7.
