@@ -21,6 +21,7 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 | Suite Dreams Hotel | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/suite-dreams-hotel-7c31e8/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Nuova versione del loro sito: 10 suite con foto e prezzi dal loro sito, prenotazione con il loro sistema WuBook, distanze calcolate dalle coordinate. Da verificare prezzi, colazione e sauna. Issue #8 |
 | Hotel Brennero e Varsavia | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/hotel-brennero-varsavia-aca8a0/ | 2026-10-13 | in attesa | Email respinta dal filtro antispam dell'hotel: da mandare per WhatsApp o di persona. Nuova versione del loro sito: foto da Google e dal loro sito, listino 2026 dal loro sito con la fonte, distanze calcolate dalle coordinate, richiesta di disponibilità via WhatsApp o email. Da verificare prezzi, WhatsApp, convenzioni e numero di camere. Issue #9 |
 | Via Vai | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/tabacchino-via-vai-5ef2bb/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Edicola, ricevitoria e servizi (bollette, ricariche, fotocopie): niente prodotti del tabacco nel sito. Foto e orari dalla scheda Google, logo da Facebook. Mancano foto dell'interno e logo nitido. Issue #10 |
+| Hotel Cappelli | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/hotel-cappelli-4d601a/ | 2026-10-13 | in attesa | Pubblicata, da mandare all'hotel. Fatta sulla base hotel comune: foto dal loro sito, camere e servizi dal loro sito, prenotazione con il loro sistema, distanze calcolate dalle coordinate. Il loro sito di oggi è recente (2025). Issue #11 |
 
 ## Registro
 
@@ -39,3 +40,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-13 — Pubblicata l'anteprima di Via Vai (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #10.
 - 2026-10-13 — Hotel Brennero e Varsavia (Montecatini Terme): anteprima mandata all'hotel per email, stato "inviata". Issue #9.
 - 2026-10-13 — Hotel Brennero e Varsavia (Montecatini Terme): l'email è stata respinta dal filtro antispam dell'hotel, stato tornato "in attesa". Issue #9.
+- 2026-10-13 — Pubblicata l'anteprima di Hotel Cappelli (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #11.
