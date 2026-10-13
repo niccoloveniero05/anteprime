@@ -6,23 +6,23 @@
 <title>Veniello Studio · Siti web, Google, Instagram e video a Montecatini Terme</title>
 <meta name="description" content="Siti su misura, scheda Google, Instagram, video e gestione social per hotel, bar, ristoranti, saloni e negozi della Valdinievole. Prezzi chiari, anteprima gratis.">
 <link rel="canonical" href="https://www.veniellostudio.it/">
-<meta name="theme-color" content="#F6F2EC">
+<meta name="theme-color" content="#070B18">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Veniello Studio">
-<meta property="og:title" content="Veniello Studio · Facciamo trovare la tua attività">
-<meta property="og:description" content="Siti, Google, Instagram e video per le attività della Valdinievole. Prezzi chiari, anteprima gratis.">
+<meta property="og:title" content="Veniello Studio · Fatti trovare. Fatti scegliere.">
+<meta property="og:description" content="Sito, Google, Instagram e video per le attività della Valdinievole. Vedi il tuo sito prima di pagare.">
 <meta property="og:url" content="https://www.veniellostudio.it/">
 <meta property="og:image" content="https://www.veniellostudio.it/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Veniello Studio, Montecatini Terme">
+<meta property="og:image:alt" content="Veniello Studio: fatti trovare, fatti scegliere">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,7 +38,6 @@
   "priceRange": "59 € - 149 €",
   "address": {"@type": "PostalAddress", "addressLocality": "Montecatini Terme", "addressRegion": "PT", "postalCode": "51016", "addressCountry": "IT"},
   "areaServed": [{"@type": "City", "name": "Montecatini Terme"}, {"@type": "Place", "name": "Valdinievole"}],
-  "founder": [{"@type": "Person", "name": "Niccolò Veniero"}, {"@type": "Person", "name": "Giuseppe Fusciello"}],
   "makesOffer": [
     {"@type": "Offer", "name": "Sito + Google + Instagram", "price": "119", "priceCurrency": "EUR"},
     {"@type": "Offer", "name": "Google + Instagram", "price": "59", "priceCurrency": "EUR"},
@@ -49,289 +48,390 @@
 </script>
 <style>
 :root{
-  --carta:#F6F2EC;
+  --notte:#070B18;
+  --notte-2:#0D1326;
+  --notte-3:#161D37;
+  --chiaro:#F3F4F8;
   --bianco:#FFFFFF;
-  --sabbia:#EDE6DC;
-  --inchiostro:#15171C;
-  --grigio:#5B5E66;
-  --tegola:#D9502A;
-  --tegola-scura:#B83E1D;
-  --tegola-chiara:#FBE3D9;
-  --verde:#1F8A50;
-  --linea:rgba(21,23,28,.12);
-  --titolo:"Bricolage Grotesque",system-ui,sans-serif;
-  --corpo:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --testo:#0B1020;
+  --grigio:#565D76;
+  --sbiadito:rgba(255,255,255,.66);
+  --blu:#3D5AFE;
+  --blu-chiaro:#E9EDFF;
+  --viola:#8B5CF6;
+  --arancio:#FF6B35;
+  --arancio-su:#FF8657;
+  --verde:#18A957;
+  --linea:rgba(11,16,32,.1);
+  --linea-scura:rgba(255,255,255,.1);
+  --grad:linear-gradient(100deg,#FF7A45 0%,#FF4D8D 48%,#8B7CFF 100%);
+  --grad-blu:linear-gradient(135deg,#3D5AFE 0%,#8B5CF6 100%);
+  --font:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Geist Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
   --lato:clamp(18px,5vw,64px);
   --curva:cubic-bezier(.22,.8,.24,1);
-  --ombra:0 1px 2px rgba(21,23,28,.06),0 18px 40px -14px rgba(21,23,28,.22);
+  --ombra:0 1px 2px rgba(11,16,32,.06),0 20px 48px -16px rgba(11,16,32,.24);
 }
 *,*::before,*::after{box-sizing:border-box}
 html.lenis,html.lenis body{height:auto}
-html{scroll-padding-top:76px;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--carta);color:var(--inchiostro);font:400 1.06rem/1.6 var(--corpo);-webkit-font-smoothing:antialiased;overflow-x:clip;padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+html{scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--chiaro);color:var(--testo);font:400 1.06rem/1.6 var(--font);-webkit-font-smoothing:antialiased;overflow-x:clip;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
 img,svg{display:block;max-width:100%}
 a{color:inherit}
 p{margin:0}
 ul,ol{margin:0;padding:0;list-style:none}
-:focus-visible{outline:2px solid var(--tegola);outline-offset:3px;border-radius:4px}
-.salta{position:absolute;left:12px;top:-60px;z-index:100;background:var(--inchiostro);color:#fff;padding:12px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+::selection{background:var(--arancio);color:var(--testo)}
+:focus-visible{outline:2px solid var(--arancio);outline-offset:3px;border-radius:6px}
+.salta{position:absolute;left:12px;top:-60px;z-index:100;background:var(--arancio);color:var(--testo);padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:600}
 .salta:focus{top:12px}
-.wrap{max-width:1200px;margin:0 auto;padding:0 var(--lato)}
+.wrap{max-width:1220px;margin:0 auto;padding:0 var(--lato)}
 .i{width:20px;height:20px;flex:none}
-h1,h2,h3{font-family:var(--titolo);margin:0;text-wrap:balance;letter-spacing:-.03em;font-weight:700}
-h2{font-size:clamp(2.3rem,8.5vw,4.2rem);line-height:1}
-h2 span{color:var(--tegola)}
-.intro{color:var(--grigio);max-width:46ch;margin-top:1rem;font-size:1.12rem}
-section{padding:clamp(76px,10vw,128px) 0}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:54px;padding:0 1.5rem;border-radius:999px;font:600 1.02rem/1 var(--corpo);text-decoration:none;white-space:nowrap;transition:background-color .25s var(--curva),color .25s var(--curva),transform .2s var(--curva),box-shadow .25s var(--curva)}
+h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-.04em;font-weight:700;line-height:1}
+h2{font-size:clamp(2.35rem,8.6vw,4.4rem)}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.scuro h2 .tenue,.tenue{color:var(--grigio)}
+.scuro .tenue{color:rgba(255,255,255,.5)}
+.etichetta{display:inline-flex;align-items:center;gap:.5rem;font:500 .82rem/1 var(--mono);color:var(--blu);margin-bottom:1.1rem;letter-spacing:.01em}
+.etichetta::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--blu)}
+.scuro .etichetta{color:#9DB0FF}
+.scuro .etichetta::before{background:var(--arancio)}
+.intro{color:var(--grigio);max-width:48ch;margin-top:1.1rem;font-size:1.12rem}
+.scuro .intro{color:var(--sbiadito)}
+section{padding:clamp(84px,11vw,140px) 0;position:relative}
+.scuro{background:var(--notte);color:#fff}
+
+/* Pulsanti */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:54px;padding:0 1.5rem;border-radius:14px;font:600 1.02rem/1 var(--font);letter-spacing:-.01em;text-decoration:none;white-space:nowrap;transition:background-color .25s var(--curva),color .25s var(--curva),transform .2s var(--curva),box-shadow .25s var(--curva)}
 .btn:active{transform:scale(.97)}
-.btn-tegola{background:var(--tegola);color:#fff}
-.btn-tegola:hover{background:var(--tegola-scura)}
-.btn-linea{box-shadow:inset 0 0 0 1.5px var(--inchiostro);color:var(--inchiostro)}
-.btn-linea:hover{background:var(--inchiostro);color:#fff}
+.btn-arancio{background:var(--arancio);color:var(--testo);box-shadow:0 10px 30px -10px rgba(255,107,53,.7)}
+.btn-arancio:hover{background:var(--arancio-su)}
+.btn-vetro{background:rgba(255,255,255,.06);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}
+.btn-vetro:hover{background:rgba(255,255,255,.12)}
+.btn-scuro{background:var(--testo);color:#fff}
+.btn-scuro:hover{background:#222a45}
+.btn-linea{box-shadow:inset 0 0 0 1.5px var(--testo);color:var(--testo)}
+.btn-linea:hover{background:var(--testo);color:#fff}
 
 /* Testata */
-.testata{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--carta) 88%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
-.testata.giu{border-bottom-color:var(--linea)}
-.testata .wrap{display:flex;align-items:center;gap:16px;height:66px}
+.testata{position:sticky;top:0;z-index:40;background:rgba(7,11,24,.72);-webkit-backdrop-filter:saturate(160%) blur(16px);backdrop-filter:saturate(160%) blur(16px);border-bottom:1px solid var(--linea-scura);color:#fff}
+.testata .wrap{display:flex;align-items:center;gap:16px;height:68px}
 .marchio{display:inline-flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto;min-height:44px}
-.marchio svg{width:32px;height:32px;flex:none}
-.marchio b{font:800 1.28rem/1 var(--titolo);letter-spacing:-.03em}
-.marchio b span{font-weight:500;color:var(--grigio)}
+.marchio svg{width:34px;height:34px;flex:none}
+.marchio b{font:700 1.22rem/1 var(--font);letter-spacing:-.035em}
+.marchio b span{font-weight:400;opacity:.62}
 .testata nav{display:none}
-.testata .btn{min-height:44px;padding:0 1.1rem;font-size:.95rem}
+.testata .btn{min-height:44px;padding:0 1rem;font-size:.95rem;border-radius:12px;box-shadow:none}
+@media (max-width:360px){.testata .btn span{display:none}.testata .btn{padding:0 .8rem}}
 
 /* Copertina */
-.copertina{padding:clamp(28px,6vw,64px) 0 clamp(60px,8vw,110px)}
-.copertina .wrap{display:grid;gap:44px}
-.occhiello{display:inline-flex;align-items:center;gap:.55rem;font-weight:500;font-size:.98rem;color:var(--grigio);margin-bottom:1.1rem}
-.occhiello::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--tegola)}
-.copertina h1{font-size:clamp(2.75rem,12.2vw,5.6rem);line-height:.95;letter-spacing:-.045em}
-.copertina h1 span{color:var(--tegola);display:block}
-.copertina .intro{font-size:1.16rem;margin-top:1.3rem;max-width:40ch}
-.azioni{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.8rem}
-.fiducia{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:1.6rem;font-size:.95rem;color:var(--grigio)}
+.copertina{padding:clamp(36px,7vw,88px) 0 0;overflow:hidden;isolation:isolate}
+.copertina::before{content:"";position:absolute;inset:-20% -10% auto -10%;height:120%;z-index:-2;background:radial-gradient(40% 35% at 85% 18%,rgba(61,90,254,.55),transparent 70%),radial-gradient(35% 30% at 70% 55%,rgba(139,92,246,.38),transparent 70%),radial-gradient(30% 28% at 10% 85%,rgba(255,107,53,.28),transparent 70%)}
+.copertina::after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(70% 60% at 50% 30%,#000 20%,transparent 75%);mask-image:radial-gradient(70% 60% at 50% 30%,#000 20%,transparent 75%)}
+.copertina .wrap.griglia{display:grid;gap:52px}
+.pillola{display:inline-flex;align-items:center;gap:.55rem;padding:.45rem .85rem .45rem .6rem;border-radius:999px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);font-size:.92rem;font-weight:500;color:rgba(255,255,255,.88);margin-bottom:1.5rem}
+.pillola i{width:9px;height:9px;border-radius:50%;background:var(--arancio);box-shadow:0 0 0 4px rgba(255,107,53,.22)}
+.copertina h1{font-size:clamp(3.3rem,15.5vw,7.4rem);line-height:.9;letter-spacing:-.055em;font-weight:700}
+.copertina h1 .riga{display:block}
+.copertina .intro{font-size:1.18rem;margin-top:1.5rem;max-width:42ch;color:rgba(255,255,255,.74)}
+.copertina .intro b{color:#fff;font-weight:600}
+.azioni{display:flex;flex-wrap:wrap;gap:10px;margin-top:2rem}
+.fiducia{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:1.8rem;font-size:.95rem;color:rgba(255,255,255,.7)}
 .fiducia li{display:flex;align-items:center;gap:.45rem}
-.fiducia .i{width:17px;height:17px;color:var(--verde)}
+.fiducia .i{width:17px;height:17px;color:#5BE39A}
 
 /* Scena con gli esempi */
-.scena{position:relative;height:470px;max-width:440px;width:100%;margin:0 auto}
-.telefono{position:absolute;right:2%;top:30px;width:58%;max-width:228px;aspect-ratio:9/18.5;background:var(--inchiostro);border-radius:34px;padding:8px;box-shadow:var(--ombra)}
-.schermo{height:100%;border-radius:27px;overflow:hidden;background:var(--bianco);display:flex;flex-direction:column}
-.schermo .foto{position:relative;height:40%;background:radial-gradient(120% 90% at 20% 10%,#F6B48E 0%,transparent 55%),radial-gradient(90% 80% at 90% 100%,#9C2F14 0%,transparent 60%),linear-gradient(160deg,#E8754C,#C2421F);display:flex;align-items:flex-end;padding:12px}
-.schermo .foto::before{content:"";position:absolute;left:50%;top:9px;translate:-50% 0;width:34%;height:14px;border-radius:999px;background:var(--inchiostro)}
-.schermo .foto b{font:700 1.15rem/1 var(--titolo);color:#fff;letter-spacing:-.02em}
+.scena{position:relative;height:480px;max-width:440px;width:100%;margin:0 auto}
+.telefono{position:absolute;right:2%;top:28px;width:58%;max-width:236px;aspect-ratio:9/18.6;background:#11162B;border-radius:36px;padding:7px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 40px 90px -24px rgba(61,90,254,.65)}
+.schermo{height:100%;border-radius:30px;overflow:hidden;background:var(--bianco);display:flex;flex-direction:column;color:var(--testo)}
+.schermo .foto{position:relative;height:40%;background:radial-gradient(110% 90% at 15% 0%,#FFC09A 0%,transparent 55%),radial-gradient(90% 80% at 100% 100%,#6E1B4D 0%,transparent 60%),linear-gradient(160deg,#FF7A45,#E2365F);display:flex;align-items:flex-end;padding:12px}
+.schermo .foto::before{content:"";position:absolute;left:50%;top:9px;translate:-50% 0;width:34%;height:14px;border-radius:999px;background:#11162B}
+.schermo .foto b{font:700 1.12rem/1 var(--font);color:#fff;letter-spacing:-.03em}
 .schermo .corpo{padding:10px;display:grid;gap:8px;font-size:.7rem;line-height:1.2}
 .schermo .tasti{display:grid;grid-template-columns:1fr 1fr;gap:6px}
-.schermo .tasti span{display:flex;align-items:center;justify-content:center;height:26px;border-radius:999px;font-weight:600;font-size:.68rem;box-shadow:inset 0 0 0 1px var(--linea)}
+.schermo .tasti span{display:flex;align-items:center;justify-content:center;height:26px;border-radius:9px;font-weight:600;font-size:.68rem;box-shadow:inset 0 0 0 1px var(--linea)}
 .schermo .tasti span:last-child{background:var(--verde);color:#fff;box-shadow:none}
 .schermo .aperto{display:flex;align-items:center;gap:5px;color:var(--grigio)}
 .schermo .aperto::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--verde)}
 .schermo .riga{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-top:1px solid var(--linea);font-weight:500}
 .schermo .riga i{font-style:normal;color:var(--grigio)}
-.schermo .stelline{color:#E8A317;letter-spacing:1px}
-.google{position:absolute;left:0;bottom:6px;width:62%;max-width:236px;background:var(--bianco);border-radius:16px;padding:13px 14px 12px;box-shadow:var(--ombra);font-size:.74rem;line-height:1.3}
-.google small{display:flex;align-items:center;gap:5px;color:var(--grigio);font-size:.68rem;margin-bottom:6px}
-.google small .i{width:13px;height:13px;color:var(--tegola)}
-.google b{display:block;font:700 .98rem/1.15 var(--titolo);letter-spacing:-.02em}
-.google .voto{color:#E8A317;margin:.2rem 0;letter-spacing:1px}
-.google .voto em{font-style:normal;color:var(--grigio);letter-spacing:0;margin-left:4px}
-.google .chip{display:flex;gap:5px;margin-top:8px}
-.google .chip span{flex:1;text-align:center;padding:5px 0;border-radius:999px;background:var(--tegola-chiara);color:var(--tegola-scura);font-weight:600;font-size:.64rem}
-.bolla{position:absolute;left:0;top:0;width:60%;max-width:232px;background:#DCF7C5;border-radius:16px 16px 16px 4px;padding:10px 11px 7px;box-shadow:var(--ombra);font-size:.76rem;line-height:1.3}
-.bolla .link{display:block;background:rgba(255,255,255,.7);border-radius:9px;padding:7px 8px;margin-top:7px;border-left:3px solid var(--verde)}
+.stelline{color:#F5A524;letter-spacing:1px}
+.bolla{position:absolute;left:0;top:0;width:60%;max-width:236px;background:#DCF8C6;color:#0B1A10;border-radius:16px 16px 16px 4px;padding:10px 11px 7px;box-shadow:0 20px 50px -18px rgba(0,0,0,.6);font-size:.76rem;line-height:1.3}
+.bolla .link{display:block;background:rgba(255,255,255,.72);border-radius:9px;padding:7px 8px;margin-top:7px;border-left:3px solid var(--verde)}
 .bolla .link b{display:block;font-size:.72rem}
-.bolla .link span{color:var(--grigio);font-size:.66rem}
-.bolla .ora{display:block;text-align:right;color:var(--grigio);font-size:.62rem;margin-top:3px}
-.didascalia{text-align:center;font-size:.88rem;color:var(--grigio);margin-top:14px}
+.bolla .link span{color:#4a5a4f;font-size:.66rem}
+.bolla .ora{display:block;text-align:right;color:#5d6d62;font-size:.62rem;margin-top:3px}
+.google{position:absolute;left:0;bottom:8px;width:62%;max-width:244px;background:var(--bianco);color:var(--testo);border-radius:16px;padding:13px 14px 12px;box-shadow:0 24px 60px -18px rgba(0,0,0,.65);font-size:.74rem;line-height:1.3}
+.google small{display:flex;align-items:center;gap:5px;color:var(--grigio);font-size:.68rem;margin-bottom:6px}
+.google small .i{width:13px;height:13px;color:var(--blu)}
+.google b{display:block;font:700 .98rem/1.15 var(--font);letter-spacing:-.025em}
+.google .voto{margin:.2rem 0}
+.google .voto em{font-style:normal;color:var(--grigio);margin-left:4px}
+.google .chip{display:flex;gap:5px;margin-top:8px}
+.google .chip span{flex:1;text-align:center;padding:5px 0;border-radius:999px;background:var(--blu-chiaro);color:var(--blu);font-weight:600;font-size:.64rem}
+.didascalia{text-align:center;font-size:.88rem;color:rgba(255,255,255,.55);margin-top:16px}
+@media (prefers-reduced-motion:no-preference){
+  .galleggia{animation:galleggia 6s ease-in-out infinite}
+  .bolla.galleggia{animation-delay:-2s}
+  .telefono.galleggia{animation-delay:-1s}
+  .google.galleggia{animation-delay:-4s}
+}
+@keyframes galleggia{0%,100%{translate:0 0}50%{translate:0 -8px}}
 
-/* Cosa facciamo */
+/* Fascia che scorre */
+.fascia{margin-top:clamp(56px,8vw,96px);border-top:1px solid var(--linea-scura);padding:22px 0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.fascia-binario{display:flex;width:max-content}
+.fascia ul{display:flex;gap:34px;padding-right:34px;flex:none}
+.fascia li{display:flex;align-items:center;gap:34px;font-size:1.15rem;font-weight:500;color:rgba(255,255,255,.7);white-space:nowrap;letter-spacing:-.02em}
+.fascia li::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--grad)}
+@media (prefers-reduced-motion:no-preference){.fascia-binario{animation:fascia 38s linear infinite}}
+@media (prefers-reduced-motion:reduce){.fascia-binario ul[aria-hidden]{display:none}.fascia-binario,.fascia ul{width:auto;flex-wrap:wrap;justify-content:center}}
+@keyframes fascia{to{transform:translateX(-50%)}}
+
+/* Trovato, scelto, ricordato */
+.tre{display:grid;gap:14px;margin-top:2.6rem}
+.tre li{background:var(--bianco);border-radius:22px;padding:26px 24px;box-shadow:0 1px 2px rgba(11,16,32,.05);position:relative;overflow:hidden}
+.tre .num{font:500 .82rem var(--mono);color:var(--grigio)}
+.tre h3{font-size:clamp(2.1rem,8vw,2.8rem);letter-spacing:-.05em;margin-top:.9rem}
+.tre li:nth-child(1) h3{color:var(--blu)}
+.tre li:nth-child(2) h3{color:#E2365F}
+.tre li:nth-child(3) h3{color:var(--viola)}
+.tre p{color:var(--grigio);margin-top:.6rem}
+.tre .icona{position:absolute;right:20px;top:20px;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--chiaro);color:var(--testo)}
+
+/* Servizi a griglia */
 .servizi{background:var(--bianco)}
-.servizi-griglia{display:grid;gap:12px;margin-top:2.4rem}
-.servizio{background:var(--carta);border-radius:20px;padding:24px 22px}
-.servizio .icona{width:48px;height:48px;border-radius:14px;background:var(--tegola-chiara);color:var(--tegola-scura);display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem}
-.servizio .icona .i{width:24px;height:24px}
-.servizio h3{font-size:1.5rem;line-height:1.1}
-.servizio .sotto{color:var(--tegola-scura);font-weight:600;font-size:.95rem;margin-top:.35rem}
-.servizio p:last-child{color:var(--grigio);margin-top:.7rem}
+.bento{display:grid;gap:12px;margin-top:2.6rem}
+.cella{border-radius:24px;padding:24px;background:var(--chiaro);position:relative;overflow:hidden;display:flex;flex-direction:column;gap:1.2rem}
+.cella h3{font-size:1.6rem;letter-spacing:-.04em}
+.cella .sotto{font:500 .82rem var(--mono);color:var(--blu);margin-bottom:.55rem;display:block}
+.cella p{color:var(--grigio);margin-top:.55rem}
+.cella.notte{background:var(--notte);color:#fff}
+.cella.notte .sotto{color:#9DB0FF}
+.cella.notte p{color:var(--sbiadito)}
+.cella.colore{background:var(--grad-blu);color:#fff}
+.cella.colore .sotto{color:rgba(255,255,255,.8)}
+.cella.colore p{color:rgba(255,255,255,.85)}
+.vista{display:flex;justify-content:center;align-items:flex-end;margin-top:auto}
+/* mini telefono */
+.mini-tel{width:150px;aspect-ratio:9/16;background:#1C2342;border-radius:24px;padding:5px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 24px 50px -18px rgba(61,90,254,.7)}
+.mini-tel div{height:100%;border-radius:19px;background:#fff;overflow:hidden;display:grid;grid-template-rows:42% auto;align-content:start}
+.mini-tel .img{background:linear-gradient(160deg,#FF7A45,#E2365F)}
+.mini-tel .bl{padding:8px;display:grid;gap:5px}
+.mini-tel .bl span{height:6px;border-radius:4px;background:#E3E6EF}
+.mini-tel .bl span:first-child{height:10px;width:70%;background:#0B1020}
+.mini-tel .bl .duo{display:grid;grid-template-columns:1fr 1fr;gap:4px;height:auto;background:none}
+.mini-tel .bl .duo i{height:14px;border-radius:5px;background:#E3E6EF}
+.mini-tel .bl .duo i:last-child{background:var(--verde)}
+/* mini scheda Google */
+.mini-google{width:100%;max-width:260px;background:#fff;border-radius:16px;padding:14px;box-shadow:var(--ombra);font-size:.78rem;line-height:1.35}
+.mini-google b{display:block;font-size:1rem;letter-spacing:-.025em}
+.mini-google .chip{display:flex;gap:5px;margin-top:10px}
+.mini-google .chip span{flex:1;text-align:center;padding:5px 0;border-radius:999px;background:var(--blu-chiaro);color:var(--blu);font-weight:600;font-size:.68rem}
+/* mini Instagram */
+.mini-ig{width:100%;max-width:240px;background:#fff;border-radius:16px;padding:12px;box-shadow:var(--ombra)}
+.mini-ig .testa{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.mini-ig .avatar{width:38px;height:38px;border-radius:50%;padding:2px;background:var(--grad)}
+.mini-ig .avatar i{display:block;width:100%;height:100%;border-radius:50%;background:#fff;border:2px solid #fff;background-clip:padding-box;box-shadow:inset 0 0 0 20px #F1E3D8}
+.mini-ig .righe{display:grid;gap:4px;flex:1}
+.mini-ig .righe span{height:6px;border-radius:4px;background:#E3E6EF}
+.mini-ig .righe span:first-child{width:60%;height:8px;background:#0B1020}
+.mini-ig .griglia{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.mini-ig .griglia i{aspect-ratio:1;border-radius:4px;background:#E9EDFF}
+.mini-ig .griglia i:nth-child(1){background:linear-gradient(135deg,#FF7A45,#E2365F)}
+.mini-ig .griglia i:nth-child(3){background:linear-gradient(135deg,#3D5AFE,#8B5CF6)}
+.mini-ig .griglia i:nth-child(5){background:linear-gradient(135deg,#FFC09A,#FF7A45)}
+.mini-ig .griglia i:nth-child(6){background:#D9DFFF}
+/* mini reel */
+.mini-reel{width:150px;aspect-ratio:9/16;border-radius:20px;background:radial-gradient(100% 70% at 80% 0%,#FF8A5B 0%,transparent 60%),#160B2E;position:relative;overflow:hidden;box-shadow:0 24px 50px -18px rgba(0,0,0,.6);display:grid;place-items:center;text-align:center}
+.mini-reel .barretta{position:absolute;left:10px;right:10px;top:10px;display:flex;gap:3px}
+.mini-reel .barretta span{flex:1;height:2px;border-radius:2px;background:rgba(255,255,255,.3);overflow:hidden}
+.mini-reel .barretta span::after{content:"";display:block;height:100%;width:0;background:#fff}
+.mini-reel .scritta{grid-area:1/1;font:700 1.12rem/1.05 var(--font);letter-spacing:-.04em;color:#fff;padding:0 12px;opacity:0}
+.mini-reel .scritta small{display:block;font:500 .7rem var(--font);letter-spacing:0;opacity:.8;margin-top:.35rem}
+.mini-reel .scritta:first-of-type{opacity:1}
+@media (prefers-reduced-motion:no-preference){
+  .mini-reel.va .scritta{animation:scritta 9s infinite}
+  .mini-reel.va .scritta:nth-of-type(2){animation-delay:3s}
+  .mini-reel.va .scritta:nth-of-type(3){animation-delay:6s}
+  .mini-reel.va .barretta span::after{animation:barra 9s infinite linear}
+  .mini-reel.va .barretta span:nth-child(2)::after{animation-name:barra2}
+  .mini-reel.va .barretta span:nth-child(3)::after{animation-name:barra3}
+}
+@keyframes scritta{0%{opacity:0;transform:translateY(14px)}4%,30%{opacity:1;transform:none}34%,100%{opacity:0;transform:translateY(-10px)}}
+@keyframes barra{0%{width:0}33.3%,100%{width:100%}}
+@keyframes barra2{0%,33.3%{width:0}66.6%,100%{width:100%}}
+@keyframes barra3{0%,66.6%{width:0}100%{width:100%}}
+/* mini calendario */
+.mini-cal{width:100%;max-width:250px;background:#fff;border-radius:16px;padding:12px;box-shadow:var(--ombra)}
+.mini-cal .mese{font-weight:600;font-size:.82rem;margin-bottom:8px;display:flex;justify-content:space-between}
+.mini-cal .mese span{color:var(--grigio);font-weight:500}
+.mini-cal .giorni{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.mini-cal .giorni i{aspect-ratio:1;border-radius:6px;background:var(--chiaro);position:relative}
+.mini-cal .giorni i.p::after,.mini-cal .giorni i.v::after{content:"";position:absolute;inset:30%;border-radius:50%;background:var(--blu)}
+.mini-cal .giorni i.v::after{background:var(--arancio)}
+.legenda{display:flex;gap:12px;margin-top:8px;font-size:.7rem;color:var(--grigio)}
+.legenda span{display:flex;align-items:center;gap:4px}
+.legenda span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--blu)}
+.legenda span:last-child::before{background:var(--arancio)}
 
 /* Come funziona */
-.passi{display:grid;gap:14px;margin-top:2.4rem;counter-reset:passo}
-.passo{position:relative;background:var(--bianco);border-radius:20px;padding:24px 22px 24px 76px;box-shadow:0 1px 2px rgba(21,23,28,.05)}
-.passo::before{counter-increment:passo;content:counter(passo);position:absolute;left:22px;top:22px;width:38px;height:38px;border-radius:50%;background:var(--inchiostro);color:#fff;font:700 1.1rem/38px var(--titolo);text-align:center}
-.passo.gratis::before{background:var(--tegola)}
-.passo h3{font-size:1.35rem;line-height:1.15}
-.passo p{color:var(--grigio);margin-top:.45rem}
-.etichetta{display:inline-block;background:var(--tegola-chiara);color:var(--tegola-scura);font-weight:600;font-size:.82rem;padding:.25rem .65rem;border-radius:999px;margin-left:.3rem;vertical-align:middle;letter-spacing:0;font-family:var(--corpo)}
+.come{overflow:hidden;isolation:isolate}
+.come::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 50% at 100% 0%,rgba(61,90,254,.35),transparent 70%),radial-gradient(35% 45% at 0% 100%,rgba(255,77,141,.18),transparent 70%)}
+.passi{display:grid;gap:14px;margin-top:2.6rem}
+.passo{border-radius:22px;padding:26px 24px;background:rgba(255,255,255,.04);box-shadow:inset 0 0 0 1px var(--linea-scura)}
+.passo .n{font:700 3.4rem/1 var(--font);letter-spacing:-.06em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+.passo h3{font-size:1.45rem;letter-spacing:-.035em;margin-top:1rem;display:flex;align-items:center;flex-wrap:wrap;gap:.5rem}
+.passo p{color:var(--sbiadito);margin-top:.5rem}
+.gratis{font:600 .8rem/1 var(--font);letter-spacing:0;padding:.38rem .6rem;border-radius:999px;background:var(--arancio);color:var(--testo)}
+
+/* Serietà */
+.serieta-griglia{display:grid;gap:12px;margin-top:2.6rem}
+.punto{background:var(--bianco);border-radius:22px;padding:24px;display:grid;grid-template-columns:48px 1fr;gap:4px 16px;box-shadow:0 1px 2px rgba(11,16,32,.05)}
+.punto .icona{grid-row:span 2;width:48px;height:48px;border-radius:14px;background:var(--blu-chiaro);color:var(--blu);display:grid;place-items:center}
+.punto h3{font-size:1.2rem;letter-spacing:-.03em;line-height:1.2;align-self:end}
+.punto p{color:var(--grigio)}
 
 /* Prezzi */
 .prezzi{background:var(--bianco)}
-.gruppo{margin-top:2.6rem}
-.gruppo h3{font-size:1.2rem;letter-spacing:-.01em;display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:.8rem;border-bottom:1px solid var(--linea)}
-.gruppo h3 small{font:500 .95rem var(--corpo);color:var(--grigio);letter-spacing:0}
-.carte{display:grid;gap:14px;margin-top:1.2rem}
-.carta{position:relative;border-radius:22px;padding:26px 24px;background:var(--carta);display:flex;flex-direction:column}
-.carta.scura{background:var(--inchiostro);color:#fff}
-.carta h4{margin:0;font:600 1.1rem/1.3 var(--corpo)}
-.prezzo{font:800 clamp(3.2rem,13vw,4.2rem)/1 var(--titolo);letter-spacing:-.05em;margin-top:.8rem;display:flex;align-items:baseline;gap:.4rem;white-space:nowrap}
-.prezzo small{font:500 1rem var(--corpo);letter-spacing:0;color:var(--grigio)}
-.carta.scura .prezzo small{color:rgba(255,255,255,.7)}
-.quando{font-weight:600;color:var(--tegola-scura);margin-top:.35rem;font-size:.98rem}
-.carta.scura .quando{color:#FF9B78}
-.carta ul{margin-top:1.2rem;padding-top:1.1rem;border-top:1px solid var(--linea);display:grid;gap:.55rem;font-size:1rem}
-.carta.scura ul{border-top-color:rgba(255,255,255,.16)}
+.gruppo{margin-top:2.8rem}
+.gruppo-testa{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:.9rem;border-bottom:1px solid var(--linea)}
+.gruppo-testa h3{font-size:1.25rem;letter-spacing:-.03em}
+.gruppo-testa span{font:500 .82rem var(--mono);color:var(--grigio)}
+.carte{display:grid;gap:14px;margin-top:1.3rem}
+.carta{position:relative;border-radius:24px;padding:28px 26px;background:var(--chiaro);display:flex;flex-direction:column}
+.carta.top{background:var(--notte);color:#fff;isolation:isolate;overflow:visible}
+.carta.top::before{content:"";position:absolute;inset:0;border-radius:24px;padding:1.5px;background:var(--grad);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);pointer-events:none}
+.carta.top::after{content:"";position:absolute;inset:auto 10% -18px 10%;height:40px;z-index:-1;background:var(--grad);filter:blur(28px);opacity:.55}
+.carta h4{margin:0;font:600 1.08rem/1.3 var(--font);letter-spacing:-.02em}
+.prezzo{font:700 clamp(3.4rem,14vw,4.4rem)/1 var(--font);letter-spacing:-.06em;margin-top:.9rem;display:flex;align-items:baseline;gap:.45rem;white-space:nowrap}
+.prezzo small{font:500 1rem var(--font);letter-spacing:0;color:var(--grigio)}
+.carta.top .prezzo small{color:var(--sbiadito)}
+.quando{font:500 .85rem var(--mono);color:var(--blu);margin-top:.5rem}
+.carta.top .quando{color:#FF9B78}
+.carta ul{margin-top:1.3rem;padding-top:1.2rem;border-top:1px solid var(--linea);display:grid;gap:.6rem}
+.carta.top ul{border-top-color:var(--linea-scura)}
 .carta li{display:flex;gap:.6rem;align-items:flex-start;line-height:1.4}
 .carta li .i{width:18px;height:18px;margin-top:.12rem;color:var(--verde)}
-.carta.scura li .i{color:#7BE0A4}
-.consigliato{position:absolute;top:-12px;right:20px;background:var(--tegola);color:#fff;font-weight:600;font-size:.82rem;padding:.35rem .8rem;border-radius:999px}
+.carta.top li .i{color:#5BE39A}
+.carta .btn{margin-top:1.6rem}
+.consigliato{position:absolute;top:-13px;right:22px;background:var(--grad);color:#fff;font-weight:600;font-size:.82rem;padding:.4rem .85rem;border-radius:999px}
 .nota{margin-top:1rem;color:var(--grigio);font-size:.98rem}
-.consiglio{margin-top:2.6rem;background:var(--tegola-chiara);border-radius:22px;padding:26px 24px;display:grid;gap:1.1rem}
-.consiglio p{font:700 clamp(1.45rem,5.5vw,1.9rem)/1.15 var(--titolo);letter-spacing:-.025em}
-
-/* Video */
-.video-griglia{display:grid;gap:44px;align-items:center}
-.punti{margin-top:1.6rem;display:grid;gap:.7rem}
-.punti li{display:flex;gap:.7rem;align-items:flex-start}
-.punti .i{color:var(--tegola);margin-top:.15rem}
-.reel{position:relative;width:min(100%,300px);aspect-ratio:9/16;margin:0 auto;border-radius:28px;overflow:hidden;background:radial-gradient(110% 70% at 80% 0%,#F08A60 0%,transparent 60%),radial-gradient(100% 70% at 0% 100%,#7E2A13 0%,transparent 65%),#2A1A15;box-shadow:var(--ombra);color:#fff}
-.reel .scritte{position:absolute;inset:0;display:grid;place-items:center;padding:28px;text-align:center}
-.reel .scritta{grid-area:1/1;font:800 2.1rem/1 var(--titolo);letter-spacing:-.04em;opacity:0}
-.reel .scritta small{display:block;font:500 1rem/1.3 var(--corpo);letter-spacing:0;opacity:.85;margin-top:.6rem}
-.reel .scritta:first-child{opacity:1}
-.reel .barretta{position:absolute;left:18px;right:18px;top:16px;display:flex;gap:4px}
-.reel .barretta span{flex:1;height:3px;border-radius:3px;background:rgba(255,255,255,.3);overflow:hidden}
-.reel .barretta span::after{content:"";display:block;height:100%;width:0;background:#fff}
-.reel .firma{position:absolute;left:0;right:0;bottom:18px;text-align:center;font:700 .85rem var(--titolo);letter-spacing:-.01em;opacity:.85}
-.esempio{text-align:center;font-size:.88rem;color:var(--grigio);margin-top:12px}
-@media (prefers-reduced-motion:no-preference){
-  .reel.va .scritta{animation:scritta 9s infinite}
-  .reel.va .scritta:nth-child(2){animation-delay:3s}
-  .reel.va .scritta:nth-child(3){animation-delay:6s}
-  .reel.va .barretta span::after{animation:barra 9s infinite linear}
-  .reel.va .barretta span:nth-child(2)::after{animation-name:barra2}
-  .reel.va .barretta span:nth-child(3)::after{animation-name:barra3}
-}
-@keyframes scritta{0%{opacity:0;transform:translateY(18px)}4%,30%{opacity:1;transform:none}34%,100%{opacity:0;transform:translateY(-12px)}}
-@keyframes barra{0%{width:0}33.3%{width:100%}33.4%,100%{width:100%}}
-@keyframes barra2{0%,33.3%{width:0}66.6%,100%{width:100%}}
-@keyframes barra3{0%,66.6%{width:0}100%{width:100%}}
-
-/* Chi siamo */
-.chi{background:var(--bianco)}
-.chi-griglia{display:grid;gap:36px;align-items:start}
-.persone{display:grid;gap:12px}
-.persona{display:flex;align-items:center;gap:16px;background:var(--carta);border-radius:20px;padding:20px}
-.iniziali{flex:none;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--inchiostro);color:#fff;font:700 1.15rem var(--titolo);letter-spacing:-.02em}
-.persona:nth-child(2) .iniziali{background:var(--tegola)}
-.persona h3{font-size:1.35rem;letter-spacing:-.02em;line-height:1.1}
-.persona p{color:var(--grigio);margin-top:.2rem}
-.luogo{display:flex;align-items:center;gap:.6rem;color:var(--grigio);padding:6px 4px}
-.luogo .i{color:var(--tegola)}
+.consiglio{margin-top:2.8rem;background:var(--notte);color:#fff;border-radius:24px;padding:28px 26px;display:grid;gap:1.2rem;position:relative;overflow:hidden;isolation:isolate}
+.consiglio::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(60% 120% at 100% 50%,rgba(139,92,246,.45),transparent 70%)}
+.consiglio p{font:700 clamp(1.5rem,5.6vw,2rem)/1.15 var(--font);letter-spacing:-.04em}
 
 /* Domande */
-.domande-elenco{margin-top:2.2rem;border-top:1px solid var(--linea)}
-.domande-elenco details{border-bottom:1px solid var(--linea)}
-.domande-elenco summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font:700 1.18rem/1.25 var(--titolo);letter-spacing:-.015em;min-height:44px}
+.domande-elenco{margin-top:2.4rem;display:grid;gap:10px}
+.domande-elenco details{background:var(--bianco);border-radius:18px;padding:0 22px;box-shadow:0 1px 2px rgba(11,16,32,.05)}
+.domande-elenco summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font:600 1.12rem/1.3 var(--font);letter-spacing:-.025em;min-height:44px}
 .domande-elenco summary::-webkit-details-marker{display:none}
-.domande-elenco summary::after{content:"";flex:none;width:28px;height:28px;border-radius:50%;background:var(--tegola-chiara) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 1v10M1 6h10' stroke='%23B83E1D' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") center no-repeat;transition:transform .25s var(--curva)}
+.domande-elenco summary::after{content:"";flex:none;width:30px;height:30px;border-radius:10px;background:var(--blu-chiaro) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 1v10M1 6h10' stroke='%233D5AFE' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") center no-repeat;transition:transform .25s var(--curva)}
 .domande-elenco details[open] summary::after{transform:rotate(45deg)}
-.domande-elenco details p{color:var(--grigio);padding:0 0 20px;max-width:62ch}
+.domande-elenco details p{color:var(--grigio);padding:0 0 20px;max-width:64ch}
 
-/* Contatti */
-.contatti{background:var(--inchiostro);color:#fff}
-.contatti-griglia{display:grid;gap:40px;align-items:end}
-.contatti h2{font-size:clamp(3.2rem,15vw,7rem);line-height:.9;letter-spacing:-.05em}
-.contatti h2 span{color:var(--tegola)}
-.contatti .intro{color:rgba(255,255,255,.75)}
-.contatti .btn-linea{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.6);color:#fff}
-.contatti .btn-linea:hover{background:#fff;color:var(--inchiostro)}
-.recapiti{border-top:1px solid rgba(255,255,255,.16)}
-.recapito{display:grid;gap:2px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.16);text-decoration:none}
-.recapito span{font-size:.9rem;color:rgba(255,255,255,.6)}
-.recapito b{font-weight:500;font-size:1.08rem;overflow-wrap:anywhere}
-a.recapito:hover b{color:#FF9B78}
-.piede{background:#0D0E11;color:rgba(255,255,255,.6);font-size:.92rem;padding:30px 0}
-.piede .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px}
+/* Chiusura */
+.chiusura{overflow:hidden;isolation:isolate;text-align:left}
+.chiusura::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(50% 60% at 85% 20%,rgba(61,90,254,.5),transparent 70%),radial-gradient(40% 50% at 10% 90%,rgba(255,77,141,.28),transparent 70%)}
+.chiusura-griglia{display:grid;gap:44px;align-items:end}
+.chiusura h2{font-size:clamp(3rem,14vw,6.6rem);line-height:.92;letter-spacing:-.055em}
+.recapiti{display:grid;gap:10px}
+.recapito{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px var(--linea-scura);text-decoration:none;transition:background-color .2s}
+a.recapito:hover{background:rgba(255,255,255,.1)}
+.recapito .icona{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.08);flex:none}
+.recapito small{display:block;font:500 .78rem var(--mono);color:rgba(255,255,255,.55)}
+.recapito .testo{min-width:0}
+.recapito b{display:block;font-weight:500;font-size:clamp(.92rem,3.9vw,1.04rem);overflow-wrap:anywhere}
+@media (max-width:420px){.recapito{padding:14px 14px;gap:12px}.recapito .icona{width:38px;height:38px}}
+.piede{background:#04060E;color:rgba(255,255,255,.55);font-size:.92rem;padding:32px 0}
+.piede .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px 24px}
 .piede .marchio{margin:0;color:#fff}
-.piede .marchio b span{color:rgba(255,255,255,.6)}
 
 /* Barra in basso sul telefono */
-.barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1.4fr 1fr;gap:8px;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--carta) 94%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--linea)}
-.barra .btn{min-height:50px;padding:0 .8rem;font-size:1rem}
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1.45fr 1fr;gap:8px;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:rgba(7,11,24,.86);-webkit-backdrop-filter:saturate(160%) blur(16px);backdrop-filter:saturate(160%) blur(16px);border-top:1px solid var(--linea-scura)}
+.barra .btn{min-height:52px;padding:0 .8rem;font-size:1rem;box-shadow:none}
 
 @media (min-width:700px){
-  .servizi-griglia{grid-template-columns:repeat(6,1fr)}
-  .servizio{grid-column:span 2}
-  .servizio:nth-child(4),.servizio:nth-child(5){grid-column:span 3}
+  .tre{grid-template-columns:repeat(3,1fr)}
+  .bento{grid-template-columns:repeat(6,1fr)}
+  .cella{grid-column:span 3}
+  .cella.larga,.cella.alta{grid-column:span 6;flex-direction:row;align-items:center;gap:32px}
+  .cella.larga .vista,.cella.alta .vista{margin:0;flex:none}
+  .cella.alta .vista{width:260px}
+  .cella.terzo{grid-column:span 2}
   .passi{grid-template-columns:repeat(3,1fr)}
-  .passo{padding:76px 24px 26px}
-  .passo::before{top:24px;left:24px}
-  .carte{grid-template-columns:1fr 1fr}
-  .consiglio{grid-template-columns:1fr auto;align-items:center;padding:30px 34px}
-  .chi-griglia{grid-template-columns:1fr 1fr;gap:64px}
+  .serieta-griglia{grid-template-columns:1fr 1fr}
+  .carte{grid-template-columns:1.12fr 1fr}
+  .consiglio{grid-template-columns:1fr auto;align-items:center;padding:32px 36px}
   .scena{height:520px;max-width:480px}
 }
 @media (min-width:1000px){
   body{padding-bottom:0}
   .barra{display:none}
   .testata .wrap{height:76px}
-  .testata nav{display:flex;gap:28px;font-weight:500;margin-right:12px}
-  .testata nav a{text-decoration:none;color:var(--grigio);padding:.5rem 0}
-  .testata nav a:hover{color:var(--inchiostro)}
-  .copertina .wrap{grid-template-columns:1.08fr 1fr;align-items:center;gap:56px;min-height:calc(100svh - 76px - 110px)}
-  .scena{height:560px;max-width:500px}
-  .video-griglia{grid-template-columns:1.1fr .9fr;gap:80px}
-  .contatti-griglia{grid-template-columns:1.1fr .9fr;gap:80px}
-  .carte{grid-template-columns:1.15fr 1fr}
-  .telefono{max-width:262px}.bolla{max-width:262px;font-size:.82rem}.google{max-width:272px;font-size:.8rem}
+  .testata nav{display:flex;gap:30px;font-weight:500;font-size:.98rem;margin-right:14px}
+  .testata nav a{text-decoration:none;color:rgba(255,255,255,.7);padding:.5rem 0}
+  .testata nav a:hover{color:#fff}
+  .copertina .wrap.griglia{grid-template-columns:1.3fr 1fr;align-items:center;gap:48px}
+  .copertina h1{font-size:clamp(3.6rem,5.8vw,5.3rem)}
+  .scena{height:580px;max-width:520px}
+  .telefono{max-width:272px}.bolla{max-width:262px;font-size:.82rem}.google{max-width:276px;font-size:.8rem}
+  .bento{grid-template-columns:repeat(6,1fr)}
+  .cella.larga{grid-column:span 4;padding:32px}
+  .cella.alta{grid-column:span 2;flex-direction:column;align-items:stretch;gap:1.2rem}
+  .cella.alta .vista{width:auto;margin-top:auto}
+  .cella.terzo{grid-column:span 2}
+  .chiusura-griglia{grid-template-columns:1.2fr .8fr;gap:72px}
 }
-@media (prefers-reduced-motion:reduce){.btn,.domande-elenco summary::after{transition:none}}
+@media (prefers-reduced-motion:reduce){.btn,.domande-elenco summary::after,.recapito{transition:none}}
 </style>
 </head>
 <body>
 <a class="salta" href="#contenuto">Vai al contenuto</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-marchio" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#D9502A"/><path d="M16 17h9.2l6.8 20.6L38.8 17H48L36.6 47h-9.2z" fill="#fff"/></symbol>
+  <defs><linearGradient id="g-marchio" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3D5AFE"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs>
+  <symbol id="i-marchio" viewBox="0 0 64 64"><rect width="64" height="64" rx="17" fill="url(#g-marchio)"/><path d="M16 17h9.2l6.8 20.6L38.8 17H48L36.6 47h-9.2z" fill="#fff"/><circle cx="48.5" cy="45.5" r="4.5" fill="#FF6B35"/></symbol>
   <symbol id="i-wa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.2-4.1A8.6 8.6 0 1 1 8 19.4z"/><path d="M9.1 8.6c.2-.5.5-.6.8-.6h.5c.2 0 .4.1.5.4l.6 1.5c.1.2 0 .5-.1.6l-.5.6c-.1.1-.1.3 0 .5.6 1 1.4 1.8 2.4 2.4.2.1.4.1.5 0l.6-.5c.2-.1.4-.2.6-.1l1.5.6c.3.1.4.3.4.5v.5c0 .3-.1.6-.6.8-.6.3-1.6.4-2.9-.2a9.2 9.2 0 0 1-4.3-4.3c-.6-1.3-.5-2.3-.2-2.9z"/></symbol>
   <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 9 6.5 9-6.5"/></symbol>
   <symbol id="i-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.5 4.5L19.5 7"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
   <symbol id="i-sito" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18.5h3M9 7h6M9 10.5h6M9 14h3"/></symbol>
-  <symbol id="i-mappa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13.5L9 17.5l6 2.5 6-2.5V4L15 6.5z"/><path d="M9 4v13.5M15 6.5V20"/></symbol>
+  <symbol id="i-cerca" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></symbol>
   <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".7" fill="currentColor"/></symbol>
-  <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M10.5 9v6l5-3z"/></symbol>
-  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M16 2.5v4M8 2.5v4M3 10h18M8 14.5h3M8 17.5h6"/></symbol>
-  <symbol id="i-stella" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></symbol>
+  <symbol id="i-euro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 6.5A7 7 0 1 0 17.5 17.5M4 10h9M4 14h9"/></symbol>
+  <symbol id="i-occhio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-chiave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4.5"/><path d="m11.2 11.8 8.3-8.3M16.5 6.5l2.5 2.5M14 9l2 2"/></symbol>
+  <symbol id="i-foto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h1.8L9 3.5h6L16.7 6h1.8A2.5 2.5 0 0 1 21 8.5v9A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5z"/><circle cx="12" cy="12.8" r="3.6"/></symbol>
 </svg>
 
-<header class="testata" id="testata">
+<header class="testata">
   <div class="wrap">
     <a class="marchio" href="#inizio" aria-label="Veniello Studio, torna all'inizio"><svg aria-hidden="true"><use href="#i-marchio"/></svg><b>Veniello <span>Studio</span></b></a>
-    <nav aria-label="Menu principale"><a href="#servizi">Servizi</a><a href="#come">Come funziona</a><a href="#prezzi">Prezzi</a><a href="#chi-siamo">Chi siamo</a></nav>
-    <a class="btn btn-tegola" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Scrivici</a>
+    <nav aria-label="Menu principale"><a href="#servizi">Servizi</a><a href="#come">Come funziona</a><a href="#prezzi">Prezzi</a><a href="#domande">Domande</a></nav>
+    <a class="btn btn-arancio" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>Scrivici</span></a>
   </div>
 </header>
 
 <main id="contenuto">
-  <section class="copertina" id="inizio" aria-labelledby="titolo">
-    <div class="wrap">
-      <div class="copertina-testo">
-        <p class="occhiello">Agenzia digitale a Montecatini Terme</p>
-        <h1 id="titolo">Facciamo trovare la tua attività. <span>E la facciamo scegliere.</span></h1>
-        <p class="intro">Sito, scheda Google, Instagram e video per hotel, bar, ristoranti, saloni e negozi della Valdinievole. Prima ti prepariamo un&rsquo;anteprima gratis, poi decidi.</p>
+  <section class="copertina scuro" id="inizio" aria-labelledby="titolo">
+    <div class="wrap griglia">
+      <div>
+        <p class="pillola"><i aria-hidden="true"></i>Anteprima gratis per la tua attività</p>
+        <h1 id="titolo"><span class="riga">Fatti trovare.</span> <span class="riga grad">Fatti scegliere.</span></h1>
+        <p class="intro">Sito su misura, Google e Instagram per hotel, bar, ristoranti, saloni e negozi della Valdinievole. <b>Vedi il tuo sito prima di pagare un euro.</b></p>
         <div class="azioni">
-          <a class="btn btn-tegola" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20un%27anteprima%20gratis%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Chiedi l&rsquo;anteprima gratis</a>
-          <a class="btn btn-linea" href="#prezzi">Vedi i prezzi</a>
+          <a class="btn btn-arancio" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20un%27anteprima%20gratis%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Chiedi l&rsquo;anteprima gratis</a>
+          <a class="btn btn-vetro" href="#prezzi">Vedi i prezzi</a>
         </div>
         <ul class="fiducia">
-          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Prezzi chiari</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Prezzi scritti prima</li>
           <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Paghi solo se ti piace</li>
-          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Siamo di qui</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Risposta su WhatsApp</li>
         </ul>
       </div>
-      <figure class="scena-box" style="margin:0">
+      <figure style="margin:0">
         <div class="scena" aria-hidden="true">
-          <div class="telefono pezzo">
+          <div class="telefono pezzo galleggia">
             <div class="schermo">
               <div class="foto"><b>La tua attività</b></div>
               <div class="corpo">
@@ -344,15 +444,15 @@ a.recapito:hover b{color:#FF9B78}
               </div>
             </div>
           </div>
-          <div class="bolla pezzo">
+          <div class="bolla pezzo galleggia">
             Ciao! Ecco l&rsquo;anteprima del tuo sito, aprila dal telefono.
             <span class="link"><b>Anteprima preparata per La tua attività</b><span>Si apre con un tocco</span></span>
             <span class="ora">10:42 ✓✓</span>
           </div>
-          <div class="google pezzo">
+          <div class="google pezzo galleggia">
             <small><svg class="i"><use href="#i-pin"/></svg>Su Google e su Maps</small>
             <b>La tua attività</b>
-            <p class="voto">★★★★★<em>Recensioni</em></p>
+            <p class="voto"><span class="stelline">★★★★★</span><em>Recensioni</em></p>
             <p style="color:var(--grigio)">Montecatini Terme · Aperto ora</p>
             <div class="chip"><span>Chiama</span><span>Indicazioni</span><span>Sito</span></div>
           </div>
@@ -360,167 +460,207 @@ a.recapito:hover b{color:#FF9B78}
         <figcaption class="didascalia">Così ti arriva l&rsquo;anteprima: un link su WhatsApp, da aprire sul telefono.</figcaption>
       </figure>
     </div>
+    <div class="fascia">
+      <div class="fascia-binario">
+        <ul><li>Hotel</li><li>Bar</li><li>Ristoranti</li><li>Pizzerie</li><li>Parrucchieri</li><li>Barbieri</li><li>Estetiste</li><li>Pasticcerie</li><li>Gelaterie</li><li>Negozi</li></ul>
+        <ul aria-hidden="true"><li>Hotel</li><li>Bar</li><li>Ristoranti</li><li>Pizzerie</li><li>Parrucchieri</li><li>Barbieri</li><li>Estetiste</li><li>Pasticcerie</li><li>Gelaterie</li><li>Negozi</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="perche" aria-labelledby="t-perche">
+    <div class="wrap">
+      <p class="etichetta">Perché serve</p>
+      <h2 id="t-perche">I clienti decidono dal telefono. <span class="tenue">In pochi secondi.</span></h2>
+      <p class="intro">Cercano su Google, aprono il sito, guardano Instagram. Noi sistemiamo tutti e tre, così la scelta cade su di te.</p>
+      <ol class="tre">
+        <li class="entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-cerca"/></svg></span><span class="num">01 · Google</span><h3>Trovato.</h3><p>Su Google e su Maps, con foto belle, orari giusti e informazioni complete.</p></li>
+        <li class="entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-sito"/></svg></span><span class="num">02 · Sito</span><h3>Scelto.</h3><p>Dal sito: servizi, prezzi, foto vere e un tasto per chiamarti o scriverti.</p></li>
+        <li class="entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-ig"/></svg></span><span class="num">03 · Instagram</span><h3>Ricordato.</h3><p>Su Instagram, con un profilo in ordine e contenuti che tengono vivo il ricordo.</p></li>
+      </ol>
+    </div>
   </section>
 
   <section class="servizi" id="servizi" aria-labelledby="t-servizi">
     <div class="wrap">
-      <h2 id="t-servizi">Cosa facciamo <span>per te</span></h2>
-      <p class="intro">Scegli quello che ti serve. Al resto pensiamo noi.</p>
-      <ul class="servizi-griglia">
-        <li class="servizio entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-sito"/></svg></span><h3>Sito su misura</h3><p class="sotto">Fatto per il telefono, sul tuo dominio</p><p>I clienti ti cercano dal telefono: il sito nasce lì. Veloce e chiaro, con orari, menù o listino, come arrivare e un tasto per chiamarti.</p></li>
-        <li class="servizio entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-mappa"/></svg></span><h3>Scheda Google</h3><p class="sotto">Su Google e su Maps</p><p>Quando qualcuno cerca un bar o un parrucchiere in zona, la tua scheda è la prima cosa che vede. Foto belle, orari giusti, informazioni complete.</p></li>
-        <li class="servizio entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-ig"/></svg></span><h3>Instagram</h3><p class="sotto">Un profilo che fa venire voglia di entrare</p><p>Foto, descrizione, storie in evidenza e link in ordine. Chi apre il tuo profilo capisce subito chi sei e come trovarti.</p></li>
-        <li class="servizio entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-video"/></svg></span><h3>Video e reel</h3><p class="sotto">Corti, verticali, con i tuoi colori</p><p>Riprese create con l&rsquo;intelligenza artificiale, unite a testi e logo animati. Pensati per Reel, TikTok e storie.</p></li>
-        <li class="servizio entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-cal"/></svg></span><h3>Gestione social</h3><p class="sotto">Ogni mese, contenuti su richiesta</p><p>Ogni mese prepariamo e pubblichiamo post, storie e grafiche. Ti serve qualcosa in più per una serata o una novità? Basta chiedere.</p></li>
-      </ul>
+      <p class="etichetta">Servizi</p>
+      <h2 id="t-servizi">Tutto quello che serve <span class="grad">per farti scegliere.</span></h2>
+      <div class="bento">
+        <article class="cella notte larga entra">
+          <div>
+            <span class="sotto">Sito su misura</span>
+            <h3>Fatto per il telefono, sul tuo dominio</h3>
+            <p>I clienti ti cercano dal telefono: il sito nasce lì. Veloce e chiaro, con orari, menù o listino, come arrivare e un tasto per chiamarti.</p>
+          </div>
+          <div class="vista" aria-hidden="true"><div class="mini-tel"><div><span class="img"></span><span class="bl"><span></span><span></span><span style="width:80%"></span><span class="duo"><i></i><i></i></span></span></div></div></div>
+        </article>
+        <article class="cella alta entra">
+          <div>
+            <span class="sotto">Scheda Google</span>
+            <h3>Su Google e su Maps</h3>
+            <p>Quando cercano un bar o un parrucchiere in zona, la tua scheda è la prima cosa che vedono.</p>
+          </div>
+          <div class="vista" aria-hidden="true"><div class="mini-google"><b>La tua attività</b><span class="stelline">★★★★★</span> <span style="color:var(--grigio)">Recensioni</span><div class="chip"><span>Chiama</span><span>Indicazioni</span></div></div></div>
+        </article>
+        <article class="cella terzo entra">
+          <div>
+            <span class="sotto">Instagram</span>
+            <h3>Un profilo che fa entrare</h3>
+            <p>Foto, descrizione, storie in evidenza e link in ordine.</p>
+          </div>
+          <div class="vista" aria-hidden="true"><div class="mini-ig"><div class="testa"><span class="avatar"><i></i></span><span class="righe"><span></span><span></span></span></div><div class="griglia"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+        </article>
+        <article class="cella colore terzo entra">
+          <div>
+            <span class="sotto">Video e reel</span>
+            <h3>Il tuo locale in dieci secondi</h3>
+            <p>Riprese create con l&rsquo;intelligenza artificiale, testi e logo animati, verticali per Reel e storie.</p>
+          </div>
+          <div class="vista" aria-hidden="true">
+            <div class="mini-reel" id="reel">
+              <div class="barretta"><span></span><span></span><span></span></div>
+              <p class="scritta">Nuovo menù<small>da venerdì</small></p>
+              <p class="scritta">Aperitivo<small>dalle 18:30</small></p>
+              <p class="scritta">Prenota<small>su WhatsApp</small></p>
+            </div>
+          </div>
+        </article>
+        <article class="cella terzo entra">
+          <div>
+            <span class="sotto">Gestione social</span>
+            <h3>Ogni mese, ci pensiamo noi</h3>
+            <p>Post, storie e grafiche preparati e pubblicati. Per una serata o una novità, basta chiedere.</p>
+          </div>
+          <div class="vista" aria-hidden="true">
+            <div class="mini-cal">
+              <p class="mese">Il tuo mese <span>12 contenuti</span></p>
+              <div class="giorni"><i></i><i class="p"></i><i></i><i></i><i class="v"></i><i></i><i class="p"></i><i></i><i></i><i class="p"></i><i></i><i class="v"></i><i></i><i></i><i class="p"></i><i></i><i></i><i class="v"></i><i></i><i class="p"></i><i></i></div>
+              <p class="legenda"><span>Post</span><span>Video</span></p>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section class="come" id="come" aria-labelledby="t-come">
+  <section class="come scuro" id="come" aria-labelledby="t-come">
     <div class="wrap">
-      <h2 id="t-come">Prima lo vedi. <span>Poi decidi.</span></h2>
+      <p class="etichetta">Come funziona</p>
+      <h2 id="t-come">Prima lo vedi. <span class="grad">Poi decidi.</span></h2>
       <ol class="passi">
-        <li class="passo entra"><h3>Ci scrivi</h3><p>Su WhatsApp o per telefono. Ci racconti la tua attività in due minuti.</p></li>
-        <li class="passo gratis entra"><h3>Ti prepariamo l&rsquo;anteprima <span class="etichetta">gratis</span></h3><p>Con foto e informazioni vere della tua attività. Ti arriva un link da aprire sul telefono: non paghi niente e non ti impegni.</p></li>
-        <li class="passo entra"><h3>Se ti piace, va online</h3><p>Sul tuo dominio, insieme a Google e Instagram. Da lì in poi ti trovano.</p></li>
+        <li class="passo entra"><span class="n">01</span><h3>Ci scrivi</h3><p>Su WhatsApp o per telefono. Ci racconti la tua attività in due minuti.</p></li>
+        <li class="passo entra"><span class="n">02</span><h3>Ti prepariamo l&rsquo;anteprima <span class="gratis">Gratis</span></h3><p>Con foto e informazioni vere della tua attività. Ti arriva un link da aprire sul telefono.</p></li>
+        <li class="passo entra"><span class="n">03</span><h3>Se ti piace, va online</h3><p>Sul tuo dominio, insieme a Google e Instagram. Da lì in poi ti trovano.</p></li>
       </ol>
+    </div>
+  </section>
+
+  <section class="serieta" aria-labelledby="t-serieta">
+    <div class="wrap">
+      <p class="etichetta">Il nostro modo di lavorare</p>
+      <h2 id="t-serieta">Serietà, <span class="tenue">messa per iscritto.</span></h2>
+      <ul class="serieta-griglia">
+        <li class="punto entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-euro"/></svg></span><h3>Prezzi scritti prima di iniziare</h3><p>Sai quanto spendi dal primo messaggio. Niente costi nascosti.</p></li>
+        <li class="punto entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-occhio"/></svg></span><h3>Anteprima senza impegno</h3><p>Vedi il tuo sito prima di pagare. Se non ti convince, non paghi niente.</p></li>
+        <li class="punto entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-chiave"/></svg></span><h3>Il dominio è tuo</h3><p>Il nome del sito, per esempio latuaattivita.it, è intestato a te.</p></li>
+        <li class="punto entra"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-foto"/></svg></span><h3>Solo foto vere</h3><p>Usiamo foto della tua attività, mai immagini prese a caso da internet.</p></li>
+      </ul>
     </div>
   </section>
 
   <section class="prezzi" id="prezzi" aria-labelledby="t-prezzi">
     <div class="wrap">
-      <h2 id="t-prezzi">Prezzi chiari, <span>prima di iniziare</span></h2>
-      <p class="intro">Sai quanto spendi fin dal primo messaggio. Niente costi nascosti.</p>
-      <div class="prezzi-gruppi">
-        <div class="gruppo entra">
-          <h3>Una volta sola <small>Per partire</small></h3>
-          <div class="carte">
-            <article class="carta scura">
-              <span class="consigliato">Consigliato</span>
-              <h4>Sito + Google + Instagram</h4>
-              <p class="prezzo">119 €</p>
-              <p class="quando">Una volta sola</p>
-              <ul>
-                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Sito su misura, fatto per il telefono</li>
-                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Sul tuo dominio</li>
-                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Scheda Google sistemata</li>
-                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Profilo Instagram in ordine</li>
-              </ul>
-            </article>
-            <article class="carta">
-              <h4>Google + Instagram</h4>
-              <p class="prezzo">59 €</p>
-              <p class="quando">Una volta sola</p>
-              <ul>
-                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Scheda Google sistemata</li>
-                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Profilo Instagram in ordine</li>
-                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Per chi il sito ce l&rsquo;ha già</li>
-              </ul>
-            </article>
-          </div>
+      <p class="etichetta">Prezzi</p>
+      <h2 id="t-prezzi">Prezzi chiari. <span class="tenue">Fin da subito.</span></h2>
+      <div class="gruppo entra">
+        <div class="gruppo-testa"><h3>Una volta sola</h3><span>per partire</span></div>
+        <div class="carte">
+          <article class="carta top">
+            <span class="consigliato">Consigliato</span>
+            <h4>Sito + Google + Instagram</h4>
+            <p class="prezzo">119 €</p>
+            <p class="quando">una volta sola</p>
+            <ul>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Sito su misura, fatto per il telefono</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Sul tuo dominio</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Scheda Google sistemata</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Profilo Instagram in ordine</li>
+            </ul>
+            <a class="btn btn-arancio" href="https://wa.me/393273331949?text=Ciao%2C%20mi%20interessa%20Sito%20%2B%20Google%20%2B%20Instagram" target="_blank" rel="noopener">Inizia con l&rsquo;anteprima</a>
+          </article>
+          <article class="carta">
+            <h4>Google + Instagram</h4>
+            <p class="prezzo">59 €</p>
+            <p class="quando">una volta sola</p>
+            <ul>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Scheda Google sistemata</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Profilo Instagram in ordine</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Per chi il sito ce l&rsquo;ha già</li>
+            </ul>
+          </article>
         </div>
-        <div class="gruppo entra">
-          <h3>Ogni mese <small>Gestione social</small></h3>
-          <div class="carte">
-            <article class="carta">
-              <h4>Base</h4>
-              <p class="prezzo">79 € <small>al mese</small></p>
-              <p class="quando">Fino a 8 contenuti</p>
-              <ul>
-                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Post, storie e grafiche</li>
-                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Li prepariamo e pubblichiamo noi</li>
-              </ul>
-            </article>
-            <article class="carta">
-              <h4>Plus</h4>
-              <p class="prezzo">149 € <small>al mese</small></p>
-              <p class="quando">Fino a 12 contenuti</p>
-              <ul>
-                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Di cui 4 video o reel</li>
-                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Post, storie e grafiche</li>
-                <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Aggiornamenti al sito</li>
-              </ul>
-            </article>
-          </div>
-          <p class="nota">Si disdice quando vuoi. Prezzi finali, senza sorprese.</p>
+      </div>
+      <div class="gruppo entra">
+        <div class="gruppo-testa"><h3>Ogni mese</h3><span>gestione social</span></div>
+        <div class="carte">
+          <article class="carta">
+            <h4>Base</h4>
+            <p class="prezzo">79 € <small>al mese</small></p>
+            <p class="quando">fino a 8 contenuti</p>
+            <ul>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Post, storie e grafiche</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Li prepariamo e pubblichiamo noi</li>
+            </ul>
+          </article>
+          <article class="carta">
+            <h4>Plus</h4>
+            <p class="prezzo">149 € <small>al mese</small></p>
+            <p class="quando">fino a 12 contenuti</p>
+            <ul>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Di cui 4 video o reel</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Post, storie e grafiche</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Aggiornamenti al sito</li>
+            </ul>
+          </article>
         </div>
+        <p class="nota">Si disdice quando vuoi. Prezzi finali, senza sorprese.</p>
       </div>
       <div class="consiglio entra">
         <p>Non sai cosa scegliere? Scrivici, ti consigliamo noi.</p>
-        <a class="btn btn-tegola" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20un%20consiglio%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Chiedi un consiglio</a>
+        <a class="btn btn-arancio" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20un%20consiglio%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Chiedi un consiglio</a>
       </div>
     </div>
   </section>
 
-  <section class="video" id="video" aria-labelledby="t-video">
-    <div class="wrap video-griglia">
-      <div>
-        <h2 id="t-video">Un video racconta il tuo locale <span>in dieci secondi</span></h2>
-        <p class="intro">Mescoliamo riprese create con l&rsquo;intelligenza artificiale e grafica animata. Il risultato sono reel che si guardano fino in fondo.</p>
-        <ul class="punti">
-          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Verticali, per Reel, TikTok e storie</li>
-          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Testi e logo animati, con i tuoi colori</li>
-          <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Nel piano Plus, 4 video al mese</li>
-        </ul>
-      </div>
-      <div class="entra">
-        <!-- Quando lo showreel è pronto, si può mettere qui un <video> verticale al posto di questo esempio -->
-        <div class="reel" id="reel" aria-hidden="true">
-          <div class="barretta"><span></span><span></span><span></span></div>
-          <div class="scritte">
-            <p class="scritta">Nuovo menù<small>da venerdì</small></p>
-            <p class="scritta">Aperitivo in terrazza<small>dalle 18:30</small></p>
-            <p class="scritta">Prenota su WhatsApp<small>ti teniamo il tavolo</small></p>
-          </div>
-          <p class="firma">La tua attività</p>
-        </div>
-        <p class="esempio">Esempio di testi animati per una storia</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="chi" id="chi-siamo" aria-labelledby="t-chi">
-    <div class="wrap chi-griglia">
-      <div>
-        <h2 id="t-chi">Siamo in due. <span>E siamo di qui.</span></h2>
-        <p class="intro">Lavoriamo a Montecatini Terme con le attività della Valdinievole. Ci incontri di persona e ti risponde sempre uno di noi.</p>
-      </div>
-      <div class="persone">
-        <div class="persona entra"><span class="iniziali" aria-hidden="true">NV</span><div><h3>Niccolò Veniero</h3><p>Siti e video</p></div></div>
-        <div class="persona entra"><span class="iniziali" aria-hidden="true">GF</span><div><h3>Giuseppe Fusciello</h3><p>Consulente digitale, il tuo referente</p></div></div>
-        <p class="luogo"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Montecatini Terme, Valdinievole</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="domande" aria-labelledby="t-domande">
+  <section class="domande" id="domande" aria-labelledby="t-domande">
     <div class="wrap">
-      <h2 id="t-domande">Domande <span>frequenti</span></h2>
+      <p class="etichetta">Domande</p>
+      <h2 id="t-domande">Le domande <span class="tenue">che ci fanno tutti.</span></h2>
       <div class="domande-elenco">
         <details><summary>L&rsquo;anteprima è davvero gratis?</summary><p>Sì. La prepariamo, la guardi con calma sul telefono e decidi. Se non ti convince, non paghi niente e non ti impegni.</p></details>
         <details><summary>Ci sono altre spese oltre al prezzo?</summary><p>Solo il dominio, cioè il nome del sito (per esempio latuaattivita.it). È intestato a te e costa circa 10-15 € l&rsquo;anno.</p></details>
         <details><summary>Devo pagare ogni mese?</summary><p>No. Sito, Google e Instagram si pagano una volta sola. La gestione social è a parte, solo se la vuoi, e si disdice quando vuoi.</p></details>
-        <details><summary>Le foto da dove le prendete?</summary><p>Usiamo solo foto vere della tua attività: quelle che hai già sui social, quelle che ci mandi o quelle che scattiamo noi quando passiamo. Niente foto prese a caso da internet.</p></details>
-        <details><summary>Lavorate solo a Montecatini?</summary><p>Siamo a Montecatini Terme e lavoriamo con le attività di tutta la Valdinievole. Ci incontri di persona.</p></details>
+        <details><summary>Le foto da dove le prendete?</summary><p>Usiamo solo foto vere della tua attività: quelle che hai già sui social, quelle che ci mandi o quelle che scattiamo noi quando passiamo.</p></details>
+        <details><summary>In che zona lavorate?</summary><p>Siamo a Montecatini Terme e lavoriamo con le attività di tutta la Valdinievole. Se vuoi, ci vediamo di persona.</p></details>
       </div>
     </div>
   </section>
 
-  <section class="contatti" id="contatti" aria-labelledby="t-contatti">
-    <div class="wrap contatti-griglia">
+  <section class="chiusura scuro" id="contatti" aria-labelledby="t-contatti">
+    <div class="wrap chiusura-griglia">
       <div>
-        <h2 id="t-contatti">Parliamone<span>.</span></h2>
-        <p class="intro">Scrivici su WhatsApp cosa fa la tua attività: ti rispondiamo noi, senza impegno. L&rsquo;anteprima è gratis.</p>
+        <p class="etichetta">Contatti</p>
+        <h2 id="t-contatti">Vuoi vedere <span class="grad">il tuo sito?</span></h2>
+        <p class="intro">Scrivici su WhatsApp il nome della tua attività: ti prepariamo l&rsquo;anteprima gratis, senza impegno.</p>
         <div class="azioni">
-          <a class="btn btn-tegola" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Scrivici su WhatsApp</a>
-          <a class="btn btn-linea" href="tel:+393273331949"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>Chiama</a>
+          <a class="btn btn-arancio" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20un%27anteprima%20gratis%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Scrivici su WhatsApp</a>
+          <a class="btn btn-vetro" href="tel:+393273331949"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>Chiama</a>
         </div>
       </div>
       <div class="recapiti">
-        <div class="recapito"><span>Referente</span><b>Giuseppe Fusciello</b></div>
-        <a class="recapito" href="tel:+393273331949"><span>Telefono e WhatsApp</span><b>+39 327 333 1949</b></a>
-        <a class="recapito" href="mailto:giuseppefusciello90@gmail.com"><span>Email</span><b>giuseppefusciello90@gmail.com</b></a>
-        <div class="recapito"><span>Dove</span><b>Montecatini Terme</b></div>
+        <a class="recapito" href="tel:+393273331949"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg></span><span class="testo"><small>Telefono e WhatsApp · Giuseppe Fusciello</small><b>+39 327 333 1949</b></span></a>
+        <a class="recapito" href="mailto:giuseppefusciello90@gmail.com"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></span><span class="testo"><small>Email</small><b>giuseppefusciello90@gmail.com</b></span></a>
+        <div class="recapito"><span class="icona"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></span><span class="testo"><small>Dove</small><b>Montecatini Terme, Valdinievole</b></span></div>
       </div>
     </div>
   </section>
@@ -529,23 +669,17 @@ a.recapito:hover b{color:#FF9B78}
 <footer class="piede">
   <div class="wrap">
     <a class="marchio" href="#inizio"><svg aria-hidden="true"><use href="#i-marchio"/></svg><b>Veniello <span>Studio</span></b></a>
-    <p>Montecatini Terme · © <span id="anno">2026</span></p>
+    <p>Siti, Google, Instagram e video · Montecatini Terme · © <span id="anno">2026</span></p>
   </div>
 </footer>
 
 <nav class="barra" aria-label="Contatti rapidi">
-  <a class="btn btn-tegola" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
-  <a class="btn btn-linea" href="tel:+393273331949"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>Chiama</a>
+  <a class="btn btn-arancio" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+  <a class="btn btn-vetro" href="tel:+393273331949"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>Chiama</a>
 </nav>
 
 <script>
 document.getElementById('anno').textContent = new Date().getFullYear();
-/* Linea sotto la testata quando si scorre */
-(function () {
-  var t = document.getElementById('testata');
-  var f = function () { t.classList.toggle('giu', window.scrollY > 8); };
-  window.addEventListener('scroll', f, { passive: true }); f();
-})();
 /* L'esempio di reel parte solo quando si vede */
 (function () {
   var r = document.getElementById('reel');
@@ -568,16 +702,16 @@ document.addEventListener('DOMContentLoaded', function () {
   if (window.SplitText) {
     gsap.registerPlugin(SplitText);
     document.fonts.ready.then(function () {
-      var st = new SplitText('#titolo', { type: 'words' });
-      gsap.from(st.words, { yPercent: 50, autoAlpha: 0, duration: 0.8, ease: 'power3.out', stagger: 0.05, delay: 0.1 });
+      var st = new SplitText('#titolo .riga:first-child', { type: 'words' });
+      gsap.from(st.words.concat(document.querySelector('#titolo .grad')), { yPercent: 40, autoAlpha: 0, duration: 0.85, ease: 'power3.out', stagger: 0.09, delay: 0.1 });
     });
   }
-  gsap.from('.copertina .intro, .copertina .azioni, .fiducia', { y: 18, autoAlpha: 0, duration: 0.8, ease: 'power3.out', stagger: 0.08, delay: 0.45 });
-  /* 2. Il telefono, il messaggio e la scheda Google arrivano uno alla volta */
-  gsap.from('.pezzo', { y: 40, autoAlpha: 0, duration: 0.9, ease: 'power3.out', stagger: 0.18, delay: 0.5 });
+  gsap.from('.pillola, .copertina .intro, .copertina .azioni, .fiducia', { y: 18, autoAlpha: 0, duration: 0.8, ease: 'power3.out', stagger: 0.08, delay: 0.35 });
+  /* 2. Telefono, messaggio e scheda Google arrivano uno alla volta */
+  gsap.from('.pezzo', { y: 46, autoAlpha: 0, duration: 1, ease: 'power3.out', stagger: 0.16, delay: 0.5 });
   /* 3. Blocchi che salgono quando arrivano */
   var el = gsap.utils.toArray('.entra');
-  gsap.set(el, { y: 30, autoAlpha: 0 });
+  gsap.set(el, { y: 32, autoAlpha: 0 });
   ScrollTrigger.batch(el, { start: 'top 92%', once: true, onEnter: function (b) { gsap.to(b, { y: 0, autoAlpha: 1, duration: 0.8, ease: 'power3.out', stagger: 0.07, overwrite: true }); } });
 });
 </script>
