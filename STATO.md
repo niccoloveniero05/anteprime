@@ -18,6 +18,7 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 | Cioccolato & Company | Massa e Cozzile e Montecatini Terme | https://niccoloveniero05.github.io/anteprime/cioccolato-company-72fa9a/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Due negozi (Via Bruceto e Corso Roma) in un solo sito. Foto da Instagram, Facebook e scheda Google, colori dall'insegna. Mancano foto nuove del gelato e degli interni, logo nitido, eventuale numero WhatsApp. Issue #5 |
 | Il Ghiotto | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/il-ghiotto-b0a6bc/ | 2026-10-13 | in attesa | Rifatta da zero la grafica (titolo grande, collage di piatti, vetrina della rosticceria). Foto, orari e recensioni dalla scheda Google, colori dall'insegna. Mancano foto delle pizze, menù con prezzi, zona di consegna e numero WhatsApp. Issue #6 |
 | Hotel Byron | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/hotel-byron-e4b27d/ | 2026-10-13 | in attesa | Pubblicata, da mandare all'hotel. Nuova versione del loro sito (byronmct.it, del 2015): foto dal loro sito, servizi dalla loro scheda, distanze calcolate dalle coordinate, richiesta di disponibilità via email e telefono. Da verificare servizi, parcheggio e foto più recenti. Issue #7 |
+| Suite Dreams Hotel | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/suite-dreams-hotel-7c31e8/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Nuova versione del loro sito: 10 suite con foto e prezzi dal loro sito, prenotazione con il loro sistema WuBook, distanze calcolate dalle coordinate. Da verificare prezzi, colazione e sauna. Issue #8 |
 
 ## Registro
 
@@ -30,3 +31,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-13 — Pubblicata l'anteprima di Il Ghiotto (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #6.
 - 2026-10-13 — Modificata l'anteprima di Il Ghiotto (Montecatini Terme): rifatta da zero la grafica. Issue #6.
 - 2026-10-13 — Pubblicata l'anteprima di Hotel Byron (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #7.
+- 2026-10-13 — Pubblicata l'anteprima di Suite Dreams Hotel (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #8.
