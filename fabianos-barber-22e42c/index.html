@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Fabiano's Barber Shop | Barbiere a Montecatini Terme</title>
+<meta name="description" content="Fabiano's Barber Shop, barbiere in via Manzoni 16 a Montecatini Terme. Taglio uomo, sfumature e barba. 4,9 stelle su Google con 290 recensioni. Chiama il 349 649 0606.">
+<meta name="theme-color" content="#16181d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fabiano's Barber Shop, Montecatini Terme">
+<meta property="og:description" content="Barbiere in via Manzoni 16. Taglio, sfumature e barba. 4,9 stelle su Google.">
+<meta property="og:url" content="https://niccoloveniero05.github.io/anteprime/fabianos-barber-22e42c/">
+<meta property="og:image" content="https://niccoloveniero05.github.io/anteprime/fabianos-barber-22e42c/img/condivisione.jpg">
+<meta property="og:locale" content="it_IT">
+<link rel="icon" type="image/svg+xml" href="img/icona.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="img/icona-48.png">
+<link rel="apple-touch-icon" href="img/icona-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Ultra&family=Zilla+Slab:ital,wght@0,500;0,700;1,500;1,700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Fabiano's Barber Shop",
+  "image": "https://niccoloveniero05.github.io/anteprime/fabianos-barber-22e42c/img/copertina.jpg",
+  "telephone": "+39 349 649 0606",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Alessandro Manzoni 16",
+    "addressLocality": "Montecatini Terme",
+    "postalCode": "51016",
+    "addressRegion": "PT",
+    "addressCountry": "IT"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 43.884465, "longitude": 10.774161 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "12:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "15:00", "closes": "19:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "08:00", "closes": "19:30" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "290" },
+  "sameAs": ["https://www.instagram.com/fabianobarber/", "https://www.facebook.com/fabianosbarbershop/"]
+}
+</script>
+<style>
+  :root {
+    --crema: #f6f1e7;
+    --carta: #fffdf8;
+    --inchiostro: #16181d;
+    --grigio: #4a4d55;
+    --rosso: #c8191f;
+    --rosso-scuro: #a3141a;
+    --blu: #2f6fd0;
+    --blu-scuro: #1f4f9e;
+    --linea: rgba(22, 24, 29, .14);
+    --titolo: "Alfa Slab One", "Rockwell", Georgia, serif;
+    --marchio: "Ultra", "Alfa Slab One", Georgia, serif;
+    --slab: "Zilla Slab", Georgia, serif;
+    --testo: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --raggio: 14px;
+    --pagina: min(1180px, 100% - 32px);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--crema);
+    color: var(--inchiostro);
+    font-family: var(--testo);
+    font-size: 17px;
+    line-height: 1.55;
+    overflow-x: hidden;
+    padding-bottom: 0;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  h1, h2, h3 { margin: 0; font-weight: 400; }
+  p { margin: 0; }
+  .pagina { width: var(--pagina); margin-inline: auto; }
+
+  /* Palo da barbiere: la striscia rossa, bianca e blu del negozio */
+  .palo {
+    height: 10px;
+    background: repeating-linear-gradient(-45deg, var(--rosso) 0 12px, var(--carta) 12px 22px, var(--blu) 22px 34px, var(--carta) 34px 44px);
+  }
+
+  /* Bandierina blu e rossa presa dal logo sulla vetrina */
+  .bandierina {
+    display: inline-block;
+    width: 30px; height: 16px;
+    flex: none;
+    background: linear-gradient(110deg, var(--blu) 0 46%, var(--carta) 46% 54%, var(--rosso) 54% 100%);
+    clip-path: polygon(22% 0, 100% 0, 78% 100%, 0 100%);
+  }
+  .occhiello {
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--slab); font-style: italic; font-weight: 700;
+    font-size: 1.05rem; color: var(--rosso);
+    margin-bottom: 14px;
+  }
+
+  /* Pulsanti */
+  .pulsanti { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+    min-height: 52px; padding: 0 22px;
+    border-radius: 999px;
+    font-weight: 700; font-size: 1.02rem; text-decoration: none;
+    transition: transform .16s ease, background-color .2s ease, box-shadow .2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn:active { transform: scale(.97); }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+  .btn-rosso { background: var(--rosso); color: #fff; box-shadow: 0 6px 18px -8px rgba(200, 25, 31, .7); }
+  .btn-rosso:hover { background: var(--rosso-scuro); }
+  .btn-linea { border: 2px solid var(--inchiostro); color: var(--inchiostro); }
+  .btn-linea:hover { background: var(--inchiostro); color: var(--crema); }
+  :focus-visible { outline: 3px solid var(--blu); outline-offset: 3px; }
+
+  /* Copertina */
+  .copertina { display: grid; background: var(--crema); }
+  .copertina-foto { position: relative; height: 46svh; min-height: 300px; overflow: hidden; background: #2a1d18; }
+  .copertina-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; will-change: transform; }
+  .copertina-foto::after {
+    content: ""; position: absolute; inset: auto 0 0 0; height: 30%;
+    background: linear-gradient(to bottom, transparent, rgba(246, 241, 231, .0) 40%, var(--crema));
+  }
+  .copertina-testo { padding: 0 16px 34px; margin-top: -44px; position: relative; text-align: center; }
+  .marchio { width: min(100%, 360px); margin: 0 auto; display: block; overflow: visible; }
+  .marchio .m-nome { font-family: var(--marchio); fill: var(--rosso); stroke: var(--inchiostro); stroke-width: 2.2px; paint-order: stroke; }
+  .marchio .m-arco { font-family: var(--titolo); fill: var(--inchiostro); }
+  .marchio .m-anno { font-family: var(--slab); font-weight: 700; fill: var(--inchiostro); }
+  .copertina-frase { font-size: 1.12rem; color: var(--grigio); max-width: 30ch; margin: 10px auto 22px; }
+  .copertina .pulsanti { justify-content: center; }
+  .voto {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 20px;
+    font-weight: 600; font-size: .98rem; color: var(--inchiostro); text-decoration: none;
+  }
+  .stelle { color: #e0a100; letter-spacing: 1px; }
+
+  section { padding: 76px 0; }
+
+  h2 {
+    font-family: var(--titolo);
+    font-size: clamp(2rem, 7.4vw, 3.3rem);
+    line-height: 1.04;
+    letter-spacing: .005em;
+    margin-bottom: 18px;
+    text-wrap: balance;
+  }
+  .intro { color: var(--grigio); font-size: 1.08rem; max-width: 52ch; }
+
+  /* Il barbiere */
+  .barbiere { background: var(--carta); border-top: 1px solid var(--linea); border-bottom: 1px solid var(--linea); }
+  .barbiere-griglia { display: grid; gap: 34px; }
+  .ritratto { position: relative; margin: 0; }
+  .ritratto img { border-radius: var(--raggio); filter: contrast(1.05); width: 100%; }
+  .ritratto figcaption {
+    position: absolute; left: 12px; bottom: 12px;
+    background: var(--inchiostro); color: var(--crema);
+    font-family: var(--slab); font-style: italic; font-weight: 500; font-size: .95rem;
+    padding: 6px 12px; border-radius: 8px;
+  }
+  .citazione {
+    margin: 26px 0 0; padding: 18px 0 0 20px;
+    border-left: 4px solid var(--rosso);
+    font-family: var(--slab); font-style: italic; font-weight: 500;
+    font-size: clamp(1.35rem, 5vw, 1.75rem); line-height: 1.25;
+  }
+  .citazione cite { display: block; margin-top: 10px; font-family: var(--testo); font-style: normal; font-size: .95rem; color: var(--grigio); }
+  .fatti { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 12px; }
+  .fatti li { display: flex; gap: 12px; align-items: baseline; }
+  .fatti strong { font-family: var(--titolo); font-weight: 400; color: var(--rosso); min-width: 64px; font-size: 1.15rem; }
+
+  /* Tagli */
+  .tagli-griglia { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 32px; }
+  .taglio { margin: 0; position: relative; border-radius: var(--raggio); overflow: hidden; background: #2a1d18; }
+  .taglio img { width: 100%; aspect-ratio: 1; object-fit: cover; transition: transform .5s cubic-bezier(.2, .7, .2, 1); }
+  .taglio:hover img { transform: scale(1.04); }
+  .taglio figcaption {
+    position: absolute; left: 8px; bottom: 8px;
+    background: var(--crema); color: var(--inchiostro);
+    font-weight: 700; font-size: .88rem; padding: 4px 10px; border-radius: 6px;
+  }
+  .servizi { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .servizi span {
+    border: 1.5px solid var(--inchiostro); border-radius: 999px;
+    padding: 8px 16px; font-weight: 600; font-size: .98rem; background: var(--carta);
+  }
+  .nota { margin-top: 18px; color: var(--grigio); font-size: .98rem; }
+
+  /* La bottega: le righe rosse delle pareti */
+  .bottega { background: var(--inchiostro); color: var(--crema); padding-top: 0; }
+  .righe { height: 34px; background: repeating-linear-gradient(90deg, var(--rosso) 0 34px, var(--carta) 34px 68px); margin-bottom: 70px; }
+  .bottega .intro { color: rgba(246, 241, 231, .78); }
+  .bottega .occhiello { color: #ff6b6f; }
+  .bottega-griglia { display: grid; gap: 14px; margin-top: 34px; }
+  .bottega-griglia figure { margin: 0; }
+  .bottega-griglia img { border-radius: var(--raggio); width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+  .bottega-griglia figcaption { margin-top: 10px; font-family: var(--slab); font-style: italic; font-size: 1.02rem; color: rgba(246, 241, 231, .8); }
+
+  /* Recensioni */
+  .voto-grande { display: flex; align-items: center; gap: 18px; margin: 8px 0 30px; }
+  .voto-grande b { font-family: var(--titolo); font-weight: 400; font-size: 4.2rem; line-height: 1; color: var(--rosso); }
+  .voto-grande span { font-weight: 600; line-height: 1.35; }
+  .recensioni-griglia { display: grid; gap: 14px; }
+  .recensione {
+    background: var(--carta); border: 1px solid var(--linea); border-radius: var(--raggio);
+    padding: 22px 22px 20px; margin: 0;
+  }
+  .recensione p { font-size: 1.04rem; }
+  .recensione footer { margin-top: 14px; display: flex; justify-content: space-between; gap: 10px; font-weight: 700; font-size: .95rem; }
+  .recensione footer span { color: #e0a100; font-weight: 400; letter-spacing: 1px; }
+  .brevi { display: grid; gap: 10px; margin-top: 14px; }
+  .brevi p { font-family: var(--slab); font-style: italic; font-size: 1.12rem; padding-left: 16px; border-left: 3px solid var(--blu); }
+  .link-google { display: inline-block; margin-top: 22px; font-weight: 700; color: var(--blu-scuro); }
+
+  /* Orari e indirizzo */
+  .visita { background: var(--carta); border-top: 1px solid var(--linea); }
+  .visita-griglia { display: grid; gap: 34px; }
+  .stato {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-weight: 700; padding: 7px 14px; border-radius: 999px;
+    background: #e9e3d6; margin-bottom: 18px; font-size: .98rem;
+  }
+  .stato i { width: 10px; height: 10px; border-radius: 50%; background: #9a958b; }
+  .stato.aperto { background: #dff0e2; color: #1d5e2a; }
+  .stato.aperto i { background: #24a148; }
+  .stato.chiuso { background: #f6dede; color: #8a1418; }
+  .stato.chiuso i { background: var(--rosso); }
+  .orari { width: 100%; border-collapse: collapse; font-size: 1.04rem; }
+  .orari th, .orari td { padding: 11px 0; border-bottom: 1px solid var(--linea); text-align: left; vertical-align: top; }
+  .orari th { font-weight: 600; width: 40%; }
+  .orari td { text-align: right; font-variant-numeric: tabular-nums; }
+  .orari tr.oggi th, .orari tr.oggi td { color: var(--rosso); font-weight: 700; }
+  .orari .riposo { color: var(--grigio); }
+  .indirizzo { font-size: 1.12rem; font-weight: 600; margin-bottom: 16px; }
+  .mappa { border: 0; width: 100%; height: 300px; border-radius: var(--raggio); display: block; background: #e9e3d6; }
+  .ingresso { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: center; margin-top: 20px; }
+  .ingresso img { border-radius: 10px; aspect-ratio: 3 / 4; object-fit: cover; width: 100%; }
+  .ingresso p { color: var(--grigio); }
+
+  /* Fondo pagina */
+  .fondo { background: var(--inchiostro); color: var(--crema); padding: 56px 0 calc(106px + env(safe-area-inset-bottom)); }
+  .fondo .marchio { width: min(100%, 260px); margin: 0; }
+  .fondo .marchio .m-arco, .fondo .marchio .m-anno { fill: var(--crema); }
+  .fondo .marchio .m-nome { stroke: var(--crema); stroke-width: 1px; }
+  .fondo-griglia { display: grid; gap: 26px; }
+  .fondo a { text-decoration: none; }
+  .fondo a:hover { text-decoration: underline; }
+  .social { display: flex; gap: 12px; flex-wrap: wrap; }
+  .social a {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid rgba(246, 241, 231, .3); border-radius: 999px; padding: 9px 16px; font-weight: 600;
+  }
+  .social svg { width: 18px; height: 18px; }
+  .preview-note { margin-top: 40px; padding-top: 18px; border-top: 1px solid rgba(246, 241, 231, .16); font-size: .88rem; color: rgba(246, 241, 231, .62); }
+
+  /* Barra fissa sul telefono */
+  .barra {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(22, 24, 29, .94);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  }
+  .barra .btn { min-height: 50px; padding: 0 10px; }
+  .barra .btn-wa { background: var(--crema); color: var(--inchiostro); }
+
+  @media (min-width: 720px) {
+    .tagli-griglia { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .bottega-griglia { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .recensioni-griglia { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (min-width: 960px) {
+    body { font-size: 18px; }
+    .fondo { padding-bottom: 30px; }
+    .barra { display: none; }
+    section { padding: 110px 0; }
+    .copertina { grid-template-columns: 1fr 1fr; min-height: calc(100svh - 10px); }
+    .copertina-foto { height: auto; order: 2; }
+    .copertina-foto::after { display: none; }
+    .copertina-testo { margin: 0; align-self: center; padding: 60px 48px; }
+    .marchio { width: min(100%, 470px); }
+    .copertina-frase { font-size: 1.2rem; }
+    .barbiere-griglia { grid-template-columns: 5fr 6fr; gap: 72px; align-items: center; }
+    .visita-griglia { grid-template-columns: 1fr 1fr; gap: 64px; }
+    .mappa { height: 380px; }
+    .fondo-griglia { grid-template-columns: 1.2fr 1fr 1fr; align-items: start; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="palo" aria-hidden="true"></div>
+
+<header class="copertina">
+  <div class="copertina-foto">
+    <img src="img/copertina.jpg" alt="L'interno del negozio con le poltrone rosse, il palo da barbiere e le pareti a righe" width="1080" height="1301" fetchpriority="high" id="foto-copertina">
+  </div>
+  <div class="copertina-testo">
+    <h1 style="margin:0">
+      <svg class="marchio" viewBox="0 0 360 210" role="img" aria-label="Fabiano's Barber Shop, dal 1961">
+        <defs><path id="arco" d="M16,150 Q180,64 344,150"/></defs>
+        <text class="m-nome entra" x="180" y="56" text-anchor="middle" font-size="48" textLength="292" lengthAdjust="spacingAndGlyphs">FABIANO'S</text>
+        <text class="m-arco entra" font-size="39"><textPath href="#arco" startOffset="50%" text-anchor="middle">BARBER SHOP</textPath></text>
+        <g class="entra"><g transform="translate(180 158)" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="color:var(--rosso)">
+          <circle cx="-9" cy="10" r="5"/><circle cx="9" cy="10" r="5"/>
+          <path d="M-6 6 L12 -16 M6 6 L-12 -16"/></g>
+        </g>
+        <text class="m-anno entra" x="180" y="204" text-anchor="middle" font-size="24">Since 1961</text>
+      </svg>
+    </h1>
+    <p class="copertina-frase entra">Il barbiere di via Manzoni, a Montecatini Terme. Taglio, sfumature e barba, con calma e precisione.</p>
+    <div class="pulsanti entra">
+      <a class="btn btn-rosso" href="tel:+393496490606">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Chiama 349 649 0606
+      </a>
+      <a class="btn btn-linea" href="https://wa.me/393496490606?text=Ciao%20Fabiano%2C%20vorrei%20prenotare%20un%20taglio" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <a class="voto entra" href="#recensioni"><span class="stelle" aria-hidden="true">★★★★★</span> 4,9 su Google, 290 recensioni</a>
+  </div>
+</header>
+
+<main>
+
+<section class="barbiere" id="barbiere">
+  <div class="pagina barbiere-griglia">
+    <figure class="ritratto reveal">
+      <img src="img/fabiano.jpg" alt="Fabiano seduto su una poltrona del suo negozio" width="824" height="900" loading="lazy">
+      <figcaption>Fabiano, in bottega</figcaption>
+    </figure>
+    <div>
+      <p class="occhiello reveal"><span class="bandierina" aria-hidden="true"></span>Il barbiere</p>
+      <h2 class="reveal">Una bottega vera, con il nome di chi ci lavora</h2>
+      <p class="intro reveal">Da Fabiano's ti siedi su una poltrona rossa, sotto le foto dei tagli di una volta, e ti alzi con un taglio fatto su misura. Fabiano prima ascolta cosa vuoi, poi lavora con forbici, macchinetta e rasoio. Chi viene una volta, di solito torna.</p>
+      <blockquote class="citazione reveal">
+        "È far sentire un uomo meglio di quando è entrato."
+        <cite>Fabiano, sul suo Instagram</cite>
+      </blockquote>
+      <ul class="fatti reveal">
+        <li><strong>1961</strong><span>l'anno scritto sulla vetrina del negozio</span></li>
+        <li><strong>4,9</strong><span>stelle su Google, con 290 recensioni</span></li>
+        <li><strong>CBC</strong><span>manager tecnico per la Toscana della Champions Barber Cup</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="tagli" id="tagli">
+  <div class="pagina">
+    <p class="occhiello reveal"><span class="bandierina" aria-hidden="true"></span>I tagli</p>
+    <h2 class="reveal">Dal taper fade al mullet</h2>
+    <p class="intro reveal">Alcuni lavori usciti dalla poltrona di Fabiano negli ultimi mesi. Porta una foto o fatti consigliare: il taglio si decide insieme.</p>
+    <div class="tagli-griglia">
+      <figure class="taglio reveal"><img src="img/taglio-taper-fade.jpg" alt="Taper fade su capelli ricci" width="720" height="720" loading="lazy"><figcaption>Taper fade</figcaption></figure>
+      <figure class="taglio reveal"><img src="img/taglio-slick-back.jpg" alt="Taglio slick back con sfumatura" width="720" height="720" loading="lazy"><figcaption>Slick back</figcaption></figure>
+      <figure class="taglio reveal"><img src="img/taglio-spiky-mullet.jpg" alt="Taglio spiky mullet" width="716" height="720" loading="lazy"><figcaption>Spiky mullet</figcaption></figure>
+      <figure class="taglio reveal"><img src="img/taglio-barba.jpg" alt="Barba bianca curata e capelli sfumati" width="720" height="720" loading="lazy"><figcaption>Barba e capelli</figcaption></figure>
+      <figure class="taglio reveal"><img src="img/taglio-mullet.jpg" alt="Taglio mullet con sfumatura" width="720" height="720" loading="lazy"><figcaption>Mullet</figcaption></figure>
+      <figure class="taglio reveal"><img src="img/taglio-ricci.jpg" alt="Sfumatura con ciuffo mosso" width="720" height="720" loading="lazy"><figcaption>Sfumatura e ciuffo</figcaption></figure>
+    </div>
+    <div class="servizi reveal" aria-label="Cosa si fa">
+      <span>Taglio uomo</span><span>Sfumature e fade</span><span>Barba</span><span>Tagli old school</span>
+    </div>
+    <p class="nota reveal">Per prezzi e posti liberi chiama o scrivi a Fabiano su WhatsApp.</p>
+  </div>
+</section>
+
+<section class="bottega" id="bottega">
+  <div class="righe" aria-hidden="true"></div>
+  <div class="pagina">
+    <p class="occhiello reveal"><span class="bandierina" aria-hidden="true"></span>La bottega</p>
+    <h2 class="reveal">Poltrone rosse, pareti a righe, il palo accanto alla porta</h2>
+    <p class="intro reveal">Un negozio di barbiere come quelli di una volta, in via Manzoni 16: mattoni a vista, quadri dei tagli classici e la vetrina con il marchio di Fabiano's.</p>
+    <div class="bottega-griglia">
+      <figure class="reveal"><img src="img/bottega-poltrone.jpg" alt="Le poltrone rosse davanti alla parete di mattoni" width="720" height="900" loading="lazy"><figcaption>Le poltrone e la parete di mattoni</figcaption></figure>
+      <figure class="reveal"><img src="img/bottega-parete.jpg" alt="Parete a righe rosse con quadri di tagli classici e il palo da barbiere" width="675" height="900" loading="lazy"><figcaption>I quadri dei tagli classici</figcaption></figure>
+      <figure class="reveal"><img src="img/vetrina.jpg" alt="La vetrina con la scritta Fabiano's Barber Shop Since 1961" width="900" height="900" loading="lazy"><figcaption>La vetrina su via Manzoni</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="recensioni" id="recensioni">
+  <div class="pagina">
+    <p class="occhiello reveal"><span class="bandierina" aria-hidden="true"></span>Dicono di Fabiano</p>
+    <h2 class="reveal">Chi si siede, poi torna</h2>
+    <div class="voto-grande reveal">
+      <b>4,9</b>
+      <span><span class="stelle" aria-hidden="true">★★★★★</span><br>290 recensioni su Google</span>
+    </div>
+    <div class="recensioni-griglia">
+      <blockquote class="recensione reveal">
+        <p>"Fabiano è semplicemente il migliore in zona! Sempre puntuale, professionale e super disponibile, riesce a mettere a proprio agio chiunque con la sua simpatia."</p>
+        <footer>Walter P. <span aria-label="5 stelle">★★★★★</span></footer>
+      </blockquote>
+      <blockquote class="recensione reveal">
+        <p>"Garbato, gentile, sa fare molto bene il suo mestiere. Taglio richiesto non facile, si è mosso rapidamente e con precisione. Perfetto!"</p>
+        <footer>Davide N. <span aria-label="5 stelle">★★★★★</span></footer>
+      </blockquote>
+      <blockquote class="recensione reveal">
+        <p>"Professionista esemplare, un piacere farsi servire dalle sue mani esperte. Lo consiglio a tutti i fissati dei capelli come me!"</p>
+        <footer>Giancarlo S. <span aria-label="5 stelle">★★★★★</span></footer>
+      </blockquote>
+    </div>
+    <div class="brevi reveal">
+      <p>"La prima volta che rimango davvero soddisfatto del taglio che chiedo."</p>
+      <p>"Il proprietario è gentilissimo, posto molto curato e pulito."</p>
+    </div>
+    <a class="link-google reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Fabiano%27s%20Barber%20Shop%20Montecatini%20Terme" target="_blank" rel="noopener">Leggi tutte le recensioni su Google</a>
+  </div>
+</section>
+
+<section class="visita" id="orari">
+  <div class="pagina visita-griglia">
+    <div>
+      <p class="occhiello reveal"><span class="bandierina" aria-hidden="true"></span>Orari</p>
+      <h2 class="reveal">Quando trovi Fabiano</h2>
+      <p class="stato reveal" id="stato" aria-live="polite"><i aria-hidden="true"></i><span>Orari della settimana</span></p>
+      <table class="orari reveal">
+        <tbody>
+          <tr data-g="1"><th>Lunedì</th><td class="riposo">Chiuso</td></tr>
+          <tr data-g="2"><th>Martedì</th><td>8:00 - 12:30<br>15:00 - 19:30</td></tr>
+          <tr data-g="3"><th>Mercoledì</th><td>8:00 - 12:30<br>15:00 - 19:30</td></tr>
+          <tr data-g="4"><th>Giovedì</th><td>8:00 - 12:30<br>15:00 - 19:30</td></tr>
+          <tr data-g="5"><th>Venerdì</th><td>8:00 - 19:30 continuato</td></tr>
+          <tr data-g="6"><th>Sabato</th><td>8:00 - 19:30 continuato</td></tr>
+          <tr data-g="0"><th>Domenica</th><td class="riposo">Chiuso</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <p class="occhiello reveal"><span class="bandierina" aria-hidden="true"></span>Dove siamo</p>
+      <p class="indirizzo reveal">Via Alessandro Manzoni 16<br>51016 Montecatini Terme (PT)</p>
+      <iframe class="mappa reveal" title="Mappa: Fabiano's Barber Shop in via Manzoni 16" src="https://maps.google.com/maps?q=43.884465,10.774161&amp;z=17&amp;hl=it&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="ingresso reveal">
+        <img src="img/ingresso.jpg" alt="L'ingresso del negozio con l'insegna Barber Shop e il palo da barbiere" width="675" height="900" loading="lazy">
+        <div>
+          <p>Cerca l'insegna Barber Shop con i baffi e il palo bianco, rosso e blu accanto alla porta.</p>
+          <div class="pulsanti" style="margin-top:14px">
+            <a class="btn btn-linea" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.884465,10.774161" target="_blank" rel="noopener">Indicazioni</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="fondo">
+  <div class="pagina">
+    <div class="fondo-griglia">
+      <svg class="marchio" viewBox="0 0 360 210" role="img" aria-label="Fabiano's Barber Shop">
+        <defs><path id="arco2" d="M16,150 Q180,64 344,150"/></defs>
+        <text class="m-nome" x="180" y="56" text-anchor="middle" font-size="48" textLength="292" lengthAdjust="spacingAndGlyphs">FABIANO'S</text>
+        <text class="m-arco" font-size="39"><textPath href="#arco2" startOffset="50%" text-anchor="middle">BARBER SHOP</textPath></text>
+        <g transform="translate(180 158)" fill="none" stroke="#c8191f" stroke-width="2.4" stroke-linecap="round"><circle cx="-9" cy="10" r="5"/><circle cx="9" cy="10" r="5"/><path d="M-6 6 L12 -16 M6 6 L-12 -16"/></g>
+        <text class="m-anno" x="180" y="204" text-anchor="middle" font-size="24">Since 1961</text>
+      </svg>
+      <div>
+        <p><strong>Via Alessandro Manzoni 16</strong><br>51016 Montecatini Terme (PT)</p>
+        <p style="margin-top:10px"><a href="tel:+393496490606">349 649 0606</a></p>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com/fabianobarber/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          @fabianobarber
+        </a>
+        <a href="https://www.facebook.com/fabianosbarbershop/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8V6.5c0-.7.5-1 1-1h2V2h-3c-3 0-4 2-4 4.5V8H7.5v3.5H10V22h4V11.5h2.7l.5-3.5H14z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+    <p class="preview-note">Anteprima preparata per Fabiano's Barber Shop</p>
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn btn-rosso" href="tel:+393496490606">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+    Chiama
+  </a>
+  <a class="btn btn-wa" href="https://wa.me/393496490606?text=Ciao%20Fabiano%2C%20vorrei%20prenotare%20un%20taglio" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></svg>
+    WhatsApp
+  </a>
+</nav>
+
+<script>
+  // Aperto ora / chiuso ora, con l'ora italiana
+  (function () {
+    var fasce = { 0: [], 1: [], 2: [[480, 750], [900, 1170]], 3: [[480, 750], [900, 1170]], 4: [[480, 750], [900, 1170]], 5: [[480, 1170]], 6: [[480, 1170]] };
+    var nomi = ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'];
+    var g, m;
+    try {
+      var p = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(new Date());
+      var v = {}; p.forEach(function (x) { v[x.type] = x.value; });
+      g = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(v.weekday);
+      m = (parseInt(v.hour, 10) % 24) * 60 + parseInt(v.minute, 10);
+    } catch (e) { var d = new Date(); g = d.getDay(); m = d.getHours() * 60 + d.getMinutes(); }
+    var riga = document.querySelector('.orari tr[data-g="' + g + '"]');
+    if (riga) riga.classList.add('oggi');
+    var hm = function (x) { return Math.floor(x / 60) + ':' + String(x % 60).padStart(2, '0'); };
+    var stato = document.getElementById('stato'), testo = stato.querySelector('span');
+    var oggi = fasce[g], aperta = oggi.filter(function (f) { return m >= f[0] && m < f[1]; })[0];
+    if (aperta) { stato.classList.add('aperto'); testo.textContent = 'Aperto ora, fino alle ' + hm(aperta[1]); return; }
+    stato.classList.add('chiuso');
+    var dopo = oggi.filter(function (f) { return f[0] > m; })[0];
+    if (dopo) { testo.textContent = 'Chiuso ora, riapre alle ' + hm(dopo[0]); return; }
+    for (var i = 1; i <= 7; i++) {
+      var gg = (g + i) % 7;
+      if (fasce[gg].length) { testo.textContent = 'Chiuso ora, riapre ' + (i === 1 ? 'domani' : nomi[gg]) + ' alle ' + hm(fasce[gg][0][0]); return; }
+    }
+  })();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" defer></script>
+<script>
+  // Movimento: solo se le librerie ci sono e se il telefono non chiede "Riduci movimento"
+  window.addEventListener('DOMContentLoaded', function () {
+    if (!window.gsap || !window.ScrollTrigger) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    gsap.registerPlugin(ScrollTrigger);
+
+    if (window.Lenis) {
+      var lenis = new Lenis({ duration: 1.05, smoothWheel: true });
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
+      gsap.ticker.lagSmoothing(0);
+      document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+        a.addEventListener('click', function (e) { var t = document.querySelector(a.getAttribute('href')); if (t) { e.preventDefault(); lenis.scrollTo(t, { offset: -10 }); } });
+      });
+    }
+
+    // 1. Il marchio entra pezzo per pezzo, come la scritta sulla vetrina
+    gsap.from('.copertina .entra', { y: 22, opacity: 0, duration: .7, ease: 'power3.out', stagger: .09, delay: .1, clearProps: 'transform,opacity' });
+
+    // 2. La foto del negozio si allontana piano mentre scorri
+    gsap.fromTo('#foto-copertina', { scale: 1.12 }, {
+      scale: 1, yPercent: 6, ease: 'none',
+      scrollTrigger: { trigger: '.copertina', start: 'top top', end: 'bottom top', scrub: true }
+    });
+
+    // 3. Le schede salgono quando arrivano
+    var el = gsap.utils.toArray('.reveal');
+    gsap.set(el, { opacity: 0, y: 26 });
+    ScrollTrigger.batch(el, {
+      start: 'top 90%',
+      once: true,
+      onEnter: function (b) { gsap.to(b, { opacity: 1, y: 0, duration: .65, ease: 'power3.out', stagger: .08, overwrite: true }); }
+    });
+    window.addEventListener('load', function () { ScrollTrigger.refresh(); });
+  });
+</script>
+</body>
+</html>
