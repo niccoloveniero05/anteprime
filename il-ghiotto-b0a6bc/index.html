@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Il Ghiotto | Pizzeria e rosticceria a Montecatini Terme</title>
+<meta name="description" content="Il Ghiotto in Viale Adua 7 a Montecatini Terme: pizze e panini, pollo al mattone, rosticceria, rinfreschi per cerimonie. Asporto e consegna a domicilio, tel. 0572 766084.">
+<meta name="theme-color" content="#E07A45">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Il Ghiotto, pizzeria e rosticceria a Montecatini Terme">
+<meta property="og:description" content="Pizze e panini, pollo al mattone, rosticceria e consegna a domicilio. Viale Adua 7, tel. 0572 766084.">
+<meta property="og:url" content="https://niccoloveniero05.github.io/anteprime/il-ghiotto-b0a6bc/">
+<meta property="og:image" content="https://niccoloveniero05.github.io/anteprime/il-ghiotto-b0a6bc/img/insegna.jpg">
+<meta property="og:locale" content="it_IT">
+<link rel="icon" type="image/png" sizes="48x48" href="img/icona-48.png">
+<link rel="apple-touch-icon" href="img/icona-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Barlow+Condensed:ital,wght@0,600;0,700;1,700;1,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Il Ghiotto",
+  "servesCuisine": ["Pizza", "Rosticceria", "Cucina toscana"],
+  "telephone": "+39 0572 766084",
+  "address": { "@type": "PostalAddress", "streetAddress": "Viale Adua 7", "postalCode": "51016", "addressLocality": "Montecatini Terme", "addressRegion": "PT", "addressCountry": "IT" },
+  "geo": { "@type": "GeoCoordinates", "latitude": 43.886841, "longitude": 10.761378 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "13:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "18:00", "closes": "21:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "83" },
+  "image": "https://niccoloveniero05.github.io/anteprime/il-ghiotto-b0a6bc/img/insegna.jpg"
+}
+</script>
+<style>
+  /* Colori presi dall'insegna del locale: arancio sfumato, blu, rosso e verde delle scritte */
+  :root {
+    --arancio: #E07A45;
+    --arancio-scuro: #B9542A;
+    --pesca: #F6CFB2;
+    --crema: #FBF6EE;
+    --carta: #FFFDF9;
+    --blu: #283C8E;
+    --rosso: #B8322A;
+    --verde: #2E6A3A;
+    --inchiostro: #2A1E18;
+    --testo: #4A3B33;
+    --linea: #EADFD2;
+    --r: 18px;
+    --ombra: 0 1px 2px rgba(42,30,24,.06), 0 10px 30px -12px rgba(42,30,24,.22);
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--crema); color: var(--testo);
+    font: 400 17px/1.6 "Nunito Sans", system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  .wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
+
+  /* Barra in alto */
+  .barra {
+    position: sticky; top: 0; z-index: 30;
+    background: rgba(251,246,238,.92); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--linea);
+  }
+  .barra .wrap { display: flex; align-items: center; justify-content: space-between; height: 62px; gap: 12px; }
+  .marchio { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .marchio img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; object-position: 30% 50%; border: 2px solid var(--inchiostro); }
+  .marchio span { font-family: Rye, serif; font-size: 21px; color: var(--inchiostro); letter-spacing: .5px; }
+  .barra nav { display: none; gap: 26px; font-weight: 600; font-size: 15px; }
+  .barra nav a { text-decoration: none; color: var(--testo); }
+  .barra nav a:hover { color: var(--rosso); }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+    min-height: 50px; padding: 0 22px; border-radius: 999px;
+    font: 800 16px/1 "Nunito Sans", sans-serif; text-decoration: none;
+    transition: transform .18s ease, background-color .18s ease;
+  }
+  .btn:active { transform: scale(.97); }
+  .btn svg { width: 19px; height: 19px; flex: none; }
+  .btn-pieno { background: var(--rosso); color: #fff; }
+  .btn-pieno:hover { background: #9E2820; }
+  .btn-vuoto { background: transparent; color: var(--inchiostro); box-shadow: inset 0 0 0 2px var(--inchiostro); }
+  .btn-vuoto:hover { background: rgba(42,30,24,.06); }
+  .btn-piccolo { min-height: 40px; padding: 0 16px; font-size: 15px; }
+
+  /* Copertina: l'insegna del locale, rifatta per lo schermo */
+  .insegna {
+    margin-top: 18px;
+    background: linear-gradient(180deg, var(--arancio) 0%, #EFA77C 16%, var(--carta) 40%, var(--carta) 74%, #F3BE9C 90%, var(--arancio) 100%);
+    border: 2px solid var(--inchiostro); border-radius: 22px;
+    padding: 26px 18px 22px; text-align: center; position: relative;
+    box-shadow: 6px 6px 0 var(--inchiostro);
+  }
+  .insegna-testa { display: flex; align-items: center; justify-content: center; gap: 10px; padding-top: 50px; position: relative; }
+  .insegna-testa img { position: absolute; top: 0; left: 0; }
+  .insegna-testa img.destra { left: auto; right: 0; }
+  .insegna-testa img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; object-position: 28% 45%; border: 2px solid var(--inchiostro); background: var(--arancio); flex: none; }
+  .insegna-testa img.destra { transform: scaleX(-1); }
+  h1 {
+    margin: 0; font-family: Rye, serif; font-weight: 400;
+    font-size: clamp(36px, 13.5vw, 104px); line-height: 1; letter-spacing: 1px; white-space: nowrap;
+    color: #fff; -webkit-text-stroke: 2px var(--inchiostro); paint-order: stroke fill;
+    text-shadow: 3px 3px 0 var(--inchiostro);
+  }
+  .insegna-sotto { margin: 14px 0 6px; font-weight: 800; font-size: 15px; color: var(--inchiostro); }
+  .righe { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 4px; }
+  .righe li {
+    font-family: "Barlow Condensed", sans-serif; font-style: italic; font-weight: 800;
+    font-size: clamp(22px, 6.4vw, 44px); line-height: 1.12; text-transform: uppercase; letter-spacing: .3px;
+  }
+  .righe .blu { color: var(--blu); }
+  .righe .rosso { color: var(--rosso); }
+  .righe .verde { color: var(--verde); }
+  .consegna {
+    display: inline-block; margin-top: 18px; text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif; font-style: italic; font-weight: 800; text-transform: uppercase;
+    font-size: clamp(20px, 5.6vw, 34px); color: var(--rosso); line-height: 1.15;
+  }
+  .consegna b { white-space: nowrap; }
+
+  .azioni { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 26px 0 8px; }
+  .stato { display: flex; justify-content: center; margin-top: 18px; }
+  .pillola {
+    display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 999px;
+    background: var(--carta); border: 1px solid var(--linea); font-weight: 700; font-size: 15px; color: var(--inchiostro);
+  }
+  .pillola i { width: 9px; height: 9px; border-radius: 50%; background: #9A8C82; }
+  .pillola.aperto i { background: #2F9E52; box-shadow: 0 0 0 4px rgba(47,158,82,.18); }
+  .pillola.chiuso i { background: var(--rosso); }
+
+  .foto-banco { margin: 34px 0 0; border-radius: var(--r); overflow: hidden; border: 2px solid var(--inchiostro); background: #d8cfc4; }
+  .foto-banco .tagli { overflow: hidden; aspect-ratio: 16 / 10; }
+  .foto-banco img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 72%; will-change: transform; }
+  .foto-banco figcaption { background: var(--inchiostro); color: #F5E9DC; padding: 12px 16px; font-size: 15px; }
+
+  section { padding: 72px 0 0; }
+  .etichetta { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 17px; letter-spacing: .5px; color: var(--arancio-scuro); margin: 0 0 6px; }
+  h2 { font-family: Rye, serif; font-weight: 400; color: var(--inchiostro); font-size: clamp(30px, 7.4vw, 52px); line-height: 1.08; margin: 0 0 14px; }
+  .intro { max-width: 60ch; margin: 0 0 26px; }
+
+  /* La pizza */
+  .pizza {
+    background: var(--blu); color: #E7EAF7; border-radius: 24px; padding: 30px 20px; overflow: hidden; position: relative;
+  }
+  .pizza h2 { color: #fff; }
+  .pizza .etichetta { color: var(--pesca); }
+  .pizza .disegno { background: #F4EFE6; border-radius: 14px; padding: 8px; margin: 4px 0 22px; max-width: 420px; }
+  .pizza .disegno img { width: 100%; border-radius: 8px; }
+  .punti { list-style: none; padding: 0; margin: 20px 0 26px; display: grid; gap: 12px; }
+  .punti li { display: flex; gap: 12px; align-items: flex-start; }
+  .punti svg { width: 22px; height: 22px; flex: none; margin-top: 3px; color: var(--pesca); }
+  .pizza blockquote { margin: 0; padding: 16px 18px; border-left: 4px solid var(--arancio); background: rgba(255,255,255,.07); border-radius: 0 12px 12px 0; font-size: 18px; color: #fff; }
+  .pizza blockquote cite { display: block; margin-top: 6px; font-style: normal; font-size: 14px; color: #C9CFEA; }
+  .pizza .btn-pieno { background: var(--arancio); color: var(--inchiostro); }
+  .pizza .btn-pieno:hover { background: #EE9363; }
+
+  /* Il banco */
+  .griglia { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .piatto { margin: 0; background: var(--carta); border-radius: 16px; overflow: hidden; box-shadow: var(--ombra); }
+  .piatto img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+  .piatto figcaption { padding: 10px 12px 12px; font-weight: 800; color: var(--inchiostro); font-size: 15px; line-height: 1.3; }
+  .piatto.grande { grid-column: 1 / -1; }
+  .piatto.grande img { aspect-ratio: 4 / 3; object-position: 50% 30%; }
+  .nota { font-size: 14px; color: #7A6A60; margin-top: 14px; }
+
+  /* Cerimonie */
+  .cerimonie { display: grid; gap: 22px; align-items: center; }
+  .cerimonie .foto { border-radius: var(--r); overflow: hidden; border: 2px solid var(--inchiostro); box-shadow: 6px 6px 0 var(--arancio); }
+  .cerimonie .foto img { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; }
+
+  /* Recensioni */
+  .voto { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+  .voto strong { font-family: Rye, serif; font-weight: 400; font-size: 54px; line-height: 1; color: var(--inchiostro); }
+  .stelle { display: flex; gap: 2px; color: #E0A126; }
+  .stelle svg { width: 20px; height: 20px; }
+  .voto small { display: block; font-size: 14px; color: #7A6A60; }
+  .recensioni { display: grid; gap: 14px; }
+  .recensione { background: var(--carta); border: 1px solid var(--linea); border-radius: 16px; padding: 18px; margin: 0; }
+  .recensione p { margin: 8px 0 10px; color: var(--inchiostro); }
+  .recensione footer { font-size: 14px; color: #7A6A60; font-weight: 700; }
+
+  /* Orari e mappa */
+  .orari-mappa { display: grid; gap: 18px; }
+  .scheda { background: var(--carta); border: 1px solid var(--linea); border-radius: 18px; padding: 20px; }
+  .scheda h3 { margin: 0 0 12px; font-family: "Barlow Condensed", sans-serif; font-size: 24px; font-weight: 700; color: var(--inchiostro); }
+  table { width: 100%; border-collapse: collapse; font-size: 16px; }
+  td { padding: 9px 0; border-bottom: 1px dashed var(--linea); }
+  td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.oggi td { font-weight: 800; color: var(--inchiostro); }
+  tr.oggi td:first-child::after { content: " · oggi"; font-weight: 600; color: var(--arancio-scuro); }
+  .chiuso-g { color: var(--rosso); }
+  .indirizzo { font-weight: 700; color: var(--inchiostro); margin: 0 0 4px; }
+  .mappa { border-radius: 14px; overflow: hidden; border: 1px solid var(--linea); margin: 14px 0; aspect-ratio: 4 / 3; background: #e8e2d8; }
+  .mappa iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .piccolo { font-size: 14px; color: #7A6A60; }
+
+  footer.piede { margin-top: 80px; background: var(--inchiostro); color: #E9DCCF; padding: 40px 0 120px; }
+  .piede .wrap { display: grid; gap: 18px; }
+  .piede .nome { font-family: Rye, serif; font-size: 28px; color: #fff; }
+  .piede a { color: #fff; }
+  .preview-note { font-size: 13px; color: #B5A597; border-top: 1px solid rgba(255,255,255,.12); padding-top: 16px; }
+
+  /* Barra fissa in basso sul telefono */
+  .barra-tel {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(42,30,24,.96);
+  }
+  .barra-tel .btn { min-height: 48px; padding: 0 10px; }
+  .barra-tel .btn-vuoto { color: #fff; box-shadow: inset 0 0 0 2px rgba(255,255,255,.7); }
+
+  @media (min-width: 760px) {
+    body { font-size: 18px; }
+    .barra nav { display: flex; }
+    .insegna { padding: 40px 40px 30px; margin-top: 28px; }
+    .insegna-testa { gap: 22px; padding-top: 0; }
+    .insegna-testa img { position: static; }
+    .insegna-testa img { width: 96px; height: 96px; }
+    .foto-banco .tagli { aspect-ratio: 21 / 9; }
+    .pizza { padding: 48px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; }
+    .griglia { grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .piatto.grande { grid-column: span 2; grid-row: span 2; }
+    .piatto.grande img { aspect-ratio: auto; height: calc(100% - 44px); }
+    .piatto:nth-last-child(-n+2) { grid-column: span 2; }
+    .piatto:nth-last-child(-n+2) img { aspect-ratio: 2 / 1; }
+    .insegna-sotto { font-size: 18px; }
+    .cerimonie { grid-template-columns: 1fr 1fr; gap: 48px; }
+    .recensioni { grid-template-columns: repeat(2, 1fr); }
+    .orari-mappa { grid-template-columns: 1fr 1.3fr; }
+    .barra-tel { display: none; }
+    footer.piede { padding-bottom: 48px; }
+    .piede .wrap { grid-template-columns: 1.3fr 1fr 1fr; }
+    .preview-note { grid-column: 1 / -1; }
+  }
+  @media (min-width: 1100px) {
+    .griglia { grid-template-columns: repeat(4, 1fr); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="barra">
+  <div class="wrap">
+    <a class="marchio" href="#inizio" aria-label="Il Ghiotto, torna all'inizio">
+      <img src="img/mascotte.jpg" alt="" width="42" height="42">
+      <span>Il Ghiotto</span>
+    </a>
+    <nav aria-label="Sezioni">
+      <a href="#pizza">Pizza</a>
+      <a href="#banco">Rosticceria</a>
+      <a href="#cerimonie">Cerimonie</a>
+      <a href="#orari">Orari</a>
+    </nav>
+    <a class="btn btn-pieno btn-piccolo" href="tel:+390572766084">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+      Chiama
+    </a>
+  </div>
+</header>
+
+<main id="inizio">
+  <div class="wrap">
+    <div class="insegna">
+      <div class="insegna-testa">
+        <img src="img/mascotte.jpg" alt="Il ghiottone disegnato sull'insegna del locale" width="96" height="96">
+        <h1>Il Ghiotto</h1>
+        <img class="destra" src="img/mascotte.jpg" alt="" width="96" height="96">
+      </div>
+      <p class="insegna-sotto">Pizzeria e rosticceria a Montecatini Terme</p>
+      <ul class="righe" aria-label="Le nostre specialità">
+        <li class="blu">Pizze e panini</li>
+        <li class="verde">Pollo al mattone</li>
+        <li class="rosso">Cacciucco alla livornese</li>
+        <li class="blu">Rinfreschi e preparazioni per cerimonie</li>
+      </ul>
+      <a class="consegna" href="tel:+390572766084">Consegna a domicilio <b>0572 766084</b></a>
+    </div>
+
+    <div class="stato"><span class="pillola" id="stato"><i></i><span>Martedì-domenica 9-13 e 18-21</span></span></div>
+    <div class="azioni">
+      <a class="btn btn-pieno" href="tel:+390572766084">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+        Chiama e ordina
+      </a>
+      <a class="btn btn-vuoto" href="https://www.google.com/maps/dir/?api=1&destination=43.886841,10.761378" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        Come arrivare
+      </a>
+    </div>
+
+    <figure class="foto-banco">
+      <div class="tagli"><img id="foto-banco" src="img/banco.jpg" alt="Il banco della rosticceria con pasta di mare, arancini, crocchette, polenta fritta, arrosto e verdure" width="1400" height="786"></div>
+      <figcaption>Il nostro banco in Viale Adua: primi, fritti, arrosti e contorni pronti da portare a casa.</figcaption>
+    </figure>
+  </div>
+
+  <section id="pizza">
+    <div class="wrap">
+      <div class="pizza reveal">
+        <div>
+          <p class="etichetta">La pizza del Ghiotto</p>
+          <h2>Sottile, grande e ben condita</h2>
+          <div class="disegno"><img src="img/disegno-pizza.jpg" alt="Pizza e panini disegnati sull'insegna" width="540" height="180" loading="lazy"></div>
+          <ul class="punti">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Da asporto: chiami, ordini e passi a prenderla calda.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Consegna a domicilio, con lo stesso numero.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Anche panini, patatine e i pezzi di rosticceria da aggiungere all'ordine.</li>
+          </ul>
+          <a class="btn btn-pieno" href="tel:+390572766084">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            Ordina allo 0572 766084
+          </a>
+        </div>
+        <blockquote>
+          "Ragazzi gentili e solari, pizza sottile ma grande e ben condita. Anche i piatti da rosticceria sono molto buoni. La polenta fritta è super! Servizio da asporto sempre puntuale."
+          <cite>F. F., recensione su Google</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="banco">
+    <div class="wrap">
+      <p class="etichetta">Rosticceria e tavola calda</p>
+      <h2>Al banco del Ghiotto</h2>
+      <p class="intro">Non solo pizza: primi, arrosti, fritti e contorni preparati da noi, da prendere al banco o da ordinare per telefono. Alcuni piatti che sono passati dalla nostra cucina:</p>
+      <div class="griglia">
+        <figure class="piatto grande reveal"><img src="img/pollo-al-mattone.jpg" alt="Pollo al mattone appena cotto" width="674" height="900" loading="lazy"><figcaption>Pollo al mattone</figcaption></figure>
+        <figure class="piatto reveal"><img src="img/pasta-di-mare.jpg" alt="Pasta con cozze e vongole nella teglia" width="900" height="735" loading="lazy"><figcaption>Pasta con cozze e vongole</figcaption></figure>
+        <figure class="piatto reveal"><img src="img/pasta-al-forno.jpg" alt="Pasta al forno con ragù" width="900" height="674" loading="lazy"><figcaption>Pasta al forno</figcaption></figure>
+        <figure class="piatto reveal"><img src="img/roast-beef.jpg" alt="Roast beef tagliato, rosa all'interno" width="900" height="735" loading="lazy"><figcaption>Roast beef</figcaption></figure>
+        <figure class="piatto reveal"><img src="img/arrosto.jpg" alt="Arrosto legato in una pirofila" width="900" height="735" loading="lazy"><figcaption>Arrosto</figcaption></figure>
+        <figure class="piatto reveal"><img src="img/carne-al-forno.jpg" alt="Carne al forno con rosmarino" width="900" height="735" loading="lazy"><figcaption>Carne al forno con rosmarino</figcaption></figure>
+        <figure class="piatto reveal"><img src="img/crocchette.jpg" alt="Crocchette dorate su carta da forno" width="900" height="674" loading="lazy"><figcaption>Crocchette</figcaption></figure>
+      </div>
+      <p class="nota">Il banco cambia: per sapere cosa c'è oggi, chiamaci.</p>
+    </div>
+  </section>
+
+  <section id="cerimonie">
+    <div class="wrap cerimonie">
+      <div class="foto reveal"><img src="img/crostini.jpg" alt="Vassoio di crostini al pomodoro e crostini toscani" width="900" height="735" loading="lazy"></div>
+      <div>
+        <p class="etichetta">Feste e ricorrenze</p>
+        <h2>Rinfreschi e preparazioni per cerimonie</h2>
+        <p>Battesimi, compleanni, comunioni o una cena tra amici: prepariamo vassoi e piatti per le vostre feste, dai crostini alla rosticceria. Chiamaci per mettervi d'accordo su quantità e giorno del ritiro.</p>
+        <a class="btn btn-vuoto" href="tel:+390572766084">Chiedi un rinfresco</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="recensioni">
+    <div class="wrap">
+      <p class="etichetta">Dicono di noi</p>
+      <h2>Chi ci prova, torna</h2>
+      <div class="voto">
+        <strong>4,4</strong>
+        <div>
+          <div class="stelle" aria-label="4,4 stelle su 5">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="mezza"><stop offset="40%" stop-color="currentColor"/><stop offset="40%" stop-color="#E6DAC9"/></linearGradient></defs><path fill="url(#mezza)" d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg>
+          </div>
+          <small>83 recensioni su Google</small>
+        </div>
+      </div>
+      <div class="recensioni">
+        <blockquote class="recensione reveal">
+          <div class="stelle" aria-label="5 stelle"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg></div>
+          <p>"Personale gentile e molto disponibile. La pizza è buonissima, impasto sottile, ingredienti sempre freschi. Vasta scelta dei secondi e contorni. Io e mio figlio ci torniamo sempre volentieri."</p>
+          <footer>Anna N.</footer>
+        </blockquote>
+        <blockquote class="recensione reveal">
+          <div class="stelle" aria-label="5 stelle"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg></div>
+          <p>"Rosticceria super, ottime pietanze espresse, pizza buonissima, prezzo modico. Provare per credere."</p>
+          <footer>Eduardo M.</footer>
+        </blockquote>
+        <blockquote class="recensione reveal">
+          <div class="stelle" aria-label="5 stelle"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg></div>
+          <p>"Pezzi di polenta, polpette, fagioli e pezzi di pizza squisiti."</p>
+          <footer>Da una recensione su Google</footer>
+        </blockquote>
+        <blockquote class="recensione reveal">
+          <div class="stelle" aria-label="5 stelle"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg></div>
+          <p>"Sono molto gentili e la pizza buonissima."</p>
+          <footer>Julia A.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="orari">
+    <div class="wrap">
+      <p class="etichetta">Orari e indirizzo</p>
+      <h2>Ci trovi in Viale Adua</h2>
+      <div class="orari-mappa">
+        <div class="scheda reveal">
+          <h3>Orari di apertura</h3>
+          <table>
+            <tbody>
+              <tr data-g="1"><td>Lunedì</td><td class="chiuso-g">Chiuso</td></tr>
+              <tr data-g="2"><td>Martedì</td><td>9-13 e 18-21</td></tr>
+              <tr data-g="3"><td>Mercoledì</td><td>9-13 e 18-21</td></tr>
+              <tr data-g="4"><td>Giovedì</td><td>9-13 e 18-21</td></tr>
+              <tr data-g="5"><td>Venerdì</td><td>9-13 e 18-21</td></tr>
+              <tr data-g="6"><td>Sabato</td><td>9-13 e 18-21</td></tr>
+              <tr data-g="0"><td>Domenica</td><td>9-13 e 18-21</td></tr>
+            </tbody>
+          </table>
+          <p class="piccolo" style="margin:14px 0 0">Per ordinare la pizza da asporto o a domicilio: <a href="tel:+390572766084"><b>0572 766084</b></a></p>
+        </div>
+        <div class="scheda reveal">
+          <h3>Dove siamo</h3>
+          <p class="indirizzo">Viale Adua 7, 51016 Montecatini Terme (PT)</p>
+          <div class="mappa"><iframe title="Mappa: Il Ghiotto, Viale Adua 7, Montecatini Terme" loading="lazy" src="https://maps.google.com/maps?q=43.886841,10.761378&z=17&hl=it&output=embed"></iframe></div>
+          <p class="piccolo">Ingresso e parcheggio accessibili in sedia a rotelle.</p>
+          <a class="btn btn-vuoto" href="https://www.google.com/maps/dir/?api=1&destination=43.886841,10.761378" target="_blank" rel="noopener">Apri le indicazioni</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="piede">
+  <div class="wrap">
+    <div>
+      <div class="nome">Il Ghiotto</div>
+      <p>Pizzeria e rosticceria a Montecatini Terme.<br>Pizze e panini, pollo al mattone, consegna a domicilio.</p>
+    </div>
+    <div>
+      <p><b>Indirizzo</b><br>Viale Adua 7<br>51016 Montecatini Terme (PT)</p>
+    </div>
+    <div>
+      <p><b>Telefono</b><br><a href="tel:+390572766084">0572 766084</a></p>
+      <p><b>Orari</b><br>Martedì-domenica 9-13 e 18-21<br>Lunedì chiuso</p>
+    </div>
+    <p class="preview-note">Anteprima preparata per Il Ghiotto</p>
+  </div>
+</footer>
+
+<div class="barra-tel">
+  <a class="btn btn-pieno" href="tel:+390572766084">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+    Chiama
+  </a>
+  <a class="btn btn-vuoto" href="https://www.google.com/maps/dir/?api=1&destination=43.886841,10.761378" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+    Indicazioni
+  </a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script>
+  // Aperto ora / chiuso ora, con l'ora italiana
+  (function () {
+    var fasce = [[9 * 60, 13 * 60], [18 * 60, 21 * 60]];
+    var giorni = ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'];
+    var p = {};
+    new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false })
+      .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+    var g = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(p.weekday);
+    var m = (parseInt(p.hour, 10) % 24) * 60 + parseInt(p.minute, 10);
+    var riga = document.querySelector('tr[data-g="' + g + '"]');
+    if (riga) riga.classList.add('oggi');
+    var el = document.getElementById('stato'), testo = el.querySelector('span');
+    var aperto = g !== 1 && fasce.some(function (f) { return m >= f[0] && m < f[1]; });
+    if (aperto) {
+      var fine = fasce.filter(function (f) { return m >= f[0] && m < f[1]; })[0][1];
+      el.classList.add('aperto'); testo.textContent = 'Aperto ora, fino alle ' + (fine / 60) + ':00';
+    } else {
+      el.classList.add('chiuso');
+      if (g !== 1 && m < 9 * 60) testo.textContent = 'Chiuso ora, apre alle 9:00';
+      else if (g !== 1 && m >= 13 * 60 && m < 18 * 60) testo.textContent = 'Chiuso ora, riapre alle 18:00';
+      else { var dom = (g + 1) % 7; if (dom === 1) dom = 2; testo.textContent = 'Chiuso ora, riapre ' + giorni[dom] + ' alle 9:00'; }
+    }
+  })();
+
+  // Movimento: solo se le librerie ci sono e se non è attivo "Riduci movimento"
+  (function () {
+    var calmo = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (calmo || !window.gsap || !window.ScrollTrigger) return;
+    gsap.registerPlugin(ScrollTrigger);
+
+    if (window.Lenis) {
+      var lenis = new Lenis({ duration: 1.05 });
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
+      gsap.ticker.lagSmoothing(0);
+    }
+
+    // 1. Le righe dell'insegna entrano una dopo l'altra
+    gsap.from('.righe li, .consegna', { y: 18, opacity: 0, duration: .55, ease: 'power3.out', stagger: .1, delay: .15 });
+
+    // 2. La foto del banco si allontana piano scorrendo
+    gsap.fromTo('#foto-banco', { scale: 1.14 }, { scale: 1, ease: 'none',
+      scrollTrigger: { trigger: '.foto-banco', start: 'top bottom', end: 'bottom top', scrub: true } });
+
+    // 3. Schede e foto salgono quando arrivano
+    gsap.utils.toArray('.reveal').forEach(function (el) {
+      gsap.from(el, { y: 28, opacity: 0, duration: .6, ease: 'power3.out',
+        scrollTrigger: { trigger: el, start: 'top 90%', once: true } });
+    });
+  })();
+</script>
+</body>
+</html>
