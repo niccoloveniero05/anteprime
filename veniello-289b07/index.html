@@ -350,7 +350,20 @@ a.recapito:hover{background:rgba(255,255,255,.1)}
 .barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1.45fr 1fr;gap:8px;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:rgba(7,11,24,.86);-webkit-backdrop-filter:saturate(160%) blur(16px);backdrop-filter:saturate(160%) blur(16px);border-top:1px solid var(--linea-scura)}
 .barra .btn{min-height:52px;padding:0 .8rem;font-size:1rem;box-shadow:none}
 
+/* Showreel */
+.showreel{padding-top:clamp(48px,7vw,88px);overflow:hidden;isolation:isolate}
+.showreel::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(45% 50% at 50% 65%,rgba(61,90,254,.28),transparent 70%),radial-gradient(30% 35% at 85% 90%,rgba(255,77,141,.14),transparent 70%)}
+.showreel .intro{margin-bottom:0}
+.showreel-box{position:relative;margin:2.2rem auto 0;max-width:400px;aspect-ratio:9/16;border-radius:24px;overflow:hidden;background:#05070F;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 40px 100px -30px rgba(61,90,254,.6)}
+.showreel-box video{display:block;width:100%;height:100%;object-fit:cover}
+.showreel .audio{position:absolute;right:12px;top:12px;display:inline-flex;align-items:center;gap:.5rem;min-height:44px;padding:0 1rem;border:0;border-radius:999px;background:rgba(7,11,24,.62);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.2);color:#fff;font:600 .92rem/1 var(--font);cursor:pointer}
+.showreel .audio:hover{background:rgba(7,11,24,.8)}
+.showreel .audio svg{width:18px;height:18px}
+.showreel .audio .on{display:none}
+.showreel .audio[aria-pressed="true"] .on{display:block}
+.showreel .audio[aria-pressed="true"] .off{display:none}
 @media (min-width:700px){
+  .showreel-box{max-width:none;aspect-ratio:16/9;border-radius:28px}
   .tre{grid-template-columns:repeat(3,1fr)}
   .bento{grid-template-columns:repeat(6,1fr)}
   .cella{grid-column:span 3}
@@ -464,6 +477,21 @@ a.recapito:hover{background:rgba(255,255,255,.1)}
       <div class="fascia-binario">
         <ul><li>Hotel</li><li>Bar</li><li>Ristoranti</li><li>Pizzerie</li><li>Parrucchieri</li><li>Barbieri</li><li>Estetiste</li><li>Pasticcerie</li><li>Gelaterie</li><li>Negozi</li></ul>
         <ul aria-hidden="true"><li>Hotel</li><li>Bar</li><li>Ristoranti</li><li>Pizzerie</li><li>Parrucchieri</li><li>Barbieri</li><li>Estetiste</li><li>Pasticcerie</li><li>Gelaterie</li><li>Negozi</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="showreel scuro" id="showreel" aria-labelledby="t-showreel">
+    <div class="wrap">
+      <p class="etichetta">Showreel</p>
+      <h2 id="t-showreel">Il nostro lavoro, <span class="grad">in 15 secondi.</span></h2>
+      <div class="showreel-box entra">
+        <video id="showreel-video" muted loop playsinline preload="metadata" poster="img/showreel-9x16.jpg" aria-label="Showreel di Veniello Studio: la tua attività trovata su Google, scelta dal sito, ricordata su Instagram, e l'anteprima che arriva su WhatsApp"></video>
+        <button class="audio" type="button" aria-pressed="false">
+          <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+          <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          <span>Attiva l&rsquo;audio</span>
+        </button>
       </div>
     </div>
   </section>
@@ -680,6 +708,26 @@ a.recapito:hover{background:rgba(255,255,255,.1)}
 
 <script>
 document.getElementById('anno').textContent = new Date().getFullYear();
+/* Showreel: verticale sul telefono, orizzontale dal computer. Parte da solo senza audio quando si vede (non con "Riduci movimento") */
+(function () {
+  var v = document.getElementById('showreel-video');
+  if (!v) return;
+  var b = document.querySelector('.showreel .audio');
+  var oriz = window.matchMedia('(min-width:700px)').matches;
+  v.poster = oriz ? 'img/showreel-16x9.jpg' : 'img/showreel-9x16.jpg';
+  v.src = oriz ? 'video/showreel-16x9.mp4' : 'video/showreel-9x16.mp4';
+  var fermo = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var vai = function () { var p = v.play(); if (p && p.catch) p.catch(function () {}); };
+  if (fermo) v.controls = true;
+  else if ('IntersectionObserver' in window) new IntersectionObserver(function (e) { if (e[0].isIntersecting) vai(); else v.pause(); }, { threshold: 0.35 }).observe(v);
+  else vai();
+  b.addEventListener('click', function () {
+    v.muted = !v.muted;
+    if (!v.muted) { v.currentTime = 0; vai(); }
+    b.setAttribute('aria-pressed', String(!v.muted));
+    b.querySelector('span').textContent = v.muted ? 'Attiva l\u2019audio' : 'Togli l\u2019audio';
+  });
+})();
 /* L'esempio di reel parte solo quando si vede */
 (function () {
   var r = document.getElementById('reel');
