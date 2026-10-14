@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Lady Bikers Barber Shop · Barbiere e parrucchiere a Bellinzona</title>
 <meta name="description" content="Lady Bikers Barber Shop, barbiere e parrucchiere per uomo, donna e bambini in Via San Giovanni a Bellinzona. Anche senza appuntamento, da martedì a sabato 9-19.">
-<meta name="theme-color" content="#14213a">
+<meta name="theme-color" content="#0a0e1d">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Lady Bikers Barber Shop · Bellinzona">
 <meta property="og:description" content="Barbiere e parrucchiere per uomo, donna e bambini. Anche senza appuntamento.">
@@ -15,10 +15,10 @@
 <meta property="og:image:width" content="1170">
 <meta property="og:image:height" content="614">
 <meta property="og:locale" content="it_CH">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314213a'/%3E%3Ctext x='32' y='45' font-family='Arial Narrow,Arial,sans-serif' font-weight='900' font-size='34' fill='%23f2b33d' text-anchor='middle'%3ELB%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23ffd20a'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='26' fill='%230a0e1d' text-anchor='middle'%3ELB%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Unbounded:wght@500..900&family=Yellowtail&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,308 +38,449 @@
 </script>
 <style>
 :root{
-  --notte:#14213a;      /* il blu del logo */
-  --notte-2:#1c2c4b;
-  --rosso:#c8352e;      /* il rosso delle stelle e del nastro */
-  --rosso-scuro:#a32922;
-  --giallo:#f2b33d;     /* la moto in negozio */
-  --crema:#f4eee3;
-  --carta:#faf7f1;
-  --inchiostro:#141a26;
-  --grigio:#5b6272;
-  --linea:rgba(20,26,38,.12);
-  --font:"Archivo", "Arial Narrow", Arial, sans-serif;
-  --curva:cubic-bezier(.2,.8,.2,1);
+  --ink:#0a0e1d;          /* il blu del logo, portato quasi al nero */
+  --ink-2:#121933;
+  --giallo:#ffd20a;       /* la moto del salone */
+  --rosso:#f2272c;        /* il rosso delle stelle nel logo, più acceso */
+  --rosso-scuro:#b3141a;  /* rosso leggibile sul giallo */
+  --rosso-luce:#ff5a4e;   /* rosso leggibile sul blu */
+  --latte:#f6f3ec;
+  --bianco:#fffdf8;
+  --testo:#0a0e1d;
+  --grigio:#585e74;
+  --linea:rgba(10,14,29,.11);
+  --titoli:"Unbounded","Arial Black",sans-serif;
+  --corpo:"Geist","Segoe UI",system-ui,sans-serif;
+  --corsivo:"Yellowtail","Brush Script MT",cursive;
+  --molla:cubic-bezier(.32,.72,0,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
-body{font-family:var(--font);font-variation-settings:"wdth" 100;font-size:17px;line-height:1.6;color:var(--inchiostro);background:var(--carta);overflow-x:hidden}
+body{font-family:var(--corpo);font-size:17px;line-height:1.6;color:var(--testo);background:var(--latte);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+@supports (overflow:clip){body{overflow-x:clip}}
+/* grana leggera, come carta stampata */
+body::after{content:"";position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
-.contenitore{width:min(1180px,100%);margin:0 auto;padding:0 20px}
-h1,h2,h3{font-weight:800;font-variation-settings:"wdth" 68;line-height:.95;letter-spacing:-.005em}
-h2{font-size:clamp(42px,11vw,82px)}
-h2 em{font-style:normal;color:var(--rosso)}
-.targa{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--rosso)}
-.targa::before{content:"";width:8px;height:8px;background:currentColor;transform:rotate(45deg)}
+button{font:inherit}
+.contenitore{width:min(1200px,100%);margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--titoli);font-weight:700;line-height:1.02;letter-spacing:-.035em}
+h2{font-size:clamp(32px,8.6vw,74px)}
 p+p{margin-top:1em}
+.giallo{color:var(--giallo)}
+.rosso{color:var(--rosso)}
 
-/* pulsanti */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border-radius:12px;font-family:var(--font);font-size:16px;font-weight:700;text-decoration:none;transition:transform .25s var(--curva),background-color .25s var(--curva),color .25s var(--curva)}
+/* etichette */
+.pillola{display:inline-flex;align-items:center;gap:9px;padding:7px 14px 7px 12px;border-radius:999px;font-size:13px;font-weight:600;line-height:1.2;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.15);color:rgba(255,253,248,.92)}
+.pillola::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--giallo);flex:none}
+.pillola.chiara{background:rgba(10,14,29,.05);box-shadow:inset 0 0 0 1px rgba(10,14,29,.1);color:var(--testo)}
+.pillola.chiara::before{background:var(--rosso)}
+.pillola.scura{background:rgba(10,14,29,.08);box-shadow:inset 0 0 0 1px rgba(10,14,29,.16);color:var(--ink)}
+.pillola.scura::before{background:var(--ink)}
+
+/* pulsanti: testo + cerchio con l'icona */
+.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:14px;min-height:56px;padding:6px 6px 6px 22px;border-radius:999px;font-weight:600;font-size:16px;line-height:1.2;text-decoration:none;transition:transform .5s var(--molla),background-color .4s var(--molla),color .4s var(--molla)}
+.btn .ico{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;flex:none;transition:transform .5s var(--molla)}
+.btn .ico svg{width:19px;height:19px}
+.btn:hover .ico{transform:translate(2px,-1px) scale(1.06)}
 .btn:active{transform:scale(.97)}
-.btn svg{width:20px;height:20px;flex:none}
-.btn-giallo{background:var(--giallo);color:var(--notte)}
-.btn-giallo:hover{background:#ffc552}
-.btn-filo{color:var(--crema);box-shadow:inset 0 0 0 1.5px rgba(244,238,227,.4)}
-.btn-filo:hover{background:rgba(244,238,227,.08)}
-.btn-notte{background:var(--notte);color:var(--crema)}
-.btn-notte:hover{background:var(--notte-2)}
+.btn-giallo{background:var(--giallo);color:var(--ink)}
+.btn-giallo .ico{background:var(--ink);color:var(--giallo)}
+.btn-giallo:hover{background:#ffdc3d}
+.btn-vetro{background:rgba(255,255,255,.07);color:var(--bianco);box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
+.btn-vetro .ico{background:#25d366;color:var(--ink)}
+.btn-vetro:hover{background:rgba(255,255,255,.13)}
+.btn-ink{background:var(--ink);color:var(--bianco)}
+.btn-ink .ico{background:var(--giallo);color:var(--ink)}
+.btn-ink:hover{background:#1a2246}
+svg{flex:none}
+.ico svg,.dock svg,.isola-tel svg,.freccia svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 
-/* testata */
-.testata{position:relative;z-index:5;background:var(--notte);color:var(--crema);padding:16px 0}
-.testata .contenitore{display:flex;align-items:center;justify-content:space-between;gap:14px}
-.nome{font-weight:800;font-variation-settings:"wdth" 72;font-size:21px;line-height:1;text-decoration:none;letter-spacing:.01em}
-.nome span{color:var(--giallo)}
-.testata .tel{font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap;opacity:.9}
+/* barra in alto, sospesa */
+.isola{position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:20;width:min(1160px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 6px 6px 20px;border-radius:999px;background:rgba(18,25,51,.62);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.marchio{font-family:var(--corsivo);font-size:29px;line-height:1;color:var(--bianco);text-decoration:none;padding-bottom:3px}
+.voci{display:none;gap:4px}
+.voci a{padding:9px 14px;border-radius:999px;font-size:14px;font-weight:500;text-decoration:none;color:rgba(255,253,248,.75);transition:color .3s var(--molla),background-color .3s var(--molla)}
+.voci a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.isola-tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px 0 14px;border-radius:999px;background:var(--giallo);color:var(--ink);font-size:14px;font-weight:600;text-decoration:none;transition:transform .5s var(--molla)}
+.isola-tel svg{width:17px;height:17px}
+.isola-tel:active{transform:scale(.96)}
 
 /* copertina */
-.copertina{background:var(--notte);color:var(--crema);overflow:hidden;position:relative}
-.copertina .griglia{display:grid;gap:34px;padding-top:26px;padding-bottom:0}
-.copertina h1{font-size:clamp(64px,19vw,150px);text-transform:uppercase;letter-spacing:-.01em;margin:16px 0 20px}
-.copertina h1 .riga{display:block}
-.copertina h1 .giallo{color:var(--giallo)}
-.copertina .targa{color:#ff8a7a}
-.copertina .sotto{font-size:18px;max-width:36ch;color:rgba(244,238,227,.82)}
-.azioni{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.stato{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:22px;font-size:15px;color:rgba(244,238,227,.8)}
-.stato .luce{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--crema)}
-.stato .luce i{width:9px;height:9px;border-radius:50%;background:#8b93a3}
-.stato .luce.aperto i{background:#6fdc8c;box-shadow:0 0 0 4px rgba(111,220,140,.2)}
-.stato .stelle{color:var(--giallo);letter-spacing:1px}
-.foto-moto{position:relative;margin:0 -20px}
-.foto-moto img{width:100%;aspect-ratio:1170/1248;object-fit:cover}
-.foto-moto figcaption{position:absolute;left:20px;bottom:18px;background:var(--giallo);color:var(--notte);font-weight:700;font-size:14px;padding:7px 12px;border-radius:8px}
+.copertina{position:relative;isolation:isolate;overflow:hidden;background:var(--ink);color:var(--bianco);padding:100px 0 20px}
+.copertina::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(60% 42% at 92% 8%,rgba(242,39,44,.42),transparent 70%),
+  radial-gradient(42% 26% at 0% 58%,rgba(255,210,10,.14),transparent 70%)}
+.copertina .griglia{display:grid;gap:44px}
+.copertina h1{font-size:clamp(44px,14.2vw,124px);font-weight:800;line-height:.98;letter-spacing:-.05em;margin:22px 0 24px}
+.copertina h1 .riga{display:block;overflow:hidden;padding:0 .04em .08em 0;margin-bottom:-.08em}
+.copertina h1 .riga>span{display:inline-block}
+.sotto{font-size:18px;line-height:1.55;max-width:34ch;color:rgba(255,253,248,.74)}
+.azioni{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.azioni .btn{flex:1 1 auto}
+.voto{display:inline-flex;align-items:center;gap:10px;margin-top:24px;font-size:15px;color:rgba(255,253,248,.72);text-decoration:none}
+.voto b{color:#fff;font-weight:700}
+.stelle{color:var(--giallo);letter-spacing:2px}
+.punto{width:8px;height:8px;border-radius:50%;background:#8a90a6;flex:none}
+.pillola.aperto::before{background:#4ade80;box-shadow:0 0 0 4px rgba(74,222,128,.22)}
+.pillola.chiuso::before{background:var(--rosso-luce)}
 
-/* striscia senza appuntamento */
-.striscia{background:var(--rosso);color:#fff}
-.striscia .contenitore{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px;padding-top:18px;padding-bottom:18px}
-.striscia b{font-weight:800;font-variation-settings:"wdth" 70;font-size:26px;line-height:1;text-transform:uppercase}
-.striscia span{font-size:15px;opacity:.92}
+.scena{position:relative;padding-top:26px}
+.cornice{padding:7px;border-radius:36px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
+.cornice .nucleo{position:relative;border-radius:29px;overflow:hidden}
+.cornice .nucleo::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 1px 1px rgba(255,255,255,.18);pointer-events:none}
+.cornice img{width:100%;aspect-ratio:1170/1248;object-fit:cover}
+.bollino{position:absolute;top:0;left:10px;z-index:2;width:118px;height:118px;border-radius:50%;background:var(--giallo);color:var(--ink);display:grid;place-items:center;box-shadow:0 22px 40px -18px rgba(0,0,0,.7)}
+.bollino svg.giro{position:absolute;inset:0;width:100%;height:100%;animation:gira 24s linear infinite}
+.bollino text{font-family:var(--titoli);font-weight:700;font-size:15.5px;fill:currentColor}
+.bollino .stella{width:34px;height:34px;fill:var(--rosso)}
+.didascalia{position:absolute;left:22px;bottom:22px;padding:6px 16px 9px;border-radius:999px;background:var(--rosso);color:#fff;font-family:var(--corsivo);font-size:25px;line-height:1;box-shadow:0 14px 30px -14px rgba(0,0,0,.6)}
+@keyframes gira{to{transform:rotate(360deg)}}
+
+/* nastri che scorrono */
+.nastri{position:relative;height:176px;overflow:hidden;background:linear-gradient(var(--ink) 50%,var(--latte) 50%)}
+.nastro{position:absolute;left:-10%;width:120%;top:50%;padding:13px 0;font-family:var(--titoli);font-weight:800;font-size:18px;line-height:1.2;letter-spacing:-.01em;text-transform:uppercase;white-space:nowrap;overflow:hidden}
+.nastro-giallo{top:38%;background:var(--giallo);color:var(--ink);transform:translateY(-50%) rotate(5.5deg)}
+.nastro-rosso{top:60%;background:var(--rosso);color:#fff;transform:translateY(-50%) rotate(-4deg);box-shadow:0 16px 30px -18px rgba(10,14,29,.55)}
+.scorre{display:flex;width:max-content;animation:scorri 38s linear infinite}
+.nastro-giallo .scorre{animation-direction:reverse;animation-duration:46s}
+.scorre>span{display:flex;align-items:center;gap:22px;padding-right:22px}
+.scorre i{width:9px;height:9px;background:currentColor;transform:rotate(45deg);flex:none}
+@keyframes scorri{to{transform:translateX(-50%)}}
 
 /* chi siamo */
-.sezione{padding:86px 0}
-.chi .griglia{display:grid;gap:36px;align-items:center}
-.chi h2{margin:16px 0 20px}
-.chi p{color:#3a4152;max-width:46ch}
-.chi figure img{border-radius:16px;width:100%}
-.chi figcaption{font-size:14px;color:var(--grigio);margin-top:10px}
+.sezione{padding:96px 0}
+.chi{padding-top:56px;padding-bottom:40px}
+.manifesto{font-size:clamp(26px,6.9vw,58px);font-weight:600;line-height:1.16;letter-spacing:-.035em;margin-top:24px;max-width:1080px}
+.manifesto .mini{display:inline-block;width:1.9em;height:.92em;border-radius:999px;overflow:hidden;vertical-align:-.1em;margin:0 .04em;background:var(--ink)}
+.manifesto .mini img{width:100%;height:100%;object-fit:cover}
+.manifesto .rosso{color:var(--rosso)}
+.chi .sotto-griglia{display:grid;gap:30px;margin-top:48px}
+.chi .testo-chi{color:#3b4156;max-width:56ch}
+.guscio{padding:6px;border-radius:32px;background:rgba(10,14,29,.045);box-shadow:inset 0 0 0 1px rgba(10,14,29,.08)}
+.anima{position:relative;border-radius:26px;overflow:hidden}
+.chi .insegna img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.chi figcaption{font-size:14px;color:var(--grigio);padding:12px 8px 4px}
 
-/* per chi */
-.poltrone{background:var(--crema)}
-.poltrone .capo{margin-bottom:40px}
-.poltrone .capo p{color:var(--grigio);max-width:44ch;margin-top:16px}
-.poltrone h2{margin-top:14px}
-.carte{display:grid;gap:18px}
-.carta{background:var(--carta);border-radius:18px;overflow:hidden;box-shadow:0 1px 0 rgba(20,26,38,.06),0 18px 40px -28px rgba(20,26,38,.35)}
-.carta img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.carta .dentro{padding:22px 22px 26px}
-.carta h3{font-size:40px;text-transform:uppercase}
-.carta .per{font-size:14px;color:var(--grigio);margin-top:4px}
-.carta ul{list-style:none;margin-top:16px;display:grid;gap:8px}
-.carta li{display:flex;gap:10px;align-items:baseline;font-size:16px}
-.carta li::before{content:"";flex:none;width:6px;height:6px;background:var(--rosso);transform:rotate(45deg) translateY(-2px)}
+/* servizi */
+.servizi{padding-top:48px}
+.capo{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px 40px;margin-bottom:40px}
+.capo h2{margin-top:18px}
+.capo .lato{color:var(--grigio);max-width:34ch}
+.bento{display:grid;gap:12px}
+.carta .guscio{height:100%}
+.carta .anima{height:100%;background:var(--ink);color:#fff}
+.carta img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.4s var(--molla)}
+.carta:hover img{transform:scale(1.045)}
+.carta .sopra{position:absolute;left:0;right:0;bottom:0;padding:100px 20px 20px;background:linear-gradient(to top,rgba(10,14,29,.94) 12%,rgba(10,14,29,.6) 55%,transparent)}
+.num{font-family:var(--titoli);font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--giallo)}
+.carta h3{font-size:34px;font-weight:800;margin:8px 0 2px}
+.carta .per{font-size:14px;color:rgba(255,255,255,.72)}
+.chip{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip li{font-size:13px;font-weight:500;line-height:1.3;padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.13);box-shadow:inset 0 0 0 1px rgba(255,255,255,.17)}
+.c-colore .anima{background:var(--giallo);color:var(--ink);padding:26px 22px 22px;display:flex;flex-direction:column;justify-content:space-between;gap:30px;min-height:290px}
+.c-colore .num{color:var(--rosso-scuro)}
+.c-colore h3{font-size:clamp(27px,7.4vw,34px);margin-top:10px}
+.c-colore p{font-size:16px;margin-top:10px;max-width:34ch}
+.c-colore .chip li{background:rgba(10,14,29,.07);box-shadow:inset 0 0 0 1px rgba(10,14,29,.16)}
 
 /* la moto */
-.moto{background:var(--giallo);color:var(--notte);overflow:hidden}
-.moto .griglia{display:grid;gap:34px;align-items:center}
-.moto .targa{color:var(--notte)}
-.moto h2{margin:16px 0 20px}
-.moto h2 em{color:var(--rosso-scuro)}
-.moto p{max-width:42ch;font-size:18px}
-.moto .punti{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}
-.moto .punti li{border-top:2px solid var(--notte);padding-top:10px;font-size:14px;font-weight:600;line-height:1.3}
-.moto figure{position:relative}
-.moto figure img{width:100%;max-width:440px;margin:0 auto;border-radius:18px;transform:rotate(-2deg);box-shadow:0 24px 50px -24px rgba(20,33,58,.55)}
+.moto{position:relative;overflow:hidden;background:var(--giallo);color:var(--ink)}
+.moto .griglia{position:relative;z-index:1;display:grid;gap:48px;align-items:center}
+.moto h2{font-size:clamp(36px,10.4vw,86px);font-weight:800;margin:20px 0 24px}
+.sella{position:relative;display:inline-block;white-space:nowrap}
+.sella svg{position:absolute;left:-2%;bottom:-.18em;width:104%;height:.36em;fill:none;stroke:var(--rosso-scuro);stroke-width:7;stroke-linecap:round}
+.moto .testo-moto p{font-size:18px;max-width:40ch}
+.punti{list-style:none;margin-top:32px;border-top:1.5px solid var(--ink)}
+.punti li{display:flex;align-items:baseline;gap:18px;padding:15px 0;border-bottom:1.5px solid rgba(10,14,29,.22);font-weight:600;font-size:17px}
+.punti b{min-width:30px;font-family:var(--titoli);font-size:12px;font-weight:700;color:var(--rosso-scuro)}
+.moto figure{max-width:400px;width:100%;margin:0 auto}
+.moto .guscio{background:rgba(10,14,29,.08);box-shadow:inset 0 0 0 1px rgba(10,14,29,.14)}
+.moto figure img{width:100%;aspect-ratio:559/900;object-fit:cover}
+.brum{position:absolute;right:-.06em;bottom:-.2em;z-index:0;font-family:var(--titoli);font-weight:900;font-size:clamp(130px,34vw,420px);line-height:1;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:2px rgba(10,14,29,.1);pointer-events:none;user-select:none}
 
 /* lavori */
-.lavori .capo{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:30px}
-.lavori .capo p{color:var(--grigio);max-width:36ch}
-.lavori h2{margin-top:14px}
-.scorri{display:grid;grid-auto-flow:column;grid-auto-columns:70%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 20px 10px;margin:0 -20px;scrollbar-width:none;overscroll-behavior-x:contain}
+.lavori{background:var(--ink);color:var(--bianco)}
+.lavori .lato{color:rgba(255,253,248,.68)}
+.lavori .lato a{color:var(--giallo)}
+.frecce{display:none;gap:8px}
+.freccia{width:54px;height:54px;border-radius:50%;border:0;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.16);color:#fff;display:grid;place-items:center;cursor:pointer;transition:transform .5s var(--molla),background-color .4s var(--molla),color .4s var(--molla)}
+.freccia svg{width:20px;height:20px}
+.freccia:hover{background:var(--giallo);color:var(--ink)}
+.freccia:active{transform:scale(.94)}
+.scorri{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 20px 8px;scroll-padding:0 20px;scrollbar-width:none;overscroll-behavior-x:contain}
 .scorri::-webkit-scrollbar{display:none}
-.scorri figure{scroll-snap-align:start}
-.scorri img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px}
-.scorri figcaption{font-size:14px;color:var(--grigio);padding-top:10px}
-.suggerimento{font-size:14px;font-weight:600;color:var(--rosso);margin-top:10px}
+.scorri figure{flex:0 0 76%;scroll-snap-align:start}
+.scorri .guscio{background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+.scorri img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.4s var(--molla)}
+.scorri figure:hover img{transform:scale(1.04)}
+.scorri figcaption{display:flex;align-items:baseline;gap:10px;padding:14px 6px 0;font-size:15px;color:rgba(255,253,248,.85)}
+.scorri figcaption b{font-family:var(--titoli);font-size:11px;font-weight:600;color:var(--giallo)}
+.suggerimento{margin-top:18px;font-size:14px;color:rgba(255,253,248,.55)}
 
 /* recensioni */
-.recensioni{background:var(--notte);color:var(--crema)}
-.recensioni .targa{color:#ff8a7a}
-.recensioni .capo{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:40px}
-.recensioni h2{margin-top:14px}
-.voto-grande{font-weight:800;font-variation-settings:"wdth" 64;font-size:120px;line-height:.8;color:var(--giallo)}
-.voto-grande small{display:block;font-variation-settings:"wdth" 100;font-weight:500;font-size:15px;color:rgba(244,238,227,.7);margin-top:12px;line-height:1.4}
-.frasi{display:grid;gap:14px}
-.frasi figure{background:var(--notte-2);border-radius:18px;padding:26px 24px}
-.frasi blockquote{font-size:21px;line-height:1.4;font-weight:500}
-.frasi cite{display:block;margin-top:14px;font-style:normal;font-size:14px;color:rgba(244,238,227,.6)}
-.recensioni .altre{margin-top:26px}
-.recensioni .altre a{color:var(--giallo);font-weight:600}
+.recensioni{background:var(--rosso);color:#fff}
+.recensioni .pillola{background:rgba(255,255,255,.14);box-shadow:inset 0 0 0 1px rgba(255,255,255,.26)}
+.recensioni .pillola::before{background:#fff}
+.recensioni h2 .giallo{color:var(--giallo)}
+.voto-grande{display:flex;align-items:center;gap:18px}
+.voto-grande b{font-family:var(--titoli);font-weight:800;font-size:clamp(76px,21vw,136px);line-height:.8;letter-spacing:-.07em}
+.voto-grande .stelle{font-size:20px;letter-spacing:3px}
+.voto-grande small{display:block;font-size:14px;line-height:1.4;color:rgba(255,255,255,.88);max-width:20ch;margin-top:6px}
+.frasi{display:grid;gap:12px}
+.frase .guscio{height:100%;background:rgba(10,14,29,.14);box-shadow:inset 0 0 0 1px rgba(255,255,255,.16)}
+.frase .anima{height:100%;background:var(--ink);padding:28px 24px 22px;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.frase .anima::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 1px 1px rgba(255,255,255,.12);pointer-events:none}
+.virgolette{display:block;font-family:var(--titoli);font-weight:800;font-size:64px;line-height:.7;height:34px;color:var(--giallo)}
+.frase blockquote{font-size:20px;line-height:1.4;font-weight:500;margin-top:14px}
+.frase figcaption{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:14px;color:rgba(255,255,255,.6)}
+.frase figcaption .stelle{font-size:12px}
+.recensioni .fondo{margin-top:34px}
 
 /* dove */
-.dove .griglia{display:grid;gap:36px}
-.dove h2{margin:14px 0 22px}
-.vetrina{border-radius:16px;overflow:hidden;margin-bottom:26px}
-.vetrina img{width:100%}
+.dove .griglia{display:grid;gap:44px}
+.dove h2{margin:18px 0 30px}
 .orari{width:100%;border-collapse:collapse;font-size:17px}
-.orari td{padding:11px 0;border-bottom:1px solid var(--linea)}
-.orari td:last-child{text-align:right;font-variant-numeric:tabular-nums;color:#3a4152}
-.orari tr.oggi td{font-weight:700;color:var(--inchiostro)}
-.orari tr.oggi td:first-child::after{content:"oggi";margin-left:10px;font-size:12px;font-weight:700;color:#fff;background:var(--rosso);padding:2px 7px;border-radius:5px}
-.contatti{list-style:none;margin:26px 0;display:grid;gap:14px}
-.contatti span{display:block;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--rosso)}
-.contatti a{text-decoration:none;border-bottom:1px solid var(--linea)}
-.mappa{border-radius:16px;overflow:hidden;min-height:340px;background:var(--crema)}
-.mappa iframe{display:block;width:100%;height:100%;min-height:340px;border:0}
+.orari td{padding:13px 0;border-bottom:1px solid var(--linea)}
+.orari tr:first-child td{border-top:1.5px solid var(--ink)}
+.orari td:last-child{text-align:right;font-variant-numeric:tabular-nums;color:#3b4156}
+.orari tr.chiuso-g td:last-child{color:var(--grigio)}
+.orari tr.oggi td{font-weight:700;color:var(--testo)}
+.orari tr.oggi td:first-child::after{content:"oggi";margin-left:10px;font-size:11px;font-weight:700;color:#fff;background:var(--rosso);padding:3px 9px;border-radius:999px;vertical-align:2px}
+.contatti{list-style:none;margin:30px 0 32px}
+.contatti li{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;padding:14px 0;border-bottom:1px solid var(--linea)}
+.contatti span{font-size:14px;color:var(--grigio)}
+.contatti a,.contatti b{font-weight:600;text-decoration:none;overflow-wrap:anywhere}
+.contatti a:hover{color:var(--rosso)}
+.dove .destra{display:grid;gap:12px;align-content:start}
+.mappa .anima{min-height:360px;background:#e9e4da}
+.mappa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vetrina img{width:100%;aspect-ratio:1400/788;object-fit:cover}
+.vetrina figcaption{font-size:14px;color:var(--grigio);padding:12px 8px 4px}
 
 /* piede */
-.piede{background:var(--inchiostro);color:rgba(244,238,227,.72);padding:44px 0 120px;font-size:15px}
-.piede .nome{color:var(--crema);display:inline-block;margin-bottom:12px;font-size:24px}
-.piede .anteprima{margin-top:22px;padding-top:18px;border-top:1px solid rgba(244,238,227,.12);font-size:13px;color:rgba(244,238,227,.5)}
+.piede{background:var(--ink);color:rgba(255,253,248,.7);padding:72px 0 130px;overflow:hidden;font-size:15px}
+.firma{font-family:var(--corsivo);font-size:clamp(60px,18.5vw,240px);line-height:1;color:var(--giallo);white-space:nowrap;margin:0 0 34px -.02em}
+.piede .info{display:grid;gap:22px}
+.piede .info b{display:block;color:#fff;font-weight:600;margin-bottom:4px}
+.piede a{text-decoration:none;color:rgba(255,253,248,.85)}
+.piede a:hover{color:var(--giallo)}
+.piede .anteprima{margin-top:44px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,253,248,.45)}
 
-/* barra fissa sul telefono */
-.barra{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(20,33,58,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
-.barra .btn{min-height:48px;padding:0 12px;font-size:15px}
+/* barra sospesa sul telefono */
+.dock{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px;border-radius:999px;background:rgba(10,14,29,.84);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12),0 20px 40px -16px rgba(10,14,29,.7);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);transition:transform .7s var(--molla),opacity .5s var(--molla)}
+.dock.via{transform:translateY(150%);opacity:0}
+.dock a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:50px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;color:#fff}
+.dock a svg{width:18px;height:18px}
+.dock .primo{background:var(--giallo);color:var(--ink)}
 
 @media (min-width:760px){
   .contenitore{padding:0 40px}
-  .foto-moto{margin:0}
-  .foto-moto img{border-radius:18px}
-  .carte{grid-template-columns:repeat(3,1fr)}
-  .scorri{grid-auto-columns:36%;padding:0 40px 10px;margin:0 -40px}
+  .copertina h1{font-size:clamp(44px,11vw,124px)}
+  .chi .sotto-griglia{grid-template-columns:1.25fr .75fr;align-items:end;gap:60px}
+  .bento{grid-template-columns:1fr 1fr}
+  .c-colore .anima{min-height:100%}
   .frasi{grid-template-columns:repeat(3,1fr)}
+  .scorri{padding:0 40px 8px;scroll-padding:0 40px}
+  .scorri figure{flex-basis:320px}
+  .piede .info{grid-template-columns:repeat(3,1fr)}
 }
 @media (min-width:1000px){
   body{font-size:18px}
-  .sezione{padding:124px 0}
-  .copertina .griglia{grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;padding-top:40px;padding-bottom:70px}
-  .foto-moto{transform:rotate(1.5deg)}
-  .foto-moto figcaption{left:22px;bottom:22px}
-  .chi .griglia{grid-template-columns:.8fr 1.2fr;gap:90px}
-  .moto .griglia{grid-template-columns:1fr 1fr;gap:90px}
-  .scorri{grid-auto-flow:row;grid-template-columns:repeat(5,1fr);grid-auto-columns:auto;overflow:visible;padding:0;margin:0}
+  .sezione{padding:140px 0}
+  .chi{padding-top:100px;padding-bottom:60px}
+  .servizi{padding-top:80px}
+  .voci{display:flex}
+  .isola{top:22px}
+  .copertina{display:flex;align-items:center;padding:150px 0 90px;min-height:min(100dvh,980px)}
+  .copertina .griglia{grid-template-columns:1.08fr .92fr;align-items:center;gap:70px}
+  .copertina h1{font-size:clamp(70px,7.6vw,124px)}
+  .azioni .btn{flex:0 0 auto}
+  .scena{padding-top:0}
+  .cornice{transform:rotate(2deg)}
+  .bollino{top:-44px;right:auto;left:-56px;width:156px;height:156px}
+  .bollino .stella{width:44px;height:44px}
+  .nastri{height:210px}
+  .nastro-giallo{transform:translateY(-50%) rotate(3deg)}
+  .nastro-rosso{transform:translateY(-50%) rotate(-2.4deg)}
+  .nastro{font-size:24px;padding:16px 0}
+  .bento{grid-template-columns:repeat(12,1fr);grid-template-rows:340px 340px}
+  .c-uomo{grid-column:1/span 4;grid-row:1/span 2}
+  .c-donna{grid-column:5/span 4;grid-row:1/span 2}
+  .c-bimbi{grid-column:9/span 4;grid-row:1}
+  .c-colore{grid-column:9/span 4;grid-row:2}
+  .carta img{aspect-ratio:auto}
+  .moto .griglia{grid-template-columns:1.1fr .9fr;gap:80px}
+  .moto figure{transform:rotate(-3deg)}
+  .frecce{display:flex}
+  .scorri{padding-left:max(40px,calc((100vw - 1200px) / 2 + 40px));padding-right:40px;scroll-padding-left:max(40px,calc((100vw - 1200px) / 2 + 40px))}
+  .scorri figure{flex-basis:340px}
   .suggerimento{display:none}
-  .dove .griglia{grid-template-columns:1fr 1.15fr;gap:70px;align-items:stretch}
-  .barra{display:none}
-  .piede{padding-bottom:50px}
+  .dove .griglia{grid-template-columns:1fr 1.1fr;gap:80px}
+  .mappa .anima{min-height:420px}
+  .dock{display:none}
+  .piede{padding-bottom:56px}
 }
 
 /* animazioni: gli elementi si nascondono solo se JavaScript e GSAP ci sono */
-.js-anim .reveal{opacity:0;transform:translateY(26px)}
+.js-anim .reveal{opacity:0;transform:translateY(40px)}
 @media (prefers-reduced-motion:reduce){
   .js-anim .reveal{opacity:1;transform:none}
-  .btn{transition:none}
+  .scorre,.bollino svg.giro{animation:none}
+  .btn,.btn .ico,.carta img,.scorri img,.dock,.freccia{transition:none}
 }
 </style>
 </head>
 <body>
 
-<header class="testata">
-  <div class="contenitore">
-    <a href="#inizio" class="nome">Lady <span>Bikers</span></a>
-    <a class="tel" href="tel:+41782224094">078 222 40 94</a>
-  </div>
+<header class="isola">
+  <a href="#inizio" class="marchio" aria-label="Lady Bikers, torna all'inizio">Lady Bikers</a>
+  <nav class="voci" aria-label="Sezioni">
+    <a href="#servizi">Servizi</a><a href="#moto">La moto</a><a href="#lavori">Lavori</a><a href="#dove">Orari</a>
+  </nav>
+  <a class="isola-tel" href="tel:+41782224094"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Chiama</a>
 </header>
 
 <main id="inizio">
   <section class="copertina">
     <div class="contenitore griglia">
       <div>
-        <p class="targa">Barber shop a Bellinzona</p>
-        <h1><span class="riga">Entra,</span> <span class="riga">siediti,</span> <span class="riga giallo">riparti.</span></h1>
-        <p class="sotto">Barbiere e parrucchiere per uomo, donna e bambini in via San Giovanni. Taglio, barba e colore, anche senza appuntamento.</p>
+        <p class="pillola" id="stato"><span id="stato-testo">Da martedì a sabato, 9-19</span></p>
+        <h1><span class="riga"><span>Entra,</span></span> <span class="riga"><span>siediti,</span></span> <span class="riga"><span class="giallo">riparti.</span></span></h1>
+        <p class="sotto">Barber shop a Bellinzona per uomo, donna e bambini. Taglio, barba e colore, anche senza appuntamento.</p>
         <div class="azioni">
-          <a class="btn btn-giallo" href="tel:+41782224094"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Chiama il salone</a>
-          <a class="btn btn-filo" href="https://wa.me/41782224094?text=Ciao%20Lady%20Bikers%2C%20vorrei%20un%20appuntamento" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3.5 20.5l1.3-4.3A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-1 .8a4 4 0 0 1-2.1-2.1l.8-1-1-2z"/></svg>WhatsApp</a>
+          <a class="btn btn-giallo" href="tel:+41782224094">Chiama<span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span></a>
+          <a class="btn btn-vetro" href="https://wa.me/41782224094?text=Ciao%20Lady%20Bikers%2C%20vorrei%20un%20appuntamento" target="_blank" rel="noopener">WhatsApp<span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.3A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-1 .8a4 4 0 0 1-2.1-2.1l.8-1-1-2z"/></svg></span></a>
         </div>
-        <div class="stato">
-          <span class="luce" id="stato"><i></i><span id="stato-testo">Da martedì a sabato, 9-19</span></span>
-          <span><span class="stelle" aria-hidden="true">★★★★★</span> 5,0 su Google</span>
-        </div>
+        <a class="voto" href="https://www.google.com/maps?cid=12542231096937718737" target="_blank" rel="noopener"><span class="stelle" aria-hidden="true">★★★★★</span><span><b>5,0</b> su Google</span></a>
       </div>
-      <figure class="foto-moto">
-        <img src="img/moto.jpg" alt="Un bambino con un disegno rasato sulla nuca, seduto sulla moto gialla del salone" width="1170" height="1248" fetchpriority="high">
-        <figcaption>Sì, la moto è vera</figcaption>
-      </figure>
+      <div class="scena">
+        <div class="bollino" aria-hidden="true">
+          <svg class="giro" viewBox="0 0 200 200"><defs><path id="cerchio" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs><text><textPath href="#cerchio" textLength="474" lengthAdjust="spacing">SENZA APPUNTAMENTO · SENZA APPUNTAMENTO · </textPath></text></svg>
+          <svg class="stella" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.2 5.8 20.9l1.6-7L2 9.2l7.1-.6z"/></svg>
+        </div>
+        <div class="cornice"><div class="nucleo">
+          <img src="img/moto.jpg" alt="Un bambino con un disegno rasato sulla nuca, seduto sulla moto gialla del salone" width="1170" height="1248" fetchpriority="high">
+        </div></div>
+        <p class="didascalia">Sì, la moto è vera</p>
+      </div>
     </div>
   </section>
 
-  <div class="striscia">
-    <div class="contenitore">
-      <b>Senza appuntamento</b>
-      <span>Passa quando vuoi, oppure chiama per fissare un orario.</span>
-    </div>
+  <div class="nastri" aria-hidden="true">
+    <div class="nastro nastro-giallo"><div class="scorre">
+      <span>Uomo <i></i> Donna <i></i> Bambini <i></i> Bellinzona <i></i> Uomo <i></i> Donna <i></i> Bambini <i></i> Bellinzona <i></i></span>
+      <span>Uomo <i></i> Donna <i></i> Bambini <i></i> Bellinzona <i></i> Uomo <i></i> Donna <i></i> Bambini <i></i> Bellinzona <i></i></span>
+    </div></div>
+    <div class="nastro nastro-rosso"><div class="scorre">
+      <span>Taglio <i></i> Barba <i></i> Colore <i></i> Disegni rasati <i></i> Senza appuntamento <i></i> Taglio <i></i> Barba <i></i> Colore <i></i> Disegni rasati <i></i> Senza appuntamento <i></i></span>
+      <span>Taglio <i></i> Barba <i></i> Colore <i></i> Disegni rasati <i></i> Senza appuntamento <i></i> Taglio <i></i> Barba <i></i> Colore <i></i> Disegni rasati <i></i> Senza appuntamento <i></i></span>
+    </div></div>
   </div>
 
   <section class="sezione chi">
-    <div class="contenitore griglia">
-      <figure class="reveal">
-        <img src="img/insegna.jpg" alt="Il logo Lady Bikers Barber Shop sulla vetrina del salone" width="900" height="900" loading="lazy">
-        <figcaption>La nostra vetrina in via San Giovanni</figcaption>
-      </figure>
-      <div>
-        <p class="targa reveal">Chi siamo</p>
-        <h2 class="reveal">Un barber shop <em>guidato da donne</em></h2>
-        <p class="reveal">Lady Bikers è un salone di Bellinzona dove si fanno tagli classici e alla moda, la barba, il colore e le pieghe. Lavoriamo con prodotti professionali, colorazioni senza ammoniaca e tanta attenzione ai dettagli.</p>
-        <p class="reveal">L’ambiente è semplice e accogliente: qui viene il papà per la sfumatura, la mamma per il colore e il figlio per il disegno rasato.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="sezione poltrone" id="servizi">
     <div class="contenitore">
-      <div class="capo">
-        <p class="targa reveal">I servizi</p>
-        <h2 class="reveal">Una poltrona <em>per tutti</em></h2>
-        <p class="reveal">Per prezzi e disponibilità chiamaci o passa in salone.</p>
-      </div>
-      <div class="carte">
-        <article class="carta reveal">
-          <img src="img/uomo.jpg" alt="Taglio maschile corto con sfumatura sulla nuca" width="882" height="900" loading="lazy">
-          <div class="dentro">
-            <h3>Uomo</h3><p class="per">e ragazzi</p>
-            <ul><li>Tagli classici e alla moda</li><li>Sfumature e disegni rasati</li><li>Cura della barba</li><li>Trattamenti per il cuoio capelluto</li></ul>
-          </div>
-        </article>
-        <article class="carta reveal">
-          <img src="img/donna.jpg" alt="Caschetto liscio color rosso rubino" width="720" height="900" loading="lazy">
-          <div class="dentro">
-            <h3>Donna</h3><p class="per">e ragazze</p>
-            <ul><li>Tagli moderni e classici</li><li>Messe in piega</li><li>Colore senza ammoniaca</li><li>Balayage, shatush, colpi di sole, mèches</li></ul>
-          </div>
-        </article>
-        <article class="carta reveal">
-          <img src="img/bambini.jpg" alt="Bambino con un disegno a zigzag rasato sul lato della testa" width="900" height="900" loading="lazy">
-          <div class="dentro">
-            <h3>Bambini</h3><p class="per">dai più piccoli in su</p>
-            <ul><li>Tagli per bambini e bambine</li><li>Disegni rasati</li><li>Forbici senza punte</li><li>Angolo gioco e la moto</li></ul>
-          </div>
-        </article>
+      <p class="pillola chiara">Chi siamo</p>
+      <h2 class="manifesto">Un barber shop <span class="mini"><img src="img/insegna.jpg" alt="" width="900" height="900"></span> guidato da donne, con una <span class="rosso">moto vera</span> in salone <span class="mini"><img src="img/moto-salone.jpg" alt="" width="559" height="900"></span> e una poltrona per tutta la famiglia.</h2>
+      <div class="sotto-griglia">
+        <div class="testo-chi reveal">
+          <p>Lady Bikers è un salone di Bellinzona dove si fanno tagli classici e alla moda, la barba, il colore e le pieghe. Lavoriamo con prodotti professionali, colorazioni senza ammoniaca e tanta attenzione ai dettagli.</p>
+          <p>L’ambiente è semplice e accogliente: qui viene il papà per la sfumatura, la mamma per il colore e il figlio per il disegno rasato.</p>
+        </div>
+        <figure class="insegna guscio reveal">
+          <div class="anima"><img src="img/insegna.jpg" alt="Il logo Lady Bikers Barber Shop sulla vetrina del salone" width="900" height="900" loading="lazy"></div>
+          <figcaption>Il nostro logo, sulla vetrina di via San Giovanni</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
-  <section class="sezione moto">
-    <div class="contenitore griglia">
-      <div>
-        <p class="targa reveal">Per i più piccoli</p>
-        <h2 class="reveal">Il taglio si fa <em>in sella</em></h2>
-        <p class="reveal">In salone c’è una moto vera. Durante il taglio i bambini ci salgono sopra, impugnano il manubrio: il tempo passa in fretta e la foto ricordo è assicurata.</p>
-        <ul class="punti reveal"><li>Moto vera in negozio</li><li>Forbici senza punte</li><li>Angolo gioco</li></ul>
-      </div>
-      <figure class="reveal">
-        <img src="img/moto-salone.jpg" alt="Un bambino seduto sulla moto gialla dentro il salone, sotto il poster di Lady Bikers" width="559" height="900" loading="lazy">
-      </figure>
-    </div>
-  </section>
-
-  <section class="sezione lavori">
+  <section class="sezione servizi" id="servizi">
     <div class="contenitore">
       <div class="capo">
         <div>
-          <p class="targa reveal">Dal salone</p>
-          <h2 class="reveal">Fatti <em>da noi</em></h2>
+          <p class="pillola chiara">I servizi</p>
+          <h2>Una poltrona <span class="rosso">per tutti</span></h2>
         </div>
-        <p class="reveal">Alcuni lavori di tutti i giorni. Altri sulla nostra pagina Instagram.</p>
+        <p class="lato">Per prezzi e disponibilità chiamaci o passa in salone.</p>
       </div>
-      <div class="scorri reveal" tabindex="0" aria-label="Galleria dei lavori">
-        <figure><img src="img/argento.jpg" alt="Capelli lisci color argento lunghi alle spalle" width="720" height="900"><figcaption>Argento</figcaption></figure>
-        <figure><img src="img/disegno.jpg" alt="Disegno a riccioli rasato sulla nuca" width="720" height="900"><figcaption>Disegno sulla nuca</figcaption></figure>
-        <figure><img src="img/onde.jpg" alt="Capelli lunghi scuri a onde con riflessi ramati" width="720" height="900"><figcaption>Onde e riflessi</figcaption></figure>
-        <figure><img src="img/sfumatura.jpg" alt="Ragazzo con sfumatura alta e frangia" width="720" height="900"><figcaption>Sfumatura alta</figcaption></figure>
-        <figure><img src="img/caschetto.jpg" alt="Cliente sorridente con caschetto scalato scuro" width="720" height="900"><figcaption>Caschetto scalato</figcaption></figure>
+      <div class="bento">
+        <article class="carta c-uomo reveal"><div class="guscio"><div class="anima">
+          <img src="img/uomo.jpg" alt="Taglio maschile corto con sfumatura sulla nuca" width="882" height="900" loading="lazy">
+          <div class="sopra">
+            <span class="num">01</span>
+            <h3>Uomo</h3><p class="per">e ragazzi</p>
+            <ul class="chip"><li>Tagli classici e alla moda</li><li>Sfumature</li><li>Disegni rasati</li><li>Barba</li><li>Cuoio capelluto</li></ul>
+          </div>
+        </div></div></article>
+        <article class="carta c-donna reveal"><div class="guscio"><div class="anima">
+          <img src="img/donna.jpg" alt="Caschetto liscio color rosso rubino" width="720" height="900" loading="lazy">
+          <div class="sopra">
+            <span class="num">02</span>
+            <h3>Donna</h3><p class="per">e ragazze</p>
+            <ul class="chip"><li>Tagli moderni e classici</li><li>Messe in piega</li><li>Balayage</li><li>Shatush</li><li>Colpi di sole e mèches</li></ul>
+          </div>
+        </div></div></article>
+        <article class="carta c-bimbi reveal"><div class="guscio"><div class="anima">
+          <img src="img/bambini.jpg" alt="Bambino con un disegno a zigzag rasato sul lato della testa" width="900" height="900" loading="lazy">
+          <div class="sopra">
+            <span class="num">03</span>
+            <h3>Bambini</h3>
+            <ul class="chip"><li>Bambini e bambine</li><li>Disegni rasati</li><li>Forbici senza punte</li></ul>
+          </div>
+        </div></div></article>
+        <article class="carta c-colore reveal"><div class="guscio"><div class="anima">
+          <div>
+            <span class="num">04</span>
+            <h3>Colore senza ammoniaca</h3>
+            <p>Colorazioni senza ammoniaca e prodotti professionali, dalla tinta di tutti i giorni ai colori più decisi.</p>
+          </div>
+          <ul class="chip"><li>Tinta</li><li>Riflessi</li><li>Argento</li><li>Rosso rubino</li></ul>
+        </div></div></article>
       </div>
-      <p class="suggerimento">Scorri di lato</p>
+    </div>
+  </section>
+
+  <section class="sezione moto" id="moto">
+    <div class="contenitore griglia">
+      <div class="testo-moto">
+        <p class="pillola scura">Per i più piccoli</p>
+        <h2>Il taglio si fa <span class="sella">in sella<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 50 4, 120 4, 197 11"/></svg></span></h2>
+        <p class="reveal">In salone c’è una moto vera. Durante il taglio i bambini ci salgono sopra, impugnano il manubrio: il tempo passa in fretta e la foto ricordo è assicurata.</p>
+        <ol class="punti reveal"><li><b>01</b>Moto vera in negozio</li><li><b>02</b>Forbici senza punte</li><li><b>03</b>Angolo gioco</li></ol>
+      </div>
+      <figure class="reveal"><div class="guscio"><div class="anima">
+        <img src="img/moto-salone.jpg" alt="Un bambino seduto sulla moto gialla dentro il salone, sotto il poster di Lady Bikers" width="559" height="900" loading="lazy">
+      </div></div></figure>
+    </div>
+    <span class="brum" aria-hidden="true">brum</span>
+  </section>
+
+  <section class="sezione lavori" id="lavori">
+    <div class="contenitore">
+      <div class="capo">
+        <div>
+          <p class="pillola">Dal salone</p>
+          <h2>Fatti <span class="giallo">da noi</span></h2>
+        </div>
+        <div class="frecce">
+          <button class="freccia" type="button" data-dir="-1" aria-label="Foto precedenti"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="freccia" type="button" data-dir="1" aria-label="Foto successive"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="scorri" tabindex="0" aria-label="Galleria dei lavori">
+      <figure><div class="guscio"><div class="anima"><img src="img/argento.jpg" alt="Capelli lisci color argento lunghi alle spalle" width="720" height="900"></div></div><figcaption><b>01</b>Argento</figcaption></figure>
+      <figure><div class="guscio"><div class="anima"><img src="img/linea.jpg" alt="Ragazzo con sfumatura e linee rasate sul lato" width="720" height="900"></div></div><figcaption><b>02</b>Sfumatura con linee</figcaption></figure>
+      <figure><div class="guscio"><div class="anima"><img src="img/viola.jpg" alt="Capelli lunghi lisci con riflessi viola" width="720" height="900"></div></div><figcaption><b>03</b>Riflessi viola</figcaption></figure>
+      <figure><div class="guscio"><div class="anima"><img src="img/disegno.jpg" alt="Disegno a riccioli rasato sulla nuca" width="720" height="900"></div></div><figcaption><b>04</b>Disegno sulla nuca</figcaption></figure>
+      <figure><div class="guscio"><div class="anima"><img src="img/balayage.jpg" alt="Capelli lisci biondi con schiariture" width="719" height="899"></div></div><figcaption><b>05</b>Schiariture</figcaption></figure>
+      <figure><div class="guscio"><div class="anima"><img src="img/onde.jpg" alt="Capelli lunghi scuri a onde con riflessi ramati" width="720" height="900"></div></div><figcaption><b>06</b>Onde e riflessi</figcaption></figure>
+      <figure><div class="guscio"><div class="anima"><img src="img/sfumatura.jpg" alt="Ragazzo con sfumatura alta e frangia" width="720" height="900"></div></div><figcaption><b>07</b>Sfumatura alta</figcaption></figure>
+      <figure><div class="guscio"><div class="anima"><img src="img/caschetto.jpg" alt="Cliente sorridente con caschetto scalato scuro" width="720" height="900"></div></div><figcaption><b>08</b>Caschetto scalato</figcaption></figure>
+    </div>
+    <div class="contenitore">
+      <p class="suggerimento">Scorri di lato · altri lavori su <a href="https://www.instagram.com/ladybikers_barbershop22/" target="_blank" rel="noopener" style="color:var(--giallo)">Instagram</a></p>
     </div>
   </section>
 
@@ -347,45 +488,62 @@ p+p{margin-top:1em}
     <div class="contenitore">
       <div class="capo">
         <div>
-          <p class="targa reveal">Recensioni</p>
-          <h2 class="reveal">Chi è passato <em style="color:var(--giallo)">da qui</em></h2>
+          <p class="pillola">Recensioni</p>
+          <h2>Chi è passato <span class="giallo">da qui</span></h2>
         </div>
-        <p class="voto-grande reveal">5,0<small>su 5 · tutte le recensioni<br>su Google sono a 5 stelle</small></p>
+        <div class="voto-grande reveal">
+          <b>5,0</b>
+          <div><span class="stelle" aria-hidden="true">★★★★★</span><small>Tutte le recensioni su Google sono a 5 stelle</small></div>
+        </div>
       </div>
       <div class="frasi">
-        <figure class="reveal"><blockquote>“Personale preparato e al passo con i tempi. Ambiente essenziale ed accogliente.”</blockquote><cite>Giuseppe M. · Google</cite></figure>
-        <figure class="reveal"><blockquote>“Taglio ben fatto e veloce. Grande simpatia e cordialità.”</blockquote><cite>Filippo B. · Google</cite></figure>
-        <figure class="reveal"><blockquote>“Molto brava, simpaticissima e gentilissima!”</blockquote><cite>Mattia G. · Google</cite></figure>
+        <figure class="frase reveal"><div class="guscio"><div class="anima">
+          <div><span class="virgolette" aria-hidden="true">“</span><blockquote>Personale preparato e al passo con i tempi. Ambiente essenziale ed accogliente.</blockquote></div>
+          <figcaption>Giuseppe M. · Google <span class="stelle" aria-hidden="true">★★★★★</span></figcaption>
+        </div></div></figure>
+        <figure class="frase reveal"><div class="guscio"><div class="anima">
+          <div><span class="virgolette" aria-hidden="true">“</span><blockquote>Taglio ben fatto e veloce. Grande simpatia e cordialità.</blockquote></div>
+          <figcaption>Filippo B. · Google <span class="stelle" aria-hidden="true">★★★★★</span></figcaption>
+        </div></div></figure>
+        <figure class="frase reveal"><div class="guscio"><div class="anima">
+          <div><span class="virgolette" aria-hidden="true">“</span><blockquote>Molto brava, simpaticissima e gentilissima!</blockquote></div>
+          <figcaption>Mattia G. · Google <span class="stelle" aria-hidden="true">★★★★★</span></figcaption>
+        </div></div></figure>
       </div>
-      <p class="altre"><a href="https://www.google.com/maps?cid=12542231096937718737" target="_blank" rel="noopener">Leggi le recensioni su Google</a></p>
+      <p class="fondo"><a class="btn btn-ink" href="https://www.google.com/maps?cid=12542231096937718737" target="_blank" rel="noopener">Leggi tutte le recensioni<span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a></p>
     </div>
   </section>
 
   <section class="sezione dove" id="dove">
     <div class="contenitore griglia">
       <div>
-        <p class="targa reveal">Orari e indirizzo</p>
-        <h2 class="reveal">Via San Giovanni, <em>Bellinzona</em></h2>
-        <figure class="vetrina reveal"><img src="img/vetrina.jpg" alt="Le vetrine illuminate del salone di sera" width="1400" height="788" loading="lazy"></figure>
+        <p class="pillola chiara">Orari e indirizzo</p>
+        <h2>Via San Giovanni, <span class="rosso">Bellinzona</span></h2>
         <table class="orari reveal" id="orari">
           <tr data-g="2"><td>Martedì</td><td>9:00-19:00</td></tr>
           <tr data-g="3"><td>Mercoledì</td><td>9:00-19:00</td></tr>
           <tr data-g="4"><td>Giovedì</td><td>9:00-19:00</td></tr>
           <tr data-g="5"><td>Venerdì</td><td>9:00-19:00</td></tr>
           <tr data-g="6"><td>Sabato</td><td>9:00-19:00</td></tr>
-          <tr data-g="0"><td>Domenica</td><td>Chiuso</td></tr>
-          <tr data-g="1"><td>Lunedì</td><td>Chiuso</td></tr>
+          <tr data-g="0" class="chiuso-g"><td>Domenica</td><td>Chiuso</td></tr>
+          <tr data-g="1" class="chiuso-g"><td>Lunedì</td><td>Chiuso</td></tr>
         </table>
         <ul class="contatti reveal">
-          <li><span>Indirizzo</span>Via San Giovanni 9, 6500 Bellinzona</li>
+          <li><span>Indirizzo</span><b>Via San Giovanni 9, 6500 Bellinzona</b></li>
           <li><span>Telefono</span><a href="tel:+41782224094">078 222 40 94</a></li>
           <li><span>Email</span><a href="mailto:ladybikersbarbershop00@gmail.com">ladybikersbarbershop00@gmail.com</a></li>
-          <li><span>Social</span><a href="https://www.instagram.com/ladybikers_barbershop22/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/ladybikerbarbershopbellinzona/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><span>Social</span><b><a href="https://www.instagram.com/ladybikers_barbershop22/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/ladybikerbarbershopbellinzona/" target="_blank" rel="noopener">Facebook</a></b></li>
         </ul>
-        <a class="btn btn-notte reveal" href="https://www.google.com/maps/dir/?api=1&amp;destination=46.1952867,9.0255136" target="_blank" rel="noopener">Indicazioni stradali</a>
+        <a class="btn btn-ink reveal" href="https://www.google.com/maps/dir/?api=1&amp;destination=46.1952867,9.0255136" target="_blank" rel="noopener">Indicazioni stradali<span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
       </div>
-      <div class="mappa reveal">
-        <iframe title="Mappa: Lady Bikers Barber Shop, Via San Giovanni, Bellinzona" src="https://www.google.com/maps?q=46.1952867,9.0255136&amp;z=17&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="destra">
+        <div class="mappa guscio reveal"><div class="anima">
+          <iframe title="Mappa: Lady Bikers Barber Shop, Via San Giovanni, Bellinzona" src="https://www.google.com/maps?q=46.1952867,9.0255136&amp;z=17&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div></div>
+        <figure class="vetrina guscio reveal">
+          <div class="anima"><img src="img/vetrina.jpg" alt="Le vetrine illuminate del salone di sera" width="1400" height="788" loading="lazy"></div>
+          <figcaption>Le nostre vetrine, la sera</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -393,20 +551,23 @@ p+p{margin-top:1em}
 
 <footer class="piede">
   <div class="contenitore">
-    <span class="nome">Lady <span>Bikers</span> Barber Shop</span>
-    <p>Via San Giovanni 9, 6500 Bellinzona · <a href="tel:+41782224094">078 222 40 94</a></p>
+    <p class="firma" aria-hidden="true">Lady Bikers</p>
+    <div class="info">
+      <div><b>Lady Bikers Barber Shop</b>Via San Giovanni 9<br>6500 Bellinzona</div>
+      <div><b>Orari</b>Da martedì a sabato, 9-19<br>Anche senza appuntamento</div>
+      <div><b>Contatti</b><a href="tel:+41782224094">078 222 40 94</a><br><a href="https://www.instagram.com/ladybikers_barbershop22/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/ladybikerbarbershopbellinzona/" target="_blank" rel="noopener">Facebook</a></div>
+    </div>
     <p class="anteprima preview-note">Anteprima preparata per Lady Bikers Barber Shop</p>
   </div>
 </footer>
 
-<nav class="barra" aria-label="Contatti rapidi">
-  <a class="btn btn-giallo" href="tel:+41782224094"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Chiama</a>
-  <a class="btn btn-filo" href="https://www.google.com/maps/dir/?api=1&amp;destination=46.1952867,9.0255136" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Portami lì</a>
+<nav class="dock" aria-label="Contatti rapidi">
+  <a class="primo" href="tel:+41782224094"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Chiama</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=46.1952867,9.0255136" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Portami lì</a>
 </nav>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
 <script>
 // Aperto o chiuso adesso (ora svizzera)
@@ -424,14 +585,35 @@ p+p{margin-top:1em}
   if (riga) riga.classList.add('oggi');
   var s = document.getElementById('stato'), t = document.getElementById('stato-testo');
   var o = orari[g];
-  function fmt(n){ return Math.floor(n/60) + ''; }
-  if (o && m >= o[0] && m < o[1]) { s.classList.add('aperto'); t.textContent = 'Aperto ora · fino alle ' + fmt(o[1]); }
+  function ora(n){ return Math.floor(n/60) + ''; }
+  if (o && m >= o[0] && m < o[1]) { s.classList.add('aperto'); t.textContent = 'Aperto ora · fino alle ' + ora(o[1]); }
   else {
+    s.classList.add('chiuso');
     for (var i = 0; i < 8; i++) {
       var gg = (g + i) % 7, oo = orari[gg];
-      if (oo && (i > 0 || m < oo[0])) { t.textContent = 'Chiuso ora · riapre ' + (i === 0 ? 'oggi' : i === 1 ? 'domani' : giorni[gg]) + ' alle ' + fmt(oo[0]); break; }
+      if (oo && (i > 0 || m < oo[0])) { t.textContent = 'Chiuso ora · riapre ' + (i === 0 ? 'oggi' : i === 1 ? 'domani' : giorni[gg]) + ' alle ' + ora(oo[0]); break; }
     }
   }
+})();
+
+// Barra in basso: si nasconde finché si vedono i pulsanti della copertina
+(function () {
+  var dock = document.querySelector('.dock'), az = document.querySelector('.copertina .azioni');
+  if (!dock || !az || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver(function (e) { dock.classList.toggle('via', e[0].isIntersecting); }).observe(az);
+})();
+
+// Frecce della galleria
+(function () {
+  var sc = document.querySelector('.scorri');
+  var calmo = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.freccia').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var f = sc.querySelector('figure');
+      var passo = f ? f.getBoundingClientRect().width + 14 : 340;
+      sc.scrollBy({ left: passo * parseInt(b.getAttribute('data-dir'), 10), behavior: calmo ? 'auto' : 'smooth' });
+    });
+  });
 })();
 
 // Movimento: solo se le librerie ci sono e il telefono non chiede "Riduci movimento"
@@ -442,22 +624,41 @@ p+p{margin-top:1em}
   document.documentElement.classList.add('js-anim');
 
   if (window.Lenis) {
-    var lenis = new Lenis({ duration: 1.05 });
+    var lenis = new Lenis({ duration: 1.1 });
     lenis.on('scroll', ScrollTrigger.update);
     gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
     gsap.ticker.lagSmoothing(0);
   }
 
-  // 1. le tre parole del titolo arrivano una dopo l'altra, come marce
-  gsap.from('.copertina h1 .riga', { xPercent: -14, opacity: 0, duration: .7, ease: 'power3.out', stagger: .14, delay: .1 });
+  // 1. il titolo sale riga per riga da dietro una maschera, poi arriva la foto
+  gsap.from('.copertina h1 .riga > span', { yPercent: 108, duration: 1, ease: 'power4.out', stagger: .1, delay: .15 });
+  gsap.from('.scena', { y: 50, opacity: 0, duration: 1.2, ease: 'power3.out', delay: .4 });
 
-  // 2. la foto della moto in fondo alla pagina gira piano mentre scorri
-  gsap.fromTo('.moto figure img', { rotate: -6, y: 40 }, { rotate: 2, y: -20, ease: 'none',
-    scrollTrigger: { trigger: '.moto', start: 'top bottom', end: 'bottom top', scrub: true } });
+  // 2. la frase di "Chi siamo" si accende parola per parola mentre scorri
+  var frase = document.querySelector('.manifesto');
+  if (frase) {
+    var pezzi = [];
+    (function dividi(n) {
+      Array.prototype.slice.call(n.childNodes).forEach(function (c) {
+        if (c.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          c.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var sp = document.createElement('span'); sp.textContent = w; frag.appendChild(sp); pezzi.push(sp);
+          });
+          c.parentNode.replaceChild(frag, c);
+        } else if (c.nodeType === 1 && c.classList.contains('mini')) { pezzi.push(c); }
+        else if (c.nodeType === 1) { dividi(c); }
+      });
+    })(frase);
+    gsap.fromTo(pezzi, { opacity: .14 }, { opacity: 1, stagger: .1, ease: 'none',
+      scrollTrigger: { trigger: frase, start: 'top 82%', end: 'bottom 48%', scrub: true } });
+  }
 
   // 3. i blocchi salgono quando arrivano
   gsap.utils.toArray('.reveal').forEach(function (el) {
-    gsap.to(el, { opacity: 1, y: 0, duration: .7, ease: 'power2.out',
+    gsap.to(el, { opacity: 1, y: 0, duration: .9, ease: 'power3.out',
       scrollTrigger: { trigger: el, start: 'top 92%', once: true } });
   });
   window.addEventListener('load', function () { ScrollTrigger.refresh(); });
