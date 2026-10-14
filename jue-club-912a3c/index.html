@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Jué Club · Cocktail bar, bistrot e DJ set a Montecatini Terme</title>
+<meta name="description" content="Jué Club in viale IV Novembre a Montecatini Terme: cocktail d'autore, apericena, cucina e DJ set nel weekend.">
+<meta name="theme-color" content="#0A0A0C">
+<meta property="og:title" content="Jué Club · Montecatini Terme">
+<meta property="og:description" content="Dove il gusto incontra lo stile.">
+<meta property="og:image" content="img/parete.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BarOrPub","name":"Jué Club","address":{"@type":"PostalAddress","streetAddress":"Viale IV Novembre 3","addressLocality":"Montecatini Terme","postalCode":"51016","addressRegion":"PT","addressCountry":"IT"},"telephone":"+39 331 661 0911","sameAs":["https://www.instagram.com/jueclubmontecatini/"]}
+</script>
+<style>
+:root{
+  --notte:#0A0A0C; --petrolio:#17121A; --petrolio-2:#241A27; --crema:#F4EEE6; --carta:#FAF6F1;
+  --oro:#D4A94F; --oro-chiaro:#EBCB85; --neon:#E2378F; --inchiostro:#16201F; --grigio:#6B716F; --linea:#E4DDD1;
+  --r:14px; --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:Karla,system-ui,sans-serif;color:var(--inchiostro);background:var(--carta);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.serif{font-family:"Playfair Display",Georgia,serif}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.eyebrow{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--oro)}
+h2.titolo{font-family:"Playfair Display",Georgia,serif;font-weight:500;font-size:clamp(32px,5vw,52px);line-height:1.08;letter-spacing:-.01em;margin:10px 0 18px}
+h2.titolo em{color:var(--oro);font-style:italic}
+.lead{font-size:18px;color:var(--grigio);max-width:56ch}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .2s ease,background .2s ease,color .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-oro{background:var(--oro);color:#1a1408}
+.btn-oro:hover{background:var(--oro-chiaro)}
+.btn-vetro{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(10px)}
+.btn-vetro:hover{background:rgba(255,255,255,.22)}
+svg.i{width:19px;height:19px;flex:none}
+
+/* Barra in alto */
+.nav{position:fixed;inset:0 0 auto 0;z-index:30;transition:background .3s ease,border-color .3s ease;border-bottom:1px solid transparent}
+.nav.piena{background:rgba(10,10,12,.92);backdrop-filter:blur(14px);border-color:rgba(255,255,255,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.marchio{color:#fff;display:flex;flex-direction:column;line-height:1}
+.marchio img{height:34px;width:auto}
+.marchio b{font-family:"Playfair Display",serif;font-style:italic;font-weight:500;font-size:28px;letter-spacing:.01em}
+.marchio small{font-size:9.5px;letter-spacing:.42em;color:var(--oro-chiaro);margin-top:3px;font-weight:600}
+.menu-alto{display:none;gap:30px;color:rgba(255,255,255,.85);font-size:15px}
+.menu-alto a:hover{color:var(--oro-chiaro)}
+.nav .btn{min-height:42px;padding:0 18px;font-size:14.5px}
+
+/* Copertina */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--notte)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:respira 18s ease-in-out infinite alternate}
+@keyframes respira{to{transform:scale(1.12)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,12,.55) 0%,rgba(10,10,12,.15) 35%,rgba(10,10,12,.88) 78%,var(--notte) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:calc(110px + env(safe-area-inset-bottom));padding-top:120px;width:100%}
+.hero .eyebrow{color:var(--oro-chiaro)}
+.hero h1{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(44px,8.5vw,92px);line-height:1;letter-spacing:-.015em;margin:14px 0 18px;max-width:14ch}
+.hero h1 em{font-style:italic;color:var(--oro-chiaro)}
+.hero p{font-size:19px;color:rgba(255,255,255,.82);max-width:42ch;margin-bottom:28px}
+.hero .azioni{display:flex;flex-wrap:wrap;gap:12px}
+.adesso{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:rgba(255,255,255,.85);margin-top:26px}
+.adesso i{width:8px;height:8px;border-radius:50%;background:#46d483;box-shadow:0 0 0 4px rgba(70,212,131,.2)}
+.adesso.chiuso i{background:#e0a64a;box-shadow:0 0 0 4px rgba(224,166,74,.2)}
+
+/* Tre anime */
+.anime{background:var(--notte);color:#fff;padding:20px 0 90px}
+.anime .griglia{display:grid;gap:18px}
+.anima{position:relative;border-radius:var(--r);overflow:hidden;min-height:340px;display:flex;align-items:flex-end;isolation:isolate}
+.anima img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s ease}
+.anima:hover img{transform:scale(1.05)}
+.anima::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(10,8,12,.92));z-index:-1}
+.anima div{padding:24px}
+.anima h3{font-family:"Playfair Display",serif;font-weight:500;font-size:30px}
+.anima p{color:rgba(255,255,255,.78);font-size:15.5px;margin-top:4px}
+.anima .num{font-size:12px;letter-spacing:.2em;color:var(--oro-chiaro);font-weight:600}
+
+/* Storia */
+.storia{padding:100px 0;background:var(--carta)}
+.storia .griglia{display:grid;gap:40px;align-items:center}
+.storia figure{position:relative}
+.storia figure img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+.timbro{position:absolute;right:-8px;bottom:-22px;background:var(--petrolio);color:#fff;border-radius:999px;width:128px;height:128px;display:grid;place-items:center;text-align:center;box-shadow:0 18px 40px -18px rgba(0,0,0,.5)}
+.timbro b{font-family:"Playfair Display",serif;font-size:38px;font-weight:500;display:block;line-height:1;color:var(--oro-chiaro)}
+.timbro span{font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.storia blockquote{font-family:"Playfair Display",serif;font-style:italic;font-size:22px;line-height:1.45;border-left:2px solid var(--oro);padding-left:18px;margin-top:26px;color:var(--petrolio)}
+
+/* Menù */
+.menu{background:var(--crema);padding:100px 0}
+.schede{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:26px 0 30px;padding-bottom:4px}
+.schede::-webkit-scrollbar{display:none}
+.schede button{flex:none;font:600 15px Karla,sans-serif;border:1px solid var(--linea);background:#fff;color:var(--inchiostro);border-radius:999px;min-height:44px;padding:0 20px;cursor:pointer;transition:all .2s ease}
+.schede button[aria-selected="true"]{background:var(--notte);color:#fff;border-color:var(--petrolio)}
+.piatti{display:none;background:#fff;border-radius:var(--r);padding:8px 24px;border:1px solid var(--linea)}
+.piatti.attivo{display:block;animation:entra .35s ease}
+@keyframes entra{from{opacity:0;transform:translateY(6px)}}
+.piatto{display:grid;grid-template-columns:1fr auto;gap:6px 18px;padding:20px 0;border-bottom:1px solid var(--linea)}
+.piatto:last-child{border-bottom:0}
+.piatto h4{font-family:"Playfair Display",serif;font-weight:500;font-size:20px;line-height:1.3}
+.piatto p{grid-column:1;color:var(--grigio);font-size:15.5px}
+.piatto .prezzo{font-family:"Playfair Display",serif;font-size:20px;color:var(--petrolio);white-space:nowrap}
+.nota{font-size:14px;color:var(--grigio);margin-top:16px}
+
+/* Cocktail */
+.cocktail{background:var(--notte);color:#fff;padding:100px 0;position:relative;overflow:hidden}
+.cocktail::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(226,55,143,.24),transparent 70%);top:-160px;right:-160px}
+.cocktail .griglia{display:grid;gap:40px;position:relative}
+.cocktail .lead{color:rgba(255,255,255,.7)}
+.lista{list-style:none;margin-top:26px;display:grid;gap:2px}
+.lista li{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:17px}
+.lista li span{color:rgba(255,255,255,.55);font-size:15px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.duo img{border-radius:var(--r);aspect-ratio:3/4;object-fit:cover;width:100%}
+.duo img:last-child{margin-top:44px}
+
+/* Cantina */
+.cantina{padding:100px 0;background:var(--carta)}
+.cantina .griglia{display:grid;gap:40px;align-items:center}
+.cantina img{border-radius:var(--r);width:100%;aspect-ratio:16/10;object-fit:cover}
+.punti{display:grid;gap:14px;margin-top:24px}
+.punti div{display:flex;gap:14px;align-items:flex-start}
+.punti svg{color:var(--oro);margin-top:3px}
+
+/* Serate */
+.serate{background:var(--petrolio);color:#fff;padding:90px 0}
+.serate .griglia{display:grid;gap:16px;margin-top:30px}
+.serata{border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:26px;background:rgba(255,255,255,.03)}
+.serata .quando{color:var(--oro-chiaro);font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+.serata h3{font-family:"Playfair Display",serif;font-weight:500;font-size:26px;margin:6px 0}
+.serata p{color:rgba(255,255,255,.72);font-size:15.5px}
+
+/* Galleria */
+.galleria{padding:100px 0 80px;background:var(--carta)}
+.mosaico{columns:2;column-gap:12px;margin-top:30px}
+.mosaico img{width:100%;border-radius:12px;margin-bottom:12px;break-inside:avoid;cursor:zoom-in}
+.lightbox{position:fixed;inset:0;background:rgba(5,12,12,.94);display:none;align-items:center;justify-content:center;z-index:60;padding:20px}
+.lightbox.aperto{display:flex}
+.lightbox img{max-height:88vh;border-radius:10px}
+
+/* Info */
+.info{background:var(--notte);color:#fff;padding:100px 0 60px}
+.info .griglia{display:grid;gap:30px}
+.scheda{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:26px}
+.scheda h3{font-family:"Playfair Display",serif;font-weight:500;font-size:24px;margin-bottom:14px}
+.orari{list-style:none}
+.orari li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.8)}
+.orari li.oggi{color:#fff;font-weight:700}
+.orari li.oggi span:first-child::after{content:" · oggi";color:var(--oro-chiaro);font-weight:500}
+.contatti a{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.contatti a:hover{color:var(--oro-chiaro)}
+.mappa{border-radius:var(--r);overflow:hidden;border:1px solid rgba(255,255,255,.1);min-height:300px}
+.mappa iframe{width:100%;height:100%;min-height:300px;border:0;filter:grayscale(.35) contrast(1.05)}
+footer{background:var(--notte);color:rgba(255,255,255,.5);font-size:14px;padding:30px 0 120px;border-top:1px solid rgba(255,255,255,.08)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+.anteprima{display:block;text-align:center;font-size:12.5px;color:rgba(255,255,255,.45);margin-top:18px}
+
+/* Barra fissa sul telefono */
+.barra{position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:40;display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;background:rgba(10,10,12,.9);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:6px;box-shadow:0 18px 40px -12px rgba(0,0,0,.6)}
+.barra a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:54px;border-radius:14px;color:#fff;font-size:12.5px;font-weight:600}
+.barra a.primo{background:var(--oro);color:#1a1408}
+
+/* Comparsa allo scorrere */
+.su{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.su.visto{opacity:1;transform:none}
+
+/* Movimento con GSAP + Lenis (solo se caricati e se "Riduci movimento" è spento) */
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.mosso .hero img{animation:none}
+.mosso .riga{display:block;overflow:hidden;padding-bottom:.06em}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.su{opacity:1;transform:none}}
+
+@media (min-width:760px){
+  .anime .griglia{grid-template-columns:repeat(3,1fr)}
+  .anima{min-height:460px}
+  .storia .griglia,.cocktail .griglia,.cantina .griglia{grid-template-columns:1fr 1fr;gap:70px}
+  .serate .griglia{grid-template-columns:repeat(3,1fr)}
+  .mosaico{columns:3}
+  .info .griglia{grid-template-columns:1fr 1fr 1.2fr}
+  .piatti{padding:12px 36px}
+}
+@media (min-width:980px){
+  .hero .wrap{padding-bottom:64px}
+  .menu-alto{display:flex}
+  .barra{display:none}
+  footer{padding-bottom:30px}
+  .wrap{padding:0 32px}
+  .mosaico{columns:4}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#" class="marchio" aria-label="Jué Club"><img src="img/logo.png" alt="Jué"><small>MONTECATINI</small></a>
+    <nav class="menu-alto" aria-label="Sezioni">
+      <a href="#cocktail">Cocktail</a><a href="#menu">Cucina</a><a href="#serate">Serate</a><a href="#dove">Dove siamo</a>
+    </nav>
+    <a class="btn btn-oro" href="tel:+393316610911"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Prenota</a>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="img/parete.jpg" alt="La parete fiorita del Jué con la lampada d'ottone e una bottiglia sul tavolo">
+  <div class="wrap">
+    <span class="eyebrow">Viale IV Novembre · Montecatini Terme</span>
+    <h1>Dove il gusto incontra lo <em>stile</em>.</h1>
+    <p>Cocktail d'autore, apericena e cucina, e nel weekend il DJ set. Dalla prima bollicina all'ultimo ballo, nello stesso posto.</p>
+    <div class="azioni">
+      <a class="btn btn-oro" href="tel:+393316610911"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Prenota un tavolo</a>
+      <a class="btn btn-vetro" href="#cocktail">La drinklist</a>
+    </div>
+    <div class="adesso" id="adesso"><i></i><span>Tutti i giorni dalle 18:00</span></div>
+  </div>
+</section>
+
+<section class="anime" aria-label="Le tre anime del Jué">
+  <div class="wrap">
+    <div class="griglia">
+      <a href="#cocktail" class="anima su"><img src="img/oldfashioned.jpg" alt="Un Old Fashioned con il ghiaccio grande"><div><span class="num">01</span><h3>Cocktail bar</h3><p>I classici e i nostri gusti rivisitati.</p></div></a>
+      <a href="#menu" class="anima su"><img src="img/aperitivo.jpg" alt="Apericena con pizza, tagliere, spritz e vino"><div><span class="num">02</span><h3>Bistrot</h3><p>Apericena, pizza e cena.</p></div></a>
+      <a href="#serate" class="anima su"><img src="img/consolle.jpg" alt="Il DJ alla consolle nella luce viola"><div><span class="num">03</span><h3>DJ set</h3><p>Il weekend si balla.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="storia">
+  <div class="wrap griglia">
+    <figure class="su">
+      <img src="img/locale.jpg" alt="Il salottino del Jué con i divani e le pareti a fiori" loading="lazy">
+      <div class="timbro"><div><b>18:00</b><span>tutti i giorni</span></div></div>
+    </figure>
+    <div class="su">
+      <span class="eyebrow">Il Jué</span>
+      <h2 class="titolo">Un salotto in centro, <em>tra fiori e neon</em>.</h2>
+      <p class="lead">Pareti fiorite, luce calda e divani dove restare. Si comincia con l'aperitivo, si continua a cena e, quando parte la musica, la sala diventa club.</p>
+      <blockquote>«Djset + cocktail = Jué.»</blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="cocktail" id="cocktail">
+  <div class="wrap griglia">
+    <div class="su">
+      <span class="eyebrow">Drinklist</span>
+      <h2 class="titolo">Gusti <em>rivisitati</em> della tradizione.</h2>
+      <p class="lead">Dai grandi classici ai nostri mojito, preparati al momento. La drinklist completa ti aspetta al bancone, tutti i giorni dalle 18.</p>
+      <ul class="lista">
+        <li>Mojito Passion <span>il nostro mojito al frutto della passione</span></li>
+        <li>Mojito ribes e cocco <span>il più rinfrescante</span></li>
+        <li>Espresso Martini <span>vodka e caffè espresso</span></li>
+        <li>Old Fashioned <span>bourbon, zucchero, angostura</span></li>
+        <li>Negroni, Manhattan, Martini <span>i classici, fatti bene</span></li>
+        <li>Spritz <span>ad ognuno il suo</span></li>
+      </ul>
+    </div>
+    <div class="duo su">
+      <img src="img/schizzo.jpg" alt="Un cocktail rosso in una coppa che schizza" loading="lazy">
+      <img src="img/tagliere.jpg" alt="Spritz e tagliere al bancone" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <span class="eyebrow">In cucina</span>
+    <h2 class="titolo">Apericena, pizza e <em>cena</em>.</h2>
+    <p class="lead">Dal tagliere per l'aperitivo alla carne per la cena: ecco cosa trovi in carta.</p>
+    <div class="schede" role="tablist" aria-label="Cucina">
+      <button role="tab" aria-selected="true" data-t="aperitivo">Apericena</button>
+      <button role="tab" aria-selected="false" data-t="pizze">Pizze</button>
+      <button role="tab" aria-selected="false" data-t="cena">Cena</button>
+    </div>
+    <div class="piatti attivo" id="aperitivo" role="tabpanel"><div class="piatto"><h4>Tagliere del Jué</h4><span class="prezzo"></span><p>Salumi, formaggi e stuzzichini da accompagnare al drink</p></div><div class="piatto"><h4>Apericena</h4><span class="prezzo"></span><p>Con il cocktail arrivano i piatti da condividere</p></div><div class="piatto"><h4>Spritz e bollicine</h4><span class="prezzo"></span><p>Per cominciare la serata</p></div></div>
+    <div class="piatti" id="pizze" role="tabpanel"><div class="piatto"><h4>Pizza con mortadella, burrata e pistacchio</h4><span class="prezzo"></span><p>Una delle preferite</p></div><div class="piatto"><h4>Pizza margherita</h4><span class="prezzo"></span><p>Pomodoro, mozzarella e basilico</p></div><div class="piatto"><h4>La pizza della domenica</h4><span class="prezzo"></span><p>Perché non c'è domenica senza Jué</p></div></div>
+    <div class="piatti" id="cena" role="tabpanel"><div class="piatto"><h4>Hamburger di Chianina</h4><span class="prezzo"></span><p>Carne toscana nel panino morbido</p></div><div class="piatto"><h4>Tagliata</h4><span class="prezzo"></span><p>Con rucola e scaglie di Parmigiano</p></div><div class="piatto"><h4>Pollo croccante</h4><span class="prezzo"></span><p>Con salsa bianca e rucola</p></div></div>
+    <p class="nota">La carta cambia spesso: chiedi al personale le proposte del giorno e gli allergeni di ogni piatto.</p>
+  </div>
+</section>
+
+<section class="serate" id="serate">
+  <div class="wrap">
+    <span class="eyebrow">Le serate</span>
+    <h2 class="titolo">Quando parte la <em>musica</em>.</h2>
+    <div class="griglia">
+      <div class="serata su"><span class="quando">Venerdì</span><h3>Apericena e DJ</h3><p>Apericena di qualità, cocktail di livello e un DJ alla consolle.</p></div>
+      <div class="serata su"><span class="quando">Sabato</span><h3>Club Room · Baba Music</h3><p>Ogni sabato la musica è protagonista. Be you, be Baba.</p></div>
+      <div class="serata su"><span class="quando">Domenica</span><h3>Aperitivo e pizza</h3><p>Le domeniche sono fatte di contemplazione e aperitivi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="galleria">
+  <div class="wrap">
+    <span class="eyebrow">Galleria</span>
+    <h2 class="titolo">Vieni a <em>trovarci</em>.</h2>
+    <div class="mosaico" id="mosaico">
+      <img src="img/neon.jpg" alt="L'insegna al neon good vibes tra i fiori" loading="lazy">
+      <img src="img/burger.jpg" alt="Hamburger" loading="lazy">
+      <img src="img/dj_pioneer.jpg" alt="Le mani del DJ sulla consolle" loading="lazy">
+      <img src="img/tagliere.jpg" alt="Tagliere con spritz" loading="lazy">
+      <img src="img/luci.jpg" alt="Le luci del club" loading="lazy">
+      <img src="img/pizza.jpg" alt="Pizza con mortadella, burrata e pistacchio" loading="lazy">
+      <img src="img/tagliata.jpg" alt="Tagliata con rucola e Parmigiano" loading="lazy">
+      <img src="img/dj_manopole.jpg" alt="Il mixer del DJ" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="info" id="dove">
+  <div class="wrap">
+    <span class="eyebrow">Dove siamo</span>
+    <h2 class="titolo">Ti aspettiamo in <em>viale IV Novembre</em>.</h2>
+    <div class="griglia">
+      <div class="scheda">
+        <h3>Orari</h3>
+        <ul class="orari" id="orari">
+          <li data-g="1"><span>Lunedì</span><span>dalle 18:00</span></li>
+          <li data-g="2"><span>Martedì</span><span>dalle 18:00</span></li>
+          <li data-g="3"><span>Mercoledì</span><span>dalle 18:00</span></li>
+          <li data-g="4"><span>Giovedì</span><span>dalle 18:00</span></li>
+          <li data-g="5"><span>Venerdì</span><span>dalle 18:00 · DJ</span></li>
+          <li data-g="6"><span>Sabato</span><span>dalle 18:00 · Club</span></li>
+          <li data-g="0"><span>Domenica</span><span>dalle 18:00</span></li>
+        </ul>
+      </div>
+      <div class="scheda contatti">
+        <h3>Contatti</h3>
+        <a href="tel:+393316610911"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>331 661 0911</a>
+        <a href="https://maps.google.com/?q=Ju%C3%A9+Club+Viale+IV+Novembre+3+Montecatini+Terme" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Viale IV Novembre 3, Montecatini Terme</a>
+        <a href="https://www.instagram.com/jueclubmontecatini/" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@jueclubmontecatini</a>
+        <a href="https://ig.me/m/jueclubmontecatini" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg>Prenotazioni e info in DM</a>
+      </div>
+      <div class="mappa">
+        <iframe title="Mappa: Jué Club" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Viale%20IV%20Novembre%203%2C%20Montecatini%20Terme&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="anno">2026</span> Jué Club · Viale IV Novembre 3, 51016 Montecatini Terme (PT)</span>
+    <span>Cocktail bar · Bistrot · DJ set</span>
+  </div>
+  <div class="wrap"><span class="anteprima">Anteprima preparata per Jué Club</span></div>
+</footer>
+
+<nav class="barra" aria-label="Azioni rapide">
+  <a class="primo" href="tel:+393316610911"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Prenota</a>
+  <a href="#cocktail"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 22h8M12 11v11M3 3h18l-9 9z"/></svg>Drink</a>
+  <a href="https://maps.google.com/?q=Ju%C3%A9+Club+Viale+IV+Novembre+3+Montecatini+Terme" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Indicazioni</a>
+</nav>
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Foto ingrandita"><img alt=""></div>
+
+<script>
+const nav=document.getElementById('nav');
+const piena=()=>nav.classList.toggle('piena',scrollY>40);piena();addEventListener('scroll',piena,{passive:true});
+document.querySelectorAll('.schede button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.schede button').forEach(x=>x.setAttribute('aria-selected',x===b));
+  document.querySelectorAll('.piatti').forEach(p=>p.classList.toggle('attivo',p.id===b.dataset.t));
+}));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visto');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.su').forEach(el=>io.observe(el));
+const lb=document.getElementById('lightbox');
+document.querySelectorAll('#mosaico img').forEach(i=>i.addEventListener('click',()=>{lb.querySelector('img').src=i.src;lb.querySelector('img').alt=i.alt;lb.classList.add('aperto')}));
+lb.addEventListener('click',()=>lb.classList.remove('aperto'));
+// Orari: oggi evidenziato e "aperto ora"
+const d=new Date(),g=d.getDay(),ora=d.getHours()+d.getMinutes()/60;
+document.querySelectorAll('#orari li').forEach(li=>li.classList.toggle('oggi',+li.dataset.g===g));
+const apertoOra=ora>=18||ora<2;
+const a=document.getElementById('adesso');
+a.querySelector('span').textContent=apertoOra?'Aperti ora':'Oggi aperti dalle 18:00';
+a.classList.toggle('chiuso',!apertoOra);
+document.getElementById('anno').textContent=d.getFullYear();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" defer></script>
+<script>
+// Pochi effetti, fatti bene: titolo che entra, copertina che si muove piano scorrendo,
+// titoli delle sezioni riga per riga, foto della galleria che salgono. Niente se "Riduci movimento".
+addEventListener('DOMContentLoaded',()=>{
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!window.gsap||!window.ScrollTrigger)return;
+  gsap.registerPlugin(ScrollTrigger,window.SplitText||{});
+  document.documentElement.classList.add('mosso');
+  // Scorrimento morbido, legato a ScrollTrigger
+  if(window.Lenis){
+    const lenis=new Lenis({lerp:.1});
+    lenis.on('scroll',ScrollTrigger.update);
+    gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+      const t=document.querySelector(a.getAttribute('href'));if(!t)return;e.preventDefault();lenis.scrollTo(t,{offset:-72});
+    }));
+  }
+  // Copertina: il titolo sale parola per parola, poi il resto
+  const h1=document.querySelector('.hero h1');
+  const intro=gsap.timeline({defaults:{ease:'power3.out'}});
+  intro.from('.hero img',{scale:1.18,duration:2.2,ease:'power2.out'},0);
+  if(window.SplitText){
+    const sp=new SplitText(h1,{type:'lines,words',linesClass:'riga'});
+    intro.from(sp.words,{yPercent:110,duration:1,stagger:.06},.25);
+  }else intro.from(h1,{y:40,opacity:0,duration:1},.25);
+  intro.from(['.hero .eyebrow','.hero p','.hero .azioni','.adesso'],{y:18,opacity:0,duration:.8,stagger:.1},'-=.6');
+  // Copertina che si allontana piano scorrendo
+  gsap.to('.hero img',{yPercent:12,scale:1.08,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  // Titoli delle sezioni riga per riga
+  if(window.SplitText)document.querySelectorAll('h2.titolo').forEach(h=>{
+    const sp=new SplitText(h,{type:'lines',linesClass:'riga'});
+    const dentro=sp.lines.map(l=>{const w=document.createElement('span');w.style.display='block';while(l.firstChild)w.appendChild(l.firstChild);l.appendChild(w);return w});
+    gsap.from(dentro,{yPercent:105,duration:.9,ease:'power3.out',stagger:.08,scrollTrigger:{trigger:h,start:'top 85%'}});
+  });
+  // Galleria: le foto salgono una dopo l'altra
+  gsap.set('#mosaico img',{y:40,opacity:0,scale:.96});
+  ScrollTrigger.batch('#mosaico img',{start:'top 95%',once:true,onEnter:b=>gsap.to(b,{y:0,opacity:1,scale:1,duration:.9,ease:'power3.out',stagger:.08,overwrite:true})});
+  addEventListener('load',()=>ScrollTrigger.refresh());
+});
+</script>
+</body>
+</html>
