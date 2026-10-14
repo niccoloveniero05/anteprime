@@ -24,6 +24,7 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 | Hotel Cappelli | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/hotel-cappelli-4d601a/ | 2026-10-13 | in attesa | Pubblicata, da mandare all'hotel. Fatta sulla base hotel comune: foto dal loro sito, camere e servizi dal loro sito, prenotazione con il loro sistema, distanze calcolate dalle coordinate. Il loro sito di oggi è recente (2025). Issue #11 |
 | Hotel Mirò | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/hotel-miro-706c34/ | 2026-10-13 | inviata | Mandata all'hotel per email il 14/10, insieme al sito di Veniello Studio. Migliorata: logo e colori del loro marchio, richiesta di disponibilità con date e persone (apre un'email già pronta), camere Superior e Standard con 3 foto ciascuna, foto degli spazi interni, tutti i servizi del loro sito (anche reception 24 ore, parcheggio su richiesta, animali piccoli), città d'arte vicine, versione in inglese. Da verificare: sul loro sito le foto di Superior e Standard sembrano scambiate rispetto ai testi. Issue #12 |
 | Nuove Armonie | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/nuove-armonie-d8b379/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Foto dei lavori dai loro profili Instagram, orari dal loro cartello su Instagram (Google dice 9-20), recensioni da Google, colori dal logo rosa e nero, marchio a triangolo ridisegnato. Servizi senza prezzi. Mancano foto del salone e dell'insegna e il logo nitido; da verificare orari e servizi. Issue #13 |
+| Officina Estetica | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/officina-estetica-1a1714/ | 2026-10-14 | in attesa | foto della cabina da Google, prodotti da Instagram; orari da chiedere Issue #14 |
 
 ## Registro
 
@@ -47,3 +48,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-13 — Pubblicata l'anteprima di Nuove Armonie (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #13.
 - 2026-10-13 — Modificata l'anteprima di Hotel Mirò (Montecatini Terme): nuova grafica con logo e colori dell'hotel, richiesta di disponibilità con date, più foto e servizi, versione in inglese. Stato sempre "in attesa". Issue #12.
 - 2026-10-14 — Inviata per email l'anteprima di Hotel Mirò (Montecatini Terme), insieme al link di veniellostudio.it. Stato "inviata". Issue #12.
+- 2026-10-14 — Pubblicata l'anteprima di Officina Estetica (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #14.
