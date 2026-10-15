@@ -9,23 +9,21 @@
 <meta name="theme-color" content="#100F09">
 <meta property="og:title" content="Veniello Studio · Montecatini Terme">
 <meta property="og:description" content="Fatti trovare. Fatti scegliere. Siti, Google, social e video per le attività della Valdinievole.">
-<link rel="preload" href="fonts/InstrumentSerif-normal-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/Inter-normal-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fonts/fonts.css">
 <style>
 :root{
-  --bg:#100F09; --bg2:#14130D; --surf:#1B1A15; --surf2:#23221C;
-  --line:rgba(245,244,239,.12); --line2:rgba(245,244,239,.22);
-  --testo:#F5F4EF; --testo2:rgba(245,244,239,.66); --testo3:rgba(245,244,239,.42);
-  --r:16px; --r2:28px; --lato:20px; --max:1180px;
-  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
-  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --bg:#100F09; --bg2:#14130D; --surf:#1A1913; --surf2:#22211A;
+  --line:rgba(245,244,239,.1); --line2:rgba(245,244,239,.2);
+  --testo:#F5F4EF; --testo2:rgba(245,244,239,.64); --testo3:rgba(245,244,239,.4);
+  --r:16px; --r2:24px; --lato:20px; --max:1180px;
+  --sans:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"Geist Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
-body{font-family:var(--sans);font-size:17px;line-height:1.6;color:var(--testo);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img,video{display:block;max-width:100%}
+body{font-family:var(--sans);font-size:16px;line-height:1.6;color:var(--testo);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--lato)}
@@ -34,161 +32,115 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 :focus-visible{outline:2px solid var(--testo);outline-offset:3px;border-radius:6px}
 
 /* tipografia */
-.mono{font-family:var(--mono);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--testo3)}
-.etichetta{display:block;font-family:var(--mono);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--testo3);margin-bottom:18px}
-h1,h2,h3,.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.01em}
-h2{font-size:clamp(36px,6.2vw,66px);line-height:1.02;max-width:16ch}
-h2 em,h1 em{font-style:italic}
-h3{font-size:clamp(26px,3.4vw,34px);line-height:1.1}
-.intro{color:var(--testo2);font-size:clamp(17px,2vw,20px);max-width:52ch;margin-top:20px}
-section{padding:clamp(80px,11vw,140px) 0;position:relative}
+.mono,.etichetta{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3)}
+.etichetta{display:block;margin-bottom:16px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em}
+h1 em,h2 em,.frase em{font-style:italic}
+h1{font-size:clamp(46px,9.4vw,100px);line-height:1}
+h2{font-size:clamp(36px,5.8vw,62px);line-height:1.04;max-width:16ch}
+h3{font-size:clamp(26px,3vw,32px);line-height:1.12}
+.intro{color:var(--testo2);font-size:clamp(16px,1.8vw,19px);max-width:52ch;margin-top:18px}
+section{padding:clamp(72px,10vw,128px) 0;position:relative}
 
 /* pulsanti */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font-weight:500;font-size:16px;white-space:nowrap;transition:transform .2s ease,background .2s ease,color .2s ease}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 22px;border-radius:999px;font-weight:500;font-size:15px;white-space:nowrap;transition:transform .2s ease,background .2s ease}
 .btn:active{transform:scale(.97)}
 .btn-pieno{background:var(--testo);color:var(--bg)}
 .btn-pieno:hover{background:#fff}
-.btn-linea{box-shadow:inset 0 0 0 1px var(--line2);color:var(--testo)}
+.btn-linea{box-shadow:inset 0 0 0 1px var(--line2)}
 .btn-linea:hover{background:rgba(245,244,239,.07)}
-.btn .i{width:18px;height:18px;flex:none}
-.i{width:20px;height:20px}
+.i{width:18px;height:18px;flex:none}
+.link{display:inline-flex;align-items:center;gap:8px;font-weight:500;border-bottom:1px solid var(--line2);padding-bottom:2px}
+.link:hover{border-color:var(--testo)}
 
 /* testata */
 .testata{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .25s ease,box-shadow .25s ease}
 .testata.piena{background:rgba(16,15,9,.96);box-shadow:0 1px 0 var(--line)}
-.testata .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
-.marchio{display:inline-flex;align-items:center;gap:10px;font-family:var(--serif);font-size:24px;letter-spacing:-.01em}
-.marchio i{width:30px;height:30px;border-radius:50%;background:var(--testo);color:var(--bg);display:grid;place-items:center;font-family:var(--serif);font-style:italic;font-size:20px;line-height:1;padding-right:1px}
-.testata nav{display:none;gap:28px;font-size:15px;color:var(--testo2)}
+.testata .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.marchio{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:17px;letter-spacing:-.02em}
+.marchio i{width:26px;height:26px;border-radius:50%;background:var(--testo);color:var(--bg);display:grid;place-items:center;font-style:normal;font-weight:700;font-size:14px;line-height:1}
+.testata nav{display:none;gap:26px;font-size:14px;color:var(--testo2)}
 .testata nav a:hover{color:var(--testo)}
-.testata .btn{min-height:42px;padding:0 18px;font-size:15px}
+.testata .btn{min-height:40px;padding:0 16px;font-size:14px}
 @media (min-width:900px){.testata nav{display:flex}}
 
 /* copertina */
-.copertina{min-height:100svh;display:flex;align-items:center;text-align:center;padding:120px 0 60px}
+.copertina{min-height:100svh;display:flex;align-items:center;text-align:center;padding:110px 0 56px}
 .copertina .wrap{display:flex;flex-direction:column;align-items:center}
-.copertina h1{font-size:clamp(46px,9.4vw,104px);line-height:1;max-width:11ch;margin-top:22px}
-.copertina .intro{text-align:center;margin-top:26px;max-width:46ch}
-.azioni{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:34px}
-.fiducia{list-style:none;display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;margin-top:34px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--testo3)}
-.fiducia li::before{content:"·";margin-right:10px;color:var(--testo3)}
-.fiducia li:first-child::before{content:none}
-.giu{margin-top:48px;color:var(--testo3);font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.copertina h1{max-width:12ch;margin-top:22px}
+.copertina .intro{text-align:center;margin-top:22px;max-width:44ch}
+.azioni{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:32px;align-items:center}
+.fiducia{margin-top:40px;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--testo3);max-width:30ch;line-height:1.9}
+@media (min-width:700px){.fiducia{max-width:none}}
 
 /* scena bloccata allo scorrimento */
 .scena{height:340svh;position:relative;padding:0}
 .scena-stage{position:sticky;top:0;height:100svh;overflow:hidden;background:var(--bg)}
-.scena-cols{position:absolute;inset:0;display:flex;justify-content:center;gap:14px;padding:0 0;will-change:transform}
-.col{flex:none;width:44vw;display:flex;flex-direction:column;gap:14px;will-change:transform}
-@media (min-width:900px){.col{width:clamp(200px,17vw,250px)}.scena-cols{gap:20px}.col{gap:20px}}
-.col img{width:100%;height:auto;border-radius:var(--r);background:var(--surf)}
+.scena-cols{position:absolute;inset:0;display:flex;justify-content:center;gap:12px}
+.col{flex:none;width:44vw;display:flex;flex-direction:column;gap:12px;will-change:transform}
+@media (min-width:900px){.col{width:clamp(200px,17vw,250px);gap:18px}.scena-cols{gap:18px}}
+.col img{width:100%;height:auto;border-radius:14px;background:var(--surf)}
+.scena-cols::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--bg) 0%,rgba(16,15,9,0) 16%,rgba(16,15,9,0) 84%,var(--bg) 100%);pointer-events:none}
 .scena-testo{position:absolute;inset:0;display:grid;place-items:center;text-align:center;pointer-events:none;padding:0 var(--lato)}
-.scena-testo::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 42% at 50% 50%,rgba(16,15,9,.9),rgba(16,15,9,.55) 55%,rgba(16,15,9,0) 100%)}
-.frase{grid-area:1/1;position:relative;font-family:var(--serif);font-size:clamp(38px,8.2vw,88px);line-height:1.02;max-width:12ch;opacity:0;transform:translateY(14px);will-change:opacity,transform}
-.frase em{font-style:italic}
-.frase small{display:block;width:max-content;max-width:90vw;margin:18px auto 0;font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--testo3);white-space:nowrap}
+.scena-testo::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 72% 44% at 50% 50%,rgba(16,15,9,.92),rgba(16,15,9,.6) 55%,rgba(16,15,9,0) 100%)}
+.frase{grid-area:1/1;position:relative;font-family:var(--serif);font-weight:400;letter-spacing:-.01em;font-size:clamp(38px,8.2vw,86px);line-height:1.02;max-width:13ch;opacity:0;transform:translateY(10px);transition:opacity .45s ease,transform .45s ease;will-change:opacity,transform}
+.frase small{display:block;width:max-content;max-width:90vw;margin:16px auto 0;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3);white-space:nowrap;font-weight:400}
 .frase.visibile{opacity:1;transform:none}
-.scena-cols::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--bg) 0%,rgba(16,15,9,0) 14%,rgba(16,15,9,0) 86%,var(--bg) 100%);pointer-events:none}
 
-/* tre punti */
-.punti{list-style:none;display:grid;gap:18px;margin-top:44px}
-@media (min-width:760px){.punti{grid-template-columns:repeat(3,1fr);gap:20px}}
-.punto{background:var(--surf);border:1px solid var(--line);border-radius:var(--r2);padding:28px 26px 30px;min-height:220px;display:flex;flex-direction:column}
-.punto .num{font-family:var(--mono);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--testo3)}
-.punto h3{margin:auto 0 10px;font-size:clamp(30px,3.6vw,40px)}
-.punto p{color:var(--testo2);font-size:16px}
+/* perché serve */
+.tre{list-style:none;margin-top:44px;border-top:1px solid var(--line)}
+.tre li{padding:22px 0;border-bottom:1px solid var(--line)}
+.tre .mono{display:block;margin-bottom:10px}
+.tre b{display:block;font-family:var(--serif);font-weight:400;font-size:28px;letter-spacing:-.01em;margin-bottom:4px}
+.tre p{color:var(--testo2);font-size:15px;max-width:44ch}
+@media (min-width:800px){.tre{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;border-top:0}.tre li{border-top:1px solid var(--line);border-bottom:0;padding:24px 0 0}.tre .mono{margin-bottom:28px}}
 
 /* servizi */
-.servizi .lista{display:grid;gap:20px;margin-top:48px}
-@media (min-width:900px){.servizi .lista{grid-template-columns:repeat(6,1fr)}.servizio{grid-column:span 3}.servizio.largo{grid-column:span 6}.servizio.terzo{grid-column:span 2}}
-.servizio{background:var(--surf);border:1px solid var(--line);border-radius:var(--r2);overflow:hidden;display:flex;flex-direction:column}
-.servizio .vista{background:var(--bg2);border-bottom:1px solid var(--line);min-height:260px;position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;padding:28px 28px 0}
-.servizio .testo{padding:24px 26px 30px}
-.servizio .testo h3{margin-bottom:10px}
-.servizio .testo p{color:var(--testo2);font-size:16px;max-width:46ch}
-.servizio .sotto{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--testo3);display:block;margin-bottom:12px}
-.telefoni{display:flex;gap:18px;align-items:flex-end}
-.telefoni img{width:min(46%,230px);border-radius:14px 14px 0 0;border:1px solid var(--line2);border-bottom:0;box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
-.telefoni img:nth-child(2){transform:translateY(34px)}
-.vista video,.vista .fermo{width:min(100%,360px);border-radius:14px 14px 0 0;border:1px solid var(--line2);border-bottom:0}
-.mosaico{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;max-width:420px;align-self:center;padding-bottom:28px}
-.mosaico img{border-radius:12px;aspect-ratio:3/4;object-fit:cover;width:100%}
-.calendario{width:100%;max-width:380px;align-self:center;padding-bottom:28px;font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--testo2)}
-.calendario div{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.blocchi{display:grid;gap:44px 24px;margin-top:48px}
+@media (min-width:860px){.blocchi{grid-template-columns:1fr 1fr}.blocco.grande{grid-column:1/-1}}
+.media{background:var(--surf);border-radius:var(--r2);aspect-ratio:4/5;overflow:hidden;position:relative;display:flex;align-items:flex-end;justify-content:center;padding:32px 24px 0}
+@media (min-width:860px){.media{aspect-ratio:5/4}.grande .media{aspect-ratio:21/9}}
+.blocco h3{margin:20px 2px 6px}
+.blocco p{color:var(--testo2);font-size:15.5px;max-width:48ch;margin:0 2px}
+.telefoni{display:flex;gap:16px;align-items:flex-end;width:min(100%,520px)}
+.telefoni img{width:calc(50% - 8px);border-radius:16px 16px 0 0;outline:1px solid var(--line2);box-shadow:0 30px 60px -30px rgba(0,0,0,.9)}
+.telefoni img:nth-child(2){transform:translateY(40px)}
+.media.pieno{padding:0}
+.media.pieno video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;max-width:440px;align-self:center;margin-bottom:32px}
+.strip img{border-radius:12px;aspect-ratio:3/4;object-fit:cover;width:100%;height:auto}
+.media .fermo{width:min(100%,380px);border-radius:16px 16px 0 0;outline:1px solid var(--line2)}
+.calendario{width:min(100%,400px);align-self:center;margin-bottom:32px;font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--testo2)}
+.calendario div{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
 .calendario div:last-child{border-bottom:0}
 .calendario b{font-weight:500;color:var(--testo)}
 .calendario span:last-child{color:var(--testo3)}
 
 /* come funziona */
-.passi{list-style:none;display:grid;gap:0;margin-top:40px;border-top:1px solid var(--line)}
-.passo{display:grid;grid-template-columns:72px 1fr;gap:18px;padding:30px 0;border-bottom:1px solid var(--line)}
-.passo .n{font-family:var(--mono);font-size:12.5px;letter-spacing:.18em;color:var(--testo3);padding-top:12px}
-.passo h3{margin-bottom:8px;grid-column:2}
-.passo p{color:var(--testo2);max-width:52ch;grid-column:2}
-.gratis{display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;background:var(--testo);color:var(--bg);padding:5px 10px;border-radius:999px;vertical-align:middle;margin-left:10px}
-@media (min-width:760px){.passo{grid-template-columns:120px 1fr 1fr;align-items:start}.passo h3{grid-column:2}.passo p{grid-column:3;padding-top:10px}}
+.passi{list-style:none;margin-top:40px;border-top:1px solid var(--line)}
+.passo{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:28px 0;border-bottom:1px solid var(--line)}
+.passo .n{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--testo3);padding-top:8px}
+.passo h3{grid-column:2;margin-bottom:6px}
+.passo p{grid-column:2;color:var(--testo2);max-width:52ch;font-size:15.5px}
+.gratis{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--testo);color:var(--bg);padding:5px 9px;border-radius:999px;vertical-align:middle;margin-left:8px;font-weight:400}
+@media (min-width:760px){.passo{grid-template-columns:110px 1fr 1fr}.passo p{grid-column:3;padding-top:4px}}
 
 /* partner */
-.partner-griglia{display:grid;gap:18px;margin-top:44px}
+.partner-griglia{display:grid;gap:16px;margin-top:44px}
 @media (min-width:880px){.partner-griglia{grid-template-columns:2fr 1fr}}
-.partner-carta{position:relative;border-radius:var(--r2);overflow:hidden;background:var(--surf);border:1px solid var(--line);min-height:440px;display:flex}
+.partner-carta{position:relative;border-radius:var(--r2);overflow:hidden;background:var(--surf);min-height:440px;display:flex}
 .partner-foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
-.partner-testo{position:relative;z-index:1;margin-top:auto;width:100%;padding:140px 28px 28px;background:linear-gradient(0deg,rgba(16,15,9,.97) 40%,rgba(16,15,9,0))}
+.partner-testo{position:relative;z-index:1;margin-top:auto;width:100%;padding:140px 26px 26px;background:linear-gradient(0deg,rgba(16,15,9,.97) 40%,rgba(16,15,9,0))}
 .partner-logo{width:170px;height:auto;margin-bottom:10px}
-.partner-tipo{color:var(--testo2);font-size:16px}
+.partner-tipo{color:var(--testo2);font-size:15.5px}
 .partner-lavori{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}
-.partner-lavori li{font-family:var(--mono);font-size:12px;letter-spacing:.08em;padding:8px 12px;border-radius:999px;border:1px solid var(--line2)}
-.partner-tu{flex-direction:column;justify-content:flex-end;gap:8px;padding:28px;min-height:260px;transition:background .2s ease}
+.partner-lavori li{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;padding:8px 12px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line2)}
+.partner-tu{flex-direction:column;justify-content:flex-end;gap:8px;padding:26px;min-height:260px;transition:background .2s ease}
 .partner-tu:hover{background:var(--surf2)}
-.partner-piu{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:30px;line-height:1;background:var(--testo);color:var(--bg);margin-bottom:auto}
-.partner-tu h3{font-size:30px}
-.partner-tu p{color:var(--testo2);font-size:16px}
-.partner-link{margin-top:6px;font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase}
-
-/* prezzi */
-.gruppo{margin-top:44px}
-.gruppo+.gruppo{margin-top:56px}
-.gruppo-testa{display:flex;align-items:baseline;gap:14px;margin-bottom:18px}
-.gruppo-testa h3{font-size:28px}
-.gruppo-testa span{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--testo3)}
-.carte{display:grid;gap:16px}
-@media (min-width:760px){.carte{grid-template-columns:1fr 1fr}}
-.carta{background:var(--surf);border:1px solid var(--line);border-radius:var(--r2);padding:28px 26px;position:relative;display:flex;flex-direction:column}
-.carta.top{border-color:var(--line2);background:var(--surf2)}
-.consigliato{position:absolute;top:22px;right:22px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;background:var(--testo);color:var(--bg);padding:6px 10px;border-radius:999px}
-.carta h4{font-family:var(--sans);font-weight:500;font-size:17px;color:var(--testo2)}
-.prezzo{font-family:var(--serif);font-size:clamp(46px,6vw,64px);line-height:1;margin-top:14px}
-.prezzo small{font-family:var(--sans);font-size:16px;color:var(--testo2)}
-.quando{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3);margin-top:8px}
-.carta ul{list-style:none;margin:22px 0 0;display:grid;gap:10px;color:var(--testo2);font-size:16px;padding-top:20px;border-top:1px solid var(--line)}
-.carta li{display:flex;gap:10px;align-items:flex-start}
-.carta li .i{flex:none;margin-top:3px;width:16px;height:16px}
-.carta .btn{margin-top:26px;align-self:flex-start}
-.nota{color:var(--testo3);font-size:14px;margin-top:16px}
-.serieta{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
-.serieta span{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--testo2);border:1px solid var(--line);border-radius:999px;padding:10px 14px}
-
-/* domande */
-.domande-elenco{margin-top:36px;border-top:1px solid var(--line)}
-details{border-bottom:1px solid var(--line)}
-summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;font-family:var(--serif);font-size:clamp(22px,3vw,28px);line-height:1.2}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-family:var(--serif);font-size:30px;color:var(--testo3);transition:transform .25s ease;flex:none}
-details[open] summary::after{transform:rotate(45deg)}
-details p{color:var(--testo2);padding:0 0 24px;max-width:60ch}
-
-/* contatti */
-.chiusura .wrap{display:grid;gap:40px}
-@media (min-width:900px){.chiusura .wrap{grid-template-columns:1.2fr 1fr;align-items:center}}
-.recapiti{display:grid;gap:10px}
-.recapito{display:flex;gap:16px;align-items:center;padding:18px 20px;border:1px solid var(--line);border-radius:var(--r);background:var(--surf);transition:background .2s ease}
-a.recapito:hover{background:var(--surf2)}
-.recapito .i{color:var(--testo2);flex:none}
-.recapito small{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3);margin-bottom:3px}
-.recapito b{font-weight:500}
-
-/* barra loghi e piede */
-.loghi{padding:28px 0;border-top:1px solid var(--line);overflow:hidden;position:relative}
+.partner-piu{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:30px;line-height:1;background:var(--testo);color:var(--bg);margin-bottom:auto}
+.partner-tu p{color:var(--testo2);font-size:15.5px}
+.partner-link{margin-top:6px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.loghi{padding:26px 0;border-top:1px solid var(--line);overflow:hidden;position:relative}
 .loghi::before,.loghi::after{content:"";position:absolute;top:0;bottom:0;width:14%;z-index:1;pointer-events:none}
 .loghi::before{left:0;background:linear-gradient(90deg,var(--bg),rgba(16,15,9,0))}
 .loghi::after{right:0;background:linear-gradient(-90deg,var(--bg),rgba(16,15,9,0))}
@@ -196,23 +148,60 @@ a.recapito:hover{background:var(--surf2)}
 .loghi.attivo .loghi-nastro{animation-play-state:running}
 .loghi:hover .loghi-nastro{animation-play-state:paused}
 .loghi-fila{display:flex;align-items:center;gap:64px;padding-right:64px;margin:0;list-style:none}
-.loghi-fila img{height:40px;width:auto}
-.loghi-fila .vuoto{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3);border:1px dashed var(--line2);border-radius:999px;padding:12px 16px;white-space:nowrap}
+.loghi-fila img{height:38px;width:auto}
+.loghi-fila .vuoto{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3);border:1px dashed var(--line2);border-radius:999px;padding:12px 16px;white-space:nowrap}
 @keyframes loghi{to{transform:translateX(-50%)}}
-.piede{padding:32px 0 40px;border-top:1px solid var(--line);color:var(--testo3);font-size:14px}
-.piede .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;align-items:center}
-.piede .marchio{font-size:20px;color:var(--testo)}
-.piede .marchio i{width:26px;height:26px;font-size:17px}
 
-/* entrate */
-.entra{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
-.entra.visto{opacity:1;transform:none}
+/* prezzi */
+.gruppo{margin-top:40px}
+.gruppo+.gruppo{margin-top:52px}
+.gruppo-testa{display:flex;align-items:baseline;gap:14px;margin-bottom:16px}
+.gruppo-testa h3{font-size:26px}
+.carte{display:grid;gap:14px}
+@media (min-width:760px){.carte{grid-template-columns:1fr 1fr}}
+.carta{background:var(--surf);border-radius:var(--r2);padding:26px 24px;position:relative;display:flex;flex-direction:column}
+.carta.top{background:var(--surf2);box-shadow:inset 0 0 0 1px var(--line2)}
+.consigliato{position:absolute;top:20px;right:20px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--testo);color:var(--bg);padding:6px 10px;border-radius:999px}
+.carta h4{font-weight:500;font-size:16px;color:var(--testo2)}
+.prezzo{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;font-size:clamp(46px,6vw,64px);line-height:1;margin-top:14px}
+.prezzo small{font-size:15px;color:var(--testo2);letter-spacing:0;font-weight:400}
+.quando{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--testo3);margin-top:8px}
+.carta ul{list-style:none;margin:22px 0 0;display:grid;gap:9px;color:var(--testo2);font-size:15px;padding-top:18px;border-top:1px solid var(--line)}
+.carta li{display:flex;gap:10px;align-items:flex-start}
+.carta li .i{width:15px;height:15px;margin-top:4px}
+.carta .btn{margin-top:24px;align-self:flex-start}
+.nota{color:var(--testo3);font-size:14px;margin-top:16px;max-width:60ch}
+.serieta{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
+.serieta span{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--testo2);box-shadow:inset 0 0 0 1px var(--line);border-radius:999px;padding:10px 14px}
+
+/* domande */
+.domande-elenco{margin-top:32px;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:20px 0;font-weight:500;font-size:clamp(17px,2.2vw,20px);letter-spacing:-.01em}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;font-weight:300;color:var(--testo3);transition:transform .25s ease;flex:none;line-height:1}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--testo2);padding:0 0 22px;max-width:60ch;font-size:15.5px}
+
+/* contatti */
+.chiusura .wrap{display:grid;gap:36px}
+@media (min-width:900px){.chiusura .wrap{grid-template-columns:1.2fr 1fr;align-items:center}}
+.recapiti{display:grid;gap:8px}
+.recapito{display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:var(--r);background:var(--surf);transition:background .2s ease}
+a.recapito:hover{background:var(--surf2)}
+.recapito .i{color:var(--testo2)}
+.recapito small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--testo3);margin-bottom:2px}
+.recapito b{font-weight:500;font-size:15.5px}
+
+/* piede */
+.piede{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--testo3);font-size:13.5px}
+.piede .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;align-items:center}
+.piede .marchio{color:var(--testo)}
+
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .entra{opacity:1;transform:none;transition:none}
+  .frase,.btn,summary::after,.recapito,.partner-tu{transition:none}
   .loghi-nastro{animation:none}
-  .frase{transition:none}
-  .btn,summary::after,.recapito,.partner-tu{transition:none}
 }
 </style>
 <script type="application/ld+json">
@@ -241,19 +230,14 @@ a.recapito:hover{background:var(--surf2)}
 <main id="contenuto">
   <section class="copertina" id="inizio" aria-labelledby="titolo">
     <div class="wrap">
-      <p class="mono">Siti · Google · Social · Video — Montecatini Terme</p>
+      <p class="mono">Siti · Google · Social · Video</p>
       <h1 id="titolo">Fatti trovare.<br>Fatti <em>scegliere</em>.</h1>
       <p class="intro">Sito su misura, scheda Google, Instagram, TikTok e video per bar, ristoranti, saloni e negozi della Valdinievole. Vedi il tuo sito prima di pagare un euro.</p>
       <div class="azioni">
         <a class="btn btn-pieno" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20un%27anteprima%20gratis%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Chiedi l’anteprima gratis</a>
-        <a class="btn btn-linea" href="#servizi">Cosa facciamo</a>
+        <a class="link" href="#servizi">Cosa facciamo</a>
       </div>
-      <ul class="fiducia">
-        <li>Prezzi scritti prima</li>
-        <li>Paghi solo se ti piace</li>
-        <li>Risposta su WhatsApp</li>
-      </ul>
-      <p class="giu" aria-hidden="true">Scorri</p>
+      <p class="fiducia">Prezzi scritti prima · Paghi solo se ti piace · Risposta su WhatsApp</p>
     </div>
   </section>
 
@@ -261,9 +245,9 @@ a.recapito:hover{background:var(--surf2)}
     <div class="scena-stage">
       <div class="scena-cols" id="scena-cols" aria-hidden="true"></div>
       <div class="scena-testo">
-        <p class="frase visibile" data-i="0">Un locale di <em>Montecatini</em>.</p>
-        <p class="frase" data-i="1">Sito, Google, social e <em>video</em>.</p>
-        <p class="frase" data-i="2">Da un solo <em>studio</em>.<small>Jué Club · cliente dal 2026</small></p>
+        <p class="frase visibile">Un locale di <em>Montecatini</em>.</p>
+        <p class="frase">Sito, Google, social e <em>video</em>.</p>
+        <p class="frase">Da un solo <em>studio</em>.<small>Jué Club · Montecatini Terme</small></p>
       </div>
     </div>
   </section>
@@ -273,10 +257,10 @@ a.recapito:hover{background:var(--surf2)}
       <span class="etichetta">Perché serve</span>
       <h2 id="t-perche">I clienti decidono dal telefono, <em>in pochi secondi</em>.</h2>
       <p class="intro">Cercano su Google, aprono il sito, guardano Instagram. Noi sistemiamo tutti e tre, così la scelta cade su di te.</p>
-      <ol class="punti">
-        <li class="punto entra"><span class="num">01 · Google</span><h3>Trovato.</h3><p>Su Google e su Maps, con foto belle, orari giusti e informazioni complete.</p></li>
-        <li class="punto entra"><span class="num">02 · Sito</span><h3>Scelto.</h3><p>Dal sito: servizi, prezzi, foto vere e un tasto per chiamarti o scriverti.</p></li>
-        <li class="punto entra"><span class="num">03 · Social</span><h3>Ricordato.</h3><p>Su Instagram e TikTok, con un profilo in ordine e contenuti che tengono vivo il ricordo.</p></li>
+      <ol class="tre">
+        <li><span class="mono">01 · Google</span><div><b>Trovato</b><p>Su Google e su Maps, con foto belle, orari giusti e informazioni complete.</p></div></li>
+        <li><span class="mono">02 · Sito</span><div><b>Scelto</b><p>Dal sito: servizi, prezzi, foto vere e un tasto per chiamarti o scriverti.</p></div></li>
+        <li><span class="mono">03 · Social</span><div><b>Ricordato</b><p>Su Instagram e TikTok, con un profilo in ordine e contenuti che tengono vivo il ricordo.</p></div></li>
       </ol>
     </div>
   </section>
@@ -285,26 +269,32 @@ a.recapito:hover{background:var(--surf2)}
     <div class="wrap">
       <span class="etichetta">Servizi</span>
       <h2 id="t-servizi">Tutto quello che serve per farti <em>scegliere</em>.</h2>
-      <div class="lista">
-        <article class="servizio largo entra">
-          <div class="vista"><div class="telefoni"><img src="img/sito-1.jpg" alt="La copertina di jueclub.it sul telefono" width="520" height="1126" loading="lazy"><img src="img/sito-4.jpg" alt="Il menù di jueclub.it sul telefono" width="520" height="1126" loading="lazy"></div></div>
-          <div class="testo"><span class="sotto">Sito su misura</span><h3>Fatto per il telefono, sul tuo dominio.</h3><p>I clienti ti cercano dal telefono: il sito nasce lì. Veloce e chiaro, con orari, menù o listino, come arrivare e un tasto per chiamarti. Senza cookie e senza pubblicità.</p></div>
+      <p class="intro">Quello che vedi qui sotto l’abbiamo fatto per il Jué Club di Montecatini Terme: sito, video, social e scheda Google.</p>
+      <div class="blocchi">
+        <article class="blocco grande">
+          <div class="media"><div class="telefoni"><img src="img/sito-1.jpg" alt="La copertina di jueclub.it sul telefono" width="520" height="1126" loading="lazy"><img src="img/sito-4.jpg" alt="Il menù di jueclub.it sul telefono" width="520" height="1126" loading="lazy"></div></div>
+          <h3>Sito su misura, fatto per il telefono.</h3>
+          <p>Veloce e chiaro, sul tuo dominio: orari, menù o listino, come arrivare e un tasto per chiamarti. Senza cookie e senza pubblicità.</p>
         </article>
-        <article class="servizio entra">
-          <div class="vista"><video src="video/neon.mp4" muted loop playsinline preload="none" poster="img/reel-1-2.jpg" aria-label="Il neon blu del reel Martedì Blu"></video></div>
-          <div class="testo"><span class="sotto">Video e reel</span><h3>Il tuo locale in venti secondi.</h3><p>Riprese vere, scene create con l’intelligenza artificiale, testi e loghi animati. Verticali, per Reel, TikTok e storie.</p></div>
+        <article class="blocco">
+          <div class="media pieno"><video src="video/neon.mp4" muted loop playsinline preload="none" poster="img/reel-1-2.jpg" aria-label="Il neon blu del reel Martedì Blu"></video></div>
+          <h3>Video e reel.</h3>
+          <p>Riprese vere, scene create con l’intelligenza artificiale, testi e loghi animati. Verticali, per Reel, TikTok e storie.</p>
         </article>
-        <article class="servizio entra">
-          <div class="vista"><div class="mosaico"><img src="img/reel-9-0.jpg" alt="" loading="lazy"><img src="img/locandina.jpg" alt="La locandina della serata Martedì Blu" loading="lazy"><img src="img/reel-23-0.jpg" alt="" loading="lazy"></div></div>
-          <div class="testo"><span class="sotto">Instagram e TikTok</span><h3>Un profilo che fa entrare.</h3><p>Foto, descrizione, storie in evidenza e link in ordine. Locandine e post per le serate e le novità.</p></div>
+        <article class="blocco">
+          <div class="media"><div class="strip"><img src="img/reel-9-0.jpg" alt="" loading="lazy"><img src="img/locandina.jpg" alt="La locandina della serata Martedì Blu" loading="lazy"><img src="img/reel-23-0.jpg" alt="" loading="lazy"></div></div>
+          <h3>Instagram e TikTok.</h3>
+          <p>Profilo in ordine, storie in evidenza, link giusti. Locandine e post per le serate e le novità.</p>
         </article>
-        <article class="servizio entra">
-          <div class="vista"><img class="fermo" src="img/google.jpg" alt="La scheda Google del Jué Club su Maps" width="520" height="520" loading="lazy"></div>
-          <div class="testo"><span class="sotto">Scheda Google</span><h3>Su Google e su Maps.</h3><p>Quando cercano un bar o un parrucchiere in zona, la tua scheda è la prima cosa che vedono: foto, orari, recensioni e il tasto Chiama.</p></div>
+        <article class="blocco">
+          <div class="media"><img class="fermo" src="img/google.jpg" alt="La scheda Google del Jué Club su Maps" width="750" height="578" loading="lazy"></div>
+          <h3>Scheda Google.</h3>
+          <p>Quando cercano un bar o un parrucchiere in zona, la tua scheda è la prima cosa che vedono: foto, orari, recensioni e il tasto Chiama.</p>
         </article>
-        <article class="servizio entra">
-          <div class="vista"><div class="calendario"><div><b>Ven 16</b><span>Reel della serata</span><span>Instagram</span></div><div><b>Sab 17</b><span>Locandina</span><span>Post</span></div><div><b>Dom 18</b><span>Video da 6 s</span><span>Storia</span></div><div><b>Lun 19</b><span>«Domani sera»</span><span>Storia</span></div><div><b>Mar 20</b><span>Dal vivo</span><span>Storie</span></div></div></div>
-          <div class="testo"><span class="sotto">Gestione social</span><h3>Ogni mese, ci pensiamo noi.</h3><p>Post, storie e grafiche preparati e pubblicati. Per una serata o una novità, basta scriverci.</p></div>
+        <article class="blocco">
+          <div class="media"><div class="calendario"><div><b>Ven 16</b><span>Reel della serata</span><span>Instagram</span></div><div><b>Sab 17</b><span>Locandina</span><span>Post</span></div><div><b>Dom 18</b><span>Video da 6 secondi</span><span>Storia</span></div><div><b>Lun 19</b><span>«Domani sera»</span><span>Storia</span></div><div><b>Mar 20</b><span>Dal vivo</span><span>Storie</span></div></div></div>
+          <h3>Gestione social, ogni mese.</h3>
+          <p>Post, storie e grafiche preparati e pubblicati da noi. Per una serata o una novità, basta scriverci.</p>
         </article>
       </div>
     </div>
@@ -315,9 +305,9 @@ a.recapito:hover{background:var(--surf2)}
       <span class="etichetta">Come funziona</span>
       <h2 id="t-come">Prima lo vedi. <em>Poi decidi</em>.</h2>
       <ol class="passi">
-        <li class="passo entra"><span class="n">01</span><h3>Ci scrivi</h3><p>Su WhatsApp o per telefono. Ci racconti la tua attività in due minuti.</p></li>
-        <li class="passo entra"><span class="n">02</span><h3>Ti prepariamo l’anteprima <span class="gratis">Gratis</span></h3><p>Con foto e informazioni vere della tua attività. Ti arriva un link da aprire sul telefono.</p></li>
-        <li class="passo entra"><span class="n">03</span><h3>Se ti piace, va online</h3><p>Sul tuo dominio, insieme a Google e ai social. Da lì in poi ti trovano.</p></li>
+        <li class="passo"><span class="n">01</span><h3>Ci scrivi</h3><p>Su WhatsApp o per telefono. Ci racconti la tua attività in due minuti.</p></li>
+        <li class="passo"><span class="n">02</span><h3>Ti prepariamo l’anteprima <span class="gratis">Gratis</span></h3><p>Con foto e informazioni vere della tua attività. Ti arriva un link da aprire sul telefono.</p></li>
+        <li class="passo"><span class="n">03</span><h3>Se ti piace, va online</h3><p>Sul tuo dominio, insieme a Google e ai social. Da lì in poi ti trovano.</p></li>
       </ol>
     </div>
   </section>
@@ -328,7 +318,7 @@ a.recapito:hover{background:var(--surf2)}
       <h2 id="t-partner">Chi ha scelto <em>Veniello Studio</em>.</h2>
       <p class="intro">Le attività della Valdinievole con cui lavoriamo ogni mese.</p>
       <div class="partner-griglia">
-        <article class="partner-carta entra">
+        <article class="partner-carta">
           <img class="partner-foto" src="img/jue-parete.jpg" alt="La parete di fiori del Jué Club" width="600" height="600" loading="lazy">
           <div class="partner-testo">
             <img class="partner-logo" src="img/jue-logo.png" alt="Jué Club" width="480" height="184" loading="lazy">
@@ -337,7 +327,7 @@ a.recapito:hover{background:var(--surf2)}
             <a class="btn btn-linea" href="https://jueclub.it" target="_blank" rel="noopener">Visita jueclub.it<svg class="i" aria-hidden="true"><use href="#i-link"/></svg></a>
           </div>
         </article>
-        <a class="partner-carta partner-tu entra" href="#contatti">
+        <a class="partner-carta partner-tu" href="#contatti">
           <span class="partner-piu" aria-hidden="true">+</span>
           <h3>La tua attività, qui.</h3>
           <p>Ti prepariamo l’anteprima gratis: se ti piace, entri anche tu.</p>
@@ -351,8 +341,8 @@ a.recapito:hover{background:var(--surf2)}
     <div class="wrap">
       <span class="etichetta">Prezzi</span>
       <h2 id="t-prezzi">Prezzi chiari, <em>fin da subito</em>.</h2>
-      <div class="gruppo entra">
-        <div class="gruppo-testa"><h3>Una volta sola</h3><span>per partire</span></div>
+      <div class="gruppo">
+        <div class="gruppo-testa"><h3>Una volta sola</h3><span class="mono">per partire</span></div>
         <div class="carte">
           <article class="carta top">
             <span class="consigliato">Consigliato</span>
@@ -379,8 +369,8 @@ a.recapito:hover{background:var(--surf2)}
           </article>
         </div>
       </div>
-      <div class="gruppo entra">
-        <div class="gruppo-testa"><h3>Ogni mese</h3><span>gestione social</span></div>
+      <div class="gruppo">
+        <div class="gruppo-testa"><h3>Ogni mese</h3><span class="mono">gestione social</span></div>
         <div class="carte">
           <article class="carta">
             <h4>Base</h4>
@@ -404,7 +394,7 @@ a.recapito:hover{background:var(--surf2)}
         </div>
         <p class="nota">Si disdice quando vuoi. Prezzi finali, senza sorprese. Il dominio è l’unica spesa a parte: circa 10-15 € l’anno, intestato a te.</p>
       </div>
-      <div class="serieta entra"><span>Prezzi scritti prima</span><span>Anteprima senza impegno</span><span>Il dominio è tuo</span><span>Solo foto vere</span></div>
+      <div class="serieta"><span>Prezzi scritti prima</span><span>Anteprima senza impegno</span><span>Il dominio è tuo</span><span>Solo foto vere</span></div>
     </div>
   </section>
 
@@ -459,13 +449,9 @@ var testata=document.getElementById('testata');
 var piena=function(){testata.classList.toggle('piena',scrollY>30)};piena();addEventListener('scroll',piena,{passive:true});
 document.getElementById('anno').textContent=new Date().getFullYear();
 
-// Elementi che entrano quando compaiono
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visto');io.unobserve(e.target)}})},{threshold:.12});
-document.querySelectorAll('.entra').forEach(function(el){io.observe(el)});
-
-// Video dei servizi: partono solo quando si vedono
+// Video dei servizi: parte solo quando si vede
 var vio=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){v.play().catch(function(){})}else{v.pause()}})},{threshold:.3});
-document.querySelectorAll('.servizio video').forEach(function(v){vio.observe(v)});
+document.querySelectorAll('.media video').forEach(function(v){vio.observe(v)});
 
 // Barra dei partner: scorre solo quando è sullo schermo
 var loghi=[{src:'img/jue-logo.png',alt:'Jué Club',href:'https://jueclub.it'}];
@@ -505,8 +491,8 @@ addEventListener('DOMContentLoaded',function(){
     });
     ScrollTrigger.create({trigger:scena,start:'top top',end:'bottom bottom',onUpdate:function(self){mostraFrase(self.progress)}});
   }
-  var pronte=0,tot=document.querySelectorAll('.col img').length;
-  document.querySelectorAll('.col img').forEach(function(im){im.loading='eager';var ok=function(){if(++pronte===tot)imposta()};im.complete?ok():im.addEventListener('load',ok,{once:true}),im.addEventListener('error',ok,{once:true})});
+  var pronte=0,imgs=document.querySelectorAll('.col img'),tot=imgs.length;
+  imgs.forEach(function(im){var ok=function(){if(++pronte===tot)imposta()};if(im.complete)ok();else{im.addEventListener('load',ok,{once:true});im.addEventListener('error',ok,{once:true})}});
   var t;addEventListener('resize',function(){clearTimeout(t);t=setTimeout(imposta,200)});
 });
 </script>
