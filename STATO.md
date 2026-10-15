@@ -62,3 +62,5 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-15 — Pubblicata l'anteprima di Atelier Misspettino (Ponte all'Abate (Pescia)), stato "in attesa": da mandare al titolare. Issue #17.
 - 2026-10-15 — Modificata l'anteprima di Atelier Misspettino (Ponte all'Abate): sistemato l'arcobaleno dietro la foto di copertina. Issue #17.
 - 2026-10-16 — Pubblicata l'anteprima di Studio Bernardini & Partners (Altopascio), stato "in attesa": da mandare al titolare. Issue #18.
+
+- `veniello-v2-a3cb11` — Veniello Studio, bozza del nuovo sito (stile scuro, scena che scorre) — 16/10/2026
