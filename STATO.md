@@ -54,3 +54,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-14 — Pubblicata l'anteprima di Lady Bikers Barber Shop (Bellinzona), stato "in attesa": da mandare al titolare. Issue #15.
 - 2026-10-14 — Modificata l'anteprima di Lady Bikers Barber Shop (Bellinzona): grafica più moderna, colori più accesi, nuovi caratteri, 3 foto in più. Issue #15.
 - 2026-10-15 — Pubblicata l'anteprima di Silvia Istituto di Estetica (Larciano), stato "in attesa": da mandare al titolare. Issue #16.
+- 2026-10-15 — Modificata l'anteprima di Silvia Istituto di Estetica (Larciano): sistemata l'immagine di anteprima per WhatsApp. Issue #16.
