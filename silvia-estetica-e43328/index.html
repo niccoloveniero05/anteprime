@@ -132,8 +132,8 @@ section{padding:104px 0;position:relative}
 /* Silvia */
 .silvia .wrap{display:grid;gap:46px;align-items:center}
 .ritratto{position:relative;width:min(300px,72%);margin-inline:auto}
-.ritratto .arco{aspect-ratio:3/4;border-radius:999px 999px 26px 26px;overflow:hidden;background:var(--sabbia);box-shadow:0 40px 80px -50px rgba(59,34,40,.7)}
-.ritratto .arco img{width:100%;height:100%;object-fit:cover;object-position:30% 30%;filter:saturate(.95) contrast(1.02)}
+.ritratto .arco{aspect-ratio:3/4;border-radius:999px 999px 26px 26px;overflow:hidden;background:radial-gradient(120% 90% at 30% 20%,#C9566F 0%,var(--rosa) 45%,#7E2A40 100%);display:grid;place-items:center;box-shadow:0 40px 80px -50px rgba(59,34,40,.7)}
+.ritratto .arco img{height:78%;width:auto;opacity:.95}
 .ritratto .cornice{position:absolute;inset:-14px;border:1px solid var(--oro);border-radius:999px 999px 34px 34px;opacity:.55}
 .ritratto .firma{position:absolute;left:-12px;bottom:26px;background:var(--crema);border-radius:999px;padding:10px 18px;font-family:var(--serif);font-style:italic;font-size:22px;color:var(--prugna);box-shadow:0 18px 36px -20px rgba(59,34,40,.5)}
 .silvia p{color:var(--muto);font-weight:300;max-width:52ch;margin-bottom:14px;font-size:17.5px}
@@ -325,7 +325,7 @@ footer a{color:var(--cipria)}
 
 <section class="silvia" id="silvia">
   <div class="wrap">
-    <div class="ritratto compare"><div class="cornice"></div><div class="arco"><img src="img/silvia.jpg" alt="Silvia, titolare dell'istituto" loading="lazy"></div><span class="firma">Silvia</span></div>
+    <div class="ritratto compare"><div class="cornice"></div><div class="arco"><img src="img/figura-crema.svg" alt="" aria-hidden="true"></div><span class="firma">Silvia</span></div>
     <div class="compare">
       <span class="occhiello">Chi ti accoglie</span>
       <h2>Ci pensa <em>Silvia</em>.</h2>
