@@ -12,10 +12,10 @@
 <link rel="stylesheet" href="fonts/fonts.css">
 <style>
 :root{
-  --bg:#100F09; --bg2:#14130D; --surf:#1A1913; --surf2:#22211A;
+  --bg:#100F09; --bg2:#14130D; --surf:#1A1913; --surf2:#22211A; --surf3:#2A2922;
   --line:rgba(245,244,239,.1); --line2:rgba(245,244,239,.2);
   --testo:#F5F4EF; --testo2:rgba(245,244,239,.64); --testo3:rgba(245,244,239,.4);
-  --r:16px; --r2:24px; --lato:20px; --max:1180px;
+  --r:16px; --r2:24px; --lato:20px; --max:1180px; --testata:64px;
   --sans:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"Geist Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
   --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
@@ -35,7 +35,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .mono,.etichetta{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3)}
 .etichetta{display:block;margin-bottom:16px}
 h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em}
-h1 em,h2 em,.frase em{font-style:italic}
+h1 em,h2 em,.frase em,.dichiara em{font-style:italic}
 h1{font-size:clamp(46px,9.4vw,100px);line-height:1}
 h2{font-size:clamp(36px,5.8vw,62px);line-height:1.04;max-width:16ch}
 h3{font-size:clamp(26px,3vw,32px);line-height:1.12}
@@ -56,7 +56,7 @@ section{padding:clamp(72px,10vw,128px) 0;position:relative}
 /* testata */
 .testata{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .25s ease,box-shadow .25s ease}
 .testata.piena{background:rgba(16,15,9,.96);box-shadow:0 1px 0 var(--line)}
-.testata .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.testata .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:var(--testata)}
 .marchio{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:17px;letter-spacing:-.02em}
 .marchio i{width:26px;height:26px;border-radius:50%;background:var(--testo);color:var(--bg);display:grid;place-items:center;font-style:normal;font-weight:700;font-size:14px;line-height:1}
 .testata nav{display:none;gap:26px;font-size:14px;color:var(--testo2)}
@@ -72,8 +72,10 @@ section{padding:clamp(72px,10vw,128px) 0;position:relative}
 .azioni{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:32px;align-items:center}
 .fiducia{margin-top:40px;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--testo3);max-width:30ch;line-height:1.9}
 @media (min-width:700px){.fiducia{max-width:none}}
+.scorri{margin-top:44px;display:flex;flex-direction:column;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--testo3)}
+.scorri i{display:block;width:1px;height:40px;background:linear-gradient(var(--testo3),transparent)}
 
-/* scena bloccata allo scorrimento */
+/* scena bloccata allo scorrimento: il carosello dei lavori */
 .scena{height:340svh;position:relative;padding:0}
 .scena-stage{position:sticky;top:0;height:100svh;overflow:hidden;background:var(--bg)}
 .scena-cols{position:absolute;inset:0;display:flex;justify-content:center;gap:12px}
@@ -87,43 +89,69 @@ section{padding:clamp(72px,10vw,128px) 0;position:relative}
 .frase small{display:block;width:max-content;max-width:90vw;margin:16px auto 0;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3);white-space:nowrap;font-weight:400}
 .frase.visibile{opacity:1;transform:none}
 
-/* perché serve */
-.tre{list-style:none;margin-top:44px;border-top:1px solid var(--line)}
-.tre li{padding:22px 0;border-bottom:1px solid var(--line)}
-.tre .mono{display:block;margin-bottom:10px}
-.tre b{display:block;font-family:var(--serif);font-weight:400;font-size:28px;letter-spacing:-.01em;margin-bottom:4px}
-.tre p{color:var(--testo2);font-size:15px;max-width:44ch}
-@media (min-width:800px){.tre{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;border-top:0}.tre li{border-top:1px solid var(--line);border-bottom:0;padding:24px 0 0}.tre .mono{margin-bottom:28px}}
+/* dichiarazione: le parole si accendono scorrendo */
+.dichiara{padding-bottom:0}
+.dichiara p{font-family:var(--serif);font-size:clamp(34px,7.4vw,80px);line-height:1.04;letter-spacing:-.01em;max-width:17ch}
+.dichiara .w{display:inline-block;opacity:.16;will-change:opacity}
+.dichiara .sotto{margin-top:26px;font-family:var(--sans);font-size:clamp(16px,1.8vw,19px);color:var(--testo2);max-width:46ch;line-height:1.6}
 
-/* servizi */
-.blocchi{display:grid;gap:44px 24px;margin-top:48px}
-@media (min-width:860px){.blocchi{grid-template-columns:1fr 1fr}.blocco.grande{grid-column:1/-1}}
-.media{background:var(--surf);border-radius:var(--r2);aspect-ratio:4/5;overflow:hidden;position:relative;display:flex;align-items:flex-end;justify-content:center;padding:32px 24px 0}
-@media (min-width:860px){.media{aspect-ratio:5/4}.grande .media{aspect-ratio:21/9}}
-.blocco h3{margin:20px 2px 6px}
-.blocco p{color:var(--testo2);font-size:15.5px;max-width:48ch;margin:0 2px}
-.telefoni{display:flex;gap:16px;align-items:flex-end;width:min(100%,520px)}
-.telefoni img{width:calc(50% - 8px);border-radius:16px 16px 0 0;outline:1px solid var(--line2);box-shadow:0 30px 60px -30px rgba(0,0,0,.9)}
-.telefoni img:nth-child(2){transform:translateY(40px)}
+/* fasi: la parola cambia e il telefono mostra Google, il sito, i social */
+.fasi{height:300svh;position:relative;padding:0}
+.fasi-stage{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;gap:24px;padding:calc(var(--testata) + 16px) var(--lato) 28px;overflow:hidden}
+.fasi-testo{position:relative;text-align:center;min-height:118px}
+.fase-t{position:absolute;inset:0;opacity:0;transform:translateY(8px);transition:opacity .4s ease,transform .4s ease}
+.fase-t.visibile{opacity:1;transform:none}
+.fase-t .mono{display:block;margin-bottom:8px}
+.fase-t b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(44px,11vw,104px);line-height:1;letter-spacing:-.01em}
+.fase-t p{color:var(--testo2);font-size:15px;max-width:30ch;margin:8px auto 0;line-height:1.5}
+.telefono{position:relative;width:min(58vw,260px);aspect-ratio:9/19;margin:0 auto;border-radius:36px;background:#000;box-shadow:0 0 0 2px #2b2a23,0 0 0 7px #121108,0 40px 80px -30px rgba(0,0,0,.9);overflow:hidden;flex:none}
+@media (max-height:720px){.telefono{width:min(48vw,210px)}}
+.telefono .tacca{position:absolute;top:12px;left:50%;transform:translateX(-50%);width:32%;height:20px;border-radius:999px;background:#000;z-index:3}
+.schermo{position:absolute;inset:8px;border-radius:29px;overflow:hidden;background:var(--surf)}
+.fase-s{position:absolute;inset:0;opacity:0;transition:opacity .45s ease}
+.fase-s.visibile{opacity:1}
+.fase-s.google{background:#fff;display:flex;align-items:center}
+.fase-s.google img{width:100%;height:auto}
+.fase-s.sito img{width:100%;height:auto;will-change:transform}
+.fase-s.social img{width:100%;height:100%;object-fit:cover}
+@media (min-width:900px){.fasi-stage{flex-direction:row;align-items:center;justify-content:center;gap:96px}.fasi-testo{text-align:left;width:460px;min-height:240px}.fase-t p{margin-left:0;font-size:17px}.telefono{margin:0;width:300px}}
+
+/* pila: i servizi si impilano scorrendo */
+.pila{display:grid;gap:14px;margin-top:40px}
+.carta-s{position:sticky;top:calc(var(--testata) + 12px + var(--i)*8px);background:var(--surf);border-radius:var(--r2);overflow:hidden;min-height:min(72svh,640px);display:flex;flex-direction:column;box-shadow:0 -12px 40px rgba(0,0,0,.45);transform-origin:50% 0;will-change:transform}
+.carta-s:nth-child(even){background:var(--surf2)}
+.carta-s .media{flex:1;min-height:220px;position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;padding:28px 24px 0;background:var(--bg2)}
+.carta-s .testo{padding:20px 24px 26px}
+.carta-s .testo .mono{display:block;margin-bottom:8px}
+.carta-s .testo p{color:var(--testo2);font-size:15.5px;max-width:48ch;margin-top:6px}
+.telefoni{display:flex;gap:14px;align-items:flex-end;width:min(100%,460px)}
+.telefoni img{width:calc(50% - 7px);border-radius:16px 16px 0 0;outline:1px solid var(--line2);box-shadow:0 30px 60px -30px rgba(0,0,0,.9)}
+.telefoni img:nth-child(2){transform:translateY(36px)}
 .media.pieno{padding:0}
 .media.pieno video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;max-width:440px;align-self:center;margin-bottom:32px}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;max-width:440px;align-self:center;margin-bottom:28px}
 .strip img{border-radius:12px;aspect-ratio:3/4;object-fit:cover;width:100%;height:auto}
-.media .fermo{width:min(100%,380px);border-radius:16px 16px 0 0;outline:1px solid var(--line2)}
-.calendario{width:min(100%,400px);align-self:center;margin-bottom:32px;font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--testo2)}
+.media .fermo{width:min(100%,360px);border-radius:16px 16px 0 0;outline:1px solid var(--line2)}
+.calendario{width:min(100%,400px);align-self:center;margin-bottom:28px;font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--testo2)}
 .calendario div{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
 .calendario div:last-child{border-bottom:0}
 .calendario b{font-weight:500;color:var(--testo)}
 .calendario span:last-child{color:var(--testo3)}
+@media (min-width:900px){.carta-s{flex-direction:row;min-height:min(70vh,620px)}.carta-s .media{flex:1.25}.carta-s .testo{flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding:36px 40px}.carta-s .testo p{font-size:17px}}
 
-/* come funziona */
-.passi{list-style:none;margin-top:40px;border-top:1px solid var(--line)}
-.passo{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:28px 0;border-bottom:1px solid var(--line)}
-.passo .n{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--testo3);padding-top:8px}
-.passo h3{grid-column:2;margin-bottom:6px}
-.passo p{grid-column:2;color:var(--testo2);max-width:52ch;font-size:15.5px}
+/* binario: i tre passi scorrono di lato */
+.binario{height:250svh;position:relative;padding:0}
+.binario-stage{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding:calc(var(--testata) + 16px) 0 32px}
+.binario-testa{padding:0 var(--lato);margin-bottom:26px}
+.vagoni{display:flex;gap:12px;padding:0 var(--lato);will-change:transform}
+.vagone{flex:none;width:min(76vw,400px);background:var(--surf);border-radius:var(--r2);padding:24px 22px;min-height:min(46svh,380px);display:flex;flex-direction:column}
+.vagone .n{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--testo3);margin-bottom:auto}
+.vagone h3{margin-top:56px}
+.vagone p{color:var(--testo2);font-size:15.5px;margin-top:8px}
 .gratis{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--testo);color:var(--bg);padding:5px 9px;border-radius:999px;vertical-align:middle;margin-left:8px;font-weight:400}
-@media (min-width:760px){.passo{grid-template-columns:110px 1fr 1fr}.passo p{grid-column:3;padding-top:4px}}
+.progresso{height:2px;background:var(--line);margin:26px var(--lato) 0;position:relative;overflow:hidden}
+.progresso i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--testo)}
+@media (min-width:900px){.binario{height:auto;padding:clamp(72px,10vw,128px) 0}.binario-stage{position:static;height:auto;padding:0;overflow:visible}.binario-testa,.vagoni,.progresso{max-width:var(--max);margin-left:auto;margin-right:auto}.vagoni{padding:0 var(--lato);gap:20px}.vagone{width:calc((100% - 40px)/3);min-height:360px}.progresso{display:none}}
 
 /* partner */
 .partner-griglia{display:grid;gap:16px;margin-top:44px}
@@ -164,7 +192,7 @@ section{padding:clamp(72px,10vw,128px) 0;position:relative}
 .consigliato{position:absolute;top:20px;right:20px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--testo);color:var(--bg);padding:6px 10px;border-radius:999px}
 .carta h4{font-weight:500;font-size:16px;color:var(--testo2)}
 .prezzo{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;font-size:clamp(46px,6vw,64px);line-height:1;margin-top:14px}
-.prezzo small{font-size:15px;color:var(--testo2);letter-spacing:0;font-weight:400}
+.prezzo small{font-family:var(--sans);font-size:15px;color:var(--testo2);letter-spacing:0}
 .quando{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--testo3);margin-top:8px}
 .carta ul{list-style:none;margin:22px 0 0;display:grid;gap:9px;color:var(--testo2);font-size:15px;padding-top:18px;border-top:1px solid var(--line)}
 .carta li{display:flex;gap:10px;align-items:flex-start}
@@ -198,9 +226,19 @@ a.recapito:hover{background:var(--surf2)}
 .piede .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;align-items:center}
 .piede .marchio{color:var(--testo)}
 
+/* senza animazioni: tutto fermo e leggibile */
+html.fermo .scena,html.fermo .fasi,html.fermo .binario{height:auto}
+html.fermo .scena-stage,html.fermo .fasi-stage,html.fermo .binario-stage{position:static;height:auto}
+html.fermo .scena-stage{height:100svh}
+html.fermo .fasi-stage{padding-top:0}
+html.fermo .vagoni{flex-wrap:wrap}
+html.fermo .vagone{width:100%}
+html.fermo .progresso{display:none}
+html.fermo .dichiara .w{opacity:1}
+html.fermo .carta-s{position:relative;top:auto}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .frase,.btn,summary::after,.recapito,.partner-tu{transition:none}
+  .frase,.fase-t,.fase-s,.btn,summary::after,.recapito,.partner-tu{transition:none}
   .loghi-nastro{animation:none}
 }
 </style>
@@ -238,6 +276,7 @@ a.recapito:hover{background:var(--surf2)}
         <a class="link" href="#servizi">Cosa facciamo</a>
       </div>
       <p class="fiducia">Prezzi scritti prima · Paghi solo se ti piace · Risposta su WhatsApp</p>
+      <p class="scorri" aria-hidden="true">Scorri<i></i></p>
     </div>
   </section>
 
@@ -252,16 +291,29 @@ a.recapito:hover{background:var(--surf2)}
     </div>
   </section>
 
-  <section class="perche" aria-labelledby="t-perche">
+  <section class="dichiara" aria-label="Perché serve">
     <div class="wrap">
       <span class="etichetta">Perché serve</span>
-      <h2 id="t-perche">I clienti decidono dal telefono, <em>in pochi secondi</em>.</h2>
-      <p class="intro">Cercano su Google, aprono il sito, guardano Instagram. Noi sistemiamo tutti e tre, così la scelta cade su di te.</p>
-      <ol class="tre">
-        <li><span class="mono">01 · Google</span><div><b>Trovato</b><p>Su Google e su Maps, con foto belle, orari giusti e informazioni complete.</p></div></li>
-        <li><span class="mono">02 · Sito</span><div><b>Scelto</b><p>Dal sito: servizi, prezzi, foto vere e un tasto per chiamarti o scriverti.</p></div></li>
-        <li><span class="mono">03 · Social</span><div><b>Ricordato</b><p>Su Instagram e TikTok, con un profilo in ordine e contenuti che tengono vivo il ricordo.</p></div></li>
-      </ol>
+      <p id="dichiara">I clienti decidono dal telefono, <em>in pochi secondi</em>. Cercano su Google, aprono il sito, guardano Instagram.</p>
+      <p class="sotto">Noi sistemiamo tutti e tre, così la scelta cade su di te.</p>
+    </div>
+  </section>
+
+  <section class="fasi" id="fasi" aria-label="Trovato, scelto, ricordato">
+    <div class="fasi-stage">
+      <div class="fasi-testo">
+        <div class="fase-t visibile"><span class="mono">01 · Google</span><b>Trovato.</b><p>Su Google e su Maps, con foto belle, orari giusti e il tasto Chiama.</p></div>
+        <div class="fase-t"><span class="mono">02 · Sito</span><b>Scelto.</b><p>Dal sito: menù, prezzi, foto vere e un tasto per prenotare.</p></div>
+        <div class="fase-t"><span class="mono">03 · Social</span><b>Ricordato.</b><p>Su Instagram e TikTok, con reel e locandine che tengono vivo il ricordo.</p></div>
+      </div>
+      <div class="telefono" aria-hidden="true">
+        <i class="tacca"></i>
+        <div class="schermo">
+          <div class="fase-s google visibile"><img src="img/google.jpg" alt="" width="750" height="578"></div>
+          <div class="fase-s sito"><img id="sito-lungo" src="img/sito-lungo.jpg" alt="" width="420" height="3400"></div>
+          <div class="fase-s social"><img src="img/reel-9-0.jpg" alt="" width="600" height="1067"></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -269,46 +321,44 @@ a.recapito:hover{background:var(--surf2)}
     <div class="wrap">
       <span class="etichetta">Servizi</span>
       <h2 id="t-servizi">Tutto quello che serve per farti <em>scegliere</em>.</h2>
-      <p class="intro">Quello che vedi qui sotto l’abbiamo fatto per il Jué Club di Montecatini Terme: sito, video, social e scheda Google.</p>
-      <div class="blocchi">
-        <article class="blocco grande">
+      <p class="intro">Quello che vedi qui sotto l’abbiamo fatto per il Jué Club di Montecatini Terme.</p>
+      <div class="pila">
+        <article class="carta-s" style="--i:0">
           <div class="media"><div class="telefoni"><img src="img/sito-1.jpg" alt="La copertina di jueclub.it sul telefono" width="520" height="1126" loading="lazy"><img src="img/sito-4.jpg" alt="Il menù di jueclub.it sul telefono" width="520" height="1126" loading="lazy"></div></div>
-          <h3>Sito su misura, fatto per il telefono.</h3>
-          <p>Veloce e chiaro, sul tuo dominio: orari, menù o listino, come arrivare e un tasto per chiamarti. Senza cookie e senza pubblicità.</p>
+          <div class="testo"><span class="mono">01 · Sito su misura</span><h3>Fatto per il telefono, sul tuo dominio.</h3><p>Veloce e chiaro: orari, menù o listino, come arrivare e un tasto per chiamarti. Senza cookie e senza pubblicità.</p></div>
         </article>
-        <article class="blocco">
+        <article class="carta-s" style="--i:1">
           <div class="media pieno"><video src="video/neon.mp4" muted loop playsinline preload="none" poster="img/reel-1-2.jpg" aria-label="Il neon blu del reel Martedì Blu"></video></div>
-          <h3>Video e reel.</h3>
-          <p>Riprese vere, scene create con l’intelligenza artificiale, testi e loghi animati. Verticali, per Reel, TikTok e storie.</p>
+          <div class="testo"><span class="mono">02 · Video e reel</span><h3>Il tuo locale in venti secondi.</h3><p>Riprese vere, scene create con l’intelligenza artificiale, testi e loghi animati. Verticali, per Reel, TikTok e storie.</p></div>
         </article>
-        <article class="blocco">
+        <article class="carta-s" style="--i:2">
           <div class="media"><div class="strip"><img src="img/reel-9-0.jpg" alt="" loading="lazy"><img src="img/locandina.jpg" alt="La locandina della serata Martedì Blu" loading="lazy"><img src="img/reel-23-0.jpg" alt="" loading="lazy"></div></div>
-          <h3>Instagram e TikTok.</h3>
-          <p>Profilo in ordine, storie in evidenza, link giusti. Locandine e post per le serate e le novità.</p>
+          <div class="testo"><span class="mono">03 · Instagram e TikTok</span><h3>Un profilo che fa entrare.</h3><p>Profilo in ordine, storie in evidenza, link giusti. Locandine e post per le serate e le novità.</p></div>
         </article>
-        <article class="blocco">
+        <article class="carta-s" style="--i:3">
           <div class="media"><img class="fermo" src="img/google.jpg" alt="La scheda Google del Jué Club su Maps" width="750" height="578" loading="lazy"></div>
-          <h3>Scheda Google.</h3>
-          <p>Quando cercano un bar o un parrucchiere in zona, la tua scheda è la prima cosa che vedono: foto, orari, recensioni e il tasto Chiama.</p>
+          <div class="testo"><span class="mono">04 · Scheda Google</span><h3>Su Google e su Maps.</h3><p>Quando cercano un bar o un parrucchiere in zona, la tua scheda è la prima cosa che vedono: foto, orari, recensioni e il tasto Chiama.</p></div>
         </article>
-        <article class="blocco">
+        <article class="carta-s" style="--i:4">
           <div class="media"><div class="calendario"><div><b>Ven 16</b><span>Reel della serata</span><span>Instagram</span></div><div><b>Sab 17</b><span>Locandina</span><span>Post</span></div><div><b>Dom 18</b><span>Video da 6 secondi</span><span>Storia</span></div><div><b>Lun 19</b><span>«Domani sera»</span><span>Storia</span></div><div><b>Mar 20</b><span>Dal vivo</span><span>Storie</span></div></div></div>
-          <h3>Gestione social, ogni mese.</h3>
-          <p>Post, storie e grafiche preparati e pubblicati da noi. Per una serata o una novità, basta scriverci.</p>
+          <div class="testo"><span class="mono">05 · Gestione social</span><h3>Ogni mese, ci pensiamo noi.</h3><p>Post, storie e grafiche preparati e pubblicati da noi. Per una serata o una novità, basta scriverci.</p></div>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="come" id="come" aria-labelledby="t-come">
-    <div class="wrap">
-      <span class="etichetta">Come funziona</span>
-      <h2 id="t-come">Prima lo vedi. <em>Poi decidi</em>.</h2>
-      <ol class="passi">
-        <li class="passo"><span class="n">01</span><h3>Ci scrivi</h3><p>Su WhatsApp o per telefono. Ci racconti la tua attività in due minuti.</p></li>
-        <li class="passo"><span class="n">02</span><h3>Ti prepariamo l’anteprima <span class="gratis">Gratis</span></h3><p>Con foto e informazioni vere della tua attività. Ti arriva un link da aprire sul telefono.</p></li>
-        <li class="passo"><span class="n">03</span><h3>Se ti piace, va online</h3><p>Sul tuo dominio, insieme a Google e ai social. Da lì in poi ti trovano.</p></li>
-      </ol>
+  <section class="binario" id="come" aria-labelledby="t-come">
+    <div class="binario-stage">
+      <div class="binario-testa">
+        <span class="etichetta">Come funziona</span>
+        <h2 id="t-come">Prima lo vedi. <em>Poi decidi</em>.</h2>
+      </div>
+      <div class="vagoni" id="vagoni">
+        <article class="vagone"><span class="n">01</span><h3>Ci scrivi</h3><p>Su WhatsApp o per telefono. Ci racconti la tua attività in due minuti.</p></article>
+        <article class="vagone"><span class="n">02</span><h3>Ti prepariamo l’anteprima <span class="gratis">Gratis</span></h3><p>Con foto e informazioni vere della tua attività. Ti arriva un link da aprire sul telefono.</p></article>
+        <article class="vagone"><span class="n">03</span><h3>Se ti piace, va online</h3><p>Sul tuo dominio, insieme a Google e ai social. Da lì in poi ti trovano.</p></article>
+      </div>
+      <div class="progresso" aria-hidden="true"><i id="progresso"></i></div>
     </div>
   </section>
 
@@ -462,7 +512,7 @@ var fila=function(nascosta){var ul=document.createElement('ul');ul.className='lo
 var nastro=document.getElementById('loghi-nastro');nastro.appendChild(fila(false));nastro.appendChild(fila(true));
 new IntersectionObserver(function(e){document.getElementById('loghi').classList.toggle('attivo',e[0].isIntersecting)}).observe(document.getElementById('loghi'));
 
-// Scena bloccata: le colonne di lavori scorrono a velocità diverse, le frasi cambiano
+// Carosello: le colonne di lavori
 var IMG=['sito-1','reel-1-2','locandina','jue-parete','sito-2','reel-9-0','jue-neon','reel-23-0','sito-4','jue-oldfashioned','reel-14-0','jue-dj-pioneer','jue-locale','reel-5-5','jue-luci','sito-3','reel-19-5'];
 var cols=document.getElementById('scena-cols');
 var N=matchMedia('(min-width:900px)').matches?5:3;
@@ -472,28 +522,65 @@ for(var c=0;c<N;c++){var col=document.createElement('div');col.className='col';
   cols.appendChild(col)}
 var frasi=document.querySelectorAll('.frase');
 function mostraFrase(p){var k=p<.34?0:p<.67?1:2;frasi.forEach(function(f,i){f.classList.toggle('visibile',i===k)})}
+
+// Dichiarazione: ogni parola in uno span
+var dich=document.getElementById('dichiara');
+dich.innerHTML=dich.innerHTML.replace(/(<em>|<\/em>)/g,function(m){return m==='<em>'?'\u0001':'\u0002'}).split(' ').map(function(w){return '<span class="w">'+w+'</span>'}).join(' ').replace(/\u0001/g,'<em>').replace(/\u0002/g,'</em>');
+var parole=dich.querySelectorAll('.w');
+
+// Senza animazioni (niente GSAP o «Riduci movimento»): pagina ferma
+var ridotto=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(ridotto)document.documentElement.classList.add('fermo');
 </script>
 <script defer src="js/gsap.min.js"></script>
 <script defer src="js/ScrollTrigger.min.js"></script>
 <script>
 addEventListener('DOMContentLoaded',function(){
-  if(!window.gsap||!window.ScrollTrigger)return;
+  if(!window.gsap||!window.ScrollTrigger||ridotto){document.documentElement.classList.add('fermo');return}
   gsap.registerPlugin(ScrollTrigger);
-  var ridotto=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var scena=document.querySelector('.scena');
+  var scena=document.querySelector('.scena'),fasi=document.querySelector('.fasi'),binario=document.querySelector('.binario');
+  var fasiT=document.querySelectorAll('.fase-t'),fasiS=document.querySelectorAll('.fase-s'),sitoLungo=document.getElementById('sito-lungo');
+  function clamp(x){return Math.max(0,Math.min(1,x))}
   function imposta(){
     ScrollTrigger.getAll().forEach(function(t){t.kill()});
+    var pc=matchMedia('(min-width:900px)').matches;
+
+    // 1. carosello
     var S=scena.querySelector('.scena-stage').clientHeight;
     document.querySelectorAll('.col').forEach(function(col,i){
       var H=col.scrollHeight,d=Math.max(0,H-S),su=i%2===0;
-      if(ridotto){gsap.set(col,{y:-d/2});return}
       gsap.fromTo(col,{y:su?0:-d},{y:su?-d:0,ease:'none',scrollTrigger:{trigger:scena,start:'top top',end:'bottom bottom',scrub:.4}});
     });
-    ScrollTrigger.create({trigger:scena,start:'top top',end:'bottom bottom',onUpdate:function(self){mostraFrase(self.progress)}});
+    ScrollTrigger.create({trigger:scena,start:'top top',end:'bottom bottom',onUpdate:function(s){mostraFrase(s.progress)}});
+
+    // 2. dichiarazione: le parole si accendono
+    ScrollTrigger.create({trigger:dich,start:'top 80%',end:'bottom 45%',onUpdate:function(s){var n=parole.length;parole.forEach(function(w,i){w.style.opacity=.16+.84*clamp((s.progress*n-i)*1.6)})}});
+
+    // 3. fasi: parola e schermo del telefono
+    var schermo=document.querySelector('.schermo');
+    ScrollTrigger.create({trigger:fasi,start:'top top',end:'bottom bottom',onUpdate:function(s){
+      var p=s.progress,k=p<1/3?0:p<2/3?1:2;
+      fasiT.forEach(function(t,i){t.classList.toggle('visibile',i===k)});
+      fasiS.forEach(function(t,i){t.classList.toggle('visibile',i===k)});
+      var corsa=Math.max(0,sitoLungo.clientHeight-schermo.clientHeight);
+      gsap.set(sitoLungo,{y:-corsa*clamp((p-0.36)/0.28)});
+    }});
+
+    // 4. pila: la carta sotto si restringe un po' quando la copre la successiva
+    var carte=document.querySelectorAll('.carta-s');
+    carte.forEach(function(c,i){var next=carte[i+1];if(!next)return;
+      gsap.fromTo(c,{scale:1},{scale:.95,ease:'none',scrollTrigger:{trigger:next,start:'top bottom',end:'top top+=84',scrub:true}});
+    });
+
+    // 5. binario: i passi scorrono di lato (solo da telefono)
+    if(!pc){
+      var vag=document.getElementById('vagoni'),dist=vag.scrollWidth-innerWidth+20;
+      gsap.fromTo(vag,{x:0},{x:-dist,ease:'none',scrollTrigger:{trigger:binario,start:'top top',end:'bottom bottom',scrub:.4,onUpdate:function(s){document.getElementById('progresso').style.width=(s.progress*100)+'%'}}});
+    }
   }
-  var pronte=0,imgs=document.querySelectorAll('.col img'),tot=imgs.length;
+  var pronte=0,imgs=document.querySelectorAll('.col img, #sito-lungo'),tot=imgs.length;
   imgs.forEach(function(im){var ok=function(){if(++pronte===tot)imposta()};if(im.complete)ok();else{im.addEventListener('load',ok,{once:true});im.addEventListener('error',ok,{once:true})}});
-  var t;addEventListener('resize',function(){clearTimeout(t);t=setTimeout(imposta,200)});
+  var t,w=innerWidth;addEventListener('resize',function(){if(Math.abs(innerWidth-w)<40)return;w=innerWidth;clearTimeout(t);t=setTimeout(imposta,200)});
 });
 </script>
 </body>
