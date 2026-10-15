@@ -27,6 +27,7 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 | Officina Estetica | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/officina-estetica-1a1714/ | 2026-10-14 | in attesa | foto della cabina da Google, prodotti da Instagram; orari da chiedere Issue #14 |
 | Lady Bikers Barber Shop | Bellinzona | https://niccoloveniero05.github.io/anteprime/lady-bikers-672ddf/ | 2026-10-14 | in attesa | rifatta più moderna: colori più accesi, nuovi caratteri, galleria con 3 foto in più da Instagram; orari e numero civico da confermare Issue #15 |
 | Silvia Istituto di Estetica | Larciano | https://niccoloveniero05.github.io/anteprime/silvia-estetica-e43328/ | 2026-10-15 | in attesa | foto vere quasi assenti online: usati logo, foto della titolare e trattamenti dalle locandine Facebook; orari presi da Facebook, su Google sono diversi; il sito silviaestetica.it indicato su Facebook non esiste più. Issue #16 |
+| Atelier Misspettino | Ponte all'Abate (Pescia) | https://niccoloveniero05.github.io/anteprime/misspettino-f06bb0/ | 2026-10-15 | in attesa | foto da Google e Instagram; colori dalla poltrona arcobaleno del salone; WhatsApp sul cellulare del salone da confermare. Issue #17 |
 
 ## Registro
 
@@ -57,3 +58,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-15 — Modificata l'anteprima di Silvia Istituto di Estetica (Larciano): sistemata l'immagine di anteprima per WhatsApp. Issue #16.
 - 2026-10-15 — Rifatta la grafica dell'anteprima di Silvia Istituto di Estetica (Larciano) su richiesta di Niccolò (Claude di Niccolò): logo ridisegnato in vettoriale (prima l'immagine d'apertura era sgranata), apertura con la sagoma del logo, trattamenti a schede apribili, come si prenota, promozione del mese, recensioni a scorrimento. Stessi testi, orari e contatti. Stesso link. Issue #16.
 - 2026-10-15 — Silvia Istituto di Estetica: tolta la foto della titolare su richiesta di Niccolò (al suo posto la sagoma del logo). Issue #16.
+- 2026-10-15 — Pubblicata l'anteprima di Atelier Misspettino (Ponte all'Abate (Pescia)), stato "in attesa": da mandare al titolare. Issue #17.
