@@ -26,6 +26,7 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 | Nuove Armonie | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/nuove-armonie-d8b379/ | 2026-10-13 | in attesa | Pubblicata, da mandare al titolare. Foto dei lavori dai loro profili Instagram, orari dal loro cartello su Instagram (Google dice 9-20), recensioni da Google, colori dal logo rosa e nero, marchio a triangolo ridisegnato. Servizi senza prezzi. Mancano foto del salone e dell'insegna e il logo nitido; da verificare orari e servizi. Issue #13 |
 | Officina Estetica | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/officina-estetica-1a1714/ | 2026-10-14 | in attesa | foto della cabina da Google, prodotti da Instagram; orari da chiedere Issue #14 |
 | Lady Bikers Barber Shop | Bellinzona | https://niccoloveniero05.github.io/anteprime/lady-bikers-672ddf/ | 2026-10-14 | in attesa | rifatta più moderna: colori più accesi, nuovi caratteri, galleria con 3 foto in più da Instagram; orari e numero civico da confermare Issue #15 |
+| Silvia Istituto di Estetica | Larciano | https://niccoloveniero05.github.io/anteprime/silvia-estetica-e43328/ | 2026-10-15 | in attesa | foto vere quasi assenti online: usati logo, foto della titolare e trattamenti dalle locandine Facebook; orari presi da Facebook, su Google sono diversi; il sito silviaestetica.it indicato su Facebook non esiste più. Issue #16 |
 
 ## Registro
 
@@ -52,3 +53,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-14 — Pubblicata l'anteprima di Officina Estetica (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #14.
 - 2026-10-14 — Pubblicata l'anteprima di Lady Bikers Barber Shop (Bellinzona), stato "in attesa": da mandare al titolare. Issue #15.
 - 2026-10-14 — Modificata l'anteprima di Lady Bikers Barber Shop (Bellinzona): grafica più moderna, colori più accesi, nuovi caratteri, 3 foto in più. Issue #15.
+- 2026-10-15 — Pubblicata l'anteprima di Silvia Istituto di Estetica (Larciano), stato "in attesa": da mandare al titolare. Issue #16.
