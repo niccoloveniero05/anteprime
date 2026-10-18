@@ -377,19 +377,6 @@ html.fermo .carta-s .rec i{opacity:1}
   .fase-t,.fase-s,.btn,summary::after,.recapito,.partner-tu{transition:none}
   .loghi-nastro{animation:none}
 }
-
-/* sfondo «grana» della copertina: luce arancio sfumata che si muove piano + grana da pellicola */
-.copertina{isolation:isolate}
-.grana{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
-.grana .luce{position:absolute;border-radius:50%;will-change:transform}
-.grana::after{content:"";position:absolute;inset:-60px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px;mix-blend-mode:overlay;animation:grana-muovi 1.2s steps(6) infinite}
-@keyframes grana-muovi{0%{transform:translate(0,0)}20%{transform:translate(-14px,9px)}40%{transform:translate(11px,-16px)}60%{transform:translate(-8px,-6px)}80%{transform:translate(16px,12px)}100%{transform:translate(0,0)}}
-@keyframes deriva-1{from{transform:translate(0,0) scale(1)}to{transform:translate(8vw,6vh) scale(1.12)}}
-@keyframes deriva-2{from{transform:translate(0,0) scale(1.05)}to{transform:translate(-10vw,-5vh) scale(.95)}}
-@media (prefers-reduced-motion:reduce){.grana .luce,.grana::after{animation:none}}
-
-.grana .l1{width:120vmax;height:120vmax;left:50%;top:44%;margin:-60vmax 0 0 -60vmax;background:radial-gradient(circle,rgba(255,90,31,.30) 0%,rgba(255,90,31,.12) 32%,rgba(255,90,31,0) 62%);animation:deriva-1 16s ease-in-out infinite alternate}
-.grana::after{opacity:.3}
 </style>
 <noscript><style>.apertura>.copertina{position:relative}.scena{display:none}.dichiara .pf{color:inherit}</style></noscript>
 <script type="application/ld+json">
@@ -418,7 +405,6 @@ html.fermo .carta-s .rec i{opacity:1}
 <main id="contenuto">
   <div class="apertura">
   <section class="copertina" id="inizio" aria-labelledby="titolo">
-    <div class="grana" aria-hidden="true"><i class="luce l1"></i></div>
     <div class="wrap" id="copertina-wrap">
       <p class="mono">Siti · Google · Social · Video</p>
       <h1 id="titolo">Fatti trovare.<br>Fatti <em>scegliere</em><span class="rec-punto" id="rec-punto" aria-hidden="true"></span></h1>
