@@ -29,6 +29,7 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 | Silvia Istituto di Estetica | Larciano | https://niccoloveniero05.github.io/anteprime/silvia-estetica-e43328/ | 2026-10-15 | in attesa | foto vere quasi assenti online: usati logo, foto della titolare e trattamenti dalle locandine Facebook; orari presi da Facebook, su Google sono diversi; il sito silviaestetica.it indicato su Facebook non esiste più. Issue #16 |
 | Atelier Misspettino | Ponte all'Abate (Pescia) | https://niccoloveniero05.github.io/anteprime/misspettino-f06bb0/ | 2026-10-15 | in attesa | foto da Google e Instagram; colori dalla poltrona arcobaleno del salone; WhatsApp sul cellulare del salone da confermare. Issue #17 |
 | Studio Bernardini & Partners | Altopascio | https://niccoloveniero05.github.io/anteprime/studio-bernardini-2b1e95/ | 2026-10-16 | in attesa | studio di commercialisti con sito vecchio (modello generico); testi presi dal loro sito e dalla pagina dei premi; una sola foto (team ai Le Fonti Awards 2022). Issue #18 |
+| Ristorante Lorenzo | Forte dei Marmi | https://niccoloveniero05.github.io/anteprime/ristorante-lorenzo-119f07/ | 2026-10-19 | in attesa | ristorante stellato con un sito del 2018 (WordPress); testi, menù degustazione e foto presi dal loro sito; stella Michelin verificata sulla Guida 2026; orari da Google. Issue #19 |
 
 ## Registro
 
@@ -64,3 +65,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-16 — Pubblicata l'anteprima di Studio Bernardini & Partners (Altopascio), stato "in attesa": da mandare al titolare. Issue #18.
 
 - `veniello-v2-a3cb11` — Veniello Studio, bozza del nuovo sito (stile scuro, scena che scorre) — 16/10/2026
+- 2026-10-19 — Pubblicata l'anteprima di Ristorante Lorenzo (Forte dei Marmi), stato "in attesa": da mandare al titolare. Issue #19.

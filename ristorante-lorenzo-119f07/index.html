@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Ristorante Lorenzo · Forte dei Marmi, dal 1981</title>
+<meta name="description" content="Ristorante Lorenzo a Forte dei Marmi: cucina di mare, una stella Michelin, una cantina di quasi duemila etichette e una collezione d'arte contemporanea. Dal 1981 in Via Carducci 61.">
+<meta name="theme-color" content="#0f0e0d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ristorante Lorenzo · Forte dei Marmi">
+<meta property="og:description" content="Cucina di mare, una stella Michelin e quasi duemila etichette. Dal 1981.">
+<meta property="og:url" content="https://niccoloveniero05.github.io/anteprime/ristorante-lorenzo-119f07/">
+<meta property="og:image" content="https://niccoloveniero05.github.io/anteprime/ristorante-lorenzo-119f07/img/condivisione.jpg">
+<link rel="icon" href="img/icona-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="img/icona-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Ristorante Lorenzo","image":"img/copertina.jpg","telephone":"+39 0584 874030","email":"info@ristorantelorenzo.com","servesCuisine":"Pesce e frutti di mare","priceRange":"€€€€",
+"address":{"@type":"PostalAddress","streetAddress":"Via Giosuè Carducci, 61","postalCode":"55042","addressLocality":"Forte dei Marmi","addressRegion":"LU","addressCountry":"IT"},
+"geo":{"@type":"GeoCoordinates","latitude":43.9565638,"longitude":10.1721589},
+"openingHoursSpecification":[
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"20:00","closes":"22:00"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"12:30","closes":"14:00"}]}
+</script>
+<style>
+:root{
+  --nero:#0f0e0d; --nero-2:#181614; --avorio:#f4efe7; --carta:#ebe4d8; --inchiostro:#1a1816;
+  --grigio:#8d857a; --grigio-chiaro:#b9b0a3; --oro:#c6a874; --rosso:#a5161f;
+  --linea:rgba(244,239,231,.14); --linea-scura:rgba(26,24,22,.14);
+  --serif:"Bodoni Moda", "Didot", Georgia, serif; --sans:"Jost", system-ui, sans-serif;
+  --molla:cubic-bezier(.32,.72,0,1); --lato:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:auto}
+body{background:var(--nero);color:var(--avorio);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--oro);color:var(--nero)}
+.contenitore{width:100%;max-width:1280px;margin:0 auto;padding:0 var(--lato)}
+@media (min-width:760px){:root{--lato:40px}}
+
+/* titoli */
+.occhiello{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-size:12px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:var(--oro)}
+.occhiello::before{content:"";width:28px;height:1px;background:currentColor;opacity:.7}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(38px,9vw,84px);line-height:1.02;letter-spacing:-.015em;font-variation-settings:"opsz" 96}
+h2 em{font-style:italic;color:var(--oro)}
+.chiaro h2 em{color:#8a6a35}
+.testo{max-width:560px;color:var(--grigio-chiaro)}
+.chiaro .testo{color:#4c463f}
+.testo p+p{margin-top:1em}
+
+/* pulsanti: pillola con cerchio interno */
+.pulsante{display:inline-flex;align-items:center;gap:14px;padding:8px 8px 8px 24px;border-radius:999px;font-size:15px;font-weight:400;letter-spacing:.02em;transition:transform .5s var(--molla),background .5s var(--molla),color .5s var(--molla);white-space:nowrap}
+.pulsante .cerchio{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;transition:transform .5s var(--molla)}
+.pulsante svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.pulsante:hover .cerchio{transform:translate(3px,-2px) scale(1.06)}
+.pulsante:active{transform:scale(.98)}
+.p-chiaro{background:var(--avorio);color:var(--nero)}
+.p-chiaro .cerchio{background:var(--nero);color:var(--avorio)}
+.p-vuoto{background:rgba(244,239,231,.06);color:var(--avorio);box-shadow:inset 0 0 0 1px var(--linea)}
+.p-vuoto .cerchio{background:rgba(244,239,231,.1)}
+.p-scuro{background:var(--nero);color:var(--avorio)}
+.p-scuro .cerchio{background:var(--avorio);color:var(--nero)}
+.p-bordo{color:var(--inchiostro);box-shadow:inset 0 0 0 1px rgba(26,24,22,.25)}
+.p-bordo .cerchio{background:rgba(26,24,22,.07)}
+
+/* barra in alto */
+.testata{position:fixed;top:12px;left:0;right:0;z-index:30;display:flex;justify-content:center;padding:0 12px;pointer-events:none}
+.isola{pointer-events:auto;display:flex;align-items:center;gap:6px;padding:6px 6px 6px 10px;border-radius:999px;background:rgba(15,14,13,.84);-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);box-shadow:inset 0 0 0 1px rgba(244,239,231,.1),0 10px 40px -12px rgba(0,0,0,.5);width:100%;max-width:760px;justify-content:space-between}
+.marchio{display:flex;align-items:center;gap:10px;padding-right:8px}
+.marchio img{width:26px;height:auto}
+.marchio span{font-family:var(--serif);font-size:21px;letter-spacing:.01em;font-variation-settings:"opsz" 30}
+.voci{display:none;gap:2px}
+.voci a{font-size:14px;padding:8px 13px;border-radius:999px;color:var(--grigio-chiaro);transition:color .4s var(--molla),background .4s var(--molla)}
+.voci a:hover{color:var(--avorio);background:rgba(244,239,231,.07)}
+.isola .prenota{font-size:14px;padding:10px 18px;border-radius:999px;background:var(--avorio);color:var(--nero);font-weight:400;transition:transform .4s var(--molla)}
+.isola .prenota:active{transform:scale(.97)}
+@media (min-width:900px){.voci{display:flex}.testata{top:20px}}
+
+/* copertina */
+.copertina{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-start;overflow:hidden;background:var(--nero);isolation:isolate}
+.copertina-foto{position:absolute;left:0;right:0;bottom:0;height:58svh;z-index:-2;overflow:hidden}
+.copertina-foto img{width:100%;height:100%;object-fit:cover;object-position:52% 62%;transform-origin:50% 60%}
+.copertina-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--nero) 0%,rgba(15,14,13,.55) 22%,rgba(15,14,13,0) 45%,rgba(15,14,13,0) 78%,rgba(15,14,13,.7) 100%)}
+.copertina-testo{padding:112px var(--lato) 0;text-align:center;display:flex;flex-direction:column;align-items:center}
+.copertina h1{font-family:var(--serif);font-weight:400;font-size:clamp(76px,24vw,232px);line-height:.9;letter-spacing:-.025em;font-variation-settings:"opsz" 96;margin-top:18px}
+.copertina h1 .l{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .01em .06em}
+.copertina h1 .l>span{display:inline-block}
+.copertina .sotto{margin-top:20px;max-width:440px;font-size:16px;color:var(--grigio-chiaro)}
+.copertina .azioni{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px}
+.stella{position:absolute;left:50%;bottom:calc(84px + env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;align-items:center;gap:12px;padding:8px 18px 8px 8px;border-radius:999px;background:rgba(15,14,13,.55);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:inset 0 0 0 1px rgba(244,239,231,.14);white-space:nowrap;z-index:2}
+.stella .icona{width:34px;height:34px;border-radius:50%;background:var(--avorio);display:grid;place-items:center}
+.stella .icona svg{width:18px;height:18px;fill:var(--rosso)}
+.stella b{display:block;font-weight:400;font-size:14px;line-height:1.2}
+.stella small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--grigio-chiaro)}
+@media (min-width:760px){
+  .copertina-foto{top:0;left:34%;height:auto}
+  .copertina-foto img{object-position:56% 60%}
+  .copertina-foto::after{background:linear-gradient(90deg,var(--nero) 0%,rgba(15,14,13,.55) 16%,rgba(15,14,13,0) 40%),linear-gradient(180deg,rgba(15,14,13,.55) 0%,rgba(15,14,13,0) 22%,rgba(15,14,13,0) 78%,rgba(15,14,13,.85) 100%)}
+  .copertina-testo{padding-top:max(150px,24vh);text-align:left;align-items:flex-start}
+  .copertina h1{font-size:clamp(110px,13vw,210px);margin-top:24px}
+  .copertina .sotto{max-width:380px;margin-top:28px}
+  .copertina .azioni{justify-content:flex-start;margin-top:34px}
+  .stella{left:var(--lato);transform:none;bottom:36px}
+}
+.scorri{display:none}
+@media (min-width:760px){.scorri{display:flex;position:absolute;right:var(--lato);bottom:44px;align-items:center;gap:10px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--grigio-chiaro)}
+  .scorri i{width:1px;height:40px;background:linear-gradient(var(--avorio),transparent)}}
+
+/* sezioni */
+.sezione{padding:104px 0}
+@media (min-width:900px){.sezione{padding:160px 0}}
+.chiaro{background:var(--avorio);color:var(--inchiostro)}
+.chiaro .occhiello{color:#8a6a35}
+.carta{background:var(--carta)}
+
+/* manifesto */
+.manifesto h2{font-size:clamp(40px,10.5vw,112px);max-width:12ch;margin-top:26px}
+.manifesto .griglia{display:grid;gap:40px;margin-top:44px}
+.numeri{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--linea-scura)}
+.numeri div{padding:22px 0;border-bottom:1px solid var(--linea-scura)}
+.numeri div:nth-child(odd){padding-right:14px;border-right:1px solid var(--linea-scura)}
+.numeri div:nth-child(even){padding-left:18px}
+.numeri b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(40px,10vw,64px);line-height:1;font-variation-settings:"opsz" 96}
+.numeri span{display:block;margin-top:8px;font-size:14px;color:#6b645b;line-height:1.4}
+@media (min-width:900px){.manifesto .griglia{grid-template-columns:1fr 1.1fr;gap:80px;align-items:end;margin-top:64px}}
+
+/* storia */
+.storia .impianto{display:grid;gap:56px}
+.storia .foto-pila{position:relative}
+.cornice{padding:6px;border-radius:26px;background:rgba(26,24,22,.05);box-shadow:inset 0 0 0 1px rgba(26,24,22,.07)}
+.cornice img{border-radius:20px;width:100%}
+.scuro .cornice,.cornice.scura{background:rgba(244,239,231,.04);box-shadow:inset 0 0 0 1px rgba(244,239,231,.08)}
+.storia .foto-pila .seconda{width:52%;margin:-22% 0 0 auto;position:relative}
+.storia h2{margin-top:22px}
+.tappe{list-style:none;margin-top:36px;border-top:1px solid var(--linea-scura)}
+.tappe li{display:grid;grid-template-columns:118px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--linea-scura);font-size:15px;line-height:1.5}
+.tappe b{font-family:var(--serif);font-weight:500;font-size:17px;color:var(--inchiostro)}
+.tappe span{color:#4c463f}
+@media (min-width:900px){.storia .impianto{grid-template-columns:1fr 1fr;gap:96px;align-items:center}.storia .foto-pila .seconda{width:48%;margin-top:-30%;margin-right:-8%}}
+
+/* cucina */
+.cucina .alto{display:grid;gap:44px}
+.cucina h2{margin-top:22px}
+.chef{position:relative}
+.chef figcaption{margin-top:12px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--grigio)}
+@media (min-width:900px){.cucina .alto{grid-template-columns:1.1fr .9fr;gap:96px;align-items:center}}
+.galleria{margin-top:80px;overflow:hidden}
+.galleria-testa{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.galleria-testa h3{font-family:var(--serif);font-weight:400;font-style:italic;font-size:clamp(26px,5vw,40px)}
+.galleria-testa span{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--grigio)}
+.binario{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:26px var(--lato) 6px;margin:0 calc(var(--lato) * -1);scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.binario::-webkit-scrollbar{display:none}
+.piatto{flex:0 0 74vw;max-width:420px;scroll-snap-align:center;border-radius:24px;overflow:hidden;background:#000;box-shadow:inset 0 0 0 1px rgba(244,239,231,.06)}
+.piatto img{width:100%;aspect-ratio:1/1;object-fit:cover}
+@media (min-width:900px){.piatto{flex-basis:30vw}.js-anim .galleria .binario{overflow:visible;scroll-snap-type:none}}
+
+/* menù degustazione */
+.menu{background:var(--nero-2)}
+.menu .testa{display:grid;gap:22px;max-width:760px}
+.mazzo{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:44px var(--lato) 20px;margin:0 calc(var(--lato) * -1);scrollbar-width:none}
+.mazzo::-webkit-scrollbar{display:none}
+.carta-gioco{flex:0 0 84vw;max-width:360px;scroll-snap-align:center;padding:6px;border-radius:28px;background:rgba(244,239,231,.06);box-shadow:inset 0 0 0 1px rgba(244,239,231,.1)}
+.carta-gioco .dentro{position:relative;height:100%;background:var(--avorio);color:var(--inchiostro);border-radius:22px;padding:58px 26px 64px;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.6)}
+.seme{position:absolute;display:flex;flex-direction:column;align-items:center;gap:2px;font-family:var(--serif);font-size:15px;line-height:1}
+.seme svg{width:18px;height:18px}
+.seme.su{top:18px;left:18px}
+.seme.giu{bottom:18px;right:18px;transform:rotate(180deg)}
+.rosso svg{fill:var(--rosso)} .rosso .seme{color:var(--rosso)}
+.nero svg{fill:var(--inchiostro)}
+.carta-gioco .grande{width:40px;height:40px;margin:0 auto 14px}
+.carta-gioco h3{font-family:var(--serif);font-weight:400;font-style:italic;font-size:40px;line-height:1;font-variation-settings:"opsz" 96}
+.carta-gioco .prezzo{margin-top:10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#6b645b}
+.carta-gioco .prezzo b{font-family:var(--serif);font-size:24px;font-weight:500;letter-spacing:0;color:var(--inchiostro);text-transform:none}
+.carta-gioco ol{list-style:none;margin-top:22px;border-top:1px solid var(--linea-scura);padding-top:16px;font-size:14.5px;line-height:1.45;color:#3d3833}
+.carta-gioco li{padding:7px 0}
+.carta-gioco li+li{border-top:1px dotted rgba(26,24,22,.18)}
+@media (min-width:1000px){
+  .mazzo{overflow:visible;justify-content:center;padding:70px 0 30px;margin:0;gap:0}
+  .carta-gioco{flex:0 0 340px;max-width:none;transition:transform .7s var(--molla)}
+  .carta-gioco:nth-child(1){transform:rotate(-5deg) translate(26px,26px)}
+  .carta-gioco:nth-child(2){transform:translateY(-6px);z-index:2}
+  .carta-gioco:nth-child(3){transform:rotate(5deg) translate(-26px,26px)}
+  .carta-gioco:hover{transform:rotate(0) translateY(-18px);z-index:3}
+}
+.nota-menu{margin-top:26px;font-size:14px;color:var(--grigio);text-align:center;max-width:620px;margin-left:auto;margin-right:auto}
+.dalla-carta{margin-top:96px;display:grid;gap:36px}
+.dalla-carta h3{font-family:var(--serif);font-weight:400;font-size:clamp(30px,6vw,52px);line-height:1.05}
+.dalla-carta h3 em{color:var(--oro)}
+.voci-carta{list-style:none}
+.voci-carta li{padding:20px 0;border-bottom:1px solid var(--linea)}
+.voci-carta li:first-child{border-top:1px solid var(--linea)}
+.voci-carta .riga{display:flex;align-items:baseline;gap:12px}
+.voci-carta .nome{font-family:var(--serif);font-size:21px;line-height:1.25}
+.voci-carta .punti{flex:1;border-bottom:1px dotted rgba(244,239,231,.25);transform:translateY(-5px);min-width:20px}
+.voci-carta .euro{font-family:var(--serif);font-size:19px;color:var(--oro);white-space:nowrap}
+.voci-carta .tag{display:inline-block;margin-top:6px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--oro)}
+.voci-carta p{margin-top:4px;font-size:14.5px;color:var(--grigio);line-height:1.5;max-width:52ch}
+@media (min-width:900px){.dalla-carta{grid-template-columns:.8fr 1.2fr;gap:96px}}
+
+/* cantina */
+.cantina .impianto{display:grid;gap:52px}
+.cantina h2{margin-top:22px;font-size:clamp(38px,9vw,70px)}
+.cifra{display:flex;align-items:baseline;gap:14px;margin-top:34px;padding-top:24px;border-top:1px solid var(--linea-scura)}
+.cifra b{font-family:var(--serif);font-weight:400;font-size:clamp(64px,16vw,128px);line-height:.9;font-variation-settings:"opsz" 96}
+.cifra span{font-size:15px;line-height:1.35;color:#4c463f;max-width:160px}
+.regioni{margin-top:28px;font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.7;color:#4c463f}
+.regioni span{color:#8a6a35;font-style:normal;padding:0 2px}
+.cantina .azioni{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.coppia{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+.impianto>*,.griglia>*,.alto>*,.testa>*,.dalla-carta>*,.bento>*{min-width:0}
+.coppia .cornice:nth-child(2){margin-top:44px}
+.calici{margin-top:10px}
+@media (min-width:900px){.cantina .impianto{grid-template-columns:1fr 1fr;gap:96px;align-items:center}}
+
+/* ambiente */
+.ambiente .testa{display:grid;gap:26px}
+@media (min-width:900px){.ambiente .testa{grid-template-columns:1fr 1fr;gap:96px;align-items:end}}
+.bento{display:grid;gap:10px;margin-top:56px}
+.bento figure{position:relative;border-radius:26px;overflow:hidden;background:#1f1c19}
+.bento img{width:100%;height:100%;object-fit:cover}
+.bento figcaption{position:absolute;left:12px;bottom:12px;padding:6px 12px;border-radius:999px;background:rgba(15,14,13,.6);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.bento .b1 img{aspect-ratio:1080/425}
+.bento .b2 img,.bento .b3 img{aspect-ratio:1/1}
+.bento .b4 img{aspect-ratio:3/2}
+@media (min-width:760px){
+  .bento{grid-template-columns:repeat(12,1fr);grid-auto-rows:auto}
+  .bento .b1{grid-column:span 8}
+  .bento .b2{grid-column:span 4}
+  .bento .b3{grid-column:span 5}
+  .bento .b4{grid-column:span 7}
+  .bento .b1 img,.bento .b2 img{aspect-ratio:auto;height:420px}
+  .bento .b3 img,.bento .b4 img{aspect-ratio:auto;height:440px}
+}
+.dress{margin-top:30px;display:inline-flex;align-items:center;gap:12px;padding:10px 18px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--linea);font-size:14px;color:var(--grigio-chiaro)}
+.dress b{font-weight:400;color:var(--avorio)}
+
+/* riconoscimenti */
+.premi .impianto{display:grid;gap:56px}
+.medaglia{padding:6px;border-radius:30px;background:rgba(26,24,22,.05);box-shadow:inset 0 0 0 1px rgba(26,24,22,.08)}
+.medaglia .dentro{background:var(--nero);color:var(--avorio);border-radius:24px;padding:40px 28px;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.medaglia svg{width:56px;height:56px;fill:var(--rosso);margin:0 auto}
+.medaglia b{display:block;margin-top:18px;font-family:var(--serif);font-weight:400;font-size:clamp(34px,8vw,52px);line-height:1}
+.medaglia small{display:block;margin-top:12px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--grigio-chiaro)}
+.guide{margin-top:26px;font-size:14px;color:#6b645b}
+.guide p{font-family:var(--serif);font-size:20px;line-height:1.6;color:var(--inchiostro);margin-top:6px}
+.guide p span{color:#8a6a35;padding:0 2px}
+.voto{display:flex;align-items:center;gap:16px;padding-bottom:26px;border-bottom:1px solid var(--linea-scura)}
+.voto b{font-family:var(--serif);font-weight:400;font-size:64px;line-height:1}
+.voto .stelline{display:flex;gap:3px}
+.voto .stelline svg{width:16px;height:16px;fill:#8a6a35}
+.voto span{font-size:14px;color:#6b645b}
+blockquote{padding:28px 0;border-bottom:1px solid var(--linea-scura)}
+blockquote p{font-family:var(--serif);font-style:italic;font-size:clamp(22px,5vw,30px);line-height:1.3}
+blockquote cite{display:block;margin-top:12px;font-style:normal;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#6b645b}
+@media (min-width:900px){.premi .impianto{grid-template-columns:.9fr 1.1fr;gap:96px;align-items:start}}
+
+/* prenota */
+.prenota-sez .impianto{display:grid;gap:56px}
+.prenota-sez h2{margin-top:22px}
+.telefono{display:inline-block;margin-top:30px;font-family:var(--serif);font-size:clamp(40px,11vw,76px);line-height:1;letter-spacing:-.01em;border-bottom:1px solid var(--linea);padding-bottom:10px;transition:color .4s var(--molla)}
+.telefono:hover{color:var(--oro)}
+.contatti{list-style:none;margin-top:28px;display:grid;gap:12px;color:var(--grigio-chiaro);font-size:16px}
+.contatti b{display:block;font-size:11px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--grigio)}
+.contatti a{border-bottom:1px solid var(--linea)}
+.prenota-sez .azioni{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.orari{padding:6px;border-radius:28px;background:rgba(244,239,231,.04);box-shadow:inset 0 0 0 1px rgba(244,239,231,.08)}
+.orari .dentro{border-radius:22px;background:var(--nero-2);padding:26px 22px;box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.stato{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(244,239,231,.06);font-size:14px}
+.stato i{width:8px;height:8px;border-radius:50%;background:var(--grigio)}
+.stato.aperto i{background:#5fbf7a;box-shadow:0 0 0 4px rgba(95,191,122,.18)}
+.avviso{margin-top:14px;padding:12px 16px;border-radius:16px;background:rgba(198,168,116,.12);color:var(--oro);font-size:14px;line-height:1.45}
+.orari h3{margin-top:22px;font-family:var(--serif);font-weight:400;font-size:24px}
+.orari .periodo{font-size:14px;color:var(--grigio);margin-top:4px}
+.orari table{width:100%;border-collapse:collapse;margin-top:16px;font-size:15px}
+.orari td{padding:13px 0;border-top:1px solid var(--linea);vertical-align:top}
+.orari td:last-child{text-align:right;color:var(--grigio-chiaro)}
+.orari tr.oggi td{color:var(--avorio)}
+.orari tr.oggi td:first-child::after{content:"oggi";margin-left:8px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--oro);vertical-align:2px}
+.orari .frase{margin-top:16px;font-size:14px;color:var(--grigio)}
+@media (min-width:900px){.prenota-sez .impianto{grid-template-columns:1.1fr .9fr;gap:96px;align-items:start}}
+
+/* piede */
+.piede{padding:80px 0 120px;border-top:1px solid var(--linea)}
+.piede .nome{display:flex;align-items:center;gap:18px}
+.piede .nome img{width:54px}
+.piede .nome b{font-family:var(--serif);font-weight:400;font-size:clamp(54px,15vw,140px);line-height:.9;letter-spacing:-.02em}
+.piede .righe{margin-top:36px;display:grid;gap:10px;font-size:14px;color:var(--grigio)}
+.piede .social{display:flex;gap:18px;margin-top:6px}
+.piede .social a{color:var(--grigio-chiaro);border-bottom:1px solid var(--linea)}
+.preview-note{margin-top:30px;font-size:12px;color:var(--grigio);opacity:.8}
+@media (min-width:900px){.piede{padding-bottom:70px}.piede .righe{grid-template-columns:repeat(3,auto);justify-content:space-between}}
+
+/* barra in basso sul telefono */
+.barra{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:30;display:grid;grid-template-columns:1.3fr 1fr;gap:6px;padding:6px;border-radius:999px;background:rgba(15,14,13,.7);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);box-shadow:inset 0 0 0 1px rgba(244,239,231,.12),0 12px 40px -10px rgba(0,0,0,.6)}
+.barra a{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 10px;border-radius:999px;font-size:15px}
+.barra a:first-child{background:var(--avorio);color:var(--nero)}
+.barra svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+@media (min-width:900px){.barra{display:none}}
+
+/* movimento: gli elementi si nascondono solo se JavaScript parte */
+.js-anim .reveal{opacity:0;transform:translateY(34px)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="testata">
+  <nav class="isola" aria-label="Menu principale">
+    <a class="marchio" href="#inizio" aria-label="Ristorante Lorenzo, torna su"><img src="img/marchio-avorio.png" alt="" width="227" height="300"><span>Lorenzo</span></a>
+    <div class="voci">
+      <a href="#storia">Storia</a><a href="#cucina">Cucina</a><a href="#menu">Menù</a><a href="#cantina">Cantina</a><a href="#prenota">Contatti</a>
+    </div>
+    <a class="prenota" href="tel:+390584874030">Prenota</a>
+  </nav>
+</div>
+
+<header class="copertina" id="inizio">
+  <div class="copertina-foto"><img src="img/copertina.jpg" alt="Filetto di pesce bianco con tartufo, fiori e cereali soffiati, in un piatto bianco" width="1800" height="1200" fetchpriority="high"></div>
+  <div class="copertina-testo">
+    <p class="occhiello">Forte dei Marmi · dal 1981</p>
+    <h1 aria-label="Lorenzo"><span class="l" aria-hidden="true"><span>L</span></span><span class="l" aria-hidden="true"><span>o</span></span><span class="l" aria-hidden="true"><span>r</span></span><span class="l" aria-hidden="true"><span>e</span></span><span class="l" aria-hidden="true"><span>n</span></span><span class="l" aria-hidden="true"><span>z</span></span><span class="l" aria-hidden="true"><span>o</span></span></h1>
+    <p class="sotto">Il pesce dei moli di Viareggio, una cantina di quasi duemila etichette e una collezione d'arte contemporanea.</p>
+    <div class="azioni">
+      <a class="pulsante p-chiaro" href="tel:+390584874030">Prenota un tavolo<span class="cerchio"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+      <a class="pulsante p-vuoto" href="#menu">I menù<span class="cerchio"><svg viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span></a>
+    </div>
+  </div>
+  <div class="stella">
+    <span class="icona"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.6 6.1 6.6.6-5 4.4 1.5 6.5L12 16.7l-5.7 3.4 1.5-6.5-5-4.4 6.6-.6z"/></svg></span>
+    <span><b>Una stella Michelin</b><small>Guida Michelin 2026</small></span>
+  </div>
+  <div class="scorri" aria-hidden="true"><i></i>Scorri</div>
+</header>
+
+<main>
+  <section class="sezione chiaro manifesto">
+    <div class="contenitore">
+      <p class="occhiello reveal">Una storia di passione per l'eccellenza</p>
+      <h2 class="reveal">Un nome, un luogo, <em>una garanzia.</em></h2>
+      <div class="griglia">
+        <div class="testo reveal">
+          <p>Dal 1981 Lorenzo è il ristorante per antonomasia di Forte dei Marmi. La raffinatezza della cucina, la qualità della materia prima, la vastità della selezione dei vini, la cura nel servizio e l'eleganza dell'ambiente celebrano, ogni giorno, il piacere della tavola e la gioia della convivialità.</p>
+          <p>Per un'esperienza che difficilmente si dimentica.</p>
+        </div>
+        <div class="numeri reveal">
+          <div><b>1981</b><span>l'apertura in Via Carducci</span></div>
+          <div><b>1</b><span>stella Michelin, Guida 2026</span></div>
+          <div><b>2.000</b><span>quasi, le etichette in cantina</span></div>
+          <div><b>4,7</b><span>su Google, 744 recensioni</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione chiaro storia" id="storia" style="padding-top:0">
+    <div class="contenitore impianto">
+      <div class="foto-pila reveal">
+        <div class="cornice"><img src="img/famiglia.jpg" alt="La famiglia di Lorenzo seduta in sala, davanti a un'opera d'arte" width="1100" height="733"></div>
+        <div class="cornice seconda"><img src="img/ingresso.jpg" alt="Il tappeto con la scritta Ristorante Lorenzo all'ingresso" width="507" height="727"></div>
+      </div>
+      <div>
+        <p class="occhiello reveal">La storia</p>
+        <h2 class="reveal">I Viani e <em>la Versilia.</em></h2>
+        <div class="testo reveal" style="margin-top:26px">
+          <p>Fu il prozio di Lorenzo, il pittore e scrittore Lorenzo Viani, a far conoscere all'Europa della Belle Époque i picchi delle Apuane, la costa e la gente versiliese.</p>
+          <p>Lorenzo, con lo stesso entusiasmo, si è dedicato da giovane alla ristorazione: prima a Lido di Camaiore, poi nel 1981 a Forte dei Marmi. Oggi, insieme alla figlia Chiara, porta avanti una tradizione di famiglia: spetta a un Viani “raccontare” la Versilia.</p>
+        </div>
+        <ul class="tappe reveal">
+          <li><b>1882 · 1936</b><span>Lorenzo Viani, pittore espressionista, amico di d'Annunzio, Puccini e Ungaretti</span></li>
+          <li><b>Gli inizi</b><span>Il primo locale di Lorenzo, a Lido di Camaiore</span></li>
+          <li><b>1981</b><span>L'apertura a Forte dei Marmi, in Via Carducci 61</span></li>
+          <li><b>Oggi</b><span>Lorenzo e la figlia Chiara, che ha già raccolto il testimone</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione scuro cucina" id="cucina">
+    <div class="contenitore">
+      <div class="alto">
+        <div>
+          <p class="occhiello reveal">La cucina</p>
+          <h2 class="reveal">I profumi e i sapori di <em>un grande piatto.</em></h2>
+          <div class="testo reveal" style="margin-top:26px">
+            <p>Tutte le mattine, dal 1981, Lorenzo va sui moli di Viareggio e della Versilia a cercare il pesce migliore, il crostaceo più fragrante, il mollusco più profumato. Poi la scelta rigida di ortaggi, carni e frutta.</p>
+            <p>In cucina, da molti anni, c'è Gioacchino Pontrelli: trasforma la materia prima senza tradirla, con attenzione nelle cotture e un tocco di estro.</p>
+          </div>
+        </div>
+        <figure class="chef reveal">
+          <div class="cornice scura"><img src="img/chef.jpg" alt="Lo chef in cucina, in bianco e nero" width="898" height="667"></div>
+          <figcaption>In cucina</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="galleria" id="galleria">
+      <div class="contenitore">
+        <div class="galleria-testa"><h3>Dalla cucina</h3><span>Scorri</span></div>
+        <div class="binario">
+          <div class="piatto"><img src="img/piatto-1.jpg" alt="Piatto di pesce con salsa rossa" width="900" height="900"></div>
+          <div class="piatto"><img src="img/piatto-2.jpg" alt="Battuta di carne con tartufo su piatto nero" width="900" height="900"></div>
+          <div class="piatto"><img src="img/piatto-3.jpg" alt="Risotto con fiocchi sottili" width="900" height="900"></div>
+          <div class="piatto"><img src="img/piatto-4.jpg" alt="Piccoli assaggi di benvenuto" width="900" height="900"></div>
+          <div class="piatto"><img src="img/piatto-5.jpg" alt="Pasta corta con bottarga ed erbe" width="900" height="900"></div>
+          <div class="piatto"><img src="img/piatto-6.jpg" alt="Piatto con salsa scura e cereali" width="900" height="900"></div>
+          <div class="piatto"><img src="img/piatto-7.jpg" alt="Involtino con crema gialla" width="581" height="581"></div>
+          <div class="piatto"><img src="img/piatto-8.jpg" alt="Dolce al cioccolato con gelato" width="900" height="900"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione menu" id="menu">
+    <div class="contenitore">
+      <div class="testa">
+        <p class="occhiello reveal">I menù degustazione</p>
+        <h2 class="reveal">Cuori, Quadri <em>e Picche.</em></h2>
+        <p class="testo reveal">Tre percorsi, come tre semi delle carte. Si scelgono per tutto il tavolo e cambiano con il mercato e con il mare.</p>
+      </div>
+      <div class="mazzo">
+        <article class="carta-gioco rosso">
+          <div class="dentro">
+            <span class="seme su"><svg viewBox="0 0 24 24"><path d="M12 21C7 17.2 2.5 13.6 2.5 8.9 2.5 6 4.7 3.8 7.4 3.8c2 0 3.6 1.1 4.6 2.8 1-1.7 2.6-2.8 4.6-2.8 2.7 0 4.9 2.2 4.9 5.1 0 4.7-4.5 8.3-9.5 12.1z"/></svg></span>
+            <span class="seme giu"><svg viewBox="0 0 24 24"><path d="M12 21C7 17.2 2.5 13.6 2.5 8.9 2.5 6 4.7 3.8 7.4 3.8c2 0 3.6 1.1 4.6 2.8 1-1.7 2.6-2.8 4.6-2.8 2.7 0 4.9 2.2 4.9 5.1 0 4.7-4.5 8.3-9.5 12.1z"/></svg></span>
+            <svg class="grande" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C7 17.2 2.5 13.6 2.5 8.9 2.5 6 4.7 3.8 7.4 3.8c2 0 3.6 1.1 4.6 2.8 1-1.7 2.6-2.8 4.6-2.8 2.7 0 4.9 2.2 4.9 5.1 0 4.7-4.5 8.3-9.5 12.1z"/></svg>
+            <h3>Cuori</h3>
+            <p class="prezzo"><b>160 €</b> a persona</p>
+            <ol>
+              <li>Crudo di mare: crostacei, tartare e fantasia di pesce bianco</li>
+              <li>Insalatina tiepida di mare con crostacei e molluschi</li>
+              <li>Sandwich di triglia e scarola su gazpacho di pomodoro verde</li>
+              <li>Bavette sul pesce, il piatto storico</li>
+              <li>Il pescato del giorno in forno all'isolana</li>
+              <li>“La Pastiera”, piccola pasticceria e caffè</li>
+            </ol>
+          </div>
+        </article>
+        <article class="carta-gioco rosso">
+          <div class="dentro">
+            <span class="seme su"><svg viewBox="0 0 24 24"><path d="M12 1.8 20 12l-8 10.2L4 12z"/></svg></span>
+            <span class="seme giu"><svg viewBox="0 0 24 24"><path d="M12 1.8 20 12l-8 10.2L4 12z"/></svg></span>
+            <svg class="grande" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.8 20 12l-8 10.2L4 12z"/></svg>
+            <h3>Quadri</h3>
+            <p class="prezzo"><b>175 €</b> a persona</p>
+            <ol>
+              <li>Quadro d'autore con caviale</li>
+              <li>Scampo a bassa temperatura, datterino giallo alla puttanesca</li>
+              <li>Sogliola in crosta di pane nero e olive taggiasche</li>
+              <li>Capesanta croccante, sedano rapa e Gastrique</li>
+              <li>Raviolone di bufala, scampi e gamberi allo yuzu</li>
+              <li>Astice (o aragosta) grigliato, farinata di ceci</li>
+              <li>“Contrasto fondente”, piccola pasticceria e caffè</li>
+            </ol>
+          </div>
+        </article>
+        <article class="carta-gioco nero">
+          <div class="dentro">
+            <span class="seme su"><svg viewBox="0 0 24 24"><path d="M12 1.8c-2.6 4-8.8 7.2-8.8 11.7 0 2.7 2.1 4.6 4.5 4.6 1.5 0 2.7-.6 3.4-1.6-.3 2.2-1.2 3.9-2.9 5.3h7.6c-1.7-1.4-2.6-3.1-2.9-5.3.7 1 1.9 1.6 3.4 1.6 2.4 0 4.5-1.9 4.5-4.6 0-4.5-6.2-7.7-8.8-11.7z"/></svg></span>
+            <span class="seme giu"><svg viewBox="0 0 24 24"><path d="M12 1.8c-2.6 4-8.8 7.2-8.8 11.7 0 2.7 2.1 4.6 4.5 4.6 1.5 0 2.7-.6 3.4-1.6-.3 2.2-1.2 3.9-2.9 5.3h7.6c-1.7-1.4-2.6-3.1-2.9-5.3.7 1 1.9 1.6 3.4 1.6 2.4 0 4.5-1.9 4.5-4.6 0-4.5-6.2-7.7-8.8-11.7z"/></svg></span>
+            <svg class="grande" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.8c-2.6 4-8.8 7.2-8.8 11.7 0 2.7 2.1 4.6 4.5 4.6 1.5 0 2.7-.6 3.4-1.6-.3 2.2-1.2 3.9-2.9 5.3h7.6c-1.7-1.4-2.6-3.1-2.9-5.3.7 1 1.9 1.6 3.4 1.6 2.4 0 4.5-1.9 4.5-4.6 0-4.5-6.2-7.7-8.8-11.7z"/></svg>
+            <h3>Picche</h3>
+            <p class="prezzo"><b>150 €</b> a persona</p>
+            <ol>
+              <li>Scampo a bassa temperatura, datterino giallo alla puttanesca</li>
+              <li>Sogliola in crosta di pane nero e olive taggiasche</li>
+              <li>Seppia arrostita, vellutata di zucca e salsa BBQ di pesce</li>
+              <li>Mezzo pacchero con gallinella in cacciucco e friarielli</li>
+              <li>Rombo alla parmigiana</li>
+              <li>“La Pavlova”, piccola pasticceria e caffè</li>
+            </ol>
+          </div>
+        </article>
+      </div>
+      <p class="nota-menu reveal">Menù di ottobre 2026, a persona, per tutto il tavolo, vini esclusi. Le condizioni del mare possono cambiare la disponibilità dei piatti.</p>
+
+      <div class="dalla-carta">
+        <div>
+          <p class="occhiello reveal">Dalla carta</p>
+          <h3 class="reveal" style="margin-top:20px">I piatti <em>di sempre</em>, accanto alle nuove creazioni.</h3>
+          <div class="reveal" style="margin-top:28px"><a class="pulsante p-vuoto" href="https://www.ristorantelorenzo.com/it/i-menu/" target="_blank" rel="noopener">La carta completa<span class="cerchio"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a></div>
+        </div>
+        <ul class="voci-carta reveal">
+          <li><div class="riga"><span class="nome">Bavette sul pesce</span><span class="punti"></span><span class="euro">40 €</span></div><span class="tag">Piatto storico</span><p>Pasta risottata con scampetti, totanini, seppiette e gamberetti biondi</p></li>
+          <li><div class="riga"><span class="nome">Spaghetti Versiliese</span><span class="punti"></span><span class="euro">40 €</span></div><span class="tag">Piatto della tradizione</span><p>Frutti di mare sgusciati, arselle, vongole veraci, cozze e pomodoro fresco</p></li>
+          <li><div class="riga"><span class="nome">Gran crudo di mare</span><span class="punti"></span><span class="euro">70 €</span></div><p>Ostriche, crostacei, tartare e fantasia di pesce bianco</p></li>
+          <li><div class="riga"><span class="nome">L'ultima cala di scampi</span><span class="punti"></span><span class="euro">70 €</span></div><p>Al forno o bolliti, con maionese espressa e fagioli bianchi di Sorana</p></li>
+          <li><div class="riga"><span class="nome">Filetto di Fassona alla Rossini</span><span class="punti"></span><span class="euro">65 €</span></div><p>Per chi preferisce la carne</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione chiaro carta cantina" id="cantina">
+    <div class="contenitore impianto">
+      <div>
+        <p class="occhiello reveal">La cantina</p>
+        <h2 class="reveal">Una grande cucina ha bisogno di <em>grandi vini.</em></h2>
+        <div class="cifra reveal"><b>2.000</b><span>referenze, quasi, in due carte: Italia ed estero</span></div>
+        <div class="testo reveal" style="margin-top:24px">
+          <p>Ogni bottiglia racconta la passione di Lorenzo e della figlia Chiara per il vino: i nomi più noti e le etichette di nicchia, prodotte in poche bottiglie e solo nelle annate migliori. Il viaggio lo organizza il sommelier Lorenzo Giannini.</p>
+        </div>
+        <p class="regioni reveal">Toscana <span>·</span> Piemonte <span>·</span> Sicilia <span>·</span> Collio <span>·</span> Borgogna <span>·</span> Bordeaux <span>·</span> Germania <span>·</span> Stati Uniti <span>·</span> Australia <span>·</span> Nuova Zelanda</p>
+        <div class="azioni reveal">
+          <a class="pulsante p-scuro" href="https://www.ristorantelorenzo.com/wp-content/uploads/2026/08/19-ITALIA-148-Luglio-26-170726-1635-SENZA-PREZZI.pdf" target="_blank" rel="noopener">Vini italiani<span class="cerchio"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+          <a class="pulsante p-bordo" href="https://www.ristorantelorenzo.com/wp-content/uploads/2026/08/19-ESTERO-148-Luglio-26-170726-1635-SENZA-PREZZI.pdf" target="_blank" rel="noopener">Vini esteri<span class="cerchio"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="coppia">
+          <div class="cornice"><img src="img/cantina.jpg" alt="La cantina con le bottiglie sotto un arco di mattoni" width="615" height="790"></div>
+          <div class="cornice"><img src="img/sommelier.jpg" alt="Il sommelier con una bottiglia in mano" width="615" height="790"></div>
+        </div>
+        <div class="cornice calici"><img src="img/calici.jpg" alt="Calici in fila con gli steli colorati" width="1100" height="733"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione scuro ambiente" id="ambiente">
+    <div class="contenitore">
+      <div class="testa">
+        <div>
+          <p class="occhiello reveal">L'ambiente</p>
+          <h2 class="reveal" style="margin-top:22px">Il lusso della <em>sobrietà.</em></h2>
+        </div>
+        <div class="testo reveal">
+          <p>Arredo elegante, luce discreta, tavoli distanti, colori sobri. Nelle sale si muove il servizio coordinato da Lorenzo con la figlia Chiara e Matteo, tra le sculture e i quadri della collezione d'arte contemporanea raccolta da Lorenzo negli anni.</p>
+          <p class="dress"><b>Dress code</b> no pantaloni corti per i signori</p>
+        </div>
+      </div>
+      <div class="bento">
+        <figure class="b1 reveal"><img src="img/sala.jpg" alt="Una delle sale, con le poltroncine in velluto e un'opera d'arte alla parete" width="1080" height="425"><figcaption>La sala</figcaption></figure>
+        <figure class="b2 reveal"><img src="img/onda.jpg" alt="Un tavolo rotondo apparecchiato sotto un'opera a forma di onda" width="625" height="635"><figcaption>L'onda</figcaption></figure>
+        <figure class="b3 reveal"><img src="img/arte.jpg" alt="Un'opera d'arte dorata con forme circolari" width="1054" height="729"><figcaption>La collezione</figcaption></figure>
+        <figure class="b4 reveal"><img src="img/squadra.jpg" alt="La squadra di sala in bianco e nero" width="1100" height="733"><figcaption>La squadra</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione chiaro premi">
+    <div class="contenitore impianto">
+      <div class="reveal">
+        <div class="medaglia"><div class="dentro">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.6 6.1 6.6.6-5 4.4 1.5 6.5L12 16.7l-5.7 3.4 1.5-6.5-5-4.4 6.6-.6z"/></svg>
+          <b>Una stella Michelin</b>
+          <small>Guida Michelin Italia 2026</small>
+        </div></div>
+        <div class="guide"><span>Lo trovate anche nelle guide</span>
+          <p>Gambero Rosso <span>·</span> L'Espresso <span>·</span> Touring Club <span>·</span> Bibenda <span>·</span> Le Soste</p>
+        </div>
+      </div>
+      <div>
+        <p class="occhiello reveal">Dicono di noi</p>
+        <div class="voto reveal" style="margin-top:22px">
+          <b>4,7</b>
+          <div><div class="stelline" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.6 6.1 6.6.6-5 4.4 1.5 6.5L12 16.7l-5.7 3.4 1.5-6.5-5-4.4 6.6-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.6 6.1 6.6.6-5 4.4 1.5 6.5L12 16.7l-5.7 3.4 1.5-6.5-5-4.4 6.6-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.6 6.1 6.6.6-5 4.4 1.5 6.5L12 16.7l-5.7 3.4 1.5-6.5-5-4.4 6.6-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.6 6.1 6.6.6-5 4.4 1.5 6.5L12 16.7l-5.7 3.4 1.5-6.5-5-4.4 6.6-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.6 6.1 6.6.6-5 4.4 1.5 6.5L12 16.7l-5.7 3.4 1.5-6.5-5-4.4 6.6-.6z"/></svg></div><span>744 recensioni su Google</span></div>
+        </div>
+        <blockquote class="reveal"><p>“Tre sale bellissime. Un servizio impeccabile. Piatti della tradizione con varianti più recenti.”</p><cite>Giacomo, Google</cite></blockquote>
+        <blockquote class="reveal"><p>“Nella sua categoria, una eccellenza.”</p><cite>Stefano, Google</cite></blockquote>
+        <blockquote class="reveal"><p>“Abbiamo passato una bellissima serata, in un ambiente confortevole e profumato.”</p><cite>Recensione Google</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione scuro prenota-sez" id="prenota">
+    <div class="contenitore impianto">
+      <div>
+        <p class="occhiello reveal">Contatti e prenotazioni</p>
+        <h2 class="reveal">Sei il <em>benvenuto.</em></h2>
+        <a class="telefono reveal" href="tel:+390584874030">0584 874030</a>
+        <ul class="contatti reveal">
+          <li><b>Indirizzo</b>Via Giosuè Carducci, 61 · 55042 Forte dei Marmi (LU)</li>
+          <li><b>Email</b><a href="mailto:info@ristorantelorenzo.com?subject=Prenotazione">info@ristorantelorenzo.com</a></li>
+          <li><b>Lavora con noi</b>Candidature via email o al telefono</li>
+        </ul>
+        <div class="azioni reveal">
+          <a class="pulsante p-chiaro" href="tel:+390584874030">Chiama per prenotare<span class="cerchio"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span></a>
+          <a class="pulsante p-vuoto" href="https://www.google.com/maps?cid=7571141791871907153" target="_blank" rel="noopener">Indicazioni<span class="cerchio"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+        </div>
+      </div>
+      <div class="orari reveal"><div class="dentro">
+        <span class="stato" id="stato"><i></i><span id="stato-testo">Orari</span></span>
+        <p class="avviso" id="avviso" hidden>Chiuso per manutenzione il 20, 21 e 22 ottobre.</p>
+        <h3>Orari</h3>
+        <p class="periodo">Dal 22 settembre al 31 maggio</p>
+        <table>
+          <tr data-g="1"><td>Lunedì</td><td>Chiuso</td></tr>
+          <tr data-g="2"><td>Martedì</td><td>20:00 · 22:00</td></tr>
+          <tr data-g="3"><td>Mercoledì</td><td>20:00 · 22:00</td></tr>
+          <tr data-g="4"><td>Giovedì</td><td>20:00 · 22:00</td></tr>
+          <tr data-g="5"><td>Venerdì</td><td>20:00 · 22:00</td></tr>
+          <tr data-g="6"><td>Sabato</td><td>12:30 · 14:00<br>20:00 · 22:00</td></tr>
+          <tr data-g="0"><td>Domenica</td><td>12:30 · 14:00<br>20:00 · 22:00</td></tr>
+        </table>
+        <p class="frase">Aperti tutte le sere, sabato e domenica anche a pranzo.</p>
+      </div></div>
+    </div>
+  </section>
+</main>
+
+<footer class="piede">
+  <div class="contenitore">
+    <div class="nome"><img src="img/marchio-avorio.png" alt="" width="227" height="300"><b>Lorenzo</b></div>
+    <div class="righe">
+      <span>Ristorante Lorenzo · Via Giosuè Carducci 61, Forte dei Marmi</span>
+      <span>P.IVA 05746560480</span>
+      <span class="social"><a href="https://www.instagram.com/lorenzoristorante" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/lorenzoristorantefdm/" target="_blank" rel="noopener">Facebook</a></span>
+    </div>
+    <p class="preview-note">Anteprima preparata per Ristorante Lorenzo</p>
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a href="tel:+390584874030"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Prenota un tavolo</a>
+  <a href="https://www.google.com/maps?cid=7571141791871907153" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Dove siamo</a>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script>
+// Aperto o chiuso adesso (ora italiana), con i giorni di chiusura straordinaria
+(function () {
+  var cena = [1200,1320], pranzo = [750,840];
+  var orari = {2:[cena],3:[cena],4:[cena],5:[cena],6:[pranzo,cena],0:[pranzo,cena]};
+  var chiusure = ['2026-10-20','2026-10-21','2026-10-22'];
+  var giorni = ['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+  var p = {};
+  try {
+    new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Rome',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false})
+      .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+  } catch (e) { return; }
+  var base = Date.UTC(+p.year, +p.month - 1, +p.day);
+  var m = (parseInt(p.hour,10) % 24) * 60 + parseInt(p.minute,10);
+  function giorno(i){ var d = new Date(base + i * 864e5); return { g: d.getUTCDay(), s: d.toISOString().slice(0,10) }; }
+  function hh(n){ var h = Math.floor(n/60), mi = n % 60; return h + ':' + (mi < 10 ? '0' : '') + mi; }
+  var oggi = giorno(0);
+  var riga = document.querySelector('.orari tr[data-g="' + oggi.g + '"]'); if (riga) riga.classList.add('oggi');
+  if (oggi.s <= chiusure[chiusure.length - 1]) document.getElementById('avviso').hidden = false;
+  var s = document.getElementById('stato'), t = document.getElementById('stato-testo');
+  var chiuso = chiusure.indexOf(oggi.s) > -1;
+  var fasce = chiuso ? [] : (orari[oggi.g] || []);
+  for (var k = 0; k < fasce.length; k++) { if (m >= fasce[k][0] && m < fasce[k][1]) { s.classList.add('aperto'); t.textContent = 'Aperto ora · fino alle ' + hh(fasce[k][1]); return; } }
+  for (var i = 0; i < 14; i++) {
+    var d = giorno(i); if (chiusure.indexOf(d.s) > -1) continue;
+    var oo = orari[d.g] || [];
+    for (var z = 0; z < oo.length; z++) { if (i > 0 || m < oo[z][0]) {
+      t.textContent = (chiuso ? 'Chiuso per manutenzione' : 'Chiuso ora') + ' · riapre ' + (i === 0 ? 'oggi' : i === 1 ? 'domani' : giorni[d.g]) + ' alle ' + hh(oo[z][0]); return; } }
+  }
+})();
+
+// Movimento: solo se le librerie ci sono e il telefono non chiede "Riduci movimento"
+(function () {
+  var calmo = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (calmo || !window.gsap || !window.ScrollTrigger) return;
+  gsap.registerPlugin(ScrollTrigger);
+  document.documentElement.classList.add('js-anim');
+  if (window.Lenis) {
+    var lenis = new Lenis({ duration: 1.15 });
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
+    gsap.ticker.lagSmoothing(0);
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) { var id = a.getAttribute('href'); var el = id.length > 1 && document.querySelector(id); if (el || id === '#inizio') { e.preventDefault(); lenis.scrollTo(el || 0, { offset: 0 }); } });
+    });
+  }
+  // 1. il nome entra lettera per lettera e la foto si avvicina piano
+  gsap.from('.copertina h1 .l > span', { yPercent: 110, duration: 1.3, ease: 'expo.out', stagger: .06, delay: .15 });
+  gsap.from('.copertina .occhiello, .copertina .sotto, .copertina .azioni, .stella', { opacity: 0, y: 18, duration: 1, ease: 'power3.out', stagger: .1, delay: .6 });
+  gsap.fromTo('.copertina-foto img', { scale: 1.14 }, { scale: 1, duration: 2.6, ease: 'expo.out' });
+  gsap.to('.copertina-foto', { yPercent: 12, ease: 'none', scrollTrigger: { trigger: '.copertina', start: 'top top', end: 'bottom top', scrub: true } });
+  // 2. i blocchi salgono quando arrivano
+  gsap.utils.toArray('.reveal').forEach(function (el) {
+    gsap.to(el, { opacity: 1, y: 0, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } });
+  });
+  // 3. da computer i piatti scorrono di lato mentre si scende
+  gsap.matchMedia().add('(min-width: 900px)', function () {
+    var b = document.querySelector('.galleria .binario');
+    var quanto = function () { return Math.max(0, b.scrollWidth - document.documentElement.clientWidth + 80); };
+    gsap.to(b, { x: function () { return -quanto(); }, ease: 'none',
+      scrollTrigger: { trigger: '.galleria', start: 'center center', end: function () { return '+=' + quanto(); }, pin: true, scrub: 1, invalidateOnRefresh: true } });
+  });
+  window.addEventListener('load', function () { ScrollTrigger.refresh(); });
+})();
+</script>
+</body>
+</html>
