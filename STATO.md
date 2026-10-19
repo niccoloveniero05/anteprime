@@ -30,6 +30,7 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 | Atelier Misspettino | Ponte all'Abate (Pescia) | https://niccoloveniero05.github.io/anteprime/misspettino-f06bb0/ | 2026-10-15 | in attesa | foto da Google e Instagram; colori dalla poltrona arcobaleno del salone; WhatsApp sul cellulare del salone da confermare. Issue #17 |
 | Studio Bernardini & Partners | Altopascio | https://niccoloveniero05.github.io/anteprime/studio-bernardini-2b1e95/ | 2026-10-16 | in attesa | studio di commercialisti con sito vecchio (modello generico); testi presi dal loro sito e dalla pagina dei premi; una sola foto (team ai Le Fonti Awards 2022). Issue #18 |
 | Ristorante Lorenzo | Forte dei Marmi | https://niccoloveniero05.github.io/anteprime/ristorante-lorenzo-119f07/ | 2026-10-19 | in attesa | ristorante stellato con un sito del 2018 (WordPress); testi, menù degustazione e foto presi dal loro sito; stella Michelin verificata sulla Guida 2026; orari da Google. Issue #19 |
+| Pasticceria Sweet by Daniele Grieco | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/sweet-1c649f/ | 2026-10-19 | in attesa | pasticceria senza sito (solo Facebook); foto e frasi delle recensioni da Google; il cubo di brioche in primo piano; WhatsApp sul cellulare da confermare. Issue #20 |
 
 ## Registro
 
@@ -66,3 +67,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 
 - `veniello-v2-a3cb11` — Veniello Studio, bozza del nuovo sito (stile scuro, scena che scorre) — 16/10/2026
 - 2026-10-19 — Pubblicata l'anteprima di Ristorante Lorenzo (Forte dei Marmi), stato "in attesa": da mandare al titolare. Issue #19.
+- 2026-10-19 — Pubblicata l'anteprima di Pasticceria Sweet by Daniele Grieco (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #20.
