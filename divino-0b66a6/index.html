@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>diVino Wine Shop · Enoteca in centro a Montecatini Terme</title>
+<meta name="description" content="diVino Wine Shop, enoteca in Via Manzoni 59 a Montecatini Terme: vini toscani e d'Italia, bollicine, Vinsanto e confezioni regalo, con il consiglio giusto per ogni occasione.">
+<meta name="theme-color" content="#FAF5EE">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --vino:#6E1F36;
+  --vino-scuro:#4A1222;
+  --oro:#C9A35B;
+  --crema:#F3E9DC;
+  --fondo:#FAF5EE;
+  --carta:#FFFFFF;
+  --testo:#2B1E1F;
+  --grigio:#6C5B5C;
+  --linea:rgba(43,30,31,.13);
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --font:"Outfit",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --lato:clamp(16px,5vw,64px);
+  --ombra:0 1px 2px rgba(43,30,31,.06),0 14px 34px -10px rgba(43,30,31,.22);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:76px}
+body{margin:0;background:var(--fondo);color:var(--testo);font:400 1.06rem/1.6 var(--font);-webkit-font-smoothing:antialiased;overflow-x:clip;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--vino);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--lato)}
+.i{width:20px;height:20px;flex:none}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;text-wrap:balance;letter-spacing:-.015em;line-height:1.05}
+h1 em,h2 em{font-style:italic;color:var(--vino)}
+h2{font-size:clamp(2.1rem,8vw,3.4rem)}
+p{margin:0}
+section{padding:clamp(70px,10vw,120px) 0}
+.intro{color:var(--grigio);max-width:56ch;margin-top:1rem;font-size:1.08rem}
+.occhiello{font:500 .82rem/1 var(--font);letter-spacing:.18em;text-transform:uppercase;color:var(--oro);margin-bottom:1rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:52px;padding:0 1.4rem;font:500 1rem/1 var(--font);text-decoration:none;border:0;border-radius:999px;cursor:pointer;transition:background-color .25s,color .25s,transform .2s}
+.btn:active{transform:scale(.97)}
+.btn-pieno{background:var(--vino);color:#fff}
+.btn-pieno:hover{background:var(--vino-scuro)}
+.btn-linea{background:transparent;box-shadow:inset 0 0 0 1.5px var(--vino);color:var(--vino)}
+.btn-linea:hover{background:var(--vino);color:#fff}
+
+/* Testata */
+.testata{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--fondo) 92%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--linea)}
+.testata .wrap{display:flex;align-items:center;gap:12px;height:64px}
+.logo{display:flex;align-items:baseline;gap:.15rem;min-height:44px;align-items:center;margin-right:auto;text-decoration:none;color:var(--vino)}
+.logo .di{font:400 1rem/1 var(--serif);font-style:italic;margin-right:.1rem}
+.logo .vino{font:400 1.75rem/1 var(--serif);font-style:italic;letter-spacing:-.02em}
+.logo .ws{font:600 .62rem/1 var(--font);letter-spacing:.22em;color:var(--grigio);margin-left:.55rem;align-self:center}
+.testata nav{display:none}
+.testata .btn{min-height:42px;padding:0 1.1rem;font-size:.95rem}
+@media (max-width:380px){.testata .btn{display:none}}
+
+/* Copertina */
+.copertina{padding:28px 0 56px}
+.copertina-griglia{display:grid;gap:28px;align-items:center}
+.copertina h1{font-size:clamp(2.6rem,11vw,5rem);max-width:12ch}
+.copertina .intro{margin-top:1.2rem}
+.copertina .azioni{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.8rem}
+.cornice{position:relative;margin:0}
+.cornice img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;box-shadow:var(--ombra)}
+.bollino{position:absolute;left:-10px;bottom:22px;background:var(--carta);border-radius:14px;box-shadow:var(--ombra);padding:12px 16px;display:flex;align-items:center;gap:10px}
+.bollino b{font:500 1.7rem/1 var(--serif);color:var(--vino)}
+.bollino span{font-size:.85rem;line-height:1.25;color:var(--grigio)}
+.bollino .stelle{color:var(--oro);letter-spacing:.06em;font-size:.9rem}
+
+/* In breve */
+.breve{padding:0 0 10px}
+.breve ul{list-style:none;margin:0;padding:24px 0 0;border-top:1px solid var(--linea);display:grid;grid-template-columns:1fr 1fr;gap:22px 18px}
+.breve li{display:grid;gap:2px}
+.breve b{font:400 1.6rem/1.1 var(--serif);color:var(--vino)}
+.breve span{font-size:.95rem;color:var(--grigio);line-height:1.35}
+
+/* Bottega */
+.foto-griglia{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:2.2rem}
+.foto-griglia figure{margin:0}
+.foto-griglia img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;background:#eadfd2}
+.foto-griglia figure:first-child{grid-column:1/-1}
+.foto-griglia figure:first-child img{aspect-ratio:4/3}
+.foto-griglia figcaption{font-size:.92rem;color:var(--grigio);margin-top:.5rem}
+
+/* Cosa trovi */
+.trovi{background:var(--carta)}
+.trovi-griglia{list-style:none;margin:2.4rem 0 0;padding:0;display:grid;grid-template-columns:1fr;gap:0}
+.trovi-griglia li{display:grid;grid-template-columns:44px 1fr;gap:4px 14px;padding:18px 0;border-top:1px solid var(--linea)}
+.trovi-griglia .tondo{grid-row:span 2;width:44px;height:44px;border-radius:50%;background:var(--crema);color:var(--vino);display:flex;align-items:center;justify-content:center}
+.trovi-griglia h3{font:500 1.12rem/1.25 var(--font)}
+.trovi-griglia p{color:var(--grigio);font-size:.98rem;line-height:1.45}
+
+/* Regali */
+.regali{background:var(--vino-scuro);color:#fff}
+.regali h2 em{color:var(--oro)}
+.regali .intro{color:rgba(255,255,255,.82)}
+.regali .occhiello{color:var(--oro)}
+.regali-griglia{display:grid;gap:30px;align-items:center}
+.regali img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px}
+.regali .btn-pieno{background:#fff;color:var(--vino);margin-top:1.8rem}
+.regali .btn-pieno:hover{background:var(--crema)}
+
+/* Recensioni */
+.frasi{list-style:none;margin:2.2rem 0 0;padding:0;display:grid;gap:16px}
+.frasi li{background:var(--carta);border-radius:16px;padding:22px 22px 20px;box-shadow:var(--ombra)}
+.frasi p{font:300 clamp(1.25rem,4.8vw,1.45rem)/1.35 var(--serif);letter-spacing:-.01em}
+.frasi cite{display:block;margin-top:.8rem;font-style:normal;font-size:.88rem;color:var(--grigio)}
+.voto{display:flex;align-items:center;gap:12px;margin-top:1.2rem;color:var(--grigio);font-size:.95rem}
+.voto b{font:500 2rem/1 var(--serif);color:var(--vino)}
+.voto .stelle{color:var(--oro);letter-spacing:.08em}
+
+/* Orari e dove */
+.dove{background:var(--carta)}
+.dove-griglia{display:grid;gap:36px}
+.orari{list-style:none;margin:1.6rem 0 0;padding:0}
+.orari li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-top:1px solid var(--linea)}
+.orari li:last-child{border-bottom:1px solid var(--linea)}
+.orari span{color:var(--grigio);text-align:right;font-variant-numeric:tabular-nums}
+.nota{font-size:.88rem;color:var(--grigio);margin-top:.8rem}
+.mappa{aspect-ratio:4/3.4;background:#eadfd2;border-radius:16px;overflow:hidden}
+.mappa iframe{width:100%;height:100%;border:0;display:block}
+.indirizzo{margin:1rem 0 1.1rem}
+
+/* Contatti */
+.contatti{background:var(--vino);color:#fff;text-align:center}
+.contatti h2{max-width:15ch;margin:0 auto}
+.contatti h2 em{color:var(--oro)}
+.contatti p{color:rgba(255,255,255,.85);margin:1rem auto 2rem;max-width:46ch}
+.contatti .azioni{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.contatti .btn-pieno{background:#fff;color:var(--vino)}
+.contatti .btn-pieno:hover{background:var(--crema)}
+.contatti .btn-linea{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.75);color:#fff}
+.contatti .btn-linea:hover{background:#fff;color:var(--vino)}
+.piede{background:var(--vino-scuro);color:rgba(255,255,255,.72);font-size:.92rem;padding:36px 0 30px}
+.piede .logo{color:#fff;margin-bottom:.8rem}
+.piede .logo .ws{color:var(--oro)}
+.piede p{margin:.2rem 0}
+.piede a{color:#fff;text-decoration:none}
+.anteprima-nota{font-size:.8rem;opacity:.75;margin-top:1rem!important}
+
+/* Barra telefono */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1.4fr;gap:8px;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:var(--carta);border-top:1px solid var(--linea)}
+.barra a{display:flex;align-items:center;justify-content:center;gap:.5rem;min-height:50px;font-weight:500;text-decoration:none;border-radius:999px;box-shadow:inset 0 0 0 1.5px var(--vino);color:var(--vino)}
+.barra a.su{background:var(--vino);color:#fff;box-shadow:none}
+
+@media (min-width:760px){
+  .breve ul{grid-template-columns:repeat(4,1fr)}
+  .foto-griglia{grid-template-columns:repeat(3,1fr)}
+  .foto-griglia figure:first-child{grid-column:span 2;grid-row:span 2}
+  .foto-griglia figure:first-child img{aspect-ratio:auto;height:100%}
+  .trovi-griglia{grid-template-columns:1fr 1fr;column-gap:48px}
+  .frasi{grid-template-columns:repeat(3,1fr)}
+}
+@media (min-width:1000px){
+  body{padding-bottom:0}
+  .barra{display:none}
+  .testata .wrap{height:76px}
+  .testata nav{display:flex;gap:28px;font-size:.98rem;margin-right:12px}
+  .testata nav a{text-decoration:none;color:var(--grigio);padding:.4rem 0}
+  .testata nav a:hover{color:var(--vino)}
+  .copertina{padding:64px 0 72px}
+  .copertina-griglia{grid-template-columns:1.1fr .9fr;gap:72px}
+  .cornice{max-width:460px;justify-self:end}
+  .regali-griglia{grid-template-columns:.9fr 1.1fr;gap:72px}
+  .regali img{max-width:440px}
+  .trovi-griglia{grid-template-columns:repeat(3,1fr);column-gap:40px}
+  .dove-griglia{grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}
+  .mappa{aspect-ratio:auto;height:520px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.4A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+  <symbol id="i-calice" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2.5h10l-.6 6a4.4 4.4 0 0 1-8.8 0zM12 13v7.5M8 21h8M7.4 7h9.2"/></symbol>
+  <symbol id="i-bolle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2.5h6v3l1.5 3.5V21a.5.5 0 0 1-.5.5H8a.5.5 0 0 1-.5-.5V9L9 5.5z"/><circle cx="11" cy="13" r="1"/><circle cx="13.2" cy="16.2" r=".8"/><circle cx="11.5" cy="18.4" r=".6"/></symbol>
+  <symbol id="i-regalo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="8" width="17" height="4" rx="1"/><path d="M5 12v8.5h14V12M12 8v12.5M12 8c-1.5-3.5-5.5-3.5-5 0M12 8c1.5-3.5 5.5-3.5 5 0"/></symbol>
+  <symbol id="i-uva" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="10" r="2"/><circle cx="13" cy="10" r="2"/><circle cx="11" cy="13.5" r="2"/><circle cx="15" cy="13.5" r="2"/><circle cx="13" cy="17" r="2"/><path d="M12 8V4.5c1.5-1.5 3.5-1.5 4.5 0"/></symbol>
+  <symbol id="i-dialogo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h11a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9l-4 3.5V15H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zM19 9h1a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v2.5L16 18"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+</svg>
+
+<header class="testata">
+  <div class="wrap">
+    <a class="logo" href="#inizio" aria-label="diVino Wine Shop"><span class="di">di</span><span class="vino">Vino</span><span class="ws">WINE SHOP</span></a>
+    <nav aria-label="Sezioni"><a href="#bottega">La bottega</a><a href="#trovi">Cosa trovi</a><a href="#regali">Regali</a><a href="#dove">Orari e dove</a></nav>
+    <a class="btn btn-pieno" href="https://wa.me/393349417559" target="_blank" rel="noopener">Scrivici</a>
+  </div>
+</header>
+
+<main id="inizio">
+  <section class="copertina" aria-labelledby="titolo">
+    <div class="wrap copertina-griglia">
+      <div>
+        <p class="occhiello">Enoteca a Montecatini Terme</p>
+        <h1 id="titolo">La bottiglia giusta, <em>consigliata da chi la conosce</em></h1>
+        <p class="intro">Vini toscani e d&rsquo;Italia, bollicine e Vinsanto in Via Manzoni, in pieno centro. Dicci l&rsquo;occasione: la bottiglia la scegliamo insieme.</p>
+        <div class="azioni">
+          <a class="btn btn-pieno" href="https://wa.me/393349417559?text=Buongiorno%2C%20vorrei%20un%20consiglio%20su%20una%20bottiglia" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>Chiedi un consiglio</a>
+          <a class="btn btn-linea" href="#dove">Orari e dove</a>
+        </div>
+      </div>
+      <figure class="cornice">
+        <img src="img/bottega.jpg" width="512" height="640" alt="La bottega: scaffali di vino e confezioni regalo pronte" fetchpriority="high">
+        <div class="bollino"><b>4,9</b><span><span class="stelle" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>30 recensioni su Google</span></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="breve" aria-label="In breve">
+    <div class="wrap">
+      <ul>
+        <li><b>In centro</b><span>Via Manzoni 59, a due passi da Viale Bicchierai</span></li>
+        <li><b>Il consiglio</b><span>ti aiutiamo a trovare la bottiglia per ogni occasione</span></li>
+        <li><b>Vinsanto e Chianti</b><span>e i grandi vini della Toscana</span></li>
+        <li><b>Regali</b><span>confezioni da portare via</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="bottega" id="bottega" aria-labelledby="t-bottega">
+    <div class="wrap">
+      <p class="occhiello">La bottega</p>
+      <h2 id="t-bottega">Vino&hellip; <em>e non solo</em></h2>
+      <p class="intro">Una piccola enoteca in centro: dalle etichette di tutti i giorni a quelle per le grandi occasioni.</p>
+      <div class="foto-griglia">
+        <figure><img src="img/bottega.jpg" width="512" height="640" alt="Scaffali di vino e confezioni regalo nella bottega" loading="lazy"><figcaption>Gli scaffali</figcaption></figure>
+        <figure><img src="img/bottiglie.jpg" width="640" height="640" alt="Bottiglie di vino toscano sul tavolo" loading="lazy"><figcaption>Le etichette toscane</figcaption></figure>
+        <figure><img src="img/cantina.jpg" width="640" height="640" alt="Il corridoio di una cantina con le botti" loading="lazy"><figcaption>In cantina</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="trovi" id="trovi" aria-labelledby="t-trovi">
+    <div class="wrap">
+      <p class="occhiello">Cosa trovi</p>
+      <h2 id="t-trovi">Per la cena, <em>per un regalo, per festeggiare</em></h2>
+      <ul class="trovi-griglia">
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-calice"/></svg></span><h3>Vini toscani</h3><p>Dal Chianti ai rossi delle colline, per tutti i giorni e per le occasioni.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-uva"/></svg></span><h3>Vini d&rsquo;Italia</h3><p>Una selezione dalle altre regioni, scelta bottiglia per bottiglia.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-bolle"/></svg></span><h3>Bollicine</h3><p>Prosecco e Franciacorta per brindare.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-calice"/></svg></span><h3>Vinsanto</h3><p>Il vino da meditazione della Toscana, anche da portare a casa.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-regalo"/></svg></span><h3>Confezioni regalo</h3><p>Per un compleanno, per Natale o per ringraziare qualcuno.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-dialogo"/></svg></span><h3>Un consiglio vero</h3><p>Dicci cosa cucini o a chi è il regalo: la bottiglia la troviamo insieme.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="regali" id="regali" aria-labelledby="t-regali">
+    <div class="wrap regali-griglia">
+      <img src="img/bollicine.jpg" width="512" height="640" alt="Una bottiglia di spumante stappata con il logo di Vino" loading="lazy">
+      <div>
+        <p class="occhiello">Regali</p>
+        <h2 id="t-regali">Un regalo che si ricorda, <em>senza pensieri</em></h2>
+        <p class="intro">Dicci a chi è, quanto vuoi spendere e quando ti serve. Prepariamo la confezione con le bottiglie giuste, pronta da portare via.</p>
+        <a class="btn btn-pieno" href="https://wa.me/393349417559?text=Buongiorno%2C%20vorrei%20preparare%20una%20confezione%20regalo" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-regalo"/></svg>Prepara un regalo</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="recensioni" aria-labelledby="t-rec">
+    <div class="wrap">
+      <p class="occhiello">Chi è passato da noi</p>
+      <h2 id="t-rec">Cosa dicono <em>i clienti</em></h2>
+      <div class="voto"><b>4,9</b><span><span class="stelle" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> su 30 recensioni Google</span></div>
+      <ul class="frasi">
+        <li><p>&laquo;Sicuramente tornerò da lui a prendere una buona bottiglia di vino.&raquo;</p><cite>Recensione su Google</cite></li>
+        <li><p>&laquo;Se dovessi tornare a Montecatini, so già dove comprerò Vinsanto e Chianti!&raquo;</p><cite>Recensione su Google</cite></li>
+        <li><p>&laquo;Consigliato per chi passa di qua!&raquo;</p><cite>Recensione su Google</cite></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="dove" id="dove" aria-labelledby="t-dove">
+    <div class="wrap dove-griglia">
+      <div>
+        <p class="occhiello">Orari e dove</p>
+        <h2 id="t-dove">Ti aspettiamo <em>in Via Manzoni</em></h2>
+        <ul class="orari">
+          <li><b>Da lunedì a giovedì</b><span>16:30 &ndash; 19:30</span></li>
+          <li><b>Venerdì e sabato</b><span>10:00 &ndash; 13:00<br>16:30 &ndash; 20:00</span></li>
+          <li><b>Domenica</b><span>chiuso</span></li>
+        </ul>
+        <p class="nota">Orari d&rsquo;inverno. Nelle feste cambiano: li trovi sul nostro Instagram.</p>
+      </div>
+      <div>
+        <div class="mappa"><iframe title="Mappa: diVino Wine Shop, Via Manzoni 59, Montecatini Terme" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=diVino%20Wine%20Shop%2C%20Via%20Manzoni%2059%2C%20Montecatini%20Terme&amp;z=16&amp;hl=it&amp;output=embed"></iframe></div>
+        <p class="indirizzo"><b>Via Manzoni 59</b>, angolo Viale Bicchierai, 51016 Montecatini Terme (PT)</p>
+        <a class="btn btn-linea" href="https://www.google.com/maps/dir/?api=1&amp;destination=diVino%20Wine%20Shop%20Montecatini%20Terme" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Indicazioni</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contatti" aria-labelledby="t-cont">
+    <div class="wrap">
+      <h2 id="t-cont">Una bottiglia da scegliere? <em>Scrivici</em></h2>
+      <p>Dicci l&rsquo;occasione o a chi è il regalo: ti rispondiamo con un consiglio.</p>
+      <div class="azioni">
+        <a class="btn btn-pieno" href="https://wa.me/393349417559" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+        <a class="btn btn-linea" href="tel:+393349417559"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>334 941 7559</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="piede">
+  <div class="wrap">
+    <div class="logo"><span class="di">di</span><span class="vino">Vino</span><span class="ws">WINE SHOP</span></div>
+    <p>Via Manzoni 59, 51016 Montecatini Terme (PT)</p>
+    <p><a href="tel:+393349417559">334 941 7559</a> &middot; <a href="https://www.instagram.com/divinomontecatini/" target="_blank" rel="noopener">Instagram @divinomontecatini</a></p>
+    <p class="anteprima-nota">Anteprima preparata da Veniello Studio per diVino Wine Shop</p>
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a href="tel:+393349417559"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>Chiama</a>
+  <a class="su" href="https://wa.me/393349417559" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+</nav>
+</body>
+</html>
