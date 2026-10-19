@@ -69,3 +69,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-19 — Pubblicata l'anteprima di Ristorante Lorenzo (Forte dei Marmi), stato "in attesa": da mandare al titolare. Issue #19.
 - 2026-10-19 — Pubblicata l'anteprima di Pasticceria Sweet by Daniele Grieco (Montecatini Terme), stato "in attesa": da mandare al titolare. Issue #20.
 - 2026-10-19 — Modificata l'anteprima di Pasticceria Sweet by Daniele Grieco (Montecatini Terme): messo il logo vero preso dalle bustine di zucchero. Issue #20.
+- 2026-10-19 — Modificata l'anteprima di Pasticceria Sweet by Daniele Grieco (Montecatini Terme): tenuta solo la scritta del logo, senza cornice. Issue #20.
