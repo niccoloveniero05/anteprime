@@ -1,0 +1,1717 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Veniello Studio · Siti, Google, social e video a Montecatini Terme</title>
+<meta name="description" content="Veniello Studio fa siti su misura, scheda Google, Instagram, TikTok e video per ogni attività della Valdinievole: negozi, ristoranti, saloni, studi, artigiani e strutture. Vedi il tuo sito prima di pagare.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="img/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="icon" href="img/favicon-96.png?v=3" sizes="96x96" type="image/png">
+<link rel="manifest" href="/site.webmanifest?v=3">
+<script>try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('logo-in')}catch(e){}</script>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
+<meta name="theme-color" content="#100F09">
+<meta property="og:title" content="Veniello Studio · Montecatini Terme">
+<meta property="og:description" content="Fatti trovare. Fatti scegliere. Siti, Google, social e video per le attività della Valdinievole.">
+<meta property="og:image" content="https://www.veniellostudio.it/img/og.jpg">
+<meta property="og:url" content="https://www.veniellostudio.it/">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+:root{
+  --bg:#100F09; --bg2:#14130D; --surf:#1A1913; --surf2:#22211A; --surf3:#2A2922;
+  --line:rgba(245,244,239,.1); --line2:rgba(245,244,239,.2);
+  --testo:#F5F4EF; --testo2:rgba(245,244,239,.64); --testo3:rgba(245,244,239,.4);
+  --r:16px; --r2:24px; --lato:20px; --max:1180px; --testata:64px;
+  --sans:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Geist Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:80px;-webkit-text-size-adjust:100%} /* lo scorrimento morbido dei link #… lo fa lo script (vedi «Link interni»): in CSS rendeva morbido anche ogni scrollTo */
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden} /* Lenis, solo al computer (vedi «Rotella») */
+body{font-family:var(--sans);font-size:16px;line-height:1.6;color:var(--testo);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--lato)}
+.salta{position:absolute;left:-999px;top:8px;background:var(--testo);color:var(--bg);padding:8px 12px;border-radius:8px}
+.salta:focus{left:8px;z-index:99}
+:focus-visible{outline:2px solid var(--testo);outline-offset:3px;border-radius:6px}
+[tabindex="-1"]:focus{outline:none}
+
+/* tipografia */
+.mono,.etichetta{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3)}
+.etichetta{display:block;margin-bottom:16px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em}
+h1 em,h2 em,.frase em,.dichiara em{font-style:italic}
+h1{font-size:clamp(46px,9.4vw,100px);line-height:1}
+h2{font-size:clamp(36px,5.8vw,62px);line-height:1.04;max-width:16ch}
+h3{font-size:clamp(26px,3vw,32px);line-height:1.12}
+.intro{color:var(--testo2);font-size:clamp(16px,1.8vw,19px);max-width:52ch;margin-top:18px}
+section{padding:clamp(72px,10vw,128px) 0;position:relative}
+
+/* pulsanti */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 22px;border-radius:999px;font-weight:500;font-size:15px;white-space:nowrap;transition:transform .2s ease,background .2s ease}
+.btn:active{transform:scale(.97)}
+.btn-pieno{background:var(--testo);color:var(--bg)}
+.btn-pieno:hover{background:#fff}
+.btn-linea{box-shadow:inset 0 0 0 1px var(--line2)}
+.btn-linea:hover{background:rgba(245,244,239,.07)}
+.i{width:18px;height:18px;flex:none}
+.link{display:inline-flex;align-items:center;gap:8px;font-weight:500;border-bottom:1px solid var(--line2);padding-bottom:2px}
+.link:hover{border-color:var(--testo)}
+
+/* testata */
+.testata{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .25s ease,box-shadow .25s ease}
+.testata.piena{background:rgba(16,15,9,.96);box-shadow:0 1px 0 var(--line)}
+.testata .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:var(--testata)}
+/* logo (16/10/2026): simbolo = V corsiva ingrossata + puntino arancio REC; scritta «Veniello.studio» con la stessa V e il punto tondo arancio */
+@font-face{font-family:'Geist';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/Geist-400.woff2) format('woff2')}
+.marchio{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:20px;letter-spacing:-.05em;line-height:1;white-space:nowrap}
+.marchio .vv{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0;-webkit-text-stroke:.55px currentColor;paint-order:stroke fill}
+.marchio .parola > .vv{font-size:1.18em;margin-right:.01em;-webkit-text-stroke:1px currentColor}
+.marchio .pt{display:inline-block;width:.21em;height:.21em;border-radius:50%;background:#FF5A1F;margin:0 .035em 0 .045em}
+.marchio .pt,.marchio .e,.marchio .st{display:inline-block}
+/* entrata del logo: si vede solo la V con il puntino REC, poi il nome esce dalla V e il puntino diventa il punto */
+.logo-in .testata .marchio .e,.logo-in .testata .marchio .st{clip-path:inset(-20% 100% -20% 0)}
+.logo-in .testata .marchio .pt{opacity:0}
+.testata nav{display:none;gap:26px;font-size:14px;color:var(--testo2)}
+.testata nav a:hover{color:var(--testo)}
+.testata .btn{min-height:40px;padding:0 16px;font-size:14px}
+@media (min-width:900px){.testata nav{display:flex}}
+
+/* copertina */
+.copertina{min-height:100svh;display:flex;align-items:center;text-align:center;padding:110px 0 56px}
+.copertina .wrap{display:flex;flex-direction:column;align-items:center}
+.copertina h1{max-width:12ch;margin-top:22px}
+.copertina .intro{text-align:center;margin-top:22px;max-width:44ch}
+.azioni{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:32px;align-items:center}
+.fiducia{margin-top:40px;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--testo3);max-width:30ch;line-height:1.9}
+@media (min-width:700px){.fiducia{max-width:none}}
+.scorri{margin-top:44px;display:flex;flex-direction:column;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--testo3)}
+.scorri i{display:block;width:1px;height:40px;background:linear-gradient(var(--testo3),transparent)}
+
+/* «Da uno a tutti» (scelta da Niccolò il 18/10), con l'inizio del «puntino» (proposta B, 18/10): scorrendo, la copertina
+   sale da sola come una pagina normale e passa davanti al punto arancio di «scegliere», che si stacca, scende al centro,
+   lampeggia una volta e si gonfia in un cerchio che si allarga fino a riempire lo schermo; lo schermo arancio si stringe
+   nel puntino della V del logo e dalla V esce il nome (il «momento V», disegnato dalla pagina: .lv), la camera si
+   allontana e quel riquadro diventa uno dei lavori nel muro dei lavori veri del Jué; il muro si inclina, scorre sotto
+   le tre frasi e se ne va con la pagina. Solo transform e opacity. La sezione non ha overflow-x:clip (rompe le
+   animazioni): taglia il palco. */
+.rec-punto{display:inline-block;width:.19em;height:.19em;border-radius:50%;background:#FF5A1F;margin-left:.045em;vertical-align:baseline}
+.apertura{position:relative}
+/* la copertina scorre con la pagina (il dito la sente subito). A strati: la sua luce (.macchia) sotto il palco, i testi
+   sopra: il puntino passa davanti alla luce e dietro ai testi. Per questo la copertina non fa da gruppo (niente z-index) */
+.apertura>.copertina{position:relative;overflow:hidden}
+.apertura>.copertina>.wrap{position:relative;z-index:3}
+/* sfondo della copertina («shader», scelto da Niccolò il 18/10): la luce la disegna uno shader WebGL nel canvas .macchia
+   (script in fondo alla pagina), entra in dissolvenza dopo il primo fotogramma. Senza WebGL: tre luci ferme in CSS sul
+   canvas stesso (.senza-gl); senza script il nero di sempre. */
+.macchia{position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;display:block;pointer-events:none;opacity:0;transition:opacity 1.4s cubic-bezier(.2,.7,.2,1)}
+.macchia.pronto{opacity:1}
+.copertina.senza-gl .macchia{transition:none;background:
+  radial-gradient(70vmax 52vmax at 86% 94%,rgba(207,75,27,.5),rgba(150,45,14,.26) 40%,rgba(74,23,10,.1) 64%,rgba(16,15,9,0) 82%),
+  radial-gradient(48vmax 40vmax at 100% 0%,rgba(184,56,15,.34),rgba(16,15,9,0) 72%),
+  radial-gradient(56vmax 46vmax at 0% 18%,rgba(74,23,10,.5),rgba(16,15,9,0) 74%),
+  #100F09}
+/* senza WebGL e con «Riduci movimento» il fondo della copertina che sale sfuma nel nero con una maschera (--sfuma dallo
+   script; con lo shader lo fa lo shader): la luce non finisce con una riga */
+.copertina.senza-gl .macchia,html.fermo .macchia{-webkit-mask-image:linear-gradient(to top,transparent,#000 var(--sfuma,0px));mask-image:linear-gradient(to top,transparent,#000 var(--sfuma,0px))}
+@media (prefers-reduced-motion:reduce){.macchia{transition:none}}
+.scena{position:relative;z-index:2;padding:0;height:450vh;height:450svh;margin-top:-100vh;margin-top:-100svh;pointer-events:none} /* misure esatte dallo script */
+.scena-stage{position:sticky;top:0;height:100vh;height:100lvh;overflow:hidden}
+.fondo{position:absolute;inset:0;background:var(--bg);opacity:0}
+.plano{position:absolute;inset:0;visibility:hidden}
+.scena-stage.aperto .fondo{opacity:1}
+.scena-stage.aperto .plano{visibility:visible}
+/* il browser disegna il muro una volta sola e poi lo sposta e basta: will-change da quando il punto ha riempito lo schermo
+   (il muro è già alla misura più grande, quindi resta nitido), e solo finché la scena è sullo schermo */
+.scena-stage.aperto.vivo .plano{will-change:transform}
+.scena-stage.aperto.vivo .tessere{will-change:opacity}
+.scena-stage.aperto.vivo .tv{will-change:transform}
+.muro{position:absolute;left:0;top:0}
+.tessere{position:absolute;left:0;top:0;width:100%;height:100%}
+.muro img,.muro .tv{position:absolute;display:block;border-radius:var(--rt,10px);background:var(--surf)}
+.muro img{height:auto;max-width:none}
+.muro .tv{overflow:hidden;background:var(--bg);box-shadow:0 0 0 1px rgba(245,244,239,var(--orlo,0))} /* nel muro un filo chiaro (dallo script): il riquadro del logo si riconosce tra gli altri lavori */
+/* il «momento V» (19/10, al posto del video): il logo disegnato dentro il riquadro, come la scritta della testata (V in
+   Instrument Serif corsiva ingrossata, «eniello», il punto tondo arancio, «studio»). Le misure e i movimenti li dà lo
+   script (logoMisura, logoDisegna): la scritta è al suo posto finale, il simbolo (V grande col puntino REC) è una
+   trasformazione della stessa V */
+.lv{position:absolute;left:0;top:0;width:100%;height:100%;color:var(--testo);pointer-events:none}
+.lv .n{position:absolute;left:0;top:0;font-weight:700;letter-spacing:-.05em;line-height:1;white-space:nowrap}
+.lv .n>*{display:inline-block}
+.lv .vv{font-family:var(--serif);font-style:italic;font-weight:400;font-size:1.18em;letter-spacing:0;margin-right:.01em;-webkit-text-stroke:.036em currentColor;paint-order:stroke fill;transform-origin:50% 50%}
+.lv .pt{width:.21em;height:.21em;margin:0 .035em 0 .045em;visibility:hidden} /* solo il posto del punto nella riga: il puntino lo disegna .pd */
+/* il puntino disegnato: largo 100 px e ridotto dallo script alla misura giusta (il punto della riga è largo 2-3 px e il
+   browser lo arrotonderebbe al pixel prima di ingrandirlo, e non combacerebbe più con l'arancio che ci si posa sopra) */
+.lv .pd{position:absolute;left:0;top:0;width:100px;height:100px;margin:-50px 0 0 -50px;border-radius:50%;background:#FF5A1F;transform-origin:50% 50%;visibility:hidden}
+.lv .e,.lv .st{-webkit-clip-path:inset(-20% 100% -20% 0);clip-path:inset(-20% 100% -20% 0)}
+.velo{position:absolute;inset:0;opacity:0;background:radial-gradient(ellipse 88% 46% at 50% 50%,rgba(16,15,9,.9) 0%,rgba(16,15,9,.72) 45%,rgba(16,15,9,.3) 82%,rgba(16,15,9,.18) 100%)}
+.bordi{position:absolute;inset:0;opacity:0;background:linear-gradient(180deg,var(--bg) 0%,rgba(16,15,9,0) 26%,rgba(16,15,9,0) 78%,var(--bg) 100%)}
+.scena-testo{position:absolute;left:0;right:0;top:0;height:100svh;display:grid;place-items:center;text-align:center;padding:0 var(--lato)}
+.frase{grid-area:1/1;font-family:var(--serif);font-weight:400;letter-spacing:-.015em;font-size:clamp(40px,min(13.4vw,16svh),132px);line-height:.98}
+.riga{display:block;overflow:hidden;padding:.06em .14em .17em;margin:-.06em -.14em -.17em}
+/* le righe salgono a tempo, non legate al dito (classi dallo script): se lo scorrimento si ferma, la frase è intera o non c'è */
+.riga>span{display:inline-block;transform:translate3d(0,120%,0);transition:transform .5s cubic-bezier(.3,0,.8,.15)}
+.frase.su .riga>span{transform:none;transition:transform .72s cubic-bezier(.16,1,.3,1)}
+.frase.via .riga>span{transform:translate3d(0,-120%,0);transition:transform .38s cubic-bezier(.6,0,.85,.3)}
+.frase .piccola{margin-top:26px;font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--testo2);line-height:1.4}
+@media (min-width:900px){.frase .piccola{font-size:13px;margin-top:34px}}
+.punto{position:absolute;left:0;top:0;width:240px;height:240px;border-radius:50%;background:#FF5A1F;transform-origin:0 0;visibility:hidden}
+
+/* ===== «Il filo arancio» (proposta E, 18/10): dopo la scena, il puntino arancio del logo (#FF5A1F) accompagna chi scorre.
+   È lo stesso che chiude «Da un solo studio●»: finita la scena si stacca, va a capo e legge la frase di «Perché serve»,
+   ne diventa il punto, cade sulla mappa di Google, apre il sito, fa da testina sul montaggio del reel; poi si accende sulla
+   carta del servizio in primo piano e viaggia sul binario di «Come funziona». In volo non passa mai sopra una riga di testo
+   (corre nei margini). Con «Riduci movimento» niente puntini che volano: tutto fermo. ===== */
+:root{--rec:#FF5A1F}
+
+/* dichiarazione: le parole si accendono dietro al puntino che legge */
+.dichiara{padding-bottom:0}
+.dichiara p{font-family:var(--serif);font-size:clamp(34px,7.4vw,80px);line-height:1.04;letter-spacing:-.01em;max-width:17ch}
+#dichiara{position:relative}
+.dichiara .w{display:inline-block;opacity:.16;will-change:opacity}
+.dichiara .pf{position:relative;color:transparent} /* il punto finale è il puntino (fermo: disegnato sotto, in html.fermo) */
+.cursore{position:absolute;left:0;top:0;width:.2em;height:.2em;margin:-.1em 0 0 -.1em;border-radius:50%;background:var(--rec);opacity:0;pointer-events:none;will-change:transform,opacity}
+.dichiara .sotto{margin-top:26px;font-family:var(--sans);font-size:clamp(16px,1.8vw,19px);color:var(--testo2);max-width:46ch;line-height:1.6}
+/* il puntino in volo (dalla scena alla frase, dalla frase al telefono): sopra la pagina, sotto la testata */
+#filo{position:fixed;left:0;top:0;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--rec);z-index:45;pointer-events:none;opacity:0;will-change:transform,opacity}
+
+/* fasi: inquadratura da cinepresa, la parola rotola, il telefono mostra Google, il sito e il montaggio del reel */
+.fasi{height:300svh;position:relative;padding:0}
+.fasi-stage{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;gap:24px;padding:calc(var(--testata) + 18px) var(--lato) 34px;overflow:hidden}
+.mirino{position:absolute;left:12px;right:12px;top:calc(var(--testata) + 6px);bottom:12px;pointer-events:none;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3);font-variant-numeric:tabular-nums}
+.mirino .ang{position:absolute;width:14px;height:14px;border:0 solid var(--line2)}
+.mirino .a1{top:0;left:0;border-top-width:1px;border-left-width:1px}
+.mirino .a2{top:0;right:0;border-top-width:1px;border-right-width:1px}
+.mirino .a3{bottom:0;left:0;border-bottom-width:1px;border-left-width:1px}
+.mirino .a4{bottom:0;right:0;border-bottom-width:1px;border-right-width:1px}
+.mirino .et{position:absolute;display:flex;align-items:center;gap:7px;line-height:1;white-space:nowrap}
+.mirino .tl{top:6px;left:20px}.mirino .tr{top:6px;right:20px}.mirino .bl{bottom:6px;left:20px}.mirino .br{bottom:6px;right:20px}
+.mirino .rec{width:6px;height:6px;border-radius:50%;background:var(--rec)}
+.fasi-testo{position:relative;text-align:center;min-height:128px}
+.fase-t{position:absolute;inset:0;opacity:0}
+.fase-t.visibile,.fasi.anima .fase-t{opacity:1}
+.fase-t .mono{display:block;margin-bottom:8px;-webkit-clip-path:inset(0 -20% 0 -20%);clip-path:inset(0 -20% 0 -20%)}
+.fase-t .mono span{display:inline-block}
+.fase-t b{display:block;font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(46px,11.5vw,108px);line-height:1.06;letter-spacing:-.01em;-webkit-clip-path:inset(-.02em -40% -.12em -40%);clip-path:inset(-.02em -40% -.12em -40%)}
+.fase-t b .l{display:inline-block;-webkit-backface-visibility:hidden;backface-visibility:hidden} /* niente will-change: GSAP le porta sulla scheda grafica solo mentre si muovono */
+.fase-t p{color:var(--testo2);font-size:15px;max-width:30ch;margin:8px auto 0;line-height:1.5}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.telefono{position:relative;width:min(58vw,260px);aspect-ratio:9/19;margin:0 auto;border-radius:36px;background:#000;box-shadow:0 0 0 2px #2b2a23,0 0 0 7px #121108,0 40px 80px -30px rgba(0,0,0,.9);flex:none;will-change:transform}
+@media (max-height:720px){.telefono{width:min(48vw,210px)}}
+.telefono .tacca{position:absolute;top:12px;left:50%;transform:translateX(-50%);width:32%;height:20px;border-radius:999px;background:#000;z-index:8}
+.schermo{position:absolute;inset:8px;border-radius:29px;overflow:hidden;background:var(--surf);isolation:isolate}
+.fase-s{position:absolute;inset:0;opacity:0}
+.fase-s.visibile,.fasi.anima .fase-s{opacity:1}
+.g-box{position:absolute;top:0;left:50%;height:100%;aspect-ratio:600/1226;transform:translateX(-50%);transform-origin:36.7% 10.2%;will-change:transform}
+.g-box img{width:100%;height:auto}
+/* scritte dentro il telefono disegnato: mai sotto i 10 px */
+.pin-tag{position:absolute;left:calc(36.7% + 11px);top:10.2%;transform:translateY(-50%);background:var(--bg);color:var(--testo);font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:4px 7px;border-radius:5px;white-space:nowrap;-webkit-clip-path:inset(0 100% 0 0);clip-path:inset(0 100% 0 0)}
+.fase-s.sito{background:#0d0c08}
+.fase-s.sito img{width:100%;height:auto}
+/* la barra degli indirizzi in basso, come Safari sull'iPhone: il sito è sul dominio del cliente */
+.url{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);display:flex;align-items:center;gap:5px;padding:5px 12px;border-radius:999px;background:rgba(28,27,22,.88);box-shadow:0 0 0 .5px rgba(245,244,239,.18),0 6px 16px rgba(0,0,0,.4);font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.01em;line-height:1.2;color:var(--testo);white-space:nowrap}
+.url svg{width:8px;height:9px;color:var(--testo2)}
+.fase-s.social{background:#000;will-change:transform}
+.reel-f{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0}
+.reel-f.su{opacity:1}
+.montaggio{position:absolute;left:7px;right:7px;bottom:9px;padding:7px 6px 8px;border-radius:11px;background:rgba(16,15,9,.86);box-shadow:0 0 0 1px rgba(245,244,239,.08)}
+.montaggio .mono{display:flex;justify-content:space-between;font-size:10px;line-height:1.2;letter-spacing:.12em;color:var(--testo2);margin:0 2px 6px}
+.nastro{display:grid;grid-template-columns:repeat(6,1fr);gap:2px;position:relative}
+.nastro img{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:3px;opacity:.55}
+.nastro img.su{opacity:1}
+.testina{position:absolute;left:0;top:-5px;bottom:-5px;width:1.5px;margin-left:-.75px;background:var(--rec);will-change:transform}
+.punto-s{position:absolute;left:0;top:0;width:11px;height:11px;margin:-5.5px 0 0 -5.5px;z-index:6;pointer-events:none;will-change:transform}
+.punto-s i{display:block;width:100%;height:100%;border-radius:50%;background:var(--rec);box-shadow:0 0 0 2px rgba(16,15,9,.55);opacity:0}
+.binario-s{position:absolute;right:5px;top:22%;height:48%;width:2px;border-radius:2px;background:rgba(245,244,239,.22);z-index:5;opacity:0}
+.anelli{position:absolute;inset:0;z-index:5;pointer-events:none;overflow:visible}
+.anelli circle{fill:none;stroke:var(--rec);stroke-width:1.5}
+.riflesso{position:absolute;inset:-20% -60%;z-index:7;pointer-events:none;background:linear-gradient(105deg,rgba(255,255,255,0) 40%,rgba(255,255,255,.09) 50%,rgba(255,255,255,0) 60%);transform:translateX(-80%);will-change:transform}
+@media (min-width:900px){.fasi-stage{flex-direction:row;align-items:center;justify-content:center;gap:110px}.fasi-testo{text-align:left;width:480px;min-height:250px}.fase-t p{margin-left:0;font-size:17px}.telefono{margin:0;width:300px}.mirino{left:24px;right:24px;bottom:20px;top:calc(var(--testata) + 10px)}.mirino .ang{width:20px;height:20px}.mirino .et{font-size:11px}}
+/* schermi bassi e larghi (telefono girato, finestra bassa): parola a sinistra e telefono a destra, alto quanto lo schermo
+   (prima la parola finiva sotto la testata e sopra il telefono) */
+@media (max-height:560px) and (min-width:600px){.fasi-stage{flex-direction:row;align-items:center;justify-content:center;gap:min(8vw,110px);padding-bottom:20px}.fasi-testo{text-align:left;width:min(44vw,480px);min-height:200px}.fase-t p{margin-left:0}.telefono{margin:0;width:auto;height:calc(100svh - var(--testata) - 72px)}}
+
+/* pila: i servizi si impilano e quelli sotto vanno un po' indietro (poco: niente lastre scure, niente sfocato) */
+.pila{display:grid;gap:14px;margin-top:40px}
+.carta-s{position:sticky;top:calc(var(--testata) + 12px + var(--i)*8px);background:var(--surf);border-radius:var(--r2);overflow:hidden;min-height:min(72svh,640px);display:flex;flex-direction:column;box-shadow:0 -12px 40px rgba(0,0,0,.45);transform-origin:50% 0;will-change:transform}
+.carta-s:nth-child(even){background:var(--surf2)}
+.carta-s .scuro{position:absolute;inset:0;background:#0a0905;opacity:0;pointer-events:none;z-index:3}
+.carta-s .media{flex:1;min-height:220px;position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;padding:28px 24px 0;background:var(--bg2)}
+.carta-s .testo{padding:20px 24px 26px}
+.carta-s .testo .mono{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.carta-s .rec{position:relative;flex:none;width:7px;height:7px;border-radius:50%;background:var(--line2)}
+.carta-s .rec i{position:absolute;inset:0;border-radius:50%;background:var(--rec);opacity:0}
+.carta-s .testo p{color:var(--testo2);font-size:15.5px;max-width:48ch;margin-top:6px}
+.telefoni{display:flex;gap:14px;align-items:flex-end;width:min(100%,460px)}
+.telefoni img{width:calc(50% - 7px);border-radius:16px 16px 0 0;outline:1px solid var(--line2);box-shadow:0 30px 60px -30px rgba(0,0,0,.9);will-change:transform}
+.telefoni img:nth-child(2){transform:translateY(36px)}
+.media.pieno{padding:0}
+.media.pieno video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* i tre post si aprono a ventaglio, come carte in mano, quando la carta arriva */
+.strip{position:relative;width:100%;max-width:440px;align-self:stretch;margin:0 auto 22px}
+.strip img{position:absolute;left:25%;bottom:0;width:50%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:14px;transform-origin:50% 100%;box-shadow:0 26px 50px -22px rgba(0,0,0,.85);outline:1px solid var(--line2);will-change:transform}
+.strip img:nth-child(1){transform:translateX(-40%) rotate(-8deg)}
+.strip img:nth-child(2){z-index:2}
+.strip img:nth-child(3){transform:translateX(40%) rotate(8deg)}
+.g-carta{position:relative;width:min(100%,360px)}
+.media .fermo{width:100%;border-radius:16px 16px 0 0;outline:1px solid var(--line2)}
+/* il puntino tocca «Chiama» sulla scheda Google: sull’icona del telefono, così la scritta resta leggibile */
+.tocco{position:absolute;left:77.7%;top:43.6%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--rec);box-shadow:0 0 0 3px rgba(16,15,9,.35);transform:scale(0);will-change:transform}
+.tocco-onda{position:absolute;left:77.7%;top:43.6%;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;border:1px solid var(--rec);opacity:0;will-change:transform,opacity}
+.calendario{position:relative;width:min(100%,400px);align-self:center;margin-bottom:28px;font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--testo2)}
+.calendario div{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:12px 0 12px 20px;border-bottom:1px solid var(--line)}
+.calendario div:last-child{border-bottom:0}
+.calendario b{font-weight:500;color:var(--testo)}
+.calendario span:last-child{color:var(--testo3)}
+.calendario .oggi{position:absolute;left:2px;top:0;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:var(--rec);opacity:0;will-change:transform}
+@media (min-width:900px){.carta-s{flex-direction:row;min-height:min(70vh,620px)}.carta-s .media{flex:1.25}.carta-s .testo{flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding:36px 40px}.carta-s .testo p{font-size:17px}}
+
+/* binario: i tre passi scorrono di lato su un binario, il puntino è il treno */
+.binario{height:250svh;position:relative;padding:0}
+.binario-stage{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding:calc(var(--testata) + 16px) 0 32px}
+.binario-testa{padding:0 var(--lato);margin-bottom:26px}
+.binario-testa h2 em{display:inline-block}
+.vagoni{display:flex;gap:12px;padding:0 var(--lato);will-change:transform}
+.vagone{flex:none;width:min(76vw,400px);background:var(--surf);border-radius:var(--r2);padding:22px 22px 24px;min-height:min(38svh,320px);display:flex;flex-direction:column;will-change:transform;transform-origin:50% 50%}
+.vagone .n{display:block;font-family:var(--serif);font-size:clamp(64px,16vw,96px);line-height:.9;letter-spacing:-.02em;color:var(--testo3);margin-bottom:auto;will-change:transform}
+.vagone h3{margin-top:40px}
+.vagone p{color:var(--testo2);font-size:15.5px;margin-top:8px}
+.gratis{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--testo);color:var(--bg);padding:5px 9px;border-radius:999px;vertical-align:middle;margin-left:8px;font-weight:400}
+.rotaia{position:relative;height:40px;margin:30px calc(var(--lato) + 14px) 0}
+.rotaia .linea{position:absolute;left:0;right:0;top:5px;height:1px;background:var(--line2)}
+.rotaia .pieno{position:absolute;inset:0;background:var(--testo);transform-origin:0 50%;transform:scaleX(0);will-change:transform}
+.stazione{position:absolute;top:0;left:calc(var(--s)*50%);transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--testo3);white-space:nowrap}
+.stazione.s0{transform:none;align-items:flex-start}
+.stazione.s2{transform:translateX(-100%);align-items:flex-end}
+.stazione i{display:block;width:11px;height:11px;border-radius:50%;background:var(--bg);box-shadow:inset 0 0 0 1px var(--line2)}
+.stazione i::after{content:"";display:block;width:100%;height:100%;border-radius:50%;background:var(--testo);transform:scale(var(--on,0))}
+.stazione span{opacity:calc(.45 + var(--on,0)*.55);color:var(--testo)}
+.treno{position:absolute;left:0;top:5px;width:13px;height:13px;margin:-6.5px 0 0 -6.5px;border-radius:50%;background:var(--rec);box-shadow:0 0 0 4px rgba(255,90,31,.16);z-index:1;will-change:transform}
+@media (min-width:900px){.binario{height:auto;padding:clamp(72px,10vw,128px) 0}.binario-stage{position:static;height:auto;padding:0;overflow:visible}.binario-testa,.vagoni,.rotaia{max-width:var(--max);margin-left:auto;margin-right:auto}.vagoni{padding:0 var(--lato);gap:20px}.vagone{width:calc((100% - 40px)/3);min-height:340px}.rotaia{max-width:calc(var(--max) - 2*var(--lato));margin-top:34px}}
+
+/* partner */
+.partner-griglia{display:grid;gap:16px;margin-top:44px}
+@media (min-width:880px){.partner-griglia{grid-template-columns:2fr 1fr}}
+.partner-carta{position:relative;border-radius:var(--r2);overflow:hidden;background:var(--surf);min-height:440px;display:flex}
+.partner-foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.partner-testo{position:relative;z-index:1;margin-top:auto;width:100%;padding:140px 26px 26px;background:linear-gradient(0deg,rgba(16,15,9,.97) 40%,rgba(16,15,9,0))}
+.partner-logo{width:170px;height:auto;margin-bottom:10px}
+.partner-tipo{color:var(--testo2);font-size:15.5px}
+.partner-lavori{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}
+.partner-lavori li{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;padding:8px 12px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line2)}
+.partner-tu{flex-direction:column;justify-content:flex-end;gap:8px;padding:26px;min-height:260px;transition:background .2s ease}
+.partner-tu:hover{background:var(--surf2)}
+.partner-piu{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:30px;line-height:1;background:var(--testo);color:var(--bg);margin-bottom:auto}
+.partner-tu p{color:var(--testo2);font-size:15.5px}
+.partner-link{margin-top:6px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.loghi{padding:26px 0;border-top:1px solid var(--line);overflow:hidden;position:relative}
+.loghi::before,.loghi::after{content:"";position:absolute;top:0;bottom:0;width:14%;z-index:1;pointer-events:none}
+.loghi::before{left:0;background:linear-gradient(90deg,var(--bg),rgba(16,15,9,0))}
+.loghi::after{right:0;background:linear-gradient(-90deg,var(--bg),rgba(16,15,9,0))}
+.loghi-nastro{display:flex;width:max-content;animation:loghi 36s linear infinite;animation-play-state:paused}
+.loghi.attivo .loghi-nastro{animation-play-state:running}
+.loghi:hover .loghi-nastro{animation-play-state:paused}
+.loghi-fila{display:flex;align-items:center;gap:64px;padding-right:64px;margin:0;list-style:none}
+.loghi-fila img{height:38px;width:auto}
+.loghi-fila .vuoto{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3);border:1px dashed var(--line2);border-radius:999px;padding:12px 16px;white-space:nowrap}
+@keyframes loghi{to{transform:translateX(-50%)}}
+
+/* prezzi */
+.gruppo{margin-top:40px}
+.gruppo+.gruppo{margin-top:52px}
+.gruppo-testa{display:flex;align-items:baseline;gap:14px;margin-bottom:16px}
+.gruppo-testa h3{font-size:26px}
+.carte{display:grid;gap:14px}
+@media (min-width:760px){.carte{grid-template-columns:1fr 1fr}}
+@media (min-width:1000px){.carte.tre{grid-template-columns:repeat(3,1fr)}}
+.carta{background:var(--surf);border-radius:var(--r2);padding:26px 24px;position:relative;display:flex;flex-direction:column}
+.carta.top{background:var(--surf2);box-shadow:inset 0 0 0 1px var(--line2)}
+.consigliato{position:absolute;top:20px;right:20px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--rec);color:var(--bg);padding:6px 10px;border-radius:999px}
+.carta h4{font-weight:500;font-size:16px;color:var(--testo2)}
+.prezzo{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;font-size:clamp(46px,6vw,64px);line-height:1;margin-top:14px}
+.prezzo small{font-family:var(--sans);font-size:15px;color:var(--testo2);letter-spacing:0}
+.quando{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--testo3);margin-top:8px}
+.carta ul{list-style:none;margin:22px 0 0;display:grid;gap:9px;color:var(--testo2);font-size:15px;padding-top:18px;border-top:1px solid var(--line)}
+.carta li{display:flex;gap:10px;align-items:flex-start}
+.carta li .i{width:15px;height:15px;margin-top:4px}
+.carta .btn{margin-top:24px;align-self:flex-start}
+.carta .per{margin-top:10px;color:var(--testo);font-size:15px}
+.carta ul+.btn{margin-top:auto;padding-top:0}
+.carta ul{margin-bottom:24px}
+.nota{color:var(--testo3);font-size:14px;margin-top:16px;max-width:60ch}
+.serieta{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
+.serieta span{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--testo2);box-shadow:inset 0 0 0 1px var(--line);border-radius:999px;padding:10px 14px}
+
+/* domande */
+.domande-elenco{margin-top:32px;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:20px 0;font-weight:500;font-size:clamp(17px,2.2vw,20px);letter-spacing:-.01em}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;font-weight:300;color:var(--testo3);transition:transform .25s ease;flex:none;line-height:1}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--testo2);padding:0 0 22px;max-width:60ch;font-size:15.5px}
+
+/* contatti */
+.chiusura .wrap{display:grid;gap:36px}
+@media (min-width:900px){.chiusura .wrap{grid-template-columns:1.2fr 1fr;align-items:center}}
+.recapiti{display:grid;gap:8px}
+.recapito{display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:var(--r);background:var(--surf);transition:background .2s ease}
+a.recapito:hover{background:var(--surf2)}
+.recapito .i{color:var(--testo2)}
+.recapito small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--testo3);margin-bottom:2px}
+.recapito b{font-weight:500;font-size:15.5px}
+
+/* piede */
+.piede{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--testo3);font-size:13.5px}
+.piede .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;align-items:center}
+.piede .marchio{color:var(--testo)}
+
+/* senza animazioni: tutto fermo e leggibile */
+html.fermo .scena,html.fermo .fasi,html.fermo .binario{height:auto}
+html.fermo .scena-stage,html.fermo .fasi-stage,html.fermo .binario-stage{position:static;height:auto}
+/* la scena ferma: copertina normale, poi un palco alto uno schermo che taglia il muro (position:relative + overflow:hidden,
+   così le foto non escono sulle sezioni dopo) con le tre frasi una sotto l'altra sopra il velo scuro */
+html.fermo .apertura>.copertina{position:relative}
+html.fermo .scena{margin-top:0}
+html.fermo .scena-stage{position:relative;height:100svh}
+html.fermo .fondo,html.fermo .velo,html.fermo .bordi{opacity:1}
+/* fermo: niente riquadro del logo (il suo posto resta sotto il palco), velo uniforme e un po' più scuro solo dietro le frasi, bordi corti:
+   i riquadri si vedono tutti e nessuno sembra vuoto; nessun lavoro ripetuto (lo sceglie lo script) */
+html.fermo .muro .tv{display:none}
+html.fermo .velo{background:radial-gradient(ellipse 60% 40% at 50% 50%,rgba(16,15,9,.68),rgba(16,15,9,0) 100%),rgba(16,15,9,.58)}
+html.fermo .bordi{background:linear-gradient(180deg,var(--bg) 0%,rgba(16,15,9,0) 11%,rgba(16,15,9,0) 89%,var(--bg) 100%)}
+html.fermo .frase{text-shadow:0 1px 24px rgba(16,15,9,.9),0 0 2px rgba(16,15,9,.6)}
+html.fermo .frase .piccola{color:var(--testo)}
+html.fermo .plano{visibility:visible}
+html.fermo .scena-testo{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:.42em}
+html.fermo .frase{font-size:clamp(28px,min(9.4vw,7.5svh),84px)}
+html.fermo .riga>span{transform:none}
+html.fermo .frase .piccola{margin-top:14px}
+html.fermo .fasi-stage{padding-top:0;padding-bottom:0}
+/* il filo arancio fermo: nessun puntino che vola; restano il punto della frase, il segnaposto sulla mappa, il tocco su «Chiama» */
+html.fermo .mirino,html.fermo .riflesso,html.fermo .anelli,html.fermo .binario-s,html.fermo #filo,html.fermo .cursore{display:none}
+html.fermo .fasi-testo{min-height:0;display:grid;gap:28px}
+html.fermo .fase-t{position:static;opacity:1}
+html.fermo .fase-s.google{opacity:1}
+html.fermo .pin-tag{-webkit-clip-path:none;clip-path:none}
+html.fermo .punto-s{transform:translate(var(--px,75px),var(--py,47px))}
+html.fermo .punto-s i{opacity:1}
+html.fermo .tocco{transform:none}
+html.fermo .vagoni{flex-wrap:wrap}
+html.fermo .vagone{width:100%}
+html.fermo .rotaia{display:none}
+html.fermo .dichiara .w{opacity:1}
+html.fermo .dichiara .pf::after{content:"";position:absolute;left:50%;bottom:.2em;width:.2em;height:.2em;margin-left:-.1em;border-radius:50%;background:var(--rec)}
+html.fermo .carta-s{position:relative;top:auto}
+html.fermo .carta-s .rec i{opacity:1}
+@media (prefers-reduced-motion:reduce){
+  .fase-t,.fase-s,.btn,summary::after,.recapito,.partner-tu{transition:none}
+  .loghi-nastro{animation:none}
+}
+</style>
+<noscript><style>.apertura>.copertina{position:relative}.scena{display:none}.dichiara .pf{color:inherit}.macchia{display:none}</style></noscript>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Veniello Studio","description":"Siti web su misura, scheda Google, Instagram, TikTok e video per le attività della Valdinievole.","areaServed":"Valdinievole, Montecatini Terme","telephone":"+39 327 333 1949","email":"giuseppefusciello90@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Montecatini Terme","addressRegion":"PT","addressCountry":"IT"}}
+</script>
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.2-4.1A8.6 8.6 0 1 1 8 19.4z"/><path d="M9.1 8.6c.2-.5.5-.6.8-.6h.5c.2 0 .4.1.5.4l.6 1.5c.1.2 0 .5-.1.6l-.5.6c-.1.1-.1.3 0 .5.6 1 1.4 1.8 2.4 2.4.2.1.4.1.5 0l.6-.5c.2-.1.4-.2.6-.1l1.5.6c.3.1.4.3.4.5v.5c0 .3-.1.6-.6.8-.6.3-1.6.4-2.9-.2a9.2 9.2 0 0 1-4.3-4.3c-.6-1.3-.5-2.3-.2-2.9z"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 9 6.5 9-6.5"/></symbol>
+  <symbol id="i-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.5 4.5L19.5 7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+</svg>
+
+<header class="testata" id="testata">
+  <div class="wrap">
+    <a class="marchio" href="#inizio" aria-label="Veniello Studio, torna all'inizio"><span class="parola" aria-hidden="true"><span class="vv">V</span><span class="e">eniello</span><span class="pt"></span><span class="st">studio</span></span></a>
+    <nav aria-label="Menu principale"><a href="#servizi">Servizi</a><a href="#come">Come funziona</a><a href="#partner">Partner</a><a href="#prezzi">Prezzi</a><a href="#domande">Domande</a></nav>
+    <a class="btn btn-pieno" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20informazioni%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Scrivici</a>
+  </div>
+</header>
+
+<main id="contenuto">
+  <div class="apertura">
+  <section class="copertina" id="inizio" aria-labelledby="titolo">
+    <canvas class="macchia" aria-hidden="true"></canvas>
+    <div class="wrap" id="copertina-wrap">
+      <p class="mono">Siti · Google · Social · Video</p>
+      <h1 id="titolo">Fatti trovare.<br>Fatti <em>scegliere</em><span class="rec-punto" id="rec-punto" aria-hidden="true"></span></h1>
+      <p class="intro">Sito su misura, scheda Google, Instagram, TikTok e video per ogni attività della Valdinievole: negozi, ristoranti, saloni, studi, artigiani e strutture. Vedi il tuo sito prima di pagare un euro.</p>
+      <div class="azioni">
+        <a class="btn btn-pieno" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20un%27anteprima%20gratis%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Chiedi l’anteprima gratis</a>
+        <a class="link" href="#servizi">Cosa facciamo</a>
+      </div>
+      <p class="fiducia">Prezzi scritti prima · Paghi solo se ti piace · Risposta su WhatsApp</p>
+      <p class="scorri" aria-hidden="true">Scorri<i></i></p>
+    </div>
+  </section>
+
+  <section class="scena" id="lavori" aria-label="Il nostro lavoro per il Jué Club">
+    <div class="scena-stage" id="scena-stage">
+      <div class="fondo"></div>
+      <div class="plano" id="plano"><div class="muro" id="muro" aria-hidden="true"></div></div>
+      <div class="velo" id="velo"></div>
+      <div class="bordi" id="bordi"></div>
+      <div class="scena-testo">
+        <p class="frase"><span class="riga"><span>Il nostro</span></span> <span class="riga"><span><em>lavoro</em>.</span></span></p>
+        <p class="frase"><span class="riga"><span>Sito, Google,</span></span> <span class="riga"><span>social e <em>video</em>.</span></span></p>
+        <p class="frase"><span class="riga"><span>Da un solo</span></span> <span class="riga"><span><em>studio</em><i class="rec-punto" id="punto-studio" aria-hidden="true"></i></span></span></p>
+      </div>
+      <i class="punto" id="punto" aria-hidden="true"></i>
+    </div>
+  </section>
+  </div>
+
+  <section class="dichiara" aria-label="Perché serve">
+    <div class="wrap">
+      <span class="etichetta">Perché serve</span>
+      <p id="dichiara">I clienti decidono dal telefono, <em>in pochi secondi.</em> Cercano su Google, aprono il sito, guardano <span class="k">Instagram<span class="pf">.</span></span></p>
+      <p class="sotto">Noi sistemiamo tutti e tre, così la scelta cade su di te.</p>
+    </div>
+  </section>
+
+  <section class="fasi" id="fasi" aria-label="Trovato, scelto, ricordato">
+    <div class="fasi-stage">
+      <div class="mirino" aria-hidden="true">
+        <i class="ang a1"></i><i class="ang a2"></i><i class="ang a3"></i><i class="ang a4"></i>
+        <span class="et tl"><i class="rec"></i>Rec</span>
+        <span class="et tr" id="tc">00:00:00:00</span>
+        <span class="et bl">Veniello Studio</span>
+        <span class="et br">Cliente · Jué Club</span>
+      </div>
+      <div class="fasi-testo">
+        <div class="fase-t visibile"><span class="mono"><span>01 · Google</span></span><b>Trovato.</b><p>Su Google e su Maps, con foto belle, orari giusti e il tasto Chiama.</p></div>
+        <div class="fase-t"><span class="mono"><span>02 · Sito</span></span><b>Scelto.</b><p>Dal sito: servizi, prezzi, foto vere e un tasto per contattarti.</p></div>
+        <div class="fase-t"><span class="mono"><span>03 · Social</span></span><b>Ricordato.</b><p>Su Instagram e TikTok, con reel e grafiche che tengono vivo il ricordo.</p></div>
+      </div>
+      <div class="telefono" aria-hidden="true">
+        <i class="tacca"></i>
+        <div class="schermo">
+          <div class="fase-s google visibile"><div class="g-box"><img src="img/google-tel.jpg" alt="" width="600" height="1226"><span class="pin-tag">Jué Club</span></div></div>
+          <div class="fase-s sito"><img id="sito-lungo" src="img/sito-lungo.jpg" alt="" width="420" height="3400"><span class="url"><svg viewBox="0 0 10 12" aria-hidden="true"><rect x="1" y="5" width="8" height="6.5" rx="1.5" fill="currentColor"/><path d="M3 5V3.6a2 2 0 0 1 4 0V5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>jueclub.it</span></div>
+          <!-- i fotogrammi del reel prendono l'indirizzo (data-src) solo quando ci si avvicina: non rallentano l'apertura -->
+          <div class="fase-s social">
+            <img class="reel-f su" data-src="img/reel-1-2.jpg" alt="" width="600" height="1067"><img class="reel-f" data-src="img/reel-5-5.jpg" alt="" width="600" height="1067"><img class="reel-f" data-src="img/reel-9-0.jpg" alt="" width="600" height="1067"><img class="reel-f" data-src="img/reel-14-0.jpg" alt="" width="600" height="1067"><img class="reel-f" data-src="img/reel-19-5.jpg" alt="" width="600" height="1067"><img class="reel-f" data-src="img/reel-23-0.jpg" alt="" width="600" height="1067">
+            <div class="montaggio"><span class="mono"><span>Reel</span><span id="tc-reel">0:00</span></span><div class="nastro"><img class="su" data-src="img/reel-1-2.jpg" alt="" width="600" height="1067"><img data-src="img/reel-5-5.jpg" alt="" width="600" height="1067"><img data-src="img/reel-9-0.jpg" alt="" width="600" height="1067"><img data-src="img/reel-14-0.jpg" alt="" width="600" height="1067"><img data-src="img/reel-19-5.jpg" alt="" width="600" height="1067"><img data-src="img/reel-23-0.jpg" alt="" width="600" height="1067"><i class="testina"></i></div></div>
+          </div>
+          <i class="binario-s"></i>
+          <svg class="anelli"><circle class="c-pin" r="0"/><circle class="c-apre" r="0"/></svg>
+          <span class="punto-s"><i></i></span>
+          <i class="riflesso"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="servizi" id="servizi" aria-labelledby="t-servizi">
+    <div class="wrap">
+      <span class="etichetta">Servizi</span>
+      <h2 id="t-servizi">Tutto quello che serve per farti <em>scegliere</em>.</h2>
+      <p class="intro">Quello che vedi qui sotto l’abbiamo fatto per il Jué Club di Montecatini Terme.</p>
+      <div class="pila">
+        <article class="carta-s" style="--i:0">
+          <div class="media"><div class="telefoni"><img src="img/sito-1.jpg" alt="La copertina di jueclub.it sul telefono" width="520" height="1126" loading="lazy"><img src="img/sito-4.jpg" alt="Il menù di jueclub.it sul telefono" width="520" height="1126" loading="lazy"></div></div>
+          <div class="testo"><span class="mono"><i class="rec"><i></i></i>01 · Sito su misura</span><h3>Fatto per il telefono, sul tuo dominio.</h3><p>Veloce e chiaro: chi sei, cosa fai, orari e prezzi, come arrivare e un tasto per chiamarti. Senza cookie e senza pubblicità.</p></div>
+          <i class="scuro" aria-hidden="true"></i>
+        </article>
+        <article class="carta-s" style="--i:1">
+          <div class="media pieno"><video src="video/spot.mp4" muted loop playsinline preload="none" poster="img/spot.jpg" aria-label="Lo spot Jué × Bombay Sapphire: il Bombay &amp; Tonic e la bottiglietta in omaggio"></video></div>
+          <div class="testo"><span class="mono"><i class="rec"><i></i></i>02 · Video e reel</span><h3>La tua attività in venti secondi.</h3><p>Riprese vere, montaggio a tempo di musica, testi e loghi animati. Verticali, per Reel, TikTok e storie.</p></div>
+          <i class="scuro" aria-hidden="true"></i>
+        </article>
+        <article class="carta-s" style="--i:2">
+          <div class="media"><div class="strip"><img src="img/reel-9-0.jpg" alt="" loading="lazy"><img src="img/locandina.jpg" alt="La locandina della serata Martedì Blu" loading="lazy"><img src="img/reel-23-0.jpg" alt="" loading="lazy"></div></div>
+          <div class="testo"><span class="mono"><i class="rec"><i></i></i>03 · Instagram e TikTok</span><h3>Un profilo che fa entrare.</h3><p>Profilo in ordine, storie in evidenza, link giusti. Post e grafiche per le novità, le offerte e gli eventi.</p></div>
+          <i class="scuro" aria-hidden="true"></i>
+        </article>
+        <article class="carta-s" style="--i:3">
+          <div class="media"><div class="g-carta"><img class="fermo" src="img/google.jpg" alt="La scheda Google del Jué Club su Maps" width="750" height="578" loading="lazy"><i class="tocco-onda" aria-hidden="true"></i><i class="tocco" aria-hidden="true"></i></div></div>
+          <div class="testo"><span class="mono"><i class="rec"><i></i></i>04 · Scheda Google</span><h3>Su Google e su Maps.</h3><p>Quando qualcuno cerca in zona quello che fai, la tua scheda è la prima cosa che vede: foto, orari, recensioni e il tasto Chiama.</p></div>
+          <i class="scuro" aria-hidden="true"></i>
+        </article>
+        <article class="carta-s" style="--i:4">
+          <div class="media"><div class="calendario"><i class="oggi" aria-hidden="true"></i><div><b>Ven 16</b><span>Reel della novità</span><span>Instagram</span></div><div><b>Sab 17</b><span>Locandina</span><span>Post</span></div><div><b>Dom 18</b><span>Video da 6 secondi</span><span>Storia</span></div><div><b>Lun 19</b><span>«Da domani»</span><span>Storia</span></div><div><b>Mar 20</b><span>Dal vivo</span><span>Storie</span></div></div></div>
+          <div class="testo"><span class="mono"><i class="rec"><i></i></i>05 · Gestione social</span><h3>Ogni mese, ci pensiamo noi.</h3><p>Post, storie e grafiche preparati e pubblicati da noi. Per una novità, un’offerta o un evento, basta scriverci.</p></div>
+          <i class="scuro" aria-hidden="true"></i>
+        </article>
+        <article class="carta-s" style="--i:5">
+          <div class="media pieno"><video src="video/showreel-verticale.mp4" muted loop playsinline preload="none" poster="img/showreel-verticale.jpg" aria-label="Lo showreel in motion design di Veniello Studio"></video></div>
+          <div class="testo"><span class="mono"><i class="rec"><i></i></i>06 · Motion design</span><h3>Il tuo marchio, in movimento.</h3><p>Logo animato, scritte a tempo di musica e i tuoi lavori veri montati in uno showreel da venti secondi. Per il sito, i social e le presentazioni.</p></div>
+          <i class="scuro" aria-hidden="true"></i>
+        </article>
+        <article class="carta-s" style="--i:6">
+          <div class="media"><div class="strip"><img src="img/spot-3-2.jpg" alt="Lo spot del Jué: il gin versato nel bicchiere" loading="lazy"><img src="img/spot-6-2.jpg" alt="Lo spot del Jué: il lime nel drink" loading="lazy"><img src="img/spot-13-6.jpg" alt="Lo spot del Jué: il drink finito con la promozione della serata" loading="lazy"></div></div>
+          <div class="testo"><span class="mono"><i class="rec"><i></i></i>07 · Spot pubblicitari</span><h3>Lo spot della tua attività.</h3><p>Un'idea, il copione, le inquadrature e il montaggio: uno spot per Instagram, TikTok e la pubblicità online, come quelli dei grandi marchi.</p></div>
+          <i class="scuro" aria-hidden="true"></i>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="binario" id="come" aria-labelledby="t-come">
+    <div class="binario-stage">
+      <div class="binario-testa">
+        <span class="etichetta">Come funziona</span>
+        <h2 id="t-come">Prima lo vedi. <em>Poi decidi</em>.</h2>
+      </div>
+      <div class="vagoni" id="vagoni">
+        <article class="vagone"><span class="n">01</span><h3>Ci scrivi</h3><p>Su WhatsApp o per telefono. Ci racconti la tua attività in due minuti.</p></article>
+        <article class="vagone"><span class="n">02</span><h3>Ti prepariamo l’anteprima <span class="gratis">Gratis</span></h3><p>Con foto e informazioni vere della tua attività. Ti arriva un link da aprire sul telefono.</p></article>
+        <article class="vagone"><span class="n">03</span><h3>Se ti piace, va online</h3><p>Sul tuo dominio, insieme a Google e ai social. Da lì in poi ti trovano.</p></article>
+      </div>
+      <div class="rotaia" aria-hidden="true">
+        <i class="linea"><i class="pieno" id="rotaia-pieno"></i></i>
+        <span class="stazione s0" style="--s:0"><i></i><span>Ci scrivi</span></span>
+        <span class="stazione s1" style="--s:1"><i></i><span>Anteprima</span></span>
+        <span class="stazione s2" style="--s:2"><i></i><span>Online</span></span>
+        <i class="treno" id="treno"></i>
+      </div>
+    </div>
+  </section>
+
+  <section class="partner" id="partner" aria-labelledby="t-partner">
+    <div class="wrap">
+      <span class="etichetta">Partner</span>
+      <h2 id="t-partner">Chi ha scelto <em>Veniello Studio</em>.</h2>
+      <p class="intro">Le attività della Valdinievole con cui lavoriamo ogni mese.</p>
+      <div class="partner-griglia">
+        <article class="partner-carta">
+          <img class="partner-foto" src="img/jue-parete.jpg" alt="La parete di fiori del Jué Club" width="600" height="600" loading="lazy">
+          <div class="partner-testo">
+            <img class="partner-logo" src="img/jue-logo.png" alt="Jué Club" width="480" height="184" loading="lazy">
+            <p class="partner-tipo">Cocktail bar · Bistrot · DJ set · Montecatini Terme</p>
+            <ul class="partner-lavori"><li>Sito jueclub.it</li><li>Video delle serate</li><li>Social</li></ul>
+            <a class="btn btn-linea" href="https://jueclub.it" target="_blank" rel="noopener">Visita jueclub.it<svg class="i" aria-hidden="true"><use href="#i-link"/></svg></a>
+          </div>
+        </article>
+        <a class="partner-carta partner-tu" href="#contatti">
+          <span class="partner-piu" aria-hidden="true">+</span>
+          <h3>La tua attività, qui.</h3>
+          <p>Ti prepariamo l’anteprima gratis: se ti piace, entri anche tu.</p>
+          <span class="partner-link">Scrivici →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="prezzi" id="prezzi" aria-labelledby="t-prezzi">
+    <div class="wrap">
+      <span class="etichetta">Prezzi</span>
+      <h2 id="t-prezzi">Prezzi chiari, <em>fin da subito</em>.</h2>
+      <div class="gruppo">
+        <div class="gruppo-testa"><h3>Una volta sola</h3><span class="mono">per partire</span></div>
+        <div class="carte">
+          <article class="carta">
+            <h4>Sito + Google + Instagram</h4>
+            <p class="prezzo">119 €</p>
+            <p class="quando">una volta sola</p>
+            <ul>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Sito su misura, fatto per il telefono</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Sul tuo dominio</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Scheda Google sistemata</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Profilo Instagram in ordine</li>
+            </ul>
+            <a class="btn btn-pieno" href="https://wa.me/393273331949?text=Ciao%2C%20mi%20interessa%20Sito%20%2B%20Google%20%2B%20Instagram" target="_blank" rel="noopener">Inizia con l’anteprima</a>
+          </article>
+          <article class="carta">
+            <h4>Google + Instagram</h4>
+            <p class="prezzo">59 €</p>
+            <p class="quando">una volta sola</p>
+            <ul>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Scheda Google sistemata</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Profilo Instagram in ordine</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Per chi il sito ce l’ha già</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      <div class="gruppo">
+        <div class="gruppo-testa"><h3>Ogni mese</h3><span class="mono">gestione social</span></div>
+        <div class="carte tre">
+          <article class="carta">
+            <h4>Base</h4>
+            <p class="prezzo">79 € <small>al mese</small></p>
+            <p class="quando">8 pubblicazioni al mese</p>
+            <p class="per">Per esserci con costanza.</p>
+            <ul>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Post e caroselli, con le tue foto e i tuoi video</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Storie per le novità e gli eventi</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Li prepariamo e pubblichiamo noi</li>
+            </ul>
+            <a class="btn btn-linea" href="https://wa.me/393273331949?text=Ciao%2C%20mi%20interessa%20l%E2%80%99abbonamento%20Base" target="_blank" rel="noopener">Scegli Base</a>
+          </article>
+          <article class="carta top">
+            <span class="consigliato">Consigliato</span>
+            <h4>Plus</h4>
+            <p class="prezzo">149 € <small>al mese</small></p>
+            <p class="quando">12 pubblicazioni al mese</p>
+            <p class="per">Per farti scegliere ogni settimana.</p>
+            <ul>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Di cui 4 reel</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Riprese da te una volta al mese</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Storie per le novità e gli eventi</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><b>Sito + Google + Instagram inclusi</b></li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Aggiornamenti al sito</li>
+            </ul>
+            <a class="btn btn-pieno" href="https://wa.me/393273331949?text=Ciao%2C%20mi%20interessa%20l%E2%80%99abbonamento%20Plus" target="_blank" rel="noopener">Scegli Plus</a>
+          </article>
+          <article class="carta">
+            <h4>Pro</h4>
+            <p class="prezzo">249 € <small>al mese</small></p>
+            <p class="quando">20 pubblicazioni al mese</p>
+            <p class="per">Per chi fa anche pubblicità.</p>
+            <ul>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Di cui 8 reel, con riprese da te due volte al mese</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Pubblicità su Instagram e Facebook, gestita da noi</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Uno spot pubblicitario all’anno</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Tutto il resto del Plus, sito compreso</li>
+            </ul>
+            <a class="btn btn-linea" href="https://wa.me/393273331949?text=Ciao%2C%20mi%20interessa%20l%E2%80%99abbonamento%20Pro" target="_blank" rel="noopener">Scegli Pro</a>
+          </article>
+        </div>
+        <p class="nota">Si disdice quando vuoi: se disdici il Plus o il Pro, il sito resta tuo. Prezzi finali, senza sorprese. Il dominio è l’unica spesa a parte: circa 10-15 € l’anno, intestato a te. Nel Pro i soldi della pubblicità li paghi tu direttamente a Meta, quanto vuoi tu.</p>
+      </div>
+      <div class="gruppo">
+        <div class="gruppo-testa"><h3>Video</h3><span class="mono">a lavoro</span></div>
+        <div class="carte">
+          <article class="carta">
+            <h4>Spot pubblicitario</h4>
+            <p class="prezzo"><small>da</small> 300 €</p>
+            <p class="quando">a spot</p>
+            <ul>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Idea, copione e inquadrature</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Montaggio, musica e scritte</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg>Versioni per Reel, TikTok e storie</li>
+            </ul>
+            <a class="btn btn-linea" href="https://wa.me/393273331949?text=Ciao%2C%20mi%20interessa%20uno%20spot%20pubblicitario" target="_blank" rel="noopener">Chiedi uno spot</a>
+          </article>
+        </div>
+        <p class="nota">Il prezzo finale dipende da durata e riprese: te lo diciamo prima, per scritto.</p>
+      </div>
+      <div class="serieta"><span>Prezzi scritti prima</span><span>Anteprima senza impegno</span><span>Il dominio è tuo</span><span>Solo foto vere</span></div>
+    </div>
+  </section>
+
+  <section class="domande" id="domande" aria-labelledby="t-domande">
+    <div class="wrap">
+      <span class="etichetta">Domande</span>
+      <h2 id="t-domande">Le domande che ci fanno <em>tutti</em>.</h2>
+      <div class="domande-elenco">
+        <details><summary>L’anteprima è davvero gratis?</summary><p>Sì. La prepariamo, la guardi con calma sul telefono e decidi. Se non ti convince, non paghi niente e non ti impegni.</p></details>
+        <details><summary>Ci sono altre spese oltre al prezzo?</summary><p>Solo il dominio, cioè il nome del sito (per esempio latuaattivita.it). È intestato a te e costa circa 10-15 € l’anno.</p></details>
+        <details><summary>Se disdico l’abbonamento, il sito resta mio?</summary><p>Sì. Il sito è tuo e resta online anche se smetti: paghi solo il dominio, circa 10-15 € l’anno. Da lì in poi le modifiche si pagano a parte.</p></details>
+        <details><summary>Devo pagare ogni mese?</summary><p>No. Sito, Google e Instagram si pagano una volta sola. La gestione social è a parte, solo se la vuoi, e si disdice quando vuoi.</p></details>
+        <details><summary>Le foto da dove le prendete?</summary><p>Usiamo solo foto vere della tua attività: quelle che hai già sui social, quelle che ci mandi o quelle che scattiamo noi quando passiamo.</p></details>
+        <details><summary>In che zona lavorate?</summary><p>Siamo a Montecatini Terme e lavoriamo con le attività di tutta la Valdinievole. Se vuoi, ci vediamo di persona.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="chiusura" id="contatti" aria-labelledby="t-contatti">
+    <div class="wrap">
+      <div>
+        <span class="etichetta">Contatti</span>
+        <h2 id="t-contatti">Vuoi vedere il tuo <em>sito</em>?</h2>
+        <p class="intro">Scrivici su WhatsApp il nome della tua attività: ti prepariamo l’anteprima gratis, senza impegno.</p>
+        <div class="azioni" style="justify-content:flex-start">
+          <a class="btn btn-pieno" href="https://wa.me/393273331949?text=Ciao%2C%20vorrei%20un%27anteprima%20gratis%20per%20la%20mia%20attivit%C3%A0" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Scrivici su WhatsApp</a>
+          <a class="btn btn-linea" href="tel:+393273331949"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>Chiama</a>
+        </div>
+      </div>
+      <div class="recapiti">
+        <a class="recapito" href="tel:+393273331949"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg><span><small>Telefono e WhatsApp · Giuseppe Fusciello</small><b>+39 327 333 1949</b></span></a>
+        <a class="recapito" href="mailto:giuseppefusciello90@gmail.com"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg><span><small>Email</small><b>giuseppefusciello90@gmail.com</b></span></a>
+        <div class="recapito"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><span><small>Dove</small><b>Montecatini Terme, Valdinievole</b></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="loghi" id="loghi" aria-label="I nostri partner">
+    <div class="loghi-nastro" id="loghi-nastro"></div>
+  </section>
+</main>
+<i id="filo" aria-hidden="true"></i>
+
+<footer class="piede">
+  <div class="wrap">
+    <a class="marchio" href="#inizio" aria-label="Veniello Studio"><span class="parola" aria-hidden="true"><span class="vv">V</span><span class="e">eniello</span><span class="pt"></span><span class="st">studio</span></span></a>
+    <p>Siti, Google, social e video · Montecatini Terme · © <span id="anno">2026</span> · Niente cookie, niente tracciamenti.</p>
+  </div>
+</footer>
+
+<script>
+// Testata piena dopo lo scorrimento, anno nel piede
+var testata=document.getElementById('testata');
+var piena=function(){testata.classList.toggle('piena',scrollY>30)};piena();addEventListener('scroll',piena,{passive:true});
+document.getElementById('anno').textContent=new Date().getFullYear();
+
+// Video dei servizi: parte solo quando si vede e, con la pila animata, solo quello della carta in primo piano (uno alla volta)
+function aggiornaVideo(v){var on=v._vista&&v._attivo!==false&&!ridotto; // con «Riduci movimento» resta la copertina ferma
+  if(on&&v.paused)v.play().catch(function(){});else if(!on&&!v.paused)v.pause()}
+var vio=new IntersectionObserver(function(es){es.forEach(function(e){e.target._vista=e.isIntersecting;aggiornaVideo(e.target)})},{threshold:.3});
+document.querySelectorAll('.media video').forEach(function(v){vio.observe(v)});
+
+// Barra dei partner: scorre solo quando è sullo schermo
+var loghi=[{src:'img/jue-logo.png',alt:'Jué Club',href:'https://jueclub.it'}];
+var fila=function(nascosta){var ul=document.createElement('ul');ul.className='loghi-fila';if(nascosta)ul.setAttribute('aria-hidden','true');
+  for(var r=0;r<4;r++){loghi.forEach(function(l){var li=document.createElement('li'),a=document.createElement('a'),im=document.createElement('img');a.href=l.href;a.target='_blank';a.rel='noopener';if(nascosta)a.tabIndex=-1;im.src=l.src;im.alt=l.alt;im.loading='lazy';a.appendChild(im);li.appendChild(a);ul.appendChild(li)});
+    var v=document.createElement('li');v.className='vuoto';v.textContent='Il tuo logo qui';ul.appendChild(v)}
+  return ul};
+var nastro=document.getElementById('loghi-nastro');nastro.appendChild(fila(false));nastro.appendChild(fila(true));
+new IntersectionObserver(function(e){document.getElementById('loghi').classList.toggle('attivo',e[0].isIntersecting)}).observe(document.getElementById('loghi'));
+
+// «Da uno a tutti»: il muro dei lavori veri fatti per il Jué (miniature larghe 400 px in img/muro/), già al loro posto
+// intorno al riquadro del logo. Si vede quando la camera si allontana dal logo.
+var LAVORI=[['sito-1',711,'s'],['reel-5-5',711,'b','bottiglia'],['jue-neon',400,'f'],['sito-cocktail',400,'s','oldfashioned'],['locandina',533,'b','martedi'],['jue-oldfashioned',400,'f','oldfashioned'],['sito-3',711,'c','galleria'],['spot-0-3',711,'b','bottiglia'],['jue-locale',533,'f'],['google-mappa',533,'c','google'],['reel-1-2',711,'f'],['jue-dj-pioneer',400,'f'],['sito-4',711,'c'],['reel-14-0',711,'b'],['jue-parete',400,'f'],['sito-salotto',533,'c'],['spot-6-0',711,'b'],['jue-luci',400,'f'],['sito-2',711,'b','martedi'],['reel-23-0',711,'b','drink'],['google',400,'c','google'],['reel-9-0',711,'b','ghiaccio'],['spot-2-0',711,'b','ghiaccio'],['sito-bistrot',400,'s'],['reel-19-5',711,'b','drink'],['spot-3-3',711,'b','ghiaccio'],['sito-dj',400,'s'],['spot-7-3',711,'b','drink'],['spot-8-7',711,'f','bottiglia']]; // nome, altezza a 400 di larghezza, tono (s scuro, b blu, f foto, c chiaro), gruppo di lavori che si somigliano
+// Tempi, in altezze di schermo scorse dalla cima della pagina: il puntino si stacca, scende, lampeggia e si allarga
+// fino a riempire lo schermo mentre la copertina se ne va (0-IR, vedi PU nel secondo script); da IR il «momento V»: lo
+// schermo arancio si stringe nel puntino della V del logo e dalla V esce il nome (fino a Z0; sul telefono la camera non
+// va oltre finché il nome non è uscito, anche con un colpo di dito veloce: vedi LV e camera() nel secondo script); la
+// camera si allontana (Z0-Z1): il riquadro del logo si stringe nel suo posto e il muro arretra da W0 volte; compare il
+// muro (WF0-WF1); il muro si inclina (T0-T1) e scorre (P0-P1) sotto il velo (VE0-VE1) e le tre frasi (FR, nel secondo
+// script); a T se ne va con la pagina.
+// SH: l'inizio del puntino (18/10) è più lungo di SH schermate di quello di prima; dallo schermo arancio in poi tutto è
+// com'era, solo SH più in là.
+var TL={T:3.5,IR:.5,Z0:.72,Z1:1.5,W0:1.45,WF0:.92,WF1:1.2,T0:1.3,T1:1.85,P0:1.45,P1:3.5,VE0:1.3,VE1:1.6,AX:46,AZ:-16,SH:.32};
+['T','IR','Z0','Z1','WF0','WF1','T0','T1','P0','P1','VE0','VE1'].forEach(function(k){TL[k]+=TL.SH});
+var stage=document.getElementById('scena-stage'),plano=document.getElementById('plano'),muro=document.getElementById('muro');
+var tessere=document.createElement('div');tessere.className='tessere';muro.appendChild(tessere);
+var tv=document.createElement('div');tv.className='tv';muro.appendChild(tv);
+// il logo del «momento V», disegnato dentro il riquadro (vedi .lv): V, «eniello», il punto arancio, «studio»
+var lv=document.createElement('div');lv.className='lv';lv.setAttribute('aria-hidden','true');
+lv.innerHTML='<span class="n"><span class="vv">V</span><span class="e">eniello</span><i class="pt"></i><span class="st">studio</span></span><i class="pd"></i>';tv.appendChild(lv);
+var lvN=lv.firstChild,lvV=lvN.children[0],lvE=lvN.children[1],lvP=lvN.children[2],lvS=lvN.children[3],lvD=lv.lastChild;
+var sonda=document.createElement('div');sonda.style.cssText='position:absolute;left:0;top:0;width:1px;height:100vh;height:100svh;visibility:hidden;pointer-events:none';document.body.appendChild(sonda);
+var G={};
+function seg(u,a,b){return u<=a?0:u>=b?1:(u-a)/(b-a)}
+function ioq(t){return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2}
+function muroCostruisci(zone,fermo,soloMisure){ // zone: per ogni colonna il tratto che con questa camera entra nello schermo (null = tutto);
+  // fermo: «Riduci movimento»; soloMisure: solo le misure della camera e del riquadro del logo (veloce), senza i riquadri
+  var Wd=stage.clientWidth,V=sonda.offsetHeight,hdr=64,pc=matchMedia('(min-width:900px)').matches||Wd>V*1.15; // schermo largo (anche telefono girato): riquadro del logo orizzontale
+  // riquadri larghi in proporzione al lato corto (su un tablet in verticale non diventano enormi), colonne quante ne servono.
+  // Sugli schermi larghi riquadri più grandi: ne servono meno (meno doppioni sullo stesso schermo, meno da disegnare)
+  var cw=Math.round(pc?.15*Math.min(Wd,1.75*V):.27*Math.min(Wd,.5*V));
+  if(fermo)while((Wd/(1.1*cw)+1)*(V/(1.47*cw)+1)>28)cw+=4; // muro fermo: riquadri abbastanza grandi da non dover ripetere nessun lavoro (sono 29)
+  var g=Math.max(6,Math.round(cw*(pc?.078:.082))),span=pc?3:1;
+  var C=Math.max(pc?11:9,2*Math.ceil(((pc?1.57:2.6)*Wd/(cw+g)-1)/2)+1);
+  var Hw=Math.round(V*2.4),W=C*cw+(C-1)*g,c0=(C-span)>>1,bw=span*cw+(span-1)*g;
+  // il riquadro del logo (9:16 sul telefono, 16:9 sugli schermi larghi) a inizio scena riempie lo schermo senza tagli
+  var asp=pc?16/9:9/16,bh=Math.round(bw/asp),s0=Math.min(Wd/bw,(V-hdr)/bh);
+  var bx=c0*(cw+g),by=Math.round(Hw*.58-bh/2),fx=Wd/2,fy=(V+hdr)/2,ml=Math.round(fx-bx-bw/2),mt=Math.round(fy-by-bh/2),P=Math.round(V*(pc?1.67:1.125));
+  if(fermo)mt+=Math.round((V-hdr)/2+bh/2+2*g); // con «Riduci movimento» il riquadro del logo non c'è: il muro scende e il suo posto resta sotto il palco
+  muro.style.cssText='width:'+W+'px;height:'+Hw+'px;left:'+ml+'px;top:'+mt+'px;--rt:'+(pc?12:8)+'px';
+  var ra=TL.AX*Math.PI/180,rz=TL.AZ*Math.PI/180,myR=-.16*V;
+  function vista(x,y){ // dove cade sullo schermo il punto (x,y) del muro: con il muro piatto e con il muro inclinato (a metà delle frasi)
+    var X=ml+x-fx,Y=mt+y-fy,X2=1.12*X,Y2=1.12*(Y+myR),x3=X2*Math.cos(rz)-Y2*Math.sin(rz),y3=X2*Math.sin(rz)+Y2*Math.cos(rz),w=1-y3*Math.sin(ra)/P;
+    return [X,Y,x3/w,y3*Math.cos(ra)/w]}
+  // altissimo se vicini (anche in diagonale), e ancora alto se nello stesso schermo; con il muro fermo conta solo il muro piatto
+  function vicino(a,b){var d=Math.hypot(a[0]-b[0],a[1]-b[1]);if(!fermo)d=Math.min(d,Math.hypot(a[2]-b[2],a[3]-b[3]));d/=cw;var q=d/4.5;return (d<3.4?4:0)+1/(1+d*d)+1/(1+q*q*q*q)}
+  // quanto costa ripetere il lavoro i: i lavori chiari (siti, scheda Google) si riconoscono subito e non devono mai ripetersi
+  // sullo stesso schermo; con il muro fermo nessun lavoro si ripete
+  function doppio(i,d){return 3000*d*(LAVORI[i][2]==='c'?8:1)+(fermo?20000:0)}
+  plano.style.transformOrigin=fx+'px '+fy+'px';
+  tv.style.cssText='left:'+bx+'px;top:'+by+'px;width:'+bw+'px;height:'+bh+'px';
+  if(!fermo)logoMisura(bw,bh,s0,Wd,V,hdr,fx+TL.W0*(ml+bx+bw/2-fx),fy+TL.W0*(mt+by+bh/2-fy));
+  G.pc=pc;G.Wd=Wd;G.V=V;G.hdr=hdr;G.s0=s0;G.fx=fx;G.fy=fy;G.C=C;G.P=P; // P: prospettiva in proporzione all'altezza dello schermo
+  if(soloMisure)return;
+  tessere.textContent='';
+  // ogni posto che si vedrà prende il lavoro meno usato che non sia già nei dintorni, senza due toni uguali uno accanto all'altro
+  // (i posti che restano fuori dallo schermo prendono un lavoro qualsiasi e poi si tolgono)
+  var n=LAVORI.length,posti=[],usi=LAVORI.map(function(){return 0}),giro=0,simile=0;
+  for(var q=0;q<n;q++)if(LAVORI[q][0]==='sito-3')simile=q; // (dal video di prima, che mostrava la stessa galleria: mai lì vicino; così il muro resta quello di prima)
+  function alt(i){return Math.round(cw*LAVORI[i][1]/400)}
+  function conta(c,t,h){ // il posto si vedrà? (con il muro fermo si sa con esattezza: è dentro il palco)
+    if(fermo){var X=ml+c*(cw+g);return X<Wd&&X+cw>0&&mt+t<V&&mt+t+h>0}
+    var z=zone&&zone[c];return !zone||(z&&t<z[1]+cw&&t+h>z[0]-cw)}
+  function scegli(c,x,y,su){
+    var best=-1,bv=1e9;
+    if(!conta(c,su?y-cw*1.6:y,cw*1.6)){giro=(giro+7)%n;return giro}
+    for(var q=0;q<n;q++){var i=(q+giro)%n,h=alt(i),t=su?y-h:y,v=usi[i]*25,qui=vista(x+cw/2,t+h/2);
+      posti.forEach(function(p){if(!p.conta)return;var d=vicino(p.v,qui),gp=LAVORI[p.i][3];
+        if(p.i===i)v+=doppio(i,d);else if(gp&&gp===LAVORI[i][3])v+=2400*d; // un doppione costa tanto più quanto è vicino sullo schermo
+        if(p.tono===LAVORI[i][2]&&Math.abs(p.x-x)<1.5*(cw+g)&&Math.min(t+h,p.y+p.h)-Math.max(t,p.y)>-g*2)v+=30});
+      if(v<bv){bv=v;best=i}}
+    giro=(giro+5)%n;return best}
+  function metti(i,c,x,y){var L=LAVORI[i],h=alt(i),im=document.createElement('img'),k=conta(c,y,h);
+    im.setAttribute('data-src','img/muro/'+L[0]+'.jpg');im.alt='';im.decoding='async';im.width=400;im.height=L[1];
+    im.style.cssText='left:'+x+'px;top:'+y+'px;width:'+cw+'px';im._c=c;im._y=y;im._h=h;tessere.appendChild(im);
+    posti.push({i:i,x:x,y:y,h:h,tono:L[2],conta:k,v:vista(x+cw/2,y+h/2),el:im});if(k)usi[i]++;return h}
+  if(!fermo)posti.push({i:simile,x:bx,y:by,h:bh,tono:'s',conta:true,v:vista(bx+bw/2,by+bh/2)});
+  for(var c=0;c<C;c++){var x=c*(cw+g),y,i;
+    if(c>=c0&&c<c0+span){ // colonne del riquadro del logo: lavori sopra e sotto, attaccati al riquadro
+      y=by-g;while(y>0){i=scegli(c,x,y,true);y-=alt(i);metti(i,c,x,y);y-=g}
+      y=by+bh+g;while(y<Hw){i=scegli(c,x,y,false);y+=metti(i,c,x,y)+g}
+    }else{y=-Math.round(((c*53)%97)/97*cw*1.2);while(y<Hw){i=scegli(c,x,y,false);y+=metti(i,c,x,y)+g}}
+  }
+  // alla fine (dopo aver tolto i riquadri che non si vedono) scambia tra loro i riquadri della stessa altezza, o li cambia
+  // con un lavoro meno usato, finché i doppioni non si allontanano: l'altezza non cambia, quindi il muro resta com'è
+  G.migliora=function(){
+    var vivi=posti.filter(function(p){return !p.el||!!p.el.parentNode}),m=vivi.length,V2=[],x,y;
+    for(x=0;x<m;x++){V2.push([]);for(y=0;y<m;y++)V2[x].push(x===y?0:vicino(vivi[x].v,vivi[y].v))} // vicinanze, calcolate una volta
+    var costo=function(a,i,salta){var c=0;for(var q=0;q<m;q++){if(q===a||q===salta)continue;var pi=vivi[q].i,gp=LAVORI[pi][3];
+      if(pi===i)c+=doppio(i,V2[a][q]);else if(gp&&gp===LAVORI[i][3])c+=2400*V2[a][q]}return c};
+    var metti2=function(a,i){vivi[a].i=i;vivi[a].el.setAttribute('data-src','img/muro/'+LAVORI[i][0]+'.jpg')};
+    for(var gi=0;gi<5;gi++)for(x=0;x<m;x++){if(!vivi[x].el)continue;
+      for(y=0;y<m;y++){var ix=vivi[x].i,iy=vivi[y].i;if(y===x||!vivi[y].el||iy===ix||alt(iy)!==alt(ix))continue;
+        if(costo(x,iy,y)+costo(y,ix,x)<costo(x,ix,y)+costo(y,iy,x)-1){metti2(x,iy);metti2(y,ix)}}
+      for(var j=0;j<n;j++)if(j!==vivi[x].i&&alt(j)===alt(vivi[x].i)&&costo(x,j)<costo(x,vivi[x].i)-1)metti2(x,j)}
+  };
+}
+// Il «momento V» (19/10, al posto del video che partiva lì): il logo è disegnato dentro il riquadro, alla misura che ha a
+// tutto schermo (il riquadro è ingrandito s0 volte e centrato sotto la testata; cx, cy: il suo centro sul palco).
+// Due stati della stessa scritta: il simbolo (la V grande col puntino REC in alto a destra, misure del logo in
+// logo/finale/logo.html: V da F px, puntino largo .1733 F a +.32 F, -.2747 F dal centro della V) e la scritta
+// «Veniello.studio» (Geist, la V a 1,18 em). L'arancio a tutto schermo si stringe esattamente nel puntino del simbolo.
+var LVT={V:450,D0:250,D1:800,DY:620,S0:680,S1:1050}; // ms della scritta: la V si rimpicciolisce (0-V), il puntino scende e corre a fare il punto scrivendo «eniello» (D0-D1, in basso entro DY), «studio» esce dal punto (S0-S1)
+function logoMisura(bw,bh,s0,Wd,V,hdr,cx,cy){
+  var Vh=V-hdr,F=Math.min(.7*Wd,.42*Vh)/s0,N=Math.min(.105*Wd,.09*Vh)/s0,em=1.18*N; // misure a schermo divise per s0
+  lvN.style.fontSize=N.toFixed(3)+'px';
+  // misure con i decimali, su una copia della scritta senza trasformazioni fuori dal palco: offsetLeft e offsetWidth sono
+  // arrotondati al pixel e il riquadro è ingrandito s0 volte (fino a 3,7 sul telefono), così il puntino del logo cadeva
+  // 2-3 px accanto al punto dove si posa l'arancio e faceva un saltello
+  var m=document.createElement('div');m.className='lv';m.setAttribute('aria-hidden','true');m.style.visibility='hidden';
+  var c=lvN.cloneNode(true);c.removeAttribute('style');c.style.fontSize=lvN.style.fontSize;
+  [].forEach.call(c.children,function(x){x.removeAttribute('style')});m.appendChild(c);document.body.appendChild(m);
+  var r0=c.getBoundingClientRect(),wn=r0.width,hn=r0.height,nl=(bw-wn)/2,nt=(bh-hn)/2-.04*N; // (un filo più su: la scritta è bassa nella sua riga)
+  function box(i){var r=c.children[i].getBoundingClientRect();return {x:nl+r.left-r0.left,y:nt+r.top-r0.top,w:r.width,h:r.height}}
+  var v=box(0),e=box(1),p=box(2),st=box(3),S=F/em;document.body.removeChild(m);
+  lvN.style.left=nl.toFixed(3)+'px';lvN.style.top=nt.toFixed(3)+'px';
+  var sv=[bw/2-.04*F,bh/2+.0533*F],off=[.32*em,-.2747*em],sp=[sv[0]+S*off[0],sv[1]+S*off[1]],rs=.1733*F/2;
+  G.L={S:S,em:em,N:N,v:v,e:e,p:p,st:st,cv:[v.x+v.w/2,v.y+v.h/2],sv:sv,off:off,sp:sp,rs:rs,cp:[p.x+p.w/2,p.y+p.h/2],
+    px:cx+s0*(sp[0]-bw/2),py:cy+s0*(sp[1]-bh/2),pr:s0*rs}; // px, py, pr: il puntino del simbolo sul palco (dove arriva l'arancio)
+}
+function posa(u){ // la camera: allontanamento, inclinazione e scorrimento del muro
+  var z=ioq(seg(u,TL.Z0,TL.Z1)),w=Math.pow(TL.W0,1-z),s=Math.pow(G.s0,1-z),k=ioq(seg(u,TL.T0,TL.T1));
+  var sc=w*(1+.12*k),my=-.32*G.V*seg(u,TL.P0,TL.P1),cy=-.2*G.V*k; // inclinandosi il muro sale un po': il riquadro del logo va sopra le frasi
+  plano.style.transform='translate3d(0,'+cy.toFixed(1)+'px,0) perspective('+G.P+'px) rotateX('+(TL.AX*k).toFixed(2)+'deg) rotateZ('+(TL.AZ*k).toFixed(2)+'deg) scale('+sc.toFixed(4)+')';
+  muro.style.transform='translate3d(0,'+my.toFixed(1)+'px,0)';
+  tv.style.transform=z<1?'scale('+(s/w).toFixed(4)+')':''; // il riquadro del logo si stringe più in fretta del muro e si posa al suo posto
+  return k;
+}
+function pota(fermo){ // toglie i riquadri che non entrano mai nello schermo e dice, colonna per colonna, quale tratto si vede
+  var im=[].slice.call(tessere.children),vis=im.map(function(){return false}),H=Math.min(stage.clientHeight,G.V+120),u,campioni=[];
+  var m=fermo?0:Math.max(24,Math.round(.012*(G.Wd+G.V))); // margine (il muro fermo non si muove: nessuno): con i riquadri grandi degli schermi larghi, tra un campione e l'altro un riquadro si sposta di più
+  if(fermo)campioni.push(-1);else for(u=TL.WF0;u<=TL.T+.001;u+=.05)campioni.push(u);
+  campioni.forEach(function(u){if(u>=0)posa(u);var st=stage.getBoundingClientRect();
+    im.forEach(function(e,i){if(vis[i])return;var r=e.getBoundingClientRect(),t=r.top-st.top,l=r.left-st.left;
+      if(r.width>0&&r.width<3*G.Wd&&r.height<3*H&&t<H+m&&t+r.height>-m&&l<G.Wd+m&&l+r.width>-m)vis[i]=true})}); // (i rettangoli enormi sono dietro la camera)
+  var zone=[];
+  im.forEach(function(e,i){if(!vis[i]){tessere.removeChild(e);return}var z=zone[e._c];zone[e._c]=z?[Math.min(z[0],e._y),Math.max(z[1],e._y+e._h)]:[e._y,e._y+e._h]});
+  plano.style.transform=muro.style.transform=tv.style.transform='';
+  return zone;
+}
+// Il muro si costruisce dopo il primo disegno della pagina, in due pezzi per non tenere occupato il processore troppo a
+// lungo, e comunque molto prima che serva (si vede da u = WF0); finché non è pronto i riquadri restano nascosti.
+// Due giri: il primo trova il tratto che si vede, il secondo sceglie i lavori solo per quello. poi(): ridisegna la scena.
+var inCostruzione=null;
+function muroPronto(fermo,poi){
+  var chiave=stage.clientWidth+'x'+sonda.offsetHeight+(fermo?'f':'');
+  if(inCostruzione){if(inCostruzione.chiave===chiave){inCostruzione.poi=poi;return}inCostruzione.vivo=false}
+  if(G.chiave===chiave){inCostruzione=null;if(poi)poi();return} // già fatto per questo schermo
+  var lavoro={chiave:chiave,poi:poi,vivo:true};inCostruzione=lavoro;tessere.style.visibility='hidden';
+  var dopo=function(f){requestAnimationFrame(function(){setTimeout(function(){if(lavoro.vivo)f()},0)})};
+  dopo(function(){
+    muroCostruisci(null,fermo);var zone=pota(fermo);if(lavoro.poi)lavoro.poi();
+    dopo(function(){
+      muroCostruisci(zone,fermo);pota(fermo);G.migliora();G.chiave=chiave;inCostruzione=null;
+      [].forEach.call(tessere.children,function(e){e.src=e.getAttribute('data-src')});
+      G.n=tessere.children.length;tessere.style.visibility='';
+      if(lavoro.poi)lavoro.poi();
+    });
+  });
+}
+
+// Dichiarazione: ogni parola in uno span (l'ultima, «Instagram» col suo punto .pf, resta un pezzo unico: .k)
+var dich=document.getElementById('dichiara');
+(function spezza(el){
+  Array.prototype.slice.call(el.childNodes).forEach(function(n){
+    if(n.nodeType===3){var fr=document.createDocumentFragment();
+      n.textContent.split(/(\s+)/).forEach(function(t){if(!t)return;if(/^\s+$/.test(t)){fr.appendChild(document.createTextNode(t));return}var s=document.createElement('span');s.className='w';s.textContent=t;fr.appendChild(s)});
+      el.replaceChild(fr,n)}
+    else if(n.nodeType===1){if(n.classList.contains('k'))n.classList.add('w');else spezza(n)}
+  });
+})(dich);
+var parole=dich.querySelectorAll('.w');
+var cursore=document.createElement('i');cursore.className='cursore';cursore.setAttribute('aria-hidden','true');dich.appendChild(cursore);
+
+// Posizione del segnaposto del Jué sulla mappa di Google, dentro lo schermo del telefono disegnato
+function posaPunti(){var sc=document.querySelector('.schermo'),W=sc.clientWidth,H=sc.clientHeight,gw=H*600/1226,px=(W-gw)/2+.367*gw,py=.102*H;
+  sc.style.setProperty('--px',px+'px');sc.style.setProperty('--py',py+'px');return {W:W,H:H,px:px,py:py}}
+
+// Senza animazioni (niente GSAP o «Riduci movimento»): pagina ferma
+var ridotto=matchMedia('(prefers-reduced-motion: reduce)').matches,saltoLink=-1e9,lenisPc=null; // lenisPc: lo scorrimento di Lenis, solo al computer (vedi «Rotella»)
+if(ridotto)document.documentElement.classList.add('fermo'); // (il muro fermo, piatto e senza video, lo costruisce il secondo script)
+
+// Link interni (#…): scorrono morbidi fino a 80 px sotto la cima, come prima con html{scroll-behavior:smooth} e
+// scroll-padding-top (ma senza rendere morbidi anche gli scrollTo degli script); con «Riduci movimento» il salto è immediato.
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a||e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+  var id=decodeURIComponent(a.getAttribute('href').slice(1)),el=id&&document.getElementById(id);if(!el)return;
+  e.preventDefault();
+  var y=id==='inizio'?0:Math.max(0,Math.round(el.getBoundingClientRect().top+scrollY-80));
+  saltoLink=performance.now(); // un link non è un colpo di dito: la scena non frena il suo inizio (vedi frena())
+  if(lenisPc)lenisPc.scrollTo(y,{duration:1.2,force:true}); // al computer lo scorrimento lo guida Lenis: anche i link passano da lui
+  else try{scrollTo({top:y,behavior:ridotto?'auto':'smooth'})}catch(x){scrollTo(0,y)}
+  if(history.pushState)history.pushState(null,'','#'+id);
+  if(id!=='inizio'){if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','-1');try{el.focus({preventScroll:true})}catch(x){}}
+});
+</script>
+<script defer src="js/gsap.min.js"></script>
+<script defer src="js/ScrollTrigger.min.js"></script>
+<script defer src="js/lenis.min.js"></script>
+<script>
+addEventListener('DOMContentLoaded',function(){
+  if(!window.gsap||!window.ScrollTrigger||ridotto){
+    document.documentElement.classList.add('fermo');muroPronto(true);posaPunti(); // con «Riduci movimento» il muro resta piatto e fermo dietro le frasi, senza video; il puntino resta sul segnaposto della mappa
+    var tf,wf=innerWidth;addEventListener('resize',function(){if(Math.abs(innerWidth-wf)<40)return;wf=innerWidth;clearTimeout(tf);tf=setTimeout(function(){muroPronto(true);posaPunti()},200)});return}
+  gsap.registerPlugin(ScrollTrigger);
+  // Rotella (19/10 sera). Su Windows ogni scatto della rotella sposta la pagina di (righe impostate) × 33 px: col PC di
+  // Niccolò (10 righe) 333 px a scatto, e la scena passava in 2-3 s. Al computer (mouse o trackpad, senza «Riduci
+  // movimento») lo scorrimento lo guida Lenis, come nei siti premiati, e la rotella si «conta»: uno scatto vale al
+  // massimo PASSO px qualunque sia l'impostazione di Windows. I movimenti piccoli e continui del trackpad passano come
+  // sono. Uno scatto si riconosce così: conta in righe o pagine (deltaMode 1 o 2), oppure è in pixel ma grande (≥ 50 px) e
+  // multiplo esatto di 100/3 (Chrome ed Edge su Windows) o uguale al precedente (scatti tutti uguali). Tastiera e barra di
+  // scorrimento restano del browser (Lenis le segue). Sul telefono e con «Riduci movimento» niente Lenis.
+  if(window.Lenis&&matchMedia('(hover:hover) and (pointer:fine)').matches){
+    var PASSO=110,RIGA=100/3,ultA=0,ultT=-1e9;
+    var conta=function(d){var e=d.event;if(!e||e.type!=='wheel')return;
+      if(Math.abs(d.deltaX)>Math.abs(d.deltaY))return false; // gesto di lato: lo fa il browser
+      var a=Math.abs(e.deltaY)*(e.deltaMode===1?RIGA:e.deltaMode===2?innerHeight:1),t=e.timeStamp,
+        uguale=Math.abs(a-ultA)<.01&&t-ultT<400,q=a/RIGA;ultA=a;ultT=t;
+      if(e.deltaMode||(a>=50&&(uguale||Math.abs(q-Math.round(q))<.003)))d.deltaY=(e.deltaY<0?-1:1)*Math.min(a,PASSO)};
+    lenisPc=new Lenis({lerp:.1,smoothWheel:true,syncTouch:false,virtualScroll:conta});
+    lenisPc.on('scroll',ScrollTrigger.update);
+    gsap.ticker.add(function(t){lenisPc.raf(t*1000)});gsap.ticker.lagSmoothing(0);
+    ScrollTrigger.addEventListener('refresh',function(){lenisPc.resize()}); // la scena cambia altezza: Lenis rimisura la pagina
+  }
+  var scena=document.querySelector('.scena'),fasi=document.querySelector('.fasi'),binario=document.querySelector('.binario');
+  var sitoLungo=document.getElementById('sito-lungo');
+  function clamp(x){return Math.max(0,Math.min(1,x))}
+  function lerp(a,b,t){return a+(b-a)*t}
+  function dolce(x){x=clamp(x);return x*x*(3-2*x)}
+  function ioc(t){t=clamp(t);return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
+  // insegue un valore con un po' di inerzia (come lo «scrub» di GSAP) e poi si ferma da solo; salto: oltre questa distanza
+  // (un link del menu, una ricarica) arriva subito, senza far passare il disegno per tutti i momenti di mezzo
+  function morbido(disegna,k,salto){var cur=null,tgt=0,on=false;
+    function tick(t,dt){cur+=(tgt-cur)*(1-Math.pow(1-k,(dt||16.7)/16.7));if(Math.abs(tgt-cur)<.0003){cur=tgt;gsap.ticker.remove(tick);on=false}disegna(cur)}
+    return function(v){tgt=v;if(cur===null||(salto&&Math.abs(v-cur)>salto())){cur=v;if(on){gsap.ticker.remove(tick);on=false}disegna(v);return}if(!on){on=true;gsap.ticker.add(tick)}}}
+  // scrive uno stile solo se cambia (meno lavoro a ogni fotogramma)
+  function scrivi(el,k,v){var c=el._st||(el._st={});if(c[k]!==v){c[k]=v;el.style[k]=v}}
+  function tcod(sec){var s=Math.floor(sec),f=Math.floor((sec-s)*30);return '00:00:'+(s<10?'0':'')+s+':'+(f<10?'0':'')+f}
+  // clip-path animato (il cerchio che apre il sito): con e senza prefisso per Safari; se il browser non lo conosce, dissolvenza
+  var clipOk=!!(window.CSS&&CSS.supports&&(CSS.supports('clip-path','circle(1px at 1px 1px)')||CSS.supports('-webkit-clip-path','circle(1px at 1px 1px)')));
+  function ritaglia(el,v){el.style.webkitClipPath=v;el.style.clipPath=v}
+  // una strada a spigoli arrotondati tra i punti P ([x,y]); f da 0 a 1 lungo la strada. Serve al puntino in volo per correre
+  // nei margini e tra le righe, mai sopra il testo
+  function quad(z,u){var m=1-u;return [m*m*z.a[0]+2*m*u*z.c[0]+u*u*z.b[0],m*m*z.a[1]+2*m*u*z.c[1]+u*u*z.b[1]]}
+  function strada(P,r,f){
+    var pt=P.filter(function(p,i){return i===0||Math.hypot(p[0]-P[i-1][0],p[1]-P[i-1][1])>.5}),pz=[],L=0,ent=pt[0],i;
+    if(pt.length<2)return pt[0].slice();
+    for(i=1;i<pt.length;i++){var a=pt[i-1],b=pt[i];
+      if(i<pt.length-1){var c=pt[i+1],l1=Math.hypot(b[0]-a[0],b[1]-a[1]),l2=Math.hypot(c[0]-b[0],c[1]-b[1]),d=Math.min(r,l1/2,l2/2);
+        var q1=[b[0]+(a[0]-b[0])*d/l1,b[1]+(a[1]-b[1])*d/l1],q2=[b[0]+(c[0]-b[0])*d/l2,b[1]+(c[1]-b[1])*d/l2];
+        pz.push({a:ent,b:q1});pz.push({a:q1,c:b,b:q2});ent=q2}
+      else pz.push({a:ent,b:b})}
+    pz.forEach(function(z){if(z.c){var l=0,p=z.a;for(var k=1;k<=8;k++){var q=quad(z,k/8);l+=Math.hypot(q[0]-p[0],q[1]-p[1]);p=q}z.l=l}else z.l=Math.hypot(z.b[0]-z.a[0],z.b[1]-z.a[1]);L+=z.l});
+    var s=clamp(f)*L;
+    for(i=0;i<pz.length;i++){var z=pz[i];if(s<=z.l||i===pz.length-1){var u=z.l?clamp(s/z.l):1;return z.c?quad(z,u):[lerp(z.a[0],z.b[0],u),lerp(z.a[1],z.b[1],u)]}s-=z.l}
+  }
+  function centro(el){var r=el.getBoundingClientRect();return [r.left+r.width/2,r.top+r.height/2,r.width,r]}
+
+  // lettere delle parole Trovato / Scelto / Ricordato (una volta sola): rotolano una alla volta
+  var fasiT=[].slice.call(document.querySelectorAll('.fase-t'));
+  fasiT.forEach(function(t){var b=t.querySelector('b'),tx=b.textContent;
+    b.innerHTML='<span class="sr">'+tx+'</span><span aria-hidden="true">'+tx.split('').map(function(c){return '<span class="l">'+c+'</span>'}).join('')+'</span>'});
+  // i fotogrammi del reel nel telefono: l'indirizzo arriva solo quando ci si avvicina alle fasi (non pesano sull'apertura)
+  function caricaReel(){[].forEach.call(document.querySelectorAll('.fasi img[data-src]'),function(im){im.src=im.getAttribute('data-src');im.removeAttribute('data-src')})}
+
+  // «Da uno a tutti» (i tempi TL sono nel primo script)
+  var copertina=document.getElementById('inizio'),wrap=document.getElementById('copertina-wrap'),dot=document.getElementById('rec-punto');
+  var punto=document.getElementById('punto'),velo=document.getElementById('velo'),bordi=document.getElementById('bordi');
+  var frasi=[].slice.call(document.querySelectorAll('.scena .frase')),righe=frasi.map(function(f){return [].slice.call(f.querySelectorAll('.riga>span'))});
+  // ogni frase sale quando la camera passa la prima soglia e se ne va alla seconda. Le righe si muovono a tempo (circa 0,6 s),
+  // non legate al dito: se lo scorrimento si ferma, una frase c'è intera o non c'è, mai tagliata a metà dalla sua maschera
+  var FR=[[1.66,2.2],[2.32,2.86],[2.98,99]].map(function(f){return [f[0]+TL.SH,f[1]+TL.SH]}),statoFrasi=[null,null,null],attesa=[0,0,0],partenza=[1e15,1e15,1e15],uscita=-1e9;
+  var D={},E=0,stato={u:0,p:0},aperto=false,inVista=true,scenaST=null;
+  var tenuto=false,ritardo={v:0},prima=null,battendo=false,orlo=null;
+  // Il «momento V» (19/10, al posto del video che partiva qui; logoMisura e LVT nel primo script). Da IR l'arancio a tutto
+  // schermo si stringe nel puntino della V del logo (sp da 0 a 1), la V col puntino resta un attimo, poi dalla V esce il
+  // nome (np da 0 a 1, a tempo: LVT.S1 ms; come le frasi non resta mai a metà se il dito si ferma, e tornando indietro
+  // rientra). Al computer l'arancio si stringe col dito (nel tratto LV.dP) e il nome esce quando la scena passa LV.nP.
+  // Sul telefono l'arancio si stringe a tempo (LV.S ms: un colpo di dito veloce non lo salta; tornando su invece si
+  // riallarga col dito, nel tratto LV.dT), il nome esce LV.H ms dopo, e la camera resta sul logo finché il nome non è
+  // uscito per LV.GO (vedi camera()): circa 1,2 s, come l'attesa della V del video di prima. La pagina non si ferma mai.
+  var LV={S:450,H:180,GO:.55,dT:.15,dP:.075,nP:.115},sT=0,tS=0,s1=-1,nome={p:0},nomeSu=null;
+  function ridisegna(){rendi(stato.u)}
+  function muroFatto(){orlo=null;rendi(stato.u)} // muroCostruisci riscrive lo stile del riquadro del logo: il filo va rimesso
+  function batti(si){if(si===battendo)return;battendo=si;if(si)gsap.ticker.add(ridisegna);else gsap.ticker.remove(ridisegna)} // ridisegna a ogni fotogramma mentre qualcosa va a tempo
+  function scritta(su,subito){ // il nome esce (su) o rientra; subito: senza animazione (la pagina si apre già qui)
+    if(subito){gsap.killTweensOf(nome);nomeSu=su;nome.p=su?1:0;return}
+    if(su===nomeSu)return;nomeSu=su;
+    gsap.to(nome,{p:su?1:0,duration:(su?LVT.S1/1000*(1-nome.p):.28*nome.p),ease:'none',overwrite:true,onUpdate:ridisegna});
+  }
+  function vPronto(){return sT>=1&&nome.p>=LV.GO}
+  // L'arancio insegue il suo traguardo senza mai andare più svelto di LV.S ms per tutto il tratto (niente scatti anche con
+  // un colpo di dito o una rotella veloce). Traguardo: al computer il dito (sS); sul telefono 1 andando avanti (si stringe
+  // da solo) e il dito tornando su. Tornando su prima rientra il nome, poi l'arancio si riallarga: mai i due insieme; se
+  // il dito torna sopra lo schermo arancio prima che sia finito, finisce lo stesso (più svelto), poi riprende il puntino.
+  var avanti=true,sG=0;
+  function stringi(u,uv){ // quanto l'arancio si è stretto (sp); uv: il dito, u: la camera
+    var t=performance.now(),dt=Math.min(34,t-tS);tS=t;
+    var sotto=uv<TL.IR;
+    if(sotto&&(prima===null||sT<=0)){sT=sG=0;s1=-1;avanti=true;scritta(false,true);return 0}
+    var sS=sotto?0:seg(u,TL.IR,TL.IR+(guida?LV.dP:LV.dT));
+    if(prima===null){sT=sG=sS;avanti=true}
+    else{if(sotto||uv<prima-1e-6)avanti=false;else if(uv>prima+1e-6)avanti=true;
+      var g=sG=nome.p>0?1:guida||!avanti?sS:1,v=dt/(LV.S*(avanti?1:.6));sT=g>sT?Math.min(g,sT+v):Math.max(g,sT-v)}
+    if(sT>=1){if(s1<0)s1=prima===null?t-LV.H:t}else s1=-1;
+    scritta(guida?!sotto&&u>=TL.IR+LV.nP:s1>=0&&t-s1>=LV.H&&(avanti||sS>=1),prima===null);
+    return sT;
+  }
+  // il cerchio arancio che si stringe: è il puntino del simbolo visto da vicino, che la camera lascia andare (stessa
+  // misura e stesso posto del puntino quando arriva, poi lo disegna il logo)
+  function stretto(sp){
+    var L=G.L,K=D.R/L.pr,r=D.R*Math.pow(L.pr/D.R,dolce(sp)),q=(r/L.pr-1)/(K-1);
+    disco(L.px+(D.cx-L.px)*q,L.py+(D.cy-L.py)*q,r,1);return r/L.pr;
+  }
+  // sp, k (quante volte l'arancio è più grande del puntino: la V arriva con lui, da un po' più grande), np (0 simbolo,
+  // 1 scritta composta), o (opacità del logo)
+  function logoDisegna(sp,k,np,o){
+    var L=G.L;if(!L)return;
+    var t=np*LVT.S1,ev=ioc(t/LVT.V),sc=Math.pow(L.S,1-ev),c=[lerp(L.sv[0],L.cv[0],ev),lerp(L.sv[1],L.cv[1],ev)],ov=1;
+    if(sp<1){var z=Math.pow(k,.35);c=[L.sp[0]+z*(c[0]-L.sp[0]),L.sp[1]+z*(c[1]-L.sp[1])];sc*=z;ov=dolce(seg(sp,0,.32))}
+    scrivi(lvV,'transform','translate('+(c[0]-L.cv[0]).toFixed(2)+'px,'+(c[1]-L.cv[1]).toFixed(2)+'px) scale('+sc.toFixed(4)+')');
+    scrivi(lvV,'webkitTextStrokeWidth',lerp(.0467,.036,ev).toFixed(4)+'em');
+    scrivi(lvV,'opacity',ov<1?ov.toFixed(3):'');
+    // il puntino: attaccato alla V (in alto a destra) finché scende e corre a fare il punto
+    var a=[c[0]+sc*L.off[0],c[1]+sc*L.off[1]],ex=ioc(seg(t,LVT.D0,LVT.D1)),ey=ioc(seg(t,LVT.D0,LVT.DY));
+    var dx=lerp(a[0],L.cp[0],ex),dy=lerp(a[1],L.cp[1],ey),dd=lerp(sc*.1733*L.em,L.p.w,ex);
+    scrivi(lvD,'transform','translate('+dx.toFixed(3)+'px,'+dy.toFixed(3)+'px) scale('+(dd/100).toFixed(5)+')');
+    scrivi(lvD,'visibility',sp<1?'hidden':'inherit'); // finché si stringe, il puntino è l'arancio del palco
+    // «eniello» si scrive dietro al puntino; «studio» esce dal punto
+    var re=Math.min(ex,clamp((dx-dd/2-L.e.x)/L.e.w)),q=1-Math.pow(1-seg(t,LVT.S0,LVT.S1),3);
+    var ce=re>=1?'none':'inset(-20% '+(100-100*re).toFixed(2)+'% -20% 0)',cs=q>=1?'none':'inset(-20% '+(100-100*q).toFixed(2)+'% -20% 0)';
+    scrivi(lvE,'webkitClipPath',ce);scrivi(lvE,'clipPath',ce);scrivi(lvS,'webkitClipPath',cs);scrivi(lvS,'clipPath',cs);
+    scrivi(lvS,'transform',q<1?'translateX('+(-(1-q)*.25*L.N).toFixed(2)+'px)':'');
+    scrivi(lv,'opacity',o<1?o.toFixed(3):'');
+  }
+  // dove sta la camera: sul telefono, dallo schermo arancio resta sul logo (a tutto schermo) finché il nome non è uscito,
+  // anche se il dito è già più avanti; poi raggiunge il dito con dolcezza
+  function camera(u){
+    if(guida)return u; // al computer la camera è legata allo scorrimento
+    if(tenuto){
+      if(u<TL.IR||vPronto()){tenuto=false;
+        var d=u-TL.Z0;if(d>.004){ritardo.v=d;gsap.to(ritardo,{v:0,duration:Math.min(1.1,.5+.4*d),ease:'power2.inOut',overwrite:true,onUpdate:ridisegna})}}
+      else return Math.min(u,TL.Z0);
+    }
+    return ritardo.v>0?Math.max(Math.min(u,TL.Z0),u-ritardo.v):u;
+  }
+  function misuraPunto(){
+    // copertina più alta dello schermo (telefono girato, finestra bassa): scorre come le altre, e la scena comincia quando
+    // se ne vede il fondo (E). Il punto di «scegliere» sale col titolo fino a un terzo dello schermo e lì si stacca (sd)
+    E=Math.max(0,Math.round(copertina.offsetHeight-G.V));
+    var cr=copertina.getBoundingClientRect(),dr=dot.getBoundingClientRect(),sr=stage.getBoundingClientRect();
+    var x=dr.left+dr.width/2-sr.left,y=dr.top+dr.height/2-cr.top,H=stage.clientHeight,Wd=G.Wd,cx=G.fx,cy=G.fy,m=Math.min(Wd,G.V-G.hdr);
+    var R=Math.hypot(Math.max(cx,Wd-cx),Math.max(cy,H-cy))*1.03; // il cerchio pieno copre anche gli angoli dello schermo
+    // x, y: il punto del titolo a pagina ferma (rispetto al palco); cx, cy: il centro dello schermo sotto la testata, dove
+    // si allarga (lo stesso centro del riquadro del logo); r0 il punto, rM il puntino che scende, rD il disco (misure in px)
+    D={top:cr.top+scrollY,x:x,y:y,sd:Math.min(E,Math.max(0,y-Math.max(G.hdr+24,.3*G.V))),cx:cx,cy:cy,r0:dr.width/2,rM:G.pc?12:10,rD:Math.round(.085*m),R:R};
+  }
+  // il puntino: a pagina ferma è il punto di «scegliere» (lo disegna il palco, al posto preciso del punto del titolo). Al
+  // primo scorrimento resta fermo mentre la copertina sale e gli passa davanti (si stacca da solo, senza aspettare lo
+  // script), scende al centro dello schermo (d0-d1), lampeggia una volta come la luce REC appena le ultime righe della
+  // copertina gli sono passate davanti (da b0, a tempo: LB millisecondi, come le frasi non resta mai a metà), si gonfia
+  // in un disco (g0-g1) e il cerchio si allarga fino a coprire lo schermo (IR): da lì il momento V.
+  // Tutto entro un terzo di schermata dall'inizio, così non c'è mai uno schermo vuoto col solo puntino.
+  var PU={d0:.02,d1:.22,b0:.23,g0:.31,g1:.39},LB=340,lampo=-1e9,ultimaU=0,scorriEl=copertina.querySelector('.scorri');
+  function lampeggia(){rendi(stato.u);if(performance.now()-lampo>LB)gsap.ticker.remove(lampeggia)}
+  function puntino(u,a){
+    var s=scrollY-D.top,titolo=s<D.sd-.5&&u<=0; // con la copertina alta il punto resta nel titolo finché non arriva a sd
+    scrivi(dot,'visibility',titolo?'':'hidden');
+    var so=1-clamp((s-E)/(.1*G.V));scrivi(scorriEl,'opacity',so<1?so.toFixed(3):''); // «Scorri» ha fatto il suo lavoro: non passa sul puntino
+    if(titolo||a<=0){scrivi(punto,'visibility','hidden');return}
+    var by=D.y-Math.min(Math.max(s,0),D.sd),t=seg(u,PU.d0,PU.d1),x=lerp(D.x,D.cx,dolce(t)),y=lerp(by,D.cy,ioc(t)),r;
+    if(u<PU.g0)r=lerp(D.r0,D.rM,dolce(seg(u,PU.d0+.02,PU.d1)));
+    else if(u<PU.g1)r=lerp(D.rM,D.rD,1-Math.pow(1-seg(u,PU.g0,PU.g1),3));
+    else r=D.rD*Math.pow(D.R/D.rD,Math.pow(seg(u,PU.g1,TL.IR),1.1));
+    if(u>=PU.b0&&ultimaU<PU.b0&&u<PU.g1){lampo=performance.now();gsap.ticker.add(lampeggia)} // scendendo: lampeggia una volta
+    var q=(performance.now()-lampo)/LB;disco(x,y,r,a*(q<1?1-.85*Math.sin(Math.PI*q):1));
+  }
+  // piccolo è disegnato alla sua misura (bordi netti come il punto del titolo); grande è il disco di 240 px ingrandito
+  // (il browser non lo ridisegna a ogni fotogramma)
+  function disco(x,y,r,o){
+    var pic=r<40,w=pic?(2*r).toFixed(2)+'px':'';scrivi(punto,'width',w);scrivi(punto,'height',w);
+    punto.style.transform='translate3d('+(x-r).toFixed(2)+'px,'+(y-r).toFixed(2)+'px,0)'+(pic?'':' scale('+(r/120).toFixed(5)+')');
+    scrivi(punto,'opacity',o<1?o.toFixed(3):'1');scrivi(punto,'visibility','visible');
+  }
+  // l'inizio (dal puntino allo schermo arancio) non corre più di VI schermate al secondo: anche con un colpo di dito veloce
+  // si vede il puntino che scende, lampeggia e si allarga (circa un secondo in tutto: il disco aspetta che il lampeggio
+  // finisca, poi si gonfia a non più di VG schermate al secondo, almeno 0,2 s, invece di scattare in un fotogramma); finito
+  // l'inizio il resto segue il dito come prima (la camera aspetta il nome). Non frena tornando su, dopo un link del menu e
+  // con la scena fuori dallo schermo.
+  var ui=null,uiT=0,frenando=false,VI=1.15,VG=.36;
+  function rincorri(){rendi(stato.u)}
+  function frena(x){
+    if(guida){if(frenando){frenando=false;gsap.ticker.remove(rincorri)}ui=null;return x} // al computer niente freno: la scena è più lunga
+    var t=performance.now(),r=x;
+    if(ui===null||!inVista||x<=ui||ui>=TL.IR||t-saltoLink<1600)ui=Math.min(x,TL.IR);
+    else{var dt=Math.min(50,t-uiT)/1000,n=ui<PU.g0?Math.min(ui+VI*dt,PU.g0):ui<PU.g1?ui+VG*dt:ui+VI*dt;
+      ui=Math.min(x,t-lampo<LB?PU.g0:TL.IR,n);if(ui<TL.IR)r=ui}
+    uiT=t;
+    if((r<x)!==frenando){frenando=r<x;if(frenando)gsap.ticker.add(rincorri);else gsap.ticker.remove(rincorri)}
+    return r;
+  }
+  function frase(i,s){ // s: -1 non ancora, 0 sullo schermo, 1 già uscita (verso l'alto)
+    var f=frasi[i],p=statoFrasi[i],ora=performance.now();statoFrasi[i]=s;clearTimeout(attesa[i]);
+    function metti(su,via,ferma){ // ferma(j): la riga j va al suo posto subito, senza attraversare la sua maschera
+      var ff=righe[i].filter(function(sp,j){return ferma(j)});ff.forEach(function(sp){sp.style.transition='none'});
+      f.classList.toggle('su',su);f.classList.toggle('via',via);
+      if(ff.length){void f.offsetWidth;ff.forEach(function(sp){sp.style.transition=''})}}
+    if(s===0){
+      if(p===null){partenza[i]=-1e9;metti(true,false,function(){return true});return} // la pagina si apre già qui (ricarica): subito al suo posto
+      // entra solo se il dito ci resta un attimo: scorrendo veloce, le frasi di passaggio non compaiono; se un'altra frase
+      // sta uscendo, questa le lascia il posto
+      attesa[i]=setTimeout(function(){var t=performance.now(),d=t-uscita<400?180:0;partenza[i]=t+d;
+        righe[i].forEach(function(sp,j){sp.style.transitionDelay=(d+j*70)+'ms'});metti(true,false,function(){return false})},130);
+      return}
+    // esce: le righe già partite vanno in su (o tornano giù se si torna indietro), quelle non ancora partite spariscono subito
+    var mossa=function(j){return ora>partenza[i]+j*70+30};
+    if(mossa(0))uscita=ora;
+    righe[i].forEach(function(sp,j){sp.style.transitionDelay=(s===1?j*35:0)+'ms'});
+    metti(false,s===1,function(j){return !mossa(j)});partenza[i]=1e15;
+  }
+  // Al computer (rotella, trackpad, tastiera; 19/10) la scena è LEGATA ALLO SCORRIMENTO: niente freno dell'inizio, niente
+  // attesa del nome, niente rincorse, e lo script non tocca mai la posizione della pagina (prima la riportava indietro e con lo
+  // scorrimento morbido della rotella lo schermo ballava). Per dare il tempo di vedere tutto la scena è più lunga solo qui
+  // (lungoPc schermate di scorrimento invece di TL.T) e le fasi sono distribuite lungo lo scorrimento: VEL dice quante
+  // schermate di scorrimento vale ogni unità di u in quel punto (tra un punto e l'altro cambia piano, così nessun movimento
+  // fa scatti di velocità). Fino al lampeggio come sul telefono (il puntino resta in pari con la copertina), poi più spazio
+  // al lampeggio e al disco, tanto spazio al momento V a tutto schermo (l'arancio che si stringe nel puntino, la V, il nome), allontanamento e muro un
+  // po' più svelti, le prime due frasi 1,7 volte più lunghe e la terza 1,1 (resta sullo schermo anche mentre il palco esce).
+  // Con la rotella «contata» (vedi «Rotella», 110 px a scatto) tutta la scena è ~5,4 schermate: ~45 scatti a 900 px di
+  // altezza (prima 7,6 schermate per compensare i 333 px a scatto). Lo «scrub» di GSAP (0,4 s) ammorbidisce senza lasciare
+  // la camera indietro. Sul telefono (dito) tutto come prima.
+  var guida=false,lungoPc=TL.T,tabS=null,NT=1200;
+  function preparaPc(){
+    if(tabS)return;
+    var VEL=[[0,1],[PU.b0,1],[PU.b0+.03,2.6],[PU.g0,2.6],[PU.g0+.04,1.9],[PU.g1,1.75],[PU.g1+.06,.85],[TL.IR-.02,.85],[TL.IR+.02,3.5],[TL.Z0-.02,3.5],[TL.Z0+.04,.85],[FR[0][0]-.12,.85],[FR[0][0]-.02,1.7],[FR[2][0]-.06,1.7],[FR[2][0]+.04,1.7],[99,1.7]];
+    function vel(u){for(var i=1;i<VEL.length;i++)if(u<=VEL[i][0]){var a=VEL[i-1],b=VEL[i];return lerp(a[1],b[1],(u-a[0])/(b[0]-a[0]))}return VEL[VEL.length-1][1]}
+    tabS=[0];for(var k=1;k<=NT;k++){var u0=TL.T*(k-1)/NT,u1=TL.T*k/NT;tabS.push(tabS[k-1]+(vel(u0)+vel(u1))/2*(u1-u0))}
+    lungoPc=tabS[NT];
+  }
+  function uDi(p){ // da schermate di scorrimento (0-lungoPc) a u (0-TL.T)
+    if(p<=0)return 0;if(p>=lungoPc)return TL.T;
+    var a=0,b=NT;while(b-a>1){var m=(a+b)>>1;if(tabS[m]<=p)a=m;else b=m}
+    return TL.T*(a+(p-tabS[a])/(tabS[b]-tabS[a]))/NT;
+  }
+  function rendi(uv){
+    uv=frena(uv);
+    var giu=uv>=TL.IR||sT>0; // (tornando su, il momento V finisce di riavvolgersi: vedi stringi())
+    if(giu!==aperto){aperto=giu;stage.classList.toggle('aperto',giu);gsap.killTweensOf(ritardo);ritardo.v=0;if(!giu)tenuto=false}
+    if(!guida&&aperto&&!tenuto&&ritardo.v<=0&&!vPronto())tenuto=true; // sul telefono la camera aspetta il nome (vedi camera())
+    var u=camera(uv);
+    // a) la copertina scorre via con la pagina; quando il cerchio è grande quel poco che ne resta sullo schermo (su schermi
+    //    molto bassi) sparisce e non si tocca più: niente scritte sopra l'arancio
+    var op=1-seg(u,.58,.78);
+    scrivi(wrap,'opacity',op<1?op.toFixed(3):'');scrivi(wrap,'visibility',op>0?'':'hidden');scrivi(wrap,'pointerEvents',op<.5?'none':'');
+    // b) il momento V: l'arancio si stringe nel puntino della V, poi dalla V esce il nome. Quando arrivano le frasi il logo
+    //    si spegne quasi del tutto (resta il riquadro col suo filo): niente scritte sotto le frasi
+    var sp=stringi(u,uv);
+    puntino(u,aperto?0:1);ultimaU=u;
+    if(aperto&&G.L){var kk=sp<1?stretto(sp):1;logoDisegna(sp,kk,nome.p,1-.9*seg(u,1.42+TL.SH,1.64+TL.SH))}
+    // c) la camera: allontanamento, il muro che compare, l'inclinazione, il velo per le frasi; il riquadro del logo prende
+    //    il suo filo quando è al suo posto (prima, ingrandito, sarebbe una riga spessa)
+    var k=posa(u),oo=(.26*seg(u,1.12+TL.SH,1.42+TL.SH)).toFixed(3);
+    tessere.style.opacity=seg(u,TL.WF0,TL.WF1);velo.style.opacity=seg(u,TL.VE0,TL.VE1);bordi.style.opacity=k;
+    if(oo!==orlo){orlo=oo;tv.style.setProperty('--orlo',oo)}
+    // d) le tre frasi
+    for(var i=0;i<FR.length;i++){var s=u<FR[i][0]?-1:u<FR[i][1]?0:1;if(s!==statoFrasi[i])frase(i,s)}
+    prima=uv;
+    batti(aperto&&inVista&&(Math.abs(sG-sT)>1e-4||!guida&&(tenuto||s1>=0&&!nomeSu))); // l'arancio che si stringe e l'attesa del nome vanno a tempo
+  }
+
+  function imposta(){
+    ScrollTrigger.getAll().forEach(function(t){t.kill()});
+    var pc=matchMedia('(min-width:900px)').matches;
+
+    // 1. apertura: il puntino, il momento V, il muro, le tre frasi (il palco è sticky: niente pin di GSAP).
+    //    Qui solo le misure; i riquadri del muro si costruiscono dopo il primo disegno (muroPronto).
+    muroCostruisci(null,false,true);orlo=null;misuraPunto();
+    scena.style.marginTop=-copertina.offsetHeight+'px';
+    guida=matchMedia('(hover:hover) and (pointer:fine)').matches;if(guida)preparaPc(); // al computer: vedi «Al computer»
+    var tw;
+    if(guida){scena.style.height=Math.round((lungoPc+1)*G.V+E)+'px';
+      tw=gsap.fromTo(stato,{p:0},{p:lungoPc,ease:'none',overwrite:true,scrollTrigger:{trigger:scena,start:'top+='+E+' top',end:'bottom bottom',scrub:.4},onUpdate:function(){stato.u=uDi(stato.p);rendi(stato.u)}})}
+    else{
+    scena.style.height=Math.round((TL.T+1)*G.V+E)+'px';
+    tw=gsap.fromTo(stato,{u:0},{u:TL.T,ease:'none',overwrite:true,scrollTrigger:{trigger:scena,start:'top+='+E+' top',end:'bottom bottom',scrub:.4},onUpdate:function(){rendi(stato.u)}});
+    }
+    scenaST=tw.scrollTrigger;
+    var vista=ScrollTrigger.create({trigger:scena,start:'top bottom',end:'bottom top',onToggle:function(s){inVista=s.isActive;stage.classList.toggle('vivo',inVista);rendi(stato.u)}});
+    rendi(stato.u);
+    muroPronto(false,muroFatto);
+
+    var vh=innerHeight;
+
+    // 2. dichiarazione: il puntino arancio la legge. Qui le misure delle parole; il disegno lo fa il filo (sotto, disegnaFilo)
+    var nP=parole.length,pf=dich.querySelector('.pf');
+    geo=[].map.call(parole,function(w){return {x:w.offsetLeft,y:w.offsetTop,w:w.offsetWidth,h:w.offsetHeight}});
+    pfX=pf.offsetParent===dich?pf.offsetLeft+pf.offsetWidth/2:pf.getBoundingClientRect().left-dich.getBoundingClientRect().left+pf.offsetWidth/2;
+
+    // 3. fasi: inquadratura da cinepresa; il puntino si posa sul segnaposto del Jué, apre il sito a cerchio, scende col sito,
+    //    passa al reel e fa da testina sul montaggio; la parola rotola lettera per lettera
+    var P0=posaPunti(),W=P0.W,H=P0.H,px=P0.px,py=P0.py;
+    var tel=fasi.querySelector('.telefono'),gbox=fasi.querySelector('.g-box'),tag=fasi.querySelector('.pin-tag');
+    var lSito=fasi.querySelector('.fase-s.sito'),lSoc=fasi.querySelector('.fase-s.social');
+    puntoS=fasi.querySelector('.punto-s');puntoI=puntoS.firstElementChild;var binS=fasi.querySelector('.binario-s');
+    var svg=fasi.querySelector('.anelli'),cPin=svg.querySelector('.c-pin'),cApre=svg.querySelector('.c-apre'),rifl=fasi.querySelector('.riflesso');
+    var frames=[].slice.call(fasi.querySelectorAll('.reel-f')),thumbs=[].slice.call(fasi.querySelectorAll('.nastro img')),testina=fasi.querySelector('.testina');
+    var mont=fasi.querySelector('.montaggio'),nas=fasi.querySelector('.nastro');
+    var sL=mont.offsetLeft+nas.offsetLeft,sT=mont.offsetTop+nas.offsetTop,sW=nas.offsetWidth;
+    var tTop=.22*H,tBot=.70*H,tX=W-6;
+    var R=Math.ceil(Math.max(Math.hypot(px,py),Math.hypot(W-px,py),Math.hypot(px,H-py),Math.hypot(W-px,H-py)))+8;
+    var corsa=Math.max(0,sitoLungo.clientHeight-H);
+    var tc=document.getElementById('tc'),tcR=document.getElementById('tc-reel'),quadro=0;
+    svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.setAttribute('width',W);svg.setAttribute('height',H);
+    [cPin,cApre].forEach(function(c){c.setAttribute('cx',px);c.setAttribute('cy',py)});
+    var lett=fasiT.map(function(t){return t.querySelectorAll('b .l')}),etic=fasiT.map(function(t){return t.querySelector('.mono span')}),par=fasiT.map(function(t){return t.querySelector('p')});
+    gsap.set(lett[0],{yPercent:0,rotationX:0});gsap.set([lett[1],lett[2]],{yPercent:112,rotationX:-75,transformOrigin:'50% 100%',transformPerspective:420});
+    gsap.set(lett[0],{transformOrigin:'50% 0%',transformPerspective:420});
+    gsap.set(etic[0],{yPercent:0});gsap.set([etic[1],etic[2]],{yPercent:120});
+    gsap.set(par[0],{opacity:1,y:0});gsap.set([par[1],par[2]],{opacity:0,y:14});
+    gsap.set(tel,{transformPerspective:1100,rotationY:pc?-14:-10,rotationX:6,scale:1});
+    gsap.set(gbox,{xPercent:-50,x:0,scale:1});
+    // l'etichetta del segnaposto e il cerchio che apre il sito: clip-path scritto a mano (con -webkit- per Safari); finito il
+    // cerchio il ritaglio si toglie del tutto, così nessun livello del sito resta dentro un clip-path mentre scorre.
+    // Dove clip-path non c'è: dissolvenza (etichetta e sito) e l'anello arancio che si allarga
+    var tagV={v:0},apre={r:0};
+    function tagDisegna(){var v=tagV.v;if(clipOk)ritaglia(tag,v>=.999?'none':'inset(0 '+(100-100*v).toFixed(2)+'% 0 0)');else tag.style.opacity=v.toFixed(3)}
+    function apreDisegna(){var r=apre.r;if(clipOk)ritaglia(lSito,r>=R-.5?'none':'circle('+r.toFixed(1)+'px at '+px.toFixed(1)+'px '+py.toFixed(1)+'px)');else lSito.style.opacity=clamp(r/R*1.4).toFixed(3)}
+    tagDisegna();apreDisegna();
+    gsap.set(lSito,{yPercent:0});
+    gsap.set(sitoLungo,{y:0});gsap.set(lSoc,{yPercent:100});
+    gsap.set(puntoS,{x:px,y:py,scale:1});gsap.set(binS,{opacity:0});
+    gsap.set(cPin,{attr:{r:0},opacity:1});gsap.set(cApre,{attr:{r:0},opacity:1});
+    gsap.set(rifl,{xPercent:-80});gsap.set(testina,{x:0});
+    function quadroDi(v){var k=Math.min(5,Math.floor(v*6));if(k===quadro)return;quadro=k;frames.forEach(function(f,i){f.classList.toggle('su',i===k)});thumbs.forEach(function(f,i){f.classList.toggle('su',i<=k)})}
+    quadro=-1;quadroDi(0);
+    fasi.classList.add('anima');
+    function rotola(da,a,t){
+      tl.to(lett[da],{yPercent:-112,rotationX:75,duration:.05,stagger:.0045,ease:'power2.in'},t)
+        .to(lett[a],{yPercent:0,rotationX:0,duration:.055,stagger:.0045,ease:'power3.out'},t+.035)
+        .to(etic[da],{yPercent:-120,duration:.035,ease:'power2.in'},t)
+        .to(etic[a],{yPercent:0,duration:.04,ease:'power3.out'},t+.03)
+        .to(par[da],{opacity:0,y:-10,duration:.035,ease:'power1.in'},t-.01)
+        .to(par[a],{opacity:1,y:0,duration:.045,ease:'power2.out'},t+.045);
+      gsap.set(lett[a],{transformOrigin:'50% 100%'});
+    }
+    var gira=pc?14:10,ruota={v:0};
+    if(tlFasi)tlFasi.kill();
+    var tl=tlFasi=gsap.timeline({defaults:{ease:'none'},scrollTrigger:{trigger:fasi,start:'top top',end:'bottom bottom',scrub:.5},
+      onUpdate:function(){var p=tl.progress();tc.textContent=tcod(p*18)}});
+    // fase 1: il puntino è sul segnaposto del Jué, l'onda parte, appare l'etichetta
+    tl.to(cPin,{attr:{r:26},duration:.12,ease:'power2.out'},.02).to(cPin,{opacity:0,duration:.08},.06)
+      .fromTo(tagV,{v:0},{v:1,duration:.07,ease:'power2.out',onUpdate:tagDisegna,immediateRender:false},.04)
+      .to(gbox,{scale:1.07,duration:.26},0)
+    // passaggio 1 → 2: il puntino tocca, la mappa si avvicina e il sito si apre a cerchio dal segnaposto
+      .fromTo(tagV,{v:1},{v:0,duration:.03,ease:'power2.in',onUpdate:tagDisegna,immediateRender:false},.235)
+      .to(puntoS,{scale:1.8,duration:.03,ease:'power2.out'},.25).to(puntoS,{scale:0,duration:.025,ease:'power2.in'},.28)
+      .to(gbox,{scale:2.7,duration:.12,ease:'power2.in'},.265)
+      .fromTo(apre,{r:0},{r:R,duration:.1,ease:'power2.inOut',onUpdate:apreDisegna,immediateRender:false},.28)
+      .to(cApre,{attr:{r:R},duration:.1,ease:'power2.inOut'},.28).to(cApre,{opacity:0,duration:.05},.34)
+      .to(tel,{rotationY:gira,duration:.16,ease:'power1.inOut'},.24).to(tel,{scale:1.035,duration:.08,ease:'power1.out'},.24).to(tel,{scale:1,duration:.08,ease:'power1.in'},.32)
+      .to(rifl,{xPercent:80,duration:.15,ease:'power1.inOut'},.25);
+    rotola(0,1,.28);
+    // fase 2: il sito scorre, il puntino scende lungo la barra a destra
+    tl.set(puntoS,{x:tX,y:tTop},.385).to(puntoS,{scale:.7,duration:.025,ease:'power2.out'},.385)
+      .to(binS,{opacity:1,duration:.03},.38)
+      .to(sitoLungo,{y:-corsa,duration:.22,ease:'power1.inOut'},.40)
+      .to(puntoS,{y:tBot,duration:.22,ease:'power1.inOut'},.40)
+    // passaggio 2 → 3: si scorre al reel come su Instagram, il puntino va sulla testina del montaggio
+      .to(binS,{opacity:0,duration:.03},.61)
+      .to(lSito,{yPercent:-100,duration:.1,ease:'power2.inOut'},.62)
+      .to(lSoc,{yPercent:0,duration:.1,ease:'power2.inOut'},.62)
+      .to(puntoS,{x:sL,y:sT-5,scale:1,duration:.1,ease:'power2.inOut'},.62)
+      .to(tel,{rotationY:-gira,duration:.16,ease:'power1.inOut'},.6).to(tel,{scale:1.035,duration:.08,ease:'power1.out'},.6).to(tel,{scale:1,duration:.08,ease:'power1.in'},.68)
+      .to(rifl,{xPercent:-80,duration:.15,ease:'power1.inOut'},.61);
+    rotola(1,2,.63);
+    // fase 3: lo scorrimento è la testina che scorre il reel
+    tl.to(puntoS,{x:sL+sW,duration:.24},.73).to(testina,{x:sW,duration:.24},.73)
+      .to(ruota,{v:1,duration:.24,onUpdate:function(){quadroDi(ruota.v);tcR.textContent='0:'+('0'+Math.floor(ruota.v*24)).slice(-2)}},.73)
+      .set({},{},1);
+    ScrollTrigger.create({trigger:fasi,start:'top 250%',end:'bottom -150%',onToggle:function(s){if(s.isActive)caricaReel()}}); // a due schermate e mezzo dalle fasi (anche tornando su)
+
+    // 4. pila: chi arriva copre; chi sta sotto va un po' indietro e si scurisce appena, solo quando la nuova carta l'ha quasi
+    //    coperta (niente lastre scure vuote, niente inclinazioni che sfocano); il video gira solo in primo piano
+    var carte=[].slice.call(document.querySelectorAll('.carta-s')),pila=document.querySelector('.pila'),TS=document.getElementById('testata').offsetHeight;
+    var acc=pila.getBoundingClientRect().top+scrollY;
+    var cg=carte.map(function(c,i){var g={nat:acc,st:TS+12+i*8,h:c.offsetHeight,scuro:c.querySelector('.scuro'),rec:c.querySelector('.rec i'),
+      dentro:c.querySelector('.media').firstElementChild,video:c.querySelector('video')};acc+=g.h+14;return g});
+    function arr(g,sy){return clamp((vh-(g.nat-sy))/(vh-g.st))}
+    function yDi(i,a){var g=cg[i];return g.nat-vh+a*(vh-g.st)}
+    var tel1=carte[0].querySelectorAll('.telefoni img'),ventagli=carte.map(function(c,i){var s=c.querySelectorAll('.strip img');return s.length?{i:i,s:s}:null}).filter(Boolean),tocco=carte[3].querySelector('.tocco'),onda=carte[3].querySelector('.tocco-onda');
+    var cal=carte[4].querySelector('.calendario'),righeCal=[].slice.call(cal.querySelectorAll('div')),oggi=cal.querySelector('.oggi');
+    var rc=righeCal.map(function(r){return r.offsetTop+r.offsetHeight/2});
+    var calA=yDi(4,.45),calB=yDi(5,.42),tocA=yDi(3,.7),tocB=yDi(4,.3);
+    var pilaAgg=morbido(function(sy){
+      var a=cg.map(function(g){return arr(g,sy)});
+      cg.forEach(function(g,i){
+        var lv=0;for(var j=i+1;j<cg.length;j++)lv+=a[j];lv=Math.min(lv,3);
+        var l1=dolce((Math.min(lv,1)-.3)/.7),l2=Math.max(0,lv-1),sc=1-.035*l1-.012*l2;
+        scrivi(carte[i],'transform',l1>.001?'scale('+sc.toFixed(4)+')':'');
+        scrivi(g.scuro,'opacity',Math.min(.3,.22*l1+.04*l2).toFixed(3));
+        scrivi(g.rec,'opacity',(a[i]*(1-clamp(lv*1.6))).toFixed(2));
+        var u=1-a[i];
+        if(g.video){scrivi(g.video,'transform','scale('+(1+.06*u).toFixed(4)+')');var on=a[i]>.5&&lv<.5;if(g.video._attivo!==on){g.video._attivo=on;aggiornaVideo(g.video)}}
+        else if(i!==0&&!carte[i].querySelector('.strip'))scrivi(g.dentro,'transform','translateY('+(u*30).toFixed(1)+'px)');
+      });
+      var u0=1-a[0];scrivi(tel1[0],'transform','translateY('+(u0*16).toFixed(1)+'px)');scrivi(tel1[1],'transform','translateY('+(36+u0*50).toFixed(1)+'px)');
+      ventagli.forEach(function(v){var u2=1-a[v.i],ap=dolce((a[v.i]-.35)/.65);[-1,0,1].forEach(function(d,k){scrivi(v.s[k],'transform','translate('+(d*40*ap).toFixed(2)+'%,'+(u2*(d?24:36)).toFixed(1)+'px) rotate('+(d*8*ap).toFixed(2)+'deg) scale('+(d?.94+.06*ap:1).toFixed(3)+')')})});
+      var tt=clamp((sy-tocA)/(tocB-tocA));scrivi(tocco,'transform','scale('+(dolce(tt/.22)*(1-.25*dolce((tt-.38)/.1)+.25*dolce((tt-.5)/.12))).toFixed(3)+')');
+      var on=clamp((tt-.42)/.58);scrivi(onda,'transform','scale('+(.3+1.5*on).toFixed(3)+')');scrivi(onda,'opacity',(on>0&&on<1?(1-on):0).toFixed(2));
+      var c=clamp((sy-calA)/(calB-calA)),pos=c*(righeCal.length-1),k0=Math.floor(pos),k1=Math.min(righeCal.length-1,k0+1);
+      righeCal.forEach(function(r,k){scrivi(r,'opacity',(.3+.7*clamp((pos-k)*2.2+1)).toFixed(2))});
+      scrivi(oggi,'opacity',clamp(a[4]*2.5-1.2).toFixed(2));
+      scrivi(oggi,'transform','translateY('+lerp(rc[k0],rc[k1],dolce(pos-k0)).toFixed(1)+'px)');
+    },.24);
+    ScrollTrigger.create({trigger:pila,start:'top bottom',end:'bottom top',onUpdate:function(s){pilaAgg(s.scroll())},onRefresh:function(s){pilaAgg(s.scroll())}});
+
+    // 5. binario: tre tappe con una sosta su ognuna; il puntino è il treno e accende le stazioni, «Poi decidi» all'arrivo
+    var vag=document.getElementById('vagoni'),vg=[].slice.call(vag.children),num=vg.map(function(v){return v.querySelector('.n')});
+    var rot=binario.querySelector('.rotaia'),pieno=document.getElementById('rotaia-pieno'),treno=document.getElementById('treno');
+    var staz=[].slice.call(rot.querySelectorAll('.stazione')),decidi=binario.querySelector('h2 em');
+    if(pc){rot.style.width=(2*(vg[0].offsetWidth+20))+'px'}else rot.style.width='';
+    var rW=rot.clientWidth;
+    function rotaia(pos){var q=pos/2;pieno.style.transform='scaleX('+q.toFixed(4)+')';treno.style.transform='translateX('+(q*rW).toFixed(1)+'px)';
+      staz.forEach(function(s,i){s.style.setProperty('--on',clamp((pos-i)*4+1).toFixed(3))});decidi.style.opacity=(.3+.7*clamp((pos-1.55)*2.4)).toFixed(3)}
+    if(!pc){
+      var vw=vg[0].offsetWidth,passo=vw+12,x0=innerWidth/2-(20+vw/2);
+      var tappe=function(p){if(p<.12)return 0;if(p<.44)return dolce((p-.12)/.32);if(p<.56)return 1;if(p<.88)return 1+dolce((p-.56)/.32);return 2};
+      var binAgg=morbido(function(p){var pos=tappe(p);
+        vag.style.transform='translateX('+(x0-pos*passo).toFixed(1)+'px)';
+        vg.forEach(function(v,i){var d=i-pos,ad=Math.min(1,Math.abs(d));
+          v.style.transform='perspective(1000px) rotateY('+(d*18).toFixed(2)+'deg) scale('+(1-.08*ad).toFixed(4)+')';
+          v.style.opacity=(1-.45*ad).toFixed(3);num[i].style.transform='translateX('+(d*-34).toFixed(1)+'px)'});
+        rotaia(pos);
+      },.2);
+      ScrollTrigger.create({trigger:binario,start:'top top',end:'bottom bottom',onUpdate:function(s){binAgg(s.progress)},onRefresh:function(s){binAgg(s.progress)}});
+    }else{
+      vag.style.transform='';vg.forEach(function(v,i){v.style.transform='';num[i].style.transform=''});
+      var binPc=morbido(function(p){var pos=p*2;vg.forEach(function(v,i){v.style.opacity=(.4+.6*clamp((pos-i)*3+1)).toFixed(3)});rotaia(pos)},.2);
+      ScrollTrigger.create({trigger:vag,start:'top 78%',end:'bottom 45%',onUpdate:function(s){binPc(s.progress)},onRefresh:function(s){binPc(s.progress)}});
+    }
+    ScrollTrigger.refresh();
+    misuraFilo();
+    inVista=vista.isActive;stage.classList.toggle('vivo',inVista);rendi(stato.u);
+  }
+
+  // ===== Il filo: un solo puntino arancio dalla fine della scena al telefono =====
+  // Momenti (in pixel di scorrimento, da misuraFilo): T0 la scena se ne va → R0 comincia la lettura → R1 la frase è letta →
+  // F0 il puntino si stacca dalla frase → F1 è sul segnaposto della mappa. In volo corre solo nei margini e tra le righe.
+  var geo=[],pfX=0,KY=.76,tlFasi=null,puntoS=null,puntoI=null,F=null;
+  var studio=document.getElementById('punto-studio'),filo=document.getElementById('filo'),sotto=document.querySelector('.dichiara .sotto');
+  var piccola=document.querySelector('.scena .frase .piccola>span'),rigaSu=document.createRange(),rigaGiu=document.createRange();
+  function disegnaFilo(s){
+    if(!F)return;
+    var n=parole.length,p=seg(s,F.R0,F.R1),f=s<=F.T0?0:s<F.R0?1:s<F.F0?2:s<F.F1?3:4;
+    if(p!==F.p){F.p=p;var q0=p*n; // la lettura: le parole si accendono dietro al puntino, l'ultimo posto è il punto dopo «Instagram»
+      for(var i=0;i<n;i++)scrivi(parole[i],'opacity',(.16+.84*clamp((q0-i)*1.6)).toFixed(3));
+      var k=Math.min(n-1,Math.floor(q0)),g=geo[k],q=clamp((q0-k)*1.6),x=k===n-1?lerp(g.x-5,pfX,q):lerp(k?g.x-5:g.x-F.rad-4,g.x+g.w+3,q); // (prima di «I» il puntino si ferma un po' più a sinistra: non tocca la lettera)
+      cursore.style.transform='translate('+x.toFixed(1)+'px,'+(g.y+g.h*KY).toFixed(1)+'px)'}
+    scrivi(studio,'visibility',f===0?'':'hidden'); // finché la scena è ferma il punto di «studio» è suo, com'era
+    scrivi(cursore,'opacity',f===2?'1':'0');
+    if(puntoI)scrivi(puntoI,'opacity',f===4?'1':'0');
+    if(f!==1&&f!==3){scrivi(filo,'opacity','0');return}
+    var A,B,P,e,al=1,dd=null;
+    if(f===1){ // dalla scena alla frase: il punto scende appena sotto «studio», va a capo appena sotto «studio», poi giù nel margine sinistro
+      A=centro(studio);B=centro(cursore);
+      // la corsia sotto «studio»: dal fondo delle sue lettere fino alla riga piccola, se c'è; altrimenti una corsia alta mezza riga (misure del testo, non dei riquadri)
+      rigaSu.selectNodeContents(studio.previousElementSibling);
+      var su=rigaSu.getBoundingClientRect().bottom,giu;
+      if(piccola){rigaGiu.selectNodeContents(piccola);giu=rigaGiu.getBoundingClientRect().top}else giu=su+Math.max(28,.5*rigaSu.getBoundingClientRect().height);
+      var yb=(su+giu)/2,dl=dich.getBoundingClientRect().left,xg=dl-Math.min(24,dl/2);
+      P=[[A[0],A[1]],[A[0],yb],[xg,yb],[xg,B[1]],[B[0],B[1]]];
+      e=ioc(seg(s,F.T0,F.R0));
+      // misura: piccolo tra le righe (al massimo metà della corsia), poi, giù nel margine, quella della lettura
+      var l1=Math.abs(yb-A[1])+Math.abs(A[0]-xg),fs=l1/(l1+Math.abs(B[1]-yb)+Math.abs(B[0]-xg)),dc=Math.min(A[2],B[2],.5*(giu-su));
+      // prima si stringe sul posto (un respiro) e parte; giù nel margine torna grande come il punto di «studio», e prende la
+      // misura della lettura solo quando arriva davanti a «I»
+      var es=.07,ep=clamp((e-es)/(1-es)),dF=Math.max(B[2],Math.min(A[2],12));
+      dd=e<es?lerp(A[2],dc,dolce(e/es)):ep<.88?lerp(dc,dF,dolce((ep-fs)/(.3*(1-fs)))):lerp(dF,B[2],dolce((ep-.88)/.12));e=ep;
+      var sp=studio.parentElement,tr=getComputedStyle(sp).transform,ty=tr==='none'?0:new DOMMatrix(tr).m42;al=clamp(1-Math.abs(ty)/(.6*sp.offsetHeight)); // se «studio» non è ancora salito del tutto (dito velocissimo), il puntino si vede quanto la parola
+    }else{ // dalla frase al telefono: a destra fuori dal testo, giù (nel margine destro, se il telefono non è più a destra del testo), dentro il telefono
+      A=centro(cursore);B=centro(puntoS);
+      var dx=Math.max(dich.getBoundingClientRect().right,sotto.getBoundingClientRect().right);
+      if(B[0]>dx+24)P=[[A[0],A[1]],[B[0],A[1]],[B[0],B[1]]];
+      else{var G=document.documentElement.clientWidth-10;P=[[A[0],A[1]],[G,A[1]],[G,B[1]],[B[0],B[1]]]}
+      e=ioc(seg(s,F.F0,F.F1));
+    }
+    var pos=strada(P,22,e),d=dd===null?lerp(A[2],B[2],e):dd;
+    scrivi(filo,'opacity',al.toFixed(3));
+    filo.style.transform='translate('+pos[0].toFixed(1)+'px,'+pos[1].toFixed(1)+'px) scale('+(d/12).toFixed(3)+')';
+  }
+  var filoAgg=morbido(disegnaFilo,.22,function(){return 1.5*innerHeight});
+  function misuraFilo(){
+    if(!scenaST||!geo.length||!puntoS)return;
+    var vh=innerHeight,y=scrollY,dr=dich.getBoundingClientRect(),ft=fasi.getBoundingClientRect().top+y;
+    var T0=scenaST.end,R0=Math.max(dr.top+y-.76*vh,T0+120),R1=Math.max(dr.bottom+y-.45*vh,R0+150),F1=ft,F0=Math.min(Math.max(R1+30,ft-.5*vh),F1-60);
+    R1=Math.min(R1,F0-10);
+    F={T0:T0,R0:R0,R1:R1,F0:F0,F1:F1,p:-1,rad:cursore.offsetWidth/2};
+    filoAgg(scrollY);
+  }
+  ScrollTrigger.addEventListener('refresh',misuraFilo);
+  addEventListener('scroll',function(){if(F)filoAgg(scrollY)},{passive:true});
+  // finché la scena non è partita (copertina più alta dello schermo) il puntino segue lo scorrimento vero
+  addEventListener('scroll',function(){if(D.top!==undefined&&ultimaU<=0)puntino(0,1)},{passive:true});
+  // si parte quando ci sono i caratteri (danno la posizione del punto) e la schermata lunga del sito (serve alle fasi)
+  var pronte=0,imgs=document.querySelectorAll('#sito-lungo'),tot=imgs.length+1;
+  (document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(function(){if(++pronte===tot)imposta()});
+  imgs.forEach(function(im){var ok=function(){if(++pronte===tot)imposta()};if(im.complete)ok();else{im.addEventListener('load',ok,{once:true});im.addEventListener('error',ok,{once:true})}});
+  // girando il telefono a metà scena si resta allo stesso punto della scena (la scena cambia altezza): il punto si ricorda
+  // a ogni scorrimento, ma non mentre cambia la misura (intanto il browser sposta la pagina da sé)
+  var fScena=null,cambiando=false;
+  addEventListener('scroll',function(){if(cambiando||!scenaST)return;var a=scenaST.start,b=scenaST.end;fScena=scrollY>a&&scrollY<b?(scrollY-a)/(b-a):null},{passive:true});
+  var t,w=innerWidth;addEventListener('resize',function(){if(Math.abs(innerWidth-w)<40)return;w=innerWidth;cambiando=true;clearTimeout(t);t=setTimeout(function(){
+    var f=fScena;imposta();
+    if(f!==null&&scenaST){var y=Math.round(scenaST.start+f*(scenaST.end-scenaST.start));if(lenisPc){lenisPc.resize();lenisPc.scrollTo(y,{immediate:true,force:true})}else scrollTo(0,y)}
+    cambiando=false;
+  },200)});
+});
+</script>
+<script>
+/* entrata del logo nella testata: il puntino parte in alto a destra della V (come la luce REC), «eniello» esce dalla V,
+   il puntino scivola nel suo posto di punto, poi entra «studio». Con «Riduci movimento» non parte (niente classe logo-in). */
+(function(){
+  var r=document.documentElement;if(!r.classList.contains('logo-in'))return;
+  var m=document.querySelector('.testata .marchio');if(!m||!m.animate){r.classList.remove('logo-in');return}
+  var v=m.querySelector('.vv'),e=m.querySelector('.e'),pt=m.querySelector('.pt'),st=m.querySelector('.st');
+  function via(){
+    var a=v.getBoundingClientRect(),b=pt.getBoundingClientRect();
+    var dx=(a.right-a.width*.12)-(b.left+b.width/2),dy=(a.top+a.height*.2)-(b.top+b.height/2);
+    var curva='cubic-bezier(.2,.8,.2,1)',piano={fill:'both',easing:curva};
+    pt.style.opacity=1;
+    pt.animate([{transform:'translate('+dx+'px,'+dy+'px) scale(1.25)',opacity:0},{transform:'translate('+dx+'px,'+dy+'px) scale(1.25)',opacity:1,offset:.25},{transform:'translate('+dx+'px,'+dy+'px) scale(1)',opacity:.35,offset:.4},{transform:'translate('+dx+'px,'+dy+'px) scale(1.15)',opacity:1,offset:.55},{transform:'none',opacity:1}],{duration:1500,delay:150,fill:'both',easing:'ease-in-out'});
+    e.animate([{clipPath:'inset(-20% 100% -20% 0)',transform:'translateX(-.35em)'},{clipPath:'inset(-20% 0 -20% 0)',transform:'none'}],Object.assign({duration:650,delay:800},piano));
+    st.animate([{clipPath:'inset(-20% 100% -20% 0)',transform:'translateX(-.25em)'},{clipPath:'inset(-20% 0 -20% 0)',transform:'none'}],Object.assign({duration:550,delay:1450},piano))
+      .finished.then(function(){r.classList.remove('logo-in');[e,pt,st].forEach(function(x){x.getAnimations().forEach(function(k){k.cancel()});x.style.opacity=''})});
+  }
+  (document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(function(){requestAnimationFrame(via)});
+  setTimeout(function(){if(r.classList.contains('logo-in')&&!pt.getAnimations().length)r.classList.remove('logo-in')},2500);
+})();
+</script>
+<script>
+// Sfondo della copertina («shader», scelto da Niccolò il 18/10): tre macchie di luce (arancio, brace, ambra) che si
+// muovono piano su percorsi diversi e si deformano come un liquido (rumore simplex che cambia nel tempo), sul nero caldo
+// del marchio. La grana da pellicola è calcolata nello shader ed è FERMA (legata ai pixel, non al tempo): si muove solo
+// la luce. Due passaggi: la luce a metà risoluzione (è sfumata, non si nota), poi colori e grana a piena misura (1 px CSS).
+// Il titolo ha la sua zona più scura.
+// Scorrendo, come in sala quando parte la registrazione, le luci si abbassano mentre la copertina sale: sono spente
+// (resta il nero della pagina) quando il puntino arriva al centro e lampeggia, così il puntino non passa mai sopra una
+// macchia arancio; il fondo della copertina sfuma subito nel nero, senza una riga dove finisce. Tornando su si riaccendono.
+// Si ferma fuori schermo, a scheda nascosta e a luci spente; con «Riduci movimento» disegna un solo fotogramma fermo.
+// Senza WebGL: tre luci ferme in CSS (.senza-gl) che si spengono anche loro scorrendo.
+(function(){
+  var cop=document.getElementById('inizio'),cv=cop&&cop.querySelector('.macchia');if(!cv)return;
+  var wrap=document.getElementById('copertina-wrap'),html=document.documentElement;
+  var T0=18,SP=.2; // T0: si apre già a metà del moto; SP: schermate di scorrimento in cui le luci si spengono (il puntino è al centro dopo .22)
+  var mq=null;try{mq=matchMedia('(prefers-reduced-motion: reduce)')}catch(e){}
+  var fermo=!!(mq&&mq.matches);
+  function lisce(t){return t*t*(3-2*t)}
+  // scorrimento: 0 a copertina ferma, 1 quando è salita di SP schermate (oltre E, se è più alta dello schermo)
+  var top=0;
+  function avanzamento(){
+    if(fermo||html.classList.contains('fermo'))return 0;
+    var V=innerHeight,E=Math.max(0,cop.offsetHeight-V);return Math.max(0,Math.min(1,(scrollY-top-E)/(SP*V)));
+  }
+  function pos(el){var x=0,y=0;while(el){x+=el.offsetLeft;y+=el.offsetTop;el=el.offsetParent}return [x,y]}
+  var gl=null;
+  try{gl=cv.getContext('webgl',{alpha:false,antialias:false,depth:false,stencil:false,premultipliedAlpha:false,preserveDrawingBuffer:false,powerPreference:'low-power'})}catch(e){}
+  // quanto è salita la copertina (oltre E): il fondo sfuma nel nero per un'altezza che cresce con questo (al massimo 0,4
+  // copertine). Cresce subito (radice quadrata): già dopo pochi pixel la sfumatura è alta molte volte il nero che si
+  // scopre sotto, così non si vede mai una riga netta tra la luce e il nero dove la copertina finisce
+  function salita(){return Math.max(0,scrollY-top-Math.max(0,cop.offsetHeight-innerHeight))}
+  function sfumatura(h){return Math.min(.4*h,45*Math.sqrt(salita()))}
+  // senza shader (ripiego CSS) o a fotogramma fermo («Riduci movimento»): la stessa cosa con la maschera CSS e l'opacità
+  var conCss=false;
+  function css(luci){
+    if(conCss)return;conCss=true;var chiesto=false;
+    function metti(){chiesto=false;top=pos(cop)[1];if(luci){var o=1-lisce(avanzamento());cv.style.opacity=o<1?o.toFixed(3):''}
+      cv.style.setProperty('--sfuma',Math.round(sfumatura(cop.offsetHeight))+'px')}
+    addEventListener('scroll',function(){if(!chiesto){chiesto=true;requestAnimationFrame(metti)}},{passive:true});metti();
+  }
+  function ripiego(){cop.classList.add('senza-gl');cv.classList.add('pronto');css(true)}
+  if(!gl){ripiego();return}
+  if(html.classList.contains('fermo'))css(false);
+
+  var VS='attribute vec2 a;void main(){gl_Position=vec4(a,0.,1.);}';
+  // rumore simplex 3D (Ian McEwan, Stefan Gustavson, Ashima Arts: webgl-noise, licenza MIT)
+  var SIMPLEX=[
+    'vec3 m289(vec3 x){return x-floor(x*(1./289.))*289.;}',
+    'vec4 m289(vec4 x){return x-floor(x*(1./289.))*289.;}',
+    'vec4 perm(vec4 x){return m289(((x*34.)+10.)*x);}',
+    'float sn(vec3 v){',
+    ' const vec2 C=vec2(1./6.,1./3.);const vec4 D=vec4(0.,.5,1.,2.);',
+    ' vec3 i=floor(v+dot(v,C.yyy));vec3 x0=v-i+dot(i,C.xxx);',
+    ' vec3 g=step(x0.yzx,x0.xyz);vec3 l=1.-g;vec3 i1=min(g.xyz,l.zxy);vec3 i2=max(g.xyz,l.zxy);',
+    ' vec3 x1=x0-i1+C.xxx;vec3 x2=x0-i2+C.yyy;vec3 x3=x0-D.yyy;',
+    ' i=m289(i);',
+    ' vec4 p=perm(perm(perm(i.z+vec4(0.,i1.z,i2.z,1.))+i.y+vec4(0.,i1.y,i2.y,1.))+i.x+vec4(0.,i1.x,i2.x,1.));',
+    ' vec3 ns=.142857142857*D.wyz-D.xzx;',
+    ' vec4 j=p-49.*floor(p*ns.z*ns.z);vec4 x_=floor(j*ns.z);vec4 y_=floor(j-7.*x_);',
+    ' vec4 x=x_*ns.x+ns.yyyy;vec4 y=y_*ns.x+ns.yyyy;vec4 h=1.-abs(x)-abs(y);',
+    ' vec4 b0=vec4(x.xy,y.xy);vec4 b1=vec4(x.zw,y.zw);',
+    ' vec4 s0=floor(b0)*2.+1.;vec4 s1=floor(b1)*2.+1.;vec4 sh=-step(h,vec4(0.));',
+    ' vec4 a0=b0.xzyw+s0.xzyw*sh.xxyy;vec4 a1=b1.xzyw+s1.xzyw*sh.zzww;',
+    ' vec3 p0=vec3(a0.xy,h.x);vec3 p1=vec3(a0.zw,h.y);vec3 p2=vec3(a1.xy,h.z);vec3 p3=vec3(a1.zw,h.w);',
+    ' vec4 nr=1.79284291400159-.85373472095314*vec4(dot(p0,p0),dot(p1,p1),dot(p2,p2),dot(p3,p3));',
+    ' p0*=nr.x;p1*=nr.y;p2*=nr.z;p3*=nr.w;',
+    ' vec4 m=max(.5-vec4(dot(x0,x0),dot(x1,x1),dot(x2,x2),dot(x3,x3)),0.);m=m*m;',
+    ' return 105.*dot(m*m,vec4(dot(p0,x0),dot(p1,x1),dot(p2,x2),dot(p3,x3)));',
+    '}'].join('\n');
+  // passaggio 1, la luce (metà risoluzione): R = calore 0..1, G = tono (0 brace rossa, 1 ambra)
+  var FS1=['precision highp float;',
+    'uniform vec2 uR;uniform float uT,uZ;uniform vec2 uC[3];uniform vec2 uA[3];',
+    SIMPLEX,
+    'void main(){',
+    ' vec2 p=(gl_FragCoord.xy-.5*uR)/sqrt(uR.x*uR.y);float t=uT;const float TAU=6.2831853;',
+    // il liquido: lo spazio si deforma con due strati di rumore che cambiano piano e in modo diverso
+    ' p+=.21*vec2(sn(vec3(1.25*p,.045*t)),sn(vec3(1.25*p+vec2(5.2,1.3),.045*t+7.1)));',
+    ' p+=.06*vec2(sn(vec3(2.8*p+vec2(1.7,9.2),.08*t+2.3)),sn(vec3(2.8*p+vec2(8.3,2.8),.08*t+4.9)));',
+    // tre centri su percorsi con periodi che non si incontrano mai (27-47 s): il giro non si vede ricominciare
+    ' vec2 c1=uC[0]+uA[0]*vec2(sin(TAU*t/27.),cos(TAU*t/35.));',
+    ' vec2 c2=uC[1]+uA[1]*vec2(sin(TAU*t/39.+1.7),cos(TAU*t/31.+.4));',
+    ' vec2 c3=uC[2]+uA[2]*vec2(sin(TAU*t/47.+3.1),cos(TAU*t/43.+2.2));',
+    ' vec2 d1=p-c1,d2=p-c2,d3=p-c3;',
+    ' float b1=exp(-dot(d1,d1)/(.095*uZ)),b2=exp(-dot(d2,d2)/(.12*uZ)),b3=exp(-dot(d3,d3)/(.065*uZ));',
+    ' float f=b1+.42*b2+.7*b3;',
+    ' gl_FragColor=vec4(1.-exp(-1.45*f),(.55*b1+b3)/(b1+b2+b3+1e-4),0.,1.);',
+    '}'].join('\n');
+  // passaggio 2, colori e grana (piena misura). La grana dipende solo dal pixel, mai dal tempo: resta ferma.
+  // Sta soprattutto nei passaggi tra un colore e l'altro (sposta il calore, come la stampa) e un po' su tutto, pesata
+  // sulla luminosità: leggera nel nero, più viva nei toni arancio medi. Fa anche da dithering (niente scalini di colore).
+  // uV: x quanta luce resta (1 accesa, 0 spenta), y quanto è alta la sfumatura sul fondo della copertina (0 a pagina ferma).
+  var FS2=['precision highp float;',
+    'uniform sampler2D uL;uniform vec2 uR,uV;uniform vec4 uB;uniform float uK;',
+    'float h12(vec2 c){vec3 q=fract(vec3(c.xyx)*.1031);q+=dot(q,q.yzx+33.33);return fract((q.x+q.y)*q.z);}',
+    'void main(){',
+    ' vec2 fc=gl_FragCoord.xy;vec4 L=texture2D(uL,fc/uR);float h=L.r,tn=L.g;',
+    // dietro i testi della copertina (rettangolo morbido) la luce non supera la brace: resta calda ma il testo si legge
+    ' vec2 b=abs(fc-uB.xy)/uB.zw;b*=b;b*=b;float e=sqrt(sqrt(b.x+b.y));',
+    ' h=mix(h,.42*(1.-exp(-h/.42)),1.-smoothstep(.72,1.32,e));',
+    ' h*=uV.x*smoothstep(0.,max(uV.y,1e-3),fc.y);',
+    ' float n1=h12(fc),n2=h12(fc+vec2(47.3,11.9)),n3=h12(fc+vec2(13.1,71.7));',
+    ' h=clamp(h+(n1-.5)*uK*.085*(.2+3.2*h*(1.-h)),0.,1.);',
+    ' vec3 c=mix(vec3(.063,.059,.035),mix(vec3(.25,.066,.03),vec3(.27,.1,.04),tn),smoothstep(0.,.38,h));',
+    ' c=mix(c,mix(vec3(.6,.15,.05),vec3(.7,.25,.07),tn),smoothstep(.3,.72,h));',
+    ' c=mix(c,mix(vec3(.8,.27,.1),vec3(.84,.35,.12),tn),smoothstep(.66,1.,h));',
+    ' float l=dot(c,vec3(.299,.587,.114));',
+    ' c+=(n2+n3-1.)*uK*(.022+.15*l*(1.-l));',
+    ' gl_FragColor=vec4(c,1.);',
+    '}'].join('\n');
+
+  // dove stanno le luci: posizione di partenza in frazioni della copertina (x da sinistra, y dall'alto) e ampiezza del
+  // percorso (in unità della copertina). Computer: calore in basso a destra, brace in alto a sinistra, ambra in alto a
+  // destra. Telefono: calore in basso, brace a sinistra, ambra in alto a destra. Il centro, dove c'è il titolo, resta scuro.
+  var LARGO={c:[[.8,.84],[.08,.2],[.97,.1]],a:[[.2,.1],[.2,.12],[.13,.09]],z:1};
+  var ALTO={c:[[.66,.88],[0,.5],[1,.07]],a:[[.24,.07],[.1,.14],[.1,.06]],z:1.7};
+
+  var P1,P2,U1,U2,tex,fbo,fw=0,fh=0,perso=false;
+  function sh(tipo,src){var s=gl.createShader(tipo);gl.shaderSource(s,src);gl.compileShader(s);
+    if(!gl.getShaderParameter(s,gl.COMPILE_STATUS)&&!gl.isContextLost())throw new Error(gl.getShaderInfoLog(s));return s}
+  function prog(fs,nomi){var p=gl.createProgram();gl.attachShader(p,sh(gl.VERTEX_SHADER,VS));gl.attachShader(p,sh(gl.FRAGMENT_SHADER,fs));
+    gl.bindAttribLocation(p,0,'a');gl.linkProgram(p);
+    if(!gl.getProgramParameter(p,gl.LINK_STATUS)&&!gl.isContextLost())throw new Error(gl.getProgramInfoLog(p));
+    var u={};nomi.forEach(function(n){u[n]=gl.getUniformLocation(p,n)});return [p,u]}
+  function prepara(){
+    var a=prog(FS1,['uR','uT','uZ','uC','uA']),b=prog(FS2,['uL','uR','uV','uB','uK']);P1=a[0];U1=a[1];P2=b[0];U2=b[1];
+    var buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+    gl.enableVertexAttribArray(0);gl.vertexAttribPointer(0,2,gl.FLOAT,false,0,0);
+    gl.disable(gl.DEPTH_TEST);gl.disable(gl.BLEND);
+    tex=gl.createTexture();fbo=gl.createFramebuffer();fw=fh=0;
+  }
+  function buffer(w,h){if(w===fw&&h===fh)return;fw=w;fh=h;
+    gl.bindTexture(gl.TEXTURE_2D,tex);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,w,h,0,gl.RGBA,gl.UNSIGNED_BYTE,null);
+    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+    gl.bindFramebuffer(gl.FRAMEBUFFER,fbo);gl.framebufferTexture2D(gl.FRAMEBUFFER,gl.COLOR_ATTACHMENT0,gl.TEXTURE_2D,tex,0);
+    var ok=gl.checkFramebufferStatus(gl.FRAMEBUFFER)===gl.FRAMEBUFFER_COMPLETE;gl.bindFramebuffer(gl.FRAMEBUFFER,null);
+    if(!ok&&!gl.isContextLost())throw new Error('framebuffer');
+  }
+  try{prepara()}catch(e){ripiego();return}
+
+  // misure: canvas a 1 px CSS (al massimo ~1,6 milioni di pixel), luce a metà; zona del testo dal layout (offset*, che non
+  // sentono i transform e le dissolvenze della scena)
+  var W=0,H=0,S=1,Z=1,C=new Float32Array(6),A=new Float32Array(6),box=[0,0,1,1];
+  function misura(){
+    var w=cop.clientWidth,h=cop.clientHeight;if(!w||!h)return false;
+    var k=Math.min(1,Math.sqrt(1.6e6/(w*h))),pw=Math.max(2,Math.round(w*k)),ph=Math.max(2,Math.round(h*k));
+    if(cv.width!==pw||cv.height!==ph){cv.width=pw;cv.height=ph}
+    try{buffer(Math.ceil(pw/2),Math.ceil(ph/2))}catch(e){perso=true;ripiego();return false}
+    W=w;H=h;S=Math.sqrt(w*h);
+    var L=w>=h?LARGO:ALTO;Z=L.z;
+    for(var i=0;i<3;i++){C[2*i]=(L.c[i][0]-.5)*w/S;C[2*i+1]=(.5-L.c[i][1])*h/S;A[2*i]=L.a[i][0];A[2*i+1]=L.a[i][1]}
+    var o=pos(cop),x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;top=o[1];
+    [].forEach.call(wrap?wrap.children:[],function(el){if(!el.offsetWidth)return;var q=pos(el);
+      x0=Math.min(x0,q[0]-o[0]);y0=Math.min(y0,q[1]-o[1]);x1=Math.max(x1,q[0]-o[0]+el.offsetWidth);y1=Math.max(y1,q[1]-o[1]+el.offsetHeight)});
+    if(x1<x0){x0=.2*w;x1=.8*w;y0=.25*h;y1=.75*h}
+    var pad=Math.min(w,h)*.04;box=[(x0+x1)/2,(y0+y1)/2,(x1-x0)/2+pad,(y1-y0)/2+pad];
+    return true;
+  }
+
+  var tt=T0,gS=0,gD=-1,pronto=false;
+  function disegna(){
+    if(perso||!W)return;
+    // il fondo sfuma con lo scorrimento vero (non con quello addolcito): dove la copertina finisce la luce è già nera, ma
+    // a pagina appena mossa la luce in basso resta com'è
+    var kx=cv.width/W,ky=cv.height/H,luce=1-lisce(gS),sfuma=fermo||html.classList.contains('fermo')?0:sfumatura(H)*ky;
+    gl.bindFramebuffer(gl.FRAMEBUFFER,fbo);gl.viewport(0,0,fw,fh);gl.useProgram(P1);
+    gl.uniform2f(U1.uR,fw,fh);gl.uniform1f(U1.uT,tt);gl.uniform1f(U1.uZ,Z);gl.uniform2fv(U1.uC,C);gl.uniform2fv(U1.uA,A);
+    gl.drawArrays(gl.TRIANGLES,0,3);
+    gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.viewport(0,0,cv.width,cv.height);gl.useProgram(P2);
+    gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,tex);gl.uniform1i(U2.uL,0);
+    gl.uniform2f(U2.uR,cv.width,cv.height);gl.uniform2f(U2.uV,luce,sfuma);
+    gl.uniform4f(U2.uB,box[0]*kx,(H-box[1])*ky,box[2]*kx,box[3]*ky);
+    gl.uniform1f(U2.uK,luce); // a luci spente anche la grana se ne va: resta il nero liscio della pagina
+    gl.drawArrays(gl.TRIANGLES,0,3);
+    gD=gS;
+    if(!pronto){pronto=true;requestAnimationFrame(function(){cv.classList.add('pronto')})}
+  }
+
+  // il ciclo: 30 fotogrammi al secondo (la luce è lenta, non si vede la differenza e la batteria lavora la metà),
+  // 60 solo mentre le luci si abbassano o si riaccendono; si ferma da solo quando non serve e riparte senza salti
+  var raf=0,ultimo=0,inVista=true;
+  function serve(){return !fermo&&!perso&&!document.hidden&&inVista}
+  function ciclo(ora){
+    raf=0;if(!serve()){ultimo=0;return}
+    var meta=avanzamento(),muove=Math.abs(meta-gS)>.001;
+    if(!muove&&gS>=1&&gD>=1){ultimo=0;return} // luci spente e già disegnate: riparte tornando su
+    if(ultimo&&ora-ultimo<(muove?12:30)){raf=requestAnimationFrame(ciclo);return}
+    var dt=ultimo?Math.min(.1,(ora-ultimo)/1000):0;ultimo=ora;
+    tt+=dt;gS=muove?gS+(meta-gS)*(1-Math.exp(-dt/.12)):meta;
+    disegna();raf=requestAnimationFrame(ciclo);
+  }
+  function sveglia(){if(!raf&&serve()){ultimo=0;raf=requestAnimationFrame(ciclo)}}
+
+  misura();gS=avanzamento();disegna();sveglia();
+  if(window.ResizeObserver){var ro=new ResizeObserver(function(){if(misura())disegna()});ro.observe(cop);if(wrap)ro.observe(wrap)}
+  else addEventListener('resize',function(){if(misura())disegna()});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){if(misura())disegna()});
+  if(window.IntersectionObserver)new IntersectionObserver(function(es){inVista=es[es.length-1].isIntersecting;sveglia()}).observe(cop);
+  addEventListener('scroll',sveglia,{passive:true});
+  document.addEventListener('visibilitychange',sveglia);
+  if(mq){var cambia=function(){fermo=mq.matches;if(fermo){gS=0;disegna()}else sveglia()};if(mq.addEventListener)mq.addEventListener('change',cambia);else if(mq.addListener)mq.addListener(cambia)}
+  cv.addEventListener('webglcontextlost',function(e){e.preventDefault();perso=true;if(raf){cancelAnimationFrame(raf);raf=0}});
+  cv.addEventListener('webglcontextrestored',function(){perso=false;try{prepara();misura();disegna();sveglia()}catch(x){ripiego()}});
+})();
+</script>
+</body>
+</html>
