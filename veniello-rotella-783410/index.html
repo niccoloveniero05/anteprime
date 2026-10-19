@@ -30,6 +30,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-padding-top:80px;-webkit-text-size-adjust:100%} /* lo scorrimento morbido dei link #… lo fa lo script (vedi «Link interni»): in CSS rendeva morbido anche ogni scrollTo */
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden} /* Lenis, solo al computer (vedi «Rotella») */
 body{font-family:var(--sans);font-size:16px;line-height:1.6;color:var(--testo);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img,video{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
@@ -445,9 +446,9 @@ html.fermo .carta-s .rec i{opacity:1}
       <div class="velo" id="velo"></div>
       <div class="bordi" id="bordi"></div>
       <div class="scena-testo">
-        <p class="frase"><span class="riga"><span>Un locale</span></span> <span class="riga"><span>di <em>Montecatini</em>.</span></span></p>
+        <p class="frase"><span class="riga"><span>Il nostro</span></span> <span class="riga"><span><em>lavoro</em>.</span></span></p>
         <p class="frase"><span class="riga"><span>Sito, Google,</span></span> <span class="riga"><span>social e <em>video</em>.</span></span></p>
-        <p class="frase"><span class="riga"><span>Da un solo</span></span> <span class="riga"><span><em>studio</em><i class="rec-punto" id="punto-studio" aria-hidden="true"></i></span></span> <span class="riga piccola"><span>Jué Club · Montecatini Terme</span></span></p>
+        <p class="frase"><span class="riga"><span>Da un solo</span></span> <span class="riga"><span><em>studio</em><i class="rec-punto" id="punto-studio" aria-hidden="true"></i></span></span></p>
       </div>
       <i class="punto" id="punto" aria-hidden="true"></i>
     </div>
@@ -862,7 +863,7 @@ function posaPunti(){var sc=document.querySelector('.schermo'),W=sc.clientWidth,
   sc.style.setProperty('--px',px+'px');sc.style.setProperty('--py',py+'px');return {W:W,H:H,px:px,py:py}}
 
 // Senza animazioni (niente GSAP o «Riduci movimento»): pagina ferma
-var ridotto=matchMedia('(prefers-reduced-motion: reduce)').matches,saltoLink=-1e9;
+var ridotto=matchMedia('(prefers-reduced-motion: reduce)').matches,saltoLink=-1e9,lenisPc=null; // lenisPc: lo scorrimento di Lenis, solo al computer (vedi «Rotella»)
 if(ridotto)document.documentElement.classList.add('fermo'); // (il muro fermo, piatto e senza video, lo costruisce il secondo script)
 
 // Link interni (#…): scorrono morbidi fino a 80 px sotto la cima, come prima con html{scroll-behavior:smooth} e
@@ -873,19 +874,40 @@ document.addEventListener('click',function(e){
   e.preventDefault();
   var y=id==='inizio'?0:Math.max(0,Math.round(el.getBoundingClientRect().top+scrollY-80));
   saltoLink=performance.now(); // un link non è un colpo di dito: la scena non frena il suo inizio (vedi frena())
-  try{scrollTo({top:y,behavior:ridotto?'auto':'smooth'})}catch(x){scrollTo(0,y)}
+  if(lenisPc)lenisPc.scrollTo(y,{duration:1.2,force:true}); // al computer lo scorrimento lo guida Lenis: anche i link passano da lui
+  else try{scrollTo({top:y,behavior:ridotto?'auto':'smooth'})}catch(x){scrollTo(0,y)}
   if(history.pushState)history.pushState(null,'','#'+id);
   if(id!=='inizio'){if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','-1');try{el.focus({preventScroll:true})}catch(x){}}
 });
 </script>
 <script defer src="js/gsap.min.js"></script>
 <script defer src="js/ScrollTrigger.min.js"></script>
+<script defer src="js/lenis.min.js"></script>
 <script>
 addEventListener('DOMContentLoaded',function(){
   if(!window.gsap||!window.ScrollTrigger||ridotto){
     document.documentElement.classList.add('fermo');muroPronto(true);posaPunti(); // con «Riduci movimento» il muro resta piatto e fermo dietro le frasi, senza video; il puntino resta sul segnaposto della mappa
     var tf,wf=innerWidth;addEventListener('resize',function(){if(Math.abs(innerWidth-wf)<40)return;wf=innerWidth;clearTimeout(tf);tf=setTimeout(function(){muroPronto(true);posaPunti()},200)});return}
   gsap.registerPlugin(ScrollTrigger);
+  // Rotella (19/10 sera). Su Windows ogni scatto della rotella sposta la pagina di (righe impostate) × 33 px: col PC di
+  // Niccolò (10 righe) 333 px a scatto, e la scena passava in 2-3 s. Al computer (mouse o trackpad, senza «Riduci
+  // movimento») lo scorrimento lo guida Lenis, come nei siti premiati, e la rotella si «conta»: uno scatto vale al
+  // massimo PASSO px qualunque sia l'impostazione di Windows. I movimenti piccoli e continui del trackpad passano come
+  // sono. Uno scatto si riconosce così: conta in righe o pagine (deltaMode 1 o 2), oppure è in pixel ma grande (≥ 50 px) e
+  // multiplo esatto di 100/3 (Chrome ed Edge su Windows) o uguale al precedente (scatti tutti uguali). Tastiera e barra di
+  // scorrimento restano del browser (Lenis le segue). Sul telefono e con «Riduci movimento» niente Lenis.
+  if(window.Lenis&&matchMedia('(hover:hover) and (pointer:fine)').matches){
+    var PASSO=110,RIGA=100/3,ultA=0,ultT=-1e9;
+    var conta=function(d){var e=d.event;if(!e||e.type!=='wheel')return;
+      if(Math.abs(d.deltaX)>Math.abs(d.deltaY))return false; // gesto di lato: lo fa il browser
+      var a=Math.abs(e.deltaY)*(e.deltaMode===1?RIGA:e.deltaMode===2?innerHeight:1),t=e.timeStamp,
+        uguale=Math.abs(a-ultA)<.01&&t-ultT<400,q=a/RIGA;ultA=a;ultT=t;
+      if(e.deltaMode||(a>=50&&(uguale||Math.abs(q-Math.round(q))<.003)))d.deltaY=(e.deltaY<0?-1:1)*Math.min(a,PASSO)};
+    lenisPc=new Lenis({lerp:.1,smoothWheel:true,syncTouch:false,virtualScroll:conta});
+    lenisPc.on('scroll',ScrollTrigger.update);
+    gsap.ticker.add(function(t){lenisPc.raf(t*1000)});gsap.ticker.lagSmoothing(0);
+    ScrollTrigger.addEventListener('refresh',function(){lenisPc.resize()}); // la scena cambia altezza: Lenis rimisura la pagina
+  }
   var scena=document.querySelector('.scena'),fasi=document.querySelector('.fasi'),binario=document.querySelector('.binario');
   var sitoLungo=document.getElementById('sito-lungo');
   function clamp(x){return Math.max(0,Math.min(1,x))}
@@ -1047,13 +1069,15 @@ addEventListener('DOMContentLoaded',function(){
   // (lungoPc schermate di scorrimento invece di TL.T) e le fasi sono distribuite lungo lo scorrimento: VEL dice quante
   // schermate di scorrimento vale ogni unità di u in quel punto (tra un punto e l'altro cambia piano, così nessun movimento
   // fa scatti di velocità). Fino al lampeggio come sul telefono (il puntino resta in pari con la copertina), poi più spazio
-  // al lampeggio e al disco, tanto spazio allo showreel a tutto schermo (la V col suo puntino, ~1,15 s di video: circa una
-  // schermata), e il resto (allontanamento, muro, inclinazione, tre frasi) 1,9 volte più lungo. Lo «scrub» di GSAP (0,4 s)
-  // ammorbidisce senza lasciare la camera indietro. Sul telefono (dito) tutto come prima.
+  // al lampeggio e al disco, tanto spazio allo showreel a tutto schermo (la V col suo puntino), allontanamento e muro un
+  // po' più svelti, le prime due frasi 1,7 volte più lunghe e la terza 1,1 (resta sullo schermo anche mentre il palco esce).
+  // Con la rotella «contata» (vedi «Rotella», 110 px a scatto) tutta la scena è ~5,4 schermate: ~45 scatti a 900 px di
+  // altezza (prima 7,6 schermate per compensare i 333 px a scatto). Lo «scrub» di GSAP (0,4 s) ammorbidisce senza lasciare
+  // la camera indietro. Sul telefono (dito) tutto come prima.
   var guida=false,lungoPc=TL.T,tabS=null,NT=1200;
   function preparaPc(){
     if(tabS)return;
-    var VEL=[[0,1],[PU.b0,1],[PU.b0+.03,3.6],[PU.g0,3.6],[PU.g0+.04,2.6],[PU.g1,2.4],[PU.g1+.06,1.2],[TL.IR-.02,1.2],[TL.IR+.02,4.6],[TL.Z0-.02,4.6],[TL.Z0+.04,1.9],[99,1.9]];
+    var VEL=[[0,1],[PU.b0,1],[PU.b0+.03,2.6],[PU.g0,2.6],[PU.g0+.04,1.9],[PU.g1,1.75],[PU.g1+.06,.85],[TL.IR-.02,.85],[TL.IR+.02,3.5],[TL.Z0-.02,3.5],[TL.Z0+.04,.85],[FR[0][0]-.12,.85],[FR[0][0]-.02,1.7],[FR[2][0]-.06,1.7],[FR[2][0]+.04,1.7],[99,1.7]];
     function vel(u){for(var i=1;i<VEL.length;i++)if(u<=VEL[i][0]){var a=VEL[i-1],b=VEL[i];return lerp(a[1],b[1],(u-a[0])/(b[0]-a[0]))}return VEL[VEL.length-1][1]}
     tabS=[0];for(var k=1;k<=NT;k++){var u0=TL.T*(k-1)/NT,u1=TL.T*k/NT;tabS.push(tabS[k-1]+(vel(u0)+vel(u1))/2*(u1-u0))}
     lungoPc=tabS[NT];
@@ -1289,11 +1313,13 @@ addEventListener('DOMContentLoaded',function(){
     if(puntoI)scrivi(puntoI,'opacity',f===4?'1':'0');
     if(f!==1&&f!==3){scrivi(filo,'opacity','0');return}
     var A,B,P,e,al=1,dd=null;
-    if(f===1){ // dalla scena alla frase: il punto scende appena sotto «studio», va a capo tra «studio» e la riga piccola, poi giù nel margine sinistro
+    if(f===1){ // dalla scena alla frase: il punto scende appena sotto «studio», va a capo appena sotto «studio», poi giù nel margine sinistro
       A=centro(studio);B=centro(cursore);
-      // la corsia tra le righe: dal fondo delle lettere di «studio» alla cima di quelle della riga piccola (misure del testo, non dei riquadri)
-      rigaSu.selectNodeContents(studio.previousElementSibling);rigaGiu.selectNodeContents(piccola);
-      var su=rigaSu.getBoundingClientRect().bottom,giu=rigaGiu.getBoundingClientRect().top,yb=(su+giu)/2,dl=dich.getBoundingClientRect().left,xg=dl-Math.min(24,dl/2);
+      // la corsia sotto «studio»: dal fondo delle sue lettere fino alla riga piccola, se c'è; altrimenti una corsia alta mezza riga (misure del testo, non dei riquadri)
+      rigaSu.selectNodeContents(studio.previousElementSibling);
+      var su=rigaSu.getBoundingClientRect().bottom,giu;
+      if(piccola){rigaGiu.selectNodeContents(piccola);giu=rigaGiu.getBoundingClientRect().top}else giu=su+Math.max(28,.5*rigaSu.getBoundingClientRect().height);
+      var yb=(su+giu)/2,dl=dich.getBoundingClientRect().left,xg=dl-Math.min(24,dl/2);
       P=[[A[0],A[1]],[A[0],yb],[xg,yb],[xg,B[1]],[B[0],B[1]]];
       e=ioc(seg(s,F.T0,F.R0));
       // misura: piccolo tra le righe (al massimo metà della corsia), poi, giù nel margine, quella della lettura
@@ -1337,7 +1363,7 @@ addEventListener('DOMContentLoaded',function(){
   addEventListener('scroll',function(){if(cambiando||!scenaST)return;var a=scenaST.start,b=scenaST.end;fScena=scrollY>a&&scrollY<b?(scrollY-a)/(b-a):null},{passive:true});
   var t,w=innerWidth;addEventListener('resize',function(){if(Math.abs(innerWidth-w)<40)return;w=innerWidth;cambiando=true;clearTimeout(t);t=setTimeout(function(){
     var f=fScena;imposta();
-    if(f!==null&&scenaST)scrollTo(0,Math.round(scenaST.start+f*(scenaST.end-scenaST.start)));
+    if(f!==null&&scenaST){var y=Math.round(scenaST.start+f*(scenaST.end-scenaST.start));if(lenisPc){lenisPc.resize();lenisPc.scrollTo(y,{immediate:true,force:true})}else scrollTo(0,y)}
     cambiando=false;
   },200)});
 });
