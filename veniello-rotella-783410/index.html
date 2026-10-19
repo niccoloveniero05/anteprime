@@ -934,7 +934,7 @@ addEventListener('DOMContentLoaded',function(){
   // ogni frase sale quando la camera passa la prima soglia e se ne va alla seconda. Le righe si muovono a tempo (circa 0,6 s),
   // non legate al dito: se lo scorrimento si ferma, una frase c'è intera o non c'è, mai tagliata a metà dalla sua maschera
   var FR=[[1.66,2.2],[2.32,2.86],[2.98,99]].map(function(f){return [f[0]+TL.SH,f[1]+TL.SH]}),statoFrasi=[null,null,null],attesa=[0,0,0],partenza=[1e15,1e15,1e15],uscita=-1e9;
-  var D={},E=0,stato={u:0},aperto=false,inOnda=false,inVista=true,caricato=false,innesco=false,negato=false,scenaST=null;
+  var D={},E=0,stato={u:0,p:0},aperto=false,inOnda=false,inVista=true,caricato=false,innesco=false,negato=false,scenaST=null;
   var tenuto=false,t0=0,ritardo={v:0},prima=null,primaV=null,riavvolto=false,voPrima=-1,battendo=false,orlo=null;
   // lo showreel della scena è solo il suo inizio (2,4 s: l'arancio che si stringe nel puntino della V, poi il nome), circa
   // 190 KB, con i colori dichiarati (bt709) e il nero uguale al fondo della pagina; la carta «06 · Motion design» ha il suo
@@ -952,19 +952,19 @@ addEventListener('DOMContentLoaded',function(){
   function batti(si){if(si===battendo)return;battendo=si;if(si)gsap.ticker.add(ridisegna);else gsap.ticker.remove(ridisegna)} // ridisegna a ogni fotogramma mentre la camera aspetta il video
   function inizia(tieni){ // il punto ha riempito lo schermo: lo showreel riparte dall'inizio (il primo fotogramma è arancio come il punto)
     inOnda=false;negato=false;riavvolto=false;if(vid.currentTime>.01)try{vid.currentTime=0}catch(e){} // (un salto inutile toglierebbe la copertina del video se non parte)
-    tenuto=!!tieni;t0=performance.now();ritardo.v=0;batti(tenuto);
+    tenuto=!!tieni&&!guida;t0=performance.now();ritardo.v=0;batti(tenuto); // al computer la camera non aspetta (vedi «Al computer»)
     var ok=function(){if(aperto&&!vid.paused&&!inOnda){inOnda=true;rendi(stato.u)}};
     if(vid.requestVideoFrameCallback)vid.requestVideoFrameCallback(function(){ok()});else vid.addEventListener('timeupdate',ok,{once:true});
   }
   // dove sta la camera: se lo showreel è partito dalla copertina, resta a tutto schermo finché il video non ha girato GT
   // secondi (la V col suo puntino), anche se il dito è già più avanti; poi raggiunge il dito con dolcezza. Se il video
-  // non parte (risparmio energetico, rete lenta) aspetta al massimo 2 secondi. Al computer (vedi segui()) invece di
-  // raggiungere il dito in un attimo la camera ci va alla sua andatura.
+  // non parte (risparmio energetico, rete lenta) aspetta al massimo 2 secondi.
   function camera(u){
+    if(guida)return u; // al computer la camera è legata allo scorrimento
     if(tenuto){
       if(u<TL.IR){tenuto=false;batti(false)}
       else if(negato||(inOnda&&vid.currentTime>=TL.GT)||performance.now()-t0>(inOnda?2600:2000)){tenuto=false;batti(false);
-        var d=u-TL.Z0;if(d>.004&&!guida){ritardo.v=d;gsap.to(ritardo,{v:0,duration:Math.min(1.1,.5+.4*d),ease:'power2.inOut',overwrite:true,onUpdate:ridisegna})}}
+        var d=u-TL.Z0;if(d>.004){ritardo.v=d;gsap.to(ritardo,{v:0,duration:Math.min(1.1,.5+.4*d),ease:'power2.inOut',overwrite:true,onUpdate:ridisegna})}}
       else return Math.min(u,TL.Z0);
     }
     return ritardo.v>0?Math.max(Math.min(u,TL.Z0),u-ritardo.v):u;
@@ -1013,6 +1013,7 @@ addEventListener('DOMContentLoaded',function(){
   var ui=null,uiT=0,frenando=false,VI=1.15,VG=.36;
   function rincorri(){rendi(stato.u)}
   function frena(x){
+    if(guida){if(frenando){frenando=false;gsap.ticker.remove(rincorri)}ui=null;return x} // al computer niente freno: la scena è più lunga
     var t=performance.now(),r=x;
     if(ui===null||!inVista||x<=ui||ui>=TL.IR||t-saltoLink<1600)ui=Math.min(x,TL.IR);
     else{var dt=Math.min(50,t-uiT)/1000,n=ui<PU.g0?Math.min(ui+VI*dt,PU.g0):ui<PU.g1?ui+VG*dt:ui+VI*dt;
@@ -1021,49 +1022,6 @@ addEventListener('DOMContentLoaded',function(){
     if((r<x)!==frenando){frenando=r<x;if(frenando)gsap.ticker.add(rincorri);else gsap.ticker.remove(rincorri)}
     return r;
   }
-  // Al computer (rotella, trackpad, tastiera; 19/10): la rotella va a scatti grandi, circa una schermata al secondo, e la
-  // scena finiva prima di essersi vista (l'inizio frenato e l'attesa della V lasciavano la camera indietro di una
-  // schermata, poi la rincorsa schiacciava il muro e la prima frase in mezzo secondo e il palco se ne andava). Qui dopo la
-  // V la camera va al massimo a VC schermate al secondo, parte e arriva frenando, e non lascia una frase prima che sia
-  // rimasta sullo schermo SOSTA ms; intanto la pagina non va oltre L (una «coda» prima della fine del palco, quindi
-  // il palco resta fermo) finché la camera non è arrivata lì con l'ultima frase letta. Sul telefono (dito) tutto come prima.
-  var guida=false,dito=false,cam=null,vel=0,tCam=0,dPrima=0,inseguendo=false,coda=0,yVisto=null,VC=1,AC=2.6,KC=4,SOSTA=1000;
-  function letta(i,t){return statoFrasi[i]===1||(statoFrasi[i]===0&&t-partenza[i]>=SOSTA)}
-  function insegui(){rendi(stato.u)}
-  function segui(d){
-    var t=performance.now(),dt=(t-tCam)/1000;
-    if(!guida||cam===null||d<=cam||d<=TL.Z0||!inVista||t-saltoLink<2500||!scenaST||scrollY>scenaST.end+G.V){cam=d;vel=0;tCam=t;dPrima=d}
-    else if(dt>=.004){dt=Math.min(dt,.05);
-      var vd=Math.max(0,(d-dPrima)/dt),lim=d; // vd: quanto corre il dito; lim: la frase non ancora letta trattiene la camera
-      for(var i=0;i<2;i++)if(cam<FR[i][1]&&!letta(i,t))lim=Math.min(lim,FR[i][1]-.004);
-      var vm=Math.min(VC,(lim<d?0:vd)+KC*(lim-cam)); // va col dito e recupera la distanza; davanti a una frase frena
-      vel=Math.max(0,Math.min(vm,vel+AC*dt));cam=Math.max(cam,Math.min(lim,cam+vel*dt));tCam=t;dPrima=d}
-    var s=guida&&cam<d-.0005;if(s!==inseguendo){inseguendo=s;if(s)gsap.ticker.add(insegui);else gsap.ticker.remove(insegui)}
-    return cam;
-  }
-  // la pagina può andare oltre L? Sì quando la camera è arrivata al punto della scena in cui la pagina viene trattenuta e
-  // l'ultima frase è stata letta. Si calcola ogni volta che serve (a pagina ferma segui() non gira: con la tastiera la
-  // pagina restava bloccata per sempre) e con le misure di adesso di ScrollTrigger (se la finestra cambia solo d'altezza
-  // la scena non si rifà e quel punto si sposta)
-  function libero(){
-    if(!guida||!scenaST)return true;
-    var a=scenaST.end-scenaST.start,uF=a>0?TL.T*clamp((a-coda)/a):TL.T;
-    return cam!==null&&cam>=uF-.002&&letta(2,performance.now())}
-  function trattieni(){ // la pagina non scende oltre L finché la scena non è arrivata: solo se arriva a L da sopra (non dopo
-    // una ricarica o un link che la lasciano più in basso, né tornando su da sotto; non dopo un link del menu o un salto lontano)
-    var y=scrollY,da=yVisto;yVisto=y;
-    if(da===null||!scenaST||performance.now()-saltoLink<2500)return;
-    var L=scenaST.end-coda;if(y>L+.5&&da<=L+.5&&y<scenaST.end+G.V&&!libero()){scrollTo(0,L);yVisto=L}}
-  addEventListener('scroll',trattieni,{passive:true});
-  addEventListener('touchstart',function(){if(!dito){dito=true;guida=false}},{passive:true}); // computer col touch: col dito come sul telefono
-  // tastiera: Pagina giù, spazio e freccia giù si fermano a L (senza scorrimento morbido salterebbero oltre la fine del palco)
-  addEventListener('keydown',function(e){
-    if(!scenaST||e.defaultPrevented||e.altKey||e.ctrlKey||e.metaKey)return;
-    var k=e.key,el=e.target,p=k==='PageDown'||(k===' '&&!e.shiftKey)?.875*innerHeight:k==='ArrowDown'?40:0;
-    if(!p||el&&(el.isContentEditable||/^(INPUT|TEXTAREA|SELECT|BUTTON)$/.test(el.tagName)))return;
-    var L=scenaST.end-coda,y=scrollY;if(y<scenaST.start-innerHeight||y>L+.5||y+p<=L||libero())return;
-    e.preventDefault();if(y<L-.5)try{scrollTo({top:L,behavior:'smooth'})}catch(x){scrollTo(0,L)}
-  });
   function frase(i,s){ // s: -1 non ancora, 0 sullo schermo, 1 già uscita (verso l'alto)
     var f=frasi[i],p=statoFrasi[i],ora=performance.now();statoFrasi[i]=s;clearTimeout(attesa[i]);
     function metti(su,via,ferma){ // ferma(j): la riga j va al suo posto subito, senza attraversare la sua maschera
@@ -1083,11 +1041,33 @@ addEventListener('DOMContentLoaded',function(){
     righe[i].forEach(function(sp,j){sp.style.transitionDelay=(s===1?j*35:0)+'ms'});
     metti(false,s===1,function(j){return !mossa(j)});partenza[i]=1e15;
   }
+  // Al computer (rotella, trackpad, tastiera; 19/10) la scena è LEGATA ALLO SCORRIMENTO: niente freno dell'inizio, niente
+  // attesa della V, niente rincorse, e lo script non tocca mai la posizione della pagina (prima la riportava indietro e con lo
+  // scorrimento morbido della rotella lo schermo ballava). Per dare il tempo di vedere tutto la scena è più lunga solo qui
+  // (lungoPc schermate di scorrimento invece di TL.T) e le fasi sono distribuite lungo lo scorrimento: VEL dice quante
+  // schermate di scorrimento vale ogni unità di u in quel punto (tra un punto e l'altro cambia piano, così nessun movimento
+  // fa scatti di velocità). Fino al lampeggio come sul telefono (il puntino resta in pari con la copertina), poi più spazio
+  // al lampeggio e al disco, tanto spazio allo showreel a tutto schermo (la V col suo puntino, ~1,15 s di video: circa una
+  // schermata), e il resto (allontanamento, muro, inclinazione, tre frasi) 1,9 volte più lungo. Lo «scrub» di GSAP (0,4 s)
+  // ammorbidisce senza lasciare la camera indietro. Sul telefono (dito) tutto come prima.
+  var guida=false,lungoPc=TL.T,tabS=null,NT=1200;
+  function preparaPc(){
+    if(tabS)return;
+    var VEL=[[0,1],[PU.b0,1],[PU.b0+.03,3.6],[PU.g0,3.6],[PU.g0+.04,2.6],[PU.g1,2.4],[PU.g1+.06,1.2],[TL.IR-.02,1.2],[TL.IR+.02,4.6],[TL.Z0-.02,4.6],[TL.Z0+.04,1.9],[99,1.9]];
+    function vel(u){for(var i=1;i<VEL.length;i++)if(u<=VEL[i][0]){var a=VEL[i-1],b=VEL[i];return lerp(a[1],b[1],(u-a[0])/(b[0]-a[0]))}return VEL[VEL.length-1][1]}
+    tabS=[0];for(var k=1;k<=NT;k++){var u0=TL.T*(k-1)/NT,u1=TL.T*k/NT;tabS.push(tabS[k-1]+(vel(u0)+vel(u1))/2*(u1-u0))}
+    lungoPc=tabS[NT];
+  }
+  function uDi(p){ // da schermate di scorrimento (0-lungoPc) a u (0-TL.T)
+    if(p<=0)return 0;if(p>=lungoPc)return TL.T;
+    var a=0,b=NT;while(b-a>1){var m=(a+b)>>1;if(tabS[m]<=p)a=m;else b=m}
+    return TL.T*(a+(p-tabS[a])/(tabS[b]-tabS[a]))/NT;
+  }
   function rendi(uv){
     uv=frena(uv);
     var giu=uv>=TL.IR;
     if(giu!==aperto){aperto=giu;stage.classList.toggle('aperto',giu);if(giu)inizia(prima!==null&&prima<TL.IR);else{inOnda=false;tenuto=false;riavvolto=false;batti(false)}}
-    var u=segui(camera(uv)); // al computer la camera va alla sua andatura (segui)
+    var u=camera(uv);
     if(uv>.002&&uv<TL.Z1)carica(); // solo scorrendo dentro la scena: chi apre la pagina più in basso (#prezzi, ricarica) non scarica lo showreel
     // a) la copertina scorre via con la pagina; quando il cerchio è grande quel poco che ne resta sullo schermo (su schermi
     //    molto bassi) sparisce e non si tocca più: niente scritte sopra l'arancio
@@ -1124,10 +1104,15 @@ addEventListener('DOMContentLoaded',function(){
     //    Qui solo le misure; i riquadri del muro si costruiscono dopo il primo disegno (muroPronto).
     muroCostruisci(null,false,true);orlo=null;sorgente();misuraPunto();
     scena.style.marginTop=-copertina.offsetHeight+'px';
+    guida=matchMedia('(hover:hover) and (pointer:fine)').matches;if(guida)preparaPc(); // al computer: vedi «Al computer»
+    var tw;
+    if(guida){scena.style.height=Math.round((lungoPc+1)*G.V+E)+'px';
+      tw=gsap.fromTo(stato,{p:0},{p:lungoPc,ease:'none',overwrite:true,scrollTrigger:{trigger:scena,start:'top+='+E+' top',end:'bottom bottom',scrub:.4},onUpdate:function(){stato.u=uDi(stato.p);rendi(stato.u)}})}
+    else{
     scena.style.height=Math.round((TL.T+1)*G.V+E)+'px';
-    var tw=gsap.fromTo(stato,{u:0},{u:TL.T,ease:'none',overwrite:true,scrollTrigger:{trigger:scena,start:'top+='+E+' top',end:'bottom bottom',scrub:.4},onUpdate:function(){rendi(stato.u)}});
+    tw=gsap.fromTo(stato,{u:0},{u:TL.T,ease:'none',overwrite:true,scrollTrigger:{trigger:scena,start:'top+='+E+' top',end:'bottom bottom',scrub:.4},onUpdate:function(){rendi(stato.u)}});
+    }
     scenaST=tw.scrollTrigger;
-    guida=!dito&&matchMedia('(hover:hover) and (pointer:fine)').matches;coda=guida?Math.round(.22*G.V):0;cam=null; // al computer: vedi segui()
     var vista=ScrollTrigger.create({trigger:scena,start:'top bottom',end:'bottom top',onToggle:function(s){inVista=s.isActive;stage.classList.toggle('vivo',inVista);rendi(stato.u)}});
     rendi(stato.u);
     muroPronto(false,muroFatto);
