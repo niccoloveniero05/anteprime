@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Antica Liquoreria · Prodotti tipici toscani a Montecatini Terme</title>
+<meta name="description" content="Antica Liquoreria, Montecatini Mini Market: vini toscani, olio, liquori, dolci e prodotti tipici in Via Felice Cavallotti 91, nel centro di Montecatini Terme.">
+<meta name="theme-color" content="#FBF4E6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --marrone:#4A3324;
+  --marrone-scuro:#2F2017;
+  --giallo:#E2AE2F;
+  --giallo-chiaro:#F7E3A8;
+  --crema:#F3E6CF;
+  --fondo:#FBF4E6;
+  --carta:#FFFFFF;
+  --testo:#2F2017;
+  --grigio:#6E5D50;
+  --linea:rgba(47,32,23,.14);
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --font:"Outfit",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --lato:clamp(16px,5vw,64px);
+  --ombra:0 1px 2px rgba(47,32,23,.06),0 14px 34px -10px rgba(47,32,23,.24);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:76px}
+body{margin:0;background:var(--fondo);color:var(--testo);font:400 1.06rem/1.6 var(--font);-webkit-font-smoothing:antialiased;overflow-x:clip;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--marrone);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--lato)}
+.i{width:20px;height:20px;flex:none}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;text-wrap:balance;letter-spacing:-.015em;line-height:1.05}
+h1 em,h2 em{font-style:italic;color:#9A6B12}
+h2{font-size:clamp(2.1rem,8vw,3.4rem)}
+p{margin:0}
+section{padding:clamp(70px,10vw,120px) 0}
+.intro{color:var(--grigio);max-width:56ch;margin-top:1rem;font-size:1.08rem}
+.occhiello{font:600 .8rem/1 var(--font);letter-spacing:.2em;text-transform:uppercase;color:#9A6B12;margin-bottom:1rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:52px;padding:0 1.4rem;font:500 1rem/1 var(--font);text-decoration:none;border:0;border-radius:12px;cursor:pointer;transition:background-color .25s,color .25s,transform .2s}
+.btn:active{transform:scale(.97)}
+.btn-pieno{background:var(--marrone);color:#fff}
+.btn-pieno:hover{background:var(--marrone-scuro)}
+.btn-giallo{background:var(--giallo);color:var(--marrone-scuro)}
+.btn-giallo:hover{background:#cf9c22}
+.btn-linea{background:transparent;box-shadow:inset 0 0 0 1.5px var(--marrone);color:var(--marrone)}
+.btn-linea:hover{background:var(--marrone);color:#fff}
+
+/* Testata */
+.testata{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--fondo) 92%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--linea)}
+.testata .wrap{display:flex;align-items:center;gap:10px;height:64px}
+.logo{display:flex;flex-direction:column;justify-content:center;min-height:44px;margin-right:auto;text-decoration:none;color:var(--marrone)}
+.logo .n{font:600 1.32rem/1 var(--serif);letter-spacing:.01em}
+.logo .s{font:600 .58rem/1 var(--font);letter-spacing:.24em;color:#9A6B12;margin-top:4px}
+.testata nav{display:none}
+.lingua{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;border:0;background:none;font:600 .92rem/1 var(--font);color:var(--marrone);cursor:pointer;border-radius:10px}
+.lingua:hover{background:var(--crema)}
+.testata .btn{min-height:42px;padding:0 1rem;font-size:.95rem}
+@media (max-width:380px){.testata .btn{display:none}}
+
+/* Copertina */
+.copertina{padding:26px 0 40px}
+.copertina-griglia{display:grid;gap:26px;align-items:center}
+.copertina h1{font-size:clamp(2.6rem,11vw,5rem);max-width:12ch}
+.copertina .intro{margin-top:1.2rem}
+.copertina .azioni{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.8rem}
+.cornice{position:relative;margin:0}
+.cornice img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:18px;box-shadow:var(--ombra)}
+.cartello{position:absolute;right:12px;bottom:-16px;background:var(--giallo);color:var(--marrone-scuro);border-radius:12px;padding:10px 14px;font:600 .8rem/1.25 var(--font);box-shadow:var(--ombra);max-width:16ch}
+
+/* Striscia dell'insegna */
+.striscia{padding:36px 0 8px}
+.striscia ul{list-style:none;margin:0;padding:18px 0;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 18px}
+.striscia li{font:400 1.5rem/1 var(--serif);font-style:italic;color:var(--marrone)}
+.striscia li span{display:block;font:500 .78rem/1.3 var(--font);font-style:normal;color:var(--grigio);margin-top:4px;letter-spacing:.02em}
+
+/* Bottega */
+.foto-griglia{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:2.2rem}
+.foto-griglia figure{margin:0}
+.foto-griglia img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;background:#eadfd2}
+.foto-griglia figure.largo{grid-column:1/-1}
+.foto-griglia figure.largo img{aspect-ratio:4/3}
+.foto-griglia figcaption{font-size:.92rem;color:var(--grigio);margin-top:.5rem}
+
+/* Cosa trovi */
+.trovi{background:var(--carta)}
+.trovi-griglia{list-style:none;margin:2.4rem 0 0;padding:0;display:grid;grid-template-columns:1fr;gap:0}
+.trovi-griglia li{display:grid;grid-template-columns:44px 1fr;gap:4px 14px;padding:18px 0;border-top:1px solid var(--linea)}
+.trovi-griglia .tondo{grid-row:span 2;width:44px;height:44px;border-radius:12px;background:var(--giallo-chiaro);color:var(--marrone);display:flex;align-items:center;justify-content:center}
+.trovi-griglia h3{font:500 1.12rem/1.25 var(--font)}
+.trovi-griglia p{color:var(--grigio);font-size:.98rem;line-height:1.45}
+
+/* Regali */
+.regali{background:var(--marrone-scuro);color:#fff}
+.regali h2 em{color:var(--giallo)}
+.regali .intro{color:rgba(255,255,255,.82)}
+.regali .occhiello{color:var(--giallo)}
+.regali-griglia{display:grid;gap:30px;align-items:center}
+.regali-foto{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.regali-foto img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px}
+
+/* Da lontano */
+.lontano{background:var(--giallo-chiaro)}
+.lontano-box{display:grid;gap:22px;align-items:center}
+.lontano h2 em{color:var(--marrone)}
+.lontano .btn{margin-top:1.4rem}
+.lingue{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.2rem}
+.lingue span{background:var(--carta);border-radius:999px;padding:6px 12px;font-size:.9rem;color:var(--marrone)}
+
+/* Dove */
+.dove{background:var(--carta)}
+.dove-griglia{display:grid;gap:36px}
+.contatti-lista{list-style:none;margin:1.6rem 0 0;padding:0}
+.contatti-lista li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-top:1px solid var(--linea)}
+.contatti-lista li:last-child{border-bottom:1px solid var(--linea)}
+.contatti-lista span{color:var(--grigio);text-align:right}
+.contatti-lista a{color:var(--marrone);font-weight:500;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.contatti-lista li{align-items:center;padding:4px 0}
+.mappa{aspect-ratio:4/3.4;background:#eadfd2;border-radius:16px;overflow:hidden}
+.mappa iframe{width:100%;height:100%;border:0;display:block}
+.indirizzo{margin:1rem 0 1.1rem}
+
+.piede{background:var(--marrone-scuro);color:rgba(255,255,255,.72);font-size:.92rem;padding:36px 0 30px}
+.piede .logo{color:#fff;margin-bottom:1rem}
+.piede .logo .s{color:var(--giallo)}
+.piede p{margin:.2rem 0}
+.piede a{color:#fff;text-decoration:none}
+.anteprima-nota{font-size:.8rem;opacity:.75;margin-top:1rem!important}
+
+/* Barra telefono */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1.4fr;gap:8px;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:var(--carta);border-top:1px solid var(--linea)}
+.barra a{display:flex;align-items:center;justify-content:center;gap:.5rem;min-height:50px;font-weight:500;text-decoration:none;border-radius:12px;box-shadow:inset 0 0 0 1.5px var(--marrone);color:var(--marrone)}
+.barra a.su{background:var(--marrone);color:#fff;box-shadow:none}
+
+@media (min-width:760px){
+  .foto-griglia{grid-template-columns:repeat(3,1fr)}
+  .foto-griglia figure.largo{grid-column:span 2;grid-row:span 2}
+  .foto-griglia figure.largo img{aspect-ratio:auto;height:100%}
+  .trovi-griglia{grid-template-columns:1fr 1fr;column-gap:48px}
+}
+@media (min-width:1000px){
+  body{padding-bottom:0}
+  .barra{display:none}
+  .testata .wrap{height:76px}
+  .testata nav{display:flex;gap:26px;font-size:.98rem;margin-right:8px}
+  .testata nav a{text-decoration:none;color:var(--grigio);padding:.4rem 0}
+  .testata nav a:hover{color:var(--marrone)}
+  .copertina{padding:60px 0 56px}
+  .copertina-griglia{grid-template-columns:1fr 1fr;gap:64px}
+  .trovi-griglia{grid-template-columns:repeat(3,1fr);column-gap:40px}
+  .regali-griglia{grid-template-columns:1fr 1fr;gap:64px}
+  .lontano-box{grid-template-columns:1.2fr .8fr;gap:64px}
+  .dove-griglia{grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}
+  .mappa{aspect-ratio:auto;height:500px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.4A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+  <symbol id="i-calice" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2.5h10l-.6 6a4.4 4.4 0 0 1-8.8 0zM12 13v7.5M8 21h8M7.4 7h9.2"/></symbol>
+  <symbol id="i-olio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.5h4v3l2 3.5v11a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 8 20V9l2-3.5z"/><path d="M12 11.5c1.6 1.8 1.6 3.6 0 4.6-1.6-1-1.6-2.8 0-4.6z"/></symbol>
+  <symbol id="i-liquore" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2.5h5v2h-5zM10 4.5v3.5L6.5 11v9.5a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V11L14 8V4.5M6.5 14h11"/></symbol>
+  <symbol id="i-biscotto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="9" r="1"/><circle cx="15" cy="10" r="1"/><circle cx="10" cy="15" r="1"/><circle cx="15" cy="15.5" r="1"/></symbol>
+  <symbol id="i-birra" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h11v12.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 19.5zM16 10h1.5a2.5 2.5 0 0 1 2.5 2.5v2a2.5 2.5 0 0 1-2.5 2.5H16M5 7a3 3 0 0 1 3-3.5c1 0 1.7.4 2.3 1a3 3 0 0 1 5.2 1.5"/><path d="M9 11v6M12 11v6"/></symbol>
+  <symbol id="i-foglia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13.5 15-14-.5 10-6 15-14 15"/><path d="M5 19c3-4 6-6.5 10-8.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+</svg>
+
+<header class="testata">
+  <div class="wrap">
+    <a class="logo" href="#inizio" aria-label="Antica Liquoreria, Montecatini Mini Market"><span class="n">Antica Liquoreria</span><span class="s">MONTECATINI MINI MARKET</span></a>
+    <nav aria-label="Sezioni"><a href="#bottega" data-i18n="nav1">La bottega</a><a href="#trovi" data-i18n="nav2">Cosa trovi</a><a href="#regali" data-i18n="nav3">Regali</a><a href="#dove" data-i18n="nav4">Dove siamo</a></nav>
+    <button class="lingua" type="button" id="lingua" aria-label="Read in English">EN</button>
+    <a class="btn btn-pieno" href="https://wa.me/393286882448" target="_blank" rel="noopener" data-i18n="cta">Scrivici</a>
+  </div>
+</header>
+
+<main id="inizio">
+  <section class="copertina" aria-labelledby="titolo">
+    <div class="wrap copertina-griglia">
+      <div>
+        <p class="occhiello" data-i18n="occh">Prodotti tipici · Montecatini Terme</p>
+        <h1 id="titolo" data-i18n="h1">Il sapore della Toscana, <em>da portare a casa</em></h1>
+        <p class="intro" data-i18n="intro">Vini toscani e non solo, olio, liquori, dolci e prelibatezze regionali in Via Cavallotti, nel centro di Montecatini Terme. Dalla birra al Vin Santo.</p>
+        <div class="azioni">
+          <a class="btn btn-pieno" href="https://wa.me/393286882448" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="b-wa">Scrivici su WhatsApp</span></a>
+          <a class="btn btn-linea" href="#dove" data-i18n="b-dove">Dove siamo</a>
+        </div>
+      </div>
+      <figure class="cornice">
+        <img src="img/ingresso.jpg" width="960" height="720" alt="L'ingresso dell'Antica Liquoreria con una Fiat 500 gialla dentro il negozio" fetchpriority="high">
+        <span class="cartello" data-i18n="cartello">Sì, dentro c&rsquo;è una 500 gialla</span>
+      </figure>
+    </div>
+  </section>
+
+  <section class="striscia" aria-label="Cosa vendiamo">
+    <div class="wrap">
+      <ul>
+        <li>Wine<span data-i18n="w1">Vino</span></li>
+        <li>Oil<span data-i18n="w2">Olio</span></li>
+        <li>Spirit<span data-i18n="w3">Liquori</span></li>
+        <li>Soda<span data-i18n="w4">Bibite</span></li>
+        <li>Cookie<span data-i18n="w5">Biscotti</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="bottega" id="bottega" aria-labelledby="t-bottega">
+    <div class="wrap">
+      <p class="occhiello" data-i18n="bo-k">La bottega</p>
+      <h2 id="t-bottega" data-i18n="bo-t">Un emporio <em>di prodotti tipici</em></h2>
+      <p class="intro" data-i18n="bo-i">Scaffali pieni di bottiglie, prodotti del territorio e dolci da regalare. Passa a trovarci: ti aiutiamo a scegliere.</p>
+      <div class="foto-griglia">
+        <figure class="largo"><img src="img/interno-500.jpg" width="960" height="720" alt="Dentro il negozio: scaffali di vino e la Fiat 500 gialla" loading="lazy"><figcaption data-i18n="f1">Dentro la bottega</figcaption></figure>
+        <figure><img src="img/scaffali.jpg" width="552" height="552" alt="Gli scaffali con le bottiglie di vino" loading="lazy"><figcaption data-i18n="f2">I vini</figcaption></figure>
+        <figure><img src="img/insegna.jpg" width="1200" height="1200" alt="L'insegna: Antica Liquoreria, Montecatini Mini Market" loading="lazy"><figcaption data-i18n="f3">La nostra insegna</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="trovi" id="trovi" aria-labelledby="t-trovi">
+    <div class="wrap">
+      <p class="occhiello" data-i18n="tr-k">Cosa trovi</p>
+      <h2 id="t-trovi" data-i18n="tr-t">Dalla birra <em>al Vin Santo</em></h2>
+      <ul class="trovi-griglia">
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-calice"/></svg></span><h3 data-i18n="t1t">Vini toscani e non</h3><p data-i18n="t1">Una vasta scelta di bottiglie, dalla Toscana e da tutta Italia.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-olio"/></svg></span><h3 data-i18n="t2t">Olio</h3><p data-i18n="t2">L&rsquo;olio, da portare a casa o da regalare.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-liquore"/></svg></span><h3 data-i18n="t3t">Liquori</h3><p data-i18n="t3">Liquori e distillati, come vuole il nostro nome.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-biscotto"/></svg></span><h3 data-i18n="t4t">Dolci e prelibatezze</h3><p data-i18n="t4">Biscotti e specialità regionali per accompagnare il Vin Santo.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-birra"/></svg></span><h3 data-i18n="t5t">Birre e bibite</h3><p data-i18n="t5">Fresche, per la giornata a Montecatini.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-foglia"/></svg></span><h3 data-i18n="t6t">Primizie di stagione</h3><p data-i18n="t6">Quando è il momento, la frutta e la verdura appena raccolte.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="regali" id="regali" aria-labelledby="t-regali">
+    <div class="wrap regali-griglia">
+      <div class="regali-foto">
+        <img src="img/natale.jpg" width="960" height="960" alt="Cesti e confezioni regalo di Natale davanti al negozio" loading="lazy">
+        <img src="img/befana.jpg" width="960" height="960" alt="Le calze della Befana preparate in negozio" loading="lazy">
+      </div>
+      <div>
+        <p class="occhiello" data-i18n="re-k">Regali</p>
+        <h2 id="t-regali" data-i18n="re-t">Cesti di Natale <em>e calze della Befana</em></h2>
+        <p class="intro" data-i18n="re-i">Prepariamo cesti e confezioni con i prodotti tipici, e a gennaio le calze della Befana, anche personalizzate come preferisci.</p>
+        <a class="btn btn-giallo" href="https://wa.me/393286882448?text=Buongiorno%2C%20vorrei%20preparare%20un%20regalo" target="_blank" rel="noopener" style="margin-top:1.8rem"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="re-b">Chiedi un regalo</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="lontano" aria-labelledby="t-lontano">
+    <div class="wrap lontano-box">
+      <div>
+        <p class="occhiello" data-i18n="lo-k">Per chi viene da lontano</p>
+        <h2 id="t-lontano" data-i18n="lo-t">In vacanza a Montecatini? <em>Porta a casa la Toscana</em></h2>
+        <p class="intro" data-i18n="lo-i">Tanti nostri clienti vengono da fuori. Vuoi ordinare quando sei già tornato a casa? Scrivici su WhatsApp e ci mettiamo d&rsquo;accordo.</p>
+        <a class="btn btn-pieno" href="https://wa.me/393286882448?text=Hello%2C%20I%20would%20like%20to%20order%20some%20products" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="lo-b">Ordina su WhatsApp</span></a>
+      </div>
+      <figure style="margin:0"><img src="img/collage.jpg" width="1080" height="604" alt="Il negozio e l'insegna del Montecatini Mini Market" loading="lazy" style="border-radius:16px;box-shadow:var(--ombra)"></figure>
+    </div>
+  </section>
+
+  <section class="dove" id="dove" aria-labelledby="t-dove">
+    <div class="wrap dove-griglia">
+      <div>
+        <p class="occhiello" data-i18n="do-k">Dove siamo</p>
+        <h2 id="t-dove" data-i18n="do-t">In Via Cavallotti, <em>in pieno centro</em></h2>
+        <ul class="contatti-lista">
+          <li><b>WhatsApp</b><span><a href="https://wa.me/393286882448">328 688 2448</a></span></li>
+          <li><b data-i18n="do-tel">Telefono</b><span><a href="tel:+39057279294">0572 79294</a></span></li>
+          <li><b>Email</b><span><a href="mailto:antica.liquoreria0@gmail.com">antica.liquoreria0@gmail.com</a></span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="mappa"><iframe title="Mappa: Antica Liquoreria, Via Felice Cavallotti 91, Montecatini Terme" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=43.88358,10.7748899&amp;z=17&amp;hl=it&amp;output=embed"></iframe></div>
+        <p class="indirizzo"><b>Via Felice Cavallotti 91</b>, 51016 Montecatini Terme (PT)</p>
+        <a class="btn btn-linea" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.88358,10.7748899" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="do-ind">Indicazioni</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="piede">
+  <div class="wrap">
+    <div class="logo"><span class="n">Antica Liquoreria</span><span class="s">MONTECATINI MINI MARKET</span></div>
+    <p>Via Felice Cavallotti 91, 51016 Montecatini Terme (PT)</p>
+    <p><a href="tel:+39057279294">0572 79294</a> &middot; <a href="https://wa.me/393286882448">328 688 2448</a> &middot; <a href="https://www.facebook.com/ANTICALIQUORERIA/" target="_blank" rel="noopener">Facebook</a></p>
+    <p class="anteprima-nota" data-i18n="anteprima">Anteprima preparata da Veniello Studio per l&rsquo;Antica Liquoreria</p>
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a href="tel:+39057279294"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg><span data-i18n="barra1">Chiama</span></a>
+  <a class="su" href="https://wa.me/393286882448" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+</nav>
+
+<script>
+var EN = {
+  nav1: 'The shop', nav2: 'What we sell', nav3: 'Gifts', nav4: 'Find us', cta: 'Message us',
+  occh: 'Typical products · Montecatini Terme',
+  h1: 'A taste of Tuscany, <em>to take home</em>',
+  intro: 'Tuscan and Italian wines, olive oil, liqueurs, sweets and regional delicacies on Via Cavallotti, in the centre of Montecatini Terme. From beer to Vin Santo.',
+  'b-wa': 'Message us on WhatsApp', 'b-dove': 'Find us', cartello: 'Yes, there is a yellow Fiat 500 inside',
+  w1: 'Wine', w2: 'Olive oil', w3: 'Liqueurs', w4: 'Soft drinks', w5: 'Biscuits',
+  'bo-k': 'The shop', 'bo-t': 'A little emporium <em>of typical products</em>', 'bo-i': 'Shelves full of bottles, local products and sweets to give as gifts. Come and see us: we will help you choose.',
+  f1: 'Inside the shop', f2: 'The wines', f3: 'Our sign',
+  'tr-k': 'What we sell', 'tr-t': 'From beer <em>to Vin Santo</em>',
+  t1t: 'Tuscan and Italian wines', t1: 'A wide choice of bottles from Tuscany and all over Italy.',
+  t2t: 'Olive oil', t2: 'Olive oil, to take home or to give as a gift.',
+  t3t: 'Liqueurs', t3: 'Liqueurs and spirits, just as our name says.',
+  t4t: 'Sweets and delicacies', t4: 'Biscuits and regional specialities to go with Vin Santo.',
+  t5t: 'Beers and soft drinks', t5: 'Cold drinks for your day in Montecatini.',
+  t6t: 'Seasonal produce', t6: 'When in season, freshly picked fruit and vegetables.',
+  're-k': 'Gifts', 're-t': 'Christmas hampers <em>and Befana stockings</em>', 're-i': 'We prepare hampers and gift boxes with typical products, and in January the Befana stockings, personalised as you like.', 're-b': 'Ask for a gift',
+  'lo-k': 'Coming from far away', 'lo-t': 'On holiday in Montecatini? <em>Take Tuscany home</em>', 'lo-i': 'Many of our customers come from abroad. Want to order once you are back home? Message us on WhatsApp and we will sort it out together.', 'lo-b': 'Order on WhatsApp',
+  'do-k': 'Find us', 'do-t': 'On Via Cavallotti, <em>right in the centre</em>', 'do-tel': 'Phone', 'do-ind': 'Directions',
+  anteprima: 'Preview prepared by Veniello Studio for Antica Liquoreria', barra1: 'Call',
+  titolo: 'Antica Liquoreria · Tuscan typical products in Montecatini Terme'
+};
+var IT = { titolo: document.title };
+document.querySelectorAll('[data-i18n]').forEach(function (el) { var k = el.getAttribute('data-i18n'); if (!(k in IT)) IT[k] = el.innerHTML; });
+var lingua = 'it';
+function metti(l) {
+  lingua = l; var D = l === 'en' ? EN : IT;
+  document.querySelectorAll('[data-i18n]').forEach(function (el) { var k = el.getAttribute('data-i18n'); if (D[k] != null) el.innerHTML = D[k]; });
+  document.documentElement.lang = l; document.title = D.titolo;
+  var b = document.getElementById('lingua'); b.textContent = l === 'en' ? 'IT' : 'EN'; b.setAttribute('aria-label', l === 'en' ? 'Leggi in italiano' : 'Read in English');
+  try { localStorage.setItem('liquoreria-lingua', l); } catch (e) {}
+}
+document.getElementById('lingua').addEventListener('click', function () { metti(lingua === 'it' ? 'en' : 'it'); });
+try { var s = localStorage.getItem('liquoreria-lingua'); if (s === 'en' || (!s && !/^it\b/i.test(navigator.language || ''))) metti('en'); } catch (e) {}
+</script>
+</body>
+</html>
