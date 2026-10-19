@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Hotel Cavallotti &amp; Giotto · Hotel tre stelle con spa a Montecatini Terme</title>
+<meta name="description" content="Hotel Cavallotti &amp; Giotto, tre stelle in Via Cavallotti 103 a Montecatini Terme: 40 camere, Giotto SPA con piscina a 32 gradi, idromassaggio, sauna e bagno turco, a 230 metri dalle Terme Excelsior.">
+<meta name="theme-color" content="#F6F8F8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rosso:#14506E;
+  --rosso-scuro:#0C3449;
+  --verde:#2F8DA3;
+  --scuro:#0F2A39;
+  --crema:#E3EFF2;
+  --fondo:#F6F8F8;
+  --carta:#FFFFFF;
+  --testo:#13232C;
+  --grigio:#56646C;
+  --linea:rgba(19,35,44,.13);
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --font:"Outfit",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --lato:clamp(16px,5vw,64px);
+  --curva:cubic-bezier(.22,.8,.24,1);
+  --ombra:0 1px 2px rgba(19,35,44,.06),0 12px 32px -8px rgba(19,35,44,.18);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:76px}
+body{margin:0;background:var(--fondo);color:var(--testo);font:400 1.06rem/1.6 var(--font);-webkit-font-smoothing:antialiased;overflow-x:clip;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--rosso);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--lato)}
+.i{width:20px;height:20px;flex:none}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;text-wrap:balance;letter-spacing:-.015em;line-height:1.06}
+h1 em,h2 em{font-style:italic;color:var(--rosso)}
+h2{font-size:clamp(2.1rem,8vw,3.5rem)}
+h3{font-weight:500;letter-spacing:-.005em}
+p{margin:0}
+section{padding:clamp(72px,10vw,124px) 0}
+.intro{color:var(--grigio);max-width:56ch;margin-top:1rem;font-size:1.08rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:52px;padding:0 1.4rem;font:500 1rem/1 var(--font);text-decoration:none;border:0;border-radius:10px;cursor:pointer;transition:background-color .25s var(--curva),color .25s var(--curva),transform .2s var(--curva)}
+.btn:active{transform:scale(.97)}
+.btn-pieno{background:var(--rosso);color:#fff}
+.btn-pieno:hover{background:var(--rosso-scuro)}
+.btn-linea{background:transparent;box-shadow:inset 0 0 0 1.5px var(--rosso);color:var(--rosso)}
+.btn-linea:hover{background:var(--rosso);color:#fff}
+
+/* Testata */
+.testata{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--fondo) 92%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--linea)}
+.testata .wrap{display:flex;align-items:center;gap:12px;height:64px}
+.logo{display:flex;align-items:center;gap:.5rem;min-height:44px;margin-right:auto;text-decoration:none}
+.logo .nome{font:400 1.45rem/1 var(--serif);letter-spacing:-.01em}
+.logo .stelle{font-size:.72rem;letter-spacing:.12em;color:var(--rosso)}
+.testata nav{display:none}
+.lingua{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;border:0;background:none;font:500 .92rem/1 var(--font);color:var(--rosso);cursor:pointer;border-radius:8px}
+.lingua:hover{background:var(--crema)}
+.testata .btn{min-height:42px;padding:0 1rem;font-size:.95rem}
+@media (max-width:400px){.testata .btn{display:none}}
+
+/* Copertina */
+.copertina{padding:0;position:relative}
+.copertina-foto{position:relative;margin:0;overflow:hidden;aspect-ratio:4/4.6;background:#3a2c26}
+.copertina-foto img{width:100%;height:100%;object-fit:cover}
+.copertina-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,24,34,0) 28%,rgba(8,24,34,.5) 60%,rgba(8,24,34,.88) 100%)}
+.copertina-testo{position:absolute;left:0;right:0;bottom:56px;z-index:2;color:#fff}
+.occhiello{font:500 .98rem/1.3 var(--font);margin:0 0 .7rem;text-shadow:0 1px 12px rgba(20,12,8,.6)}
+.copertina h1{font-size:clamp(2.5rem,11vw,5rem);max-width:13ch;text-shadow:0 2px 24px rgba(20,12,8,.35)}
+.copertina h1 em{color:#E9C27A}
+
+/* Richiesta di disponibilità */
+.prenota{position:relative;z-index:3;margin-top:-36px}
+.scheda{background:var(--carta);border-radius:16px;box-shadow:var(--ombra);padding:20px 18px 18px}
+.scheda h2{font:500 1.35rem/1.15 var(--font);letter-spacing:-.01em;margin:0 0 .9rem}
+.campi{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.campo{display:grid;gap:4px;min-width:0}
+.campo label{font-size:.85rem;font-weight:500;color:var(--grigio)}
+.campo input,.campo select{width:100%;min-width:0;min-height:48px;padding:0 12px;font:400 1rem var(--font);color:var(--testo);background:var(--fondo);border:1px solid var(--linea);border-radius:10px;-webkit-appearance:none;appearance:none}
+.campo select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%236B5F57' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:32px}
+.campo input:focus,.campo select:focus{outline:2px solid var(--rosso);outline-offset:1px}
+.scheda .btn{width:100%;margin-top:12px}
+.errore{color:#B42318;font-size:.92rem;margin-top:.6rem}
+.aiuto{font-size:.9rem;color:var(--grigio);margin-top:.8rem}
+.aiuto a{color:var(--rosso);font-weight:500}
+
+/* In breve */
+.breve{padding:40px 0 0}
+.breve ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:22px 18px}
+.breve li{display:grid;gap:2px}
+.breve b{font:400 1.9rem/1.1 var(--serif);color:var(--rosso);letter-spacing:-.01em}
+.breve span{font-size:.95rem;color:var(--grigio);line-height:1.35}
+
+/* Camere */
+.camere-griglia{display:grid;gap:28px;margin-top:2.4rem}
+.camera{background:var(--carta);border-radius:16px;overflow:hidden;box-shadow:var(--ombra)}
+.scorri{position:relative}
+.scorri ul{list-style:none;margin:0;padding:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.scorri ul::-webkit-scrollbar{display:none}
+.scorri li{flex:0 0 100%;scroll-snap-align:start}
+.scorri img{width:100%;aspect-ratio:3/2;object-fit:cover;background:#e8ddd0}
+.contatore{position:absolute;right:12px;bottom:12px;background:rgba(8,24,34,.62);color:#fff;font-size:.82rem;font-weight:500;padding:4px 10px;border-radius:999px;font-variant-numeric:tabular-nums}
+.freccia{position:absolute;top:50%;translate:0 -50%;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--testo);display:none;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.freccia.prima{left:12px}.freccia.dopo{right:12px}
+.freccia .i{width:18px;height:18px}
+.camera-testo{padding:20px 20px 24px}
+.camera h3{font-size:1.6rem}
+.camera p{color:var(--grigio);margin-top:.35rem}
+.dotazioni{list-style:none;margin:2.2rem 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 18px}
+.dotazioni li{display:flex;gap:.6rem;align-items:flex-start;font-size:.98rem;line-height:1.35}
+.dotazioni .i{color:var(--verde);width:19px;height:19px;margin-top:.05rem}
+
+/* Ristorante */
+.ristorante{background:var(--scuro);color:#fff}
+.ristorante h2 em{color:#E9C27A}
+.ristorante .intro{color:rgba(255,255,255,.8)}
+.ristorante-griglia{display:grid;gap:28px}
+.ristorante-grande{margin:0 calc(var(--lato) * -1)}
+.ristorante-grande img{width:100%;aspect-ratio:4/4.4;object-fit:cover}
+.ristorante-piccole{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:1.8rem}
+.ristorante-piccole figure{margin:0}
+.ristorante-piccole img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
+.ristorante-piccole figcaption{font-size:.88rem;color:rgba(255,255,255,.7);margin-top:.45rem}
+.colazione{margin-top:1.8rem;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.16)}
+.colazione h3{font-size:1.3rem}
+.colazione p{color:rgba(255,255,255,.8);margin-top:.4rem}
+
+/* Spazi */
+.spazi-griglia{list-style:none;margin:2.2rem calc(var(--lato) * -1) 0;padding:0 var(--lato) 6px;scroll-padding-inline:var(--lato);display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.spazi-griglia::-webkit-scrollbar{display:none}
+.spazi-griglia li{flex:0 0 80%;scroll-snap-align:start}
+.spazi-griglia figure{margin:0;height:100%;display:flex;flex-direction:column}
+.spazi-griglia img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:#e8ddd0}
+.spazi-griglia figcaption{font-size:.95rem;margin-top:.55rem;color:var(--grigio)}
+.suggerimento{font-size:.88rem;color:var(--grigio);margin-top:.8rem}
+
+/* Servizi */
+.servizi{background:var(--carta)}
+.servizi-griglia{list-style:none;margin:2.4rem 0 0;padding:0;display:grid;grid-template-columns:1fr;gap:0}
+.servizi-griglia li{display:grid;grid-template-columns:44px 1fr;gap:4px 14px;padding:18px 0;border-top:1px solid var(--linea)}
+.servizi-griglia .tondo{grid-row:span 2;width:44px;height:44px;border-radius:12px;background:var(--crema);color:var(--rosso);display:flex;align-items:center;justify-content:center}
+.servizi-griglia h3{font:500 1.12rem/1.25 var(--font)}
+.servizi-griglia p{color:var(--grigio);font-size:.98rem;line-height:1.45}
+
+/* Dove */
+.dove-griglia{display:grid;gap:36px}
+.elenco-distanze{list-style:none;margin:1.6rem 0 0;padding:0}
+.elenco-distanze li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-top:1px solid var(--linea)}
+.elenco-distanze li:last-child{border-bottom:1px solid var(--linea)}
+.elenco-distanze span{color:var(--grigio);white-space:nowrap;font-variant-numeric:tabular-nums}
+.sottotitolo{font-size:1.25rem;font-weight:500;margin-top:2.2rem}
+.nota{font-size:.88rem;color:var(--grigio);margin-top:.8rem}
+.mappa{aspect-ratio:4/3.4;background:#e8ddd0;border-radius:16px;overflow:hidden}
+.mappa iframe{width:100%;height:100%;border:0;display:block}
+.indirizzo{margin:1rem 0 1.1rem}
+
+/* Contatti */
+.contatti{background:var(--rosso);color:#fff;text-align:center}
+.contatti h2{max-width:16ch;margin:0 auto}
+.contatti h2 em{color:#E9C27A}
+.contatti p{color:rgba(255,255,255,.85);margin:1rem auto 2rem;max-width:46ch}
+.azioni{display:flex;flex-wrap:wrap;gap:10px}
+.contatti .azioni{justify-content:center}
+.contatti .btn-pieno{background:#fff;color:var(--rosso)}
+.contatti .btn-pieno:hover{background:var(--crema)}
+.contatti .btn-linea{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.75);color:#fff}
+.contatti .btn-linea:hover{background:#fff;color:var(--rosso)}
+.piede{background:var(--scuro);color:rgba(255,255,255,.72);font-size:.92rem;padding:36px 0 30px}
+.piede .nome{font:400 1.5rem/1 var(--serif);color:#fff;margin-bottom:1rem!important}
+.piede .nome span{font:.75rem/1 var(--font);letter-spacing:.12em;color:#E9C27A;margin-left:.5rem}
+.piede p{margin:.2rem 0}
+.piede a{color:#fff;text-decoration:none}
+.anteprima-nota{font-size:.8rem;opacity:.75;margin-top:1rem!important}
+
+/* Barra telefono */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1.4fr;gap:8px;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:var(--carta);border-top:1px solid var(--linea)}
+.barra a{display:flex;align-items:center;justify-content:center;gap:.5rem;min-height:50px;font-weight:500;text-decoration:none;border-radius:10px;box-shadow:inset 0 0 0 1.5px var(--rosso);color:var(--rosso)}
+.barra a.su{background:var(--rosso);color:#fff;box-shadow:none}
+
+@media (min-width:700px){
+  .campi{grid-template-columns:repeat(4,1fr)}
+  .breve ul{grid-template-columns:repeat(4,1fr)}
+  .camere-griglia{grid-template-columns:1fr 1fr}
+  .dotazioni{grid-template-columns:repeat(4,1fr)}
+  .servizi-griglia{grid-template-columns:1fr 1fr;column-gap:48px}
+  .spazi-griglia{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:auto;gap:14px;margin:2.4rem 0 0;padding:0;overflow:visible}
+  .spazi-griglia li:first-child{grid-column:span 2;grid-row:span 2}
+  .spazi-griglia li:first-child img{aspect-ratio:auto;flex:1;min-height:0;height:100%}
+  .suggerimento{display:none}
+  .freccia{display:flex}
+}
+@media (min-width:1000px){
+  body{padding-bottom:0}
+  .barra{display:none}
+  .testata .wrap{height:76px}
+  .logo .nome{font-size:1.7rem}
+  .testata nav{display:flex;gap:28px;font-size:.98rem;margin-right:12px}
+  .testata nav a{text-decoration:none;color:var(--grigio);padding:.4rem 0}
+  .testata nav a:hover{color:var(--rosso)}
+  .copertina-foto{aspect-ratio:auto;height:calc(92svh - 76px);min-height:560px;max-height:860px}
+  .copertina-foto img{object-position:50% 40%}
+  .copertina-testo{bottom:120px}
+  .prenota{margin-top:-64px}
+  .scheda{padding:24px 26px;display:grid;grid-template-columns:auto 1fr auto;align-items:end;gap:20px}
+  .scheda h2{margin:0 0 .7rem;max-width:9ch;font-size:1.3rem}
+  .scheda .btn{width:auto;margin-top:0;min-height:48px}
+  .scheda .aiuto,.scheda .errore{grid-column:1/-1;margin-top:-.4rem}
+  .ristorante-griglia{grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
+  .ristorante-grande{margin:0 0 0 calc((max(0px,(100vw - 1240px) / 2) + var(--lato)) * -1)}
+  .ristorante-grande img{aspect-ratio:auto;height:680px;border-radius:0 16px 16px 0}
+  .servizi-griglia{grid-template-columns:repeat(4,1fr);column-gap:36px}
+  .servizi-griglia li{grid-template-columns:1fr;gap:12px;padding:24px 0 0}
+  .servizi-griglia .tondo{grid-row:auto}
+  .dove-griglia{grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}
+  .mappa{aspect-ratio:auto;height:560px}
+}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+<style>
+.spa{background:var(--scuro);color:#fff}
+.spa h2 em{color:#E9C27A}
+.spa .intro{color:rgba(255,255,255,.82)}
+.spa-griglia{display:grid;gap:12px;margin-top:2.2rem;grid-template-columns:1fr 1fr}
+.spa-griglia figure{margin:0}
+.spa-griglia img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.spa-griglia figure.largo{grid-column:1/-1}
+.spa-griglia figure.largo img{aspect-ratio:16/10}
+.spa-griglia figcaption{font-size:.9rem;color:rgba(255,255,255,.72);margin-top:.45rem}
+.spa-lista{list-style:none;margin:1.8rem 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+.spa-lista li{display:flex;gap:.55rem;align-items:flex-start;font-size:.98rem;line-height:1.35;color:rgba(255,255,255,.9)}
+.spa-lista .i{color:#E9C27A;width:19px;height:19px;margin-top:.1rem}
+.camere-tre{display:grid;gap:22px;margin-top:2.4rem}
+.camera img{width:100%;aspect-ratio:3/2;object-fit:cover;background:#dfe7ea}
+.cucina{background:var(--crema)}
+.cucina-box{display:grid;gap:22px;margin-top:2rem}
+.cucina-box .card{background:var(--carta);border-radius:16px;padding:22px;box-shadow:var(--ombra)}
+.cucina-box h3{font-size:1.35rem}
+.cucina-box p{color:var(--grigio);margin-top:.4rem}
+@media (min-width:700px){.spa-griglia{grid-template-columns:repeat(3,1fr)}.spa-griglia figure.largo{grid-column:span 2;grid-row:span 2}.spa-griglia figure.largo img{aspect-ratio:auto;height:100%}.camere-tre{grid-template-columns:repeat(3,1fr)}.cucina-box{grid-template-columns:1fr 1fr}.spa-lista{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="17" rx="2"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.4A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+  <symbol id="i-sx" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-dx" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.5 4.5L19.5 7"/></symbol>
+  <symbol id="i-piatto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v7a2 2 0 0 0 2 2v9M9 3v7a2 2 0 0 1-2 2M7 3v6M17 21V3c-2.2 0-3.5 2.5-3.5 6.5S15 13 17 13"/></symbol>
+  <symbol id="i-tazza" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM16 10h1.5a2.5 2.5 0 0 1 0 5H16M8 2.5c-.6.9.6 1.6 0 2.5M12 2.5c-.6.9.6 1.6 0 2.5M3 22h14"/></symbol>
+  <symbol id="i-luna" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.8a15 15 0 0 1 20 0M5.2 12.4a10 10 0 0 1 13.6 0M8.5 15.9a5 5 0 0 1 7 0"/><circle cx="12" cy="19.3" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-fiocco" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 3.5l3 2.5 3-2.5M9 20.5l3-2.5 3 2.5"/></symbol>
+  <symbol id="i-famiglia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="5.5" r="2.2"/><circle cx="16.5" cy="5.5" r="2.2"/><circle cx="12" cy="12.6" r="1.7"/><path d="M3.5 21v-6.5A3.5 3.5 0 0 1 7 11h0a3.4 3.4 0 0 1 2.4 1M20.5 21v-6.5A3.5 3.5 0 0 0 17 11h0a3.4 3.4 0 0 0-2.4 1M9.5 21v-3a2.5 2.5 0 0 1 5 0v3"/></symbol>
+  <symbol id="i-lingua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h9M8.5 3v2M6 5c.6 3.2 2.6 5.6 5.5 7M11 5c-.6 3.4-3 6.4-6.5 8M13 21l4-9 4 9M14.4 18h5.2"/></symbol>
+  <symbol id="i-mappa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13.5L9 17.5l6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></symbol>
+</svg>
+
+<header class="testata">
+  <div class="wrap">
+    <a class="logo" href="#inizio" aria-label="Hotel Cavallotti e Giotto, tre stelle"><span class="nome">Cavallotti &amp; Giotto</span><span class="stelle" aria-hidden="true">&#9733;&#9733;&#9733;</span></a>
+    <nav aria-label="Sezioni"><a href="#spa" data-i18n="nav1">Spa</a><a href="#camere" data-i18n="nav2">Camere</a><a href="#servizi" data-i18n="nav3">Servizi</a><a href="#dove" data-i18n="nav4">Dove siamo</a></nav>
+    <button class="lingua" type="button" id="lingua" aria-label="Read in English">EN</button>
+    <a class="btn btn-pieno" href="#prenota" data-i18n="cta">Disponibilità</a>
+  </div>
+</header>
+
+<main id="inizio">
+  <section class="copertina" aria-labelledby="titolo">
+    <figure class="copertina-foto">
+      <img src="img/piscina.jpg" width="1500" height="1001" alt="La piscina interna della Giotto SPA con i lettini e il lucernario" fetchpriority="high" style="object-position:40% 50%">
+    </figure>
+    <div class="copertina-testo">
+      <div class="wrap">
+        <p class="occhiello" data-i18n="occhiello">Hotel tre stelle con spa a Montecatini Terme</p>
+        <h1 id="titolo" data-i18n="h1">La spa in hotel, <em>a due passi dalle terme</em></h1>
+      </div>
+    </div>
+  </section>
+
+  <div class="prenota" id="prenota">
+    <div class="wrap">
+      <form class="scheda" id="modulo" novalidate>
+        <h2 data-i18n="f-titolo">Chiedi la disponibilità</h2>
+        <div class="campi">
+          <div class="campo"><label for="arrivo" data-i18n="f-arrivo">Arrivo</label><input type="date" id="arrivo" name="arrivo" required></div>
+          <div class="campo"><label for="partenza" data-i18n="f-partenza">Partenza</label><input type="date" id="partenza" name="partenza" required></div>
+          <div class="campo"><label for="persone" data-i18n="f-persone">Persone</label><select id="persone" name="persone"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+          <div class="campo"><label for="stanze" data-i18n="f-camere">Camere</label><select id="stanze" name="stanze"><option selected>1</option><option>2</option><option>3</option><option>4</option></select></div>
+        </div>
+        <button class="btn btn-pieno" type="submit"><svg class="i" aria-hidden="true"><use href="#i-cal"/></svg><span data-i18n="f-invia">Chiedi disponibilità</span></button>
+        <p class="errore" id="errore" role="alert" hidden></p>
+        <p class="aiuto" data-i18n="f-aiuto">Si apre un&rsquo;email già pronta per l&rsquo;hotel. Preferisci parlare? Chiama lo <a href="tel:+390572770881">0572 770881</a>.</p>
+      </form>
+    </div>
+  </div>
+
+  <section class="breve" aria-label="In breve">
+    <div class="wrap">
+      <ul>
+        <li><b>32&deg;</b><span data-i18n="b1">l&rsquo;acqua della piscina della spa</span></li>
+        <li><b>230 m</b><span data-i18n="b2">dalle Terme Excelsior</span></li>
+        <li><b>40</b><span data-i18n="b3">camere con aria condizionata</span></li>
+        <li><b>8,9</b><span data-i18n="b4">il voto degli ospiti su Kayak</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="spa" id="spa" aria-labelledby="t-spa">
+    <div class="wrap">
+      <h2 id="t-spa" data-i18n="s-titolo">Giotto SPA, <em>il relax dentro l&rsquo;hotel</em></h2>
+      <p class="intro" data-i18n="s-intro">La piscina con l&rsquo;acqua a 32 gradi, i lettini subacquei e l&rsquo;idromassaggio. Poi la sauna a infrarossi, il bagno turco, la doccia emozionale e una tisana nella zona relax. Si prenota in hotel.</p>
+      <div class="spa-griglia">
+        <figure class="largo"><img src="img/idromassaggio.jpg" width="1500" height="1001" alt="La vasca idromassaggio della spa con le pareti di vetro" loading="lazy"><figcaption data-i18n="sp1">L&rsquo;idromassaggio</figcaption></figure>
+        <figure><img src="img/spa-cascata.jpg" width="1280" height="533" alt="La cascata d'acqua sulla piscina" loading="lazy"><figcaption data-i18n="sp2">La cascata</figcaption></figure>
+        <figure><img src="img/spa-luci.jpg" width="1280" height="542" alt="La piscina illuminata di blu" loading="lazy"><figcaption data-i18n="sp3">La piscina con le luci</figcaption></figure>
+        <figure><img src="img/doccia.jpg" width="1001" height="1500" alt="La doccia emozionale con le luci blu" loading="lazy"><figcaption data-i18n="sp4">La doccia emozionale</figcaption></figure>
+        <figure><img src="img/spa-sauna.jpg" width="1280" height="540" alt="La sauna con le luci viola" loading="lazy"><figcaption data-i18n="sp5">Sauna e bagno turco</figcaption></figure>
+        <figure><img src="img/spa-getti.jpg" width="1280" height="541" alt="I getti d'acqua della piscina" loading="lazy"><figcaption data-i18n="sp6">I getti d&rsquo;acqua</figcaption></figure>
+      </div>
+      <ul class="spa-lista">
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="sl1">Piscina coperta a 32&deg;</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="sl2">Lettini subacquei</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="sl3">Idromassaggio</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="sl4">Sauna a infrarossi</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="sl5">Bagno turco</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="sl6">Doccia emozionale</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="camere" id="camere" aria-labelledby="t-camere">
+    <div class="wrap">
+      <h2 id="t-camere" data-i18n="c-titolo">Camere comode <em>per riposare bene</em></h2>
+      <p class="intro" data-i18n="c-intro">Bagno privato, aria condizionata, TV a schermo piatto, minibar e cassaforte. Singole, doppie e triple.</p>
+      <div class="camere-tre">
+        <article class="camera"><img src="img/camera-singola.jpg" width="1024" height="683" alt="Camera singola" loading="lazy"><div class="camera-testo"><h3 data-i18n="c1t">Singola</h3><p data-i18n="c1">Per chi viaggia da solo, per lavoro o per le terme.</p></div></article>
+        <article class="camera"><img src="img/camera-doppia.jpg" width="1024" height="683" alt="Camera doppia con due letti" loading="lazy"><div class="camera-testo"><h3 data-i18n="c2t">Doppia e matrimoniale</h3><p data-i18n="c2">Con letto matrimoniale o due letti singoli.</p></div></article>
+        <article class="camera"><img src="img/camera-tripla.jpg" width="800" height="532" alt="Camera tripla deluxe" loading="lazy"><div class="camera-testo"><h3 data-i18n="c3t">Tripla deluxe</h3><p data-i18n="c3">Più spazio, per una famiglia o per gli amici.</p></div></article>
+      </div>
+      <ul class="dotazioni">
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="d1">Bagno privato</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="d2">Aria condizionata</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="d3">TV a schermo piatto</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="d4">Minibar</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="d5">Cassaforte</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="d6">Asciugacapelli</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="d7">Wi-Fi gratuito</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-ok"/></svg><span data-i18n="d8">Riscaldamento</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cucina" aria-labelledby="t-cucina">
+    <div class="wrap">
+      <h2 id="t-cucina" data-i18n="k-titolo2">A tavola <em>e al bar</em></h2>
+      <div class="cucina-box">
+        <div class="card"><h3 data-i18n="k1t">La colazione</h3><p data-i18n="k1">Ogni mattina dolci fatti in casa, salumi, formaggi, yogurt, marmellate, succhi di frutta e bevande calde.</p></div>
+        <div class="card"><h3 data-i18n="k2t">Ristorante e cocktail bar</h3><p data-i18n="k2">La cucina tipica italiana a cena, e un drink al bar dopo la spa.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="servizi" id="servizi" aria-labelledby="t-servizi">
+    <div class="wrap">
+      <h2 id="t-servizi" data-i18n="v-titolo">Tutto quello <em>che serve</em></h2>
+      <ul class="servizi-griglia">
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-fiocco"/></svg></span><h3 data-i18n="v1t">Giotto SPA</h3><p data-i18n="v1">Piscina, idromassaggio, sauna e bagno turco, su prenotazione.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-famiglia"/></svg></span><h3 data-i18n="v2t">Palestra</h3><p data-i18n="v2">Cardio e fitness, dentro l&rsquo;hotel.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-piatto"/></svg></span><h3 data-i18n="v3t">Ristorante</h3><p data-i18n="v3">Cucina tipica italiana.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-tazza"/></svg></span><h3 data-i18n="v4t">Colazione</h3><p data-i18n="v4">Con i dolci fatti in casa.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-wifi"/></svg></span><h3 data-i18n="v5t">Wi-Fi gratuito</h3><p data-i18n="v5">In tutto l&rsquo;hotel.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-mappa"/></svg></span><h3 data-i18n="v6t">Parcheggio</h3><p data-i18n="v6">Chiedilo quando prenoti.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-luna"/></svg></span><h3 data-i18n="v7t">Animali ammessi</h3><p data-i18n="v7">Il tuo cane è il benvenuto.</p></li>
+        <li><span class="tondo"><svg class="i" aria-hidden="true"><use href="#i-lingua"/></svg></span><h3 data-i18n="v8t">Sala riunioni</h3><p data-i18n="v8">Per chi viene per lavoro o in gruppo.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="dove" id="dove" aria-labelledby="t-dove">
+    <div class="wrap dove-griglia">
+      <div>
+        <h2 id="t-dove" data-i18n="w-titolo">In centro, <em>a pochi passi dalle terme</em></h2>
+        <ul class="elenco-distanze">
+          <li><b>Terme Excelsior</b><span>230 m &middot; 3 min</span></li>
+          <li><b>Piazza del Popolo</b><span>310 m &middot; 4 min</span></li>
+          <li><b>Terme Tettuccio</b><span>570 m &middot; 7 min</span></li>
+          <li><b data-i18n="w1">Funicolare per Montecatini Alto</b><span>1 km &middot; 13 min</span></li>
+        </ul>
+        <p class="nota" data-i18n="w-nota">Distanze in linea d&rsquo;aria dall&rsquo;hotel, tempi a piedi indicativi.</p>
+        <p class="sottotitolo" data-i18n="w-citta">Le città d&rsquo;arte vicine</p>
+        <ul class="elenco-distanze">
+          <li><b>Pistoia</b><span>12 km</span></li>
+          <li><b>Lucca</b><span>22 km</span></li>
+          <li><b>Pisa</b><span>35 km</span></li>
+          <li><b data-i18n="w3">Firenze</b><span>40 km</span></li>
+        </ul>
+        <p class="nota" data-i18n="w-treno">Distanze in linea d&rsquo;aria, circa. Dalla stazione degli autobus di Via Cavallotti partono i collegamenti per Firenze e Pisa.</p>
+      </div>
+      <div>
+        <div class="mappa"><iframe title="Mappa: Hotel Cavallotti e Giotto, Via Cavallotti 103, Montecatini Terme" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=43.8836888,10.7749372&amp;z=16&amp;hl=it&amp;output=embed"></iframe></div>
+        <p class="indirizzo"><b>Via Felice Cavallotti 103</b>, 51016 Montecatini Terme (PT)</p>
+        <a class="btn btn-linea" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.8836888,10.7749372" target="_blank" rel="noopener" data-i18n="w-ind">Indicazioni stradali</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contatti" aria-labelledby="t-cont">
+    <div class="wrap">
+      <h2 id="t-cont" data-i18n="k-titolo">Ti aspettiamo <em>a Montecatini</em></h2>
+      <p data-i18n="k-testo">Scrivici le date e quante persone siete, oppure chiamaci: ti rispondiamo con la camera giusta e l&rsquo;orario per la spa.</p>
+      <div class="azioni">
+        <a class="btn btn-pieno" href="#prenota"><svg class="i" aria-hidden="true"><use href="#i-cal"/></svg><span data-i18n="k-btn">Chiedi disponibilità</span></a>
+        <a class="btn btn-linea" href="tel:+390572770881"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>0572 770881</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="piede">
+  <div class="wrap">
+    <p class="nome">Hotel Cavallotti &amp; Giotto<span aria-label="tre stelle">&#9733;&#9733;&#9733;</span></p>
+    <p>Via Felice Cavallotti 103, 51016 Montecatini Terme (PT)</p>
+    <p><a href="tel:+390572770881">0572 770881</a> &middot; <a href="mailto:info@hotelcavallotti.it">info@hotelcavallotti.it</a></p>
+    <p class="anteprima-nota" data-i18n="anteprima">Anteprima preparata da Veniello Studio per l&rsquo;Hotel Cavallotti &amp; Giotto</p>
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a href="tel:+390572770881"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg><span data-i18n="barra1">Chiama</span></a>
+  <a class="su" href="#prenota"><svg class="i" aria-hidden="true"><use href="#i-cal"/></svg><span data-i18n="cta">Disponibilità</span></a>
+</nav>
+
+<script>
+/* Lingua: italiano (testo della pagina) e inglese */
+var EN = {
+  nav1: 'Spa', nav2: 'Rooms', nav3: 'Services', nav4: 'Location', cta: 'Availability',
+  occhiello: 'Three-star hotel with spa in Montecatini Terme',
+  h1: 'A spa inside the hotel, <em>steps from the thermal baths</em>',
+  'f-titolo': 'Check availability', 'f-arrivo': 'Check-in', 'f-partenza': 'Check-out', 'f-persone': 'Guests', 'f-camere': 'Rooms', 'f-invia': 'Check availability',
+  'f-aiuto': 'A ready-made email to the hotel will open. Prefer to talk? Call <a href="tel:+390572770881">+39 0572 770881</a>.',
+  b1: 'the water in the spa pool', b2: 'from Terme Excelsior', b3: 'air-conditioned rooms', b4: 'guest rating on Kayak',
+  's-titolo': 'Giotto SPA, <em>relax inside the hotel</em>',
+  's-intro': 'The pool with water at 32 degrees, underwater loungers and whirlpool. Then the infrared sauna, the Turkish bath, the emotional shower and a herbal tea in the relaxation area. Book it at the hotel.',
+  sp1: 'The whirlpool', sp2: 'The waterfall', sp3: 'The pool with lights', sp4: 'The emotional shower', sp5: 'Sauna and Turkish bath', sp6: 'The water jets',
+  sl1: 'Indoor pool at 32°', sl2: 'Underwater loungers', sl3: 'Whirlpool', sl4: 'Infrared sauna', sl5: 'Turkish bath', sl6: 'Emotional shower',
+  'c-titolo': 'Comfortable rooms <em>for a good rest</em>', 'c-intro': 'Private bathroom, air conditioning, flat-screen TV, minibar and safe. Single, double and triple rooms.',
+  c1t: 'Single', c1: 'For solo travellers, on business or for the spas.', c2t: 'Double and twin', c2: 'With a double bed or two single beds.', c3t: 'Deluxe triple', c3: 'More space, for a family or friends.',
+  d1: 'Private bathroom', d2: 'Air conditioning', d3: 'Flat-screen TV', d4: 'Minibar', d5: 'Safe', d6: 'Hairdryer', d7: 'Free Wi-Fi', d8: 'Heating',
+  'k-titolo2': 'At the table <em>and at the bar</em>', k1t: 'Breakfast', k1: 'Every morning homemade cakes, cured meats, cheeses, yogurt, jams, fruit juices and hot drinks.', k2t: 'Restaurant and cocktail bar', k2: 'Italian cooking at dinner, and a drink at the bar after the spa.',
+  'v-titolo': 'Everything <em>you need</em>',
+  v1t: 'Giotto SPA', v1: 'Pool, whirlpool, sauna and Turkish bath, on booking.', v2t: 'Gym', v2: 'Cardio and fitness, inside the hotel.', v3t: 'Restaurant', v3: 'Typical Italian cooking.', v4t: 'Breakfast', v4: 'With homemade cakes.',
+  v5t: 'Free Wi-Fi', v5: 'Throughout the hotel.', v6t: 'Parking', v6: 'Ask when you book.', v7t: 'Pets welcome', v7: 'Your dog is welcome.', v8t: 'Meeting room', v8: 'For business trips and groups.',
+  'w-titolo': 'In the centre, <em>steps from the spas</em>', w1: 'Funicular to Montecatini Alto',
+  'w-nota': 'Straight-line distances from the hotel, walking times are approximate.', 'w-citta': 'Nearby art cities', w3: 'Florence',
+  'w-treno': 'Approximate straight-line distances. Buses to Florence and Pisa leave from the Via Cavallotti bus station.', 'w-ind': 'Directions',
+  'k-titolo': 'See you <em>in Montecatini</em>', 'k-testo': 'Send us your dates and how many you are, or give us a call: we will reply with the right room and a time for the spa.', 'k-btn': 'Check availability',
+  anteprima: 'Preview prepared by Veniello Studio for Hotel Cavallotti & Giotto', barra1: 'Call',
+  titolo: 'Hotel Cavallotti & Giotto · Three-star hotel with spa in Montecatini Terme',
+  errDate: 'Choose your check-in and check-out dates.', errOrdine: 'Check-out must be after check-in.'
+};
+var IT = { titolo: document.title, errDate: 'Scegli le date di arrivo e di partenza.', errOrdine: 'La partenza deve essere dopo l’arrivo.' };
+document.querySelectorAll('[data-i18n]').forEach(function (el) { var k = el.getAttribute('data-i18n'); if (!(k in IT)) IT[k] = el.innerHTML; });
+var lingua = 'it';
+function metti(l) {
+  lingua = l; var D = l === 'en' ? EN : IT;
+  document.querySelectorAll('[data-i18n]').forEach(function (el) { var k = el.getAttribute('data-i18n'); if (D[k] != null) el.innerHTML = D[k]; });
+  document.documentElement.lang = l; document.title = D.titolo;
+  var b = document.getElementById('lingua'); b.textContent = l === 'en' ? 'IT' : 'EN'; b.setAttribute('aria-label', l === 'en' ? 'Leggi in italiano' : 'Read in English');
+  document.getElementById('errore').hidden = true;
+  try { localStorage.setItem('cavallotti-lingua', l); } catch (e) {}
+}
+document.getElementById('lingua').addEventListener('click', function () { metti(lingua === 'it' ? 'en' : 'it'); });
+try { if (localStorage.getItem('cavallotti-lingua') === 'en') metti('en'); } catch (e) {}
+
+/* Richiesta di disponibilità: prepara il messaggio WhatsApp per l'hotel */
+(function () {
+  var oggi = new Date(); var iso = function (d) { return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); };
+  var a = document.getElementById('arrivo'), p = document.getElementById('partenza'), err = document.getElementById('errore');
+  a.min = iso(oggi); p.min = iso(oggi);
+  a.addEventListener('change', function () {
+    if (!a.value) return; var d = new Date(a.value + 'T12:00:00'); d.setDate(d.getDate() + 1); p.min = iso(d);
+    if (!p.value || p.value <= a.value) p.value = iso(d);
+  });
+  var it = function (v) { var x = v.split('-'); return x[2] + '/' + x[1] + '/' + x[0]; };
+  document.getElementById('modulo').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var D = lingua === 'en' ? EN : IT;
+    if (!a.value || !p.value) { err.textContent = D.errDate; err.hidden = false; (a.value ? p : a).focus(); return; }
+    if (p.value <= a.value) { err.textContent = D.errOrdine; err.hidden = false; p.focus(); return; }
+    err.hidden = true;
+    var n = document.getElementById('persone').value, c = document.getElementById('stanze').value, txt;
+    if (lingua === 'en') txt = 'Hello, I would like to know if you have availability.\nCheck-in: ' + it(a.value) + '\nCheck-out: ' + it(p.value) + '\nGuests: ' + n + '\nRooms: ' + c + '\nThank you!';
+    else txt = 'Buongiorno, vorrei sapere se avete disponibilità.\nArrivo: ' + it(a.value) + '\nPartenza: ' + it(p.value) + '\nPersone: ' + n + '\nCamere: ' + c + '\nGrazie!';
+    var ogg = lingua === 'en' ? 'Availability request ' + it(a.value) + ' - ' + it(p.value) : 'Richiesta di disponibilità dal ' + it(a.value) + ' al ' + it(p.value);
+    window.location.href = 'mailto:info@hotelcavallotti.it?subject=' + encodeURIComponent(ogg) + '&body=' + encodeURIComponent(txt);
+  });
+})();
+
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script>
+/* Movimento leggero: il titolo entra e la foto di copertina si allontana scorrendo. Spento con "Riduci movimento". */
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!window.gsap || !window.ScrollTrigger) return;
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.from('.copertina-testo .wrap > *', { y: 26, autoAlpha: 0, duration: 0.9, ease: 'power3.out', stagger: 0.1, delay: 0.15 });
+  gsap.from('.scheda', { y: 30, autoAlpha: 0, duration: 0.9, ease: 'power3.out', delay: 0.35 });
+  gsap.fromTo('.copertina-foto img', { scale: 1.1 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: '.copertina', start: 'top top', end: 'bottom top', scrub: true } });
+});
+</script>
+</body>
+</html>
