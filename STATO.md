@@ -71,3 +71,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-19 — Modificata l'anteprima di Pasticceria Sweet by Daniele Grieco (Montecatini Terme): messo il logo vero preso dalle bustine di zucchero. Issue #20.
 - 2026-10-19 — Modificata l'anteprima di Pasticceria Sweet by Daniele Grieco (Montecatini Terme): tenuta solo la scritta del logo, senza cornice. Issue #20.
 - 2026-10-21 — Pubblicata l'anteprima di Elena Private Jet (noleggio e vendita di jet ed elicotteri privati, `elena-private-jet-66e707`), fatta dal Claude di Niccolò, stato "in attesa": da mandare. Foto e dati degli aerei presi dalle sue slide su Instagram.
+- 2026-10-21 — Pubblicata l'anteprima di Aloe Center di Alfonso Bottiglieri (Roma, caffè all'Aloe, `aloe-center-11a91f`), fatta dal Claude di Niccolò su richiesta del direttore commerciale, stato "in attesa". Foto e testi presi dal loro sito attuale (aloecentershop.com, Jimdo).

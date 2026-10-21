@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Aloe Center · L'unico caffè all'Aloe al mondo</title>
+<meta name="description" content="Caffè Plus Café: miscela 100% Arabica con Aloe Arborescens biologica coltivata a Roma. Aloe Center di Alfonso Bottiglieri, dal 2000.">
+<meta property="og:title" content="Aloe Center · L'unico caffè all'Aloe al mondo">
+<meta property="og:description" content="Anteprima del nuovo sito preparata da Veniello Studio.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="img/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --nero:#000;--nero2:#0A0C09;--nero3:#141811;
+  --verde:#A9C25C;--verde-c:#C9DB8E;--verde-s:#1D5B37;--verde-ss:#123A23;
+  --crema:#F3EEE4;--carta:#FAF7F0;--testo:#1A1C17;--grigio:#66665C;
+  --su-scuro:rgba(243,238,228,.7);
+  --serif:"Playfair Display",Georgia,serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gut:clamp(20px,5vw,64px);--max:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+html.lenis,html.lenis body{height:auto}
+body{background:var(--nero);color:var(--crema);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+em{font-style:italic;color:var(--verde)}
+.chiaro em{color:var(--verde-s)}
+.k{display:inline-block;font:700 11.5px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--verde)}
+.chiaro .k{color:var(--verde-s)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.015em;line-height:1.04}
+h2{font-size:clamp(36px,6vw,68px)}
+h1 em,h2 em{font-weight:400}
+.intro{max-width:46ch;color:var(--su-scuro);font-size:17px;margin-top:18px}
+.chiaro .intro{color:var(--grigio)}
+section{position:relative}
+.chiaro{background:var(--crema);color:var(--testo)}
+.pad{padding:clamp(88px,13vw,160px) 0}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:700 15px/1 var(--sans);cursor:pointer;border:0;transition:background-color .25s,color .25s,border-color .25s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-v{background:var(--verde);color:#0E120B}
+.btn-v:hover{background:var(--verde-c)}
+.btn-f{border:1px solid rgba(243,238,228,.36);color:var(--crema);background:transparent}
+.btn-f:hover{border-color:var(--verde);color:var(--verde-c)}
+.chiaro .btn-v{background:var(--verde-s);color:#fff}
+.chiaro .btn-v:hover{background:var(--verde-ss)}
+
+/* testata */
+.testata{position:fixed;inset:0 0 auto 0;z-index:40;transition:background-color .35s,border-color .35s;border-bottom:1px solid transparent}
+.testata.piena{background:rgba(0,0,0,.94);border-color:rgba(169,194,92,.16)}
+.testata .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.marchio{display:flex;align-items:center;gap:12px;min-height:44px}
+.marchio img{width:42px;height:42px}
+.marchio b{font:600 19px/1 var(--serif);letter-spacing:.01em}
+.marchio b span{display:block;font:600 9.5px/1.4 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--su-scuro);margin-top:3px}
+.voci{display:none;gap:30px;font-size:14px;color:var(--su-scuro)}
+.voci a:hover{color:var(--verde-c)}
+.testata .btn{min-height:44px;padding:0 20px;font-size:14px}
+@media (min-width:980px){.voci{display:flex}}
+
+/* scena d'apertura: il barattolo gira mentre scorri */
+.scena{height:330svh}
+.palco{position:sticky;top:0;height:100svh;overflow:hidden;display:grid}
+.palco .luce{position:absolute;inset:0;background:radial-gradient(60% 55% at 70% 52%,rgba(169,194,92,.16),rgba(169,194,92,0) 70%)}
+.vaso{position:absolute;right:max(calc(var(--gut) + 3vw),calc((100vw - var(--max))/2 + var(--gut) + 40px));top:52%;width:min(30vw,400px);aspect-ratio:900/1185;translate:0 -50%;will-change:transform}
+.vaso img{width:100%;height:100%;object-fit:contain}
+.sigillo{position:absolute;inset:-6% -20%;pointer-events:none;width:140%;height:auto;aspect-ratio:1/1;left:-20%;top:50%;translate:0 -50%}
+.sigillo circle{fill:none;stroke-width:1.2}
+.sigillo .b{stroke:rgba(169,194,92,.18)}
+.sigillo .f{stroke:var(--verde);stroke-linecap:round}
+.frasi{position:relative;z-index:2;align-self:center;width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.frase-s{max-width:min(600px,50vw);transition:opacity .6s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1)}
+.frase-s+.frase-s{position:absolute;top:50%;left:var(--gut);translate:0 -50%;opacity:0;transform:translateY(18px);pointer-events:none}
+.frase-s.via{opacity:0;transform:translateY(-18px);pointer-events:none}
+.frase-s.on{opacity:1;transform:none;pointer-events:auto}
+.frase-s h1,.frase-s h2{font-size:clamp(46px,6.2vw,88px);margin-top:18px}
+.frase-s p{font-size:clamp(16.5px,1.6vw,19px);color:var(--su-scuro);margin-top:20px;max-width:40ch}
+.frase-s .azioni{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.contatore{position:absolute;left:var(--gut);bottom:28px;z-index:2;font:600 12px/1 var(--sans);letter-spacing:.2em;color:var(--su-scuro);display:flex;align-items:center;gap:12px}
+.contatore i{display:block;width:90px;height:1px;background:rgba(243,238,228,.2);position:relative;overflow:hidden}
+.contatore i b{position:absolute;inset:0;background:var(--verde);transform-origin:left;transform:scaleX(0)}
+@media (min-width:1300px){.contatore{left:calc((100vw - var(--max))/2 + var(--gut))}}
+@media (max-width:820px){
+  .vaso{right:50%;translate:50% 0;top:96px;width:auto;height:40svh}
+  .palco .luce{background:radial-gradient(70% 40% at 50% 30%,rgba(169,194,92,.18),rgba(169,194,92,0) 70%)}
+  .frasi{align-self:end;padding-bottom:70px}
+  .frase-s{max-width:none}
+  .frase-s+.frase-s{top:auto;bottom:70px;translate:none;right:var(--gut)}
+  .frase-s h1,.frase-s h2{font-size:clamp(40px,11vw,56px);margin-top:12px}
+  .frase-s p{margin-top:12px}
+  .frase-s .azioni{margin-top:20px}
+}
+html.fermo .scena{height:auto}
+html.fermo .palco{position:relative;height:auto;min-height:100svh;padding:110px 0 60px}
+html.fermo .frase-s{position:relative!important;opacity:1!important;transform:none!important;top:auto!important;bottom:auto!important;left:auto!important;translate:none!important;pointer-events:auto!important;margin-bottom:56px}
+html.fermo .vaso{position:relative;right:auto;top:auto;translate:none;margin:0 auto 40px;height:auto;width:min(70vw,420px)}
+html.fermo .contatore,html.fermo .sigillo .f{display:none}
+@media (min-width:821px){html.fermo .palco{grid-template-columns:1fr 1fr;align-items:center}html.fermo .vaso{order:2}}
+
+/* frase che si accende */
+.frase{font:500 clamp(32px,5.4vw,64px)/1.14 var(--serif);letter-spacing:-.01em;max-width:21ch}
+.frase .p{opacity:.15}
+html.fermo .frase .p{opacity:1}
+
+/* prodotti */
+.prodotti{background:var(--nero)}
+.testa-sez{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px}
+.frecce{display:none;gap:10px}
+.frecce button{width:52px;height:52px;border-radius:50%;border:1px solid rgba(243,238,228,.28);background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .25s,color .25s}
+.frecce button:hover{border-color:var(--verde);color:var(--verde-c)}
+.frecce svg{width:20px;height:20px}
+@media (min-width:820px){.frecce{display:flex}}
+.binario{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:46px var(--gut) 8px;max-width:var(--max);margin:0 auto;scrollbar-width:none;overscroll-behavior-x:contain}
+.binario::-webkit-scrollbar{display:none}
+.prod{flex:none;width:min(78vw,340px);scroll-snap-align:start;background:var(--nero3);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.prod .img{aspect-ratio:1/1;background:#000;overflow:hidden}
+.prod .img img{width:100%;height:100%;object-fit:cover}
+.prod .corpo{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.prod .tipo{font:700 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--verde)}
+.prod h3{font-size:27px;margin-top:10px;line-height:1.1}
+.prod p{color:var(--su-scuro);font-size:15px;margin-top:8px;line-height:1.5}
+.prod .btn{margin-top:auto;align-self:flex-start;min-height:46px;padding:0 20px;font-size:14px}
+.prod .spazio{height:20px}
+.scorri-hint{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--su-scuro);margin-top:18px}
+.scorri-hint svg{width:16px;height:16px}
+@media (min-width:820px){.scorri-hint{display:none}}
+.pregi{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:56px;border-top:1px solid rgba(243,238,228,.14);padding-top:28px}
+.pregi b{display:block;font:500 26px/1.1 var(--serif)}
+.pregi span{display:block;color:var(--su-scuro);font-size:14px;margin-top:6px}
+@media (min-width:820px){.pregi{grid-template-columns:repeat(4,1fr)}}
+
+/* piantagione */
+.pianta-foto{margin-top:clamp(48px,7vw,80px);border-radius:22px;overflow:hidden;aspect-ratio:16/9;position:relative}
+.pianta-foto img{width:100%;height:100%;object-fit:cover;will-change:transform}
+.numeri{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+.numeri b{display:block;font:500 clamp(40px,6vw,64px)/1 var(--serif);color:var(--verde-s)}
+.numeri span{display:block;color:var(--grigio);font-size:15px;margin-top:8px;max-width:22ch}
+.numeri>div{border-top:1px solid rgba(26,28,23,.14);padding-top:20px}
+@media (min-width:900px){.numeri{grid-template-columns:repeat(4,1fr)}}
+.mini-foto{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:40px}
+.mini-foto img{border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%}
+@media (max-width:899px){.pianta-foto{aspect-ratio:4/5}}
+
+/* fondatore */
+.fondatore{background:var(--nero2)}
+.f-griglia{display:grid;gap:48px;align-items:center}
+.f-foto{position:relative;max-width:520px}
+.f-foto .grande{border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:#111}
+.f-foto .grande img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.f-foto .piccola{position:absolute;right:max(-7%,-20px);bottom:-8%;width:44%;border-radius:12px;overflow:hidden;border:6px solid var(--nero2);aspect-ratio:4/5}
+.f-foto .piccola img{width:100%;height:100%;object-fit:cover}
+.fondatore .ruolo{font:400 italic 25px/1.25 var(--serif);color:var(--verde);margin-top:12px}
+.fondatore p.t{color:var(--su-scuro);margin-top:20px;max-width:46ch;font-size:17px}
+.anni{display:flex;gap:36px;margin-top:34px}
+.anni b{display:block;font:500 44px/1 var(--serif)}
+.anni span{display:block;font-size:13px;color:var(--su-scuro);margin-top:6px}
+@media (max-width:899px){.f-foto{margin-right:22px}}
+@media (min-width:900px){.f-griglia{grid-template-columns:1fr 1fr;gap:96px}}
+
+/* premi */
+.premi{background:var(--verde-ss)}
+.premi-griglia{display:grid;gap:22px;margin-top:clamp(48px,7vw,80px)}
+.premio{background:rgba(0,0,0,.25);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.premio .img{aspect-ratio:5/4;overflow:hidden;background:#0b2416}
+.premio .img img{width:100%;height:100%;object-fit:cover}
+.premio .img.bianco{background:#fff}
+.premio .img.bianco img{object-fit:contain;padding:12%}
+.premio .corpo{padding:22px 22px 26px}
+.premio .anno{font:700 11px/1 var(--sans);letter-spacing:.2em;color:var(--verde-c)}
+.premio h3{font-size:26px;margin-top:10px;line-height:1.12}
+.premio p{color:rgba(243,238,228,.72);font-size:15px;margin-top:8px}
+@media (min-width:900px){.premi-griglia{grid-template-columns:repeat(3,1fr)}}
+
+/* recensioni */
+.voci-c{display:grid;gap:44px;margin-top:clamp(48px,7vw,80px)}
+.voci-c blockquote{font:400 italic clamp(22px,2.4vw,27px)/1.38 var(--serif);border-top:1px solid rgba(243,238,228,.16);padding-top:26px}
+.voci-c cite{display:block;font:700 12px/1 var(--sans);font-style:normal;letter-spacing:.18em;text-transform:uppercase;color:var(--verde);margin-top:18px}
+@media (min-width:900px){.voci-c{grid-template-columns:repeat(3,1fr);gap:48px}}
+
+/* dove trovarci */
+.dove-griglia{display:grid;gap:48px;margin-top:clamp(48px,7vw,80px)}
+.riv{list-style:none}
+.riv li{display:grid;grid-template-columns:40px 1fr;gap:4px 16px;padding:20px 0;border-top:1px solid rgba(26,28,23,.14)}
+.riv li:last-child{border-bottom:1px solid rgba(26,28,23,.14)}
+.riv .n{font:500 26px/1 var(--serif);color:var(--verde-s);grid-row:span 2}
+.riv b{font:600 18px/1.3 var(--sans)}
+.riv span{color:var(--grigio);font-size:15px}
+.evento{margin-top:36px;background:var(--carta);border-radius:18px;padding:24px 24px 26px}
+.evento .k{margin-bottom:10px}
+.evento h3{font-size:26px}
+.evento p{color:var(--grigio);margin-top:6px}
+.dove-foto{border-radius:20px;overflow:hidden;aspect-ratio:2/3;max-height:760px}
+.dove-foto img{width:100%;height:100%;object-fit:cover}
+@media (min-width:900px){.dove-griglia{grid-template-columns:1.2fr .8fr;gap:80px;align-items:start}}
+
+/* contatti */
+.contatti{background:var(--nero)}
+.c-griglia{display:grid;gap:44px;margin-top:clamp(48px,7vw,72px)}
+.c-voci>a{display:flex;align-items:center;gap:16px;padding:18px 0;border-top:1px solid rgba(243,238,228,.14);min-height:60px}
+.c-voci>a:last-of-type{border-bottom:1px solid rgba(243,238,228,.14)}
+.c-voci svg{width:22px;height:22px;color:var(--verde);flex:none}
+.c-voci>a>div{min-width:0}
+.c-voci b{display:block;font:500 clamp(18px,5vw,22px)/1.15 var(--serif);overflow-wrap:anywhere}
+.c-voci span{display:block;font-size:13px;color:var(--su-scuro)}
+.social{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.social a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border-radius:999px;border:1px solid rgba(243,238,228,.24);font-size:14px;font-weight:600}
+.social a:hover{border-color:var(--verde);color:var(--verde-c)}
+.social svg{width:18px;height:18px}
+@media (min-width:900px){.c-griglia{grid-template-columns:1fr 1fr;gap:80px}}
+
+.piede{background:#050605;padding:52px 0 calc(110px + env(safe-area-inset-bottom));color:var(--su-scuro);font-size:14px}
+.piede .wrap{display:grid;gap:18px}
+.piede img{width:56px;height:56px}
+.piede .anteprima-nota{font-size:12.5px;opacity:.7}
+@media (min-width:820px){.piede{padding-bottom:52px}}
+
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:45;display:grid;grid-template-columns:1fr 1.3fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(0,0,0,.96);border-top:1px solid rgba(169,194,92,.2);transform:translateY(110%);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.barra.vista{transform:none}
+.barra .btn{min-height:50px;padding:0 14px}
+@media (min-width:820px){.barra{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-freccia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-indietro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3.2l1.6 4-2 1.3a11 11 0 0 0 6.9 6.9l1.3-2 4 1.6V19a1.6 1.6 0 0 1-1.6 1.6A15.6 15.6 0 0 1 3.4 5.6 1.6 1.6 0 0 1 5 4z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.8 2.2 4.6 5 5"/></symbol>
+</svg>
+
+<header class="testata" id="testata">
+  <div class="wrap">
+    <a class="marchio" href="#inizio" aria-label="Aloe Center, torna all'inizio"><img src="img/logo.png" width="240" height="239" alt=""><b>Aloe Center<span>Roma · dal 2000</span></b></a>
+    <nav class="voci" aria-label="Sezioni"><a href="#prodotti">I caffè</a><a href="#piantagione">La piantagione</a><a href="#fondatore">Il fondatore</a><a href="#dove">Dove trovarci</a></nav>
+    <a class="btn btn-v" href="#prodotti">Acquista</a>
+  </div>
+</header>
+
+<main>
+<section class="scena" id="inizio" aria-label="L'unico caffè all'Aloe al mondo">
+  <div class="palco" id="palco">
+    <div class="luce" aria-hidden="true"></div>
+    <div class="vaso" id="vaso">
+      <svg class="sigillo" viewBox="0 0 100 100" aria-hidden="true"><circle class="b" cx="50" cy="50" r="48"/><circle class="f" id="anello" cx="50" cy="50" r="48" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" transform="rotate(-90 50 50)"/></svg>
+      <img src="img/vaso.webp" width="900" height="1185" alt="Barattolo di Caffè all'Aloe, Caffè Plus Café" fetchpriority="high">
+    </div>
+    <div class="frasi">
+      <div class="frase-s on" data-i="0">
+        <span class="k">Caffè Plus Café · Original</span>
+        <h1>L'unico caffè <em>all'Aloe</em> al mondo.</h1>
+        <p>Miscela 100% Arabica e Aloe Arborescens biologica, coltivata da noi a Roma.</p>
+        <div class="azioni"><a class="btn btn-v" href="#prodotti">Scopri i caffè<svg><use href="#i-freccia"/></svg></a><a class="btn btn-f" href="#piantagione">La nostra storia</a></div>
+      </div>
+      <div class="frase-s" data-i="1">
+        <span class="k">Il gusto</span>
+        <h2>Lo stesso caffè, <em>più leggero.</em></h2>
+        <p>Tutto l'aroma e la corposità dell'Arabica, con l'Aloe che lo rende più delicato. Non un'alternativa: il caffè che ami.</p>
+      </div>
+      <div class="frase-s" data-i="2">
+        <span class="k">Premio speciale 2025</span>
+        <h2>Premiato per <em>innovazione e unicità.</em></h2>
+        <p>Ai Lazio Food Awards 2025 il premio speciale è andato all'Aloe Center e al suo caffè all'Aloe.</p>
+      </div>
+    </div>
+    <div class="contatore" aria-hidden="true"><span id="num">01</span><i><b id="barra-c"></b></i><span>03</span></div>
+  </div>
+</section>
+
+<section class="chiaro pad" id="standard">
+  <div class="wrap">
+    <span class="k">Il caffè all'Aloe</span>
+    <p class="frase" id="frase" style="margin-top:22px">Non un'alternativa. Non un compromesso. Un nuovo standard per chi ama il caffè e vuole viverlo al meglio.</p>
+  </div>
+</section>
+
+<section class="prodotti pad" id="prodotti">
+  <div class="wrap testa-sez">
+    <div>
+      <span class="k">I nostri prodotti</span>
+      <h2 style="margin-top:16px">Scegli il tuo <em>caffè all'Aloe.</em></h2>
+      <p class="intro">Macinato, in cialde, con il cardamomo o con il tè. Ogni miscela in più formati, per scegliere quello che fa per te.</p>
+    </div>
+    <div class="frecce"><button type="button" id="indietro" aria-label="Prodotto precedente"><svg><use href="#i-indietro"/></svg></button><button type="button" id="avanti" aria-label="Prodotto successivo"><svg><use href="#i-freccia"/></svg></button></div>
+  </div>
+  <div class="binario" id="binario">
+    <article class="prod"><div class="img"><img src="img/vaso-macinato.jpg" width="1100" height="1187" alt="Caffè all'Aloe macinato" loading="lazy"></div><div class="corpo"><span class="tipo">Il più amato</span><h3>Caffè all'Aloe macinato</h3><p>Caffè Plus Café Original: 100% Arabica con Aloe Arborescens bio.</p><div class="spazio"></div><a class="btn btn-v" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div></article>
+    <article class="prod"><div class="img"><img src="img/cialde.jpg" width="1100" height="1114" alt="Cialda di caffè all'Aloe per espresso" loading="lazy"></div><div class="corpo"><span class="tipo">Limited edition 2026</span><h3>Cialde di caffè all'Aloe</h3><p>Le uniche cialde di caffè all'Aloe al mondo, per il tuo espresso.</p><div class="spazio"></div><a class="btn btn-v" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div></article>
+    <article class="prod"><div class="img"><img src="img/cardamomo.jpg" width="1100" height="1100" alt="Caffè all'Aloe con cardamomo" loading="lazy"></div><div class="corpo"><span class="tipo">Esclusivo</span><h3>Caffè all'Aloe con cardamomo</h3><p>La nota calda e speziata del cardamomo nel caffè all'Aloe.</p><div class="spazio"></div><a class="btn btn-v" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div></article>
+    <article class="prod"><div class="img"><img src="img/te.jpg" width="1100" height="1129" alt="Chay coffee all'Aloe con tè" loading="lazy"></div><div class="corpo"><span class="tipo">Chay coffee</span><h3>Caffè all'Aloe con tè</h3><p>Caffè e tè nero insieme, con l'Aloe.</p><div class="spazio"></div><a class="btn btn-v" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div></article>
+    <article class="prod"><div class="img"><img src="img/te-cardamomo.jpg" width="1100" height="1129" alt="Chay coffee all'Aloe con tè e cardamomo" loading="lazy"></div><div class="corpo"><span class="tipo">Chay coffee</span><h3>Con tè e cardamomo</h3><p>Caffè, tè nero e cardamomo, con l'Aloe.</p><div class="spazio"></div><a class="btn btn-v" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div></article>
+    <article class="prod"><div class="img"><img src="img/holy.jpg" width="1000" height="1226" alt="Holy Aloe" loading="lazy"></div><div class="corpo"><span class="tipo">Holy Aloe</span><h3>Holy Aloe</h3><p>Olio extravergine d'oliva all'Aloe, miele all'Aloe e Aloe Code.</p><div class="spazio"></div><a class="btn btn-v" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div></article>
+    <article class="prod"><div class="img"><img src="img/holy-chock.jpg" width="761" height="1228" alt="Holy Aloe chock" loading="lazy"></div><div class="corpo"><span class="tipo">Holy Aloe</span><h3>Holy Aloe chock</h3><p>La versione con il cioccolato all'Aloe Code: più golosa.</p><div class="spazio"></div><a class="btn btn-v" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div></article>
+  </div>
+  <div class="wrap">
+    <div class="scorri-hint"><svg><use href="#i-freccia"/></svg>Scorri di lato per vedere tutti i prodotti</div>
+    <div class="pregi">
+      <div><b>100% Arabica</b><span>la miscela di partenza</span></div>
+      <div><b>Aloe bio</b><span>Arborescens, coltivata a Roma</span></div>
+      <div><b>Gusto morbido</b><span>senza conservanti né coloranti</span></div>
+      <div><b>A casa tua</b><span>ordini online, spedizione veloce</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="chiaro pad" id="piantagione">
+  <div class="wrap">
+    <span class="k">La nostra piantagione</span>
+    <h2 style="margin-top:16px">Dalla pianta <em>alla tazza,</em> a Roma.</h2>
+    <p class="intro">Coltiviamo noi l'Aloe Arborescens che finisce nel tuo caffè: una piantagione completamente biologica, curata pianta per pianta.</p>
+    <div class="pianta-foto"><img id="piantaImg" src="img/piantagione.jpg" width="1600" height="1200" alt="Piante di Aloe Arborescens nella piantagione dell'Aloe Center" loading="lazy"></div>
+    <div class="numeri">
+      <div><b>100.000</b><span>piante di Aloe Arborescens</span></div>
+      <div><b>Bio</b><span>certificazione CCPB dal 2007</span></div>
+      <div><b>0%</b><span>di scarti, ogni anno</span></div>
+      <div><b>2000</b><span>la prima azienda italiana di Aloe Arborescens</span></div>
+    </div>
+    <div class="mini-foto"><img src="img/piantagione-2.jpg" width="800" height="600" alt="Aloe Arborescens in piantagione" loading="lazy"><img src="img/piantagione-3.jpg" width="800" height="599" alt="Giovani piante di Aloe" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="fondatore pad" id="fondatore">
+  <div class="wrap f-griglia">
+    <div class="f-foto">
+      <div class="grande"><img src="img/alfonso-bn.jpg" width="1000" height="1413" alt="Alfonso Bottiglieri, il fondatore" loading="lazy"></div>
+      <div class="piccola"><img src="img/alfonso.jpg" width="819" height="1024" alt="Alfonso Bottiglieri allo stand dell'Aloe Center" loading="lazy"></div>
+    </div>
+    <div>
+      <span class="k">Il fondatore</span>
+      <h2 style="margin-top:16px">Alfonso Bottiglieri</h2>
+      <div class="ruolo">Il Pellegrino Romano</div>
+      <p class="t">Perito chimico, ha dedicato 33 anni allo studio dell'Aloe Arborescens. Nel 2000 apre a Roma il suo laboratorio, l'Aloe Center: la prima azienda italiana di Aloe Arborescens.</p>
+      <p class="t" style="margin-top:14px">Ancora oggi coltiva e trasforma l'Aloe con le sue formule. Il caffè all'Aloe è il risultato di questo lavoro: non un prodotto nato per moda, ma una vita di ricerca.</p>
+      <div class="anni"><div><b>33</b><span>anni di ricerca</span></div><div><b>25+</b><span>anni di Aloe Center</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="premi pad" id="premi">
+  <div class="wrap">
+    <span class="k">Premi e certificazioni</span>
+    <h2 style="margin-top:16px">Riconosciuti per <em>qualità e innovazione.</em></h2>
+    <div class="premi-griglia">
+      <div class="premio"><div class="img"><img src="img/premio-lazio.jpg" width="1200" height="978" alt="Premio speciale Lazio Food Awards 2025 all'Aloe Center" loading="lazy"></div><div class="corpo"><span class="anno">2025</span><h3>Lazio Food Awards</h3><p>Premio speciale per l'innovazione e l'unicità dei nostri prodotti.</p></div></div>
+      <div class="premio"><div class="img"><img src="img/premio-2008.jpg" width="900" height="1233" alt="Premio Italia che Lavora 2008" loading="lazy" style="object-position:50% 20%"></div><div class="corpo"><span class="anno">2008</span><h3>Premio «Italia che Lavora»</h3><p>Edizione speciale Uomini e Aziende, per la fitoterapia e l'alimentazione a base di Aloe.</p></div></div>
+      <div class="premio"><div class="img bianco"><img src="img/bio.jpg" width="900" height="893" alt="Certificazione biologica CCPB" loading="lazy"></div><div class="corpo"><span class="anno">Dal 2007</span><h3>Certificazione biologica</h3><p>Materie prime biologiche da sempre, certificate dal CCPB, il Consorzio per il Controllo dei Prodotti Biologici.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="voci" style="background:var(--nero)">
+  <div class="wrap">
+    <span class="k">Chi l'ha provato</span>
+    <h2 style="margin-top:16px">Lo dicono <em>i nostri clienti.</em></h2>
+    <div class="voci-c">
+      <blockquote>«Ottimo caffè, fresco… l'ho ordinato e, sorpresa, è tutto vero. Anche la spedizione è stata veramente veloce. Ho già invitato più persone a provarlo.»<cite>Stefania</cite></blockquote>
+      <blockquote>«Conosco Aloe Center da ben 25 anni e utilizzo tutti i prodotti regolarmente. L'uso quotidiano del caffè all'Aloe mi tiene al giusto livello energetico.»<cite>Joanna Palacz</cite></blockquote>
+      <blockquote>«Da non sottovalutare il caffè all'Aloe, buonissimo, col suo gusto sincero e inconfondibile!»<cite>Antonella Quaglini</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="chiaro pad" id="dove">
+  <div class="wrap">
+    <span class="k">Dove trovarci</span>
+    <h2 style="margin-top:16px">Lo trovi anche <em>in erboristeria.</em></h2>
+    <div class="dove-griglia">
+      <div>
+        <ul class="riv">
+          <li><span class="n">1</span><b>Erboristeria Le Erbe del Cielo</b><span>Via Gioacchino Volpe 11, Roma</span></li>
+          <li><span class="n">2</span><b>Erboristeria Barberini</b><span>Via della Panetteria 8, Roma (Fontana di Trevi)</span></li>
+          <li><span class="n">3</span><b>Erboristeria Barberini 2</b><span>Via della Purificazione 12, Roma</span></li>
+          <li><span class="n">4</span><b>Pharmacia delle Erbe</b><span>Viale Italia 213, Creazzo (Vicenza)</span></li>
+          <li><span class="n">5</span><b>Voglia di Benessere</b><span>Viale G. Marconi 164, Pescara</span></li>
+        </ul>
+        <div class="evento"><span class="k">Ogni mese</span><h3>All'EUR, la prima e la terza domenica</h3><p>Ci trovi con il nostro stand sotto il Palazzo della Civiltà Italiana, Quadrato della Concordia.</p></div>
+      </div>
+      <div class="dove-foto"><img src="img/trevi.jpg" width="853" height="1280" alt="Un barattolo di caffè all'Aloe davanti alla Fontana di Trevi" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="contatti pad" id="contatti">
+  <div class="wrap">
+    <span class="k">Contatti</span>
+    <h2 style="margin-top:16px">Parliamone <em>di persona.</em></h2>
+    <div class="c-griglia">
+      <div class="c-voci">
+        <a href="tel:+393517801301"><svg><use href="#i-tel"/></svg><div><b>+39 351 780 1301</b><span>Informatrice prodotti</span></div></a>
+        <a href="tel:+393516337182"><svg><use href="#i-tel"/></svg><div><b>+39 351 633 7182</b><span>Direttore commerciale</span></div></a>
+        <a href="mailto:aloecentergroup@gmail.com"><svg><use href="#i-mail"/></svg><div><b>aloecentergroup@gmail.com</b><span>Informazioni</span></div></a>
+      </div>
+      <div class="c-voci">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Via+Vibio+Mariano+53f+Roma" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><div><b>Via Vibio Mariano 53/f</b><span>00189 Roma · Aloe Center di Alfonso Bottiglieri</span></div></a>
+        <a href="mailto:sales.aloecenter@gmail.com"><svg><use href="#i-mail"/></svg><div><b>sales.aloecenter@gmail.com</b><span>Collaborazioni e rivenditori</span></div></a>
+        <div class="social">
+          <a href="https://www.instagram.com/aloecenteroma/" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>Instagram</a>
+          <a href="https://www.tiktok.com/@aloecenter_roma" target="_blank" rel="noopener"><svg><use href="#i-tt"/></svg>TikTok</a>
+          <a href="https://www.youtube.com/@AloeCenter." target="_blank" rel="noopener"><svg><use href="#i-yt"/></svg>YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="piede">
+  <div class="wrap">
+    <img src="img/logo.png" width="240" height="239" alt="Aloe Center Roma">
+    <div>Aloe Center di Alfonso Bottiglieri · Via Vibio Mariano 53/f, 00189 Roma<br>La prima azienda italiana di Aloe Arborescens, dal 2000</div>
+    <div class="anteprima-nota">Anteprima preparata da Veniello Studio per Aloe Center</div>
+  </div>
+</footer>
+
+<div class="barra" id="barra">
+  <a class="btn btn-f" href="tel:+393517801301"><svg><use href="#i-tel"/></svg>Chiama</a>
+  <a class="btn btn-v" href="#prodotti">Acquista</a>
+</div>
+
+<script>
+(function(){
+  var fermo = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root = document.documentElement;
+  if (fermo) root.classList.add('fermo');
+  var lenis = null;
+
+  var testata = document.getElementById('testata'), barra = document.getElementById('barra');
+  var contatti = document.getElementById('contatti');
+  function suScorri(){
+    var y = window.scrollY, h = window.innerHeight;
+    testata.classList.toggle('piena', y > 40);
+    var r = contatti.getBoundingClientRect();
+    barra.classList.toggle('vista', y > h * 1.2 && !(r.top < h && r.bottom > 0));
+  }
+  window.addEventListener('scroll', suScorri, {passive:true}); suScorri();
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href'), t = document.querySelector(id); if (!t) return;
+      e.preventDefault();
+      var y = id === '#inizio' ? 0 : t.getBoundingClientRect().top + window.scrollY - 64;
+      if (lenis) lenis.scrollTo(y, {duration: 1.2}); else window.scrollTo({top: y, behavior: fermo ? 'auto' : 'smooth'});
+    });
+  });
+
+  var bin = document.getElementById('binario');
+  function passo(d){ var c = bin.querySelector('.prod'); bin.scrollBy({left: d * (c.offsetWidth + 16), behavior: fermo ? 'auto' : 'smooth'}); }
+  document.getElementById('avanti').addEventListener('click', function(){ passo(1); });
+  document.getElementById('indietro').addEventListener('click', function(){ passo(-1); });
+
+  var frase = document.getElementById('frase');
+  frase.innerHTML = frase.textContent.trim().split(/\s+/).map(function(w){ return '<span class="p">' + w + '</span>'; }).join(' ');
+
+  function avvia(){
+    if (fermo || !window.gsap || !window.ScrollTrigger) { root.classList.add('fermo'); return; }
+    gsap.registerPlugin(ScrollTrigger);
+
+    // al computer la rotella va morbida (alcuni mouse fanno salti di 300 px)
+    if (window.Lenis && window.matchMedia('(pointer: fine)').matches) {
+      lenis = new Lenis({lerp: .12, wheelMultiplier: .8});
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(function(t){ lenis.raf(t * 1000); });
+      gsap.ticker.lagSmoothing(0);
+    }
+
+    // apertura: il barattolo entra una volta sola
+    gsap.from('#vaso', {y: 40, autoAlpha: 0, duration: 1.1, ease: 'power3.out'});
+    gsap.from('.frase-s.on > *', {y: 20, autoAlpha: 0, duration: .9, ease: 'power3.out', stagger: .08, delay: .15});
+
+    // la scena: mentre scorri il barattolo si raddrizza, il sigillo si chiude e le frasi cambiano a tempo
+    var frasi = document.querySelectorAll('.frase-s'), num = document.getElementById('num');
+    var att = 0;
+    function mostra(i){
+      if (i === att) return; att = i;
+      frasi.forEach(function(f, k){ f.classList.toggle('on', k === i); f.classList.toggle('via', k < i); });
+      num.textContent = '0' + (i + 1);
+    }
+    gsap.timeline({scrollTrigger: {trigger: '.scena', start: 'top top', end: 'bottom bottom', scrub: .6,
+        onUpdate: function(st){ mostra(st.progress < .34 ? 0 : st.progress < .68 ? 1 : 2); }}})
+      .fromTo('#vaso', {rotate: -14, scale: .94}, {rotate: 4, scale: 1.06, ease: 'none'}, 0)
+      .fromTo('#anello', {strokeDashoffset: 1}, {strokeDashoffset: 0, ease: 'none'}, 0)
+      .fromTo('#barra-c', {scaleX: 0}, {scaleX: 1, ease: 'none'}, 0);
+
+    // le parole si accendono una per una
+    gsap.to('#frase .p', {opacity: 1, stagger: .5, ease: 'none', scrollTrigger: {trigger: frase, start: 'top 82%', end: 'bottom 50%', scrub: .5}});
+
+    // la foto della piantagione si avvicina piano mentre la attraversi
+    gsap.fromTo('#piantaImg', {scale: 1.12}, {scale: 1, ease: 'none', scrollTrigger: {trigger: '.pianta-foto', start: 'top bottom', end: 'bottom top', scrub: .6}});
+
+    var t; window.addEventListener('resize', function(){ clearTimeout(t); t = setTimeout(function(){ ScrollTrigger.refresh(); }, 200); });
+  }
+  if (document.readyState === 'complete') avvia(); else window.addEventListener('load', avvia);
+})();
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+</body>
+</html>
