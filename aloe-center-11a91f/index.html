@@ -5,250 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Aloe Center · L'unico caffè all'Aloe al mondo</title>
-<meta name="description" content="Caffè Plus Café: miscela 100% Arabica con Aloe Arborescens biologica, coltivata e lavorata a Roma. Aloe Center di Alfonso Bottiglieri, dal 2000.">
+<meta name="description" content="Aloe Center di Alfonso Bottiglieri, Roma, dal 2000: Aloe Code, integratori alimentari e l'unico caffè all'Aloe al mondo.">
 <meta property="og:title" content="Aloe Center · L'unico caffè all'Aloe al mondo">
 <meta property="og:description" content="Anteprima del nuovo sito preparata da Veniello Studio.">
 <meta property="og:image" content="img/og.jpg">
-<meta name="theme-color" content="#F4EFE7">
+<meta name="theme-color" content="#0A0B08">
 <link rel="icon" href="img/logo.png" type="image/png">
 <link rel="stylesheet" href="fonts/fonts.css">
-<style>
-:root{
-  --bg:#F4EFE7; --bg2:#ECE5D9; --surf:#FBF8F2;
-  --line:rgba(32,22,16,.12); --line2:rgba(32,22,16,.24);
-  --testo:#201610; --testo2:rgba(32,22,16,.68); --testo3:rgba(32,22,16,.46);
-  --salvia:#5C6B3C; --salvia-c:#DDE3CD; --crema:#EBDCC7; --espresso:#1E1510; --espresso2:#2A1F18;
-  --avorio:#F4EFE7; --avorio2:rgba(244,239,231,.7); --avorio3:rgba(244,239,231,.45);
-  --r:16px; --r2:26px; --lato:20px; --max:1200px; --testata:66px;
-  --sans:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --mono:"Geist Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
-  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%}
-html.lenis,html.lenis body{height:auto}
-body{font-family:var(--sans);font-size:16px;line-height:1.6;color:var(--testo);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img,video{display:block;max-width:100%;height:auto}
-a{color:inherit;text-decoration:none}
-button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--lato)}
-:focus-visible{outline:2px solid var(--salvia);outline-offset:3px;border-radius:6px}
-@media (min-width:900px){:root{--lato:40px}}
-
-.mono,.etichetta{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3)}
-.etichetta{display:block;margin-bottom:16px}
-h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em}
-em{font-style:italic;color:var(--salvia)}
-.scuro em{color:#B9C78F}
-h2{font-size:clamp(40px,6.4vw,76px);line-height:1;max-width:15ch}
-h3{font-size:clamp(28px,3.2vw,38px);line-height:1.08}
-.intro{color:var(--testo2);font-size:clamp(16px,1.8vw,19px);max-width:50ch;margin-top:18px}
-section{padding:clamp(80px,11vw,140px) 0;position:relative}
-.scuro{background:var(--espresso);color:var(--avorio)}
-.scuro .intro,.scuro p{color:var(--avorio2)}
-.scuro .etichetta,.scuro .mono{color:var(--avorio3)}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:999px;font-weight:500;font-size:15px;white-space:nowrap;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
-.btn:active{transform:scale(.97)}
-.btn-pieno{background:var(--espresso);color:var(--avorio)}
-.btn-pieno:hover{background:#000}
-.btn-linea{box-shadow:inset 0 0 0 1px var(--line2)}
-.btn-linea:hover{box-shadow:inset 0 0 0 1px var(--testo)}
-.scuro .btn-pieno{background:var(--avorio);color:var(--espresso)}
-.scuro .btn-linea{box-shadow:inset 0 0 0 1px rgba(244,239,231,.3)}
-.i{width:18px;height:18px;flex:none}
-
-/* testata */
-.testata{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .25s ease,box-shadow .25s ease}
-.testata.piena{background:rgba(244,239,231,.97);box-shadow:0 1px 0 var(--line)}
-.testata .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:var(--testata)}
-.marchio{display:inline-flex;align-items:center;gap:10px;font-weight:500;font-size:17px;letter-spacing:-.01em;min-height:44px}
-.marchio img{width:34px;height:34px}
-.testata nav{display:none;gap:28px;font-size:14px;color:var(--testo2)}
-.testata nav a:hover{color:var(--testo)}
-.testata .btn{min-height:44px;padding:0 18px;font-size:14px}
-@media (min-width:900px){.testata nav{display:flex}}
-
-/* copertina: il titolo si apre e il barattolo si raddrizza */
-.copertina{min-height:100svh;padding:calc(var(--testata) + 30px) 0 60px;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
-.copertina .wrap{width:100%;text-align:center}
-.cop-titolo{position:relative;display:grid;justify-items:center;margin-top:20px}
-.cop-titolo h1{display:contents}
-.riga{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(58px,11vw,164px);line-height:.9;letter-spacing:-.03em;white-space:nowrap;position:relative;z-index:1;will-change:transform}
-.riga em{color:var(--salvia)}
-.cop-vaso{position:relative;z-index:2;width:clamp(170px,17vw,250px);margin:-1.6vw 0 -3.4vw;will-change:transform}
-@media (min-width:900px) and (max-height:860px){.cop-vaso{width:clamp(160px,15vw,215px)}.riga{font-size:clamp(58px,9.6vw,140px)}}
-.cop-vaso img{width:100%;height:auto;filter:drop-shadow(0 30px 40px rgba(32,22,16,.22))}
-.cop-sotto{max-width:46ch;margin:28px auto 0;color:var(--testo2);font-size:clamp(16px,1.8vw,19px)}
-.azioni{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px;align-items:center}
-.fiducia{margin-top:30px;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--testo3);line-height:1.9}
-@media (max-width:640px){.riga{font-size:clamp(46px,15.5vw,80px)}.cop-vaso{width:46vw;margin:0 0 -6vw}.copertina{padding-top:calc(var(--testata) + 18px)}}
-
-/* muro di foto bloccato allo scorrimento */
-.scena{height:340svh;position:relative;padding:0}
-.scena-stage{position:sticky;top:0;height:100svh;overflow:hidden;background:var(--bg)}
-.scena-cols{position:absolute;inset:0;display:flex;justify-content:center;gap:12px}
-.col{flex:none;width:44vw;display:flex;flex-direction:column;gap:12px;will-change:transform}
-@media (min-width:900px){.col{width:clamp(200px,17vw,250px);gap:18px}.scena-cols{gap:18px}}
-.col img{width:100%;height:auto;border-radius:14px;background:var(--bg2)}
-.scena-cols::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--bg) 0%,rgba(244,239,231,0) 16%,rgba(244,239,231,0) 84%,var(--bg) 100%);pointer-events:none}
-.scena-testo{position:absolute;inset:0;display:grid;place-items:center;text-align:center;pointer-events:none;padding:0 var(--lato)}
-.scena-testo::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 74% 46% at 50% 50%,rgba(244,239,231,.95),rgba(244,239,231,.7) 55%,rgba(244,239,231,0) 100%)}
-.frase{grid-area:1/1;position:relative;font-family:var(--serif);font-size:clamp(40px,8.4vw,92px);line-height:1;letter-spacing:-.015em;max-width:12ch;opacity:0;transform:translateY(10px);transition:opacity .45s ease,transform .45s ease}
-.frase small{display:block;width:max-content;max-width:90vw;margin:18px auto 0;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo2);white-space:nowrap}
-.frase.visibile{opacity:1;transform:none}
-
-/* le parole si accendono */
-.dichiara{padding-bottom:0}
-.dichiara p.d{font-family:var(--serif);font-size:clamp(36px,7.2vw,84px);line-height:1.02;letter-spacing:-.015em;max-width:16ch}
-.dichiara .w{display:inline-block;opacity:.16}
-.dichiara .sotto{margin-top:26px;color:var(--testo2);font-size:clamp(16px,1.8vw,19px);max-width:46ch}
-
-/* fasi: dalla pianta alla tazza */
-.fasi{height:300svh;position:relative;padding:0}
-.fasi-stage{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;gap:26px;padding:calc(var(--testata) + 12px) var(--lato) 28px;overflow:hidden}
-.fasi-testo{position:relative;text-align:center;min-height:150px}
-.fase-t{position:absolute;inset:0;opacity:0;transform:translateY(8px);transition:opacity .4s ease,transform .4s ease}
-.fase-t.visibile{opacity:1;transform:none}
-.fase-t .mono{display:block;margin-bottom:8px}
-.fase-t b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(54px,12vw,120px);line-height:.95;letter-spacing:-.02em}
-.fase-t b em{color:var(--salvia)}
-.fase-t p{color:var(--testo2);font-size:15.5px;max-width:32ch;margin:10px auto 0;line-height:1.5}
-.cornice{position:relative;width:min(70vw,330px);aspect-ratio:4/5;margin:0 auto;border-radius:200px 200px 26px 26px;overflow:hidden;background:var(--bg2);flex:none;box-shadow:0 40px 80px -40px rgba(32,22,16,.45)}
-@media (max-height:720px){.cornice{width:min(56vw,250px)}}
-.fase-s{position:absolute;inset:0;opacity:0;transition:opacity .55s ease}
-.fase-s.visibile{opacity:1}
-.fase-s img{width:100%;height:100%;object-fit:cover}
-@media (min-width:900px){.fasi-stage{flex-direction:row;align-items:center;justify-content:center;gap:110px}.fasi-testo{text-align:left;width:480px;min-height:280px}.fase-t p{margin-left:0;font-size:18px}.cornice{margin:0;width:380px}}
-
-/* pila: i prodotti si impilano */
-.pila{display:grid;gap:16px;margin-top:44px}
-.carta-s{position:sticky;top:calc(var(--testata) + 12px + var(--i)*10px);border-radius:var(--r2);overflow:hidden;min-height:min(74svh,640px);display:flex;flex-direction:column;box-shadow:0 -14px 40px rgba(32,22,16,.12);transform-origin:50% 0;will-change:transform;background:var(--surf)}
-.carta-s.salvia{background:var(--salvia-c)}
-.carta-s.crema{background:var(--crema)}
-.carta-s.scuro{background:var(--espresso2)}
-.carta-s .media{flex:1;min-height:250px;position:relative;display:flex;align-items:center;justify-content:center;padding:26px}
-.carta-s .media img{max-height:min(44svh,440px);width:auto;max-width:100%;object-fit:contain}
-.carta-s .media.due{gap:4%}
-.carta-s .media.due img{max-width:48%}
-.carta-s .media.foto{padding:0}
-.carta-s .media.foto img{position:absolute;inset:0;width:100%;height:100%;max-height:none;max-width:none;object-fit:cover}
-.carta-s .testo{padding:20px 24px 26px}
-.carta-s .testo .mono{display:block;margin-bottom:8px}
-.carta-s .testo p{color:var(--testo2);font-size:15.5px;max-width:44ch;margin-top:8px}
-.carta-s.scuro .testo p{color:var(--avorio2)}
-.carta-s .btn{margin-top:20px}
-@media (min-width:900px){.carta-s{flex-direction:row;min-height:min(72vh,620px)}.carta-s .media{flex:1.2}.carta-s .testo{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;padding:40px 44px}.carta-s .testo p{font-size:17px}}
-
-/* binario: perché è diverso */
-.binario{height:250svh;position:relative;padding:0}
-.binario-stage{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding:calc(var(--testata) + 16px) 0 32px}
-.binario-testa{padding:0 var(--lato);margin-bottom:28px}
-.vagoni{display:flex;gap:12px;padding:0 var(--lato);will-change:transform}
-.vagone{flex:none;width:min(76vw,400px);background:var(--surf);border-radius:var(--r2);padding:24px 24px 26px;min-height:min(40svh,340px);display:flex;flex-direction:column;box-shadow:inset 0 0 0 1px var(--line)}
-.vagone .n{font-family:var(--serif);font-size:clamp(64px,16vw,100px);line-height:.9;letter-spacing:-.02em;color:var(--salvia);margin-bottom:auto}
-.vagone h3{margin-top:40px}
-.vagone p{color:var(--testo2);font-size:15.5px;margin-top:8px}
-.progresso{height:2px;background:var(--line);margin:26px var(--lato) 0;position:relative;overflow:hidden}
-.progresso i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--testo)}
-@media (min-width:900px){.binario{height:auto;padding:clamp(80px,11vw,140px) 0}.binario-stage{position:static;height:auto;padding:0;overflow:visible}.binario-testa,.vagoni,.progresso{max-width:var(--max);margin-left:auto;margin-right:auto}.vagoni{gap:20px}.vagone{width:calc((100% - 40px)/3);min-height:360px}.progresso{display:none}}
-
-/* fondatore */
-.f-griglia{display:grid;gap:48px;align-items:center}
-.f-foto{border-radius:var(--r2);overflow:hidden;aspect-ratio:4/5;max-width:520px}
-.f-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
-.f-ruolo{font-family:var(--serif);font-style:italic;font-size:28px;color:#B9C78F;margin-top:10px}
-.f-testo p{margin-top:18px;max-width:46ch;font-size:17px}
-.f-numeri{display:flex;gap:40px;margin-top:36px;padding-top:26px;border-top:1px solid rgba(244,239,231,.14)}
-.f-numeri b{display:block;font-family:var(--serif);font-weight:400;font-size:54px;line-height:1;color:var(--avorio)}
-.f-numeri span{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--avorio3);margin-top:8px}
-@media (min-width:900px){.f-griglia{grid-template-columns:1fr 1fr;gap:100px}}
-
-/* premi */
-.premi-griglia{display:grid;gap:16px;margin-top:48px}
-.premio{background:var(--surf);border-radius:var(--r2);overflow:hidden;display:flex;flex-direction:column;box-shadow:inset 0 0 0 1px var(--line)}
-.premio .img{aspect-ratio:5/4;overflow:hidden;background:var(--bg2)}
-.premio .img img{width:100%;height:100%;object-fit:cover}
-.premio .img.bianco{background:#fff}
-.premio .img.bianco img{object-fit:contain;padding:14%}
-.premio .testo{padding:22px 24px 26px}
-.premio h3{font-size:28px;margin-top:8px}
-.premio p{color:var(--testo2);font-size:15px;margin-top:6px}
-@media (min-width:900px){.premi-griglia{grid-template-columns:repeat(3,1fr)}}
-
-/* voci */
-.voci-c{display:grid;gap:40px;margin-top:48px}
-.voci-c blockquote{font-family:var(--serif);font-size:clamp(25px,2.7vw,32px);line-height:1.22;border-top:1px solid var(--line2);padding-top:26px}
-.voci-c cite{display:block;font-family:var(--mono);font-style:normal;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3);margin-top:18px}
-@media (min-width:900px){.voci-c{grid-template-columns:repeat(3,1fr);gap:48px}}
-
-/* dove trovarci */
-.dove-griglia{display:grid;gap:44px;margin-top:48px}
-.riv{list-style:none;border-top:1px solid var(--line)}
-.riv li{display:grid;grid-template-columns:48px 1fr;gap:2px 14px;padding:18px 0;border-bottom:1px solid var(--line)}
-.riv .n{font-family:var(--serif);font-size:30px;line-height:1;color:var(--salvia);grid-row:span 2}
-.riv b{font-weight:500;font-size:17px}
-.riv span{color:var(--testo2);font-size:14.5px}
-.evento{margin-top:28px;background:var(--salvia-c);border-radius:var(--r2);padding:24px 24px 26px}
-.evento h3{font-size:30px;margin-top:8px}
-.evento p{color:var(--testo2);margin-top:6px}
-.dove-foto{border-radius:var(--r2);overflow:hidden;aspect-ratio:2/3;max-height:760px}
-.dove-foto img{width:100%;height:100%;object-fit:cover}
-@media (min-width:900px){.dove-griglia{grid-template-columns:1.2fr .8fr;gap:80px;align-items:start}}
-
-/* barra dei loghi: scorre solo quando si vede */
-.loghi{padding:30px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;position:relative}
-.loghi::before,.loghi::after{content:"";position:absolute;top:0;bottom:0;width:14%;z-index:1;pointer-events:none}
-.loghi::before{left:0;background:linear-gradient(90deg,var(--bg),rgba(244,239,231,0))}
-.loghi::after{right:0;background:linear-gradient(-90deg,var(--bg),rgba(244,239,231,0))}
-.loghi-nastro{display:flex;width:max-content;animation:loghi 40s linear infinite;animation-play-state:paused}
-.loghi.attivo .loghi-nastro{animation-play-state:running}
-.loghi-fila{display:flex;align-items:center;gap:72px;padding-right:72px;margin:0;list-style:none}
-.loghi-fila img{height:56px;width:auto}
-.loghi-fila .t{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--testo3);white-space:nowrap}
-@keyframes loghi{to{transform:translateX(-50%)}}
-
-/* contatti */
-.chiusura .wrap{display:grid;gap:40px}
-@media (min-width:900px){.chiusura .wrap{grid-template-columns:1.1fr 1fr;align-items:start}}
-.recapiti{display:grid;gap:8px}
-.recapito{display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:var(--r);background:rgba(244,239,231,.06);transition:background .2s ease;min-height:64px}
-a.recapito:hover{background:rgba(244,239,231,.1)}
-.recapito .i{color:#B9C78F}
-.recapito span{min-width:0}
-.recapito small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--avorio3);margin-bottom:2px}
-.recapito b{font-weight:500;font-size:15.5px;overflow-wrap:anywhere}
-.social{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
-.social a{display:inline-flex;align-items:center;gap:9px;min-height:46px;padding:0 18px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(244,239,231,.24);font-size:14px}
-.social a:hover{box-shadow:inset 0 0 0 1px var(--avorio)}
-
-.piede{padding:30px 0 calc(100px + env(safe-area-inset-bottom));background:var(--espresso);color:var(--avorio3);font-size:13.5px;border-top:1px solid rgba(244,239,231,.1)}
-.piede .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;align-items:center}
-.piede .marchio{color:var(--avorio)}
-@media (min-width:820px){.piede{padding-bottom:36px}}
-
-.barra{position:fixed;left:0;right:0;bottom:0;z-index:45;display:grid;grid-template-columns:1fr 1.3fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(244,239,231,.98);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
-.barra.vista{transform:none}
-.barra .btn{min-height:50px;padding:0 14px}
-@media (min-width:820px){.barra{display:none}}
-
-/* senza animazioni: tutto fermo e leggibile */
-html.fermo .scena,html.fermo .fasi,html.fermo .binario{height:auto}
-html.fermo .scena-stage,html.fermo .fasi-stage,html.fermo .binario-stage{position:static;height:auto}
-html.fermo .scena-stage{height:100svh}
-html.fermo .frase:first-child{opacity:1;transform:none}
-html.fermo .fasi-stage{padding-top:40px}
-html.fermo .fasi-testo{min-height:0}
-html.fermo .fase-t{position:relative;opacity:1;transform:none;margin-bottom:26px}
-html.fermo .fase-s:not(:first-child){display:none}
-html.fermo .fase-s:first-child{opacity:1}
-html.fermo .vagoni{flex-wrap:wrap}
-html.fermo .vagone{width:100%}
-html.fermo .progresso{display:none}
-html.fermo .dichiara .w{opacity:1}
-html.fermo .carta-s{position:relative;top:auto}
-@media (prefers-reduced-motion:reduce){.frase,.fase-t,.fase-s,.btn,.recapito,.barra{transition:none}.loghi-nastro{animation:none}}
-</style>
+<link rel="stylesheet" href="css/stile.css">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -264,22 +28,22 @@ html.fermo .carta-s{position:relative;top:auto}
 <header class="testata" id="testata">
   <div class="wrap">
     <a class="marchio" href="#inizio" aria-label="Aloe Center, torna all'inizio"><img src="img/logo.png" width="240" height="239" alt="">Aloe Center</a>
-    <nav aria-label="Menu principale"><a href="#prodotti">I caffè</a><a href="#pianta">Dalla pianta alla tazza</a><a href="#fondatore">Il fondatore</a><a href="#dove">Dove trovarci</a></nav>
-    <a class="btn btn-pieno" href="#prodotti">Acquista</a>
+    <nav aria-label="Menu principale"><a href="#prodotti">Caffè all'Aloe</a><a href="#aloe-code">Aloe Code</a><a href="integratori.html">Integratori</a><a href="#fondatore">Chi siamo</a><a href="#dove">Dove trovarci</a></nav>
+    <a class="btn btn-oro" href="#prodotti">Acquista</a>
   </div>
 </header>
 
 <main id="contenuto">
   <section class="copertina" id="inizio" aria-labelledby="titolo">
     <div class="wrap">
-      <p class="mono">Caffè Plus Café · Roma, dal 2000</p>
+      <p class="mono cop-label">Caffè Plus Café · Roma, dal 2000</p>
       <div class="cop-titolo" id="titolo">
         <h1><span class="riga" id="riga1">L'unico caffè</span>
         <span class="cop-vaso" id="copVaso"><img src="img/vaso.webp" width="900" height="1188" alt="" fetchpriority="high"></span>
         <span class="riga" id="riga2"><em>all'Aloe</em> al mondo.</span></h1>
       </div>
-      <p class="cop-sotto">Miscela 100% Arabica e Aloe Arborescens biologica, coltivata e lavorata da noi a Roma. Lo stesso gusto che ami, più leggero.</p>
-      <div class="azioni"><a class="btn btn-pieno" href="#prodotti">Scopri i caffè<svg class="i" aria-hidden="true"><use href="#i-freccia"/></svg></a><a class="btn btn-linea" href="#pianta">La nostra storia</a></div>
+      <p class="cop-sotto">Miscela 100% Arabica e Aloe Code, il principio attivo che estraiamo dall'Aloe Arborescens in nove anni di lavorazione. Lo stesso gusto che ami, più leggero.</p>
+      <div class="azioni"><a class="btn btn-oro" href="#prodotti">Scopri i caffè<svg class="i" aria-hidden="true"><use href="#i-freccia"/></svg></a><a class="btn btn-linea" href="#aloe-code">Cos'è l'Aloe Code</a></div>
       <p class="fiducia">Premio speciale Lazio Food Awards 2025 · Bio dal 2007</p>
     </div>
   </section>
@@ -289,7 +53,7 @@ html.fermo .carta-s{position:relative;top:auto}
       <div class="scena-cols" id="scena-cols" aria-hidden="true"></div>
       <div class="scena-testo">
         <p class="frase visibile">L'Aloe la coltiviamo <em>a Roma</em>.<small>100.000 piante · Bio dal 2007</small></p>
-        <p class="frase">Il caffè lo lavoriamo <em>noi</em>.<small>Miscela 100% Arabica</small></p>
+        <p class="frase">La lavoriamo <em>da noi</em>.<small>Nove anni per l'Aloe Code</small></p>
         <p class="frase">E arriva <em>a casa tua</em>.<small>Online e in erboristeria</small></p>
       </div>
     </div>
@@ -299,15 +63,15 @@ html.fermo .carta-s{position:relative;top:auto}
     <div class="wrap">
       <span class="etichetta">Il caffè all'Aloe</span>
       <p class="d" id="dichiara">Non un'alternativa. Non un compromesso. Un <em>nuovo standard</em> per chi ama il caffè.</p>
-      <p class="sotto">Tutto l'aroma e la corposità della miglior miscela Arabica, con l'Aloe Arborescens che lo rende più delicato.</p>
+      <p class="sotto">Tutto l'aroma e la corposità della miglior miscela Arabica, con l'Aloe che lo rende più delicato.</p>
     </div>
   </section>
 
   <section class="fasi" id="pianta" aria-label="Dalla pianta alla tazza">
     <div class="fasi-stage">
       <div class="fasi-testo">
-        <div class="fase-t visibile"><span class="mono">01 · La pianta</span><b><em>Coltivata.</em></b><p>100.000 piante di Aloe Arborescens biologica nella nostra piantagione a Roma. Zero scarti, ogni anno.</p></div>
-        <div class="fase-t"><span class="mono">02 · La ricerca</span><b><em>Lavorata.</em></b><p>Con le formule di Alfonso Bottiglieri, frutto di 33 anni di studio sull'Aloe.</p></div>
+        <div class="fase-t visibile"><span class="mono">01 · La pianta</span><b><em>Coltivata.</em></b><p>100.000 piante di Aloe Arborescens biologica, che maturano cinque anni nella nostra piantagione a Roma.</p></div>
+        <div class="fase-t"><span class="mono">02 · Il laboratorio</span><b><em>Lavorata.</em></b><p>Altri quattro anni in laboratorio, con le formule di Alfonso Bottiglieri, per ottenere l'Aloe Code.</p></div>
         <div class="fase-t"><span class="mono">03 · La tazza</span><b><em>Servita.</em></b><p>Miscela 100% Arabica, macinata o in cialde. Senza conservanti, additivi o coloranti.</p></div>
       </div>
       <div class="cornice" aria-hidden="true">
@@ -318,32 +82,76 @@ html.fermo .carta-s{position:relative;top:auto}
     </div>
   </section>
 
+  <section class="fondo2" id="aloe-code" aria-labelledby="t-code">
+    <div class="wrap">
+      <span class="etichetta">Il cuore di tutto</span>
+      <h2 id="t-code">L'Aloe Code, <em>come un vino d'annata</em>.</h2>
+      <p class="intro">È il principio attivo esclusivo che estraiamo dall'Aloe Arborescens. Da lui nascono tutti i nostri prodotti, dagli integratori al caffè. E con il tempo non perde valore: si stabilizza e matura.</p>
+      <div class="anni">
+        <div class="anni-n">9<small>anni</small></div>
+        <div>
+          <p class="intro" style="margin-top:0">Un vero <em>slow-work</em>: cinque anni di maturazione della pianta nella nostra coltivazione biologica, poi quattro anni di trasformazione in laboratorio.</p>
+          <div class="linea" id="linea"><div class="linea-base"></div><div class="linea-oro" id="lineaOro"></div>
+            <div class="tappe"><div class="tappa"><b>5 anni</b><span>la pianta matura in piantagione</span></div><div class="tappa fine"><b>+4 anni</b><span>il principio attivo si trasforma in laboratorio</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="livelli">
+        <div class="livello"><span class="mono">I · Standard Quality</span><h3>Per ogni giorno</h3><p class="eta">Aloe Code · 9 anni</p><ul><li>Massima freschezza</li><li>Ideale per il consumo quotidiano</li><li>Prezzo accessibile</li></ul></div>
+        <div class="livello"><span class="mono">II · High Quality</span><h3>Più maturo</h3><p class="eta">Aloe Code · oltre 10 anni</p><ul><li>Principi attivi più concentrati</li><li>Gusto e aroma più equilibrati, anche nel caffè</li><li>Fascia intermedia</li></ul></div>
+        <div class="livello top"><span class="mono">III · Top Premium Quality</span><h3>Il più raro</h3><p class="eta">Aloe Code · oltre 15 anni</p><ul><li>Prodotto raro, di qualità superiore</li><li>Gusto, aroma e principi attivi perfettamente stabilizzati</li><li>Per chi cerca il massimo</li></ul></div>
+      </div>
+      <div class="nasce"><p>Dall'Aloe Code nascono:</p><a class="link-oro" href="integratori.html">gli integratori alimentari<svg class="i" aria-hidden="true"><use href="#i-freccia"/></svg></a><a class="link-oro" href="#prodotti">il caffè e gli alimenti all'Aloe<svg class="i" aria-hidden="true"><use href="#i-freccia"/></svg></a></div>
+    </div>
+  </section>
+
   <section id="prodotti" aria-labelledby="t-prodotti">
     <div class="wrap">
-      <span class="etichetta">I nostri prodotti</span>
+      <span class="etichetta">Caffè e alimenti all'Aloe</span>
       <h2 id="t-prodotti">Scegli il tuo <em>caffè all'Aloe</em>.</h2>
       <div class="pila">
-        <article class="carta-s salvia" style="--i:0">
+        <article class="carta-s verde" style="--i:0">
           <div class="media"><img src="img/macinato.webp" width="900" height="1194" alt="Caffè all'Aloe macinato" loading="lazy"></div>
-          <div class="testo"><span class="mono">01 · Il più amato</span><h3>Caffè all'Aloe macinato</h3><p>Caffè Plus Café Original: miscela 100% Arabica con Aloe Arborescens bio. In più formati, per moka ed espresso.</p><a class="btn btn-pieno" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div>
+          <div class="testo"><span class="mono">01 · Il più amato</span><h3>Caffè all'Aloe macinato</h3><p>Caffè Plus Café Original: miscela 100% Arabica con Aloe Code. In più formati, per moka ed espresso.</p><a class="btn btn-oro" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div>
         </article>
-        <article class="carta-s crema" style="--i:1">
+        <article class="carta-s oro" style="--i:1">
           <div class="media"><img src="img/cialde.webp" width="900" height="950" alt="Cialda di caffè all'Aloe" loading="lazy"></div>
-          <div class="testo"><span class="mono">02 · Limited edition 2026</span><h3>Le cialde per espresso</h3><p>Le uniche cialde di caffè all'Aloe al mondo: il tuo espresso, in un gesto.</p><a class="btn btn-pieno" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div>
+          <div class="testo"><span class="mono">02 · Limited edition 2026</span><h3>Le cialde per espresso</h3><p>Le uniche cialde di caffè all'Aloe al mondo: il tuo espresso, in un gesto.</p><a class="btn btn-oro" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div>
         </article>
-        <article class="carta-s scuro" style="--i:2">
+        <article class="carta-s caffe" style="--i:2">
           <div class="media"><img src="img/cardamomo.webp" width="900" height="847" alt="Caffè all'Aloe con cardamomo" loading="lazy"></div>
-          <div class="testo"><span class="mono">03 · Esclusivo</span><h3>Con il cardamomo</h3><p>La nota calda e speziata del cardamomo nel caffè all'Aloe.</p><a class="btn btn-pieno" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div>
+          <div class="testo"><span class="mono">03 · Esclusivo</span><h3>Con il cardamomo</h3><p>La nota calda e speziata del cardamomo nel caffè all'Aloe.</p><a class="btn btn-oro" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div>
         </article>
-        <article class="carta-s salvia" style="--i:3">
+        <article class="carta-s verde" style="--i:3">
           <div class="media due"><img src="img/te.webp" width="900" height="856" alt="Chay coffee all'Aloe con tè" loading="lazy"><img src="img/te-cardamomo.webp" width="900" height="926" alt="Chay coffee all'Aloe con tè e cardamomo" loading="lazy"></div>
-          <div class="testo"><span class="mono">04 · Chay coffee</span><h3>Con il tè, o con tè e cardamomo</h3><p>Caffè e tè nero insieme, con l'Aloe. Anche nella versione con il cardamomo.</p><a class="btn btn-pieno" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div>
+          <div class="testo"><span class="mono">04 · Chay coffee</span><h3>Con il tè, o con tè e cardamomo</h3><p>Caffè e tè nero insieme, con l'Aloe. Anche nella versione con il cardamomo.</p><a class="btn btn-oro" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div>
         </article>
-        <article class="carta-s crema" style="--i:4">
+        <article class="carta-s oro" style="--i:4">
           <div class="media foto"><img src="img/holy.jpg" width="1000" height="1226" alt="Holy Aloe" loading="lazy"></div>
-          <div class="testo"><span class="mono">05 · Holy Aloe</span><h3>Olio, miele e Aloe Code</h3><p>Olio extravergine d'oliva all'Aloe, miele all'Aloe e Aloe Code. C'è anche la versione «chock», con il cioccolato all'Aloe.</p><a class="btn btn-pieno" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div>
+          <div class="testo"><span class="mono">05 · Holy Aloe</span><h3>Olio, miele e Aloe Code</h3><p>Olio extravergine d'oliva all'Aloe, miele all'Aloe e Aloe Code. C'è anche la versione «chock», con il cioccolato all'Aloe.</p><a class="btn btn-oro" href="https://www.aloecentershop.com/best-sellers/" target="_blank" rel="noopener">Acquista</a></div>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="fondo2" id="integratori" aria-labelledby="t-int">
+    <div class="wrap testa-sez">
+      <div>
+        <span class="etichetta">Integratori alimentari</span>
+        <h2 id="t-int">22 fitoestratti <em>con l'Aloe Code</em>.</h2>
+        <p class="intro">Aloe Arborescens ed erbe officinali, con ingredienti biologici certificati, senza conservanti aggiunti né stabilizzanti chimici. Notificati presso il Ministero della Salute.</p>
+      </div>
+      <a class="btn btn-oro" href="integratori.html">Vedi tutti gli integratori<svg class="i" aria-hidden="true"><use href="#i-freccia"/></svg></a>
+    </div>
+    <div class="fila-int">
+      <a class="int" href="integratori.html"><div class="img"><img src="img/integratori/gjubjaloe.jpg" width="700" height="700" alt="Gjubjaloe" loading="lazy"></div><b>Gjubjaloe</b><span>Difese dell'organismo</span></a>
+      <a class="int" href="integratori.html"><div class="img"><img src="img/integratori/aloe-mannitol.jpg" width="700" height="616" alt="Aloe Mannitol" loading="lazy"></div><b>Aloe Mannitol</b><span>Metabolismo energetico</span></a>
+      <a class="int" href="integratori.html"><div class="img"><img src="img/integratori/aloe-c.jpg" width="700" height="616" alt="Aloe C" loading="lazy"></div><b>Aloe C</b><span>Stomaco, apparato digerente</span></a>
+      <a class="int" href="integratori.html"><div class="img"><img src="img/integratori/epatic-aloe.jpg" width="700" height="616" alt="Epatic Aloe" loading="lazy"></div><b>Epatic Aloe</b><span>Fegato</span></a>
+      <a class="int" href="integratori.html"><div class="img"><img src="img/integratori/aloe-sat.jpg" width="700" height="616" alt="Aloe Sat" loading="lazy"></div><b>Aloe Sat</b><span>Sistema nervoso, umore</span></a>
+      <a class="int" href="integratori.html"><div class="img"><img src="img/integratori/bet-aloe.jpg" width="700" height="616" alt="Bet Aloe" loading="lazy"></div><b>Bet Aloe</b><span>Ossa, articolazioni, muscoli</span></a>
+      <a class="int" href="integratori.html"><div class="img"><img src="img/integratori/aloe-s.jpg" width="700" height="616" alt="Aloe S" loading="lazy"></div><b>Aloe S</b><span>Pelle</span></a>
+      <a class="int" href="integratori.html"><div class="img"><img src="img/integratori/roman-aloe.jpg" width="700" height="616" alt="Roman Aloe" loading="lazy"></div><b>Roman Aloe</b><span>Apparato respiratorio</span></a>
     </div>
   </section>
 
@@ -362,14 +170,14 @@ html.fermo .carta-s{position:relative;top:auto}
     </div>
   </section>
 
-  <section class="scuro" id="fondatore" aria-labelledby="t-fondatore">
+  <section class="fondo2" id="fondatore" aria-labelledby="t-fondatore">
     <div class="wrap f-griglia">
       <div class="f-foto"><img src="img/alfonso.jpg" width="819" height="1024" alt="Alfonso Bottiglieri allo stand dell'Aloe Center" loading="lazy"></div>
       <div class="f-testo">
         <span class="etichetta">Il fondatore</span>
         <h2 id="t-fondatore">Alfonso Bottiglieri</h2>
         <div class="f-ruolo">Il Pellegrino Romano</div>
-        <p>Perito chimico, ha dedicato 33 anni allo studio dell'Aloe Arborescens. Nel 2000 apre a Roma il suo laboratorio, l'Aloe Center: la prima azienda italiana di Aloe Arborescens.</p>
+        <p>Perito chimico, ha dedicato 33 anni allo studio dell'Aloe Arborescens. Nel 2000 apre a Roma il suo laboratorio, l'Aloe Center: la prima azienda italiana di Aloe Arborescens, specializzata nell'estrazione del principio attivo.</p>
         <p>Il caffè all'Aloe non è un prodotto nato per moda: è il risultato di una vita di ricerca.</p>
         <div class="f-numeri"><div><b>33</b><span>anni di ricerca</span></div><div><b>2000</b><span>la fondazione</span></div><div><b>25+</b><span>anni a Roma</span></div></div>
       </div>
@@ -422,13 +230,13 @@ html.fermo .carta-s{position:relative;top:auto}
 
   <section class="loghi" id="loghi" aria-label="I nostri rivenditori"><div class="loghi-nastro" id="loghi-nastro"></div></section>
 
-  <section class="chiusura scuro" id="contatti" aria-labelledby="t-contatti">
+  <section class="chiusura fondo2" id="contatti" aria-labelledby="t-contatti">
     <div class="wrap">
       <div>
         <span class="etichetta">Contatti</span>
         <h2 id="t-contatti">Parliamone <em>di persona</em>.</h2>
         <p class="intro">Per ordini, rivenditori e collaborazioni: siamo a Roma, in Via Vibio Mariano.</p>
-        <div class="azioni" style="justify-content:flex-start"><a class="btn btn-pieno" href="tel:+393517801301"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>Chiama</a><a class="btn btn-linea" href="mailto:aloecentergroup@gmail.com"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>Scrivici</a></div>
+        <div class="azioni" style="justify-content:flex-start"><a class="btn btn-oro" href="tel:+393517801301"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>Chiama</a><a class="btn btn-linea" href="mailto:aloecentergroup@gmail.com"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>Scrivici</a></div>
       </div>
       <div class="recapiti">
         <a class="recapito" href="tel:+393517801301"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg><span><small>Informatrice prodotti</small><b>+39 351 780 1301</b></span></a>
@@ -454,124 +262,13 @@ html.fermo .carta-s{position:relative;top:auto}
 
 <div class="barra" id="barra">
   <a class="btn btn-linea" href="tel:+393517801301"><svg class="i" aria-hidden="true"><use href="#i-tel"/></svg>Chiama</a>
-  <a class="btn btn-pieno" href="#prodotti">Acquista</a>
+  <a class="btn btn-oro" href="#prodotti">Acquista</a>
 </div>
 
-<script>
-var ridotto = matchMedia('(prefers-reduced-motion: reduce)').matches;
-if (ridotto) document.documentElement.classList.add('fermo');
-var lenis = null;
-
-// testata e barra in basso
-var testata = document.getElementById('testata'), barra = document.getElementById('barra'), contatti = document.getElementById('contatti');
-function suScorri(){
-  testata.classList.toggle('piena', scrollY > 30);
-  var r = contatti.getBoundingClientRect();
-  barra.classList.toggle('vista', scrollY > innerHeight * 1.1 && !(r.top < innerHeight && r.bottom > 0));
-}
-suScorri(); addEventListener('scroll', suScorri, {passive: true});
-
-// link interni morbidi (niente scroll-behavior nel CSS)
-document.querySelectorAll('a[href^="#"]').forEach(function(a){
-  a.addEventListener('click', function(e){
-    var id = a.getAttribute('href'), t = document.querySelector(id); if (!t) return;
-    e.preventDefault();
-    var y = id === '#inizio' ? 0 : t.getBoundingClientRect().top + scrollY - 70;
-    if (lenis) lenis.scrollTo(y, {duration: 1.3}); else scrollTo({top: y, behavior: ridotto ? 'auto' : 'smooth'});
-  });
-});
-
-// barra dei rivenditori: scorre solo quando si vede
-var loghi = [{src:'img/logo-erbe-cielo.png',alt:'Erboristeria Le Erbe del Cielo'},{src:'img/logo-barberini.png',alt:'Erboristeria Barberini'},{src:'img/logo-pharmacia.png',alt:'Pharmacia delle Erbe'}];
-function fila(nascosta){ var ul = document.createElement('ul'); ul.className = 'loghi-fila'; if (nascosta) ul.setAttribute('aria-hidden','true');
-  for (var r = 0; r < 3; r++) { loghi.forEach(function(l){ var li = document.createElement('li'), im = document.createElement('img'); im.src = l.src; im.alt = nascosta ? '' : l.alt; im.loading = 'lazy'; li.appendChild(im); ul.appendChild(li); });
-    var t = document.createElement('li'); t.className = 't'; t.textContent = 'Rivenditori ufficiali'; ul.appendChild(t); }
-  return ul; }
-var nastro = document.getElementById('loghi-nastro'); nastro.appendChild(fila(false)); nastro.appendChild(fila(true));
-new IntersectionObserver(function(e){ document.getElementById('loghi').classList.toggle('attivo', e[0].isIntersecting); }).observe(document.getElementById('loghi'));
-
-// muro: le colonne di foto vere
-var IMG = []; for (var k = 0; k < 18; k++) IMG.push('m' + (k < 10 ? '0' : '') + k);
-var cols = document.getElementById('scena-cols'), N = matchMedia('(min-width:900px)').matches ? 5 : 3;
-for (var c = 0; c < N; c++) { var col = document.createElement('div'); col.className = 'col';
-  var lista = IMG.filter(function(_, i){ return i % N === c; }); lista = lista.concat(lista, lista).slice(0, 8);
-  lista.forEach(function(n){ var im = document.createElement('img'); im.src = 'img/muro/' + n + '.jpg'; im.alt = ''; im.decoding = 'async'; col.appendChild(im); });
-  cols.appendChild(col); }
-var frasi = document.querySelectorAll('.frase');
-function mostraFrase(p){ var k = p < .34 ? 0 : p < .67 ? 1 : 2; frasi.forEach(function(f, i){ f.classList.toggle('visibile', i === k); }); }
-
-// dichiarazione: ogni parola in uno span
-var dich = document.getElementById('dichiara');
-dich.innerHTML = dich.innerHTML.replace(/(<em>|<\/em>)/g, function(m){ return m === '<em>' ? '\u0001' : '\u0002'; }).split(' ').map(function(w){ return '<span class="w">' + w + '</span>'; }).join(' ').replace(/\u0001/g, '<em>').replace(/\u0002/g, '</em>');
-var parole = dich.querySelectorAll('.w');
-</script>
 <script defer src="js/gsap.min.js"></script>
 <script defer src="js/ScrollTrigger.min.js"></script>
 <script defer src="js/lenis.min.js"></script>
-<script>
-addEventListener('DOMContentLoaded', function(){
-  if (!window.gsap || !window.ScrollTrigger || ridotto) { document.documentElement.classList.add('fermo'); return; }
-  gsap.registerPlugin(ScrollTrigger);
-  // al computer la rotella va morbida (certi mouse fanno salti da 300 px a scatto)
-  if (window.Lenis && matchMedia('(pointer: fine)').matches) {
-    lenis = new Lenis({lerp: .12, wheelMultiplier: .8});
-    lenis.on('scroll', ScrollTrigger.update);
-    gsap.ticker.add(function(t){ lenis.raf(t * 1000); });
-    gsap.ticker.lagSmoothing(0);
-  }
-  var scena = document.querySelector('.scena'), fasi = document.querySelector('.fasi'), binario = document.querySelector('.binario');
-  var fasiT = document.querySelectorAll('.fase-t'), fasiS = document.querySelectorAll('.fase-s');
-  function clamp(x){ return Math.max(0, Math.min(1, x)); }
-
-  // la copertina entra una volta sola
-  gsap.from('#copVaso', {y: 60, autoAlpha: 0, duration: 1.2, ease: 'power3.out'});
-  gsap.from('#riga1', {x: -40, autoAlpha: 0, duration: 1.1, ease: 'power3.out', delay: .1});
-  gsap.from('#riga2', {x: 40, autoAlpha: 0, duration: 1.1, ease: 'power3.out', delay: .2});
-
-  function imposta(){
-    ScrollTrigger.getAll().forEach(function(t){ t.kill(); });
-    var pc = matchMedia('(min-width:900px)').matches;
-
-    // 0. copertina: scorrendo il titolo si apre e il barattolo si raddrizza e sale
-    var cop = document.querySelector('.copertina');
-    gsap.fromTo('#riga1', {xPercent: 0}, {xPercent: -14, ease: 'none', scrollTrigger: {trigger: cop, start: 'top top', end: 'bottom top', scrub: .5}});
-    gsap.fromTo('#riga2', {xPercent: 0}, {xPercent: 14, ease: 'none', scrollTrigger: {trigger: cop, start: 'top top', end: 'bottom top', scrub: .5}});
-    gsap.fromTo('#copVaso', {rotate: -9, scale: 1}, {rotate: 3, scale: 1.12, yPercent: -10, ease: 'none', scrollTrigger: {trigger: cop, start: 'top top', end: 'bottom top', scrub: .5}});
-
-    // 1. muro di foto
-    var S = scena.querySelector('.scena-stage').clientHeight;
-    document.querySelectorAll('.col').forEach(function(col, i){
-      var H = col.scrollHeight, d = Math.max(0, H - S), su = i % 2 === 0;
-      gsap.fromTo(col, {y: su ? 0 : -d}, {y: su ? -d : 0, ease: 'none', scrollTrigger: {trigger: scena, start: 'top top', end: 'bottom bottom', scrub: .4}});
-    });
-    ScrollTrigger.create({trigger: scena, start: 'top top', end: 'bottom bottom', onUpdate: function(s){ mostraFrase(s.progress); }});
-
-    // 2. le parole si accendono
-    ScrollTrigger.create({trigger: dich, start: 'top 80%', end: 'bottom 45%', onUpdate: function(s){ var n = parole.length; parole.forEach(function(w, i){ w.style.opacity = .16 + .84 * clamp((s.progress * n - i) * 1.6); }); }});
-
-    // 3. dalla pianta alla tazza
-    ScrollTrigger.create({trigger: fasi, start: 'top top', end: 'bottom bottom', onUpdate: function(s){
-      var p = s.progress, k = p < 1/3 ? 0 : p < 2/3 ? 1 : 2;
-      fasiT.forEach(function(t, i){ t.classList.toggle('visibile', i === k); });
-      fasiS.forEach(function(t, i){ t.classList.toggle('visibile', i === k); });
-    }});
-
-    // 4. pila: la carta sotto si restringe quando la copre la successiva
-    var carte = document.querySelectorAll('.carta-s');
-    carte.forEach(function(c, i){ var next = carte[i + 1]; if (!next) return;
-      gsap.fromTo(c, {scale: 1}, {scale: .95, ease: 'none', scrollTrigger: {trigger: next, start: 'top bottom', end: 'top top+=90', scrub: true}});
-    });
-
-    // 5. binario: i tre motivi scorrono di lato (solo da telefono)
-    if (!pc) {
-      var vag = document.getElementById('vagoni'), dist = vag.scrollWidth - innerWidth + 20;
-      gsap.fromTo(vag, {x: 0}, {x: -dist, ease: 'none', scrollTrigger: {trigger: binario, start: 'top top', end: 'bottom bottom', scrub: .4, onUpdate: function(s){ document.getElementById('progresso').style.width = (s.progress * 100) + '%'; }}});
-    }
-  }
-  var pronte = 0, imgs = document.querySelectorAll('.col img'), tot = imgs.length;
-  imgs.forEach(function(im){ var ok = function(){ if (++pronte === tot) imposta(); }; if (im.complete) ok(); else { im.addEventListener('load', ok, {once: true}); im.addEventListener('error', ok, {once: true}); } });
-  var t, w = innerWidth; addEventListener('resize', function(){ if (Math.abs(innerWidth - w) < 40) return; w = innerWidth; clearTimeout(t); t = setTimeout(imposta, 200); });
-});
-</script>
+<script defer src="js/comune.js"></script>
+<script defer src="js/home.js"></script>
 </body>
 </html>
