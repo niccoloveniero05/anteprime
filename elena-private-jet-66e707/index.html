@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Elena Private Jet · Voli privati in jet ed elicottero</title>
+<meta name="description" content="Jet ed elicotteri privati a noleggio e in vendita. Elena Mascarini, private flight manager: scrivi la rotta, al resto pensa lei.">
+<meta property="og:title" content="Elena Private Jet · Decolli quando vuoi tu">
+<meta property="og:description" content="Jet ed elicotteri privati, a noleggio e in vendita. Anteprima preparata da Veniello Studio.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="theme-color" content="#0B0E13">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0B0E13;--ink2:#121720;--ink3:#1A202B;
+  --crema:#F3EDE2;--carta:#FAF7F1;
+  --oro:#C8A464;--oro-chiaro:#E2C894;--oro-scuro:#86662C;
+  --testo:#1B1A17;--grigio:#6E675C;
+  --su-scuro:rgba(243,237,226,.72);
+  --serif:"Cormorant Garamond","Times New Roman",serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gut:clamp(20px,5vw,64px);
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--crema);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+em{font-style:italic;color:var(--oro-chiaro)}
+.chiaro em{color:var(--oro-scuro)}
+.k{font:600 11.5px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--oro)}
+.chiaro .k{color:var(--oro-scuro)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;line-height:1.02}
+h2{font-size:clamp(38px,6.4vw,72px)}
+h2 em,h1 em{font-weight:400}
+.intro{max-width:46ch;color:var(--su-scuro);font-size:17px;margin-top:18px}
+.chiaro .intro{color:var(--grigio)}
+section{position:relative}
+.chiaro{background:var(--crema);color:var(--testo)}
+.pad{padding:clamp(88px,13vw,160px) 0}
+
+/* pulsanti */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 15px/1 var(--sans);letter-spacing:.01em;cursor:pointer;border:0;transition:background-color .25s,color .25s,border-color .25s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-oro{background:var(--oro);color:#14110B}
+.btn-oro:hover{background:var(--oro-chiaro)}
+.btn-filo{border:1px solid rgba(243,237,226,.38);color:var(--crema);background:transparent}
+.btn-filo:hover{border-color:var(--oro);color:var(--oro-chiaro)}
+
+/* testata */
+.testata{position:fixed;inset:0 0 auto 0;z-index:40;transition:background-color .35s,border-color .35s;border-bottom:1px solid transparent}
+.testata.piena{background:rgba(11,14,19,.96);border-color:rgba(200,164,100,.16)}
+.testata .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.marchio{display:flex;align-items:center;gap:12px}
+.monogramma{font:500 27px/1 var(--serif);letter-spacing:-.04em;color:var(--oro);position:relative;padding-top:2px}
+.monogramma i{font-style:normal;display:inline-block;margin-left:-.12em}
+.marchio .nome{font:600 10.5px/1.35 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--crema)}
+.marchio .nome span{display:block;color:var(--su-scuro);letter-spacing:.2em;font-weight:500}
+.voci{display:none;gap:30px;font-size:14px;color:var(--su-scuro)}
+.voci a:hover{color:var(--oro-chiaro)}
+.testata .btn{min-height:44px;padding:0 18px;font-size:13.5px}
+@media (min-width:980px){.voci{display:flex}}
+
+/* copertina */
+.copertina{min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.copertina .foto{position:absolute;inset:0}
+.copertina .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 46%}
+.copertina::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(11,14,19,.82) 0%,rgba(11,14,19,.5) 34%,rgba(11,14,19,0) 58%),linear-gradient(180deg,rgba(11,14,19,.6) 0%,rgba(11,14,19,0) 22%,rgba(11,14,19,0) 60%,rgba(11,14,19,.8) 92%,var(--ink) 100%)}
+.copertina .wrap{position:relative;z-index:2;width:100%;padding-bottom:clamp(36px,7vh,72px);padding-top:120px}
+.copertina h1{font-size:clamp(54px,8.4vw,108px);max-width:9ch;margin-top:18px}
+@media (max-width:759px){
+  .copertina{display:block;min-height:0}
+  .copertina .foto{position:relative;height:47svh;min-height:330px}
+  .copertina .foto img{object-position:52% 64%}
+  .copertina .foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,14,19,.55) 0%,rgba(11,14,19,0) 28%,rgba(11,14,19,0) 62%,var(--ink) 100%)}
+  .copertina::after{display:none}
+  .copertina .wrap{padding-top:0;margin-top:-34px;padding-bottom:40px}
+  .copertina h1{font-size:clamp(50px,14vw,64px);margin-top:14px}
+  .copertina p{margin-top:14px;font-size:16.5px}
+  .copertina .azioni{margin-top:22px;gap:10px;flex-wrap:nowrap}
+  .copertina .azioni .btn{padding:0 18px}
+  .dati{margin-top:30px}
+}
+.copertina p{max-width:36ch;font-size:clamp(17px,2vw,19px);color:var(--su-scuro);margin-top:20px}
+.solo-pc{display:none}@media (min-width:760px){.solo-pc{display:inline}}
+.copertina .azioni{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.dati{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:44px;padding-top:22px;border-top:1px solid rgba(243,237,226,.16);max-width:640px}
+.dati b{display:block;font:500 clamp(22px,3vw,30px)/1 var(--serif);color:var(--crema)}
+.dati span{display:block;font-size:12.5px;color:var(--su-scuro);margin-top:6px;line-height:1.35}
+
+/* rotta: come funziona */
+.rotta{background:var(--ink)}
+.tappe{position:relative;margin-top:clamp(56px,8vw,96px)}
+.rotta-svg{position:absolute;left:0;top:0;overflow:visible;pointer-events:none}
+.rotta-svg .base{fill:none;stroke:rgba(200,164,100,.32);stroke-width:1.4;stroke-dasharray:2 7;stroke-linecap:round}
+.rotta-svg .fatta{fill:none;stroke:var(--oro);stroke-width:1.6;stroke-linecap:round}
+.aereo{position:absolute;left:0;top:0;width:34px;height:34px;color:var(--oro-chiaro);z-index:3;will-change:transform}
+.aereo svg{width:100%;height:100%;display:block;filter:drop-shadow(0 4px 10px rgba(0,0,0,.5))}
+.tappa{position:relative;padding:0 0 clamp(72px,11vw,120px) 64px}
+.tappa:last-child{padding-bottom:0}
+.tappa .punto{position:absolute;left:14px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--ink);border:1.5px solid rgba(200,164,100,.55);transition:background-color .4s,border-color .4s,box-shadow .4s}
+.tappa.passata .punto{background:var(--oro);border-color:var(--oro);box-shadow:0 0 0 6px rgba(200,164,100,.14)}
+.tappa .n{font:600 11.5px/1 var(--sans);letter-spacing:.22em;color:var(--oro);text-transform:uppercase}
+.tappa h3{font-size:clamp(32px,4.6vw,48px);margin-top:12px}
+.tappa p{color:var(--su-scuro);max-width:40ch;margin-top:12px;font-size:16.5px}
+@media (min-width:900px){
+  .tappa{width:50%;padding-left:0;padding-right:72px;text-align:right}
+  .tappa p{margin-left:auto}
+  .tappa .punto{left:auto;right:-6.5px}
+  .tappa:nth-child(even){margin-left:50%;padding-right:0;padding-left:72px;text-align:left}
+  .tappa:nth-child(even) p{margin-left:0}
+  .tappa:nth-child(even) .punto{right:auto;left:-6.5px}
+}
+
+/* perché */
+.frase{font:500 clamp(34px,5.6vw,66px)/1.12 var(--serif);letter-spacing:-.01em;max-width:20ch}
+.frase .p{opacity:.16}
+html.fermo .frase .p{opacity:1}
+.motivi{display:grid;gap:34px;margin-top:clamp(64px,9vw,110px)}
+.motivi h3{font-size:30px}
+.motivi p{color:var(--grigio);margin-top:8px;max-width:32ch}
+.motivi .k{display:block;margin-bottom:14px}
+@media (min-width:820px){.motivi{grid-template-columns:repeat(3,1fr);gap:48px}.motivi>div{border-top:1px solid rgba(27,26,23,.14);padding-top:26px}}
+
+/* flotta */
+.flotta{background:var(--ink2)}
+.flotta-testa{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px}
+.frecce{display:none;gap:10px}
+.frecce button{width:52px;height:52px;border-radius:50%;border:1px solid rgba(243,237,226,.28);background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .25s,color .25s}
+.frecce button:hover{border-color:var(--oro);color:var(--oro-chiaro)}
+.frecce svg{width:20px;height:20px}
+@media (min-width:820px){.frecce{display:flex}}
+.binario{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:46px var(--gut) 8px;margin:0 auto;max-width:calc(var(--max) + 0px);scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.binario::-webkit-scrollbar{display:none}
+.aereo-c{flex:none;width:min(82vw,380px);scroll-snap-align:start;background:var(--ink3);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.aereo-c .img{aspect-ratio:4/3;overflow:hidden;position:relative;background:#0f141c}
+.aereo-c .img img{width:100%;height:100%;object-fit:cover}
+.aereo-c .img .interno{position:absolute;right:12px;bottom:12px;width:38%;aspect-ratio:16/10;border-radius:10px;overflow:hidden;border:2px solid rgba(243,237,226,.85);box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.aereo-c .img .interno img{width:100%;height:100%;object-fit:cover}
+.aereo-c .corpo{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.aereo-c .classe{font:600 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--oro)}
+.aereo-c h3{font-size:32px;margin-top:10px}
+.aereo-c p{color:var(--su-scuro);font-size:15px;margin-top:8px;line-height:1.5}
+.spec{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:auto;padding-top:20px}
+.spec div{border-top:1px solid rgba(243,237,226,.14);padding-top:12px}
+.spec b{display:block;font:500 22px/1 var(--serif);color:var(--crema)}
+.spec span{display:block;font-size:11.5px;color:var(--su-scuro);margin-top:5px;line-height:1.3}
+.nota-flotta{color:var(--su-scuro);font-size:14.5px;margin-top:34px;max-width:62ch}
+.nota-flotta b{color:var(--crema);font-weight:600}
+.scorri-hint{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--su-scuro);margin-top:18px}
+.scorri-hint svg{width:16px;height:16px}
+@media (min-width:820px){.scorri-hint{display:none}}
+
+/* pausa: foto a tutta larghezza */
+.pausa{height:min(92svh,860px);overflow:hidden;display:flex;align-items:flex-end}
+.pausa img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%}
+.pausa::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,14,19,.0) 40%,rgba(11,14,19,.78) 100%)}
+.pausa .wrap{position:relative;z-index:2;padding-bottom:clamp(40px,8vw,80px);width:100%}
+.pausa p{font:500 clamp(40px,7vw,86px)/1.02 var(--serif);max-width:13ch}
+
+/* a bordo */
+.bordo{background:var(--ink)}
+.bordo-griglia{display:grid;gap:44px;margin-top:clamp(52px,7vw,84px)}
+.voce-b .img{border-radius:16px;overflow:hidden;background:var(--ink3)}
+.voce-b .img img{width:100%;height:100%;object-fit:cover}
+.voce-b h3{font-size:30px;margin-top:20px}
+.voce-b p{color:var(--su-scuro);margin-top:6px;max-width:36ch}
+.voce-b.alta .img{aspect-ratio:4/5}
+.voce-b.larga .img{aspect-ratio:16/11}
+.senza-foto{display:grid;gap:34px;margin-top:10px}
+.senza-foto>div{border-top:1px solid rgba(243,237,226,.14);padding-top:22px}
+.senza-foto h3{font-size:28px}
+.senza-foto p{color:var(--su-scuro);margin-top:6px}
+@media (min-width:900px){
+  .bordo-griglia{grid-template-columns:1.05fr .95fr;column-gap:56px;row-gap:70px;align-items:start}
+  .bordo-griglia .voce-b:nth-child(2){margin-top:140px}
+  .senza-foto{grid-template-columns:1fr 1fr;gap:40px;margin-top:0}
+}
+
+/* chi sono */
+.chi{background:var(--carta);color:var(--testo)}
+.chi-griglia{display:grid;gap:44px;align-items:center}
+.chi .foto-e{position:relative;max-width:520px}
+.chi .foto-e .grande{border-radius:18px;overflow:hidden;aspect-ratio:4/5}
+.chi .foto-e .grande img{width:100%;height:100%;object-fit:cover;object-position:40% 30%}
+.chi .foto-e .piccola{position:absolute;right:-6%;bottom:-8%;width:46%;border-radius:12px;overflow:hidden;border:6px solid var(--carta);box-shadow:0 18px 40px rgba(27,26,23,.18);aspect-ratio:1/1}
+.chi .foto-e .piccola img{width:100%;height:100%;object-fit:cover}
+.chi h2{margin-top:16px}
+.chi .ruolo{font:500 italic 26px/1.2 var(--serif);color:var(--oro-scuro);margin-top:10px}
+.chi p.t{color:#4A453D;margin-top:22px;max-width:44ch;font-size:17px}
+.chi .firma{font:400 italic 46px/1 var(--serif);color:var(--testo);margin-top:28px}
+@media (min-width:900px){.chi-griglia{grid-template-columns:1fr 1fr;gap:90px}}
+
+/* richiesta */
+.richiesta{background:var(--ink);overflow:hidden}
+.richiesta .sfondo{position:absolute;inset:0;opacity:.22}
+.richiesta .sfondo img{width:100%;height:100%;object-fit:cover}
+.richiesta::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--ink) 0%,rgba(11,14,19,.6) 40%,var(--ink) 100%);z-index:1}
+.richiesta .wrap{position:relative;z-index:2}
+.richiesta-griglia{display:grid;gap:48px}
+.modulo{background:rgba(18,23,32,.94);border:1px solid rgba(200,164,100,.2);border-radius:20px;padding:clamp(22px,4vw,36px);display:grid;gap:16px}
+.campo{display:grid;gap:7px}
+.campo label,.campo .lab{font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--oro)}
+.campo input,.campo select,.campo textarea{width:100%;min-height:52px;border-radius:12px;border:1px solid rgba(243,237,226,.16);background:#0E131B;padding:13px 15px;font-size:16px;color:var(--crema);outline:none;transition:border-color .2s}
+.campo textarea{min-height:92px;resize:vertical}
+.campo input:focus,.campo select:focus,.campo textarea:focus{border-color:var(--oro)}
+.campo input::placeholder,.campo textarea::placeholder{color:rgba(243,237,226,.36)}
+.campo input[type=date]{color-scheme:dark}
+.due{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.richiesta-griglia>*,.campo,.campo input,.campo select,.campo textarea{min-width:0}
+.scelta{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:#0E131B;border:1px solid rgba(243,237,226,.16);border-radius:12px;padding:4px}
+.scelta input{position:absolute;opacity:0;pointer-events:none}
+.scelta label{min-height:44px;display:flex;align-items:center;justify-content:center;border-radius:9px;font:600 14px/1.1 var(--sans);letter-spacing:0;text-transform:none;color:var(--su-scuro);cursor:pointer;text-align:center;padding:0 6px;transition:background-color .2s,color .2s}
+.scelta input:checked+label{background:var(--oro);color:#14110B}
+.scelta input:focus-visible+label{outline:2px solid var(--oro-chiaro);outline-offset:2px}
+.modulo .btn{width:100%;margin-top:6px}
+.modulo small{color:var(--su-scuro);font-size:13px;text-align:center}
+.altri{display:grid;gap:14px;margin-top:34px}
+.altri a{display:flex;align-items:center;gap:16px;padding:16px 0;border-top:1px solid rgba(243,237,226,.14);min-height:56px}
+.altri a:last-child{border-bottom:1px solid rgba(243,237,226,.14)}
+.altri svg{width:22px;height:22px;color:var(--oro);flex:none}
+.altri b{display:block;font:500 24px/1.1 var(--serif)}
+.altri span{display:block;font-size:13px;color:var(--su-scuro)}
+@media (min-width:960px){.richiesta-griglia{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:80px;align-items:start}}
+
+/* piede */
+.piede{background:#07090D;padding:56px 0 calc(110px + env(safe-area-inset-bottom));color:var(--su-scuro);font-size:14px}
+.piede .wrap{display:grid;gap:22px}
+.piede .monogramma{font-size:40px}
+.piede a{color:var(--crema)}
+.piede .anteprima-nota{font-size:12.5px;opacity:.7}
+@media (min-width:820px){.piede{padding-bottom:56px}}
+
+/* barra in basso sul telefono */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:45;display:grid;grid-template-columns:1fr 1.4fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(11,14,19,.97);border-top:1px solid rgba(200,164,100,.18);transform:translateY(110%);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.barra.vista{transform:none}
+.barra .btn{min-height:50px;padding:0 14px}
+@media (min-width:820px){.barra{display:none}}
+
+/* rid. movimento */
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3.2l1.6 4-2 1.3a11 11 0 0 0 6.9 6.9l1.3-2 4 1.6V19a1.6 1.6 0 0 1-1.6 1.6A15.6 15.6 0 0 1 3.4 5.6 1.6 1.6 0 0 1 5 4z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2a9.7 9.7 0 0 0-8.3 14.8L2.4 21.6l4.7-1.2A9.7 9.7 0 1 0 12 2.2zm0 17.7a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-freccia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-indietro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-aereo" viewBox="0 0 48 48" fill="currentColor"><path d="M44.5 24c0-1.4-1.6-2.3-3.6-2.3H29.6L19.2 6.2h-3.6l5 15.5h-8.9L7.9 16.4H5l2.4 7.6L5 31.6h2.9l3.8-5.3h8.9l-5 15.5h3.6l10.4-15.5h11.3c2 0 3.6-.9 3.6-2.3z"/></symbol>
+</svg>
+
+<header class="testata" id="testata">
+  <div class="wrap">
+    <a class="marchio" href="#inizio" aria-label="Elena Private Jet, torna all'inizio">
+      <span class="monogramma">E<i>P</i><i>J</i></span>
+      <span class="nome">Elena Private Jet<span>Flight Manager</span></span>
+    </a>
+    <nav class="voci" aria-label="Sezioni">
+      <a href="#come">Come funziona</a><a href="#flotta">Flotta</a><a href="#bordo">A bordo</a><a href="#chi">Chi sono</a>
+    </nav>
+    <a class="btn btn-oro" href="#richiesta">Richiedi un volo</a>
+  </div>
+</header>
+
+<main>
+<section class="copertina" id="inizio">
+  <div class="foto"><img src="img/mare.jpg" width="1320" height="1183" alt="Jet privato in volo sul mare al tramonto" fetchpriority="high"></div>
+  <div class="wrap">
+    <div class="k cop-a">Elena Mascarini<span class="solo-pc"> · Private</span> · Flight Manager</div>
+    <h1 class="cop-a">Decolli quando <em>vuoi tu.</em></h1>
+    <p class="cop-a">Jet ed elicotteri privati, a noleggio e in vendita. Mi dici dove devi andare, al resto penso io.</p>
+    <div class="azioni cop-a">
+      <a class="btn btn-oro" href="#richiesta">Richiedi un volo<svg><use href="#i-freccia"/></svg></a>
+      <a class="btn btn-filo" href="https://wa.me/393337411622" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+    </div>
+    <div class="dati cop-a">
+      <div><b>10 min</b><span>in aeroporto prima del decollo</span></div>
+      <div><b>Jet</b><span>ed elicotteri privati</span></div>
+      <div><b>24/7</b><span>assistenza prima, durante e dopo</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="rotta pad" id="come">
+  <div class="wrap">
+    <div class="k">Come funziona</div>
+    <h2>Dalla richiesta al decollo, <em>in tre tappe.</em></h2>
+    <div class="tappe" id="tappe">
+      <svg class="rotta-svg" id="rottaSvg" aria-hidden="true"><path class="base" id="rottaBase"/><path class="fatta" id="rottaFatta"/></svg>
+      <div class="aereo" id="aereo" aria-hidden="true"><svg><use href="#i-aereo"/></svg></div>
+      <div class="tappa"><span class="punto"></span><div class="n">01 · Richiesta</div><h3>Mi scrivi la rotta</h3><p>Da dove parti, dove vai, quando e in quanti siete. Basta un messaggio.</p></div>
+      <div class="tappa"><span class="punto"></span><div class="n">02 · Proposta</div><h3>Scegliamo l'aereo</h3><p>Ti propongo gli aerei adatti al viaggio, dal jet leggero all'intercontinentale, o l'elicottero se conviene. Con il preventivo.</p></div>
+      <div class="tappa"><span class="punto"></span><div class="n">03 · Decollo</div><h3>Arrivi e parti</h3><p>Imbarco dal terminal privato, senza code e senza formalità: in aeroporto bastano dieci, quindici minuti prima della partenza.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="chiaro pad" id="perche">
+  <div class="wrap">
+    <div class="k">Perché in privato</div>
+    <p class="frase" id="frase" style="margin-top:22px">Niente code al controllo, niente attese al gate. Arrivi, sali a bordo e decolli: il tempo del viaggio torna tuo.</p>
+    <div class="motivi">
+      <div><span class="k">Comodità</span><h3>Parti quando sei pronto</h3><p>Decolli quando vuoi tu, senza code né attese.</p></div>
+      <div><span class="k">Flessibilità</span><h3>Tutta Europa</h3><p>Destinazioni in tutta Europa, su misura per te.</p></div>
+      <div><span class="k">Privacy</span><h3>Solo voi a bordo</h3><p>Uno spazio riservato solo a te e ai tuoi ospiti.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="flotta pad" id="flotta">
+  <div class="wrap flotta-testa">
+    <div>
+      <div class="k">La flotta</div>
+      <h2 style="margin-top:16px">Scegli l'aereo <em>per il tuo viaggio.</em></h2>
+      <p class="intro">Dal jet leggero per un volo di un'ora all'intercontinentale. Sono alcuni degli aerei che ti posso proporre: la disponibilità dipende da data e rotta.</p>
+    </div>
+    <div class="frecce"><button type="button" id="indietro" aria-label="Aereo precedente"><svg><use href="#i-indietro"/></svg></button><button type="button" id="avanti" aria-label="Aereo successivo"><svg><use href="#i-freccia"/></svg></button></div>
+  </div>
+  <div class="binario" id="binario">
+    <article class="aereo-c">
+      <div class="img"><img src="img/phenom.jpg" width="1320" height="1332" alt="Embraer Phenom 300 in volo" loading="lazy"><div class="interno"><img src="img/phenom-in.jpg" width="1202" height="541" alt="Cabina del Phenom 300" loading="lazy"></div></div>
+      <div class="corpo"><span class="classe">Super light jet</span><h3>Embraer Phenom 300</h3><p>Veloce e comodo, ideale per i viaggi a corto e medio raggio.</p>
+        <div class="spec"><div><b>8</b><span>passeggeri</span></div><div><b>3.700</b><span>km di autonomia</span></div><div><b>Wi-Fi</b><span>satellitare</span></div></div></div>
+    </article>
+    <article class="aereo-c">
+      <div class="img"><img src="img/pc24.jpg" width="1320" height="1332" alt="Pilatus PC-24 in volo" loading="lazy"><div class="interno"><img src="img/pc24-in.jpg" width="1201" height="542" alt="Cabina del Pilatus PC-24" loading="lazy"></div></div>
+      <div class="corpo"><span class="classe">Super versatile jet</span><h3>Pilatus PC-24</h3><p>Il jet svizzero che atterra anche su piste corte: arrivi più vicino a dove devi andare.</p>
+        <div class="spec"><div><b>8</b><span>passeggeri</span></div><div><b>3.700</b><span>km di autonomia</span></div><div><b>Wi-Fi</b><span>ad alta velocità</span></div></div></div>
+    </article>
+    <article class="aereo-c">
+      <div class="img"><img src="img/falcon-2000.jpg" width="1320" height="534" alt="Dassault Falcon 2000LXS in volo" loading="lazy"><div class="interno"><img src="img/falcon-2000-in.jpg" width="1320" height="699" alt="Cabina del Falcon 2000LXS" loading="lazy"></div></div>
+      <div class="corpo"><span class="classe">Super midsize jet</span><h3>Dassault Falcon 2000LXS</h3><p>Cabina ampia per dieci persone e l'autonomia per attraversare l'Europa senza scali.</p>
+        <div class="spec"><div><b>10</b><span>passeggeri</span></div><div><b>7.400</b><span>km di autonomia</span></div><div><b>M 0,86</b><span>velocità di crociera</span></div></div></div>
+    </article>
+    <article class="aereo-c">
+      <div class="img"><img src="img/g450.jpg" width="1320" height="1332" alt="Gulfstream G450 in volo" loading="lazy"><div class="interno"><img src="img/g450-in.jpg" width="1202" height="541" alt="Cabina del Gulfstream G450" loading="lazy"></div></div>
+      <div class="corpo"><span class="classe">Super large jet</span><h3>Gulfstream G450</h3><p>A lungo raggio, con la cabina divisa fino a tre zone.</p>
+        <div class="spec"><div><b>14</b><span>passeggeri</span></div><div><b>8.056</b><span>km di autonomia</span></div><div><b>Wi-Fi</b><span>satellitare</span></div></div></div>
+    </article>
+    <article class="aereo-c">
+      <div class="img"><img src="img/falcon-7x.jpg" width="1320" height="534" alt="Dassault Falcon 7X al tramonto" loading="lazy"><div class="interno"><img src="img/falcon-7x-in.jpg" width="1320" height="699" alt="Cabina del Falcon 7X" loading="lazy"></div></div>
+      <div class="corpo"><span class="classe">Large jet</span><h3>Dassault Falcon 7X</h3><p>Tre motori e undicimila chilometri di autonomia per i voli intercontinentali.</p>
+        <div class="spec"><div><b>14</b><span>passeggeri</span></div><div><b>11.000</b><span>km di autonomia</span></div><div><b>M 0,90</b><span>velocità di crociera</span></div></div></div>
+    </article>
+    <article class="aereo-c">
+      <div class="img"><img src="img/falcon-10x.jpg" width="1319" height="534" alt="Dassault Falcon 10X in volo sulla costa" loading="lazy"><div class="interno"><img src="img/falcon-10x-in.jpg" width="1319" height="698" alt="Cabina del Falcon 10X" loading="lazy"></div></div>
+      <div class="corpo"><span class="classe">Ultra long range</span><h3>Dassault Falcon 10X</h3><p>Il più nuovo della famiglia Falcon, pensato per i voli più lunghi.</p>
+        <div class="spec"><div><b>16</b><span>passeggeri</span></div><div><b>13.900</b><span>km di autonomia</span></div><div><b>M 0,925</b><span>velocità di crociera</span></div></div></div>
+    </article>
+    <article class="aereo-c">
+      <div class="img"><img src="img/elicottero.jpg" width="1240" height="557" alt="Elicottero privato sopra la città" loading="lazy"></div>
+      <div class="corpo"><span class="classe">Elicottero privato</span><h3>Elicottero</h3><p>Atterri nel cuore della città, vicino alla tua destinazione finale. Nessun aeroporto lontano.</p>
+        <div class="spec"><div><b>Diretto</b><span>al punto d'arrivo</span></div><div><b>Breve</b><span>voli brevi e puntuali</span></div><div><b>Viste</b><span>coste, montagne, città</span></div></div></div>
+    </article>
+  </div>
+  <div class="wrap">
+    <div class="scorri-hint"><svg><use href="#i-freccia"/></svg>Scorri di lato per vedere gli altri aerei</div>
+    <p class="nota-flotta">E poi turboelica e jet di ogni misura: <b>Pilatus PC-12, Beechcraft King Air C90GTx, Cessna Citation CJ1, Bombardier Challenger 604, Gulfstream G700</b>. Li racconto uno per uno su Instagram.</p>
+  </div>
+</section>
+
+<section class="pausa" aria-label="Tutta Europa">
+  <img src="img/ala.jpg" width="1400" height="1867" alt="L'ala di un jet privato sopra una costa del Mediterraneo" loading="lazy">
+  <div class="wrap"><p>Tutta Europa, <em>su misura per te.</em></p></div>
+</section>
+
+<section class="bordo pad" id="bordo">
+  <div class="wrap">
+    <div class="k">A bordo</div>
+    <h2 style="margin-top:16px">Il viaggio comincia <em>prima del decollo.</em></h2>
+    <div class="bordo-griglia">
+      <div class="voce-b alta"><div class="img"><img src="img/catering.jpg" width="1400" height="1864" alt="Tavolo apparecchiato con il pranzo a bordo di un jet" loading="lazy"></div><h3>Catering su misura</h3><p>Menù gourmet scelti per ogni esigenza: l'alta cucina incontra l'alta quota.</p></div>
+      <div class="voce-b alta"><div class="img"><img src="img/cane.jpg" width="1400" height="1750" alt="Un golden retriever al finestrino di un Pilatus" loading="lazy"></div><h3>Anche lui viaggia con te</h3><p>Organizziamo il volo perfetto anche per i vostri animali, con l'accoglienza che meritano.</p></div>
+      <div class="voce-b larga"><div class="img"><img src="img/cabina.jpg" width="1320" height="886" alt="Cabina di un jet privato con poltrone in pelle" loading="lazy"></div><h3>La cabina è vostra</h3><p>Poltrone in pelle, silenzio e spazio per lavorare o riposare.</p></div>
+      <div class="senza-foto">
+        <div><span class="k">Terminal privato</span><h3 style="margin-top:12px">Imbarco diretto</h3><p>Senza formalità e senza code: dall'auto alla scaletta.</p></div>
+        <div><span class="k">Assistenza 24/7</span><h3 style="margin-top:12px">Sempre raggiungibile</h3><p>Assistenza dedicata prima, durante e dopo il volo.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chi pad" id="chi">
+  <div class="wrap chi-griglia">
+    <div class="foto-e">
+      <div class="grande"><img src="img/elena.jpg" width="1200" height="1591" alt="Elena Mascarini" loading="lazy"></div>
+      <div class="piccola"><img src="img/biglietti.jpg" width="1400" height="1355" alt="I biglietti da visita di Elena Private Jet" loading="lazy"></div>
+    </div>
+    <div>
+      <div class="k">Chi sono</div>
+      <h2>Elena Mascarini</h2>
+      <div class="ruolo">Private Flight Manager</div>
+      <p class="t">Organizzo voli privati in jet ed elicottero, per lavoro e per piacere. Scelgo con te l'aereo giusto, disegno l'itinerario e seguo ogni dettaglio, fino all'atterraggio.</p>
+      <p class="t" style="margin-top:14px">Mi occupo anche di compravendita: se vuoi acquistare o vendere un aereo o un elicottero, parliamone.</p>
+      <div class="firma">Elena</div>
+    </div>
+  </div>
+</section>
+
+<section class="richiesta pad" id="richiesta">
+  <div class="sfondo" aria-hidden="true"><img src="img/nuvole.jpg" width="1288" height="820" alt="" loading="lazy"></div>
+  <div class="wrap richiesta-griglia">
+    <div>
+      <div class="k">Richiedi un volo</div>
+      <h2 style="margin-top:16px">Dove vuoi <em>andare?</em></h2>
+      <p class="intro">Compila i campi e il messaggio si apre su WhatsApp, già scritto. Ti rispondo con le proposte.</p>
+      <div class="altri">
+        <a href="tel:+393337411622"><svg><use href="#i-tel"/></svg><div><b>+39 333 741 1622</b><span>Preferisci parlarne a voce? Chiamami</span></div></a>
+        <a href="https://ig.me/m/elenaprivatejet" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg><div><b>@elenaprivatejet</b><span>Scrivimi su Instagram</span></div></a>
+      </div>
+    </div>
+    <form class="modulo" id="modulo" novalidate>
+      <div class="due">
+        <div class="campo"><label for="da">Partenza</label><input id="da" name="da" placeholder="Città o aeroporto" autocomplete="off" required></div>
+        <div class="campo"><label for="a">Destinazione</label><input id="a" name="a" placeholder="Città o aeroporto" autocomplete="off" required></div>
+      </div>
+      <div class="due">
+        <div class="campo"><label for="data">Data</label><input id="data" name="data" type="date"></div>
+        <div class="campo"><label for="ritorno">Ritorno</label><input id="ritorno" name="ritorno" type="date"></div>
+      </div>
+      <div class="campo"><label for="pax">Passeggeri</label>
+        <select id="pax" name="pax"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9-12</option><option>13-16</option><option>Più di 16</option></select></div>
+      <div class="campo"><span class="lab">Con cosa</span>
+        <div class="scelta" role="radiogroup" aria-label="Con cosa vuoi volare">
+          <input type="radio" name="mezzo" id="m1" value="Jet" checked><label for="m1">Jet</label>
+          <input type="radio" name="mezzo" id="m2" value="Elicottero"><label for="m2">Elicottero</label>
+          <input type="radio" name="mezzo" id="m3" value="Consigliami tu"><label for="m3">Consigliami</label>
+        </div></div>
+      <div class="campo"><label for="note">Note</label><textarea id="note" name="note" placeholder="Animali a bordo, catering, bagagli, orari…"></textarea></div>
+      <button class="btn btn-oro" type="submit"><svg><use href="#i-wa"/></svg>Invia la richiesta su WhatsApp</button>
+      <small>Nessun impegno: è solo una richiesta di preventivo.</small>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="piede">
+  <div class="wrap">
+    <span class="monogramma">E<i>P</i><i>J</i></span>
+    <div>Elena Private Jet · Elena Mascarini, Private Flight Manager<br>Jet ed elicotteri privati · noleggio e vendita</div>
+    <div><a href="tel:+393337411622">+39 333 741 1622</a> · <a href="https://www.instagram.com/elenaprivatejet/" target="_blank" rel="noopener">Instagram @elenaprivatejet</a></div>
+    <div class="anteprima-nota">Anteprima preparata da Veniello Studio per Elena Private Jet</div>
+  </div>
+</footer>
+
+<div class="barra" id="barra">
+  <a class="btn btn-filo" href="tel:+393337411622"><svg><use href="#i-tel"/></svg>Chiama</a>
+  <a class="btn btn-oro" href="#richiesta">Richiedi un volo</a>
+</div>
+
+<script>
+(function(){
+  var NUMERO = '393337411622';
+  var fermo = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (fermo) document.documentElement.classList.add('fermo');
+
+  // testata piena dopo la copertina, barra in basso sul telefono
+  var testata = document.getElementById('testata'), barra = document.getElementById('barra');
+  var richiesta = document.getElementById('richiesta');
+  function suScorri(){
+    var y = window.scrollY, h = window.innerHeight;
+    testata.classList.toggle('piena', y > 40);
+    var r = richiesta.getBoundingClientRect();
+    barra.classList.toggle('vista', y > h * .8 && !(r.top < h && r.bottom > 0));
+  }
+  window.addEventListener('scroll', suScorri, {passive:true}); suScorri();
+
+  // link interni morbidi (niente scroll-behavior nel CSS: dà fastidio a ScrollTrigger)
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var t = document.querySelector(a.getAttribute('href')); if (!t) return;
+      e.preventDefault();
+      window.scrollTo({top: t.getBoundingClientRect().top + window.scrollY - (a.getAttribute('href') === '#inizio' ? 0 : 60), behavior: fermo ? 'auto' : 'smooth'});
+    });
+  });
+
+  // flotta: frecce da computer
+  var bin = document.getElementById('binario');
+  function passo(d){ var c = bin.querySelector('.aereo-c'); bin.scrollBy({left: d * (c.offsetWidth + 16), behavior: fermo ? 'auto' : 'smooth'}); }
+  document.getElementById('avanti').addEventListener('click', function(){ passo(1); });
+  document.getElementById('indietro').addEventListener('click', function(){ passo(-1); });
+
+  // richiesta: apre WhatsApp con il messaggio già scritto
+  function dataIt(v){ if (!v) return ''; var p = v.split('-'); return p[2] + '/' + p[1] + '/' + p[0]; }
+  document.getElementById('modulo').addEventListener('submit', function(e){
+    e.preventDefault();
+    var f = e.target, da = f.da.value.trim(), a = f.a.value.trim();
+    if (!da) { f.da.focus(); return; } if (!a) { f.a.focus(); return; }
+    var righe = ['Buongiorno Elena, vorrei un preventivo per un volo privato.', '',
+      'Da: ' + da, 'A: ' + a];
+    if (f.data.value) righe.push('Data: ' + dataIt(f.data.value));
+    righe.push(f.ritorno.value ? 'Ritorno: ' + dataIt(f.ritorno.value) : 'Solo andata');
+    righe.push('Passeggeri: ' + f.pax.value);
+    righe.push('Con: ' + f.mezzo.value);
+    if (f.note.value.trim()) righe.push('Note: ' + f.note.value.trim());
+    window.open('https://wa.me/' + NUMERO + '?text=' + encodeURIComponent(righe.join('\n')), '_blank', 'noopener');
+  });
+
+  // parole della frase, una per una
+  var frase = document.getElementById('frase');
+  frase.innerHTML = frase.textContent.trim().split(/\s+/).map(function(w){ return '<span class="p">' + w + '</span>'; }).join(' ');
+
+  // la rotta: costruita sulla misura vera della sezione
+  var tappe = document.getElementById('tappe'), svg = document.getElementById('rottaSvg');
+  var base = document.getElementById('rottaBase'), fatta = document.getElementById('rottaFatta');
+  var quote = [];
+  function costruisci(){
+    var W = tappe.clientWidth, H = tappe.clientHeight, box = tappe.getBoundingClientRect();
+    svg.setAttribute('width', W); svg.setAttribute('height', H); svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    var largo = window.innerWidth >= 900;
+    var punti = [].map.call(tappe.querySelectorAll('.punto'), function(p){ var r = p.getBoundingClientRect(); return {x: r.left + r.width / 2 - box.left, y: r.top + r.height / 2 - box.top}; });
+    var onda = largo ? 110 : 26;
+    var d = 'M' + punti[0].x + ' ' + punti[0].y;
+    for (var i = 1; i < punti.length; i++) {
+      // da computer il testo della tappa di partenza sta a sinistra (dispari) o a destra (pari): la curva va dalla parte vuota
+      var p = punti[i - 1], q = punti[i], dy = q.y - p.y, s = largo ? (i % 2 ? 1 : -1) * onda : onda * (i % 2 ? 1 : .45);
+      d += ' C' + (p.x + s) + ' ' + (p.y + dy * .18) + ' ' + (q.x + s * .9) + ' ' + (q.y - dy * .62) + ' ' + q.x + ' ' + q.y;
+    }
+    base.setAttribute('d', d); fatta.setAttribute('d', d);
+    var L = fatta.getTotalLength();
+    fatta.style.strokeDasharray = L; fatta.style.strokeDashoffset = fermo ? 0 : L;
+    // a che punto della rotta sta ogni tappa (per accenderla)
+    quote = punti.map(function(pt){
+      if (pt === punti[0]) return 0;
+      var lo = 0, hi = L; for (var k = 0; k < 22; k++) { var m = (lo + hi) / 2; if (fatta.getPointAtLength(m).y < pt.y) lo = m; else hi = m; } return lo / L;
+    });
+    return L;
+  }
+
+  function avvia(){
+    var L = costruisci();
+    var aereo = document.getElementById('aereo');
+    if (fermo || !window.gsap || !window.ScrollTrigger || !window.MotionPathPlugin) {
+      document.documentElement.classList.add('fermo');
+      [].forEach.call(tappe.querySelectorAll('.tappa'), function(t){ t.classList.add('passata'); });
+      aereo.style.display = 'none';
+      return;
+    }
+    gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+
+    // copertina: una sola entrata, poi ferma
+    gsap.from('.cop-a', {y: 22, autoAlpha: 0, duration: .9, ease: 'power3.out', stagger: .09, delay: .1});
+    gsap.fromTo('.copertina .foto img', {scale: 1.08}, {scale: 1, duration: 2.4, ease: 'power2.out'});
+
+    // l'aereo segue la rotta mentre scorri e la traccia d'oro si disegna dietro di lui
+    var tl = gsap.timeline({scrollTrigger: {trigger: tappe, start: 'top 72%', end: 'bottom 58%', scrub: .5, invalidateOnRefresh: true,
+      onUpdate: function(st){ var pr = st.progress; [].forEach.call(tappe.querySelectorAll('.tappa'), function(t, i){ t.classList.toggle('passata', pr >= quote[i] - .01); }); }}});
+    tl.fromTo(fatta, {strokeDashoffset: function(){ return fatta.getTotalLength(); }}, {strokeDashoffset: 0, ease: 'none'}, 0)
+      .to(aereo, {motionPath: {path: fatta, align: fatta, alignOrigin: [.5, .5], autoRotate: true}, ease: 'none'}, 0);
+
+    // le parole si accendono mentre scorri
+    gsap.to('#frase .p', {opacity: 1, stagger: .5, ease: 'none', scrollTrigger: {trigger: frase, start: 'top 82%', end: 'bottom 52%', scrub: .5}});
+
+    ScrollTrigger.addEventListener('refreshInit', costruisci);
+    var t; window.addEventListener('resize', function(){ clearTimeout(t); t = setTimeout(function(){ ScrollTrigger.refresh(); }, 200); });
+  }
+  if (document.readyState === 'complete') avvia(); else window.addEventListener('load', avvia);
+})();
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathPlugin.min.js"></script>
+</body>
+</html>
