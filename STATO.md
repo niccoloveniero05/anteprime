@@ -31,6 +31,7 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 | Studio Bernardini & Partners | Altopascio | https://niccoloveniero05.github.io/anteprime/studio-bernardini-2b1e95/ | 2026-10-16 | in attesa | studio di commercialisti con sito vecchio (modello generico); testi presi dal loro sito e dalla pagina dei premi; una sola foto (team ai Le Fonti Awards 2022). Issue #18 |
 | Ristorante Lorenzo | Forte dei Marmi | https://niccoloveniero05.github.io/anteprime/ristorante-lorenzo-119f07/ | 2026-10-19 | in attesa | ristorante stellato con un sito del 2018 (WordPress); testi, menù degustazione e foto presi dal loro sito; stella Michelin verificata sulla Guida 2026; orari da Google. Issue #19 |
 | Pasticceria Sweet by Daniele Grieco | Montecatini Terme | https://niccoloveniero05.github.io/anteprime/sweet-1c649f/ | 2026-10-19 | in attesa | pasticceria senza sito (solo Facebook); foto e frasi delle recensioni da Google; il cubo di brioche in primo piano; WhatsApp sul cellulare da confermare. Issue #20 |
+| Sito personale consulenza societaria | Italia e Spagna | https://niccoloveniero05.github.io/anteprime/mm-advisory-40da3a/ | 2026-10-28 | in attesa | sito su richiesta dal brief del cliente: 8 pagine in italiano, inglese e spagnolo, struttura 3D animata, modulo contatti pronto per Netlify; mancano email, telefono, partita IVA e dominio; nessuna foto. Issue #21 |
 
 ## Registro
 
@@ -74,3 +75,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-10-21 — Pubblicata l'anteprima di Aloe Center di Alfonso Bottiglieri (Roma, caffè all'Aloe, `aloe-center-11a91f`), fatta dal Claude di Niccolò su richiesta del direttore commerciale, stato "in attesa". Foto e testi presi dal loro sito attuale (aloecentershop.com, Jimdo).
 - 2026-10-21 — Aloe Center (`aloe-center-11a91f`): rifatta da zero su richiesta del cliente («vuole un sito premium, così è simile a quello che ha ora»). Nuovo stile chiaro avorio/espresso/salvia sul modello del sito di Veniello (muro di foto, pila dei prodotti, dalla pianta alla tazza). Stesso link.
 - 2026-10-21 (sera) — Aloe Center (`aloe-center-11a91f`): terza versione dopo i vocali del direttore: nero, verde chiaro e dettagli oro (caratteri confermati), sezioni nuove Aloe Code e integratori, seconda pagina integratori.html con i 22 integratori. Stesso link.
+- 2026-10-28 — Pubblicata l'anteprima del sito personale di consulenza societaria (Italia e Spagna, `mm-advisory-40da3a`), fatta su richiesta dal brief del cliente, stato "in attesa": da mandare. Issue #21.
