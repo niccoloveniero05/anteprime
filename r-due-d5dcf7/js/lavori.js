@@ -1,0 +1,8 @@
+window.LAVORI = [
+  { id: 'bmw', marca: 'BMW', nome: 'Serie 4', tipo: 'Verniciatura', auto: 'bmw', foto: 'img/lavori/bmw.webp', w: 825, h: 1100, fuoco: '50% 70%', alt: 'BMW Serie 4 blu davanti all\'insegna R Due', fatto: 'Riverniciatura completa dopo danni da atti vandalici. Vetri oscurati.' },
+  { id: 'maserati', marca: 'Maserati', nome: 'GranTurismo', tipo: 'Wrapping', auto: 'maserati', foto: 'img/lavori/maserati.webp', w: 880, h: 1100, fuoco: '50% 66%', alt: 'Maserati GranTurismo grigio opaco davanti alla sede', fatto: 'Wrapping integrale in grigio opaco. Prima era bianca.' },
+  { id: 'cupra', marca: 'Cupra', nome: 'VZ5', tipo: 'Pellicola e nanotech', auto: 'cupra', foto: 'img/lavori/cupra.webp', w: 825, h: 1100, fuoco: '50% 66%', alt: 'Cupra grigio opaco sul piazzale', fatto: 'Pellicola antisasso opaca sul frontale. Trattamento nanotech su interni, esterni, vetri e cerchi.' },
+  { id: 'porsche', marca: 'Porsche', nome: '930 Turbo', tipo: 'Detailing', auto: 'porsche', foto: 'img/lavori/porsche.webp', w: 825, h: 1100, fuoco: '50% 66%', alt: 'Porsche 930 Turbo blu sul piazzale', fatto: 'Decontaminazione profonda, lucidatura e sigillante.' },
+  { id: 'glc', marca: 'Mercedes', nome: 'GLC coupé', tipo: 'Antisasso', auto: 'glc', foto: 'img/lavori/glc.webp', w: 1100, h: 1100, fuoco: '50% 70%', alt: 'Mercedes GLC coupé blu davanti alla sede', fatto: 'Trattamento antisasso completo sul frontale e protezione del parabrezza.' },
+  { id: 'megane', marca: 'Renault', nome: 'Megane R Due', tipo: 'Personalizzazione', auto: 'megane', foto: 'img/lavori/megane.webp', w: 1100, h: 722, fuoco: '50% 60%', alt: 'Renault Megane bianca con la grafica R Due', fatto: 'Elaborazione di paraurti e parafanghi, grafica, cerchi e pinze.' },
+];
