@@ -1,0 +1,1557 @@
+[
+ {
+  "id": "aloe-mannitol",
+  "nome": "Aloe Mannitol",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-mannitol-1.webp",
+   "img/p/aloe-mannitol-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml 5 giorni",
+    "prezzo": 45.0
+   },
+   {
+    "nome": "20 ml 10 giorni",
+    "prezzo": 78.0
+   },
+   {
+    "nome": "30 ml 15 giorni",
+    "prezzo": 108.0
+   },
+   {
+    "nome": "50 ml 25 giorni",
+    "prezzo": 190.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe Mannitol svolge benefici effetti funzionali sull'attività intestinale: favorisce il regolare transito intestinale . Questo preparato è utile per coadiuvare il metabolismo energetico perciò è anche un ottimo Integratore Alimentare Energetico per lo Sport .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele di sulla*, Manna (Fraxinus ornus L.)",
+   "manna*"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Manna* ................................................. 108 mg",
+   "Biologico*"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchierino d'acqua, due volte al giorno lontano dai pasti principali con la pipetta ministeriale che verrà fornita da Aloe Center.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1145553 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "aloe-crix",
+  "nome": "Aloe Crix",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-crix-1.webp",
+   "img/p/aloe-crix-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe Crix favorisce la fisiologica fluidità del sangue e il trofismo del microcircolo . Si consiglia di assumere l' Aloe Crix in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Vite Rossa (Vitis Vinifera",
+   "L.) foglia, Ippocastano (Aesculus",
+   "Hippocastanum L.) fiore, Amamelide",
+   "(Hamamelis Virginiana L.) foglia, Centella",
+   "Asiatica (Centella asiatica L.) pianta erbacea.",
+   "Alc. 30% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Vite Rossa ........................................ 105 mg",
+   "Ippocastano ....................................... 99 mg",
+   "Amamelide ........................................ 90 mg",
+   "Centella asiatica ............................... 85 mg",
+   "Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d'acqua, due volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144668 - YIl prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "aloe-c",
+  "nome": "Aloe C",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-c-1.webp",
+   "img/p/aloe-c-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe C favorisce l' equilibrio del pH fisiologico dello stomaco . Si consiglia di assumere l' Aloe C in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Limone ............................................... 90 mg",
+   "Gramigna .......................................... 88 mg",
+   "Genziana ........................................... 76 mg",
+   "Altea comune .................................... 63 mg",
+   "Menta piperita .................................. 54 mg",
+   "Sambuco ........................................... 49 mg",
+   "Tiglio argentato ............................... 33 mg",
+   "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni.",
+   "Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata."
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d'acqua, due volte al giorno lontano dai pasti principali.",
+  "avvertenze": "",
+  "registro": "E1144824 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.Tenore delle sostanze caratterizzanti per dose giornaliera: Aloe* ...................................................... 1,4 g Limone ............................................... 90 mg Gramigna .......................................... 88 mg Genziana ........................................... 76 mg Altea comune .................................... 63 mg Menta piperita .................................. 54 mg Sambuco ........................................... 49 mg Tiglio argentato ............................... 33 mg",
+  "bio": true
+ },
+ {
+  "id": "epatic-aloe",
+  "nome": "Epatic Aloe",
+  "cat": "integratori",
+  "foto": [
+   "img/p/epatic-aloe-1.webp",
+   "img/p/epatic-aloe-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell’ Epatic Aloe coadiuva le funzioni fisiologiche del fegato e di tutto il sistema epatico favorendo la digestione e la depurazione dell'organismo . Si consiglia di assumere l' Epatic Aloe in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Carciofo (Cynara scolymus",
+   "L.) foglia, Boldo (Peumus boldus Molina)",
+   "foglia, Arancio (Citrus sinensis L. var. dulcis)",
+   "scorza, Rabarbaro cinese (Rheum palmatum",
+   "L.) rizoma, Sambuco (Sambucus nigra L.)fiore,",
+   "Menta piperita (Mentha x piperita L.) foglia,",
+   "Cicoria (Cichorium intybus L.) radice,Fumaria",
+   "(Fumaria officinalis L.) sommità, Liquirizia",
+   "(Glycyrrhiza glabra L.) radice, Centaurea",
+   "minore (Centaurium erythraea Rafn.) sommità,",
+   "Curcuma (Curcuma domestica Val.) rizoma,",
+   "Lavanda ( Lavandula vera DC.) fiore,",
+   "Calcatreppola (Eryngium campestre L.) pianta",
+   "erbacea, Tarassaco (Taraxacum officinale Weber)",
+   "radice.",
+   "Alc. 30% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Carciofo ............................................. 70 mg",
+   "Boldo ................................................. 69 mg",
+   "Arancio ............................................. 54 mg",
+   "Rabarbaro cinese ............................. 49 mg",
+   "Sambuco ........................................... 44 mg",
+   "Menta piperita .................................. 37 mg",
+   "Cicoria .............................................. 33 mg",
+   "Fumaria ........................................... 33 mg",
+   "Liquirizia ......................................... 28 mg",
+   "Centaurea minore ........................... 25 mg",
+   "Curcuma .......................................... 24 mg",
+   "Lavanda ........................................... 18 mg",
+   "Calcatreppola .................................. 14 mg",
+   "Tarassaco ........................................... 9 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d'acqua, due volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144661 - YIl prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "rosemari-aloe",
+  "nome": "Rosemari Aloe",
+  "cat": "integratori",
+  "foto": [
+   "img/p/rosemari-aloe-1.webp",
+   "img/p/rosemari-aloe-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione del Rosemari Aloe è utile per le fisiologiche funzioni del colon e per coadiuvare la fisiologica regolarità dell'intestino . Questo preparato contrasta anche la formazione di gas intestinali e quindi la tensione addominale . Si consiglia di assumere il Rosemari Aloe in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Finocchio (Foeniculum",
+   "vulgare Mill.) frutto, Cicoria (Cichorium",
+   "intybus L.) radice, Angelica norvegese",
+   "(Angelica archangelica L.) radice, Emula",
+   "campana (Imula Helenium L.) radice,",
+   "Parietaria (Parietaria officinalis L.) pianta",
+   "erbacea, Rosmarino (Rosmarinus officinalis",
+   "L.) foglia, Ginepro (Juniperus communis L.)",
+   "frutto, Tarassaco (Taraxacum officinale Weber)",
+   "radice, Liquirizia (Glycyrrhiza glabra L.)",
+   "radice, Camomilla (Matricaria chamomilla L.)",
+   "fiore, Calcatreppola (Eryngium campestre L.)",
+   "pianta erbacea, Luppolo (Humulus lupulus L.)",
+   "strobilo.",
+   "Alc. 20% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Finocchio ........................................... 77 mg",
+   "Cicoria ............................................... 69 mg",
+   "Angelica norvegese ........................... 59 mg",
+   "Enula campana ................................. 54 mg",
+   "Parietaria .......................................... 48 mg",
+   "Rosmarino ......................................... 33 mg",
+   "Ginepro ............................................. 28 mg",
+   "Tarassaco .......................................... 25 mg",
+   "Liquirizia .......................................... 24 mg",
+   "Camomilla ........................................ 18 mg",
+   "Calcatreppola ................................... 14 mg",
+   "Luppolo .............................................. 9 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d’acqua 2 volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144665 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "aloe-pax",
+  "nome": "Aloe Pax",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-pax-1.webp",
+   "img/p/aloe-pax-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe Pax è utile per favorire le fisiologiche funzioni della prostata . Si consiglia di assumere l' Aloe Pax in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*,Ortica (Urtica dioica L.)",
+   "foglia, Betulla (Betula pendula Roth.) foglia,",
+   "Equiseto (Equisetum arvense L.) pianta erbacea,",
+   "Uva Ursina ( Arctostaphylos uva-ursi Spre.)",
+   "foglia, Menta piperita (Mentha x piperita L.)",
+   "foglia, Mirtillo (Vaccinium myrtillus L.) foglia,",
+   "Rosa (Rosa gallica L.) fiore, Arancio (Citrus",
+   "sinensis L. var. dulcis) scorza, Ononide spinosa",
+   "(Ononis spinosa L.) radice.",
+   "Alc. 20% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Ortica ................................................. 87 mg",
+   "Betulla ............................................... 77 mg",
+   "Equiseto ............................................ 61 mg",
+   "Uva ursina ........................................ 54 mg",
+   "Menta piperita .................................. 48 mg",
+   "Mirtillo ............................................. 40 mg",
+   "Rosa .................................................. 33 mg",
+   "Arancio ............................................ 25 mg",
+   "Ononide spinosa .............................. 24 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d’ acqua 2 volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144828 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "aloe-rex",
+  "nome": "Aloe Rex",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-rex-1.webp",
+   "img/p/aloe-rex-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe Rex svolge effetti favorevoli sulle fisiologiche funzioni dei reni e dell'intero apparato urinario . Si consiglia di assumere l' Aloe Rex in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Gramigna (Cynodon",
+   "dactylon Pers.) rizoma, Mais (Zea mays L.)",
+   "stimma, Parietaria (Parietaria officinalis L.)",
+   "pianta erbacea, Uva ursina (Arctostaphylos",
+   "uva-ursi Spre.) foglia, Asparago (Asparagus",
+   "officinalis L.) radice, Eucalipto (Eucalyptus",
+   "globulus labill.) foglia, Ciliegio (Prumus",
+   "malaheb L.) seme, Ibisco (Hibiscus sabdariffa",
+   "L.) fiore, Menta piperita (Mentha x piperita",
+   "L.) foglia, Equiseto (Equisetum arvense L.)",
+   "pianta erbacea, Betulla (Betula pendula Roth.)",
+   "foglia, Finocchio (Foeniculum vulgare Mill.)",
+   "frutto, Sambuco (Sambucus nigra L.) fiore,",
+   "Cipresso (Cupressus sempervirens L.) cono.",
+   "Alc. 28% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Gramigna .......................................... 72 mg",
+   "Mais ................................................... 68 mg",
+   "Parietaria .......................................... 54 mg",
+   "Uva ursina ........................................ 46 mg",
+   "Asparago .......................................... 38 mg",
+   "Eucalipto ......................................... 33 mg",
+   "Ciliegio ............................................ 30 mg",
+   "Ibisco ............................................... 25 mg",
+   "Menta piperita ................................ 24 mg",
+   "Equiseto .......................................... 18 mg",
+   "Betulla ......................................... 16,5 mg",
+   "Finocchio ....................................... 14 mg",
+   "Sambuco ......................................... 12 mg",
+   "Cipresso ............................................ 9 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d’ acqua 2 volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144662 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "oxpo-aloe",
+  "nome": "Oxpo Aloe",
+  "cat": "integratori",
+  "foto": [
+   "img/p/oxpo-aloe-1.webp",
+   "img/p/oxpo-aloe-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Oxpo Aloe favorisce le funzioni del sistema gastro-intestinale . Si consiglia di assumere l' Oxpo Aloe in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Tiglio argentato (Tilia",
+   "tomentosa Moench) fiore, Issopo officinale",
+   "(Hyssopus officinalis L.) sommità, Salvia",
+   "(Salvia officinalis L.) foglia, Sambuco",
+   "(Sambucus nigra L.) fiore, Limone (Citrus",
+   "limon burm. F.) scorza, Menta piperita",
+   "(Mentha x piperita L.) foglia, Liquirizia",
+   "(Glycyrrhiza glabra L.) radice, Camomilla",
+   "(Matricaria chamomilla L.) fiore, Malva",
+   "Selvatica (Malva sylvestris L.) foglia, Finocchio",
+   "(Foeniculum vulgare Mill.) frutto, Cumino",
+   "(Cuminum cyminum L.) seme.",
+   "Alc. 20% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Tiglio argentato ................................ 72 mg",
+   "Issopo officinale ................................ 64 mg",
+   "Salvia ................................................. 54 mg",
+   "Sambuco ............................................ 50 mg",
+   "Limone .............................................. 43 mg",
+   "Menta piperita ............................... 42,5 mg",
+   "Liquirizia .......................................... 33 mg",
+   "Camomilla ........................................ 27 mg",
+   "Malva selvatica ................................. 25 mg",
+   "Finocchio ......................................... 18 mg",
+   "Cumino ............................................. 14 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d’ acqua 2 volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144667 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "aloe-p",
+  "nome": "Aloe P",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-p-1.webp",
+   "img/p/aloe-p-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe P svolge un'azione benefica per il tratto urinario .Si consiglia di assumere l' Aloe P in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Fagiolo ( Phaseolus vulgaris",
+   "L.) baccello, Equiseto (Equisetum arvense",
+   "L.) pianta erbacea, Prezzemolo (petroselinum",
+   "crispum A. W. Hil.) foglia, Rosa (Rosa gallica",
+   "L.) fiore, Sambuco (Sambucus nigra L.) fiore,",
+   "Ginepro (Juniperus communis L.) frutto,",
+   "Altea comune ( Althaea officinalis L.) radice,",
+   "Malva Selvatica (Malva sylvestris L.) foglia,",
+   "Cinquefoglia Tormentilla (Potentilla erecta",
+   "Raeuschel) rizoma.",
+   "Alc. 20% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Fagiolo ............................................... 80 mg",
+   "Equiseto ............................................. 77 mg",
+   "Prezzemolo ......................................... 64 mg",
+   "Rosa ................................................... 58 mg",
+   "Sambuco ............................................ 54 mg",
+   "Ginepro ............................................. 49 mg",
+   "Altea comune .................................... 33 mg",
+   "Malva selvatica ................................. 30 mg",
+   "Cinquefoglia tormentilla ................. 24 mg",
+   "Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d’ acqua 2 volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144660 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "aloe-lat",
+  "nome": "Aloe Lat",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-lat-1.webp",
+   "img/p/aloe-lat-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe Lat favorisce la lattazione . Si consiglia di assumere l' Aloe Lat in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Cumino (Cuminum",
+   "cyminum L.) seme, Galega (Galega officinalis",
+   "L.) pianta erbacea con fiori, Finocchio",
+   "(Foeniculum vulgare Mill.) frutto, Ortica",
+   "(Urtica dioica L.) foglia.",
+   "Alc. 20% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Cumino ............................................ 114 mg",
+   "Galega ............................................. 108 mg",
+   "Finocchio ....................................... 101 mg",
+   "Ortica ................................................ 98 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d'acqua, due volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144825 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "aloe-sat",
+  "nome": "Aloe Sat",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-sat-1.webp",
+   "img/p/aloe-sat-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe Sat è un aiuto a ritrovare il naturale buonumore e a promuovere un effetto rilassante utile a favorire il sonno . Questo preparato favorisce un fisiologico recupero in caso di stress psicofisici . Si consiglia di assumere l' Aloe Sat in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Tiglio argentato (Tilia",
+   "tomentosa Moench) fiore e gemma, Camomilla",
+   "(Matricaria chamomilla L.) fiore, Passiflora",
+   "(Passiflora edulis Sims.) pianta erbacea,",
+   "Valeriana (Valeriana officinalis L.) radice,",
+   "Arancio (Citrus Sinensis L. var. dulcis) fiore,",
+   "Papavero (Papaver rhoeas L.) fiore.",
+   "Alc. 30% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Tiglio argentato ................................. 91 mg",
+   "Camomilla ......................................... 83 mg",
+   "Passiflora .......................................... 77 mg",
+   "Valeriana .......................................... 70 mg",
+   "Arancio ............................................. 54 mg",
+   "Papavero ........................................... 33 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d’ acqua 2 volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144666 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "bet-aloe",
+  "nome": "Bet Aloe",
+  "cat": "integratori",
+  "foto": [
+   "img/p/bet-aloe-1.webp",
+   "img/p/bet-aloe-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione del Bet Aloe è utile per il benessere della funzione osteo-articolare . Si consiglia di assumere il Bet Aloe in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Betulla (Betula pendula",
+   "Roth.) foglia, Achillea millefoglie (Achillea",
+   "millefolium L.) pianta erbacea con fiori, Uva",
+   "ursina (Arctostaphylos uva-ursi Spre.) foglia,",
+   "Frassino (Fraxinus excelsior L.) foglia,",
+   "Sambuco (Sambucus nigra L.) fiore, Pino",
+   "silvestre (Pinus sylvestris L.) gemma,",
+   "Camomilla (Matricaria chamomilla L.) fiore,",
+   "Tiglio argentato (Tilia tomentosa Moench)",
+   "fiore, Menta piperita (Mentha x piperita L.)",
+   "foglia.",
+   "Alc. 20% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Betulla ............................................... 88 mg",
+   "Achillea millefoglie .......................... 77 mg",
+   "Uva ursina ......................................... 68 mg",
+   "Frassino ............................................. 59 mg",
+   "Sambuco ............................................ 54 mg",
+   "Pino silvestre ..................................... 48 mg",
+   "Camomilla ......................................... 33 mg",
+   "Tiglio argentato ................................ 24 mg",
+   "Menta piperita ................................... 18 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d’ acqua 2 volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144659 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "aloe-s",
+  "nome": "Aloe S",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-s-1.webp",
+   "img/p/aloe-s-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe S ha un'azione fisiologica utile a favorire le fisiologiche funzioni depurative della pelle . Si consiglia di assumere l' Aloe S in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Bardana (Arctium lappa",
+   "L.) radice, Marrubio bianco (Marrubium",
+   "vulgare L.) pianta erbacea con fiori, Betulla",
+   "(Betula pendula Roth.) foglia, Salsapariglia",
+   "nostrana (Smilax aspera L.) radice, Sambuco",
+   "(Sambucus nigra L.) fiore, Genziana",
+   "(Gentiana lutea L.) radice.",
+   "Alc. 20% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Bardana ............................................. 94 mg",
+   "Marrubio bianco ............................... 87 mg",
+   "Betulla .............................................. 79 mg",
+   "Salsapariglia nostrana .................... 71 mg",
+   "Sambuco ........................................... 64 mg",
+   "Genziana .......................................... 51 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d’ acqua 2 volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144670 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "aloe-g",
+  "nome": "Aloe G",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-g-1.webp",
+   "img/p/aloe-g-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe G fornisce un valido aiuto per il benessere della gola e di tutto il cavo orale . Si consiglia di assumere l' Aloe G in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Aloe* ...................................................... 1,4 g",
+   "Origano ............................................. 95 mg",
+   "Altea comune .................................... 77 mg",
+   "Pino silvestre .................................... 69 mg",
+   "Eucalipto .......................................... 54 mg",
+   "Sambuco ........................................... 49 mg",
+   "Rosa .................................................. 33 mg",
+   "Tiglio argentato ............................... 25 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Origano ............................................. 95 mg",
+   "Altea comune .................................... 77 mg",
+   "Pino silvestre .................................... 69 mg",
+   "Eucalipto .......................................... 54 mg",
+   "Sambuco ........................................... 49 mg",
+   "Rosa .................................................. 33 mg",
+   "Tiglio argentato ............................... 25 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d'acqua, due volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144663 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "equi-aloe",
+  "nome": "Equi Aloe",
+  "cat": "integratori",
+  "foto": [
+   "img/p/equi-aloe-1.webp",
+   "img/p/equi-aloe-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Equi Aloe è utile a favorire le naturali difese organiche .Si consiglia di assumere l' Equi Aloe in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Equiseto (Equisetum",
+   "arvense L.) pianta erbacea, Propoli (Propolis)",
+   "resina*, Rosa (Rosa gallica L.) fiore.",
+   "Alc. 20% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Equiseto ........................................... 208 mg",
+   "Propoli* ............................................. 198 mg",
+   "Rosa ................................................... 77 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d’ acqua 2 volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144842 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "aloe-d",
+  "nome": "Aloe D",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-d-1.webp",
+   "img/p/aloe-d-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe D favorisce il fisiologico metabolismo dei carboidrati . Si consiglia di assumere l' Aloe D in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Fagiolo (Phaseolus vulgaris",
+   "L.) baccello, Carciofo (Cynara scolymus L.)",
+   "foglia, Eucalipto (Eucalyptus globulus Labill.)",
+   "foglia, Ortica (Urtica dioica L.) foglia,",
+   "Tarassaco (Taraxacum officinale Weber) radice,",
+   "Mirtillo (Vaccinium myrtillus L.) foglia,",
+   "Agrimonia (Agrimonia eupatoria L.) sommità,",
+   "Luppolo (Humulus lupulus L.) strobilo, Salvia",
+   "(Salvia officinalis L.) foglia, Noce (Juglans regia",
+   "L.) seme, Erica (Erica cinerea L.) foglia con fiore,",
+   "Alchemilla (Alchemilla vulgaris L.) foglia,",
+   "Bardana ( Arctium lappa L.) radice",
+   "Alc. 20% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Fagiolo .............................................. 77 mg",
+   "Carciofo ............................................ 70 mg",
+   "Eucalipto .......................................... 61 mg",
+   "Ortica ................................................ 54 mg",
+   "Tarassaco .......................................... 42 mg",
+   "Mirtillo .............................................. 33 mg",
+   "Agrimonia ......................................... 25 mg",
+   "Luppolo ............................................. 21 mg",
+   "Salvia ................................................ 18 mg",
+   "Noce ................................................ 16,5 mg",
+   "Erica .................................................. 14 mg",
+   "Alchemilla ........................................ 12 mg",
+   "Bardana .............................................. 9 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d'acqua, due volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144664 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "aloe-f",
+  "nome": "Aloe F",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-f-1.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe F interviene positivamente nel metabolismo di grassi e/o zuccheri . Questo preparato è uno straordinario coadiuvante nell'ambito di diete ipocaloriche controllate per la riduzione del peso corporeo . Si consiglia di assumere l' Aloe F in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Frassino ............................................. 77 mg",
+   "Fucus ................................................. 70 mg",
+   "Tiglio nostrano ................................. 68 mg",
+   "Finocchio .......................................... 54 mg",
+   "Salvia ................................................ 48 mg",
+   "Senna ................................................ 40 mg",
+   "Frangula .......................................... 33 mg",
+   "Achillea millefoglie ......................... 30 mg",
+   "Equiseto ........................................... 24 mg",
+   "Ginepro ............................................ 21 mg",
+   "Menta piperita ................................. 18 mg",
+   "Liquirizia ......................................... 14 mg",
+   "Arancio .............................................. 9 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d’ acqua 2 volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144822 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "roman-aloe",
+  "nome": "Roman Aloe",
+  "cat": "integratori",
+  "foto": [
+   "img/p/roman-aloe-1.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione del Roman Aloe è un valido ed efficace aiuto per le prime vie respiratorie e per il benessere durante i mesi più freddi . Si consiglia di assumere il Roman Aloe in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Eucalipto (Eucalyptus",
+   "globulus labill.) foglia, Tiglio argentato (Tilia",
+   "tomentosa Moench.) fiore e gemma, Finocchio",
+   "(Foeniculum vulgare Mill.) frutto, Menta",
+   "piperita (Mentha x piperita L.) foglia, Salvia",
+   "(Salvia officinalis L.) foglia, Malva selvatica",
+   "(Malva sylvestris L.) foglia, Timo comune",
+   "(Thymus vulgaris L.) foglia, Papavero",
+   "(Papaver rhoeas L.) fiore",
+   "Alc. 30% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Eucalipto ........................................... 95 mg",
+   "Tiglio argentato ................................ 87 mg",
+   "Finocchio .......................................... 71 mg",
+   "Menta piperita ................................... 66 mg",
+   "Salvia ................................................. 54 mg",
+   "Malva selvatica ................................. 48 mg",
+   "Timo comune .................................... 33 mg",
+   "Papavero ........................................... 28 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d'acqua, due volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144827 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "eli-aloe",
+  "nome": "Eli Aloe",
+  "cat": "integratori",
+  "foto": [
+   "img/p/eli-aloe-1.webp",
+   "img/p/eli-aloe-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Eli Aloe favorisce la digestione e le fisiologiche funzioni depurative dell'organismo . Si consiglia di assumere l' Eli Aloe in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Ribes nero (Ribes nigrum L.)",
+   "foglie, Ginepro (Juniperus communis L.) frutto,",
+   "Genziana (Gentiana lutea L.) radice,",
+   "Achillea millefoglie (Achillea millefolium L.)",
+   "pianta erbacea con fiori, Ononide spinosa",
+   "(Ononis spinosa L.) radice.",
+   "Alc. 30% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Ribes nero .......................................... 98 mg",
+   "Ginepro .............................................. 87 mg",
+   "Genziana ............................................ 77 mg",
+   "Achillea millefoglie .......................... 70 mg",
+   "Ononide spinosa ............................... 69 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d’ acqua 2 volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144826 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "eloisi-aloe",
+  "nome": "Eloisi Aloe",
+  "cat": "integratori",
+  "foto": [
+   "img/p/eloisi-aloe-1.webp",
+   "img/p/eloisi-aloe-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 41.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 72.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 92.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Eloisi Aloe è un valido aiuto a ridurre la formazione degli acidi favorendo l' igiene orale e la salute dei denti . Questo preparato ostacola la formazione della placca batterica. Si consiglia di assumere l' Eloisi Aloe in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Acqua termale, Aloe (Aloe",
+   "arborescens Mill.) succo*, Miele Millefiori*,",
+   "Equiseto (Equisetum arvense L.) pianta",
+   "erbacea, Lavanda (Lavandula vera DC.)",
+   "fiore, Propoli (Propolis) resina*, Rosa",
+   "(Rosa gallica L.) fiore, Menta piperita (Mentha x",
+   "piperita L.) foglia, Pompelmo (Citrus x paradisi",
+   "Mac fad.) scorza, Mirra (Commiphora myrrha",
+   "Engl.) gomma.",
+   "Alc. 18% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Equiseto ............................................. 93 mg",
+   "Lavanda ............................................. 81 mg",
+   "Propoli* ............................................... 70 mg",
+   "Rosa ................................................... 65 mg",
+   "Menta piperita ................................... 54 mg",
+   "Pompelmo .......................................... 49 mg",
+   "Mirra .................................................. 33 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d’ acqua 2 volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144821 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "aloe-cit",
+  "nome": "Aloe Cit",
+  "cat": "integratori",
+  "foto": [
+   "img/p/aloe-cit-1.webp",
+   "img/p/aloe-cit-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "10 ml",
+    "prezzo": 43.0
+   },
+   {
+    "nome": "20 ml",
+    "prezzo": 76.0
+   },
+   {
+    "nome": "30 ml",
+    "prezzo": 95.0
+   },
+   {
+    "nome": "50 ml",
+    "prezzo": 170.0
+   }
+  ],
+  "effetto": "La formulazione dell' Aloe Cit svolge un'azione fisiologica contro i danni causati dallo stress ossidativo e dai radicali liberi anche a livello cutaneo. Questo preparato favorisce il trofismo dei tessuti della cute . Si consiglia di assumere l' Aloe Cit in combinazione con l' Aloe Mannitol .",
+  "ingredienti": [
+   "Alcool*, Aloe (Aloe arborescens Mill.) succo*,",
+   "Miele Millefiori*, Lavanda (Lavandula vera",
+   "DC.) fiore, Rosmarino (Rosmarinus officinalis",
+   "L.) foglia, Ortica (Urtica dioica L.) foglia.",
+   "Alc. 37% vol"
+  ],
+  "tenore": [
+   "Aloe* ...................................................... 1,4 g",
+   "Lavanda ........................................... 254 mg",
+   "Rosmarino ....................................... 114 mg",
+   "Ortica .............................................. 108 mg",
+   "* Ingredienti Biologici sul totale 95%"
+  ],
+  "modalita": "Assumere 30 gocce diluite in un bicchiere d'acqua, due volte al giorno lontano dai pasti principali.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata.",
+  "registro": "E1144823 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "gjubjaloe",
+  "nome": "Gjubjaloe",
+  "cat": "integratori",
+  "foto": [
+   "img/p/gjubjaloe-1.webp"
+  ],
+  "formati": [
+   {
+    "nome": "100 ml",
+    "prezzo": 42.0
+   },
+   {
+    "nome": "250 ml",
+    "prezzo": 85.0
+   },
+   {
+    "nome": "500 ml",
+    "prezzo": 140.0
+   },
+   {
+    "nome": "700 ml",
+    "prezzo": 170.0
+   },
+   {
+    "nome": "1000 ml",
+    "prezzo": 250.0
+   }
+  ],
+  "effetto": "L' Elisir Lunga Vita Gjubjaloe è l'estratto di Aloe Arborescens ed ha tutte le proprietà salubri come da pianta fresca. Svolge la sua eccellente azione favorendo le fisiologiche difese dell'organismo contro le aggressioni esterne . Pro-energetico ad effetto tonico adattogeno .",
+  "ingredienti": [],
+  "tenore": [
+   "Aloe* ...................................... 5,4 g",
+   "Biologico*"
+  ],
+  "modalita": "Assumere una quantità pari a 2 tappi tre volte al dì mezz'ora prima dei pasti principali. Agitare bene prima dell'uso. Mantenere il prodotto in frigorifero. Una volta aperto si consiglia di consumarlo tutto secondo le posologie prestabilite.",
+  "avvertenze": "Tenere fuori dalla portata dei bambini al di sotto dei 3 anni. Gli integratori non vanno intesi come sostituti di una dieta variata e di uno stile di vita sano. Non superare la dose giornaliera raccomandata. Non assumere il prodotto per un periodo superiore ai 30 giorni consecutivi. Si sconsiglia l’uso del prodotto in gravidanza, durante l’allattamento e nell’infanzia.",
+  "registro": "E1144838 - Y Il prodotto risulta notificato come INTEGRATORE ALIMENTARE presso il Ministero della Salute ai sensi del DL.vo 169/2004 secondo la procedura di cui all’art. 7 del decreto legislativo 27 Gennaio 1992, n. 111 e alla circolare 6 Marzo 2008, n. 4075-P.",
+  "bio": true
+ },
+ {
+  "id": "caffe-all-aloe",
+  "nome": "Caffè all'Aloe",
+  "cat": "caffe",
+  "linea": "Original",
+  "foto": [
+   "img/p/caffe-all-aloe-1.webp",
+   "img/p/caffe-all-aloe-2.webp",
+   "img/p/caffe-all-aloe-3.webp"
+  ],
+  "formati": [
+   {
+    "nome": "54 g",
+    "prezzo": 15.99
+   },
+   {
+    "nome": "150 g",
+    "prezzo": 30.0
+   },
+   {
+    "nome": "400 g",
+    "prezzo": 62.0
+   },
+   {
+    "nome": "1 kg",
+    "prezzo": 130.0
+   }
+  ],
+  "effetto": "",
+  "intro": [
+   "Caffè Plus Café – Original",
+   "Ingredienti: 100% Coffea arabica + principio attivo Aloe Arborescens",
+   "Formato: 54 g | 150 g | 400 g | 1 kg",
+   "Caratteristiche: gusto morbido, aromatico, equilibrato e rotondo",
+   "Benefici: gastroprotettivo - equilibra il ph dello stomaco - non crea tachicardia - purificante",
+   "Bollino Aloe Quality Sign: garantisce l’utilizzo dell’estratto originale Aloe Center, 100% biologico, senza conservanti né additivi."
+  ],
+  "ingredienti": [
+   "Caffè torrefatto* (100% Coffea arabica, semi)",
+   "Estratto di Aloe* (Aloe arborescens Mill., succo).",
+   "Prodotto Biologico *"
+  ],
+  "tenore": [],
+  "modalita": "Da utilizzare con la classica Moka per una preparazione tradizionale. In alternativa lasciare in infusione in acqua bollente.",
+  "avvertenze": "",
+  "registro": "",
+  "bio": true
+ },
+ {
+  "id": "caffe-cardamomo",
+  "nome": "Caffè all'Aloe con cardamomo",
+  "cat": "caffe",
+  "linea": "Cardamomo",
+  "foto": [
+   "img/p/caffe-cardamomo-1.webp"
+  ],
+  "formati": [
+   {
+    "nome": "54 g",
+    "prezzo": 16.99
+   },
+   {
+    "nome": "150 g",
+    "prezzo": 30.99
+   },
+   {
+    "nome": "400 g",
+    "prezzo": 64.0
+   },
+   {
+    "nome": "1 kg",
+    "prezzo": 140.0
+   }
+  ],
+  "effetto": "",
+  "intro": [
+   "Caffè Plus Café - Esclusive",
+   "Ingredienti: 100% Coffea arabica + principio attivo Aloe Arborescens + cardamomo",
+   "Formato: 54 g | 150 g | 400 g | 1 kg",
+   "Caratteristiche: gusto leggero, aromatico, leggermente speziato",
+   "Benefici: supporto alla digestione, effetto purificante, più digeribile, azione equilibrante sul sistema nervoso.",
+   "Bollino Aloe Quality Sign: garantisce l’utilizzo dell’estratto originale Aloe Center, 100% biologico, senza conservanti né additivi."
+  ],
+  "ingredienti": [
+   "Caffè torrefatto* (100% Coffea arabica, semi) Cardamomo* (Elettraria cardamomum, semi)",
+   "Estratto di Aloe* (Aloe arborescens Mill., succo)",
+   "Prodotto Biologico *"
+  ],
+  "tenore": [],
+  "modalita": "Da utilizzare con la classica Moka per una preparazione tradizionale. In alternativa lasciare in infusione in acqua bollente.",
+  "avvertenze": "",
+  "registro": "",
+  "bio": true
+ },
+ {
+  "id": "chay-coffee",
+  "nome": "Chay Coffee all'Aloe con tè nero",
+  "cat": "caffe",
+  "linea": "Premium",
+  "foto": [
+   "img/p/chay-coffee-1.webp"
+  ],
+  "formati": [
+   {
+    "nome": "54 g",
+    "prezzo": 17.99
+   },
+   {
+    "nome": "150 g",
+    "prezzo": 34.99
+   },
+   {
+    "nome": "400 g",
+    "prezzo": 65.0
+   },
+   {
+    "nome": "1 kg",
+    "prezzo": 150.0
+   }
+  ],
+  "effetto": "",
+  "intro": [
+   "Caffè Plus Café - Premium",
+   "Ingredienti: 100% Coffea arabica + principio attivo Aloe Arborescens + tè nero",
+   "Formato: 54 g | 150 g | 400 g | 1 kg",
+   "Caratteristiche: aroma intenso, corpo pieno, leggermente amaro, profilo aromatico complesso",
+   "Benefici: effetto energizzante, drenante e depurativo, più digeribile grazie all’aloe, stimolo naturale",
+   "Bollino Aloe Quality Sign: garantisce l’utilizzo dell’estratto originale Aloe Center, 100% biologico, senza conservanti né additivi"
+  ],
+  "ingredienti": [
+   "Caffè torrefatto* (100% Coffea arabica, semi)",
+   "The nero Ceylon*",
+   "Estratto di Aloe* (Aloe arborescens Mill., succo).",
+   "Prodotto Biologico *"
+  ],
+  "tenore": [],
+  "modalita": "Da utilizzare con la classica Moka per una preparazione tradizionale. In alternativa lasciare in infusione in acqua bollente.",
+  "avvertenze": "",
+  "registro": "",
+  "bio": true
+ },
+ {
+  "id": "chay-coffee-cardamomo",
+  "nome": "Chay Coffee all'Aloe con tè nero e cardamomo",
+  "cat": "caffe",
+  "linea": "Premium",
+  "foto": [
+   "img/p/chay-coffee-cardamomo-1.webp"
+  ],
+  "formati": [
+   {
+    "nome": "54 g",
+    "prezzo": 18.5
+   },
+   {
+    "nome": "150 g",
+    "prezzo": 34.0
+   },
+   {
+    "nome": "400 g",
+    "prezzo": 70.0
+   },
+   {
+    "nome": "1 kg",
+    "prezzo": 150.0
+   }
+  ],
+  "effetto": "",
+  "intro": [
+   "Caffè Plus Café - TOP Premium",
+   "Ingredienti: 100% Coffea arabica + principio attivo Aloe Arborescens + tè nero + cardamomo",
+   "Formato: 54 g | 150 g | 400 g | 1 kg",
+   "Caratteristiche: miscela aromatica, speziata, profonda e avvolgente, equilibrio tra caffè, tè e spezie",
+   "Benefici: digestivo, energizzante, depurativo, effetto equilibrante sul sistema nervoso, esperienza multisensoriale",
+   "Bollino Aloe Quality Sign: garantisce l’utilizzo dell’estratto originale Aloe Center, 100% biologico, senza conservanti né additivi."
+  ],
+  "ingredienti": [
+   "Caffè torrefatto* (100% Coffea arabica, semi) The nero Ceylon*",
+   "Cardamomo* (Elettraria cardamomum, semi)",
+   "estratto di Aloe* (Aloe arborescens Mill., succo). Prodotto Biologico *"
+  ],
+  "tenore": [],
+  "modalita": "Da utilizzare con la classica Moka per una preparazione tradizionale. In alternativa lasciare in infusione in acqua bollente.",
+  "avvertenze": "",
+  "registro": "",
+  "bio": true
+ },
+ {
+  "id": "pack-test",
+  "nome": "Pack test: i tre caffè da 54 g",
+  "cat": "caffe",
+  "linea": "",
+  "foto": [
+   "img/p/pack-test-1.webp"
+  ],
+  "formati": [
+   {
+    "nome": "3 varianti da 54 g l'uno",
+    "prezzo": 34.99
+   }
+  ],
+  "effetto": "",
+  "intro": [
+   "Miscele",
+   "Caffè Plus Café",
+   "Caffè all'Aloe - Caffè Plus Café – Original:",
+   "- Caratteristiche: gusto morbido, aromatico, equilibrato e rotondo",
+   "- Benefici: gastro protettivo - equilibra il ph dello stomaco - non crea tachicardia - purificante",
+   "Caffè all'Aloe con CARDAMOMO - Caffè Plus Café - Esclusive :",
+   "- Caratteristiche: gusto leggero, aromatico, leggermente speziato",
+   "- Benefici: supporto alla digestione, effetto purificante, più digeribile, azione equilibrante sul sistema nervoso.",
+   "Chay Coffee all'ALOE con Tè - Caffè Plus Café - Premium",
+   "- Caratteristiche: aroma intenso, corpo pieno, leggermente amaro, profilo aromatico complesso",
+   "- Benefici: effetto energizzante, drenante e depurativo, più digeribile grazie all’aloe, stimolo naturale",
+   "Grandezza o dimensioni",
+   "Formato confezione: 3 x 54gr ( 25 tazzine di caffè per confezione )"
+  ],
+  "ingredienti": [
+   "Caffè all'Aloe:",
+   "Caffè torrefatto* (100% Coffea arabica, semi)",
+   "Estratto di Aloe* (Aloe arborescens Mill., succo).",
+   "Caffè all'Aloe con Cardamomo:",
+   "Caffè torrefatto* (100% Coffea arabica, semi) Cardamomo* (Elettraria cardamomum, semi)",
+   "Estratto di Aloe* (Aloe arborescens Mill., succo)",
+   "Chay coffee all'aloe con Tè:",
+   "Caffè torrefatto* (100% Coffea arabica, semi)",
+   "The nero Ceylon*",
+   "Estratto di Aloe* (Aloe arborescens Mill., succo)."
+  ],
+  "tenore": [],
+  "modalita": "Da utilizzare con la classica Moka per una preparazione tradizionale. In alternativa lasciare in infusione in acqua bollente.",
+  "avvertenze": "",
+  "registro": "",
+  "bio": true
+ },
+ {
+  "id": "holy-aloe",
+  "nome": "Holy Aloe",
+  "cat": "alimenti",
+  "linea": "",
+  "foto": [
+   "img/p/holy-aloe-1.webp",
+   "img/p/holy-aloe-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "68 g",
+    "prezzo": 50.0
+   },
+   {
+    "nome": "90 g",
+    "prezzo": 65.0
+   },
+   {
+    "nome": "180 g",
+    "prezzo": 127.0
+   },
+   {
+    "nome": "300 g",
+    "prezzo": 202.0
+   }
+  ],
+  "effetto": "",
+  "intro": [],
+  "ingredienti": [
+   "Olio extra vergine di oliva*",
+   "Miele Millefiori*",
+   "Aloe* (Aloe arborescens Mill., succo)",
+   "*Prodotto Biologico con Aloe Code Superior"
+  ],
+  "tenore": [],
+  "modalita": "Assumere 1 grammo la mattina a digiuno e/o come condimento",
+  "avvertenze": "",
+  "registro": "",
+  "bio": true
+ },
+ {
+  "id": "holy-aloe-chock",
+  "nome": "Holy Aloe Chock",
+  "cat": "alimenti",
+  "linea": "",
+  "foto": [
+   "img/p/holy-aloe-chock-1.webp",
+   "img/p/holy-aloe-chock-2.webp"
+  ],
+  "formati": [
+   {
+    "nome": "40 g",
+    "prezzo": 45.0
+   },
+   {
+    "nome": "68 g",
+    "prezzo": 60.0
+   },
+   {
+    "nome": "90 g",
+    "prezzo": 80.0
+   },
+   {
+    "nome": "180 g",
+    "prezzo": 145.0
+   }
+  ],
+  "effetto": "",
+  "intro": [
+   "Informazioni sul prodotto:",
+   "L’ Holy Aloe chock è la variante che prevede oltre all’ Olio Extra Vergine d’Oliva all'Aloe, al Miele all'Aloe e all’ Aloe Code, l a presenza di un altro elemento che conferisce una nota più gustosa ed energizzante: il cioccolato all'Aloe Code.",
+   "+ Cioccolato all'Aloe:",
+   "- funzione antiossidante",
+   "- funzione anti infiammatoria",
+   "- attivazione della salivazione",
+   "- apertura dei seni para nasali",
+   "- emolliente per problematiche gastriche."
+  ],
+  "ingredienti": [
+   "- Olio extra vergine di oliva*",
+   "-Miele Millefiori*",
+   "-Aloe* (Aloe arborescens Mill., succo)",
+   "-cioccolato all'Aloe",
+   "*Prodotto Biologico con Aloe Code Superior"
+  ],
+  "tenore": [],
+  "modalita": "Assumere 1 grammo la mattina a digiuno e/o come condimento",
+  "avvertenze": "",
+  "registro": "",
+  "bio": true
+ },
+ {
+  "id": "cioccolato",
+  "nome": "Cioccolato all'Aloe fondente",
+  "cat": "alimenti",
+  "foto": [],
+  "formati": [],
+  "attesa": "50% e 70% · 30, 40, 50, 60 g",
+  "effetto": "",
+  "ingredienti": [],
+  "tenore": [],
+  "modalita": "",
+  "avvertenze": "",
+  "registro": "",
+  "bio": true
+ },
+ {
+  "id": "reflusso",
+  "nome": "Reflusso gastrico e gola da reflusso",
+  "cat": "integratori",
+  "foto": [
+   "img/p/reflusso-1.webp"
+  ],
+  "formati": [],
+  "attesa": "15 giorni · 25 giorni",
+  "effetto": "",
+  "ingredienti": [],
+  "tenore": [],
+  "modalita": "",
+  "avvertenze": "",
+  "registro": "",
+  "bio": true
+ }
+]
