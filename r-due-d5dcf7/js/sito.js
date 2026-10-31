@@ -231,7 +231,7 @@
     a.className = 'reparto' + (i % 2 ? ' pari' : '');
     a.id = 'd-' + d.id;
     var foto = (d.foto || []).map(function (f, j) {
-      return '<figure class="' + (j === 0 ? 'prima' : 'poi') + '"><img src="' + f.src + '" alt="' + f.alt.replace(/"/g, '&quot;') + '" width="' + f.w + '" height="' + f.h + '" loading="lazy"><figcaption>' + (f.dida || '') + '</figcaption></figure>';
+      return '<figure class="' + (j === 0 ? 'prima' : 'poi') + '"><img src="' + f.src + '" alt="' + f.alt.replace(/"/g, '&quot;') + '" width="' + f.w + '" height="' + f.h + '" loading="lazy"' + (f.pos ? ' style="object-position:' + f.pos + '"' : '') + '><figcaption>' + (f.dida || '') + '</figcaption></figure>';
     }).join('');
     var voci = d.voci.map(function (v) { return '<li>' + v + '</li>'; }).join('');
     a.innerHTML =
@@ -261,7 +261,7 @@
   var schede = $('#schede'), boxAuto = $('#box-auto'), corsia = $('#corsia'), boxPassi = $('#box-passi');
   LAV.forEach(function (l, i) {
     var a = document.createElement('article');
-    a.className = 'scheda' + (l.auto ? '' : ' senza-auto');
+    a.className = 'scheda' + (l.auto ? '' : ' senza-auto') + (l.w > l.h ? ' larga' : '');
     a.innerHTML =
       '<div class="scheda-testo"><span class="occhiello">' + pad2(i + 1) + ' / ' + pad2(LAV.length) + ' · ' + l.tipo + '</span>' +
       '<h3><small>' + l.marca + '</small>' + l.nome + '</h3><p>' + l.fatto + '</p></div>' +
@@ -272,6 +272,7 @@
     boxPassi.appendChild(t);
   });
   var schedeEl = $$('.scheda'), passiLav = $$('i', boxPassi);
+  var figureEl = schedeEl.map(function (s) { return $('figure', s); });
 
   function garage(dati) {
     corsia.style.height = (LAV.length * 105 + 30) + 'vh';
@@ -298,7 +299,7 @@
       M.W = W;
       var base = tel ? H - pad - 12 : H - pad - Math.max(26, H * 0.05);
       box.style.setProperty('--base-box', base.toFixed(1) + 'px');
-      rigs.forEach(function (r) {
+      rigs.forEach(function (r, i) {
         if (!r) return;
         var m = r.meta, occupa = (m.coda - m.muso) / m.larghezza, a = m.altezza / m.larghezza;
         var cw = tel ? (W - 12) / occupa : Math.min(W * 0.8, (H * (basso ? 0.36 : 0.46)) / a);
@@ -308,6 +309,11 @@
         r.xVia = W + 40 - m.muso * s;
         r.xFine = -m.coda * s - 40;
         r.y = base - m.base * s;
+        var f = figureEl[i];
+        f.style.maxHeight = '';
+        var tetto = parseFloat(getComputedStyle(f).maxHeight);
+        var spazio = r.y - 12 - (f.getBoundingClientRect().top - box.getBoundingClientRect().top);
+        f.style.maxHeight = Math.max(0, tetto < spazio ? tetto : spazio).toFixed(1) + 'px';
         r.rad = (m.ruote[0] ? m.ruote[0].gomma : 120) * s;
         r.giriE = Math.max(2, Math.round((r.xVia - r.xPark) / (GIRO * r.rad)));
         r.giriU = Math.max(2, Math.round((r.xPark - r.xFine) / (GIRO * r.rad)));
