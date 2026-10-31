@@ -1,0 +1,172 @@
+{
+ "auto": {
+  "bmw": {
+   "file": "bmw.webp",
+   "larghezza": 1600,
+   "altezza": 498,
+   "ruote": [
+    {
+     "file": "bmw-ruota-a.webp",
+     "posizione": "anteriore",
+     "cx": 17.1562,
+     "cy": 75.6024,
+     "raggio_x": 6.0938,
+     "raggio_y": 19.5783,
+     "raggio_gomma_x": 7.7689
+    },
+    {
+     "file": "bmw-ruota-b.webp",
+     "posizione": "posteriore",
+     "cx": 80.2812,
+     "cy": 75.8032,
+     "raggio_x": 5.9688,
+     "raggio_y": 19.1767,
+     "raggio_gomma_x": 7.5719
+    }
+   ],
+   "muso": 0,
+   "coda": 1599,
+   "base": 500.8
+  },
+  "cupra": {
+   "file": "cupra.webp",
+   "larghezza": 1600,
+   "altezza": 584,
+   "ruote": [
+    {
+     "file": "cupra-ruota-a.webp",
+     "posizione": "anteriore",
+     "cx": 18.0938,
+     "cy": 76.6267,
+     "raggio_x": 6.5312,
+     "raggio_y": 17.8938,
+     "raggio_gomma_x": 8.6522
+    },
+    {
+     "file": "cupra-ruota-b.webp",
+     "posizione": "posteriore",
+     "cx": 82.2812,
+     "cy": 76.7979,
+     "raggio_x": 6.5312,
+     "raggio_y": 17.8938,
+     "raggio_gomma_x": 8.479
+    }
+   ],
+   "muso": 0,
+   "coda": 1599,
+   "base": 585.9
+  },
+  "glc": {
+   "file": "glc.webp",
+   "larghezza": 1600,
+   "altezza": 578,
+   "ruote": [
+    {
+     "file": "glc-ruota-a.webp",
+     "posizione": "anteriore",
+     "cx": 16.8438,
+     "cy": 76.2111,
+     "raggio_x": 7.2812,
+     "raggio_y": 20.1557,
+     "raggio_gomma_x": 8.6975
+    },
+    {
+     "file": "glc-ruota-b.webp",
+     "posizione": "posteriore",
+     "cx": 80.7188,
+     "cy": 76.3841,
+     "raggio_x": 7.2188,
+     "raggio_y": 19.9827,
+     "raggio_gomma_x": 8.5228
+    }
+   ],
+   "muso": 0,
+   "coda": 1599,
+   "base": 579.7
+  },
+  "maserati": {
+   "file": "maserati.webp",
+   "larghezza": 1600,
+   "altezza": 475,
+   "ruote": [
+    {
+     "file": "maserati-ruota-a.webp",
+     "posizione": "anteriore",
+     "cx": 17.6562,
+     "cy": 74.2105,
+     "raggio_x": 6.0312,
+     "raggio_y": 20.3158,
+     "raggio_gomma_x": 7.7421
+    },
+    {
+     "file": "maserati-ruota-b.webp",
+     "posizione": "posteriore",
+     "cx": 80.9688,
+     "cy": 74.2105,
+     "raggio_x": 6.0938,
+     "raggio_y": 20.5263,
+     "raggio_gomma_x": 7.7222
+    }
+   ],
+   "muso": 1,
+   "coda": 1599,
+   "base": 476.4
+  },
+  "megane": {
+   "file": "megane.webp",
+   "larghezza": 1600,
+   "altezza": 560,
+   "ruote": [
+    {
+     "file": "megane-ruota-a.webp",
+     "posizione": "anteriore",
+     "cx": 19.9062,
+     "cy": 76.6964,
+     "raggio_x": 6.3437,
+     "raggio_y": 18.125,
+     "raggio_gomma_x": 8.3398
+    },
+    {
+     "file": "megane-ruota-b.webp",
+     "posizione": "posteriore",
+     "cx": 82.8438,
+     "cy": 77.4107,
+     "raggio_x": 6.2188,
+     "raggio_y": 17.7679,
+     "raggio_gomma_x": 7.9204
+    }
+   ],
+   "muso": 1,
+   "coda": 1599,
+   "base": 562.9
+  },
+  "porsche": {
+   "file": "porsche.webp",
+   "larghezza": 1600,
+   "altezza": 492,
+   "ruote": [
+    {
+     "file": "porsche-ruota-a.webp",
+     "posizione": "anteriore",
+     "cx": 18.5312,
+     "cy": 74.0854,
+     "raggio_x": 4.7812,
+     "raggio_y": 15.5488,
+     "raggio_gomma_x": 7.8793
+    },
+    {
+     "file": "porsche-ruota-b.webp",
+     "posizione": "posteriore",
+     "cx": 74.0938,
+     "cy": 74.2886,
+     "raggio_x": 4.9062,
+     "raggio_y": 15.9553,
+     "raggio_gomma_x": 7.9704
+    }
+   ],
+   "muso": 0,
+   "coda": 1598,
+   "base": 493.0
+  }
+ }
+}
