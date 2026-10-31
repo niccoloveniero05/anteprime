@@ -1,0 +1,9 @@
+window.LAVORI = [
+  { id: 'm2', marca: 'BMW', nome: 'M2', tipo: 'Wrapping', auto: null, foto: 'img/lavori/m2.webp', w: 1100, h: 1183, fuoco: '50% 50%', alt: 'BMW M2 rossa in officina con il cofano già rivestito in grigio opaco', fatto: 'Da Toronto Red a grigio opaco. Qui siamo a metà: il cofano è già rivestito.' },
+  { id: 'pista', marca: 'Ferrari', nome: '488 Pista', tipo: 'Pellicola PPF', auto: null, foto: 'img/lavori/pista.webp', w: 1041, h: 1300, fuoco: '50% 75%', alt: 'Ferrari 488 Pista rossa davanti alla sede', fatto: 'Pellicola PPF integrale, parabrezza compreso.' },
+  { id: 'countach', marca: 'Lamborghini', nome: 'Countach', tipo: 'Restauro', auto: null, foto: 'img/lavori/countach.webp', w: 1100, h: 1298, fuoco: '50% 75%', alt: 'Lamborghini Countach rossa sul piazzale', fatto: 'Restauro completo di scocca e interni, trattamento nanotecnologico.' },
+  { id: 'camaro', marca: 'Chevrolet', nome: 'Camaro', tipo: 'Carrozzeria', auto: null, foto: 'img/lavori/camaro.webp', w: 1100, h: 1100, fuoco: '50% 70%', alt: 'Chevrolet Camaro blu scuro davanti alla sede', fatto: 'Trasformazione da RS a ZL1.' },
+  { id: 'defender', marca: 'Land Rover', nome: 'Defender', tipo: 'Wrapping', auto: null, foto: 'img/lavori/defender.webp', w: 1040, h: 1300, fuoco: '50% 80%', alt: 'Land Rover Defender grigio opaco davanti alla sede', fatto: 'Wrapping integrale in grigio opaco.' },
+  { id: 'm5', marca: 'BMW', nome: 'M5 Touring', tipo: 'Pellicola PPF', auto: null, foto: 'img/lavori/m5.webp', w: 1041, h: 1300, fuoco: '50% 75%', alt: 'BMW M5 Touring opaca davanti alla sede', fatto: 'Pellicola protettiva per la finitura opaca.' },
+  { id: 'spyder', marca: 'Porsche', nome: '718 Spyder', tipo: 'Riparazione', auto: null, foto: 'img/lavori/spyder.webp', w: 1040, h: 1300, fuoco: '50% 75%', alt: 'Porsche 718 Spyder grigia davanti alla sede', fatto: 'Riparazione e verniciatura del paraurti anteriore, lucidatura correttiva, trattamento nanotech.' },
+];
