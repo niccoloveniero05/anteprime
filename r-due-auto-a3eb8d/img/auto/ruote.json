@@ -1,0 +1,345 @@
+{
+ "nota": "cx, cy: centro della ruota in % di larghezza e altezza di <file>. raggio_x, raggio_y: metà del lato del ritaglio in % di larghezza e altezza. raggio_gomma_x: raggio di rotolamento in % della larghezza. Il ritaglio ruota attorno al proprio centro. Muso a sinistra: se l'auto va a sinistra la ruota gira in senso antiorario.",
+ "auto": {
+  "m2": {
+   "file": "m2.webp",
+   "larghezza": 2200,
+   "altezza": 733,
+   "muso": 0,
+   "coda": 2199,
+   "base": 733,
+   "ruote": [
+    {
+     "posizione": "anteriore",
+     "cx": 18.5682,
+     "cy": 76.8759,
+     "raggio_x": 7.3409,
+     "raggio_y": 22.0327,
+     "raggio_gomma_x": 7.6971,
+     "intera": "m2-ruota-a.webp",
+     "pinza": "m2-pinza-a.webp",
+     "file": "m2-raggi-a.webp"
+    },
+    {
+     "posizione": "posteriore",
+     "cx": 81.1591,
+     "cy": 76.8759,
+     "raggio_x": 7.3409,
+     "raggio_y": 22.0327,
+     "raggio_gomma_x": 7.6971,
+     "intera": "m2-ruota-b.webp",
+     "pinza": "m2-pinza-b.webp",
+     "file": "m2-raggi-b.webp"
+    }
+   ]
+  },
+  "pista": {
+   "file": "pista.webp",
+   "larghezza": 2200,
+   "altezza": 594,
+   "muso": 0,
+   "coda": 2199,
+   "base": 594,
+   "ruote": [
+    {
+     "posizione": "anteriore",
+     "cx": 23.5682,
+     "cy": 70.7912,
+     "raggio_x": 7.5682,
+     "raggio_y": 28.0303,
+     "raggio_gomma_x": 7.895,
+     "intera": "pista-ruota-a.webp",
+     "pinza": "pista-pinza-a.webp",
+     "file": "pista-raggi-a.webp"
+    },
+    {
+     "posizione": "posteriore",
+     "cx": 83.7045,
+     "cy": 70.7912,
+     "raggio_x": 7.5682,
+     "raggio_y": 28.0303,
+     "raggio_gomma_x": 7.895,
+     "intera": "pista-ruota-b.webp",
+     "pinza": "pista-pinza-b.webp",
+     "file": "pista-raggi-b.webp"
+    }
+   ]
+  },
+  "defender": {
+   "file": "defender.webp",
+   "larghezza": 2200,
+   "altezza": 954,
+   "muso": 0,
+   "coda": 2199,
+   "base": 954,
+   "ruote": [
+    {
+     "posizione": "anteriore",
+     "cx": 17.3864,
+     "cy": 78.2495,
+     "raggio_x": 9.0227,
+     "raggio_y": 20.8071,
+     "raggio_gomma_x": 9.4669,
+     "intera": "defender-ruota-a.webp",
+     "pinza": "defender-pinza-a.webp",
+     "file": "defender-raggi-a.webp"
+    },
+    {
+     "posizione": "posteriore",
+     "cx": 82.1591,
+     "cy": 78.2495,
+     "raggio_x": 9.0227,
+     "raggio_y": 20.8071,
+     "raggio_gomma_x": 9.4669,
+     "intera": "defender-ruota-b.webp",
+     "pinza": "defender-pinza-b.webp",
+     "file": "defender-raggi-b.webp"
+    }
+   ]
+  },
+  "countach": {
+   "file": "countach.webp",
+   "larghezza": 2200,
+   "altezza": 599,
+   "muso": 0,
+   "coda": 2199,
+   "base": 599,
+   "ruote": [
+    {
+     "posizione": "anteriore",
+     "cx": 22.2955,
+     "cy": 72.2037,
+     "raggio_x": 7.25,
+     "raggio_y": 26.6277,
+     "raggio_gomma_x": 7.5646,
+     "file": "countach-ruota-a.webp"
+    },
+    {
+     "posizione": "posteriore",
+     "cx": 82.2045,
+     "cy": 72.2037,
+     "raggio_x": 7.25,
+     "raggio_y": 26.6277,
+     "raggio_gomma_x": 7.5646,
+     "file": "countach-ruota-b.webp"
+    }
+   ]
+  },
+  "m5": {
+   "file": "m5.webp",
+   "larghezza": 2200,
+   "altezza": 695,
+   "muso": 0,
+   "coda": 2199,
+   "base": 695,
+   "ruote": [
+    {
+     "posizione": "anteriore",
+     "cx": 18.8864,
+     "cy": 75.036,
+     "raggio_x": 7.5227,
+     "raggio_y": 23.8129,
+     "raggio_gomma_x": 7.8804,
+     "intera": "m5-ruota-a.webp",
+     "pinza": "m5-pinza-a.webp",
+     "file": "m5-raggi-a.webp"
+    },
+    {
+     "posizione": "posteriore",
+     "cx": 79.2045,
+     "cy": 75.036,
+     "raggio_x": 7.5227,
+     "raggio_y": 23.8129,
+     "raggio_gomma_x": 7.8804,
+     "intera": "m5-ruota-b.webp",
+     "pinza": "m5-pinza-b.webp",
+     "file": "m5-raggi-b.webp"
+    }
+   ]
+  },
+  "camaro": {
+   "file": "camaro.webp",
+   "larghezza": 2200,
+   "altezza": 658,
+   "muso": 0,
+   "coda": 2198,
+   "base": 658,
+   "ruote": [
+    {
+     "posizione": "anteriore",
+     "cx": 19.6591,
+     "cy": 75.6079,
+     "raggio_x": 6.9773,
+     "raggio_y": 23.3283,
+     "raggio_gomma_x": 7.2952,
+     "file": "camaro-ruota-a.webp"
+    },
+    {
+     "posizione": "posteriore",
+     "cx": 81.9318,
+     "cy": 75.6079,
+     "raggio_x": 6.9773,
+     "raggio_y": 23.3283,
+     "raggio_gomma_x": 7.2952,
+     "file": "camaro-ruota-b.webp"
+    }
+   ]
+  },
+  "bmw": {
+   "file": "bmw.webp",
+   "larghezza": 2200,
+   "altezza": 682,
+   "muso": 0,
+   "coda": 2199,
+   "base": 682,
+   "ruote": [
+    {
+     "posizione": "anteriore",
+     "cx": 17.2045,
+     "cy": 75.8798,
+     "raggio_x": 7.2045,
+     "raggio_y": 23.2405,
+     "raggio_gomma_x": 7.5121,
+     "intera": "bmw-ruota-a.webp",
+     "pinza": "bmw-pinza-a.webp",
+     "file": "bmw-raggi-a.webp"
+    },
+    {
+     "posizione": "posteriore",
+     "cx": 80.2955,
+     "cy": 75.8798,
+     "raggio_x": 7.2045,
+     "raggio_y": 23.2405,
+     "raggio_gomma_x": 7.5121,
+     "intera": "bmw-ruota-b.webp",
+     "pinza": "bmw-pinza-b.webp",
+     "file": "bmw-raggi-b.webp"
+    }
+   ]
+  },
+  "spyder": {
+   "file": "spyder.webp",
+   "larghezza": 2200,
+   "altezza": 630,
+   "muso": 0,
+   "coda": 2199,
+   "base": 630,
+   "ruote": [
+    {
+     "posizione": "anteriore",
+     "cx": 22.3409,
+     "cy": 70.7143,
+     "raggio_x": 8.0227,
+     "raggio_y": 28.0159,
+     "raggio_gomma_x": 8.3948,
+     "intera": "spyder-ruota-a.webp",
+     "pinza": "spyder-pinza-a.webp",
+     "file": "spyder-raggi-a.webp"
+    },
+    {
+     "posizione": "posteriore",
+     "cx": 81.1591,
+     "cy": 70.7143,
+     "raggio_x": 8.0227,
+     "raggio_y": 28.0159,
+     "raggio_gomma_x": 8.3948,
+     "intera": "spyder-ruota-b.webp",
+     "pinza": "spyder-pinza-b.webp",
+     "file": "spyder-raggi-b.webp"
+    }
+   ]
+  },
+  "targa": {
+   "file": "targa.webp",
+   "larghezza": 2200,
+   "altezza": 653,
+   "muso": 0,
+   "coda": 2199,
+   "base": 653,
+   "ruote": [
+    {
+     "posizione": "anteriore",
+     "cx": 22.5227,
+     "cy": 72.2052,
+     "raggio_x": 7.9318,
+     "raggio_y": 26.7228,
+     "raggio_gomma_x": 8.2832,
+     "intera": "targa-ruota-a.webp",
+     "pinza": "targa-pinza-a.webp",
+     "file": "targa-raggi-a.webp"
+    },
+    {
+     "posizione": "posteriore",
+     "cx": 78.9318,
+     "cy": 72.2052,
+     "raggio_x": 7.9318,
+     "raggio_y": 26.7228,
+     "raggio_gomma_x": 8.2832,
+     "intera": "targa-ruota-b.webp",
+     "pinza": "targa-pinza-b.webp",
+     "file": "targa-raggi-b.webp"
+    }
+   ]
+  },
+  "gts": {
+   "file": "gts.webp",
+   "larghezza": 2200,
+   "altezza": 656,
+   "muso": 1,
+   "coda": 2199,
+   "base": 656,
+   "ruote": [
+    {
+     "posizione": "anteriore",
+     "cx": 22.7045,
+     "cy": 72.1799,
+     "raggio_x": 7.9318,
+     "raggio_y": 26.6006,
+     "raggio_gomma_x": 8.2988,
+     "intera": "gts-ruota-a.webp",
+     "pinza": "gts-pinza-a.webp",
+     "file": "gts-raggi-a.webp"
+    },
+    {
+     "posizione": "posteriore",
+     "cx": 79.0682,
+     "cy": 72.1799,
+     "raggio_x": 7.9318,
+     "raggio_y": 26.6006,
+     "raggio_gomma_x": 8.2988,
+     "intera": "gts-ruota-b.webp",
+     "pinza": "gts-pinza-b.webp",
+     "file": "gts-raggi-b.webp"
+    }
+   ]
+  },
+  "f355": {
+   "file": "f355.webp",
+   "larghezza": 2200,
+   "altezza": 646,
+   "muso": 0,
+   "coda": 2199,
+   "base": 646,
+   "ruote": [
+    {
+     "posizione": "anteriore",
+     "cx": 23.3409,
+     "cy": 71.7492,
+     "raggio_x": 7.8864,
+     "raggio_y": 26.8576,
+     "raggio_gomma_x": 8.2494,
+     "file": "f355-ruota-a.webp"
+    },
+    {
+     "posizione": "posteriore",
+     "cx": 83.3864,
+     "cy": 71.7492,
+     "raggio_x": 7.8864,
+     "raggio_y": 26.8576,
+     "raggio_gomma_x": 8.2494,
+     "file": "f355-ruota-b.webp"
+    }
+   ]
+  }
+ }
+}
