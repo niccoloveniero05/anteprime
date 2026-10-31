@@ -1523,16 +1523,87 @@
   "bio": true
  },
  {
-  "id": "cioccolato",
-  "nome": "Cioccolato all'Aloe fondente",
+  "id": "cioccolato-50",
+  "nome": "Cioccolato all'Aloe fondente 50%",
   "cat": "alimenti",
-  "foto": [],
-  "formati": [],
-  "attesa": "50% e 70% · 30, 40, 50, 60 g",
+  "linea": "",
+  "foto": [
+   "img/p/cioccolato-50-1.webp",
+   "img/p/cioccolato-50-2.webp",
+   "img/p/cioccolato-50-3.webp"
+  ],
+  "formati": [
+   {
+    "nome": "30 g",
+    "prezzo": 12.99
+   },
+   {
+    "nome": "40 g",
+    "prezzo": 13.99
+   },
+   {
+    "nome": "50 g",
+    "prezzo": 15.99
+   },
+   {
+    "nome": "60 g",
+    "prezzo": 17.99
+   }
+  ],
   "effetto": "",
-  "ingredienti": [],
+  "intro": [
+   "Prodotto unicamente in tutto il mondo solo da Aloe Center. Realizzato con cioccolato fondente di qualità superiore e Aloe biologica coltivata e lavorata direttamente da noi.",
+   "Gusto: morbido, equilibrato e avvolgente. Il 50% fondente regala una dolcezza naturale e armoniosa, con note di cacao delicate che si fondono con il profilo dell'aloe.",
+   "A chi è rivolto: a chi desidera avvicinarsi al cioccolato fondente, a chi cerca un dolce naturale e a chi vuole concedersi un momento di piacere nella vita di tutti i giorni."
+  ],
+  "ingredienti": [
+   "Pasta di cacao, zucchero di canna, Aloe Code (estratto di Aloe arborescens Mill., succo), lecitina di semi di girasole."
+  ],
   "tenore": [],
-  "modalita": "",
+  "modalita": "Gustare almeno 2/3 g.",
+  "avvertenze": "",
+  "registro": "",
+  "bio": true
+ },
+ {
+  "id": "cioccolato-70",
+  "nome": "Cioccolato all'Aloe fondente 70%",
+  "cat": "alimenti",
+  "linea": "",
+  "foto": [
+   "img/p/cioccolato-70-1.webp",
+   "img/p/cioccolato-70-2.webp",
+   "img/p/cioccolato-70-3.webp"
+  ],
+  "formati": [
+   {
+    "nome": "30 g",
+    "prezzo": 13.99
+   },
+   {
+    "nome": "40 g",
+    "prezzo": 14.99
+   },
+   {
+    "nome": "50 g",
+    "prezzo": 16.0
+   },
+   {
+    "nome": "60 g",
+    "prezzo": 17.0
+   }
+  ],
+  "effetto": "",
+  "intro": [
+   "Prodotto unicamente in tutto il mondo solo da Aloe Center. Realizzato con cioccolato fondente di qualità superiore e Aloe biologica coltivata e lavorata direttamente da noi.",
+   "Gusto: intenso, deciso e persistente. Il 70% fondente esalta l'aroma puro del cacao con una struttura forte e raffinata; il finale è pulito, elegante e appagante.",
+   "A chi è rivolto: a chi desidera avvicinarsi al cioccolato fondente, a chi cerca un dolce naturale e a chi vuole concedersi un momento di piacere nella vita di tutti i giorni."
+  ],
+  "ingredienti": [
+   "Pasta di cacao, zucchero di canna, burro di cacao, estratto di vaniglia, Aloe Code (estratto di Aloe arborescens Mill., succo)."
+  ],
+  "tenore": [],
+  "modalita": "Gustare almeno 1/2 g.",
   "avvertenze": "",
   "registro": "",
   "bio": true
@@ -1542,14 +1613,29 @@
   "nome": "Reflusso gastrico e gola da reflusso",
   "cat": "integratori",
   "foto": [
-   "img/p/reflusso-1.webp"
+   "img/p/reflusso-1.webp",
+   "img/p/reflusso-2.webp"
   ],
-  "formati": [],
-  "attesa": "15 giorni · 25 giorni",
+  "formati": [
+   {
+    "nome": "15 giorni",
+    "prezzo": 180.0
+   },
+   {
+    "nome": "25 giorni",
+    "prezzo": 340.0
+   }
+  ],
   "effetto": "",
+  "intro": [
+   "Aloe G + Aloe C, assunti insieme: pensati per supportare l'equilibrio gastrico e il benessere della gola e del cavo orale.",
+   "15 giorni: il percorso minimo consigliato, per iniziare e valutare la risposta del proprio organismo.",
+   "25 giorni: il percorso completo, per proseguire più a lungo con l'assunzione combinata.",
+   "Nel pacco: pipetta dosatrice e istruzioni complete. Per qualsiasi dubbio puoi chiamare il tuo consulente al 334 582 5495."
+  ],
   "ingredienti": [],
   "tenore": [],
-  "modalita": "",
+  "modalita": "1 ml di Aloe G e 1 ml di Aloe C, due volte al giorno, a stomaco vuoto, diluiti insieme in una tazzina di acqua. La scelta tra 15 e 25 giorni dipende dalle indicazioni del tuo consulente.",
   "avvertenze": "",
   "registro": "",
   "bio": true
