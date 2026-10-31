@@ -447,3 +447,9 @@ html.fermo .blocco{position:static}
 }
 html.fermo .quadro-dentro{display:none}
 html.fermo .quadro{left:0}
+
+/* percorso più corto al computer */
+@media (min-width:820px),(orientation:landscape){
+  .capitolo{min-height:120vh;min-height:120svh}
+  .capitolo.primo,.capitolo.ultimo{min-height:112vh;min-height:112svh}
+}
