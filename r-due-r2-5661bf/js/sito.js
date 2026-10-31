@@ -131,7 +131,12 @@
       palco.style.setProperty('--cx', ((meta.muso + meta.coda) / 2 * s + M.xPark).toFixed(1) + 'px');
       palco.style.setProperty('--cy', (base - ch * (tel ? 1.02 : 1.02)).toFixed(1) + 'px');
       palco.style.setProperty('--ty', (base - ch * 0.42).toFixed(1) + 'px');
-      palco.style.setProperty('--sx', (tel ? 0 : Math.max(0, M.xPark + meta.muso * s - 30)).toFixed(1) + 'px');
+      var sx = tel ? 0 : Math.max(0, M.xPark + meta.muso * s - 30);
+      palco.style.setProperty('--sx', sx.toFixed(1) + 'px');
+      var rg = document.createRange();
+      rg.selectNodeContents($('.apertura p'));
+      var fr = rg.getBoundingClientRect(), su = palco.getBoundingClientRect().top;
+      M.taglio = fr.bottom - su > base - 6 && fr.top - su < base + 8 ? Math.max(0, fr.right + 16 - sx) : 0;
       rig.misuraEtichette(tel ? 30 : 42);
       M.giriArrivo = Math.max(1, Math.round((M.xVia - M.xPark) / (GIRO * M.r)));
       M.top = viaggio.offsetTop;
@@ -176,6 +181,7 @@
       var ap = 1 - lim((x - 0.04) / 0.3);
       apertura.style.opacity = ap.toFixed(3);
       apertura.style.visibility = ap <= 0 ? 'hidden' : 'visible';
+      if (suolo) suolo.parentNode.style.setProperty('--taglio', (M.taglio * ap).toFixed(1) + 'px');
       if (giu) giu.style.opacity = Math.max(0, 1 - x * 8).toFixed(3);
     }
 

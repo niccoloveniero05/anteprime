@@ -67,7 +67,7 @@ html.fermo .linea{transform:none}
 .palco{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;--base:66%;--cx:64%;--cy:50%}
 .alone{position:absolute;left:0;right:0;top:calc(var(--base) - 26vh);height:52vh;background:radial-gradient(ellipse 52% 50% at var(--cx) 62%,rgba(226,10,23,.13),rgba(226,10,23,0) 70%);pointer-events:none}
 .suolo{position:absolute;left:var(--sx,0);right:0;top:calc(var(--base) + 1px);height:7px;overflow:hidden;
-  box-shadow:0 -1px 0 rgba(255,255,255,.1);-webkit-mask-image:linear-gradient(to right,transparent,#000 90px);mask-image:linear-gradient(to right,transparent,#000 90px)}
+  box-shadow:0 -1px 0 rgba(255,255,255,.1);--taglio:0px;-webkit-mask-image:linear-gradient(to right,transparent var(--taglio),#000 calc(var(--taglio) + 90px));mask-image:linear-gradient(to right,transparent var(--taglio),#000 calc(var(--taglio) + 90px))}
 .suolo i{position:absolute;left:0;top:3px;width:calc(100% + 192px);height:2px;will-change:transform;
   background:repeating-linear-gradient(90deg,rgba(255,255,255,.3) 0 40px,transparent 40px 96px)}
 .parole{position:absolute;inset:0;pointer-events:none;overflow:hidden}

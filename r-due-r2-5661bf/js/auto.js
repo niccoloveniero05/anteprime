@@ -30,6 +30,8 @@
     this.strati = srcs.map(function (src, i) {
       var s = el('div', 'strato'), d = el('div', 'strato-in');
       var im = new Image();
+      s.style.opacity = 0;
+      im.onload = function () { s.style.opacity = ''; };
       if (i) im.fetchPriority = 'low';
       im.alt = ''; im.draggable = false; im.decoding = 'async'; im.src = src; im.className = 'scatto';
       var r = el('img', 'riflesso'); r.alt = ''; if (i) r.fetchPriority = 'low'; r.src = src; r.decoding = 'async';
