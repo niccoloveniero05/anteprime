@@ -1,0 +1,171 @@
+{
+ "larghezza": 1688,
+ "altezza": 460,
+ "base": 447,
+ "muso": 42,
+ "coda": 1640,
+ "ruote": [
+  {
+   "cx": 26.2678,
+   "cy": 70.8043,
+   "raggio_x": 6.3744,
+   "raggio_y": 23.3913,
+   "raggio_gomma_x": 7.5237
+  },
+  {
+   "cx": 82.1505,
+   "cy": 70.8478,
+   "raggio_x": 6.3981,
+   "raggio_y": 23.4783,
+   "raggio_gomma_x": 7.8199
+  }
+ ],
+ "punti": {
+  "f0": [
+   573,
+   173
+  ],
+  "f1": [
+   443,
+   229
+  ],
+  "f2": [
+   903,
+   405
+  ],
+  "f3": [
+   873,
+   285
+  ],
+  "f4": [
+   853,
+   110
+  ],
+  "f5": [
+   188,
+   405
+  ]
+ },
+ "per_foto": {
+  "f0": [
+   {
+    "cx": 26.2915,
+    "cy": 70.9565,
+    "raggio_x": 6.09,
+    "raggio_y": 22.3478,
+    "raggio_gomma_x": 7.5237,
+    "file": "f0-raggi-a.webp",
+    "pinza": "f0-pinza-a.webp"
+   },
+   {
+    "cx": 82.1268,
+    "cy": 70.4783,
+    "raggio_x": 6.09,
+    "raggio_y": 22.3478,
+    "raggio_gomma_x": 7.8199,
+    "file": "f0-raggi-b.webp",
+    "pinza": "f0-pinza-b.webp"
+   }
+  ],
+  "f1": [
+   {
+    "cx": 26.2678,
+    "cy": 70.8043,
+    "raggio_x": 6.3744,
+    "raggio_y": 23.3913,
+    "raggio_gomma_x": 7.5237,
+    "file": "f1-raggi-a.webp",
+    "pinza": "f1-pinza-a.webp"
+   },
+   {
+    "cx": 82.1505,
+    "cy": 70.8478,
+    "raggio_x": 6.3981,
+    "raggio_y": 23.4783,
+    "raggio_gomma_x": 7.8199,
+    "file": "f1-raggi-b.webp",
+    "pinza": "f1-pinza-b.webp"
+   }
+  ],
+  "f2": [
+   {
+    "cx": 26.2678,
+    "cy": 70.8043,
+    "raggio_x": 6.3744,
+    "raggio_y": 23.3913,
+    "raggio_gomma_x": 7.5237,
+    "file": "f2-raggi-a.webp",
+    "pinza": "f2-pinza-a.webp"
+   },
+   {
+    "cx": 82.1505,
+    "cy": 70.8478,
+    "raggio_x": 6.3981,
+    "raggio_y": 23.4783,
+    "raggio_gomma_x": 7.8199,
+    "file": "f2-raggi-b.webp",
+    "pinza": "f2-pinza-b.webp"
+   }
+  ],
+  "f3": [
+   {
+    "cx": 26.2678,
+    "cy": 70.8043,
+    "raggio_x": 6.3744,
+    "raggio_y": 23.3913,
+    "raggio_gomma_x": 7.5237,
+    "file": "f3-raggi-a.webp",
+    "pinza": "f3-pinza-a.webp"
+   },
+   {
+    "cx": 82.1505,
+    "cy": 70.8478,
+    "raggio_x": 6.3981,
+    "raggio_y": 23.4783,
+    "raggio_gomma_x": 7.8199,
+    "file": "f3-raggi-b.webp",
+    "pinza": "f3-pinza-b.webp"
+   }
+  ],
+  "f4": [
+   {
+    "cx": 26.2678,
+    "cy": 70.8043,
+    "raggio_x": 6.3744,
+    "raggio_y": 23.3913,
+    "raggio_gomma_x": 7.5237,
+    "file": "f4-raggi-a.webp",
+    "pinza": "f4-pinza-a.webp"
+   },
+   {
+    "cx": 82.1505,
+    "cy": 70.8478,
+    "raggio_x": 6.3981,
+    "raggio_y": 23.4783,
+    "raggio_gomma_x": 7.8199,
+    "file": "f4-raggi-b.webp",
+    "pinza": "f4-pinza-b.webp"
+   }
+  ],
+  "f5": [
+   {
+    "cx": 26.2678,
+    "cy": 70.8043,
+    "raggio_x": 6.3744,
+    "raggio_y": 23.3913,
+    "raggio_gomma_x": 7.5237,
+    "file": "f5-raggi-a.webp",
+    "pinza": "f5-pinza-a.webp"
+   },
+   {
+    "cx": 82.1505,
+    "cy": 70.8478,
+    "raggio_x": 6.3981,
+    "raggio_y": 23.4783,
+    "raggio_gomma_x": 7.8199,
+    "file": "f5-raggi-b.webp",
+    "pinza": "f5-pinza-b.webp"
+   }
+  ]
+ }
+}
