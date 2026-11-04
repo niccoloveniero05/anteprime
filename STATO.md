@@ -161,3 +161,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-11-04 — Aggiornata l'anteprima `dreammits-r2-0d9c46` (stesso link, non ancora mandata): Daruma con un'animazione sola come le altre, logo in una passata, negozio separato dai contatti, hover solo col mouse. Protetta, scade il 25/11/2026, stato "in attesa".
 - 2026-11-04 — Pubblicata l'anteprima `bellafante-cee111` (Bellafante Immobiliare, Perugia, agenzia immobiliare). Protetta, scade il 19/11.
 - 2026-11-04 — `bellafante-cee111`: apertura senza animazione, il salone e il panorama restano fermi (stesso link).
+- 2026-11-04 — `bellafante-cee111`: panorama di Perugia e carte «In evidenza» più nitidi sul telefono, testo dell'apertura più leggibile (stesso link).
