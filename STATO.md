@@ -259,3 +259,4 @@ Stati: **inviata** · **in attesa** · **comprato** · **tolta**
 - 2026-11-12 — Aggiornata `luxury-label-r7-69a45a` allo stesso link: nella sezione Gioielli il video del titolare che apre l'astuccio e gira un anello nella luce, con le scritte a tempo. Non mandata.
 - 2026-11-12 — Pubblicata `luxury-label-r8-7d660a` (r8: cinque video del titolare, colori blu notte e celestino). Protetta, scade il 12/12/2026, non mandata. Tolta `luxury-label-r7-69a45a` (superata, mai mandata; copia salvata a parte).
 - 2026-11-12 — Pubblicata `luxury-label-r9-ecfc8d` (r9: film del Daytona lineare, video che partono prima). Protetta, scade il 12/12/2026, non mandata. Tolta `luxury-label-r8-7d660a` (superata, mai mandata; copia salvata a parte).
+- 2026-11-12 — Aggiornata `luxury-label-r9-ecfc8d` allo stesso link: le scritte sui video e i testi del film non si sovrappongono più quando cambiano. Non mandata.
