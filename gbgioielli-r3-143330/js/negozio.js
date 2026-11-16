@@ -91,7 +91,10 @@
     'loggia-colonna': 1, 'loggia-colore': 3, 'loggia-uomo': 2 };
   // tessera diversa dalla foto 1 (e prima foto della galleria): Loggia Uomo di tre quarti, perché si capisca che è un
   // orecchino (pietra e perno a vite); di fronte, da solo, sembrava una pietra sospesa
-  var TESSERA = { 'loggia-uomo': 'loggia-uomo-t' };
+  var TESSERA = { 'loggia-uomo': 'loggia-uomo-r' };
+  // 16/11: foto da negozio su fondo bianco (render con ChatGPT dai disegni di Daniel): aprono la galleria e fanno da tessera
+  ['loggia-uno', 'loggia-tre', 'loggia-infinito', 'loggia-luce-orecchini', 'loggia-colonna', 'loggia-sole', 'loggia-rubino', 'loggia-colore'].forEach(function (id) { TESSERA[id] = id + '-r'; });
+  var DOPO_TESSERA = { 'loggia-colore': ['loggia-colore-r2'] };
   var ORDINE = ['loggia-uno', 'loggia-tre', 'loggia-luce-orecchini', 'loggia-infinito', 'loggia-rubino', 'loggia-sole', 'loggia-colore', 'loggia-colonna', 'loggia-uomo'];
   // foto indossate della campagna (fatte con l’IA dalle immagini dei pezzi), in fondo alla galleria della scheda
   var INDOSSATI = {
@@ -135,7 +138,7 @@
   // la foto della tessera (anche nel carrello) e la galleria della scheda: se la tessera è a parte, apre la galleria
   function fotoTessera(p) { return TESSERA[p.id] || p.id + '-1'; }
   function galleria(p) {
-    var n = FOTO[p.id] || 1, g = TESSERA[p.id] ? [TESSERA[p.id]] : [];
+    var n = FOTO[p.id] || 1, g = TESSERA[p.id] ? [TESSERA[p.id]].concat(DOPO_TESSERA[p.id] || []) : [];
     for (var k = 1; k <= n; k++) g.push(p.id + '-' + k);
     return g;
   }
